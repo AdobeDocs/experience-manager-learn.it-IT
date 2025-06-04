@@ -1,6 +1,6 @@
 ---
-title: Plug-in Sidekick di AEM Assets e Edge Delivery Services
-description: Scopri come utilizzare il plug-in Sidekick di AEM Assets per incorporare risorse gestite in esperienze ad alto impatto distribuite tramite Edge Delivery Services.
+title: Plug-in AEM Assets Sidekick ed Edge Delivery Services
+description: Scopri come utilizzare il plug-in AEM Assets Sidekick per incorporare risorse gestite in esperienze ad alto impatto distribuite tramite Edge Delivery Services.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services, Selectors
 topic: Content Management
@@ -13,16 +13,16 @@ thumbnail: 3424615.jpeg
 exl-id: e8ed49a5-4ad2-4759-bf0f-1dae8478d996
 duration: 149
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Plug-in Sidekick di AEM Assets e Edge Delivery Services
+# Plug-in AEM Assets Sidekick ed Edge Delivery Services
 
 {{edge-delivery-services}}
 
-Scopri come utilizzare il plug-in [AEM Assets Sidekick](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) per incorporare risorse gestite in esperienze ad alto impatto distribuite tramite Edge Delivery Services.
+Scopri come utilizzare il [plug-in AEM Assets Sidekick](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) per incorporare risorse gestite in esperienze ad alto impatto distribuite tramite Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435830/?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3424615/?learn=on)

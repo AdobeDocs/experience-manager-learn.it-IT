@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni e video su AEM Forms
+title: Tutorial e video su AEM Forms
 description: Sfoglia i nostri video e tutorial su AEM Forms, con risorse e documentazione per rispondere alle tue domande.
 topic: Development
 role: Developer
@@ -7,15 +7,15 @@ sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 duration: 36
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Esercitazioni e video su AEM Forms {#overview}
+# Tutorial e video su AEM Forms {#overview}
 
-Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la creazione, la gestione, la pubblicazione e l’aggiornamento di moduli digitali complessi, garantendo al contempo l’integrazione con i processi back-end, le regole aziendali e i dati. Questa guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Forms
+Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per creare, gestire, pubblicare e aggiornare i moduli digitali complessi, integrandosi al contempo con i processi di back-end, regole aziendali e dati. Questa guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Forms
 
 
 <div id="recs-overview-body-1"></div>
@@ -37,7 +37,7 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-    <strong>Crea il tuo primo modulo adattivo</strong>
+    <strong>Creare il primo modulo adattivo</strong>
     </a>
     </div>
     <p>
@@ -46,28 +46,28 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
   </td>
    <td>
     <a href="./ic-print-channel-tutorial/introduction.md">
-      <img alt="Crea il primo documento del canale di stampa" src="./assets/correspondence-management1.png" />
+      <img alt="Creare il primo documento del canale di stampa" src="./assets/correspondence-management1.png" />
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
-    <strong>Crea il tuo primo documento del canale di stampa</strong>
+    <strong>Creare il primo documento del canale di stampa</strong>
     </a>
     </div>
     <p>
-    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l'assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, messaggi di marketing, fatture e kit di benvenuto. </em>
+    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l’assemblaggio e la consegna di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, avvisi sui benefit, messaggi di marketing, fatture e kit di benvenuto. </em>
     <p>
   </td>
   <td>
     <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-      <img alt="Utilizzo del modello dati modulo nel flusso di lavoro AEM" src="./assets/fdmlogo.png" />
+      <img alt="Utilizzo del modello dati modulo nel flusso di lavoro di AEM" src="./assets/fdmlogo.png" />
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>Utilizzo del modello dati modulo nel flusso di lavoro AEM</strong>
+    <strong>Utilizzo del modello dati modulo nel flusso di lavoro di AEM</strong>
     </a>
     </div>
     <p>
-    <em>Richiama il servizio del modello dati modulo come passaggio nel flusso di lavoro AEM</em>
+    <em>Richiamare il servizio del modello dati modulo come passaggio nel flusso di lavoro di AEM</em>
     <p>
   </td>
 </tr>
@@ -78,11 +78,11 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
 
 ## Risorse aggiuntive
 
-* [Documentazione sull&#39;authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=it)
-* [Documentazione sullo sviluppo per AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=it)
-* [Documentazione sull&#39;amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=it)
-* [Documentazione sulla distribuzione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=it)
+* [Documentazione sull’authoring di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
+* [Documentazione sullo sviluppo di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
+* [Documentazione sull’amministrazione di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/administering/home)
+* [Documentazione sull’implementazione di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/introduction/platform)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial su AEM Assets](/help/assets/overview.md)
 * [Tutorial su AEM Forms](/help/forms/overview.md)
-* [Tutorial di AEM Foundation](/help/foundation/overview.md)
+* [Tutorial su AEM Foundation](/help/foundation/overview.md)

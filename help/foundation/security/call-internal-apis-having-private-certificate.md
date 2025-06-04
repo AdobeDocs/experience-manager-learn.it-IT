@@ -1,5 +1,5 @@
 ---
-title: Chiamata delle API interne con certificati privati
+title: Chiamare API interne con certificati privati
 description: Scopri come chiamare le API interne con certificati privati o autofirmati.
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
@@ -13,30 +13,30 @@ last-substantial-update: 2023-08-25T00:00:00Z
 exl-id: c88aa724-9680-450a-9fe8-96e14c0c6643
 duration: 332
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '467'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Chiamata delle API interne con certificati privati
+# Chiamare API interne con certificati privati
 
-Scopri come effettuare chiamate HTTPS da AEM alle API web utilizzando certificati privati o autofirmati.
+Scopri come effettuare chiamate HTTPS da AEM alle API web con certificati privati o autofirmati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424853?quality=12&learn=on)
 
-Per impostazione predefinita, quando si tenta di stabilire una connessione HTTPS a un’API web che utilizza un certificato autofirmato, la connessione non riesce e viene visualizzato il messaggio di errore:
+Per impostazione predefinita, quando si tenta di stabilire una connessione HTTPS a un’API web che utilizza un certificato autofirmato, la connessione non riesce e viene mostrato il seguente messaggio di errore:
 
 ```
 PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 ```
 
-Questo problema si verifica in genere quando il certificato SSL dell&#39;API **non viene rilasciato da un&#39;autorità di certificazione (CA) riconosciuta** e l&#39;applicazione Java™ non è in grado di convalidare il certificato SSL/TLS.
+Questo problema si verifica in genere quando il **certificato SSL dell’API non è rilasciato da un’autorità di certificazione (CA) riconosciuta** e l’applicazione Java™ non è in grado di convalidare il certificato SSL/TLS.
 
-Scopri come chiamare correttamente le API con certificati privati o autofirmati utilizzando [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) e **AEM TrustStore globale**.
+Scopri come chiamare correttamente le API con certificati privati o autofirmati utilizzando [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) e l’**Archivio fonti attendibili globale di AEM**.
 
 
-## Codice di chiamata API prototipo utilizzando HttpClient
+## Prototipo di codice di chiamata API con HttpClient
 
 Il codice seguente effettua una connessione HTTPS a un’API web:
 
@@ -57,23 +57,23 @@ CloseableHttpResponse closeableHttpResponse = httpClient.execute(new HttpGet(API
 ...
 ```
 
-Il codice utilizza le classi della libreria [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) di [Apache HttpComponent](https://hc.apache.org/) e i relativi metodi.
+Il codice utilizza le classi di libreria [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) di [Apache HttpComponent](https://hc.apache.org/) e i relativi metodi.
 
 
-## HttpClient e caricare il materiale AEM TrustStore
+## HttpClient e caricare il materiale dall’Archivio fonti attendibili di AEM
 
-Per chiamare un endpoint API con _certificato privato o autofirmato_, il `SSLContextBuilder` di [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) deve essere caricato con TrustStore di AEM e utilizzato per facilitare la connessione.
+Per chiamare un endpoint API con _certificato privato o autofirmato_, `SSLContextBuilder` di [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) deve essere caricato con l’Archivio fonti attendibili di AEM e utilizzato per facilitare la connessione.
 
 Segui i passaggi seguenti:
 
 1. Accedi a **AEM Author** come **amministratore**.
-1. Passa a **AEM Author > Tools > Security > Trust Store** e apri **Global Trust Store**. Se si accede per la prima volta, impostare una password per l&#39;archivio fonti attendibili globale.
+1. Passa a **AEM Author > Strumenti > Sicurezza > Archivio fonti attendibili** e apri l’**Archivio attendibile globale**. Se è il primo accesso, imposta una password per l’archivio attendibile globale.
 
    ![Archivio attendibile globale](assets/internal-api-call/global-trust-store.png)
 
-1. Per importare un certificato privato, fare clic sul pulsante **Seleziona file di certificato** e selezionare il file di certificato desiderato con estensione `.cer`. Importa facendo clic sul pulsante **Invia**.
+1. Per importare un certificato privato, fai clic sul pulsante **Seleziona un file di certificato** e seleziona il file di certificato desiderato con estensione `.cer`. Per importare, fai clic sul pulsante **Invia**.
 
-1. Aggiorna il codice Java™ come segue. Per utilizzare `@Reference` per ottenere `KeyStoreService` di AEM, il codice chiamante deve essere un componente/servizio OSGi o un modello Sling (in cui è utilizzato `@OsgiService`).
+1. Aggiorna il codice Java™ come segue. Tieni presente che per utilizzare `@Reference` per ottenere `KeyStoreService` di AEM, il codice di chiamata deve essere un componente o servizio OSGi oppure un modello Sling (in cui è utilizzato `@OsgiService`).
 
    ```java
    ...
@@ -133,28 +133,28 @@ Segui i passaggi seguenti:
    ...
    ```
 
-   * Inserisci il servizio OSGi `com.adobe.granite.keystore.KeyStoreService` OOTB nel componente OSGi.
-   * Ottenere il TrustStore AEM globale utilizzando `KeyStoreService` e `ResourceResolver`. Questa operazione viene eseguita dal metodo `getAEMTrustStore(...)`.
-   * Creare un oggetto di `SSLContextBuilder`. Vedere Java™ [Dettagli API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
-   * Caricare l&#39;AEM TrustStore globale in `SSLContextBuilder` utilizzando il metodo `loadTrustMaterial(KeyStore truststore,TrustStrategy trustStrategy)`.
-   * Il passaggio `null` per `TrustStrategy` nel metodo precedente garantisce che solo i certificati attendibili di AEM abbiano esito positivo durante l&#39;esecuzione dell&#39;API.
+   * Inserisci nel tuo componente OSGi il servizio OSGi `com.adobe.granite.keystore.KeyStoreService` integrato.
+   * Ottieni l’Archivio attendibile globale di AEM utilizzando `KeyStoreService` e `ResourceResolver`. Questa operazione viene eseguita dal metodo `getAEMTrustStore(...)`.
+   * Crea un oggetto `SSLContextBuilder`; consulta i [dettagli API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html) di Java™.
+   * Carica l’Archivio attendibile globale di AEM in `SSLContextBuilder` utilizzando il metodo `loadTrustMaterial(KeyStore truststore,TrustStrategy trustStrategy)`.
+   * In questo metodo, passa `null` per `TrustStrategy`, affinché l’esecuzione dell’API risulti riuscita solo per i certificati attendibili di AEM.
 
 
 >[!CAUTION]
 >
->Le chiamate API con certificati validi emessi da una CA non riescono se eseguite utilizzando l’approccio indicato. Solo le chiamate API con certificati attendibili di AEM possono avere esito positivo quando si segue questo metodo.
+>Se vengono eseguite utilizzando questo approccio, le chiamate API con certificati validi emessi da CA non avranno esito positivo. Quando si segue questo metodo, avranno esito positivo solo le chiamate API con certificati attendibili di AEM.
 >
->Utilizza l&#39;approccio [standard](#prototypical-api-invocation-code-using-httpclient) per eseguire chiamate API di certificati validi emessi da CA, il che significa che solo le API associate a certificati privati devono essere eseguite utilizzando il metodo indicato in precedenza.
+>Per eseguire le chiamate API di certificati validi emessi da CA, utilizza l’[approccio standard](#prototypical-api-invocation-code-using-httpclient). Il metodo indicato in precedenza deve essere utilizzato solo per le API associate a certificati privati.
 
-## Evita le modifiche al keystore JVM
+## Evitare modifiche al registro chiavi JVM
 
-Un approccio convenzionale per richiamare in modo efficace le API interne con certificati privati comporta la modifica del keystore JVM. Ciò si ottiene importando i certificati privati mediante il comando Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549).
+Un approccio convenzionale per richiamare in modo efficace le API interne con certificati privati comporta la modifica del registro chiavi JVM. A tal fine, si importano i certificati privati mediante il comando [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) di Java™.
 
-Tuttavia, questo metodo non è allineato con le best practice di sicurezza e AEM offre un&#39;opzione superiore tramite l&#39;utilizzo di **Archivio attendibile globale** e [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+Tuttavia, questo metodo non è allineato alle best practice di sicurezza e AEM offre un’opzione superiore tramite l’utilizzo dell’**Archivio attendibile globale** e del [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
 
 
-## Pacchetto soluzione
+## Pacchetto di soluzioni
 
-Il progetto Node.js di esempio demo nel video può essere scaricato da [qui](assets/internal-api-call/REST-APIs.zip).
+Il progetto Node.js di esempio illustrato nel video può essere scaricato da [qui](assets/internal-api-call/REST-APIs.zip).
 
-Il codice servlet AEM è disponibile nel ramo `tutorial/web-api-invocation` del progetto WKND Sites, [vedi](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
+Il codice servlet di AEM è disponibile nel ramo `tutorial/web-api-invocation` del progetto del sito WKND, disponibile [qui](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).

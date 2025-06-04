@@ -1,6 +1,6 @@
 ---
-title: AEM SIDEKICK e EDGE DELIVERY SERVICES
-description: Utilizzo di Sidekick in Edge Delivery Services per trasmettere i contenuti in diretta.
+title: AEM Sidekick ed Edge Delivery Services
+description: Utilizzo di Sidekick in Edge Delivery Services per trasmettere i contenuti live.
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,14 +13,14 @@ thumbnail: 3425715.jpeg
 duration: 136
 exl-id: 47fc8774-43c1-4e0b-8101-cff628059b09
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '31'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # AEM Sidekick
 
-Utilizza AEM Sidekick in Edge Delivery Services per trasmettere i contenuti in diretta.
+Utilizza AEM Sidekick in Edge Delivery Services per trasmettere i contenuti live.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441294/?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3425715/?learn=on)

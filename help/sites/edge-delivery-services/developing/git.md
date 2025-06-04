@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di Git
+title: Utilizzare Git
 description: Come configurare l’ambiente di sviluppo Edge Delivery Services con Git.
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
@@ -13,9 +13,9 @@ thumbnail: 3425718.jpeg
 duration: 147
 exl-id: 68866a41-7790-49f9-bb9e-49b63ae3b3af
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '25'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Configura l’ambiente di sviluppo Edge Delivery Services con Git.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441834/?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3425718/?learn=on)

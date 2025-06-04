@@ -1,6 +1,6 @@
 ---
 title: Intestazione e piè di pagina
-description: Scopri come intestazioni e piè di pagina vengono sviluppati in Edge Delivery Services e Universal Editor.
+description: Scopri come intestazione e piè di pagina vengono sviluppati in Edge Delivery Services e nell’editor universale.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,29 +11,29 @@ jira: KT-17470
 duration: 300
 exl-id: 70ed4362-d4f1-4223-8528-314b2bf06c7c
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Sviluppare un’intestazione e un piè di pagina
+# Sviluppare intestazione e piè di pagina
 
 ![Intestazione e piè di pagina](./assets/header-and-footer/hero.png){align="center"}
 
-Le intestazioni e i piè di pagina svolgono un ruolo univoco in Edge Delivery Services (EDS) in quanto sono associati direttamente agli elementi HTML `<header>` e `<footer>`. A differenza del contenuto delle pagine normali, sono gestite separatamente e possono essere aggiornate in modo indipendente senza dover eliminare l’intera cache della pagina. Mentre la loro implementazione risiede nel progetto di codice come blocchi in `blocks/header` e `blocks/footer`, gli autori possono modificare il loro contenuto tramite pagine AEM dedicate che possono contenere qualsiasi combinazione di blocchi.
+Le intestazioni e i piè di pagina svolgono un ruolo specifico in Edge Delivery Services (EDS) in quanto sono associati direttamente agli elementi HTML `<header>` e `<footer>`. A differenza del normale contenuto delle pagine, sono gestiti separatamente e possono essere aggiornati in modo indipendente, senza dover eliminare l’intera cache della pagina. Anche se la relativa implementazione si trova nel progetto di codice come blocchi in `blocks/header` e `blocks/footer`, gli autori possono modificarne il contenuto tramite pagine AEM dedicate che possono contenere qualsiasi combinazione di blocchi.
 
 ## Blocco intestazione
 
 ![Blocco intestazione](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
-L&#39;intestazione è un blocco speciale associato all&#39;elemento Edge Delivery Services HTML `<header>`.
-L&#39;elemento `<header>` viene recapitato vuoto e popolato tramite XHR (AJAX) in una pagina AEM separata.
+L’intestazione è un blocco speciale associato all’elemento HTM di Edge Delivery Services`<header>`.
+L’elemento `<header>` viene recapitato vuoto e popolato tramite XHR (AJAX) in una pagina AEM separata.
 Questo consente di gestire l’intestazione in modo indipendente dal contenuto della pagina e di aggiornarla senza richiedere la rimozione completa della cache di tutte le pagine.
 
-Il blocco di intestazione è responsabile della richiesta del frammento di pagina AEM che contiene il contenuto dell&#39;intestazione e del rendering nell&#39;elemento `<header>`.
+Il blocco di intestazione è responsabile della richiesta del frammento di pagina AEM che contiene il contenuto dell’intestazione e del relativo rendering nell’elemento `<header>`.
 
-[!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```javascript
 import { getMetadata } from '../../scripts/aem.js';
@@ -58,45 +58,45 @@ export default async function decorate(block) {
 }
 ```
 
-La funzione `loadFragment()` effettua una richiesta XHR (AJAX) a `${navPath}.plain.html` che restituisce una rappresentazione HTML EDS del HTML della pagina AEM esistente nel tag `<main>` della pagina, elabora il contenuto con eventuali blocchi in essa contenuti e restituisce la struttura DOM aggiornata.
+La funzione `loadFragment()` effettua una richiesta XHR (AJAX) a `${navPath}.plain.html` che restituisce una rappresentazione HTML EDS dell’HTML della pagina AEM esistente nel tag `<main>` della pagina, elabora il contenuto con eventuali blocchi in essa contenuti e restituisce la struttura DOM aggiornata.
 
-## Creare la pagina di intestazione
+## Authoring della pagina di intestazione
 
-Prima di sviluppare il blocco di intestazione, crea innanzitutto il relativo contenuto nell’Editor universale per disporre di qualcosa su cui sviluppare.
+Prima di sviluppare il blocco di intestazione, crea innanzitutto il relativo contenuto nell’editor universale per disporre di qualcosa su cui sviluppare.
 
-Il contenuto dell&#39;intestazione si trova in una pagina AEM dedicata denominata `nav`.
+Il contenuto dell’intestazione si trova in una pagina AEM dedicata denominata `nav`.
 
-![Pagina intestazione predefinita](./assets/header-and-footer/header-page.png){align="center"}
+![Pagina di intestazione predefinita](./assets/header-and-footer/header-page.png){align="center"}
 
-Per creare l’intestazione:
+Per l’authoring dell’intestazione:
 
-1. Apri la pagina `nav` nell&#39;editor universale
+1. Apri la pagina `nav` nell’editor universale
 1. Sostituisci il pulsante predefinito con un **blocco immagine** contenente il logo WKND
-1. Aggiornare il menu di navigazione nel **blocco di testo**:
-   - Aggiunta dei collegamenti di navigazione desiderati
-   - Creazione di elementi di navigazione secondaria dove necessario
-   - Impostazione di tutti i collegamenti alla home page (`/`) per il momento
+1. Aggiorna il menu di navigazione nel **blocco di testo**:
+   - Aggiungendo i collegamenti di navigazione desiderati
+   - Creando elementi di navigazione secondaria dove necessario
+   - Impostando tutti i collegamenti alla pagina Home (`/`) per il momento
 
-![Blocco intestazione Autore in Universal Editor](./assets/header-and-footer/header-author.png){align="center"}
+![Authoring del blocco intestazione nell’editor universale](./assets/header-and-footer/header-author.png){align="center"}
 
-### Pubblica in anteprima
+### Pubblicare in anteprima
 
 Con la pagina Intestazione aggiornata, [pubblica la pagina in anteprima](../6-author-block.md).
 
-Poiché il contenuto dell&#39;intestazione si trova sulla propria pagina (la pagina `nav`), è necessario pubblicare tale pagina in modo specifico per rendere effettive le modifiche all&#39;intestazione. La pubblicazione di altre pagine che utilizzano l’intestazione non aggiorna il contenuto dell’intestazione in Edge Delivery Services.
+Poiché il contenuto dell’intestazione si trova sulla propria pagina (la pagina `nav`), devi pubblicare specificamente tale pagina per rendere effettive le modifiche all’intestazione. La pubblicazione di altre pagine che utilizzano l’intestazione non aggiorna il contenuto dell’intestazione in Edge Delivery Services.
 
-## Blocca HTML
+## HTML del blocco
 
 Per iniziare lo sviluppo del blocco, inizia esaminando la struttura DOM esposta dall’anteprima di Edge Delivery Services. Il DOM viene migliorato con JavaScript e formattato con CSS, fornendo le basi per la creazione e la personalizzazione del blocco.
 
-Poiché l&#39;intestazione viene caricata come frammento, è necessario esaminare il HTML restituito dalla richiesta XHR dopo che è stato inserito nel DOM e decorato tramite `loadFragment()`. Questo può essere fatto esaminando il DOM negli strumenti di sviluppo del browser.
+Poiché l’intestazione viene caricata come frammento, è necessario esaminare l’HTML restituito dalla richiesta XHR dopo che è stato inserito nel DOM e arricchito tramite `loadFragment()`. Questo può essere fatto esaminando il DOM negli strumenti di sviluppo del browser.
 
 
 >[!BEGINTABS]
 
->[!TAB DOM da decorare]
+>[!TAB DOM da arricchire]
 
-Di seguito è riportato il HTML della pagina di intestazione dopo che è stato caricato utilizzando `header.js` fornito e inserito nel DOM:
+Di seguito è riportato l’HTML della pagina di intestazione dopo che è stato caricato tramite `header.js` fornito e inserito nel DOM:
 
 ```html
 <header class="header-wrapper">
@@ -141,20 +141,20 @@ Di seguito è riportato il HTML della pagina di intestazione dopo che è stato c
 
 >[!TAB Come trovare il DOM]
 
-Per trovare e controllare l&#39;elemento `<header>` della pagina negli strumenti per sviluppatori del browser Web.
+Trovare e controllare l’elemento `<header>` della pagina negli strumenti per sviluppatori del browser web.
 
 ![Intestazione DOM](./assets/header-and-footer/header-dom.png){align="center"}
 
 >[!ENDTABS]
 
 
-## Blocca JavaScript
+## JavaScript del blocco
 
-Il file `/blocks/header/header.js` del [modello di progetto XWalk standard di AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk) fornisce JavaScript per la navigazione, inclusi i menu a discesa e una visualizzazione mobile reattiva.
+Il file `/blocks/header/header.js` del [modello di progetto XWalk standard di AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk) fornisce JavaScript per la navigazione, inclusi i menu a discesa e una visualizzazione per dispositivi mobili reattiva.
 
 Sebbene lo script `header.js` sia spesso personalizzato in modo da corrispondere alla progettazione di un sito, è essenziale mantenere le prime righe in `decorate()`, che recuperano ed elaborano il frammento della pagina di intestazione.
 
-[!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```javascript
 export default async function decorate(block) {
@@ -167,23 +167,23 @@ export default async function decorate(block) {
 
 Il codice rimanente può essere modificato in base alle esigenze del progetto.
 
-A seconda dei requisiti di intestazione, il codice boilerplate può essere regolato o rimosso. In questo tutorial utilizzeremo il codice fornito e lo miglioreremo aggiungendo un collegamento ipertestuale intorno alla prima immagine creata, collegandolo alla home page del sito.
+A seconda dei requisiti di intestazione, il codice standard può essere regolato o rimosso. In questo tutorial sarà utilizzato il codice fornito e lo migliorato aggiungendo un collegamento ipertestuale intorno alla prima immagine creata, collegandolo alla pagina Home del sito.
 
 Il codice del modello elabora il frammento della pagina di intestazione, supponendo che sia costituito da tre sezioni nell’ordine seguente:
 
-1. **Sezione marchio** - Contiene il logo ed è formattato con la classe `.nav-brand`.
-2. **Sezione sezioni** - Definisce il menu principale del sito ed è formattato con `.nav-sections`.
-3. **Sezione Strumenti** - Include elementi come ricerca, accesso/disconnessione e profilo, con lo stile `.nav-tools`.
+1. **Sezione del brand**: contiene il logo ed è formattato con la classe `.nav-brand`.
+2. **Sezione delle sezioni**: definisce il menu principale del sito ed è formattato con `.nav-sections`.
+3. **Sezione degli strumenti**: include elementi come ricerca, accesso/disconnessione e profilo, formattati con `.nav-tools`.
 
-Per collegare l’immagine del logo alla home page, il blocco JavaScript viene aggiornato come segue:
+Per collegare in modo ipertestuale l’immagine del logo alla pagina Home, il blocco JavaScript viene aggiornato come segue:
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript aggiornato]
 
-Di seguito è riportato il codice aggiornato che racchiude l&#39;immagine del logo con un collegamento alla home page del sito (`/`):
+Di seguito è riportato il codice aggiornato che racchiude l’immagine del logo con un collegamento alla pagina Home del sito (`/`):
 
-[!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```javascript
 export default async function decorate(block) {
@@ -216,9 +216,9 @@ export default async function decorate(block) {
 
 >[!TAB JavaScript originale]
 
-Di seguito è riportato il `header.js` originale generato dal modello:
+Di seguito è riportato `header.js` originale generato dal modello:
 
-[!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```javascript
 export default async function decorate(block) {
@@ -250,15 +250,15 @@ export default async function decorate(block) {
 >[!ENDTABS]
 
 
-## Blocca CSS
+## CSS del blocco
 
 Aggiorna `/blocks/header/header.css` per assegnargli uno stile conforme al brand WKND.
 
-Il CSS personalizzato verrà aggiunto alla fine di `header.css` per rendere le modifiche dell&#39;esercitazione più visibili e comprensibili. Anche se questi stili possono essere integrati direttamente nelle regole CSS del modello, mantenerli separati aiuta a illustrare cosa è stato modificato.
+Il CSS personalizzato verrà aggiunto alla fine di `header.css` per rendere le modifiche del tutorial più visibili e comprensibili. Anche se questi stili possono essere integrati direttamente nelle regole CSS del modello, mantenerli separati aiuta a mostrare che cosa è stato modificato.
 
-Poiché stiamo aggiungendo nuove regole dopo il set originale, le racchiuderemo con un selettore CSS `header .header.block nav` per assicurarci che abbiano la precedenza sulle regole del modello.
+Poiché verranno aggiunte nuove regole dopo il set originale, verranno racchiuse con un selettore CSS `header .header.block nav` per assicurare che abbiano la precedenza sulle regole del modello.
 
-[!BADGE /blocks/header/header.css]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/header/header.css]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```css
 /* /blocks/header/header.css */
@@ -322,13 +322,13 @@ header .header.block nav {
 
 ## Anteprima di sviluppo
 
-Con lo sviluppo di CSS e JavaScript, l’ambiente di sviluppo locale della CLI di AEM ricarica a caldo le modifiche, consentendo una visualizzazione rapida e semplice dell’impatto del codice sul blocco. Passa il puntatore del mouse sul CTA e verifica che l’immagine del teaser si ingrandisca e si ingrandisca.
+Con lo sviluppo di CSS e JavaScript, l’ambiente di sviluppo locale di AEM CLI ricarica le modifiche, consentendo una visualizzazione rapida e semplice dell’impatto del codice sul blocco. Passa il puntatore sul CTA e verifica che l’immagine del teaser esegua lo zoom in e lo zoom out.
 
-![Anteprima di sviluppo locale dell&#39;intestazione tramite CSS e JS](./assets/header-and-footer/header-local-development-preview.png){align="center"}
+![Anteprima di sviluppo locale dell’intestazione tramite CSS e JS](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
-## Illustra il codice
+## Eseguire il linting del codice
 
-Assicurati di [collegare frequentemente](../3-local-development-environment.md#linting) le modifiche al codice per mantenerlo pulito e coerente. L&#39;linting regolare consente di risolvere i problemi in anticipo, riducendo il tempo di sviluppo complessivo. Ricorda che non puoi unire il tuo lavoro di sviluppo nel ramo `main` finché non saranno stati risolti tutti i problemi di linting.
+Assicurati di [eseguire frequentemente il linting](../3-local-development-environment.md#linting) del codice per mantenerlo pulito e coerente. L’esecuzione del linting regolare consente di individuare i problemi in anticipo, riducendo il tempo di sviluppo complessivo. Ricorda che non puoi unire il tuo lavoro di sviluppo nel ramo `main` finché non saranno stati risolti tutti i problemi di linting.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -338,7 +338,7 @@ $ npm run lint
 
 ## Anteprima nell’editor universale
 
-Per visualizzare le modifiche nell’Editor universale di AEM, aggiungili, esegui il commit e inviali al ramo dell’archivio Git utilizzato dall’Editor universale. In questo modo l’implementazione del blocco non interrompe l’esperienza di authoring.
+Per visualizzare le modifiche nell’editor universale di AEM, aggiungile, confermale e inviale al ramo dell’archivio Git utilizzato dall’editor universale. In questo modo, l’implementazione del blocco non interferirà con l’esperienza di authoring.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -349,13 +349,13 @@ $ git commit -m "CSS and JavaScript implementation for Header block"
 $ git push origin header-and-footer
 ```
 
-Le modifiche sono ora visibili nell&#39;editor universale quando si utilizza il parametro di query `?ref=header-and-footer`.
+Le modifiche sono ora visibili nell’editor universale quando si utilizza il parametro di query `?ref=header-and-footer`.
 
-![Intestazione nell&#39;editor universale](./assets/header-and-footer/header-universal-editor-preview.png){align="center"}
+![Intestazione nell’editor universale](./assets/header-and-footer/header-universal-editor-preview.png){align="center"}
 
 ## Piè di pagina
 
-Come l&#39;intestazione, il contenuto del piè di pagina viene creato in una pagina AEM dedicata, in questo caso la pagina Piè di pagina (`footer`). Il piè di pagina segue lo stesso pattern di caricamento di un frammento e decorato con CSS e JavaScript.
+Come l’intestazione, il contenuto del piè di pagina viene creato in una pagina AEM dedicata, in questo caso la pagina piè di pagina (`footer`). Il piè di pagina segue lo stesso pattern di caricamento di un frammento e viene arricchito con CSS e JavaScript.
 
 >[!BEGINTABS]
 
@@ -363,16 +363,16 @@ Come l&#39;intestazione, il contenuto del piè di pagina viene creato in una pag
 
 Il piè di pagina deve essere implementato con un layout a tre colonne contenente:
 
-- Una colonna sinistra con una promozione (immagine e testo)
-- Colonna centrale con collegamenti di spostamento
+- Una colonna a sinistra con una promozione (immagine e testo)
+- Una colonna centrale con collegamenti di navigazione
 - Una colonna a destra con collegamenti ai social media
 - Una riga nella parte inferiore che si estende su tutte e tre le colonne con il copyright
 
-![Anteprime piè di pagina](./assets/header-and-footer/footer-preview.png){align="center"}
+![Anteprime del piè di pagina](./assets/header-and-footer/footer-preview.png){align="center"}
 
->[!TAB Contenuto piè di pagina]
+>[!TAB Contenuto del piè di pagina]
 
-Utilizzare il blocco delle colonne nella pagina Piè di pagina per creare l&#39;effetto a tre colonne.
+Utilizza il blocco delle colonne nella pagina del piè di pagina per creare l’effetto a tre colonne.
 
 | Colonna 1 | Colonna 2 | Colonna 3 |
 | ---------|----------------|---------------|
@@ -381,11 +381,11 @@ Utilizzare il blocco delle colonne nella pagina Piè di pagina per creare l&#39;
 
 ![Intestazione DOM](./assets/header-and-footer/footer-author.png){align="center"}
 
->[!TAB Codice piè di pagina]
+>[!TAB Codice del piè di pagina]
 
-Il CSS sottostante applica uno stile al blocco del piè di pagina con un layout a tre colonne, una spaziatura coerente e una composizione tipografica. L’implementazione del piè di pagina utilizza solo il JavaScript fornito dal modello.
+Il CSS di seguito applica uno stile al blocco del piè di pagina con un layout a tre colonne, una spaziatura coerente e una composizione tipografica. L’implementazione del piè di pagina utilizza solo il JavaScript fornito dal modello.
 
-[!BADGE /blocks/footer/footer.css]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/footer/footer.css]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```css
 /* /blocks/footer/footer.css */
@@ -462,13 +462,13 @@ footer {
 
 ## Congratulazioni.
 
-Ora hai esplorato come le intestazioni e i piè di pagina vengono gestiti e sviluppati in Edge Delivery Services e Universal Editor. Hai imparato come sono:
+Ora hai esplorato come le intestazioni e i piè di pagina vengono gestiti e sviluppati in Edge Delivery Services e nell’editor universale. Hai imparato come sono:
 
-- Creato su pagine AEM dedicate separate dal contenuto principale
-- Caricato in modo asincrono come frammenti per abilitare gli aggiornamenti indipendenti
-- Decorato con JavaScript e CSS per creare esperienze di navigazione reattive
-- Integrazione perfetta con Universal Editor per una gestione semplice dei contenuti
+- Creati su pagine AEM dedicate separate dal contenuto principale
+- Caricati in modo asincrono come frammenti per abilitare gli aggiornamenti indipendenti
+- Arricchiti con JavaScript e CSS per creare esperienze di navigazione reattive
+- Integrati perfettamente con l’editor universale per una gestione semplice dei contenuti
 
-Questo modello fornisce un approccio flessibile e gestibile per l’implementazione di componenti di navigazione a livello di sito.
+Questo pattern fornisce un approccio flessibile e gestibile per l’implementazione di componenti di navigazione a livello di sito.
 
-Per ulteriori best practice e tecniche avanzate, consulta la [documentazione di Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Per ulteriori best practice e tecniche avanzate, consulta la [documentazione dell’editor universale](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

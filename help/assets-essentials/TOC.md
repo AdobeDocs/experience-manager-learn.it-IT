@@ -9,9 +9,9 @@ feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '69'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
@@ -22,29 +22,29 @@ ht-degree: 21%
 
 + [Guida introduttiva](./getting-started.md)
 
-+ Nozioni di base{#basics}
++ Funzioni di base{#basics}
    + [Gestione](basics/managing.md)
-   + [Utilizzando](basics/using.md)
-   + [Creazione di contenuti](basics/creating.md)
+   + [Utilizzo](basics/using.md)
+   + [Creazione del contenuto](basics/creating.md)
    + [Accesso rapido](basics/quick-access.md)
    + [Collaborazione](basics/collaborating.md)
-   + [Condivisione collegamenti](basics/link-sharing.md)
+   + [Condivisione dei collegamenti](basics/link-sharing.md)
    + [Rapporti](basics/reports.md)
-+ Configurazione di {#configuring}
++ Configurazione{#configuring}
    + [Area di lavoro personale](configuring/my-workspace.md)
    + [Moduli di metadati](configuring/metadata-forms.md)
    + [Gestione delle autorizzazioni](configuring/permissions-management.md)
    + [Gestione della tassonomia](configuring/taxonomy-management.md)
 
-+ [Integrazione con Creative Cloud](integrations/creative-cloud.md)
++ [Integrazione di Creative Cloud](integrations/creative-cloud.md)
 
-+ Integrazione Adobe Workfront{#workfront}
++ Integrazione di Adobe Workfront{#workfront}
    + [Panoramica](./integrations/workfront/overview.md)
    + [Configurazione](./integrations/workfront/configure.md)
    + [Mappatura dei metadati](./integrations/workfront/map-metadata.md)
    + [Invio di documenti e collegamento di risorse](./integrations/workfront/link-send.md)
    + [Cronologia delle versioni](./integrations/workfront/versions.md)
 
-+ [Integrazione Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=it){target=_blank}
++ [Integrazione di Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=it){target=_blank}
 
 + [Documentazione](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=it){target=_blank}

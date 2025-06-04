@@ -1,6 +1,6 @@
 ---
 title: Sviluppare un blocco con CSS e JS
-description: Sviluppa un blocco con CSS e JavaScript per Edge Delivery Services, modificabile tramite l’Editor universale.
+description: Sviluppa un blocco con CSS e JavaScript per Edge Delivery Services, modificabile tramite l’editor universale.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,41 +11,41 @@ jira: KT-15832
 duration: 900
 exl-id: 41c4cfcf-0813-46b7-bca0-7c13de31a20e
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '772'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Sviluppare un blocco con CSS e JavaScript
 
-Nel [capitolo precedente](./7b-block-js-css.md), era incluso lo stile di un blocco che utilizzava solo CSS. Ora l’attenzione si sposta sullo sviluppo di un blocco con JavaScript e CSS.
+Il [capitolo precedente](./7b-block-js-css.md) era incentrato sullo stile di un blocco utilizzando solo CSS. Ora il focus si sposta sullo sviluppo di un blocco sia con JavaScript che con CSS.
 
 Questo esempio mostra come migliorare un blocco in tre modi:
 
 1. Aggiunta di classi CSS personalizzate.
 1. Utilizzo dei listener di eventi per aggiungere movimento.
-1. Gestione di termini e condizioni che possono essere facoltativamente inclusi nel testo del teaser.
+1. Gestione di termini e condizioni che possono essere inclusi facoltativamente nel testo del teaser.
 
 ## Casi d’uso comuni
 
 Questo approccio è particolarmente utile nei seguenti scenari:
 
-- **Gestione CSS esterna:** quando il CSS del blocco viene gestito all&#39;esterno di Edge Delivery Services e non è allineato con la struttura HTML.
-- **Attributi aggiuntivi:** Quando sono necessari attributi aggiuntivi, ad esempio [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) per l&#39;accessibilità o [microdati](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata).
-- **Miglioramenti di JavaScript:** Quando sono necessarie funzionalità interattive, come i listener di eventi.
+- **Gestione CSS esterna:** quando il CSS del blocco viene gestito all’esterno di Edge Delivery Services e non è allineato con la struttura HTML.
+- **Attributi aggiuntivi:** quando sono necessari attributi aggiuntivi, ad esempio [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) per l’accessibilità o [microdati](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata).
+- **Miglioramenti di JavaScript:** quando sono necessarie funzionalità interattive, come i listener di eventi.
 
-Questo metodo si basa sulla manipolazione DOM di JavaScript nativa del browser, ma richiede cautela quando si modifica il DOM, in particolare quando si spostano gli elementi. Tali modifiche possono interrompere l&#39;esperienza di authoring dell&#39;editor universale. Idealmente, il [modello di contenuto](./5-new-block.md#block-model) del blocco dovrebbe essere progettato in modo accurato per ridurre al minimo la necessità di modifiche DOM estese.
+Questo metodo si basa sulla manipolazione del DOM di JavaScript nativo del browser, ma richiede cautela nella modifica, in particolare se si spostano gli elementi. Tali modifiche possono interrompere l’esperienza di authoring dell’editor universale. Idealmente, il [modello di contenuto](./5-new-block.md#block-model) del blocco dovrebbe essere progettato in modo accurato per ridurre al minimo la necessità di modifiche al DOM estese.
 
-## Blocca HTML
+## HTML del blocco
 
-Per avvicinarti allo sviluppo dei blocchi, inizia esaminando il DOM esposto da Edge Delivery Services. La struttura viene migliorata con JavaScript e formattata con CSS.
+Per approcciarti allo sviluppo dei blocchi, inizia esaminando il DOM esposto da Edge Delivery Services. La struttura viene migliorata con JavaScript e lo stile aggiunto con CSS.
 
 >[!BEGINTABS]
 
->[!TAB DOM da decorare]
+>[!TAB DOM da arricchire]
 
-Di seguito è riportato il DOM del blocco teaser che è la destinazione da decorare utilizzando JavaScript e CSS.
+Di seguito è riportato il DOM del blocco teaser che è l’obiettivo da arricchire utilizzando JavaScript e CSS.
 
 ```html
 ...
@@ -83,16 +83,16 @@ Di seguito è riportato il DOM del blocco teaser che è la destinazione da decor
 
 >[!TAB Come trovare il DOM]
 
-Per trovare il DOM da decorare, apri la pagina con il blocco non decorato nel tuo ambiente di sviluppo locale, seleziona il blocco e controlla il DOM.
+Per trovare il DOM da arricchire, apri la pagina con il blocco non arricchito nel tuo ambiente di sviluppo locale, seleziona il blocco e ispeziona il DOM.
 
-![Controlla DOM](./assets/7a-block-css/inspect-block-dom.png) del blocco
+![Ispezionare il DOM del blocco](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
 
-## Blocca JavaScript
+## JavaScript del blocco
 
-Per aggiungere funzionalità JavaScript a un blocco, creare un file JavaScript nella directory del blocco con lo stesso nome del blocco, ad esempio `/blocks/teaser/teaser.js`.
+Per aggiungere funzionalità JavaScript a un blocco, crea un file JavaScript nella stessa directory e con lo stesso nome del blocco, ad esempio `/blocks/teaser/teaser.js`.
 
 Il file JavaScript deve esportare una funzione predefinita:
 
@@ -100,15 +100,15 @@ Il file JavaScript deve esportare una funzione predefinita:
 export default function decorate(block) { ... }
 ```
 
-La funzione predefinita utilizza l’elemento/albero DOM che rappresenta il blocco nel HTML di Edge Delivery Services e contiene il JavaScript personalizzato eseguito al momento del rendering del blocco.
+La funzione predefinita porta l’elemento/albero DOM che rappresenta il blocco in HTML di Edge Delivery Services e contiene JavaScript personalizzato eseguito al momento del rendering del blocco.
 
 In questo esempio JavaScript esegue tre azioni principali:
 
-1. Aggiunge un listener di eventi al pulsante CTA, ingrandendo l&#39;immagine al passaggio del mouse.
+1. Aggiunge un listener di eventi al pulsante CTA, ingrandendo l’immagine al passaggio del mouse.
 1. Aggiunge classi CSS semantiche agli elementi del blocco, utili per l’integrazione dei sistemi di progettazione CSS esistenti.
 1. Aggiunge una classe CSS speciale ai paragrafi che iniziano con `Terms and conditions:`.
 
-[!BADGE /blocks/teaser/teaser.js]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/teaser/teaser.js]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```javascript
 /* /blocks/teaser/teaser.js */
@@ -171,17 +171,17 @@ export default function decorate(block) {
 }
 ```
 
-## Blocca CSS
+## CSS del blocco
 
-Se hai creato un `teaser.css` nel [capitolo precedente](./7a-block-css.md), eliminalo o rinominalo `teaser.css.bak`, poiché questo capitolo implementa CSS diversi per il blocco teaser.
+Se hai creato un `teaser.css` nel [capitolo precedente](./7a-block-css.md) eliminalo o rinominalo `teaser.css.bak`, poiché questo capitolo implementa CSS diversi per il blocco teaser.
 
-Crea un file `teaser.css` nella cartella del blocco. Questo file contiene il codice CSS che assegna lo stile al blocco. Questo codice CSS esegue il targeting degli elementi del blocco e delle specifiche classi CSS di semantica aggiunte dal JavaScript in `teaser.js`.
+Crea un file `teaser.css` nella cartella del blocco. Questo file contiene il codice CSS che assegna lo stile al blocco. Questo codice CSS agisce sugli elementi del blocco e delle specifiche classi CSS semantiche aggiunte da JavaScript in `teaser.js`.
 
-Gli elementi nudi possono ancora essere formattati direttamente o con le classi CSS applicate personalizzate. Per blocchi più complessi, l’applicazione di classi CSS semantiche può contribuire a rendere il CSS più comprensibile e gestibile, soprattutto quando si lavora con team più grandi per periodi di tempo più lunghi.
+Agli elementi nudi lo stile può essere assegnato direttamente o con le classi CSS applicate personalizzate. Per blocchi più complessi, l’applicazione di classi CSS semantiche può contribuire a rendere il CSS più comprensibile e gestibile, soprattutto quando si lavora con team più grandi per periodi di tempo più lunghi.
 
-[Come prima](./7a-block-css.md#develop-a-block-with-css), assegna il CSS a `.block.teaser` utilizzando [la nidificazione CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) per evitare conflitti con altri blocchi.
+[Come prima](./7a-block-css.md#develop-a-block-with-css), definisci l’ambito del CSS come `.block.teaser` utilizzando [la nidificazione CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) per evitare conflitti con altri blocchi.
 
-[!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```css
 /* /blocks/teaser/teaser.css */
@@ -294,11 +294,11 @@ Gli elementi nudi possono ancora essere formattati direttamente o con le classi 
 }
 ```
 
-## Aggiungi termini e condizioni
+## Aggiungere termini e condizioni
 
-L&#39;implementazione di cui sopra aggiunge il supporto per paragrafi con stili speciali che iniziano con il testo `Terms and conditions:`. Per convalidare questa funzionalità, in Universal Editor aggiorna il contenuto di testo del blocco teaser in modo da includere termini e condizioni.
+L’implementazione di cui sopra aggiunge il supporto per paragrafi con stili speciali che iniziano con il testo `Terms and conditions:`. Per convalidare questa funzionalità, aggiorna il contenuto di testo del blocco teaser nell’editor universale in modo da includere termini e condizioni.
 
-Segui i passaggi descritti in [creare un blocco](./6-author-block.md) e modifica il testo in modo da includere un paragrafo **termini e condizioni** alla fine:
+Segui i passaggi descritti in [authoring di un blocco](./6-author-block.md) e modifica il testo in modo da includere un paragrafo **termini e condizioni** alla fine:
 
 ```
 WKND Adventures
@@ -308,17 +308,17 @@ Join us on one of our next adventures. Browse our list of curated experiences an
 Terms and conditions: By signing up, you agree to the rules for participation and booking.
 ```
 
-Verifica che nell’ambiente di sviluppo locale venga eseguito il rendering del paragrafo con lo stile termini e condizioni. Ricorda che queste modifiche al codice non vengono applicate nell&#39;editor universale finché non vengono [inviate a un ramo su GitHub](#preview-in-universal-editor) per il quale è stato configurato l&#39;utilizzo dell&#39;editor universale.
+Verifica che nell’ambiente di sviluppo locale venga eseguito il rendering del paragrafo con lo stile termini e condizioni. Ricorda che queste modifiche al codice non vengono applicate nell’editor universale finché non vengono [inviate a un ramo su GitHub](#preview-in-universal-editor) per il quale è stato configurato l’utilizzo.
 
 ## Anteprima di sviluppo
 
-Con l’aggiunta di CSS e JavaScript, l’ambiente di sviluppo locale della CLI di AEM ricarica a caldo le modifiche, consentendo una visualizzazione rapida e semplice dell’impatto del codice sul blocco. Passa il puntatore del mouse sul CTA e verifica che l’immagine del teaser si ingrandisca e si ingrandisca.
+Con l’aggiunta di CSS e JavaScript, l’ambiente di sviluppo locale di AEM CLI ricarica le modifiche, consentendo una visualizzazione rapida e semplice dell’impatto del codice sul blocco. Passa il puntatore sul CTA e verifica che l’immagine del teaser esegua lo zoom in e lo zoom out.
 
 ![Anteprima di sviluppo locale del teaser tramite CSS e JS](./assets/7b-block-js-css/local-development-preview.png)
 
-## Illustra il codice
+## Eseguire il linting del codice
 
-Assicurati di [collegare frequentemente](./3-local-development-environment.md#linting) le modifiche al codice per mantenerlo pulito e coerente. L&#39;linting regolare consente di risolvere i problemi in anticipo, riducendo il tempo di sviluppo complessivo. Ricorda che non puoi unire il tuo lavoro di sviluppo nel ramo `main` finché non saranno stati risolti tutti i problemi di linting.
+Assicurati di [eseguire frequentemente il linting](./3-local-development-environment.md#linting) del codice per mantenerlo pulito e coerente. L’esecuzione del linting regolare consente di individuare i problemi in anticipo, riducendo il tempo di sviluppo complessivo. Ricorda che non puoi unire il tuo lavoro di sviluppo nel ramo `main` finché non saranno stati risolti tutti i problemi di linting.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -328,7 +328,7 @@ $ npm run lint
 
 ## Anteprima nell’editor universale
 
-Per visualizzare le modifiche nell’Editor universale di AEM, aggiungili, esegui il commit e inviali al ramo dell’archivio Git utilizzato dall’Editor universale. In questo modo l’implementazione del blocco non interrompe l’esperienza di authoring.
+Per visualizzare le modifiche nell’editor universale di AEM, aggiungile, confermale e inviale al ramo dell’archivio Git utilizzato dall’editor universale. In questo modo, l’implementazione del blocco non interferirà con l’esperienza di authoring.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -338,6 +338,6 @@ $ git commit -m "CSS and JavaScript implementation for teaser block"
 $ git push origin teaser
 ```
 
-È ora possibile visualizzare in anteprima le modifiche nell&#39;editor universale quando si aggiunge il parametro di query `?ref=teaser`.
+Ora puoi visualizzare in anteprima le modifiche nell’editor universale quando aggiungi il parametro di query `?ref=teaser`.
 
-![Teaser nell&#39;editor universale](./assets/7b-block-js-css/universal-editor-preview.png)
+![Teaser nell’editor universale](./assets/7b-block-js-css/universal-editor-preview.png)

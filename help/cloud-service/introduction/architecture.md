@@ -1,6 +1,6 @@
 ---
 title: Architettura di AEM as a Cloud Service
-description: Esplora l’architettura sottostante e le parti importanti di AEM as a Cloud Service con i Edge Delivery Services.
+description: Esplora l’architettura sottostante e i componenti importanti di AEM as a Cloud Service con Edge Delivery Services.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -12,9 +12,9 @@ last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: c7ccfee6-c252-4ba4-831a-1c37b36ac964
 duration: 375
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '48'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Esplora l’architettura sottostante e le parti importanti di AEM as a Cloud Service con i Edge Delivery Services.
+Esplora l’architettura sottostante e i componenti importanti di AEM as a Cloud Service con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/346182?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/330542?quality=12&learn=on)

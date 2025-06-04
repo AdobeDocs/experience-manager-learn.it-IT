@@ -1,6 +1,6 @@
 ---
 title: Struttura del documento per Edge Delivery Services
-description: Esplora come un documento Edge Delivery Services viene creato utilizzando sezioni, contenuto predefinito e altro ancora.
+description: Esplora in che modo un documento Edge Delivery Services viene creato utilizzando sezioni, contenuto predefinito e altro ancora.
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,14 +13,14 @@ thumbnail: 3425716.jpeg
 duration: 194
 exl-id: f6e9822b-1803-4aff-aac4-714146568f91
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '40'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Struttura del documento
+# Struttura dei documenti
 
-Esplora come un documento Edge Delivery Services viene creato utilizzando sezioni, contenuto predefinito e altro ancora.
+Esplora in che modo un documento Edge Delivery Services viene creato utilizzando sezioni, contenuto predefinito e altro ancora.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445197/?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)

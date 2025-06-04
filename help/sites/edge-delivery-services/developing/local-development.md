@@ -1,6 +1,6 @@
 ---
 title: Configurare un ambiente di sviluppo locale per Edge Delivery Services
-description: Come impostare un ambiente di sviluppo locale per Edge Delivery Services.
+description: Come configurare un ambiente di sviluppo locale per Edge Delivery Services.
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,35 +13,35 @@ thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Configurare un ambiente di sviluppo locale
 
-Come impostare un ambiente di sviluppo locale per Edge Delivery Services.
+Come configurare un ambiente di sviluppo locale per lo sviluppo di Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3434739/?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
 
 
 ## Passaggi descritti nel video
 
-1. Installare AEM CLI
+1. Installare le CLI di AEM
 
    ```
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. Cambia la directory nella directory del progetto che è un archivio Git creato dal modello [AEM boilerplate](https://github.com/adobe/aem-boilerplate).
+1. Cambia la directory nella directory del progetto che è un archivio Git creato dal modello [AEM standard](https://github.com/adobe/aem-boilerplate).
 
    ```
    $ git clone git@github.com:my-org/my-project.git
    $ cd my-project
    ```
 
-1. Esegui AEM CLI per avviare l’istanza AEM locale.
+1. Esegui le CLI di AEM per avviare l’istanza AEM locale.
 
    ```
    $ pwd
@@ -60,4 +60,4 @@ Come impostare un ambiente di sviluppo locale per Edge Delivery Services.
    opening default browser: http://localhost:3000/
    ```
 
-1. Apri http://localhost:3000/ nel browser per visualizzare il tuo sito web AEM.
+1. Apri http://localhost:3000/ nel browser web per visualizzare il tuo sito web AEM.

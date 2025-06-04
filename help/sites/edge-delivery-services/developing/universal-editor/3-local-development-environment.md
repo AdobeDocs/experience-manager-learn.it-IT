@@ -1,6 +1,6 @@
 ---
 title: Configurare un ambiente di sviluppo locale
-description: Configurare un ambiente di sviluppo locale per i siti forniti con Edge Delivery Services e modificabili con Universal Editor.
+description: Configurare un ambiente di sviluppo locale per i siti da distribuire tramite Edge Delivery Services e modificabili con l’editor universale.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,53 +11,53 @@ jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '994'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Configurare un ambiente di sviluppo locale
 
-Un ambiente di sviluppo locale è essenziale per lo sviluppo rapido di siti web forniti da Edge Delivery Services. L’ambiente utilizza codice sviluppato localmente per l’approvvigionamento dei contenuti da Edge Delivery Services, consentendo agli sviluppatori di visualizzare immediatamente le modifiche al codice. Questa configurazione supporta lo sviluppo e il test rapidi e iterativi.
+Un ambiente di sviluppo locale è essenziale per lo sviluppo rapido di siti web distribuiti da Edge Delivery Services. L’ambiente utilizza codice sviluppato localmente per contenuti forniti da Edge Delivery Services, consentendo agli sviluppatori di visualizzare immediatamente le modifiche apportate al codice. Questa configurazione supporta lo sviluppo e il test rapidi e iterativi.
 
-Gli strumenti e i processi di sviluppo per un progetto di sito web Edge Delivery Services sono progettati per essere familiari agli sviluppatori web e fornire un’esperienza di sviluppo veloce ed efficiente.
+Gli strumenti e i processi di sviluppo per un progetto di sito web Edge Delivery Services sono progettati per risultare familiari agli sviluppatori web e fornire un’esperienza di sviluppo veloce ed efficiente.
 
 ## Topologia di sviluppo
 
-Questo video offre una panoramica della topologia di sviluppo di un progetto Edge Delivery Services per siti Web modificabile con Universal Editor.
+Questo video offre una panoramica della topologia di sviluppo di un progetto di sito web Edge Delivery Services modificabile con l’editor universale.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443986/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
 
-+++Vedi ulteriori dettagli sulla topologia di sviluppo
++++Ulteriori dettagli sulla topologia di sviluppo
 
 - **Archivio GitHub**:
-   - **Scopo**: ospita il codice del sito Web (CSS e JavaScript).
+   - **Scopo**: ospita il codice del sito web (CSS e JavaScript).
    - **Struttura**: il **ramo principale** contiene codice pronto per la produzione, mentre altri rami contengono codice funzionante.
-   - **Funzionalità**: il codice da qualsiasi ramo può essere eseguito negli ambienti **production** o **preview** senza influire sul sito Web attivo.
+   - **Funzionalità**: il codice presente i tutti i rami può essere eseguito per ambienti **di produzione** o **di anteprima**, senza influire sul sito web live.
 
-- **Servizio di authoring di AEM**:
-   - **Scopo**: funge da archivio dei contenuti canonici in cui il contenuto del sito Web viene modificato e gestito.
-   - **Funzionalità**: il contenuto viene letto e scritto da **Universal Editor**. Il contenuto modificato è pubblicato in **Edge Delivery Services** in **ambienti di produzione** o **anteprima**.
+- **Servizio AEM Author**
+   - **Scopo**: funge da archivio dei contenuti canonici in cui il contenuto del sito web viene modificato e gestito.
+   - **Funzionalità**: il contenuto viene letto e scritto dall’**editor universale**. Il contenuto modificato viene pubblicato in **Edge Delivery Services** in ambienti **di produzione** o **di anteprima**.
 
 - **Editor universale**:
-   - **Scopo**: fornisce un&#39;interfaccia di WYSIWYG per la modifica del contenuto del sito Web.
-   - **Funzionalità**: legge e scrive nel **servizio AEM Author**. Può essere configurato per utilizzare il codice di qualsiasi ramo nell&#39;archivio **GitHub** per testare e convalidare le modifiche.
+   - **Scopo**: fornisce un’interfaccia WYSIWYG per la modifica del contenuto del sito web.
+   - **Funzionalità**: legge e scrive nel **servizio AEM Author**. Può essere configurato per utilizzare il codice di qualsiasi ramo nell’archivio **GitHub** per testare e convalidare le modifiche.
 
 - **Edge Delivery Services**:
    - **Ambiente di produzione**:
-      - **Scopo**: consegna il contenuto e il codice del sito Web attivo agli utenti finali.
-      - **Funzionalità**: fornisce il contenuto pubblicato dal **servizio AEM Author** utilizzando il codice del **ramo principale** dell&#39;archivio **GitHub**.
-   - **Anteprima ambiente**:
-      - **Scopo**: fornisce un ambiente di gestione temporanea per testare e visualizzare in anteprima il contenuto e il codice prima della distribuzione.
-      - **Funzionalità**: gestisce il contenuto pubblicato dal servizio **AEM Author** utilizzando il codice di qualsiasi ramo dell&#39;archivio **GitHub**, consentendo l&#39;esecuzione di test approfonditi senza influire sul sito Web attivo.
+      - **Scopo**: consegna agli utenti finali il contenuto e il codice del sito web live.
+      - **Funzionalità**: fornisce il contenuto pubblicato dal **servizio AEM Author** utilizzando il codice del **ramo principale** dell’**archivio GitHub**.
+   - **Ambiente di anteprima**:
+      - **Scopo**: fornisce un ambiente di staging in cui testare e visualizzare in anteprima il contenuto e il codice prima dell’implementazione.
+      - **Funzionalità**: fornisce il contenuto pubblicato dal **servizio di authoring AEM** utilizzando il codice di qualsiasi ramo dell’**archivio GitHub**, consentendo l’esecuzione di test approfonditi senza influire sul sito web live.
 
-- **Ambiente sviluppatore locale**:
+- **Ambiente di sviluppo locale**:
    - **Scopo**: consente agli sviluppatori di scrivere e testare il codice (CSS e JavaScript) localmente.
    - **Struttura**:
-      - Clone locale dell&#39;**archivio GitHub** per lo sviluppo basato su ramo.
-      - **AEM CLI**, che funge da server di sviluppo, applica le modifiche al codice locale all&#39;**ambiente di anteprima** per un&#39;esperienza di ricaricamento a caldo.
-   - **Flusso di lavoro**: gli sviluppatori scrivono il codice localmente, eseguono il commit delle modifiche in un ramo di lavoro, inviano il ramo a GitHub, lo convalidano nell&#39;**Editor universale** (utilizzando il ramo specificato) e lo uniscono nel **ramo principale** quando è pronto per la distribuzione nell&#39;ambiente di produzione.
+      - Clone locale dell’**archivio GitHub** per lo sviluppo basato su rami.
+      - La **CLI di AEM**, che funge da server di sviluppo, applica le modifiche del codice locale all’**ambiente di anteprima** per un’esperienza di ricaricamento immediato.
+   - **Flusso di lavoro**: gli sviluppatori scrivono il codice localmente, eseguono il commit delle modifiche in un ramo di lavoro, inviano il ramo a GitHub, lo convalidano nell’**editor universale** (utilizzando il ramo specificato) e lo uniscono nel **ramo principale** quando è pronto per essere implementato nell’ambiente di produzione.
 
 +++
 
@@ -67,24 +67,24 @@ Prima di avviare lo sviluppo, installa sul computer quanto segue:
 
 1. [Git](https://git-scm.com/)
 1. [Node.js e npm](https://nodejs.org)
-1. [Microsoft Visual Studio Code](https://code.visualstudio.com/) (o editor di codice simile)
+1. [Microsoft Visual Studio Code](https://code.visualstudio.com/) (o altro editor di codice simile)
 
 ## Clonare l’archivio GitHub
 
-Clona l&#39;archivio [GitHub creato nel nuovo capitolo del progetto di codice](./1-new-code-project.md) che contiene il progetto di codice Edge Delivery Services di AEM nell&#39;ambiente di sviluppo locale.
+Clona nell’ambiente di sviluppo locale l’[archivio GitHub creato nel capitolo sul nuovo progetto di codice](./1-new-code-project.md), contenente il progetto di codice AEM Edge Delivery Services.
 
-![Clone archivio GitHub](./assets/3-local-development-environment/github-clone.png)
+![Clone dell’archivio GitHub](./assets/3-local-development-environment/github-clone.png)
 
 ```bash
 $ cd ~/Code
 $ git clone git@github.com:<YOUR_ORG>/aem-wknd-eds-ue.git
 ```
 
-Nella directory `Code` viene creata una nuova cartella `aem-wknd-eds-ue` che funge da radice del progetto. Anche se il progetto può essere clonato in qualsiasi posizione sul computer, questa esercitazione utilizza `~/Code` come directory principale.
+Viene creata una nuova cartella `aem-wknd-eds-ue` nella directory `Code`, che funge da directory principale del progetto. Anche se il progetto può essere clonato in qualsiasi posizione sul computer, per questo tutorial viene utilizzato `~/Code` come directory principale.
 
 ## Installare le dipendenze del progetto
 
-Passare alla cartella del progetto e installare le dipendenze richieste con `npm install`. Anche se i progetti Edge Delivery Services non utilizzano i sistemi di build tradizionali di Node.js come Webpack o Vite, richiedono ancora diverse dipendenze per lo sviluppo locale.
+Passare alla cartella del progetto e installare le dipendenze richieste tramite `npm install`. Anche se i progetti Edge Delivery Services non utilizzano i sistemi di build Node.js tradizionali, come Webpack o Vite, richiedono comunque diverse dipendenze per lo sviluppo locale.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -92,9 +92,9 @@ Passare alla cartella del progetto e installare le dipendenze richieste con `npm
 $ npm install
 ```
 
-## Installare AEM CLI
+## Installare le CLI di AEM
 
-AEM CLI è uno strumento da riga di comando di Node.js progettato per semplificare lo sviluppo di siti web AEM basati su Edge Delivery Services, che fornisce un server di sviluppo locale per lo sviluppo e il test rapidi del sito web.
+AEM CLI è uno strumento per riga di comando di Node.js progettato per semplificare lo sviluppo di siti web AEM basati su Edge Delivery Services, che fornisce un server di sviluppo locale per lo sviluppo e il test rapidi del sito web.
 
 Per installare AEM CLI, esegui:
 
@@ -106,9 +106,9 @@ $ npm install @adobe/aem-cli
 
 AEM CLI può essere installato anche a livello globale utilizzando `npm install --global @adobe/aem-cli`.
 
-## Avvia il server di sviluppo AEM locale
+## Avviare il server di sviluppo AEM locale
 
-Il comando `aem up` avvia il server di sviluppo locale e apre automaticamente una finestra del browser all&#39;URL del server. Questo server funge da proxy inverso per l’ambiente Edge Delivery Services, distribuendo i contenuti da tale ambiente e utilizzando la base di codice locale per lo sviluppo.
+Il comando `aem up` avvia il server di sviluppo locale e apre automaticamente una finestra del browser all’URL del server. Questo server funge da proxy inverso per l’ambiente Edge Delivery Services, distribuendo i contenuti da tale ambiente e utilizzando la base di codice locale per lo sviluppo.
 
 ```bash
 $ cd ~/Code/aem-wknd-eds-ue 
@@ -125,23 +125,23 @@ info: Local AEM dev server up and running: http://localhost:3000/
 info: Enabled reverse proxy to https://main--aem-wknd-eds-ue--<YOUR_ORG>.aem.page
 ```
 
-AEM CLI apre il sito Web nel browser in `http://localhost:3000/`. Le modifiche al progetto vengono ricaricate automaticamente a caldo nel browser Web, mentre le modifiche al contenuto [richiedono la pubblicazione nell&#39;ambiente di anteprima](./6-author-block.md) e l&#39;aggiornamento del browser Web.
+AEM CLI apre il sito web nel browser all’indirizzo `http://localhost:3000/`. Le modifiche al progetto vengono effettuate con caricamento rapido automatico nel browser web, mentre le modifiche al contenuto [richiedono la pubblicazione nell’ambiente di anteprima](./6-author-block.md) e l’aggiornamento del browser web.
 
-Se il sito Web viene aperto con una pagina 404, è probabile che [fstab.yaml o paths.json](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) aggiornati nel [nuovo progetto di codice](./1-new-code-project.md) non siano configurati correttamente o che le modifiche non siano state applicate al ramo `main`.
+Se il sito web si apre con una pagina 404, è probabile che i file [fstab.yaml o paths.json](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) aggiornati nel [nuovo progetto di codice](./1-new-code-project.md) non siano configurati correttamente o che le modifiche non siano state applicate al ramo `main`.
 
 ## Creare frammenti JSON
 
-I progetti Edge Delivery Services, creati utilizzando il [modello XWalk boilerplate di AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk), si basano su configurazioni JSON che abilitano l&#39;authoring dei blocchi nell&#39;editor universale.
+I progetti Edge Delivery Services, creati utilizzando il [modello standard XWalk di AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk), si basano su configurazioni JSON che abilitano l’authoring dei blocchi nell’editor universale.
 
-- **Frammenti JSON**: memorizzati con i blocchi associati e definiscono i modelli di blocco, le definizioni e i filtri.
-   - **Frammenti modello**: archiviati in `/blocks/example/_example.json`.
-   - **Frammenti di definizione**: archiviati in `/blocks/example/_example.json`.
-   - **Frammenti filtro**: archiviati in `/blocks/example/_example.json`.
+- **Frammenti JSON**: sono memorizzati con i blocchi associati e definiscono i modelli dei blocchi, le definizioni e i filtri.
+   - **Frammenti di modello**: sono memorizzati in `/blocks/example/_example.json`.
+   - **Frammenti di definizione**: sono memorizzati in `/blocks/example/_example.json`.
+   - **Frammenti di filtro**: sono memorizzati in `/blocks/example/_example.json`.
 
 
-Il modello di progetto XWalk [AEM Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-xwalk) include un hook di pre-commit [Husky](https://typicode.github.io/husky/) che rileva le modifiche ai frammenti JSON e le compila nei file `component-*.json` appropriati al `git commit`.
+Il [modello di progetto standard XWalk di AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk) include un hook di pre-commit [Husky](https://typicode.github.io/husky/) che rileva le modifiche ai frammenti JSON e le compila nei file `component-*.json` appropriati al momento del `git commit`.
 
-Anche se i seguenti script NPM possono essere eseguiti manualmente tramite `npm run` per generare i file JSON, in genere questo non è necessario in quanto l&#39;hook di pre-commit husky lo gestisce automaticamente.
+I seguenti script NPM possono essere eseguiti manualmente tramite `npm run` per generare i file JSON, ma in genere questo non è necessario in quanto l’hook di pre-commit Husky lo gestisce automaticamente.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -152,9 +152,9 @@ npm run build:json
 | Script NPM | Descrizione |
 |--------------------|-----------------------------------------------------------------------------|
 | `build:json` | Crea tutti i file JSON dai frammenti e li aggiunge ai file `component-*.json` appropriati. |
-| `build:json:models` | Genera frammenti JSON bloccati e li compila in `/component-models.json`. |
-| `build:json:definitions` | Genera frammenti JSON della pagina e li compila in `/component-definitions.json`. |
-| `build:json:filters` | Genera frammenti JSON della pagina e li compila in `/component-filters.json`. |
+| `build:json:models` | Genera frammenti JSON dei blocchi e li compila in `/component-models.json`. |
+| `build:json:definitions` | Genera frammenti JSON di pagine e li compila in `/component-definitions.json`. |
+| `build:json:filters` | Genera frammenti JSON di pagine e li compila in `/component-filters.json`. |
 
 >[!TIP]
 >
@@ -162,7 +162,7 @@ npm run build:json
 
 ## Linting
 
-L&#39;indicazione garantisce la qualità e la coerenza del codice, necessarie per i progetti Edge Delivery Services prima di unire le modifiche nel ramo `main`.
+Il linting garantisce la qualità e la coerenza del codice, necessarie per i progetti Edge Delivery Services prima che si possa procedere all’unione delle modifiche nel ramo `main`.
 
 Gli script NPM possono essere eseguiti tramite `npm run`, ad esempio:
 
@@ -174,13 +174,13 @@ $ npm run lint
 
 | Script NPM | Descrizione |
 |------------------|--------------------------------------------------|
-| `lint:js` | Esegue i controlli di linting di JavaScript. |
+| `lint:js` | Esegue i controlli di linting JavaScript. |
 | `lint:css` | Esegue i controlli di linting CSS. |
-| `lint` | Esegue sia i controlli di linting JavaScript che CSS. |
+| `lint` | Esegue i controlli di linting sia JavaScript che CSS. |
 
-### Correzione automatica dei problemi di linting
+### Correzione automatica degli errori di linting
 
-È possibile risolvere automaticamente i problemi di assegnazione dei punteggi aggiungendo i `scripts` seguenti al progetto `package.json` ed eseguendoli tramite `npm run`:
+È possibile risolvere automaticamente gli errori di linting aggiungendo i seguenti `scripts` al file `package.json` del progetto ed eseguendoli tramite `npm run`:
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -188,7 +188,7 @@ $ npm run lint
 $ npm run lint:fix
 ```
 
-Questi script non sono preconfigurati con il modello XWalk Boilerplate di AEM, ma possono essere aggiunti al file `package.json`:
+Questi script non vengono preconfigurati con il modello standard XWalk di AEM, ma possono essere aggiunti al file `package.json`:
 
 >[!BEGINTABS]
 
@@ -196,13 +196,13 @@ Questi script non sono preconfigurati con il modello XWalk Boilerplate di AEM, m
 
 | Script NPM | Comando | Descrizione |
 |------------------|------------------------------------------------|-------------------------------------------------------|
-| `lint:js:fix` | `npm run lint:js -- --fix` | Corregge automaticamente i problemi di linting di JavaScript. |
-| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css -- --fix` | Corregge automaticamente i problemi di linting CSS. |
-| `lint:fix` | `npm run lint:js:fix && npm run lint:css:fix` | Esegue gli script di correzione JS e CSS per la pulizia rapida. |
+| `lint:js:fix` | `npm run lint:js -- --fix` | Corregge automaticamente gli errori di linting JavaScript. |
+| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css -- --fix` | Corregge automaticamente gli errori di linting CSS. |
+| `lint:fix` | `npm run lint:js:fix && npm run lint:css:fix` | Esegue entrambi gli script di correzione JS e CSS per una pulizia rapida. |
 
->[!TAB esempio package.json]
+>[!TAB Esempio di package.json]
 
-Le seguenti voci di script possono essere aggiunte all&#39;array `scripts` di `package.json`.
+Le seguenti voci di script possono essere aggiunte all’array `scripts` di `package.json`.
 
 ```json
 {

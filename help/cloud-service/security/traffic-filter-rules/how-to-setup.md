@@ -1,6 +1,6 @@
 ---
-title: Come impostare le regole del filtro del traffico, incluse le regole di WAF
-description: Scopri come impostare per creare, distribuire, testare e analizzare i risultati delle regole del filtro del traffico, incluse le regole di WAF.
+title: Come impostare le regole di filtro del traffico, incluse le regole WAF
+description: Scopri come impostare le regole di filtro del traffico, incluse le regole WAF, per crearle, implementarle, testarle e analizzarne i risultati.
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -13,15 +13,15 @@ thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Come impostare le regole del filtro del traffico, incluse le regole di WAF
+# Come impostare le regole di filtro del traffico, incluse le regole WAF
 
-Scopri **come impostare** le regole del filtro del traffico, incluse le regole di WAF. Scopri come creare, distribuire, testare e analizzare i risultati.
+Scopri **come impostare** le regole di filtro del traffico, incluse le regole WAF. Scopri come crearle, distribuirle, testarle e analizzarne i risultati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425407?quality=12&learn=on)
 
@@ -29,20 +29,20 @@ Scopri **come impostare** le regole del filtro del traffico, incluse le regole d
 
 Il processo di configurazione prevede quanto segue:
 
-- _creazione di regole_ con una struttura di progetto e un file di configurazione AEM appropriati.
-- _distribuzione delle regole_ tramite la pipeline di configurazione di Adobe Cloud Manager.
-- _verifica delle regole_ utilizzando vari strumenti per generare il traffico.
-- _analisi dei risultati_ tramite registri CDN AEMCS e strumenti del dashboard.
+- _Creazione delle regole_ con una struttura di progetto e un file di configurazione AEM appropriati.
+- _Implementazione delle regole_ tramite la pipeline di configurazione di Adobe Cloud Manager.
+- _Verifica delle regole_ utilizzando vari strumenti per generare traffico.
+- _Analisi dei risultati_ tramite registri CDN di AEMCS e strumenti della dashboard.
 
 ### Creare regole nel progetto AEM
 
 Per creare le regole, effettua le seguenti operazioni:
 
-1. Al livello principale del progetto AEM, creare una cartella `config`.
+1. Al livello principale del progetto AEM, crea una cartella `config`.
 
-1. Nella cartella `config` creare un nuovo file denominato `cdn.yaml`.
+1. Nella cartella `config` crea un nuovo file denominato `cdn.yaml`.
 
-1. Aggiungere i metadati seguenti al file `cdn.yaml`:
+1. Aggiungi al file `cdn.yaml` i seguenti metadati:
 
 ```yaml
 kind: CDN
@@ -57,53 +57,53 @@ data:
     rules:
 ```
 
-Vedi un esempio del file `cdn.yaml` all&#39;interno del progetto AEM Guides WKND Sites:
+Vedi un esempio del file `cdn.yaml` all’interno del progetto del sito WKND in AEM Guides:
 
-![File e cartella delle regole di progetto WKND AEM](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
+![File e cartella delle regole del progetto WKND di AEM](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
 
-### Distribuire le regole tramite Cloud Manager {#deploy-rules-through-cloud-manager}
+### Implementare le regole tramite Cloud Manager {#deploy-rules-through-cloud-manager}
 
-Per distribuire le regole, effettua le seguenti operazioni:
+Per implementare le regole, effettua le seguenti operazioni:
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
 1. Passa alla scheda _Pipeline_ dalla pagina _Panoramica del programma_, fai clic sul pulsante **+Aggiungi** e seleziona il tipo di pipeline desiderato.
 
-   ![Scheda pipeline Cloud Manager](./assets/cloud-manager-pipelines-card.png)
+   ![Scheda delle pipeline di Cloud Manager](./assets/cloud-manager-pipelines-card.png)
 
-   Nell&#39;esempio precedente, per scopi demo _Aggiungi pipeline non di produzione_ è selezionato poiché viene utilizzato un ambiente di sviluppo.
+   Nell’esempio precedente, l’opzione _Aggiungi pipeline non di produzione_ è selezionata a scopo di demo, poiché viene utilizzato un ambiente di sviluppo.
 
 1. Nella finestra di dialogo _Aggiungi pipeline non di produzione_, scegli e immetti i seguenti dettagli:
 
    1. Passaggio di configurazione:
 
-      - **Tipo**: pipeline di distribuzione
+      - **Tipo**: Pipeline di implementazione
       - **Nome pipeline**: Dev-Config
 
       ![Finestra di dialogo Pipeline di configurazione di Cloud Manager](./assets/cloud-manager-config-pipeline-step1-dialog.png)
 
-   2. Passaggio codice Source:
+   2. Passaggio per il codice sorgente:
 
-      - **Codice da distribuire**: distribuzione di destinazione
-      - **Includi**: Configurazione
-      - **Ambiente di distribuzione**: nome dell&#39;ambiente, ad esempio wknd-program-dev.
-      - **Archivio**: l&#39;archivio Git da cui la pipeline deve recuperare il codice, ad esempio `wknd-site`
-      - **Ramo Git**: nome del ramo dell&#39;archivio Git.
-      - **Posizione codice**: `/config`, corrispondente alla cartella di configurazione di primo livello creata nel passaggio precedente.
+      - **Codice da implementare**: Distribuzione mirata
+      - **Includi**: Config
+      - **Ambiente di implementazione**: nome dell’ambiente, ad esempio wknd-program-dev.
+      - **Archivio**: l’archivio Git da cui la pipeline deve recuperare il codice, ad esempio `wknd-site`
+      - **Ramo Git**: nome del ramo dell’archivio Git.
+      - **Posizione codice**: `/config`, corrisponde alla cartella di configurazione di primo livello creata nel passaggio precedente.
 
       ![Finestra di dialogo Pipeline di configurazione di Cloud Manager](./assets/cloud-manager-config-pipeline-step2-dialog.png)
 
-### Verifica le regole generando traffico
+### Testare le regole generando traffico
 
-Per testare le regole, sono disponibili vari strumenti di terze parti e la tua organizzazione potrebbe avere uno strumento preferito. A scopo dimostrativo, utilizziamo i seguenti strumenti:
+Per testare le regole, sono disponibili vari strumenti di terze parti e la tua organizzazione potrebbe averne uno preferito. A scopo dimostrativo, utilizzeremo i seguenti strumenti:
 
 - [Curl](https://curl.se/) per test di base, ad esempio per richiamare un URL e controllare il codice di risposta.
 
-- [Vegeta](https://github.com/tsenart/vegeta) per l&#39;esecuzione di Denial of Service (DOS). Segui le istruzioni di installazione da [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
+- [Vegeta](https://github.com/tsenart/vegeta) per l’esecuzione di Denial of Service (DoS). Segui le istruzioni di installazione dal [GitHub di Vegeta](https://github.com/tsenart/vegeta#install).
 
-- [Nikto](https://github.com/sullo/nikto/wiki) per trovare potenziali problemi e vulnerabilità di sicurezza come XSS, SQL injection e altro ancora. Segui le istruzioni di installazione da [Nikto GitHub](https://github.com/sullo/nikto).
+- [Nikto](https://github.com/sullo/nikto/wiki) per trovare potenziali problemi e vulnerabilità di sicurezza come XSS, SQL Injection e altro ancora. Segui le istruzioni di installazione dal [GitHub di Nikto](https://github.com/sullo/nikto).
 
-- Verificare che gli strumenti siano installati e disponibili nel terminale eseguendo i comandi seguenti:
+- Verifica che gli strumenti siano installati e disponibili nel terminale eseguendo i comandi seguenti:
 
   ```shell
   # Curl version check
@@ -117,17 +117,17 @@ Per testare le regole, sono disponibili vari strumenti di terze parti e la tua o
   ./nikto.pl -Version
   ```
 
-### Analizzare i risultati utilizzando gli strumenti del dashboard
+### Analizzare i risultati utilizzando gli strumenti della dashboard
 
-Dopo aver creato, distribuito e testato le regole, puoi analizzare i risultati utilizzando i registri **CDN** e **AEMCS-CDN-Log-Analysis-Tooling**. Gli strumenti forniscono un set di dashboard per visualizzare i risultati per lo stack Splunk e ELK (Elasticsearch, Logstash e Kibana).
+Dopo aver creato, distribuito e testato le regole, puoi analizzare i risultati utilizzando i registri **CDN** e **AEMCS-CDN-Log-Analysis-Tooling**. Gli strumenti forniscono un set di dashboard per visualizzare i risultati per gli stack Splunk e ELK (Elasticsearch, Logstash e Kibana).
 
-È possibile clonare gli strumenti dall&#39;archivio GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Quindi, segui le istruzioni per installare e caricare le dashboard **CDN Traffic Dashboard** e **WAF Dashboard** per lo strumento di osservabilità preferito.
+Gli strumenti della dashboard possono essere clonati direttamente dall’archivio GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Quindi, segui le istruzioni per installare e caricare le dashboard **Traffico CDN** e **WAF** per lo strumento di osservabilità preferito.
 
-In questa esercitazione utilizzeremo lo stack ELK. Segui le istruzioni del contenitore Docker [ELK per l&#39;analisi del registro CDN di AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) per configurare lo stack ELK.
+In questo tutorial verrà utilizzato lo stack ELK. Per la configurazione dello stack ELK segui le istruzioni del contenitore [Docker ELK per l’analisi del registro CDN AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md).
 
-- Dopo aver caricato il dashboard di esempio, la pagina dello strumento del dashboard elastico dovrebbe avere un aspetto simile a quella riportata di seguito:
+- Dopo aver caricato la dashboard di esempio, la pagina dello strumento della dashboard Elastic dovrebbe avere un aspetto simile al seguente:
 
-  ![Dashboard regole filtro traffico ELK](./assets/elk-dashboard.png)
+  ![Dashboard delle regole del filtro del traffico ELK](./assets/elk-dashboard.png)
 
 >[!NOTE]
 >
@@ -136,4 +136,4 @@ In questa esercitazione utilizzeremo lo stack ELK. Segui le istruzioni del conte
 
 ## Passaggio successivo
 
-Scopri come dichiarare le regole del filtro del traffico, incluse le regole di WAF nel capitolo [Esempi e analisi dei risultati](./examples-and-analysis.md), utilizzando il progetto AEM WKND Sites.
+Scopri come dichiarare le regole del filtro del traffico, incluse le regole di WAF nel capitolo [Esempi e analisi dei risultati](./examples-and-analysis.md), utilizzando il progetto AEM del sito WKND.

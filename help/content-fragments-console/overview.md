@@ -1,6 +1,6 @@
 ---
 title: Video della console Frammenti di contenuto
-description: Scopri la console Frammenti di contenuto di AEM che semplifica la gestione e l’authoring dei frammenti di contenuto.
+description: Scopri a console Frammenti di contenuto di AEM, che semplifica la gestione e l’authoring dei frammenti di contenuto.
 version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -11,15 +11,15 @@ last-substantial-update: 2023-05-12T00:00:00Z
 doc-type: Catalog
 exl-id: d92c36e2-fbfa-43a3-8c5f-0371cc99f352
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
 # Video della console Frammenti di contenuto
 
-![Editor frammento di contenuto AEM](./assets/main.png)
+![Editor frammenti di contenuto di AEM](./assets/main.png)
 
 La console Frammenti di contenuto di Adobe Experience Manager semplifica la gestione e l’authoring dei frammenti di contenuto. Scopri come sfruttare al meglio la console Frammenti di contenuto con questi video.
 
@@ -38,7 +38,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <a href="./basics/content-fragments-console.md" title="Panoramica della console"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3449340?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3409492?format=jpeg"
                 alt="Panoramica della console">
             </a>
           </figure>
@@ -50,8 +50,8 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./basics/content-fragments-console.md" title="Panoramica">Panoramica della console</a>
             </p>
-            <p class="is-size-6">Breve panoramica dei frammenti di contenuto
-              console.</p>
+            <p class="is-size-6">Breve panoramica della console 
+              Frammenti di contenuto.</p>
             <a href="./basics/content-fragments-console.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -81,10 +81,10 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">4 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./basics/content-fragment-editor.md" title="Panoramica">Panoramica dell'editor</a>
+              <a href="./basics/content-fragment-editor.md" title="Panoramica">Panoramica dell’editor</a>
             </p>
-            <p class="is-size-6">Breve panoramica dei frammenti di contenuto
-              editor.</p>
+            <p class="is-size-6">Breve panoramica dell’editor
+              Frammenti di contenuto.</p>
             <a href="./basics/content-fragment-editor.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -104,8 +104,8 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <a href="./search/fast-filtering.md" title="Filtro rapido"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436704?format=jpeg&captions=ita" alt="Veloce
-                filtro">
+                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Filtro
+                rapido">
             </a>
           </figure>
         </div>
@@ -114,11 +114,11 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./search/fast-filtering.md" title="Filtro rapido">Veloce
-                filtro</a>
+              <a href="./search/fast-filtering.md" title="Filtro rapido">Filtro
+                rapido</a>
             </p>
-            <p class="is-size-6">Individuazione rapida dei frammenti di contenuto con inline
-              filtro.</p>
+            <p class="is-size-6">Individua rapidamente i frammenti di contenuto
+              con il filtro in linea.</p>
             <a href="./search/fast-filtering.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -135,11 +135,11 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/new-editor-toggle.md" title="Attiva/Disattiva nuovo editor"
+            <a href="./editor/new-editor-toggle.md" title="Opzione per passare al nuovo Editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Nuovo
-                Attivazione/disattivazione editor">
+                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Opzione per passare
+                al nuovo Editor">
             </a>
           </figure>
         </div>
@@ -148,10 +148,10 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/new-editor-toggle.md" title="Attiva/Disattiva nuovo editor">Nuovo
-                Attivazione/disattivazione editor</a>
+              <a href="./editor/new-editor-toggle.md" title="Opzione per passare al nuovo Editor">Opzione per passare
+                al nuovo Editor</a>
             </p>
-            <p class="is-size-6">Transizione semplice dal classico al nuovo
+            <p class="is-size-6">Passa direttamente dall’editor classico al nuovo
               editor.</p>
             <a href="./editor/new-editor-toggle.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
@@ -169,11 +169,11 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/non-asset-content-references.md" title="Non risorsa
-              riferimenti ai contenuti" tabindex="-1">
+            <a href="./editor/non-asset-content-references.md" title="Riferimenti di contenuto
+              diversi dalle risorse" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436770?format=jpeg&captions=ita"
-                alt="Riferimenti a contenuti non relativi a risorse">
+                src="https://video.tv.adobe.com/v/3419313?format=jpeg"
+                alt="Riferimenti di contenuto diversi dalle risorse">
             </a>
           </figure>
         </div>
@@ -182,10 +182,10 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/non-asset-content-references.md" title="Non risorsa
-                riferimenti ai contenuti">Riferimenti a contenuti non relativi alle risorse</a>
+              <a href="./editor/non-asset-content-references.md" title="Riferimenti di contenuto
+              diversi dalle risorse">Riferimenti di contenuto diversi dalle risorse</a>
             </p>
-            <p class="is-size-6">Incorporare frammenti di esperienza e pagine in
+            <p class="is-size-6">Incorpora frammenti di esperienza e pagine in
               frammenti di contenuto.</p>
             <a href="./editor/non-asset-content-references.md"
               class="spectrum-Button spectrum-Button--outline
@@ -203,11 +203,11 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/rte-variant-compare.md" title="Confronto varianti editor Rich Text"
+            <a href="./editor/rte-variant-compare.md" title="Confronto varianti RTE"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437558?format=jpeg&captions=ita" alt="RTE
-                confronto varianti">
+                src="https://video.tv.adobe.com/v/3419314?format=jpeg" alt="Confronto varianti
+                RTE">
             </a>
           </figure>
         </div>
@@ -216,11 +216,11 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/rte-variant-compare.md" title="Variante editor Rich Text
-                confronto">Confronto varianti editor Rich Text</a>
+              <a href="./editor/rte-variant-compare.md" title="Confronto varianti
+                RTE">Confronto varianti RTE</a>
             </p>
-            <p class="is-size-6">Facile allineamento del contenuto Rich Text
-              canali.</p>
+            <p class="is-size-6">Allinea facilmente i contenuti Rich Text
+              tra i vari canali.</p>
             <a href="./editor/rte-variant-compare.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -240,7 +240,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <a href="./editor/language-copies.md" title="Copie per lingua"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436964?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3419311?format=jpeg"
                 alt="Copie per lingua">
             </a>
           </figure>
@@ -250,11 +250,11 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/language-copies.md" title="Copie per lingua">Lingua
-                copie</a>
+              <a href="./editor/language-copies.md" title="Copie per lingua">Copie
+                per lingua</a>
             </p>
-            <p class="is-size-6">Gestione semplificata della lingua dei frammenti di contenuto
-              copie</p>
+            <p class="is-size-6">Gestisci facilmente le copie per lingua dei
+              frammenti di contenuto              </p>
             <a href="./editor/language-copies.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -274,7 +274,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <a href="./search/references.md" title="Riferimenti"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3423639?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3420950?format=jpeg"
                 alt="Riferimenti">
             </a>
           </figure>
@@ -286,7 +286,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./search/references.md" title="Riferimenti">Riferimenti</a>
             </p>
-            <p class="is-size-6">Comprendere i riferimenti e le relazioni dei frammenti di contenuto.</p>
+            <p class="is-size-6">Scopri cosa sono i riferimenti e le relazioni dei frammenti di contenuto.</p>
             <a href="./search/references.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">

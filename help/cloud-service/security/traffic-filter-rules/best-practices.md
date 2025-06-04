@@ -1,6 +1,6 @@
 ---
-title: Best practice per le regole del filtro del traffico, incluse le regole di WAF
-description: Scopri le best practice consigliate per le regole del filtro del traffico, incluse le regole di WAF.
+title: Best practice per le regole del filtro del traffico, incluse le regole WAF
+description: Scopri le best practice consigliate per le regole del filtro del traffico, incluse le regole WAF.
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -13,15 +13,15 @@ thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Best practice per le regole del filtro del traffico, incluse le regole di WAF
+# Best practice per le regole del filtro del traffico, incluse le regole WAF
 
-Scopri le best practice consigliate per le regole del filtro del traffico, incluse le regole di WAF. È importante notare che le best practice descritte in questo articolo non sono esaustive e non intendono sostituirsi alle politiche e alle procedure di sicurezza aziendali.
+Scopri le best practice consigliate per le regole del filtro del traffico, incluse le regole WAF. È importante tenere presente che le best practice descritte in questo articolo non sono esaustive e non intendono sostituirsi ai criteri e alle procedure di sicurezza aziendali.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425408?quality=12&learn=on)
 
@@ -29,12 +29,12 @@ Scopri le best practice consigliate per le regole del filtro del traffico, inclu
 
 - Per determinare quali regole sono appropriate per la tua organizzazione, collabora con il team di sicurezza.
 - Esegui sempre il test delle regole negli ambienti di sviluppo prima di distribuirle negli ambienti di staging e produzione.
-- Quando si dichiarano e si convalidano le regole, iniziare sempre con `action` tipo `log` per assicurarsi che la regola non blocchi il traffico legittimo.
-- Per alcune regole, la transizione da `log` a `block` deve essere puramente basata sull&#39;analisi di un traffico del sito sufficiente.
+- Quando dichiari e convalidi le regole, inizia sempre con `action` tipo `log` per garantire che la regola non blocchi il traffico legittimo.
+- Per alcune regole, la transizione da `log` a `block` deve essere puramente basata sull’analisi di un traffico del sito sufficiente.
 - Introduci le regole in modo incrementale e prendi in considerazione la possibilità di coinvolgere i team di test (QA, prestazioni, test di penetrazione) nel processo.
-- Analizza l&#39;impatto delle regole regolarmente utilizzando gli strumenti del [dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). A seconda del volume di traffico del sito, l’analisi può essere eseguita su base giornaliera, settimanale o mensile.
-- Per bloccare il traffico dannoso di cui potresti essere a conoscenza dopo l’analisi, aggiungi eventuali regole aggiuntive. Ad esempio, alcuni IP che hanno attaccato il tuo sito.
-- La creazione, la distribuzione e l’analisi delle regole devono essere un processo continuo e iterativo. Non si tratta di un&#39;attività una tantum.
+- Analizza l’impatto delle regole periodicamente utilizzando gli strumenti della [dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). A seconda del volume di traffico del sito, l’analisi può essere eseguita su base giornaliera, settimanale o mensile.
+- Per bloccare il traffico dannoso di cui potresti venire a conoscenza dopo l’analisi, aggiungi eventuali regole aggiuntive. Ad esempio, alcuni IP che hanno attaccato il tuo sito.
+- La creazione, la distribuzione e l’analisi delle regole devono essere un processo continuo e iterativo. Non si tratta di un’attività singola.
 
 ## Best practice per le regole del filtro del traffico
 
@@ -87,13 +87,13 @@ data:
 
 >[!WARNING]
 >
->Per l&#39;ambiente di produzione, collaborare con il team di sicurezza Web per determinare i valori appropriati per `rateLimit`
+>Per l’ambiente di produzione, collabora con il team di sicurezza web per determinare i valori appropriati per `rateLimit`
 
-## Best practice per le regole di WAF
+## Best practice per le regole WAF
 
-Una volta che WAF è concesso in licenza e abilitato per il programma, i flag di corrispondenza del traffico di WAF vengono visualizzati nei grafici e nei registri delle richieste, anche se non sono stati dichiarati in una regola. Quindi, sei sempre a conoscenza di traffico potenzialmente nuovo dannoso e può creare regole in base alle esigenze. Osserva i flag di WAF che non si riflettono nelle regole dichiarate e prendi in considerazione la loro dichiarazione.
+Una volta che il WAF è concesso in licenza e abilitato per il programma, i flag di corrispondenza del traffico WAF vengono visualizzati nei grafici e nei registri delle richieste, anche se non sono stati dichiarati in una regola. Quindi, sei sempre a conoscenza del nuovo traffico potenzialmente dannoso e puoi creare regole in base alle esigenze. Visualizza i flag del WAF che non si riflettono nelle regole dichiarate e valuta la possibilità di dichiararli.
 
-Considera le regole di WAF riportate di seguito per il progetto AEM. Tuttavia, i valori desiderati per la proprietà `action` e `wafFlags` devono essere determinati in collaborazione con il team di sicurezza.
+Prendi in considerazione le regole WAF riportate di seguito per il progetto AEM. Tuttavia, i valori desiderati per la proprietà `action` e `wafFlags` devono essere determinati in collaborazione con il team di sicurezza.
 
 ```yaml
 kind: CDN

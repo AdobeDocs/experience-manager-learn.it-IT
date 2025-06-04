@@ -1,6 +1,6 @@
 ---
-title: 'Guida introduttiva all’SPA Editor e al SPA remoto: panoramica'
-description: Benvenuti nel tutorial in più parti per gli sviluppatori che desiderano integrare un SPA remoto esistente con contenuti AEM modificabili utilizzando l’editor AEM SPA.
+title: Guida introduttiva all’editor di SPA e alle applicazioni a pagina singola remote - Panoramica
+description: Ti diamo il benvenuto in questo tutorial in più parti progettato per gli sviluppatori che desiderano potenziare un’applicazione a pagina singola remota (SPA) esistente con contenuti AEM modificabili tramite l’editor di SPA di AEM.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -12,9 +12,9 @@ doc-type: Tutorial
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
 duration: 294
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
@@ -22,32 +22,32 @@ ht-degree: 6%
 
 {{edge-delivery-services}}
 
-Benvenuti al tutorial in più parti per gli sviluppatori che desiderano integrare un SPA remoto basato su React (o Next.js) esistente con contenuti AEM modificabili tramite l’editor AEM SPA.
+Ti diamo il benvenuto in questo tutorial in più parti progettato per gli sviluppatori che desiderano potenziare un’applicazione a pagina singola remota basata su React (o Next.js) con contenuti AEM modificabili tramite l’editor SPA di AEM.
 
-Questo tutorial si basa sull&#39;[app WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), un&#39;app React che utilizza contenuti di frammenti di contenuto AEM tramite le API GraphQL dell&#39;AEM, ma non fornisce alcuna funzione di authoring nel contesto dei contenuti SPA.
+Questo tutorial si basa sull’[app GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), un’app React che utilizza contenuto di frammenti di contenuto AEM tramite le API GraphQL di AEM, ma non fornisce alcuna creazione di contenuti SPA nel contesto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444855?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
-## Informazioni sull’esercitazione
+## Informazioni sul tutorial
 
-Il tutorial che illustra come un SPA remoto, o un SPA in esecuzione al di fuori del contesto dell’AEM, può essere aggiornato per utilizzare e distribuire contenuti creati in AEM.
+Il tutorial che illustra come aggiornare un’applicazione a pagina singola remota o in esecuzione al di fuori del contesto di AEM per utilizzare e distribuire contenuti creati in AEM.
 
-La maggior parte delle attività del tutorial si concentrano sullo sviluppo di JavaScript, tuttavia vengono trattati gli aspetti critici che ruotano intorno all’AEM. Questi aspetti includono la definizione di dove il contenuto viene creato e memorizzato nell&#39;AEM e la mappatura delle vie dell&#39;SPA verso le Pagine AEM.
+La maggior parte delle attività del tutorial si concentrano sullo sviluppo di JavaScript, tuttavia vengono trattati gli aspetti critici legati ad AEM. Questi aspetti includono la definizione della posizione in cui il contenuto viene creato e memorizzato in AEM e la mappatura dei percorsi delle applicazioni a pagina singola nelle pagine AEM.
 
-Il tutorial è progettato per funzionare con **AEM as a Cloud Service** ed è composto da due progetti:
+Il tutorial è progettato per utilizzare **AEM as a Cloud Service** ed è composto da due progetti:
 
-1. Il __progetto AEM__ contiene configurazione e contenuto che devono essere distribuiti all&#39;AEM.
-1. Il progetto __App WKND__ è l&#39;SPA da integrare con l&#39;editor SPA dell&#39;AEM
+1. Il __progetto AEM__ contiene la configurazione e il contenuto che devono essere distribuiti in AEM.
+1. Il progetto __App WKND__ è l’applicazione a pagina singola (SPA) da integrare con l’editor di SPA di AEM
 
 ## Codice più recente
 
-+ Il punto iniziale del codice di questo tutorial si trova su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) nella cartella `remote-spa-tutorial`.
++ Il punto iniziale del codice di questo tutorial è disponibile in [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) nella cartella `remote-spa-tutorial`.
 
 ## Prerequisiti
 
 Questo tutorial richiede quanto segue:
 
-+ [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=it)
++ [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime)
 + [Node.js v18](https://nodejs.org/it/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
@@ -57,46 +57,46 @@ Questo tutorial richiede quanto segue:
 
 Questo tutorial presuppone:
 
-+ [Microsoft® Visual Studio Code](https://visualstudio.microsoft.com/) come IDE
++ [Microsoft® Visual Studio Code](https://visualstudio.microsoft.com/it) come IDE
 + Una directory di lavoro di `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
-+ Esecuzione dell&#39;SDK AEM come servizio Author in `http://localhost:4502`
-+ Esecuzione dell&#39;SDK AEM con l&#39;account `admin` locale con password `admin`
-+ Esecuzione dell&#39;SPA su `http://localhost:3000`
++ Esecuzione di AEM SDK come servizio di authoring su `http://localhost:4502`
++ Esecuzione di AEM SDK con l’account `admin` locale con password `admin`
++ Esecuzione dell’applicazione a pagina singola su `http://localhost:3000`
 
 >[!NOTE]
 >
-> **Hai bisogno di assistenza per configurare l&#39;ambiente di sviluppo locale?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it).
+> **Hai bisogno di assistenza per configurare l’ambiente di sviluppo locale?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando l’SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview).
 
-## 1. Configurare AEM per l’editor SPA
+## &#x200B;1. Configurare AEM per l’editor di SPA
 
-Per integrare l’SPA con l’Editor SPA dell’AEM sono necessarie configurazioni dell’AEM. Queste configurazioni vengono gestite e implementate tramite un progetto AEM. In questo capitolo, scopri quali configurazioni sono necessarie e come definirle.
+Per integrare un’applicazione a pagina singola con l’editor di SPA di AEM sono necessarie configurazioni di AEM. Queste configurazioni vengono gestite e distribuite tramite un progetto AEM. In questo capitolo, scoprirai quali configurazioni sono necessarie e come definirle.
 
-+ [Scopri come configurare l’AEM per l’editor SPA](./aem-configure.md)
++ [Scopri come configurare AEM per l’editor di SPA](./aem-configure.md)
 
-## 2. Bootstrap dell’SPA
+## &#x200B;2. Bootstrap dell’applicazione a pagina singola
 
-Affinché l&#39;AEM SPA Editor possa integrare un SPA nel proprio contesto di authoring, è necessario apportare alcune aggiunte all&#39;SPA.
+Affinché l’editor SPA di AEM possa integrare un’applicazione a pagina singola nel contesto di authoring, è necessario apportare alcune aggiunte alla SPA.
 
-+ [Scopri come avviare l’SPA per l’Editor SPA dell’AEM](./spa-bootstrap.md)
++ [Scopri come eseguire il bootstrap dell’applicazione a pagina singola per l’editor di SPA di AEM](./spa-bootstrap.md)
 
-## 3. Componenti fissi modificabili
+## &#x200B;3. Componenti fissi modificabili
 
-Innanzitutto, esplora la possibilità di aggiungere un &quot;componente fisso&quot; modificabile all’SPA. Questo illustra come uno sviluppatore può inserire un componente modificabile specifico nell’SPA. L’autore può modificare il contenuto del componente, ma non può rimuoverlo né modificarne la posizione o le dimensioni.
+Innanzitutto, prova ad aggiungere un “componente fisso” modificabile all’applicazione a pagina singola. Questo illustra come uno sviluppatore può posizionare un componente modificabile specifico nell’applicazione a pagina singola. L’autore può modificare il contenuto del componente, ma non può rimuoverlo né modificarne la posizione o le dimensioni.
 
-+ [Informazioni sui componenti fissi modificabili](./spa-fixed-component.md)
++ [Scopri di più sui componenti fissi modificabili](./spa-fixed-component.md)
 
-## 4. Componenti dei contenitori modificabili
+## &#x200B;4. Componenti dei contenitori modificabili
 
-Quindi, prova ad aggiungere un &quot;componente contenitore&quot; modificabile all’SPA. Questo illustra come uno sviluppatore può inserire un componente contenitore nell’SPA. I componenti Contenitore consentono agli autori di inserire in essi il componente consentito e di regolare il layout dei componenti.
+Successivamente, prova ad aggiungere un “componente contenitore” modificabile all’applicazione a pagina singola. Questo illustra come uno sviluppatore può posizionare un componente contenitore nell’applicazione a pagina singola. I componenti contenitore consentono agli autori di posizionare in essi il componente consentito e di regolare il layout dei componenti.
 
-+ [Scopri i componenti contenitore modificabili](./spa-container-component.md)
++ [Scopri di più sui componenti contenitore modificabili](./spa-container-component.md)
 
-## 5. Percorsi dinamici e componenti modificabili
+## &#x200B;5. Percorsi dinamici e componenti modificabili
 
-Infine, utilizzare i concetti illustrati nei capitoli precedenti per le route dinamiche, ovvero route che visualizzano contenuti diversi in base al parametro della route. Questo illustra come utilizzare l’Editor SPA dell’AEM per creare contenuti su route guidate e derivate da programma.
+Infine, utilizza i concetti illustrati nei capitoli precedenti per i percorsi dinamici; percorsi che mostrano contenuti diversi in base al parametro del percorso. Questo illustra come l’editor di SPA di AEM può essere utilizzato per l’authoring di contenuti su percorsi guidati e derivati a livello di programmazione.
 
-+ [Scopri le route dinamiche e i componenti modificabili](./spa-dynamic-routes.md)
++ [Scopri di più sui percorsi dinamici e i componenti modificabili](./spa-dynamic-routes.md)
 
 ## Risorse aggiuntive
 
-+ [Componenti modificabili di React dell&#39;SPA dell&#39;AEM](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ [Componenti modificabili di React SPA di AEM](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

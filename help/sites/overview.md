@@ -1,15 +1,15 @@
 ---
 title: Video e tutorial su AEM Sites
-description: Sfoglia video e tutorial sulle funzionalità di Adobe Experience Manager Sites. AEM Sites è una piattaforma leader per la gestione delle esperienze.
+description: Sfoglia video e tutorial sulle funzioni e funzionalità di Adobe Experience Manager Sites. AEM Sites è una piattaforma leader per la gestione delle esperienze.
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
 source-git-commit: 85472bce41e7d2911bcb15d1ec70be2b094012fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
@@ -17,42 +17,42 @@ ht-degree: 6%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione delle esperienze. La presente guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Sites.
+Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione delle esperienze. Questa guida utente contiene video e tutorial sulle numerose funzioni e funzionalità di Aem Sites.
 
 ## Tre modi per creare con AEM Sites
 
-AEM Sites offre tre modi per creare, creare e distribuire esperienze. Sia che tu stia creando pagine intere, ottimizzando le prestazioni edge o potenziando le app headless, AEM Sites offre opzioni flessibili per soddisfare le esigenze del tuo progetto:
+AEM Sites offre tre modi per creare, eseguire l’authoring e distribuire esperienze. Sia per la creazione di pagine, l’ottimizzazione delle performance Edge o il potenziamento di app headless, AEM Sites offre opzioni flessibili per rispondere alle esigenze del tuo progetto:
 
-1. **I siti tradizionali** utilizzano l&#39;Editor pagina di AEM Author per creare contenuti, che vengono quindi attivati e consegnati agli utenti finali dalle pagine Web di AEM Publish as HTML.
-1. I siti Web di **Edge Delivery Services** utilizzano l&#39;authoring basato su documenti o Adobe Universal Editor per l&#39;authoring dei contenuti, che viene quindi attivato e quindi consegnato agli utenti finali da Edge Delivery Services come pagine Web di HTML.
-1. **Headless/API-first** le esperienze web utilizzano l&#39;Editor frammento di contenuto o l&#39;Editor universale per creare contenuti, che viene quindi attivato e distribuito da AEM Publish come JSON.
+1. **I siti tradizionali** utilizzano l’editor pagina dell’Authoring AEM per creare contenuti, che vengono quindi attivati e consegnati agli utenti finali dalle pagine web di Pubblicazione AEM come HTML.
+1. I siti Web di **Edge Delivery Services** utilizzano l’authoring basato su documenti o sull’editor universale di Adobe per l’authoring dei contenuti, che vengono quindi attivati e poi consegnati agli utenti finali da Edge Delivery Services come pagine Web come HTML.
+1. Le esperienze web **Headless/API-first** utilizzano l’editor frammento di contenuto o l’editor universale per creare contenuti, che vengono quindi attivati e distribuiti da Pubblicazione AEM come JSON.
 
 Queste opzioni sono progettate per soddisfare le diverse esigenze delle organizzazioni di marketing, per offrire esperienze personalizzate e coinvolgenti ad alta velocità e su larga scala su qualsiasi canale o dispositivo.
 
 Il diagramma seguente illustra i diversi percorsi:
 
-![Percorsi di consegna-authoring-contenuti-AEM-Sites-e-Experience-Delivery.png](./assets/aem-sites-authoring-and-experience-delivery-paths.png){width="700" zoomable="yes"}
+![AEM-Sites-Content-Authoring-and-Experience-Delivery-Paths.png](./assets/aem-sites-authoring-and-experience-delivery-paths.png){width="700" zoomable="yes"}
 
-### Confrontare i modi di generare con AEM Sites
+### Confrontare i metodi di creazione con AEM Sites
 
-La tabella seguente fornisce un confronto di alto livello dei tre percorsi. Si concentra sulle sfumature di authoring dei contenuti e distribuzione delle esperienze di ciascun percorso.
+La tabella seguente fornisce un confronto di alto livello dei tre percorsi. Si incentra sui dettagli di authoring dei contenuti e distribuzione delle esperienze di ciascun percorso.
 
 |            | Siti tradizionali | Edge Delivery Services | Headless/API-First |
 |---------------------|------------------------------|---------------------------------|---------------------------------------------|
-| **Strumenti di authoring** | Editor pagina | Authoring basato su documenti, Editor universale | Frammenti di contenuto, Editor universale |
-| **Archivio contenuti creato** | AEM Author (JCR) | Documenti o AEM Author (JCR) | AEM Author (JCR) |
-| **Distribuzione** | Pubblicazione AEM (con Adobe CDN e Dispatcher) | Edge Delivery Services | Pubblicazione AEM (con Adobe CDN e Dispatcher) |
-| **Archivio contenuti di consegna** | Pubblicazione AEM (JCR) | Edge Delivery Services | Pubblicazione AEM (JCR) |
+| **Strumenti di authoring** | Editor pagina | Authoring basato su documenti, editor universale | Frammenti di contenuto, editor universale |
+| **Archivio contenuti creato** | Authoring AEM (JCR) | Documenti o Authoring AEM (JCR) | Authoring AEM (JCR) |
+| **Consegna** | Pubblicazione AEM (con Adobe CDN e Dispatcher) | Edge Delivery Services | Pubblicazione AEM (con Adobe CDN e Dispatcher) |
+| **Archivio contenuti della consegna** | Pubblicazione AEM (JCR) | Edge Delivery Services | Pubblicazione AEM (JCR) |
 | **Formato di consegna** | HTML | HTML | JSON |
 | **Tecnologia di sviluppo** | Java™, JavaScript, CSS | JavaScript, CSS | Qualsiasi (ad es. Swift, React, ecc.) |
 
 ## Tutorial
 
-Scopri ciascuno dei tre percorsi da generare con AEM Sites tramite le seguenti esercitazioni:
+Scopri ognuno dei tre percorsi con cui creare tramite AEM Sites utilizzando i seguenti tutorial:
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional Sites - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
@@ -62,7 +62,7 @@ Scopri ciascuno dei tre percorsi da generare con AEM Sites tramite le seguenti e
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with EDS.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
@@ -83,9 +83,9 @@ Scopri ciascuno dei tre percorsi da generare con AEM Sites tramite le seguenti e
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview" target="_self" rel="referrer" title="Siti tradizionali - Tutorial WKND">Siti tradizionali - Esercitazione WKND</a>
+                        <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview" target="_self" rel="referrer" title="Siti tradizionali - Tutorial WKND">Siti tradizionali - Tutorial WKND</a>
                     </p>
-                    <p class="is-size-6">Scopri come creare un progetto AEM Sites di esempio utilizzando l’esercitazione WKND. Questa guida descrive la configurazione del progetto, i componenti core, i modelli modificabili, le librerie lato client e lo sviluppo di componenti.</p>
+                    <p class="is-size-6">Scopri come creare un progetto AEM Sites di esempio utilizzando il tutorial WKND. Questa guida descrive la configurazione del progetto, i componenti core, i modelli modificabili, le librerie lato client e lo sviluppo di componenti.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -108,7 +108,7 @@ Scopri ciascuno dei tre percorsi da generare con AEM Sites tramite le seguenti e
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="https://www.aem.live/docs/" target="_blank" rel="referrer" title="Edge Delivery Services - Guide">Edge Delivery Services - Guide</a>
                     </p>
-                    <p class="is-size-6">Esplora Edge Delivery Services con guide complete. Le guide Build, Publish e Launch descrivono tutto il necessario per iniziare a utilizzare EDS.</p>
+                    <p class="is-size-6">Esplora Edge Delivery Services con guide complete. Le guide Build, Pubblicazione e Lancio includono tutto il necessario per iniziare a utilizzare EDS.</p>
                 </div>
                 <a href="https://www.aem.live/docs/" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -145,11 +145,11 @@ Scopri ciascuno dei tre percorsi da generare con AEM Sites tramite le seguenti e
 
 ## Risorse aggiuntive
 
-* [Documentazione sull&#39;authoring di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
-* [Documentazione sullo sviluppo per AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
-* [Documentazione sull&#39;amministrazione di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/administering/home)
-* [Documentazione sulla distribuzione di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/introduction/platform)
+* [Documentazione sull’authoring di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
+* [Documentazione sullo sviluppo di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
+* [Documentazione sull’amministrazione di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/administering/home)
+* [Documentazione sull’implementazione di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/introduction/platform)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial su AEM Assets](/help/assets/overview.md)
 * [Tutorial su AEM Forms](/help/forms/overview.md)
-* [Tutorial di AEM Foundation](/help/foundation/overview.md)
+* [Tutorial su AEM Foundation](/help/foundation/overview.md)

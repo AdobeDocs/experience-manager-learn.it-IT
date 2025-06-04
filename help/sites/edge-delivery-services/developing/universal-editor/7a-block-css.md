@@ -11,31 +11,31 @@ jira: KT-15832
 duration: 900
 exl-id: 14cda9d4-752b-4425-a469-8b6f283ce1db
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Sviluppare un blocco con CSS
 
-Lo stile dei blocchi in Edge Delivery Services viene impostato tramite CSS. Il file CSS di un blocco viene memorizzato nella directory del blocco e ha lo stesso nome del blocco. Ad esempio, il file CSS per un blocco denominato `teaser` si trova in `blocks/teaser/teaser.css`.
+Lo stile dei blocchi in Edge Delivery Services viene definito mediante CSS. Il file CSS di un blocco viene memorizzato nella directory del blocco stesso, e con lo stesso nome del blocco. Ad esempio, il file CSS per un blocco denominato `teaser` si trova in `blocks/teaser/teaser.css`.
 
-Idealmente, un blocco dovrebbe avere solo CSS per lo stile, senza affidarsi a JavaScript per modificare il DOM o aggiungere classi CSS. La necessità di JavaScript dipende dalla [modellazione del contenuto](./5-new-block.md#block-model) del blocco e dalla sua complessità. Se necessario, è possibile aggiungere [il blocco JavaScript](./7b-block-js-css.md).
+Idealmente, un blocco necessita solo del CSS per l’applicazione dello stile, senza ricorrere a JavaScript per modificare il DOM o aggiungere classi CSS. JavaScript potrebbe essere necessario a seconda della [modellazione del contenuto](./5-new-block.md#block-model) del blocco e dalla sua complessità. Se serve, è possibile aggiungere il [blocco JavaScript](./7b-block-js-css.md).
 
-Utilizzando un approccio solo CSS, gli elementi HTML semantici (per lo più) del blocco sono mirati e formattati.
+Utilizzando un approccio basato solo su CSS, è possibile applicare lo stile a specifici e (per lo più) semplici elementi HTML semantici del blocco.
 
-## Blocca HTML
+## HTML del blocco
 
-Per capire come assegnare uno stile a un blocco, rivedi innanzitutto il DOM esposto da Edge Delivery Services, in quanto è ciò che è disponibile per lo stile. Il DOM può essere trovato esaminando il blocco gestito dall’ambiente di sviluppo locale della CLI di AEM. Evita di utilizzare il DOM dell’editor universale, in quanto è leggermente diverso.
+Per capire come applicare uno stile a un blocco, rivedi innanzitutto il DOM esposto da Edge Delivery Services, in quanto è ciò che è disponibile per lo stile. Per trovare il DOM, ispeziona il blocco fornito dall’ambiente di sviluppo locale della CLI di AEM. Evita di utilizzare il DOM dell’editor universale, in quanto è leggermente diverso.
 
 >[!BEGINTABS]
 
->[!TAB DOM a stile]
+>[!TAB DOM a cui applicare lo stile]
 
-Di seguito è riportato il DOM del blocco teaser che è la destinazione per lo stile.
+Di seguito è riportato il DOM del blocco teaser a cui viene applicato lo stile.
 
-Osserva `<p class="button-container">...` che è [aumentato automaticamente](./4-website-branding.md#inferred-elements) come elemento dedotto da Edge Delivery Services JavaScript.
+Osserva `<p class="button-container">...`, che è [“aumentato” automaticamente](./4-website-branding.md#inferred-elements) come elemento dedotto da Edge Delivery Services JavaScript.
 
 ```html
 ...
@@ -73,19 +73,19 @@ Osserva `<p class="button-container">...` che è [aumentato automaticamente](./4
 
 >[!TAB Come trovare il DOM]
 
-Per trovare lo stile DOM da applicare, apri la pagina con il blocco non formattato nell’ambiente di sviluppo locale, seleziona il blocco e controlla il DOM.
+Per trovare il DOM a cui applicare lo stile, nell’ambiente di sviluppo locale apri la pagina con il blocco non formattato, seleziona il blocco e ispeziona il DOM.
 
-![Controlla DOM](./assets/7a-block-css/inspect-block-dom.png) del blocco
+![Ispezionare il DOM del blocco](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
-## Blocca CSS
+## CSS del blocco
 
-Crea un nuovo file CSS nella cartella del blocco, utilizzando il nome del blocco come nome del file. Ad esempio, per il blocco **teaser**, il file si trova in `/blocks/teaser/teaser.css`.
+Nella cartella del blocco, crea un nuovo file CSS con lo stesso nome del blocco. Ad esempio, per il blocco **teaser**, il file si trova in `/blocks/teaser/teaser.css`.
 
-Questo file CSS viene caricato automaticamente quando il JavaScript di Edge Delivery Services rileva un elemento DOM nella pagina che rappresenta un blocco teaser.
+Questo file CSS viene caricato automaticamente quando il JavaScript di Edge Delivery Services rileva nella pagina un elemento DOM che rappresenta un blocco teaser.
 
-[!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```css
 /* /blocks/teaser/teaser.css */
@@ -211,13 +211,13 @@ Questo file CSS viene caricato automaticamente quando il JavaScript di Edge Deli
 
 ## Anteprima di sviluppo
 
-Quando il CSS viene scritto nel progetto di codice, il ricaricamento a caldo dell’interfaccia della riga di comando AEM cambia, rendendo più rapido e semplice capire in che modo il CSS influisce sul blocco.
+Poiché il CSS viene scritto nel progetto di codice, la CLI di AEM ricarica automaticamente le modifiche, rendendo più facile e veloce capire in che modo il CSS influisce sul blocco.
 
 ![Solo anteprima CSS](./assets/7a-block-css/local-development-preview.png)
 
-## Illustra il codice
+## Eseguire il linting del codice
 
-Assicurati di [collegare frequentemente](./3-local-development-environment.md#linting) le modifiche al codice per assicurarti che sia pulito e coerente. La colorazione consente di rilevare i problemi in anticipo e riduce il tempo di sviluppo complessivo. Ricorda che non puoi unire il tuo lavoro di sviluppo a `main` finché tutti i tuoi problemi di linting non saranno stati risolti.
+Assicurati di [eseguire frequentemente il linting](./3-local-development-environment.md#linting) del codice per mantenerlo pulito e coerente. L’esecuzione regolare del linting consente di individuare per tempo eventuali i problemi, riducendo il tempo di sviluppo complessivo. Ricorda che non puoi unire il tuo lavoro di sviluppo nel ramo `main` finché non saranno stati risolti tutti i problemi di linting.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -227,7 +227,7 @@ $ npm run lint:css
 
 ## Anteprima nell’editor universale
 
-Per visualizzare le modifiche nell’Editor universale di AEM, aggiungili, esegui il commit e inviali al ramo dell’archivio Git utilizzato dall’Editor universale. Questo passaggio garantisce che l’implementazione del blocco non interrompa l’esperienza di authoring.
+Per visualizzare le modifiche nell’editor universale di AEM, aggiungile, confermale e inviale al ramo dell’archivio Git utilizzato dall’editor universale. Questo passaggio è utile per assicurarsi che l’implementazione del blocco non interferisca con l’esperienza di authoring.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -237,6 +237,6 @@ $ git commit -m "Add CSS-only implementation for teaser block"
 $ git push origin teaser
 ```
 
-È ora possibile visualizzare in anteprima le modifiche nell&#39;editor universale quando si aggiunge il parametro di query `?ref=teaser`.
+Ora puoi visualizzare in anteprima le modifiche nell’editor universale quando aggiungi il parametro di query `?ref=teaser`.
 
-![Teaser nell&#39;editor universale](./assets/7a-block-css/universal-editor-preview.png)
+![Teaser nell’editor universale](./assets/7a-block-css/universal-editor-preview.png)

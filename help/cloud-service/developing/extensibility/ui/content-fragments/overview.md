@@ -1,6 +1,6 @@
 ---
-title: Estensioni dei frammenti di contenuto di AEM
-description: Scopri come generare e distribuire le estensioni dei frammenti di contenuto di AEM as a Cloud Service
+title: Estensioni per frammenti di contenuto di AEM
+description: Scopri come generare e distribuire le estensioni per frammenti di contenuto di AEM as a Cloud Service
 feature: Developer Tools
 version: Experience Manager as a Cloud Service
 topic: Development
@@ -13,23 +13,23 @@ last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 9164423b-a609-4bc5-9777-112d229ae748
 duration: 126
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Estensibilità dei frammenti di contenuto di AEM
 
-L’interfaccia utente di Frammenti di contenuto di AEM è una potente interfaccia utente estensibile per la gestione della creazione, della gestione e della modifica di Frammenti di contenuto. Sono disponibili diversi punti di estensione per personalizzare l’interfaccia utente in base alle tue esigenze. Sono disponibili diversi punti di estensione in base all’interfaccia utente che stai estendendo.
+L’interfaccia utente della funzione Frammenti di contenuto di AEM è una potente interfaccia utente estensibile per gestire la creazione, la gestione e la modifica di frammenti di contenuto. Diversi punti di estensione consentono di personalizzare l’interfaccia utente in base alle esigenze. I punti di estensione disponibili dipendono dall’interfaccia utente che desideri estendere.
 
 ## Punti di estensione della console Frammenti di contenuto
 
-La console Frammenti di contenuto in AEM (Adobe Experience Manager) è un’interfaccia utente che fornisce una posizione centralizzata per la gestione e l’organizzazione dei frammenti di contenuto. Offre un set completo di strumenti e funzioni per creare, modificare, pubblicare e tenere traccia dei frammenti di contenuto, consentendo agli utenti di gestire in modo efficiente contenuti strutturati su vari canali e punti di contatto.
+La console Frammenti di contenuto in AEM (Adobe Experience Manager) è un’interfaccia utente che fornisce una posizione centralizzata per la gestione e l’organizzazione dei frammenti di contenuto. Offre un set completo di strumenti e funzioni per creare, modificare, pubblicare e tracciare i frammenti di contenuto, consentendo agli utenti di gestire in modo efficiente contenuti strutturati su vari canali e punti di contatto.
 
 ![Console Frammenti di contenuto](./assets/overview/cfc.png)
 
-[Console Frammenti di contenuto di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it) è l&#39;interfaccia utente estensibile per l&#39;elenco e la gestione dei frammenti di contenuto. [Sono state create le estensioni della Console Frammenti di contenuto di AEM](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) utilizzando il modello di App Builder `@adobe/aem-cf-admin-ui-ext-tpl`.
+La [console Frammenti di contenuto di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it) è l’interfaccia utente estensibile dal punto di vista di elenchi e gestione dei frammenti di contenuto. Le [estensioni per la console Frammenti di contenuto di AEM sono create](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) utilizzando il modello di App Builder `@adobe/aem-cf-admin-ui-ext-tpl`.
 
 Sono disponibili i seguenti punti di estensione della console Frammenti di contenuto:
 
@@ -46,9 +46,9 @@ Sono disponibili i seguenti punti di estensione della console Frammenti di conte
           <div class="card-content is-padded-small">
             <div class="content">
               <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/" title="Barra delle azioni" target="_blank" rel="referrer">Barra delle azioni</a></p>
-              <p class="is-size-6">Personalizza le azioni per quando sono selezionati uno o più frammenti di contenuto.</p>
+              <p class="is-size-6">Personalizza le azioni disponibili quando sono selezionati uno o più frammenti di contenuto.</p>
               <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza la documentazione</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Consulta la documentazione</span>
               </a>
             </div>
           </div>
@@ -58,17 +58,17 @@ Sono disponibili i seguenti punti di estensione della console Frammenti di conte
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/" title="Colonne griglia" tabindex="-1" target="_blank" rel="referrer">
-            <img class="is-bordered-r-small" src="./assets/overview/cfc-grid-columns.png" alt="Colonne griglia">
+          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/" title="Colonne della griglia" tabindex="-1" target="_blank" rel="referrer">
+            <img class="is-bordered-r-small" src="./assets/overview/cfc-grid-columns.png" alt="Colonne della griglia">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/" title="Colonne griglia" target="_blank" rel="referrer">Colonne griglia</a></p>
-          <p class="is-size-6">Personalizza i dati visualizzati nell’elenco Frammenti di contenuto.</p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/" title="Colonne della griglia" target="_blank" rel="referrer">Colonne della griglia</a></p>
+          <p class="is-size-6">Personalizza i dati che vengono visualizzati nell’elenco Frammenti di contenuto.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza la documentazione</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Consulta la documentazione</span>
           </a>
         </div>
       </div>
@@ -78,17 +78,17 @@ Sono disponibili i seguenti punti di estensione della console Frammenti di conte
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/" title="Menu intestazione" tabindex="-1" target="_blank" rel="referrer">
-            <img class="is-bordered-r-small" src="./assets/overview/cfc-header-menu.png" alt="Menu intestazione">
+          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/" title="Menu di intestazione" tabindex="-1" target="_blank" rel="referrer">
+            <img class="is-bordered-r-small" src="./assets/overview/cfc-header-menu.png" alt="Menu di intestazione">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/" title="Menu intestazione" target="_blank" rel="referrer">Menu intestazione</a></p>
-          <p class="is-size-6">Personalizza le azioni per quando non è selezionato alcun frammento di contenuto.</p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/" title="Menu di intestazione" target="_blank" rel="referrer">Menu di intestazione</a></p>
+          <p class="is-size-6">Personalizza le azioni disponibili quando non è selezionato alcun frammento di contenuto.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza la documentazione</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Consulta la documentazione</span>
           </a>
         </div>
       </div>
@@ -96,13 +96,13 @@ Sono disponibili i seguenti punti di estensione della console Frammenti di conte
   </div>  
 </div>
 
-## Punti di estensione dell’Editor frammenti di contenuto
+## Punti di estensione dell’editor di frammenti di contenuto
 
-L’Editor frammenti di contenuto in AEM (Adobe Experience Manager) è un componente dell’interfaccia utente che consente agli utenti di creare, modificare e gestire frammenti di contenuto. Offre un ambiente visivamente intuitivo e facile da usare per lavorare con contenuti strutturati, consentendo agli utenti di definire e organizzare gli elementi di contenuto, applicare modelli, gestire le varianti e visualizzare in anteprima come il contenuto viene visualizzato tra canali diversi. L’Editor frammento di contenuto semplifica il processo di creazione di contenuti riutilizzabili e modulari che possono essere facilmente distribuiti e pubblicati in più esperienze digitali.
+L’editor di frammenti di contenuto in AEM (Adobe Experience Manager) è un componente dell’interfaccia utente che consente agli utenti di creare, modificare e gestire i frammenti di contenuto. Offre un ambiente visivo, intuitivo e facile da usare per utilizzare contenuti strutturati, consentendo agli utenti di definire e organizzare gli elementi di contenuto, applicare modelli, gestire le varianti e visualizzare in anteprima come si presenta il contenuto sui diversi canali. L’editor di frammenti di contenuto semplifica il processo di creazione di contenuti riutilizzabili e modulari che possono essere facilmente distribuiti e pubblicati in più esperienze digitali.
 
-![Editor frammenti di contenuto](./assets/overview/cfe.png)
+![Editor di frammenti di contenuto](./assets/overview/cfe.png)
 
-L’Editor frammenti di contenuto di AEM è l’interfaccia utente estensibile per la modifica di frammenti di contenuto. [Sono state create le estensioni dell&#39;Editor frammenti di contenuto di AEM](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) utilizzando il modello di App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
+L’editor di frammenti di contenuto di AEM è l’interfaccia utente estensibile per la modifica di frammenti di contenuto. Le [estensioni dell’editor di frammenti di contenuto di AEM sono create](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) utilizzando il modello di App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
 
 Sono disponibili i seguenti punti di estensione dell’Editor frammenti di contenuto:
 
@@ -111,17 +111,17 @@ Sono disponibili i seguenti punti di estensione dell’Editor frammenti di conte
       <div class="card" style="height: 100%">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu" title="Menu intestazione" tabindex="-1" target="_blank" rel="referrer">
-              <img class="is-bordered-r-small" src="./assets/overview/cfe-header-menu.png" alt="Menu intestazione">
+            <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/" title="Menu di intestazione" tabindex="-1" target="_blank" rel="referrer">
+              <img class="is-bordered-r-small" src="./assets/overview/cfe-header-menu.png" alt="Menu di intestazione">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
-            <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/" title="Menu intestazione" target="_blank" rel="referrer">Menu intestazione</a></p>
-            <p class="is-size-6">Personalizza le azioni nel menu di intestazione dell’Editor frammento di contenuto.</p>
-            <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-              <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza la documentazione</span>
+            <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/" title="Menu di intestazione" target="_blank" rel="referrer">Menu di intestazione</a></p>
+            <p class="is-size-6">Personalizzare le azioni nel menu di intestazione dell’Editor frammento di contenuto.</p>
+            <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
+              <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza i documenti</span>
             </a>
           </div>
         </div>
@@ -131,17 +131,17 @@ Sono disponibili i seguenti punti di estensione dell’Editor frammenti di conte
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/" title="Barra degli strumenti dell’Editor Rich Text" tabindex="-1" target="_blank" rel="referrer">
-            <img class="is-bordered-r-small" src="./assets/overview/cfe-rte-toolbar.png" alt="Barra degli strumenti dell’Editor Rich Text">
+          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/" title="Barra degli strumenti dell’editor Rich Text" tabindex="-1" target="_blank" rel="referrer">
+            <img class="is-bordered-r-small" src="./assets/overview/cfe-rte-toolbar.png" alt="Barra degli strumenti dell’editor Rich Text">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/" title="Barra degli strumenti dell’Editor Rich Text"  target="_blank" rel="referrer">Barra degli strumenti dell’Editor Rich Text</a></p>
-          <p class="is-size-6">Pulsante per aggiungere un elemento personalizzato all’editor Rich Text dell’editor di frammenti di contenuto.</p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/" title="Barra degli strumenti dell’editor Rich Text"  target="_blank" rel="referrer">Barra degli strumenti dell’editor Rich Text</a></p>
+          <p class="is-size-6">Aggiungere un pulsante personalizzato all’editor Rich Text (RTE) dell’editor di frammento di contenuto.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza la documentazione</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza i documenti</span>
           </a>
         </div>
       </div>
@@ -152,17 +152,17 @@ Sono disponibili i seguenti punti di estensione dell’Editor frammenti di conte
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/" title="Widget editor Rich Text" tabindex="-1"  target="_blank" rel="referrer">
-            <img class="is-bordered-r-small" src="./assets/overview/cfe-rte-widgets.png" alt="Widget editor Rich Text">
+          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/" title="Widget dell’editor Rich Text" tabindex="-1"  target="_blank" rel="referrer">
+            <img class="is-bordered-r-small" src="./assets/overview/cfe-rte-widgets.png" alt="Widget dell’editor Rich Text">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/" title="Widget editor Rich Text" target="_blank" rel="referrer">Widget editor Rich Text</a></p>
-          <p class="is-size-6">Personalizzare le azioni nell'editor Rich Text associate alla sequenza di tasti.</p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/" title="Widget dell’editor Rich Text" target="_blank" rel="referrer">Widget dell’editor Rich Text</a></p>
+          <p class="is-size-6">Personalizzare le azioni nell’editor Rich Text associate ai tasti.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza la documentazione</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza i documenti</span>
           </a>
         </div>
       </div>
@@ -172,17 +172,17 @@ Sono disponibili i seguenti punti di estensione dell’Editor frammenti di conte
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/" title="Badge editor Rich Text" tabindex="-1" target="_blank" rel="referrer">
-            <img class="is-bordered-r-small" src="./assets/overview/cfe-rte-badges.png" alt="Badge editor Rich Text">
+          <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/" title="Badge dell’editor Rich Text (RTE)" tabindex="-1" target="_blank" rel="referrer">
+            <img class="is-bordered-r-small" src="./assets/overview/cfe-rte-badges.png" alt="Badge dell’editor Rich Text (RTE)">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/" title="Badge editor Rich Text" target="_blank" rel="referrer">Badge editor Rich Text</a></p>
-          <p class="is-size-6">Personalizza i blocchi con stili non modificabili all’interno dell’editor Rich Text.</p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/ " title="Badge dell’editor Rich Text (RTE)" target="_blank" rel="referrer">Badge dell’editor Rich Text (RTE)</a></p>
+          <p class="is-size-6">Personalizzare i blocchi con stili non modificabili all’interno dell’editor Rich Text.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza la documentazione</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza i documenti</span>
           </a>
         </div>
       </div>
@@ -192,24 +192,24 @@ Sono disponibili i seguenti punti di estensione dell’Editor frammenti di conte
 
 ## Esempi di estensione
 
-Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell’interfaccia utente di AEM. Questa risorsa è progettata per fornire dimostrazioni pratiche e informazioni approfondite sull’estensione dell’interfaccia utente di Adobe Experience Manager (AEM). Che tu sia uno sviluppatore interessato a migliorare le funzionalità di AEM, questi esempi di codice fungono da riferimento prezioso.
+Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell’interfaccia utente di AEM. Questa risorsa è progettata per fornire dimostrazioni pratiche e approfondimenti sull’estensione dell’interfaccia utente di Adobe Experience Manager (AEM). In qualità di sviluppatore, se ti interessa migliorare le funzionalità di AEM, questi esempi di codice fungono da riferimento prezioso.
 
 <div class="columns is-multiline">
   <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Bulk property update">
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="./examples/console-bulk-property-update.md" title="Aggiornamento proprietà in blocco" tabindex="-1">
-            <img class="is-bordered-r-small" src="./assets/../examples/assets/bulk-property-update/card.png" alt="Aggiornamento proprietà in blocco">
+          <a href="./examples/console-bulk-property-update.md" title="Aggiornamento delle proprietà in blocco" tabindex="-1">
+            <img class="is-bordered-r-small" src="./assets/../examples/assets/bulk-property-update/card.png" alt="Aggiornamento delle proprietà in blocco">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-bulk-property-update.md" title="Aggiornamento proprietà in blocco">Aggiornamento proprietà frammento di contenuto in blocco</a></p>
-          <p class="is-size-6">Estensione della barra delle azioni della console Frammenti di contenuto con azione modale e Adobe I/O Runtime.</p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-bulk-property-update.md" title="Aggiornamento delle proprietà in blocco">Aggiornamento della proprietà frammento di contenuto in blocco</a></p>
+          <p class="is-size-6">Estensione della barra delle azioni della console Frammento di contenuto con azione modale e Adobe I/O Runtime.</p>
           <a href="./examples/console-bulk-property-update.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l'esempio</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l’esempio</span>
           </a>
         </div>
       </div>
@@ -229,7 +229,7 @@ Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell
                     <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="Generazione di immagini basate su OpenAI e caricamento nell’estensione AEM">Generazione di immagini OpenAPI</a></p>
                     <p class="is-size-6">Esplora un’estensione della barra delle azioni di esempio che genera un’immagine utilizzando OpenAI, la carica su AEM e aggiorna la proprietà dell’immagine sul frammento di contenuto selezionato.</p>
                     <a href="./examples/console-image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l'esempio</span>
+                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l’esempio</span>
                     </a>
                 </div>
             </div>
@@ -247,9 +247,9 @@ Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell
       <div class="card-content is-padded-small">
         <div class="content">
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/custom-grid-columns.md" title="Colonne personalizzate">Colonne personalizzate</a></p>
-          <p class="is-size-6">Aggiungi una colonna personalizzata alla console Frammenti di contenuto.</p>
+          <p class="is-size-6">Aggiungere una colonna personalizzata alla console Frammento di contenuto.</p>
           <a href="./examples/custom-grid-columns.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l'esempio</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l’esempio</span>
           </a>
         </div>
       </div>
@@ -259,17 +259,17 @@ Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="./examples/editor-export-to-xml.md" title="Esporta in XML" tabindex="-1">
-            <img class="is-bordered-r-small" src="./examples/assets/export-to-xml/card.png" alt="Esporta in XML">
+          <a href="./examples/editor-export-to-xml.md" title="Esportare in XML" tabindex="-1">
+            <img class="is-bordered-r-small" src="./examples/assets/export-to-xml/card.png" alt="Esportare in XML">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-export-to-xml.md" title="Esporta in XML">Esporta in XML</a></p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-export-to-xml.md" title="Esportare in XML">Esportare in XML</a></p>
           <p class="is-size-6">Esportare un frammento di contenuto come XML dall’Editor frammento di contenuto.</p>
           <a href="./examples/editor-export-to-xml.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l'esempio</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l’esempio</span>
           </a>
         </div>
       </div>
@@ -279,17 +279,17 @@ Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="./examples/editor-rte-toolbar.md" title="Pulsante della barra degli strumenti dell’Editor Rich Text" tabindex="-1">
-            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-toolbar-card.png" alt="Pulsante della barra degli strumenti dell’Editor Rich Text">
+          <a href="./examples/editor-rte-toolbar.md" title="Pulsante della barra degli strumenti dell’editor Rich Text" tabindex="-1">
+            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-toolbar-card.png" alt="Pulsante della barra degli strumenti dell’editor Rich Text">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Pulsante della barra degli strumenti dell’Editor Rich Text">Pulsante della barra degli strumenti dell’Editor Rich Text</a></p>
-          <p class="is-size-6">Aggiungere pulsanti della barra degli strumenti personalizzati ai campi dell’Editor Rich Text nell’Editor frammento di contenuto.</p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Pulsante della barra degli strumenti dell’editor Rich Text">Pulsante della barra degli strumenti dell’editor Rich Text</a></p>
+          <p class="is-size-6">Aggiungere pulsanti della barra degli strumenti personalizzati ai campi dell’editor Rich Text nell’Editor frammento di contenuto.</p>
           <a href="./examples/editor-rte-toolbar.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l'esempio</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l’esempio</span>
           </a>
         </div>
       </div>
@@ -299,17 +299,17 @@ Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="./examples/editor-rte-widget.md" title="Widget editor Rich Text" tabindex="-1">
-            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-widget-card.png" alt="Widget editor Rich Text">
+          <a href="./examples/editor-rte-widget.md" title="Widget dell’editor Rich Text" tabindex="-1">
+            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-widget-card.png" alt="Widget dell’editor Rich Text">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Widget editor Rich Text">Widget editor Rich Text</a></p>
-          <p class="is-size-6">Aggiungere widget all’Editor Rich Text nell’Editor frammento di contenuto.</p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Widget dell’editor Rich Text">Widget dell’editor Rich Text</a></p>
+          <p class="is-size-6">Aggiungere i widget all’Editor Rich Text nell’Editor frammento di contenuto.</p>
           <a href="./examples/editor-rte-widget.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l'esempio</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l’esempio</span>
           </a>
         </div>
       </div>
@@ -319,17 +319,17 @@ Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="./examples/editor-rte-badges.md" title="Badge editor Rich Text" tabindex="-1">
-            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-badge-card.png" alt="Badge editor Rich Text">
+          <a href="./examples/editor-rte-badges.md" title="Badge dell’editor Rich Text" tabindex="-1">
+            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-badge-card.png" alt="Badge dell’editor Rich Text">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-badges.md" title="Badge editor Rich Text">Badge editor Rich Text</a></p>
-          <p class="is-size-6">Aggiungi i badge all’Editor Rich Text nell’Editor frammento di contenuto.</p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-badges.md" title="Badge dell’editor Rich Text">Badge dell’editor Rich Text</a></p>
+          <p class="is-size-6">Aggiungere i badge all’Editor Rich Text nell’Editor frammento di contenuto.</p>
           <a href="./examples/editor-rte-badges.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l'esempio</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l’esempio</span>
           </a>
         </div>
       </div>
@@ -341,16 +341,16 @@ Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell
       <div class="card-image">
         <figure class="image is-16by9">
           <a href="./examples/editor-custom-field.md" title="Campi personalizzati" tabindex="-1">
-            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3437642?format=jpeg&captions=ita" alt="Campi personalizzati">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427585?format=jpeg" alt="Campi personalizzati">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-custom-field.md" title="Campi personalizzati">Campi personalizzati</a></p>
-          <p class="is-size-6">Creare campi frammento di contenuto personalizzati.</p>
+          <p class="is-size-6">Creare campi di frammento di contenuto personalizzati.</p>
           <a href="./examples/editor-custom-field.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l'esempio</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l’esempio</span>
           </a>
         </div>
       </div>

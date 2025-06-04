@@ -11,9 +11,9 @@ level: Beginner
 exl-id: bb13fc39-fcb7-4241-8504-8ff999a6caa2
 duration: 190
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '42'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Presenta le tecnologie di [!DNL OSGi], [!DNL JCR], [!DNL Oak] e [!DNL Sling] come parte dello stack di tecnologia di Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/36976?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/32034?quality=12&learn=on)

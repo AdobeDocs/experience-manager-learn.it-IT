@@ -1,6 +1,6 @@
 ---
-title: Comprendere la condivisione CORS (Cross-Origin Resource Sharing) con AEM
-description: La condivisione CORS (Cross-Origin Resource Sharing) di Adobe Experience Manager facilita le proprietà web non AEM a effettuare chiamate lato client ad AEM, autenticate e non autenticate, per recuperare contenuto o interagire direttamente con AEM.
+title: Comprendere la condivisione di risorse tra origini diverse (CORS) con AEM
+description: La condivisione di risorse tra origini diverse (CORS) di Adobe Experience Manager consente alle proprietà web diverse da AEM di effettuare chiamate lato client ad AEM, sia autenticate che non autenticate, per recuperare contenuto o interagire direttamente con AEM.
 version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: Security, APIs
@@ -11,41 +11,41 @@ level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 240
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1011'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Comprendere la condivisione delle risorse tra le origini ([!DNL CORS])
+# Comprendere la condivisione di risorse tra origini diverse ([!DNL CORS])
 
-La condivisione delle risorse tra le origini di Adobe Experience Manager ([!DNL CORS]) facilita le proprietà web non AEM a effettuare chiamate lato client ad AEM, autenticate e non autenticate, per recuperare contenuto o interagire direttamente con AEM.
+La condivisione di risorse tra origini diverse ([!DNL CORS]) di Adobe Experience Manager consente alle proprietà web diverse da AEM di effettuare chiamate lato client ad AEM, sia autenticate che non autenticate, per recuperare contenuto o interagire direttamente con AEM.
 
 La configurazione OSGI descritta in questo documento è sufficiente per:
 
-1. Condivisione di risorse a origine singola in AEM Publish
-2. Accesso CORS ad AEM Author
+1. Condivisione delle risorse da un’unica origine in Pubblicazione AEM
+2. Accesso CORS all’Authoring AEM
 
-Se è richiesto l&#39;accesso CORS per più origini in AEM Publish, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=it#dispatcher-configuration).
+Se in Pubblicazione AEM è richiesto l’accesso CORS per più origin, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=it#dispatcher-configuration).
 
-## Configurazione OSGi dei criteri di condivisione delle risorse tra diverse origini di Adobe Granite
+## Configurazione OSGi dei criteri di condivisione di risorse tra origini diverse di Adobe Granite
 
 Le configurazioni CORS sono gestite come factory di configurazione OSGi in AEM, dove ogni criterio è rappresentato come un’istanza della factory.
 
 * `http://<host>:<port>/system/console/configMgr > Adobe Granite Cross Origin Resource Sharing Policy`
 
-![Configurazione OSGi dei criteri di condivisione risorse tra origini di Adobe Granite](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
+![Configurazione OSGi dei criteri di condivisione di risorse tra origini diverse di Adobe Granite](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
 
 [!DNL Adobe Granite Cross-Origin Resource Sharing Policy] (`com.adobe.granite.cors.impl.CORSPolicyImpl`)
 
-### Selezione criteri
+### Selezione dei criteri
 
-Per selezionare un criterio, confronta il
+Un criterio viene selezionato confrontando
 
-* `Allowed Origin` con intestazione di richiesta `Origin`
+* `Allowed Origin` con l’intestazione della richiesta `Origin`
 * e `Allowed Paths` con il percorso della richiesta.
 
-Vengono utilizzati i primi criteri che corrispondono a questi valori. Se non viene trovata alcuna richiesta, qualsiasi richiesta [!DNL CORS] verrà negata.
+Viene utilizzato il primo criterio che corrisponde a questi valori. Se non viene trovato alcun criterio, qualsiasi richiesta [!DNL CORS] verrà negata.
 
 Se non è configurato alcun criterio, non verrà fornita risposta neanche alle richieste [!DNL CORS] perché il gestore è disabilitato e quindi negato in modo effettivo, purché nessun altro modulo del server risponda a [!DNL CORS].
 
@@ -54,46 +54,46 @@ Se non è configurato alcun criterio, non verrà fornita risposta neanche alle r
 #### [!UICONTROL Origini consentite]
 
 * `"alloworigin" <origin> | *`
-* Elenco di `origin` parametri che specificano gli URI che possono accedere alla risorsa. Per le richieste senza credenziali, il server può specificare &#42; come carattere jolly, consentendo in tal modo a qualsiasi origine di accedere alla risorsa. *Non è assolutamente consigliabile utilizzare `Allow-Origin: *` in produzione in quanto consente a ogni sito Web esterno (ad esempio, un utente non autorizzato) di effettuare richieste che senza CORS sono severamente vietate dai browser.*
+* Elenco di parametri `origin` che specificano gli URI che possono accedere alla risorsa. Per le richieste senza credenziali, il server può specificare &#42; come carattere jolly, consentendo in tal modo a qualsiasi origine di accedere alla risorsa. *Non è assolutamente consigliabile utilizzare `Allow-Origin: *` in produzione, in quanto consente a qualsiasi sito web esterno (ad esempio, un hacker) di effettuare richieste che senza CORS sono severamente vietate dai browser.*
 
-#### [!UICONTROL Origini consentite (Regexp)]
+#### [!UICONTROL Origini consentite (RegExp)]
 
 * `"alloworiginregexp" <regexp>`
-* Elenco di `regexp` espressioni regolari che specificano gli URI che possono accedere alla risorsa. *Le espressioni regolari possono causare corrispondenze non desiderate se non vengono create con attenzione, consentendo a un utente non autorizzato di utilizzare un nome di dominio personalizzato che corrisponda anche al criterio.* In genere si consiglia di disporre di criteri separati per ogni nome host di origine specifico, utilizzando `alloworigin`, anche se ciò significa la configurazione ripetuta delle altre proprietà dei criteri. Origini diverse tendono ad avere cicli di vita e requisiti diversi, beneficiando così di una netta separazione.
+* Elenco di espressioni regolari `regexp` che specificano gli URI che possono accedere alla risorsa. *Le espressioni regolari possono causare corrispondenze indesiderate, se non vengono create con attenzione, consentendo a un hacker di utilizzare un nome di dominio personalizzato che potrebbe anch’esso corrispondere al criterio.* In genere si consiglia di disporre di criteri separati per ciascun nome host di origine specifico, utilizzando `alloworigin`, anche se ciò comporta la ripetizione della configurazione delle altre proprietà dei criteri. Origini diverse tendono ad avere cicli di vita e requisiti diversi, beneficiando così di una netta separazione.
 
 #### [!UICONTROL Percorsi consentiti]
 
 * `"allowedpaths" <regexp>`
-* Elenco di `regexp` espressioni regolari che specificano i percorsi delle risorse a cui si applica il criterio.
+* Elenco di espressioni regolari `regexp` che specificano i percorsi delle risorse a cui si applica il criterio.
 
 #### [!UICONTROL Intestazioni esposte]
 
 * `"exposedheaders" <header>`
-* Elenco di parametri di intestazione che indicano le intestazioni di risposta a cui i browser possono accedere. Per le richieste CORS (non pre-flight), se non vuote, questi valori vengono copiati nell&#39;intestazione di risposta `Access-Control-Expose-Headers`. I valori nell’elenco (nomi delle intestazioni) vengono quindi resi accessibili al browser; senza di esso, tali intestazioni non sono leggibili dal browser.
+* Elenco di parametri di intestazione che indicano le intestazioni di risposta a cui i browser possono accedere. Per le richieste CORS (non pre-flight), se non sono vuote, questi valori vengono copiati nell’intestazione di risposta `Access-Control-Expose-Headers`. I valori nell’elenco (nomi delle intestazioni) vengono quindi resi accessibili al browser; senza di esso, tali intestazioni non sono leggibili dal browser.
 
 #### [!UICONTROL Età massima]
 
 * `"maxage" <seconds>`
-* Un parametro `seconds` che indica per quanto tempo è possibile memorizzare nella cache i risultati di una richiesta di pre-volo.
+* Un parametro `seconds` che indica per quanto tempo è possibile memorizzare nella cache i risultati di una richiesta pre-flight.
 
 #### [!UICONTROL Intestazioni supportate]
 
 * `"supportedheaders" <header>`
-* Elenco di `header` parametri che indicano quali intestazioni di richiesta HTTP possono essere utilizzate quando si effettua la richiesta effettiva.
+* Elenco dei parametri `header` che indicano quali intestazioni di richiesta HTTP possono essere utilizzate durante l’esecuzione della richiesta effettiva.
 
 #### [!UICONTROL Metodi consentiti]
 
 * `"supportedmethods"`
-* Elenco dei parametri di metodo che indicano quali metodi HTTP possono essere utilizzati quando si effettua la richiesta effettiva.
+* Elenco dei parametri di metodo che indicano quali metodi HTTP possono essere utilizzati durante l’esecuzione della richiesta effettiva.
 
-#### [!UICONTROL Supporta Le Credenziali]
+#### [!UICONTROL Credenziali di supporto]
 
 * `"supportscredentials" <boolean>`
-* Un `boolean` che indica se la risposta alla richiesta può essere esposta o meno al browser. Se utilizzata come parte di una risposta a una richiesta di pre-volo, indica se la richiesta effettiva può essere effettuata o meno utilizzando le credenziali.
+* Un `boolean` che indica se la risposta alla richiesta può essere esposta al browser. Se utilizzato come parte di una risposta a una richiesta di pre-flight, indica se la richiesta effettiva può essere effettuata o meno utilizzando le credenziali.
 
-### Esempi di configurazioni
+### Configurazioni di esempio
 
-Il sito 1 è uno scenario di base, anonimamente accessibile e di sola lettura in cui il contenuto viene utilizzato tramite [!DNL GET] richieste:
+Il sito 1 è uno scenario di base, accessibile in modo anonimo e di sola lettura il cui contenuto viene utilizzato tramite richieste [!DNL GET]:
 
 ```json
 {
@@ -131,7 +131,7 @@ Il sito 1 è uno scenario di base, anonimamente accessibile e di sola lettura in
 }
 ```
 
-Il sito 2 è più complesso e richiede richieste autorizzate e mutanti (POST, PUT, DELETE):
+Il sito 2 è più complesso e necessita di richieste autorizzate e mutevoli (POST, PUT, DELETE):
 
 ```json
 {
@@ -173,21 +173,21 @@ Il sito 2 è più complesso e richiede richieste autorizzate e mutanti (POST, PU
 }
 ```
 
-## Problemi e configurazione relativi alla memorizzazione nella cache di Dispatcher {#dispatcher-caching-concerns-and-configuration}
+## Problemi e configurazione della memorizzazione in cache di Dispatcher {#dispatcher-caching-concerns-and-configuration}
 
-A partire da Dispatcher 4.1.1+, le intestazioni di risposta possono essere memorizzate nella cache. In questo modo è possibile memorizzare nella cache [!DNL CORS] intestazioni insieme alle risorse richieste da [!DNL CORS], purché la richiesta sia anonima.
+A partire da Dispatcher 4.1.1+, le intestazioni di risposta possono essere memorizzate nella cache. Questo rende possibile memorizzare nella cache le intestazioni [!DNL CORS] insieme alle risorse richieste da [!DNL CORS], purché la richiesta sia anonima.
 
-In generale, le stesse considerazioni per la memorizzazione in cache del contenuto in Dispatcher possono essere applicate alla memorizzazione in cache delle intestazioni di risposta CORS in Dispatcher. La tabella seguente definisce quando è possibile memorizzare in cache [!DNL CORS] intestazioni (e quindi [!DNL CORS] richieste).
+In generale, le stesse considerazioni per la memorizzazione in cache del contenuto in Dispatcher possono essere applicate alla memorizzazione in cache delle intestazioni di risposta CORS in Dispatcher. La tabella seguente definisce quando è possibile memorizzare in cache le intestazioni [!DNL CORS] (e quindi le richieste [!DNL CORS]).
 
-| Memorizzabile in cache | Ambiente | Stato di autenticazione | Spiegazione |
+| Memorizzabile in cache | Ambiente | Stato dell’autenticazione | Spiegazione |
 |-----------|-------------|-----------------------|-------------|
-| No | AEM Publish | Autenticato | La memorizzazione nella cache di Dispatcher in AEM Author è limitata alle risorse statiche non create. Questo rende difficile e poco pratico memorizzare in cache la maggior parte delle risorse su AEM Author, incluse le intestazioni di risposta HTTP. |
-| No | AEM Publish | Autenticato | Evita di memorizzare nella cache le intestazioni CORS nelle richieste autenticate. Questo si allinea alla linea guida comune di non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
-| Sì | AEM Publish | Anonimo | Le intestazioni di risposta delle richieste anonime memorizzabili nella cache di Dispatcher possono essere memorizzate anche nella cache, in modo che le richieste CORS future possano accedere al contenuto memorizzato nella cache. Qualsiasi modifica alla configurazione CORS nella pubblicazione AEM **deve** essere seguita da un&#39;invalidazione delle risorse memorizzate nella cache interessate. Le best practice impongono distribuzioni di codice o configurazione per cui la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato in cache può essere influenzato. |
+| No | Pubblicazione AEM | Autenticato | La memorizzazione in cache di Dispatcher nell’Authoring AEM è limitata alle risorse statiche non create. Questo rende difficile e poco pratico memorizzare in cache la maggior parte delle risorse sull’Authoring AEM, incluse le intestazioni di risposta HTTP. |
+| No | Pubblicazione AEM | Autenticato | Evita di memorizzare nella cache le intestazioni CORS nelle richieste autenticate. Questo è in linea con il principio guida comune di non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
+| Sì | Pubblicazione AEM | Anonimo | Anche le intestazioni di risposta delle richieste anonime memorizzabili nella cache di Dispatcher possono essere memorizzate nella cache, garantendo che le richieste CORS future possano accedere al contenuto memorizzato nella cache. Qualsiasi modifica alla configurazione CORS nella Pubblicazione AEM **deve** essere seguita da un annullamento della validità delle risorse memorizzate nella cache interessate. Le best practice impongono distribuzioni di codice o configurazione per cui la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato in cache può essere interessato. |
 
-### Consentire le intestazioni di richiesta CORS
+### Autorizzare le intestazioni di richiesta CORS
 
-Per consentire alle intestazioni di richiesta HTTP [di passare ad AEM per l&#39;elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#specifying-the-http-headers-to-pass-through-clientheaders), devono essere consentite nella configurazione di Dispatcher `/clientheaders`.
+Per consentire alle [intestazioni di richiesta HTTP necessarie per il passthrough ad AEM per l’elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#specifying-the-http-headers-to-pass-through-clientheaders), le intestazioni devono essere consentite nella configurazione `/clientheaders` di Dispatcher.
 
 ```
 /clientheaders {
@@ -198,9 +198,9 @@ Per consentire alle intestazioni di richiesta HTTP [di passare ad AEM per l&#39;
 }
 ```
 
-### Memorizzazione nella cache delle intestazioni di risposta CORS
+### Memorizzazione in cache le intestazioni di risposta CORS
 
-Per consentire il caching e il serving delle intestazioni CORS sul contenuto memorizzato nella cache, aggiungi la seguente configurazione [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) al file `dispatcher.any` di pubblicazione di AEM.
+Per consentire la memorizzazione in cache e la gestione delle intestazioni CORS sul contenuto memorizzato nella cache, aggiungi la seguente [configurazione cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) al file `dispatcher.any` di Pubblicazione AEM.
 
 ```
 /publishfarm {
@@ -224,29 +224,29 @@ Per consentire il caching e il serving delle intestazioni CORS sul contenuto mem
 }
 ```
 
-Ricordarsi di **riavviare l&#39;applicazione server Web** dopo aver apportato modifiche al file `dispatcher.any`.
+Ricordati di **riavviare l’applicazione server Web** dopo aver apportato modifiche al file `dispatcher.any`.
 
-È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano memorizzate nella cache in modo appropriato alla successiva richiesta dopo un aggiornamento della configurazione di `/cache/headers`.
+È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano memorizzate nella cache in modo appropriato nella successiva richiesta dopo un aggiornamento della configurazione di `/cache/headers`.
 
 ## Risoluzione dei problemi CORS
 
-Registrazione disponibile in `com.adobe.granite.cors`:
+La registrazione è disponibile in `com.adobe.granite.cors`:
 
 * abilita `DEBUG` per visualizzare i dettagli sul motivo per cui una richiesta [!DNL CORS] è stata negata
-* abilita `TRACE` per visualizzare i dettagli di tutte le richieste effettuate tramite il gestore CORS
+* abilita `TRACE` per visualizzare i dettagli di tutte le richieste che passano attraverso il gestore CORS
 
 ### Suggerimenti:
 
-* Ricreare manualmente le richieste XHR utilizzando CURL, ma assicurati di copiare tutte le intestazioni e i dettagli, in quanto ciascuno può fare la differenza; alcune console del browser consentono di copiare il comando CURL
-* Verifica se la richiesta è stata negata dal gestore CORS e non dall’autenticazione, dal filtro token CSRF, dai filtri del dispatcher o da altri livelli di sicurezza
-   * Se il gestore CORS risponde con 200, ma l&#39;intestazione `Access-Control-Allow-Origin` è assente nella risposta, esaminare i registri per le negazioni in [!DNL DEBUG] in `com.adobe.granite.cors`
-* Se la memorizzazione nella cache del dispatcher di [!DNL CORS] richieste è abilitata
-   * Verificare che la configurazione `/cache/headers` sia applicata a `dispatcher.any` e che il server Web sia stato riavviato correttamente
-   * Assicurati che la cache sia stata cancellata correttamente dopo qualsiasi modifica alla configurazione OSGi o dispatcher.any.
+* Ricrea manualmente le richieste XHR utilizzando cURL, ma assicurati di copiare tutte le intestazioni e i dettagli, in quanto ciascuno può fare la differenza; alcune console del browser consentono di copiare il comando cURL
+* Verifica se la richiesta è stata negata dal gestore CORS e non dall’autenticazione, dal filtro del token CSRF, dai filtri del Dispatcher o da altri livelli di sicurezza
+   * Se il gestore CORS risponde con 200, ma l’intestazione `Access-Control-Allow-Origin` è assente nella risposta, esamina i registri per i rifiuti sotto [!DNL DEBUG] in `com.adobe.granite.cors`
+* Se la memorizzazione nella cache del Dispatcher delle richieste [!DNL CORS] è abilitata
+   * Assicurati che la configurazione `/cache/headers` sia applicata a `dispatcher.any` e che il server web sia stato riavviato correttamente
+   * Assicurati che la cache sia stata cancellata correttamente dopo qualsiasi modifica alla configurazione OSGi o a dispatcher.any.
 * se necessario, controlla la presenza delle credenziali di autenticazione nella richiesta.
 
 ## Materiali di supporto
 
-* [AEM OSGi Configuration Factory per i criteri di condivisione risorse tra diverse origini](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
-* [Condivisione risorse tra le origini (W3C)](https://www.w3.org/TR/cors/)
-* [Controllo accesso HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+* [Factory di configurazione OSGI di AEM per i criteri della condivisione CORS (Cross-Orgin Resource Sharing)](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [CORS (Cross-Orgin Resource Sharing) (W3C)](https://www.w3.org/TR/cors/)
+* [Controllo degli accessi HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

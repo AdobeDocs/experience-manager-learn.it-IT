@@ -1,6 +1,6 @@
 ---
-title: Aggiungere il marchio del sito Web
-description: Definisci le variabili CSS, CSS e i font Web globali per un sito Edge Delivery Services.
+title: Aggiungere il branding al sito web
+description: Definisci i CSS globali, le variabili CSS e i font web per un sito Edge Delivery Services.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,34 +11,34 @@ jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1313'
+ht-degree: 100%
 
 ---
 
-# Aggiungere il marchio del sito Web
+# Aggiungere il branding al sito web
 
-Per iniziare, imposta il marchio complessivo aggiornando gli stili globali, definendo le variabili CSS e aggiungendo i font web. Questi elementi fondamentali garantiscono che il sito web rimanga coerente e gestibile e che sia applicato in modo coerente in tutto il sito.
+Per iniziare, imposta il branding complessivo aggiornando gli stili globali, definendo le variabili CSS e aggiungendo i font web. Questi elementi fondamentali, che vanno applicati in modo sistematico in tutto il sito, garantiscono che il sito web sia coerente e facile da gestire.
 
-## Crea un problema GitHub
+## Creare un problema GitHub
 
-Per mantenere tutto organizzato, utilizza GitHub per monitorare il lavoro. Innanzitutto, crea un problema GitHub per questo corpo di lavoro:
+Per mantenere tutto organizzato, utilizza GitHub per tenere traccia del lavoro. Innanzitutto, crea un problema GitHub per questo corpo del lavoro:
 
-1. Vai all&#39;archivio GitHub (per i dettagli, consulta il capitolo [Creare un progetto di codice](./1-new-code-project.md)).
-2. Fai clic sulla scheda **Issues** e quindi su **New issue**.
+1. Passa all’archivio GitHub (per i dettagli, consulta il capitolo [Creare un progetto di codice](./1-new-code-project.md)).
+2. Fai clic sulla scheda **Problemi** e quindi su **Nuovo problema**.
 3. Scrivi un **titolo** e una **descrizione** per il lavoro da eseguire.
 4. Fai clic su **Invia nuovo problema**.
 
-Il problema GitHub viene utilizzato successivamente quando [si crea una richiesta di pull](#merge-code-changes).
+Il problema GitHub viene utilizzato successivamente durante [la creazione di una richiesta pull](#merge-code-changes).
 
 ![GitHub crea un nuovo problema](./assets/4-website-branding/github-issues.png)
 
 ## Creare un ramo di lavoro
 
-Per mantenere l’organizzazione e garantire la qualità del codice, crea un nuovo ramo per ogni corpo di lavoro. Questa procedura impedisce al nuovo codice di influire negativamente sulle prestazioni e assicura che le modifiche non siano attive prima del loro completamento.
+Per mantenere l’organizzazione e garantire la qualità del codice, crea un nuovo ramo per ogni corpo del lavoro. Questa procedura impedisce al nuovo codice di influire negativamente sulle prestazioni e assicura che le modifiche non siano live prima del loro completamento.
 
-Per questo capitolo, che si concentra sugli stili di base del sito Web, creare un ramo denominato `wknd-styles`.
+Per questo capitolo, incentrato sugli stili di base del sito web, crea un ramo denominato `wknd-styles`.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -48,23 +48,23 @@ $ git checkout -b wknd-styles
 
 ## CSS globale
 
-Edge Delivery Services utilizza un file CSS globale, che si trova in `styles/styles.css`, per impostare gli stili comuni per l&#39;intero sito Web. `styles.css` controlla aspetti quali colori, font e spaziatura, assicurandosi che tutto sembri coerente nel sito.
+Edge Delivery Services utilizza un file CSS globale, disponibile in `styles/styles.css`, per impostare gli stili comuni per l’intero sito web. Il file `styles.css` controlla aspetti quali colori, font e spaziatura, assicurandosi che in tutto il sito l’aspetto sia coerente.
 
 I CSS globali dovrebbero essere agnostici nei confronti di costrutti di livello inferiore come i blocchi, concentrandosi sull’aspetto generale del sito e sui trattamenti visivi condivisi.
 
-Tieni presente che gli stili CSS globali possono essere ignorati quando necessario.
+Tieni presente che gli stili CSS globali possono essere ignorati in base alle necessità.
 
 ### Variabili CSS
 
-[Le variabili CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) sono un ottimo modo per memorizzare impostazioni di progettazione come colori, font e dimensioni. Utilizzando le variabili, puoi modificare questi elementi in un’unica posizione e aggiornarli in tutto il sito.
+[Le variabili CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) sono un ottimo modo per archiviare impostazioni di progettazione come colori, font e dimensioni. Utilizzando le variabili, puoi modificare questi elementi in un’unica posizione e averli aggiornati in tutto il sito.
 
 Per iniziare a personalizzare le variabili CSS, segui questi passaggi:
 
-1. Aprire il file `styles/styles.css` nell&#39;editor di codice.
-2. Trovare la dichiarazione `:root`, in cui sono memorizzate le variabili CSS globali.
-3. Modifica le variabili di colore e font in modo che corrispondano al marchio WKND.
+1. Apri il file `styles/styles.css` nell’editor di codice.
+2. Trova la dichiarazione `:root`, in cui sono memorizzate le variabili CSS globali.
+3. Modifica le variabili di colore e font in modo che corrispondano al brand WKND.
 
-Ecco un esempio:
+Esempio:
 
 
 ```css
@@ -90,15 +90,15 @@ Ecco un esempio:
 
 Esplora le altre variabili nella sezione `:root` e controlla le impostazioni predefinite.
 
-Quando sviluppi un sito web e ti ritrovi a ripetere gli stessi valori CSS, puoi creare nuove variabili per semplificare la gestione degli stili. Esempi di altre proprietà CSS che possono beneficiare delle variabili CSS, includono: `border-radius`, `padding`, `margin` e `box-shadow`.
+Quando sviluppi un sito web ed è necessario ripetere gli stessi valori CSS, puoi creare nuove variabili per semplificare la gestione degli stili. Esempi di altre proprietà CSS che possono usufruire delle variabili CSS, includono: `border-radius`, `padding`, `margin` e `box-shadow`.
 
-### Elementi bare
+### Elementi nudi
 
-Gli elementi nudi sono formattati direttamente tramite il nome del loro elemento invece di utilizzare una classe CSS. Ad esempio, anziché applicare lo stile a una classe CSS `.page-heading`, gli stili vengono applicati all&#39;elemento `h1` utilizzando `h1 { ... }`.
+Gli elementi nudi hanno lo stile applicato direttamente tramite il nome dell’elemento invece di utilizzare una classe CSS. Ad esempio, anziché applicare lo stile a una classe CSS `.page-heading`, gli stili vengono applicati all’elemento `h1` utilizzando `h1 { ... }`.
 
-Nel file `styles/styles.css`, un set di stili di base viene applicato agli elementi HTML nudi. I siti web di Edge Delivery Services danno la priorità all’utilizzo di elementi nudi perché si allineano con la HTML semantica nativa del servizio Edge Delivery.
+Nel file `styles/styles.css`, un set di stili di base viene applicato agli elementi HTML nudi. I siti web di Edge Delivery Services danno la priorità all’utilizzo di elementi nudi perché si allineano con HTML, semantica nativa di Edge Delivery Services.
 
-Per allinearsi al branding WKND, diamo uno stile ad alcuni elementi nudi in `styles.css`:
+Per allinearsi al branding WKND, applica uno stile ad alcuni elementi nudi in `styles.css`:
 
 ```css
 /* styles/styles.css */
@@ -123,11 +123,11 @@ Questi stili garantiscono che `h2` elementi, a meno che non vengano sostituiti, 
 
 ### Elementi dedotti
 
-In Edge Delivery Services, il codice `scripts.js` e `aem.js` del progetto ottimizza automaticamente elementi HTML bare specifici in base al loro contesto all&#39;interno di HTML.
+In Edge Delivery Services, il codice `scripts.js` e `aem.js` del progetto ottimizzano automaticamente elementi HTML semplici specifici in base al relativo contesto all’interno dell’HTML.
 
-Ad esempio, gli elementi di ancoraggio (`<a>`) creati sulla propria riga, anziché in linea con il testo circostante, sono considerati pulsanti basati su questo contesto. Questi ancoraggi vengono racchiusi automaticamente in un contenitore `div` con classe CSS `button-container` e all&#39;elemento di ancoraggio viene aggiunta una classe CSS `button`.
+Ad esempio, gli elementi di ancoraggio (`<a>`) creati su una propria riga, anziché in linea con il testo circostante, sono dedotti come pulsanti in base a questo contesto. Questi ancoraggi vengono racchiusi automaticamente in un contenitore `div` con classe CSS `button-container` e all’elemento di ancoraggio viene aggiunta una classe CSS `button`.
 
-Ad esempio, quando un collegamento viene creato sulla propria riga, Edge Delivery Services JavaScript aggiorna il DOM come segue:
+Ad esempio, quando un collegamento viene creato su una propria riga, Edge Delivery Services JavaScript aggiorna il DOM come segue:
 
 ```html
 <p class="button-container">
@@ -135,9 +135,9 @@ Ad esempio, quando un collegamento viene creato sulla propria riga, Edge Deliver
 </p>
 ```
 
-Questi pulsanti possono essere personalizzati in modo da corrispondere al marchio WKND, che determina la visualizzazione dei pulsanti come rettangoli gialli con testo nero.
+Questi pulsanti possono essere personalizzati in modo da corrispondere al brand WKND, che stabilisce che i pulsanti vengano visualizzati come rettangoli gialli con testo nero.
 
-Di seguito è riportato un esempio di come assegnare uno stile ai &quot;pulsanti dedotti&quot; in `styles.css`:
+Di seguito è riportato un esempio di come assegnare uno stile ai “pulsanti dedotti”&quot; in `styles.css`:
 
 ```css
 /* styles/styles.css */
@@ -170,18 +170,18 @@ button {
 }
 ```
 
-Questo CSS definisce gli stili dei pulsanti di base e include trattamenti specifici per WKND, ad esempio testo in maiuscolo, sfondo giallo e testo nero. Le proprietà `background-color` e `color` utilizzano variabili CSS che consentono allo stile del pulsante di rimanere allineato con i colori del brand. Questo approccio garantisce che i pulsanti abbiano uno stile coerente all&#39;interno del sito e rimangano flessibili.
+Questo CSS definisce gli stili di base dei pulsanti e include trattamenti specifici per WKND, ad esempio il testo in maiuscolo, lo sfondo giallo e il testo in nero. Le proprietà `background-color` e `color` utilizzano variabili CSS che consentono allo stile del pulsante di rimanere allineato ai colori del brand. Questo approccio garantisce che i pulsanti abbiano uno stile coerente all’interno del sito, mantenendo al contempo la flessibilità.
 
 ## Font web
 
-I progetti Edge Delivery Services ottimizzano l’uso dei font per web al fine di mantenere prestazioni elevate e ridurre al minimo l’impatto sui punteggi di Lighthouse. Questo metodo assicura un rendering rapido senza compromettere l’identità visiva del sito. Ecco come implementare i font web in modo efficiente per ottenere prestazioni ottimali.
+I progetti Edge Delivery Services ottimizzano l’utilizzo dei font web al fine di mantenere prestazioni elevate e ridurre al minimo l’impatto sui punteggi di Lighthouse. Questo metodo assicura un rendering rapido senza compromettere l’identità visiva del sito. Ecco come implementare i font web in modo efficiente per ottenere prestazioni ottimali.
 
-### Facce font
+### Tipi di font
 
-Aggiungere font Web personalizzati utilizzando le dichiarazioni CSS `@font-face` nel file `styles/fonts.css`. L&#39;aggiunta di `@font-faces` a `fonts.css` garantisce il caricamento ottimale dei caratteri Web, contribuendo a mantenere i punteggi di Lighthouse.
+Aggiungi font web personalizzati utilizzando le dichiarazioni CSS `@font-face` nel file `styles/fonts.css`. L’aggiunta di `@font-faces` a `fonts.css` garantisce il caricamento dei font web nel momento ottimale, contribuendo a mantenere i punteggi di Lighthouse.
 
 1. Apri `styles/fonts.css`.
-2. Aggiungi le seguenti `@font-face` dichiarazioni per includere i font del brand WKND: `Asar` e `Source Sans Pro`.
+2. Aggiungi le seguenti dichiarazioni `@font-face` per includere i font del brand WKND: `Asar` e `Source Sans Pro`.
 
 ```css
 /* styles/fonts.css */
@@ -250,13 +250,13 @@ Aggiungere font Web personalizzati utilizzando le dichiarazioni CSS `@font-face`
 }
 ```
 
-I tipi di carattere utilizzati in questa esercitazione provengono da Google Fonts, ma i tipi di carattere Web possono essere ottenuti da qualsiasi provider di tipi di carattere, incluso [Adobe Fonts](https://fonts.adobe.com/).
+I font utilizzati in questo tutorial provengono da Google Fonts, ma i font web possono essere ottenuti da qualsiasi provider di font, incluso [Adobe Fonts](https://fonts.adobe.com/).
 
-+++Utilizzo di file di font Web locali
++++Utilizzo di file dei font web locali
 
-In alternativa, i file di font Web vengono copiati nel progetto nella cartella `/fonts` e a cui si fa riferimento nelle dichiarazioni `@font-face`.
+In alternativa, i file dei font web vengono copiati nel progetto nella cartella `/fonts` e a cui si fa riferimento nelle dichiarazioni `@font-face`.
 
-Questo tutorial utilizza i font web remoti, in hosting, per facilitarne il follow-up.
+Questo tutorial utilizza i font web remoti, in hosting, così da poterlo seguire più facilmente.
 
 ```css
 /* styles/fonts.css */
@@ -285,17 +285,17 @@ Infine, aggiorna le variabili CSS `styles/styles.css` per utilizzare i nuovi fon
 }
 ```
 
-`roboto-fallback` e `roboto-condensed-fallback` sono tipi di carattere di fallback aggiornati nella sezione [Tipi di carattere di fallback](#fallback-fonts) per l&#39;allineamento al supporto dei tipi di carattere Web `Asar` e `Source Sans Pro` personalizzati.
+`roboto-fallback` e `roboto-condensed-fallback` sono font di fallback che vengono aggiornati nella sezione [Font di fallback](#fallback-fonts) per allinearsi e supportare i font web `Asar` e `Source Sans Pro` personalizzati.
 
 ### Font di fallback
 
-I font web spesso influiscono sulle prestazioni a causa delle loro dimensioni, aumentando potenzialmente i punteggi CLS (Cumulative Layout Shift) e riducendo i punteggi complessivi di Lighthouse. Per garantire la visualizzazione immediata del testo durante il caricamento dei caratteri Web, nei progetti Edge Delivery Services vengono utilizzati caratteri di fallback nativi per il browser. Questo approccio consente di mantenere un’esperienza utente fluida mentre viene applicato il font desiderato.
+I font web spesso influiscono sulle prestazioni a causa delle relative dimensioni, aumentando potenzialmente i punteggi di CLS (Cumulative Layout Shift) e riducendo i punteggi complessivi di Lighthouse. Per garantire la visualizzazione immediata del testo durante il caricamento dei font web, nei progetti Edge Delivery Services vengono utilizzati caratteri di fallback nativi per il browser. Questo approccio consente di mantenere un’esperienza utente fluida pur applicando il font desiderato.
 
-Per selezionare il tipo di carattere di fallback ottimale, utilizzare l&#39;estensione di Adobe [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), che determina un tipo di carattere strettamente corrispondente per i browser da utilizzare prima del caricamento del tipo di carattere personalizzato. Le dichiarazioni font di fallback risultanti devono essere aggiunte al file `styles/styles.css` per migliorare le prestazioni e garantire un&#39;esperienza fluida per gli utenti.
+Per selezionare il font di fallback migliore, utilizza l’estensione per [Chrome Helix Font Fallback](https://www.aem.live/developer/font-fallback) di Adobe, che individua un font con maggiore corrispondenza da utilizzare nei browser prima del caricamento del font personalizzato. Le dichiarazioni dei font di fallback risultanti devono essere aggiunte al file `styles/styles.css` per migliorare le prestazioni e garantire un’esperienza fluida per gli utenti.
 
-Estensione ![Helix Font Fallback Chrome](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
+![Estensione Helix Font Fallback Chrome](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
-Per utilizzare l&#39;estensione [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), verificare che alla pagina Web siano applicati i tipi di carattere Web nelle stesse varianti utilizzate nel sito Web Edge Delivery Services. Questa esercitazione illustra l&#39;estensione in [wknd.site](http://wknd.site/us/en.html). Durante lo sviluppo di un sito Web, applicare l&#39;estensione al sito su cui si sta lavorando anziché a [wknd.site](http://wknd.site/us/en.html).
+Per utilizzare l’estensione [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), assicurati che alla pagina web siano applicati i font web nelle stesse varianti utilizzate nel sito web di Edge Delivery Services. In questo tutorial viene illustrata l’estensione in [wknd.site](http://wknd.site/us/en.html). Durante lo sviluppo di un sito web, applica l’estensione al sito su cui stai lavorando anziché a [wknd.site](http://wknd.site/us/en.html).
 
 ```css
 /* styles/styles.css */
@@ -320,7 +320,7 @@ Per utilizzare l&#39;estensione [Helix Font Fallback Chrome](https://www.aem.liv
 ...
 ```
 
-Aggiungere i nomi delle famiglie di font di fallback alle variabili CSS font in `styles/styles.css` dopo i nomi delle famiglie di font &quot;reali&quot;.
+Aggiungi i nomi delle famiglie di font di fallback alle variabili dei font CSS in `styles/styles.css` dopo i nomi delle famiglie di font “reali”.
 
 ```css
 /* styles/styles.css */
@@ -336,29 +336,29 @@ Aggiungere i nomi delle famiglie di font di fallback alle variabili CSS font in 
 
 ## Anteprima di sviluppo
 
-Quando si aggiunge un file CSS, l’ambiente di sviluppo locale di AEM CLI ricarica automaticamente le modifiche, rendendo più rapido e semplice vedere in che modo il file CSS influisce sul blocco.
+Man mano che aggiungi CSS, l’ambiente di sviluppo locale CLI di AEM ricarica automaticamente le modifiche, rendendo più facile e veloce visualizzare in che modo tale aggiunta influisce sul blocco.
 
-![Anteprima di sviluppo del marchio WKND CSS](./assets/4-website-branding/preview.png)
+![Anteprima di sviluppo CSS del brand WKND](./assets/4-website-branding/preview.png)
 
 
-## Scarica i file CSS finali
+## Scaricare i file CSS finali
 
 Puoi scaricare i file CSS aggiornati dai collegamenti seguenti:
 
 * [`styles.css`](https://raw.githubusercontent.com/davidjgonzalez/aem-wknd-eds-ue/refs/heads/main/styles/styles.css)
 * [`fonts.css`](https://raw.githubusercontent.com/davidjgonzalez/aem-wknd-eds-ue/refs/heads/main/styles/fonts.css)
 
-## Collega i file CSS
+## Eseguire il linting dei file CSS
 
-Assicurati di [collegare frequentemente](./3-local-development-environment.md#linting) le modifiche al codice per assicurarti che siano pulite e coerenti. La colorazione consente di risolvere i problemi in anticipo e riduce i tempi di sviluppo complessivi. Non è possibile unire il lavoro al ramo principale finché non vengono risolti tutti i problemi di linting.
+Assicurati di [eseguire frequentemente il linting](./3-local-development-environment.md#linting) delle modifiche al codice per garantire che sia pulito e coerente. Eseguire il linting, consente di rilevare i problemi in anticipo e riduce il tempo di sviluppo complessivo. Ricorda che non è possibile unire il tuo lavoro al ramo principale finché non saranno stati risolti tutti i problemi di linting.
 
 ```bash
 $ npm run lint:css
 ```
 
-## Unisci modifiche codice
+## Unire le modifiche al codice
 
-Unisci le modifiche nel ramo `main` su GitHub per generare il lavoro futuro su questi aggiornamenti.
+Unisci le modifiche al ramo `main` su GitHub per creare il lavoro futuro su questi aggiornamenti.
 
 ```bash
 $ git add .
@@ -366,13 +366,13 @@ $ git commit -m "Add global CSS, CSS variables, and web fonts"
 $ git push origin wknd-styles
 ```
 
-Dopo il push delle modifiche al ramo `wknd-styles`, crea una richiesta pull su GitHub per unirle al ramo `main`.
+Una volta trasmesse le modifiche nel ramo `wknd-styles`, crea una richiesta pull su GitHub per unirle al ramo `main`.
 
-1. Passa all&#39;archivio GitHub dal capitolo [Crea un nuovo progetto](./1-new-code-project.md).
+1. Passa all’archivio GitHub dal capitolo [Crea un nuovo progetto](./1-new-code-project.md).
 2. Fai clic sulla scheda **Richieste pull** e seleziona **Nuova richiesta pull**.
 3. Imposta `wknd-styles` come ramo di origine e `main` come ramo di destinazione.
-4. Rivedi le modifiche e fai clic su **Crea richiesta di pull**.
-5. Nei dettagli della richiesta di pull, **aggiungi quanto segue**:
+4. Rivedi le modifiche e fai clic su **Crea richiesta pull**.
+5. Nei dettagli della richiesta pull, **aggiungi quanto segue**:
 
    ```
    Add basic global CSS, CSS variables, and web fonts (including fallback fonts) to support the WKND brand.
@@ -385,10 +385,10 @@ Dopo il push delle modifiche al ramo `wknd-styles`, crea una richiesta pull su G
    ```
 
    * `Fix #1` fa riferimento al problema GitHub creato in precedenza.
-   * Gli URL di test indicano a AEM Code Sync quali rami utilizzare per la convalida e il confronto. L&#39;URL &quot;After&quot; (Dopo) utilizza il ramo di lavoro `wknd-styles` per verificare in che modo le modifiche al codice influiscono sulle prestazioni del sito Web.
+   * Gli URL di test indicano ad AEM Code Sync quali rami utilizzare per la convalida e il confronto. L’URL “After” utilizza il ramo di lavoro `wknd-styles` per verificare in che modo le modifiche al codice influiscono sulle prestazioni del sito web.
 
-6. Fai clic su **Crea richiesta di pull**.
-7. Attendi che l&#39;app GitHub [&#128279;](./1-new-code-project.md) per la sincronizzazione del codice di AEM  sia **completa per i controlli di qualità**. In caso contrario, risolvere gli errori ed eseguire nuovamente i controlli.
-8. Al termine dei controlli, **unisci la richiesta di pull** in `main`.
+6. Fai clic su **Crea richiesta pull**.
+7. Attendi che l’app ](./1-new-code-project.md)AEM Code Sync di GitHub[ **completi i controlli di qualità**. In caso contrario, risolvi gli errori ed esegui nuovamente i controlli.
+8. Una vola superati i controlli, **unisci la richiesta pull** in `main`.
 
 Le modifiche unite in `main` non vengono considerate distribuite in produzione e il nuovo sviluppo può procedere in base a questi aggiornamenti.

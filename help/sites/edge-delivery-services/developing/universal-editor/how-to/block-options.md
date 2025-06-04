@@ -11,53 +11,53 @@ jira: KT-17296
 duration: 700
 exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Sviluppare un blocco con opzioni
 
-Questo tutorial si basa su quello di Edge Delivery Services e Universal Editor e spiega come aggiungere opzioni di blocco a un blocco. Definendo le opzioni di blocco, puoi personalizzare l’aspetto e la funzionalità di un blocco, abilitando diverse varianti in base alle varie esigenze di contenuto. Ciò consente una maggiore flessibilità e riutilizzabilità all’interno del sistema di progettazione del sito.
+Questo tutorial, basato sul tutorial di Edge Delivery Services e dell’editor universale, ti guida nel processo di aggiunta delle opzioni di blocco a un blocco. Definendo le opzioni di blocco, puoi personalizzare l’aspetto e la funzionalità di un blocco, abilitando diverse varianti in base alle varie esigenze di contenuto. Questo consente una maggiore flessibilità e riutilizzabilità all’interno del sistema di progettazione del sito.
 
-![Opzione blocco affiancato](./assets/block-options/main.png){align="center"}
+![Opzione di blocco affiancata](./assets/block-options/main.png){align="center"}
 
-In questa esercitazione verranno aggiunte opzioni di blocco al blocco Teaser, consentendo agli autori di scegliere tra due opzioni di visualizzazione: **Predefinita** e **Affiancata**. L&#39;opzione **Default** visualizza l&#39;immagine sopra e dietro il testo, mentre l&#39;opzione **Side-by-side** visualizza l&#39;immagine e il testo affiancati.
+In questo tutorial aggiungerai opzioni di blocco al blocco teaser, consentendo agli autori di scegliere tra due opzioni di visualizzazione: **predefinita** e **affiancata**. L’opzione **predefinita** mostra l’immagine sopra e dietro il testo, mentre l’opzione **affiancata** mostra l’immagine e il testo affiancati.
 
 ## Casi d’uso comuni
 
-I casi d&#39;uso comuni per l&#39;utilizzo di **Opzioni di blocco** in **Edge Delivery Services** e **Universal Editor** includono, ma non sono limitati a:
+I casi d’uso comuni per l’utilizzo delle **Opzioni di blocco** in **Edge Delivery Services** e nell’**editor universale** includono, a mero titolo esemplificativo:
 
-1. **Varianti di layout:** Passaggio semplice tra i layout. Ad esempio, orizzontale e verticale o griglia ed elenco.
-2. **Varianti di stile:** Passa facilmente da un tema all&#39;altro o da un trattamento visivo all&#39;altro. Ad esempio, modalità chiara e scura o testo grande e testo piccolo.
-3. **Controllo visualizzazione contenuto:** Attiva/disattiva la visibilità degli elementi o passa da uno stile di contenuto all&#39;altro (compatto e dettagliato).
+1. **Varianti di layout:** passa facilmente da un layout all’altro. Ad esempio, orizzontale rispetto a verticale o griglia rispetto a elenco.
+2. **Varianti di stile:** passa facilmente da un tema all’altro o da un trattamento visivo all’altro. Ad esempio, modalità chiara rispetto a modalità scura o testo grande rispetto a testo piccolo.
+3. **Controllo visualizzazione contenuto:** attiva/disattiva la visibilità degli elementi o passa da uno stile di contenuto all’altro (compatto rispetto a dettagliato).
 
 Queste opzioni offrono flessibilità ed efficienza nella creazione di blocchi dinamici e adattabili.
 
-Questa esercitazione illustra il caso di utilizzo delle varianti di layout, in cui il blocco Teaser può essere visualizzato in due layout diversi: **Predefinito** e **Affiancato**.
+Questo tutorial illustra il caso d’uso delle varianti di layout, secondo cui il blocco teaser può essere visualizzato in due layout diversi: **Predefinito** e **Affiancato**.
 
-## Modello a blocchi
+## Modello di blocco
 
-Per aggiungere opzioni di blocco al blocco Teaser, apri il relativo frammento JSON in `/block/teaser/_teaser.json` e aggiungi un nuovo campo alla definizione del modello. Questo campo imposta la proprietà `name` su `classes`, che è un campo protetto utilizzato da AEM per archiviare le opzioni di blocco, che vengono applicate al Edge Delivery Services HTML del blocco.
+Per aggiungere opzioni di blocco al blocco teaser, apri il relativo frammento JSON in `/block/teaser/_teaser.json` e aggiungi un nuovo campo alla definizione del modello. Questo campo imposta la proprietà `name` su `classes`, che è un campo protetto utilizzato da AEM per archiviare le opzioni di blocco, che vengono applicate all’HTML Edge Delivery Services del blocco.
 
-### Configurazioni dei campi
+### Configurazioni del campo
 
-Le schede seguenti illustrano vari modi per configurare le opzioni di blocco nel modello di blocco, tra cui selezione singola con singola classe CSS, selezione singola con più classi CSS e selezione multipla con più classi CSS. Questa esercitazione [implementa l&#39;approccio più semplice](#field-configuration-for-this-tutorial) utilizzato in **select con singola classe CSS**.
+Le schede seguenti illustrano i vari modi per configurare le opzioni di blocco nel modello di blocco, tra cui selezione singola con singola classe CSS, selezione singola con più classi CSS e selezione multipla con più classi CSS. Questo tutorial [implementa l’approccio più semplice](#field-configuration-for-this-tutorial) utilizzato nella **selezione con singola classe CSS**.
 
 >[!BEGINTABS]
 
->[!TAB Seleziona con classe CSS singola]
+>[!TAB Selezione con singola classe CSS]
 
-Questo tutorial illustra come utilizzare un tipo di input `select` (a discesa) per consentire agli autori di scegliere un&#39;opzione a blocco singolo, che viene quindi applicata come una singola classe CSS corrispondente.
+Questo tutorial illustra come utilizzare un tipo di input `select` (a discesa) per consentire agli autori di scegliere un’opzione di blocco singolo, che viene quindi applicata come una singola classe CSS corrispondente.
 
-![Seleziona con classe CSS singola](./assets/block-options/tab-1.png){align="center"}
+![Selezione con singola classe CSS](./assets/block-options/tab-1.png){align="center"}
 
-#### Modello a blocchi
+#### Modello di blocco
 
-L&#39;opzione **Default** è rappresentata da una stringa vuota (`""`), mentre l&#39;opzione **Side-by-Side** utilizza `"side-by-side"`. I valori **name** e **value** dell&#39;opzione non devono essere uguali, ma il valore **value** determina le classi CSS applicate al HTML del blocco. Ad esempio, il valore dell&#39;opzione **Side-by-Side** potrebbe essere `layout-10` invece di `side-by-side`. Tuttavia, è meglio utilizzare nomi significativi dal punto di vista semantico per le classi CSS, garantendo chiarezza e coerenza nei valori delle opzioni.
+L’opzione **predefinita** è rappresentata da una stringa vuota (`""`), mentre l’opzione **affiancata** utilizza `"side-by-side"`. Il **nome** e il **valore** dell’opzione non devono essere uguali, ma il **valore** determina le classi CSS applicate all’HTML del blocco. Ad esempio, il valore dell’opzione **affiancata** potrebbe essere `layout-10` invece di `side-by-side`. Tuttavia, è meglio utilizzare nomi significativi dal punto di vista semantico per le classi CSS, che garantiscono chiarezza e coerenza nei valori delle opzioni.
 
-[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```json{highlight="4,8,9-18"}
 ...
@@ -83,11 +83,11 @@ L&#39;opzione **Default** è rappresentata da una stringa vuota (`""`), mentre l
 ...
 ```
 
-#### Blocca HTML
+#### HTML del blocco
 
-Quando l’autore seleziona un’opzione, il valore corrispondente viene aggiunto come classe CSS al HTML del blocco:
+Quando l’autore seleziona un’opzione, il valore corrispondente viene aggiunto all’HTML del blocco come classe CSS:
 
-- Se è selezionato **Default**:
+- Se è selezionato **Predefinito**:
 
   ```html
   <div class="block teaser">
@@ -103,22 +103,22 @@ Quando l’autore seleziona un’opzione, il valore corrispondente viene aggiunt
   </div>
   ```
 
-Questo consente di applicare stili e JavaScript condizionali diversi a seconda dell’apertura selezionata.
+Questo consente di applicare stili e JavaScript condizionali diversi a seconda dell’opzione scelta.
 
 
->[!TAB Seleziona con più classi CSS]
+>[!TAB Selezione con più classi CSS]
 
-**Questo approccio non viene utilizzato in questa esercitazione, ma illustra un metodo alternativo e opzioni di blocco avanzate.**
+**Questo approccio non viene utilizzato in questo tutorial, ma illustra un metodo alternativo e opzioni di blocco avanzate.**
 
-Il tipo di input `select` consente agli autori di scegliere un&#39;opzione a blocco singolo, che può essere mappata facoltativamente a più classi CSS. Per ottenere questo risultato, elenca le classi CSS come valori delimitati da spazi.
+Il tipo di input `select` consente agli autori di scegliere un’opzione di blocco singolo, che può, facoltativamente, mappare più classi CSS. Per ottenere questo risultato, elenca le classi CSS come valori delimitati da spazi.
 
-![Seleziona con più classi CSS](./assets/block-options/tab-2.png){align="center"}
+![Selezione con più classi CSS](./assets/block-options/tab-2.png){align="center"}
 
-#### Modello a blocchi
+#### Modello di blocco
 
-Ad esempio, l&#39;opzione **Side-by-Side** può supportare varianti in cui l&#39;immagine viene visualizzata a sinistra (`side-by-side left`) o a destra (`side-by-side right`).
+Ad esempio, l’opzione **Affiancato** può supportare varianti in cui l’immagine viene visualizzata a sinistra (`side-by-side left`) o a destra (`side-by-side right`).
 
-[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```json{highlight="4,8,9-21"}
 ...
@@ -148,11 +148,11 @@ Ad esempio, l&#39;opzione **Side-by-Side** può supportare varianti in cui l&#39
 ...
 ```
 
-#### Blocca HTML
+#### HTML del blocco
 
-Quando l’autore seleziona un’opzione, il valore corrispondente viene applicato come set separato da spazi di classi CSS nel HTML del blocco:
+Quando l’autore seleziona un’opzione, il valore corrispondente viene applicato come un set di classi CSS separate da spazi nell’HTML del blocco:
 
-- Se è selezionato **Default**:
+- Se è selezionato **Predefinito**:
 
   ```html
   <div class="block teaser">
@@ -160,7 +160,7 @@ Quando l’autore seleziona un’opzione, il valore corrispondente viene applica
   </div>
   ```
 
-- Se è selezionato **Affiancato a immagine a sinistra**:
+- Se è selezionato **Affiancato con immagine a sinistra**:
 
   ```html
   <div class="block teaser side-by-side left">
@@ -168,7 +168,7 @@ Quando l’autore seleziona un’opzione, il valore corrispondente viene applica
   </div>
   ```
 
-- Se è selezionato **Affiancato a immagine a destra**:
+- Se è selezionato **Affiancato con immagine a destra**:
 
   ```html
   <div class="block teaser side-by-side right">
@@ -181,17 +181,17 @@ Questo consente di applicare stili e JavaScript condizionali diversi a seconda d
 
 >[!TAB Selezione multipla con più classi CSS]
 
-**Questo approccio non viene utilizzato in questa esercitazione, ma illustra un metodo alternativo e opzioni di blocco avanzate.**
+**Questo approccio non viene utilizzato in questo tutorial, ma illustra un metodo alternativo e opzioni di blocco avanzate.**
 
-Il tipo di input `"component": "multiselect"` consente all&#39;autore di selezionare più opzioni contemporaneamente. Ciò consente permutazioni complesse dell&#39;aspetto del blocco combinando più scelte di progettazione.
+Il tipo di input `"component": "multiselect"` consente all’autore di selezionare più opzioni contemporaneamente. Ciò consente permutazioni complesse dell’aspetto del blocco, combinando più scelte di progettazione.
 
 ![Selezione multipla con più classi CSS](./assets/block-options/tab-3.png){align="center"}
 
-### Modello a blocchi
+### Modello di blocco
 
-Ad esempio, **Affiancato**, **Immagine a sinistra** e **Immagine a destra** possono supportare varianti in cui l&#39;immagine è posizionata a sinistra (`side-by-side left`) o a destra (`side-by-side right`).
+Ad esempio, **Affiancato**, **Immagine a sinistra** e **Immagine a destra** possono supportare varianti in cui l’immagine è posizionata a sinistra (`side-by-side left`) o a destra (`side-by-side right`).
 
-[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```json{highlight="4,6,8,10-21"}
 ...
@@ -221,11 +221,11 @@ Ad esempio, **Affiancato**, **Immagine a sinistra** e **Immagine a destra** poss
 ...
 ```
 
-#### Blocca HTML
+#### HTML del blocco
 
-Quando l’autore seleziona più opzioni, i valori corrispondenti vengono applicati come classi CSS separate da spazi nel HTML del blocco:
+Quando l’autore seleziona più opzioni, i valori corrispondenti vengono applicati come classi CSS separate da spazi nell’HTML del blocco:
 
-- Se sono selezionati **affiancati** e **immagine a sinistra**:
+- Se sono selezionate le opzioni **Affiancato** e **Immagine a sinistra**:
 
   ```html{highlight="1"}
   <div class="block teaser side-by-side left">
@@ -233,7 +233,7 @@ Quando l’autore seleziona più opzioni, i valori corrispondenti vengono applic
   </div>
   ```
 
-- Se sono selezionati **Affiancati** e **Immagine a destra**:
+- Se sono selezionate le opzioni **Affiancato** e **Immagine a destra**:
 
   ```html{highlight="1"}
   <div class="block teaser side-by-side right">
@@ -241,30 +241,30 @@ Quando l’autore seleziona più opzioni, i valori corrispondenti vengono applic
   </div>
   ```
 
-La selezione multipla offre flessibilità, ma presenta complessità nella gestione delle permutazioni di progettazione. Senza restrizioni, le selezioni in conflitto possono causare esperienze interrotte o off-brand.
+La selezione multipla offre flessibilità, ma introduce complessità nella gestione delle permutazioni di progettazione. Senza restrizioni, le selezioni in conflitto possono causare esperienze non funzionanti o non in linea con il brand.
 
 Ad esempio:
 
-- **Immagine a sinistra** o **Immagine a destra** senza selezionare **Affiancato** le applica implicitamente a **Predefinito**, impostando sempre l&#39;immagine come sfondo, pertanto l&#39;allineamento a sinistra e a destra non è rilevante.
-- La selezione di **Immagine a sinistra** e **Immagine a destra è** contraddittoria.
-- Se si seleziona **Affiancato** senza **Immagine a sinistra** o **Immagine a destra**, la posizione dell&#39;immagine non è specificata.
+- Con **Immagine a sinistra** o **Immagine a destra**, se non si seleziona **Affiancato** viene implicitamente applicata l’opzione **Predefinito**, che imposta sempre l’immagine come sfondo, rendendo irrilevante l’allineamento a sinistra e a destra.
+- Se si seleziona sia **Immagine a sinistra** sia **Immagine a destra** si verifica una contraddzione.
+- Se si seleziona **Affiancato** senza selezionare **Immagine a sinistra** o **Immagine a destra**, si verifica una situazione ambigua, poiché la posizione dell’immagine non è specificata.
 
-Per evitare problemi e confusione nell’authoring quando si utilizza la selezione multipla, assicurati che le opzioni siano ben pianificate e che tutte le permutazioni siano testate. La selezione multipla è ideale per miglioramenti semplici e non in conflitto, come &quot;large&quot; (grande) o &quot;highlight&quot; (evidenziazione), anziché per scelte che modificano il layout.
+Per evitare problemi e confusione nell’authoring quando si utilizza una selezione multipla, assicurati che le opzioni siano ben pianificate e che vengano testate tutte le possibile permutazioni. La selezione multipla è ideale per apportare miglioramenti semplici e non in conflitto, come “grande” o “evidenziazione”, più che per le scelte che modificano il layout.
 
 
 >[!TAB Opzione predefinita]
 
-**Questo approccio non viene utilizzato in questa esercitazione, ma illustra un metodo alternativo e opzioni di blocco avanzate.**
+**Questo approccio non viene utilizzato in questo tutorial, ma illustra un metodo alternativo e opzioni di blocco avanzate.**
 
-Le opzioni di blocco possono essere impostate come predefinite quando si aggiunge una nuova istanza di blocco a una pagina in Universal Editor. Questa operazione viene eseguita impostando il valore predefinito della proprietà `classes` nella definizione del blocco [&#128279;](../5-new-block.md#block-definition).
+Le opzioni di blocco possono essere impostate come predefinite quando si aggiunge una nuova istanza di blocco a una pagina nell’editor universale. Questa operazione viene eseguita impostando il valore predefinito della proprietà `classes` nella [definizione del blocco](../5-new-block.md#block-definition).
 
-#### Definizione blocco
+#### Definizione del blocco
 
-Nell&#39;esempio seguente, l&#39;opzione predefinita è impostata su **Side-by-Side** assegnando la proprietà `value` del campo `classes` a `side-by-side`. L’input dell’opzione di blocco corrispondente nel modello di blocco è facoltativo.
+Nell’esempio seguente, l’opzione predefinita è impostata su **Affiancato** assegnando la proprietà `value` del campo `classes` a `side-by-side`. L’input dell’opzione di blocco corrispondente nel modello di blocco è facoltativo.
 
-Puoi anche definire più voci per lo stesso blocco, ciascuna con un nome e una classe diversi. Questo consente all’editor universale di visualizzare voci di blocco distinte, ciascuna preconfigurata con un’opzione di blocco specifica. Anche se questi vengono visualizzati come blocchi separati nell’editor, la base di codice contiene un singolo blocco che esegue il rendering dinamico in base all’opzione selezionata.
+Puoi anche definire più voci per lo stesso blocco, ciascuna con un nome e una classe diversi. Questo consente all’editor universale di visualizzare voci di blocco distinte, ciascuna preconfigurata con un’opzione di blocco specifica. Anche se questi vengono visualizzati come blocchi separati nell’editor, la base di codice contiene un singolo blocco che esegue dinamicamente il rendering in base all’opzione selezionata.
 
-[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```json{highlight="12"}
 {
@@ -295,14 +295,14 @@ Puoi anche definire più voci per lo stesso blocco, ciascuna con un nome e una c
 >[!ENDTABS]
 
 
-### Configurazione del campo per questa esercitazione
+### Configurazione del campo per questo tutorial
 
 
-In questa esercitazione verrà utilizzato l&#39;approccio select with single CSS class descritto in precedenza nella prima scheda, che consente due opzioni di blocco discrete: **Default** e **Side-by-side**.
+In questo tutorial verrà utilizzato l’approccio di selezione con una singola classe CSS descritto in precedenza nella prima scheda, che consente due opzioni di blocco distinte: **Predefinito** e **Affiancato**.
 
 Nella definizione del modello all’interno del frammento JSON del blocco, aggiungi un singolo campo di selezione per le opzioni di blocco. Questo campo consente agli autori di scegliere tra il layout predefinito e un layout affiancato.
 
-[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```json{highlight="7-24"}
 {
@@ -369,13 +369,13 @@ Nella definizione del modello all’interno del frammento JSON del blocco, aggiu
 }
 ```
 
-## Blocco di aggiornamento nell’editor universale
+## Aggiornare il blocco nell’editor universale
 
-Per rendere disponibile l&#39;input delle opzioni di blocco aggiornate in Universal Editor, distribuisci le modifiche al codice JSON in GitHub, crea una nuova pagina, aggiungi e crea il blocco Teaser con l&#39;opzione **Side-by-Side**, quindi pubblica la pagina in anteprima. Una volta pubblicata, carica la pagina nell’ambiente di sviluppo locale per la codifica.
+Per rendere disponibile l’input delle opzioni di blocco aggiornate nell’editor universale, implementa le modifiche al codice JSON in GitHub, crea una nuova pagina, aggiungi e crea il blocco Teaser con l’opzione **Affiancato**, quindi pubblica la pagina per vederla in anteprima. Una volta pubblicata, carica la pagina nell’ambiente di sviluppo locale per la codifica.
 
-### Invia modifiche a GitHub
+### Inviare modifiche a GitHub
 
-Per rendere disponibile l&#39;input delle opzioni di blocco aggiornate in Universal Editor per l&#39;impostazione delle opzioni di blocco e lo sviluppo sul HTML risultante, è necessario che il progetto venga contrassegnato e che le modifiche vengano inviate a un ramo GitHub, in questo caso il ramo `block-options`.
+Per rendere disponibile l’input delle opzioni di blocco aggiornate nell’editor universale per impostare le opzioni di blocco e lo sviluppo sull’HTML risultante, è necessario che il progetto venga analizzato e che le modifiche vengano inviate a un ramo GitHub, in questo caso il ramo `block-options`.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -390,31 +390,31 @@ $ git push origin teaser
 
 ### Creare una pagina di test
 
-Nel servizio Author di AEM, crea una nuova pagina per aggiungere il blocco Teaser da sviluppare. Seguendo la convenzione del capitolo [Creazione di un blocco](../6-author-block.md) dell&#39;esercitazione per sviluppatori [Edge Delivery Services e Universal Editor](../0-overview.md), creare una pagina di test in una pagina `branches`, denominandola dopo il ramo Git su cui si sta lavorando, in questo caso `block-options`.
+Nel servizio AEM Author crea una nuova pagina per aggiungere il blocco teaser da sviluppare. Seguendo la convenzione del capitolo [Creazione di un blocco](../6-author-block.md) nel tutorial [Edge Delivery Services ed editor universale per sviluppatori](../0-overview.md), crea una pagina di test in una pagina `branches`, con il nome del ramo Git su cui stai lavorando, in questo caso `block-options`.
 
-### Creare il blocco
+### Authoring del blocco
 
-Modificare la nuova pagina **Opzioni blocco** in Universal Editor e aggiungere il blocco **Teaser**. Assicurarsi di aggiungere il parametro di query `?ref=block-options` all&#39;URL per caricare la pagina utilizzando il codice del ramo GitHub `block-options`,
+Modifica la nuova pagina **Opzioni di blocco** nell’editor universale e aggiungi il blocco **teaser**. Assicurati di aggiungere il parametro di query `?ref=block-options` all’URL per caricare la pagina utilizzando il codice del ramo GitHub `block-options`,
 
-La finestra di dialogo di blocco ora include un elenco a discesa **Opzioni teaser** con **Impostazioni predefinite** e **Affiancate** selezioni. Scegliere **Affiancato** e completare la creazione dei contenuti rimanenti.
+La finestra di dialogo del blocco ora include un elenco a discesa **Opzioni teaser** con le selezioni **Predefinito** e **Affiancato**. Scegli **Affiancato** e completa l’authoring dei contenuti rimanenti.
 
-![Finestra di dialogo blocco teaser con opzioni](./assets/block-options/block-dialog.png){align="center"}
+![Finestra di dialogo del blocco teaser con opzioni](./assets/block-options/block-dialog.png){align="center"}
 
-È possibile aggiungere due blocchi **Teaser**, uno impostato su **Default** e l&#39;altro su **Side-by-Side**. Ciò ti consente di visualizzare in anteprima entrambe le opzioni affiancate durante lo sviluppo e assicura che l&#39;implementazione di **Side-by-Side** non influisca sull&#39;opzione **Default**.
+Facoltativamente, aggiungi due blocchi **teaser**, uno impostato su **Predefinito** e l’altro su **Affiancato**. Questo consente di visualizzare in anteprima entrambe le opzioni affiancate durante lo sviluppo e assicura che l’implementazione di **Affiancato** non influisca sull’opzione **Predefinito**.
 
-### Pubblica in anteprima
+### Pubblicare in anteprima
 
-Una volta aggiunto il blocco Teaser alla pagina, [pubblica la pagina in anteprima](../6-author-block.md) utilizzando il pulsante **Pubblica** e scegliendo Pubblica in **Anteprima** in Universal Editor.
+Una volta aggiunto il blocco teaser alla pagina, [pubblica la pagina in anteprima](../6-author-block.md) utilizzando il pulsante **Pubblica** e scegliendo Pubblica in **Anteprima** nell’editor universale.
 
-## Blocca HTML
+## HTML del blocco
 
 Per iniziare lo sviluppo del blocco, inizia esaminando la struttura DOM esposta dall’anteprima di Edge Delivery Services. Il DOM viene migliorato con JavaScript e formattato con CSS, fornendo le basi per la creazione e la personalizzazione del blocco.
 
 >[!BEGINTABS]
 
->[!TAB DOM da decorare]
+>[!TAB DOM da arricchire]
 
-Di seguito è riportato il DOM del blocco Teaser, con l&#39;opzione di blocco **Side-by-side** selezionata, che è la destinazione da decorare utilizzando JavaScript e CSS.
+Di seguito è riportato il DOM del blocco teaser, con l’opzione di blocco **Affiancato** selezionata, che è il target da arricchire utilizzando JavaScript e CSS.
 
 ```html{highlight="7"}
 ...
@@ -453,17 +453,17 @@ Di seguito è riportato il DOM del blocco Teaser, con l&#39;opzione di blocco **
 
 >[!TAB Come trovare il DOM]
 
-Per trovare il DOM da decorare, apri la pagina con il blocco nell’ambiente di sviluppo locale, seleziona il blocco utilizzando gli strumenti di sviluppo del browser web e ispeziona il DOM. Questo ti consentirà di identificare gli elementi rilevanti da decorare.
+Per trovare il DOM da arricchire, apri la pagina con il blocco nell’ambiente di sviluppo locale, seleziona il blocco utilizzando gli strumenti di sviluppo del browser web e ispeziona il DOM. Questo consentirà di identificare gli elementi rilevanti da arricchire.
 
-![Controlla DOM](./assets/block-options/dom.png){align="center"} del blocco
+![Ispezionare il DOM del blocco](./assets/block-options/dom.png){align="center"}
 
 >[!ENDTABS]
 
-## Blocca CSS
+## CSS del blocco
 
-Modificare `blocks/teaser/teaser.css` per aggiungere stili CSS specifici per l&#39;opzione **Affiancato**. Questo file contiene il CSS predefinito per il blocco.
+Modifica `blocks/teaser/teaser.css` per aggiungere stili CSS specifici per l’opzione **Affiancato**. Questo file contiene il CSS predefinito per il blocco.
 
-Per modificare gli stili per l&#39;opzione **Side-by-Side**, aggiungere una nuova regola CSS con ambito nel file `teaser.css` che esegue il targeting dei blocchi teaser configurati con la classe `side-by-side`.
+Per modificare gli stili per l’opzione **Affiancato**, aggiungi una nuova regola CSS definita nel file `teaser.css` che esegue il targeting dei blocchi teaser configurati con la classe `side-by-side`.
 
 ```css
 .block.teaser.side-by-side { ... }
@@ -481,10 +481,10 @@ In alternativa, puoi utilizzare la nidificazione CSS per una versione più conci
 }
 ```
 
-All&#39;interno della regola `&.side-by-side`, aggiungi le proprietà CSS necessarie per assegnare uno stile al blocco quando viene applicata la classe `side-by-side`.
+All’interno della regola `&.side-by-side`, aggiungi le proprietà CSS necessarie per applicare uno stile al blocco quando viene applicata la classe `side-by-side`.
 
-Un approccio comune consiste nel ripristinare gli stili predefiniti applicando `all: initial` ai selettori condivisi, quindi aggiungendo gli stili richiesti per la variante `side-by-side`. Se la maggior parte degli stili è condivisa tra le opzioni, l’override di proprietà specifiche potrebbe essere più semplice. Tuttavia, se più selettori necessitano di modifiche, la reimpostazione di tutti gli stili e la riapplicazione solo di quelli necessari possono rendere il codice più chiaro e manutenibile.
-[!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+Un approccio comune consiste nel ripristinare gli stili predefiniti applicando `all: initial` ai selettori condivisi, quindi aggiungendo gli stili richiesti per la variante `side-by-side`. Se la maggior parte degli stili è condivisa tra le opzioni, potrebbe essere più semplice sovrascrivere le proprietà specifiche. Tuttavia, se più selettori necessitano di modifiche, la reimpostazione di tutti gli stili e la riapplicazione solo di quelli necessari possono rendere il codice più chiaro e facilitarne la manutenzione.
+[!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```css
 /* /blocks/teaser/teaser.css */
@@ -660,11 +660,11 @@ Un approccio comune consiste nel ripristinare gli stili predefiniti applicando `
 ```
 
 
-## Blocca JavaScript
+## JavaScript del blocco
 
-L’identificazione delle opzioni attive per il blocco è semplice, in quanto consente di controllare le classi applicate all’elemento del blocco. In questo esempio, è necessario regolare la posizione in cui vengono applicati gli stili `.image-wrapper` a seconda dell&#39;opzione attiva.
+L’identificazione delle opzioni attive per il blocco è semplice, in quanto consente di verificare le classi applicate all’elemento del blocco. In questo esempio, è necessario regolare la posizione in cui vengono applicati gli stili `.image-wrapper` a seconda dell’opzione attiva.
 
-La funzione `getOptions` restituisce un array di classi applicate al blocco, esclusi `block` e `teaser` (poiché tutti i blocchi hanno la classe `block` e tutti i blocchi Teaser hanno la classe `teaser`). Tutte le classi rimanenti nell&#39;array indicano le opzioni attive. Se l’array è vuoto, viene applicata l’opzione predefinita.
+La funzione `getOptions` restituisce un array di classi applicate al blocco, esclusi `block` e `teaser` (poiché tutti i blocchi hanno la classe `block` e tutti i blocchi teaser hanno la classe `teaser`). Tutte le classi rimanenti nell’array indicano le opzioni attive. Se l’array è vuoto, viene applicata l’opzione predefinita.
 
 ```javascript
 function getOptions(block) {
@@ -673,7 +673,7 @@ function getOptions(block) {
 }
 ```
 
-Questo elenco di opzioni può essere utilizzato per eseguire in modo condizionale la logica personalizzata nel JavaScript del blocco:
+Questo elenco di opzioni può essere utilizzato per eseguire in determinate condizioni la logica personalizzata nel JavaScript del blocco:
 
 ```javascript
 if (getOptions(block).includes('side-by-side')) {
@@ -685,9 +685,9 @@ if (getOptions(block).includes('side-by-side')) {
 }
 ```
 
-Di seguito è riportato il file JavaScript completo aggiornato per il blocco teaser con entrambe le opzioni Default e Side-by-Side:
+Di seguito è riportato il file JavaScript completo e aggiornato per il blocco teaser con entrambe le opzioni Predefinito e Affiancato:
 
-[!BADGE /blocks/teaser/teaser.js]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE /blocks/teaser/teaser.js]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```javascript
 /* /blocks/teaser/teaser.js */
@@ -756,13 +756,13 @@ export default function decorate(block) {
 
 ## Anteprima di sviluppo
 
-Con l’aggiunta di CSS e JavaScript, l’ambiente di sviluppo locale della CLI di AEM ricarica a caldo le modifiche, consentendo una visualizzazione rapida e semplice dell’impatto del codice sul blocco. Passa il puntatore del mouse sul CTA e verifica che l’immagine del teaser si ingrandisca e si ingrandisca.
+Con l’aggiunta di CSS e JavaScript, l’ambiente di sviluppo locale di AEM CLI ricarica le modifiche, consentendo una visualizzazione rapida e semplice dell’impatto del codice sul blocco. Passa il puntatore sul CTA e verifica che l’immagine del teaser esegua lo zoom in e lo zoom out.
 
 ![Anteprima di sviluppo locale del teaser tramite CSS e JS](./assets/block-options//local-development-preview.png)
 
-## Illustra il codice
+## Eseguire il linting del codice
 
-Assicurati di [collegare frequentemente](../3-local-development-environment.md#linting) le modifiche al codice per mantenerlo pulito e coerente. L&#39;linting regolare consente di risolvere i problemi in anticipo, riducendo il tempo di sviluppo complessivo. Ricorda che non puoi unire il tuo lavoro di sviluppo nel ramo `main` finché non saranno stati risolti tutti i problemi di linting.
+Assicurati di [eseguire frequentemente il linting](../3-local-development-environment.md#linting) delle modifiche apportate al codice per mantenerlo pulito e coerente. L’esecuzione del linting regolare consente di individuare i problemi in anticipo, riducendo il tempo di sviluppo complessivo. Ricorda che non puoi unire il tuo lavoro di sviluppo nel ramo `main` finché non saranno stati risolti tutti i problemi di linting.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -772,7 +772,7 @@ $ npm run lint
 
 ## Anteprima nell’editor universale
 
-Per visualizzare le modifiche nell’Editor universale di AEM, aggiungili, esegui il commit e inviali al ramo dell’archivio Git utilizzato dall’Editor universale. In questo modo l’implementazione del blocco non interrompe l’esperienza di authoring.
+Per visualizzare le modifiche nell’editor universale di AEM, aggiungile, confermale e inviale al ramo dell’archivio Git utilizzato dall’editor universale. In questo modo, l’implementazione del blocco non interferirà con l’esperienza di authoring.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -783,13 +783,13 @@ $ git commit -m "CSS and JavaScript implementation for Teaser block option Side-
 $ git push origin block-options
 ```
 
-Le modifiche sono ora visibili nell&#39;editor universale quando si utilizza il parametro di query `?ref=block-options`.
+Le modifiche sono ora visibili nell’editor universale quando si utilizza il parametro di query `?ref=block-options`.
 
-![Teaser nell&#39;editor universale](./assets/block-options/universal-editor-preview.png){align="center"}
+![Teaser nell’editor universale](./assets/block-options/universal-editor-preview.png){align="center"}
 
 
 ## Congratulazioni.
 
-Ora hai esplorato le opzioni per blocchi in Edge Delivery Services e Universal Editor, offrendoti gli strumenti per personalizzare e semplificare l’editing dei contenuti con una maggiore flessibilità. Inizia ad applicare queste opzioni ai tuoi progetti per migliorarne l’efficienza e mantenerne la coerenza.
+Hai esplorato le opzioni di blocco in Edge Delivery Services e nell’editor universale, che ti offrono gli strumenti per personalizzare e semplificare l’editing dei contenuti con maggiore flessibilità. Inizia ad applicare queste opzioni ai tuoi progetti per migliorarne l’efficienza e mantenerne la coerenza.
 
-Per ulteriori best practice e tecniche avanzate, consulta la [documentazione di Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Per ulteriori best practice e tecniche avanzate, consulta la [documentazione dell’editor universale](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

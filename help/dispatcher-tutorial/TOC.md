@@ -7,9 +7,9 @@ jira: KT-2233
 index: y
 team: TM
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '39'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -17,6 +17,6 @@ ht-degree: 69%
 # Tutorial sulla cache di AEM Dispatcher{#dispatcher-tutorial}
 
 + [Panoramica](overview.md)
-+ [1 - Concetti, modelli e antipatemi](chapter-1.md)
-+ [2 - Schema dell&#39;infrastruttura](chapter-2.md)
++ [1 - Concetti, pattern e anti-pattern](chapter-1.md)
++ [2 - Pattern dell’infrastruttura](chapter-2.md)
 + [3 - Argomenti avanzati sulla memorizzazione in cache](chapter-3.md)
