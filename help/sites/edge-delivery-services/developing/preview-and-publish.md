@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Anteprima e pubblicazione di contenuti con Edge Delivery Services mediante [AEM Sidekick](./sidekick.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434717/?learn=on&captions=ita)

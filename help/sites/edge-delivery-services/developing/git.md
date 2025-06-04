@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Configura l’ambiente di sviluppo Edge Delivery Services con Git.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425718/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441834/?learn=on&captions=ita)

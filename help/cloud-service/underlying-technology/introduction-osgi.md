@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Introduzione a [!DNL OSGi], architettura modulare dinamica per le applicazioni [!DNL Java] alla base di Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32031?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36981?quality=12&learn=on&captions=ita)

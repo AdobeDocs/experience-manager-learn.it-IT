@@ -33,12 +33,12 @@ Esistono due archivi dei contenuti supportati per l’[authoring del documento](
 
 Imposta SharePoint come archivio dei contenuti da utilizzare con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446036/?learn=on&captions=ita)
 
 >[!TAB Google Drive]
 
 Imposta Google Drive come archivio dei contenuti da utilizzare con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434728/?learn=on&captions=ita)
 
 >[!ENDTABS]

@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Scopri lo scopo di Cloud Manager e come funziona con AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/330545?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346168?quality=12&learn=on&captions=ita)

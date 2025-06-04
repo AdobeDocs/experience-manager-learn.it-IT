@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Introduzione alla generazione di varianti in Edge Delivery Services e informazioni su come può essere utile ai marketer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428304/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438562/?learn=on&captions=ita)

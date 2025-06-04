@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Un’introduzione alle funzionalità di [!DNL dispatcher] come parte dell’architettura AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/32029?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36984?quality=12&learn=on&captions=ita)
 
 ## Risorse aggiuntive {#additional-resources}
 

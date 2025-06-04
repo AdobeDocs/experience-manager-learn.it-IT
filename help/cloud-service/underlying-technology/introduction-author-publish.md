@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Introduzione ai livelli di authoring e pubblicazione come parte dell’architettura di Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32033?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36977?quality=12&learn=on&captions=ita)

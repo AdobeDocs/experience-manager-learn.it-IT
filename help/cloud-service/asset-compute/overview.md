@@ -27,7 +27,7 @@ Mentre in AEM 6.x venivano utilizzati i processi di flusso di lavoro AEM persona
 
 ## Che cosa farai
 
->[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410022?quality=12&learn=on&captions=ita)
 
 Questo tutorial guida nella creazione di un processo di lavoro Asset Compute semplice che crea la rappresentazione di una risorsa ritagliando quella originale a forma di cerchio e applicando contrasto e luminosità configurabili. Anche se si tratta di un processo di lavoro di base, questo tutorial lo utilizza per esplorare la creazione, lo sviluppo e la distribuzione di un processo di lavoro Asset Compute personalizzato, da utilizzare con AEM as a Cloud Service.
 

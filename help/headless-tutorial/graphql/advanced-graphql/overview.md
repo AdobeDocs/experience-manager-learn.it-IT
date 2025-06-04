@@ -45,7 +45,7 @@ Questo tutorial tratta i seguenti argomenti:
 
 Il video seguente offre una panoramica di alto livello dei concetti riportati in questo tutorial. Il tutorial include la definizione di modelli per frammenti di contenuto con tipi di dati più avanzati, la nidificazione di frammenti di contenuto e le query GraphQL persistenti in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446135?quality=12&learn=on&captions=ita)
 
 >[!CAUTION]
 >

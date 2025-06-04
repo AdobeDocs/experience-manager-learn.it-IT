@@ -341,7 +341,7 @@ Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell
       <div class="card-image">
         <figure class="image is-16by9">
           <a href="./examples/editor-custom-field.md" title="Campi personalizzati" tabindex="-1">
-            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427585?format=jpeg" alt="Campi personalizzati">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3437642?format=jpeg&captions=ita" alt="Campi personalizzati">
           </a>
         </figure>
       </div>
