@@ -15,7 +15,7 @@ last-substantial-update: 2022-09-23T00:00:00Z
 doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
 duration: 206
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
@@ -23,6 +23,8 @@ ht-degree: 1%
 ---
 
 # Abilita pipeline front-end per il progetto standard Archetipo di AEM{#enable-front-end-pipeline-standard-aem-project}
+
+{{traditional-aem}}
 
 Scopri come abilitare il [progetto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd) (o progetto AEM standard) creato utilizzando [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) per distribuire risorse front-end come CSS, JavaScript, Fonts e Icone utilizzando una pipeline front-end per un ciclo di sviluppo-distribuzione più rapido. La separazione dello sviluppo front-end dallo sviluppo back-end full-stack su AEM. Inoltre, scopri come queste risorse front-end sono __non__ fornite dall&#39;archivio AEM ma dalla rete CDN, un cambiamento nel paradigma di consegna.
 
@@ -33,10 +35,10 @@ Tuttavia, dopo la conversione del progetto AEM WKND Sites, gli sviluppatori fron
 
 >[!IMPORTANT]
 >
->In generale, la pipeline front-end viene in genere utilizzata con la [Creazione rapida sito di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=it). È disponibile un&#39;esercitazione correlata [Guida introduttiva ad AEM Sites - Creazione rapida sito](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=it) per ulteriori informazioni. Quindi in questo tutorial e nei video associati ci si imbatte in riferimenti ad esso, questo è per assicurarsi che siano evidenziate sottili differenze e che ci sia qualche confronto diretto o indiretto per spiegare i concetti fondamentali.
+>In generale, la pipeline front-end viene in genere utilizzata con la [Creazione rapida sito di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=en). È disponibile un&#39;esercitazione correlata [Guida introduttiva ad AEM Sites - Creazione rapida sito](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) per ulteriori informazioni. Quindi in questo tutorial e nei video associati ci si imbatte in riferimenti ad esso, questo è per assicurarsi che siano evidenziate sottili differenze e che ci sia qualche confronto diretto o indiretto per spiegare i concetti fondamentali.
 
 
-Un [tutorial con più passaggi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=it) correlato illustra come implementare un sito AEM per un brand di lifestyle fittizio, WKND, utilizzando la funzione Creazione rapida di siti. È inoltre utile rivedere il [flusso di lavoro Theming](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=it) per comprendere il funzionamento della pipeline front-end.
+Un [tutorial con più passaggi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) correlato illustra come implementare un sito AEM per un brand di lifestyle fittizio, WKND, utilizzando la funzione Creazione rapida di siti. È inoltre utile rivedere il [flusso di lavoro Theming](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html) per comprendere il funzionamento della pipeline front-end.
 
 ## Panoramica, vantaggi e considerazioni per la pipeline front-end
 
@@ -49,9 +51,9 @@ Un [tutorial con più passaggi](https://experienceleague.adobe.com/docs/experien
 
 ## Prerequisiti
 
-Il passaggio di distribuzione in questa esercitazione si svolge in un Cloud Manager di Adobe. Assicurati di avere il ruolo __Responsabile dell&#39;implementazione__, consulta Cloud Manager [Definizioni dei ruoli](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=it#role-definitions).
+Il passaggio di distribuzione in questa esercitazione si svolge in un Cloud Manager di Adobe. Assicurati di avere il ruolo __Responsabile dell&#39;implementazione__, consulta Cloud Manager [Definizioni dei ruoli](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions).
 
-Per completare questa esercitazione, assicurati di utilizzare il [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=it) e l&#39;[ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it).
+Per completare questa esercitazione, assicurati di utilizzare il [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) e l&#39;[ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it).
 
 ## Passaggi successivi {#next-steps}
 
