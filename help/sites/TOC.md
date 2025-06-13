@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 source-git-commit: 7e13dda1303e33181bdb6845c8274b0e59ea5505
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '594'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -194,7 +194,7 @@ ht-degree: 98%
       + [Personalizzazione dell’esperienza di pagina web completa](integrations/adobe-target/personalization-web-page.md)
 + Impara dai tuoi colleghi {#expert-resources}
    + [Panoramica](expert-resources/learn-from-your-peers-overview.md)
-   + [Guida Alla Creazione In AEM Sites](expert-resources/authoring-guide-in-sites.md)
+   + [Guida alla creazione dell’authoring in AEM Sites](expert-resources/authoring-guide-in-sites.md)
    + [Valutazione maturità di AEM Sites](expert-resources/maturity-assessment.md)
    + [Manutenzione del sito](expert-resources/site-maintenance.md)
    + [Suggerimenti e trucchi da parte di AEM Champion: sessione 1](expert-resources/champion-tips-1.md)
