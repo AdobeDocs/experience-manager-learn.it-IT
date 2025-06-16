@@ -27,7 +27,7 @@ Ti diamo il benvenuto in questo tutorial in più parti progettato per gli svilup
 
 Questo tutorial si basa sull’[app GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), un’app React che utilizza contenuto di frammenti di contenuto AEM tramite le API GraphQL di AEM, ma non fornisce alcuna creazione di contenuti SPA nel contesto.
 
->[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444855?quality=12&learn=on&captions=ita)
 
 ## Informazioni sul tutorial
 

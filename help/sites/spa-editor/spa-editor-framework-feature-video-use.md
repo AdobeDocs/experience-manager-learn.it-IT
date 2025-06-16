@@ -27,7 +27,7 @@ Panoramica video sull’authoring di contenuti per un’applicazione a pagina si
 
 L’editor per applicazioni a pagina singola di AEM consente agli autori di modificare il contenuto di un’applicazione a pagina singola o di un’applicazione a pagina singola. Gli sviluppatori che utilizzano il framework React creano un’applicazione a pagina singola (SPA) e quindi ne mappano le aree sui componenti AEM, consentendo agli autori di utilizzare i familiari strumenti di modifica di AEM Sites. Il video seguente illustra alcune delle funzioni di modifica nel contesto del sito di esempio WKND SPA. Il progetto SPA WKND include sia un’implementazione React.
 
->[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326773?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >
