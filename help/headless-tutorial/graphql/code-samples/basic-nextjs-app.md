@@ -14,10 +14,10 @@ hide: true
 hidefromtoc: true
 exl-id: 2d4396dc-2346-4561-b040-eba0ab62a96f
 duration: 22
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 0%
+source-wordcount: '98'
+ht-degree: 6%
 
 ---
 
@@ -29,8 +29,6 @@ Questo codice:
 
 + Si connette a un servizio di pubblicazione AEM e non richiede l’autenticazione
 + Utilizza le query persistenti WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
-
-Per un&#39;analisi più approfondita della modalità di creazione dell&#39;app Next.js, consulta la [documentazione dell&#39;app Next.js esempio](../example-apps/next-js.md).
 
 >[!IMPORTANT]
 >
