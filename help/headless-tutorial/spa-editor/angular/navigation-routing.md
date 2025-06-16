@@ -33,7 +33,7 @@ Scopri come sono supportate più visualizzazioni nell’applicazione a pagina si
 
 ## Cosa verrà creato
 
-Questo capitolo aggiunge un menu di navigazione a un componente `Header` esistente. Il menu di navigazione è gestito dalla gerarchia di pagine di AEM e utilizza il modello JSON fornito dal [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
+Questo capitolo aggiunge un menu di navigazione a un componente `Header` esistente. Il menu di navigazione è gestito dalla gerarchia di pagine di AEM e utilizza il modello JSON fornito dal [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=it).
 
 ![Navigazione implementata](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -116,7 +116,7 @@ Nei capitoli precedenti, il componente `HeaderComponent` è stato aggiunto come 
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   Il componente AEM `Header` erediterà tutte le funzionalità del [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) tramite la proprietà `sling:resourceSuperType`.
+   Il componente AEM `Header` erediterà tutte le funzionalità del [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=it) tramite la proprietà `sling:resourceSuperType`.
 
 ## Aggiungere il componente HeaderComponent al modello di applicazione a pagina singola {#add-header-template}
 

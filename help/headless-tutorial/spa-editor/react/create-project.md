@@ -67,7 +67,7 @@ Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente d
    >
    > Se il targeting è AEM 6.5.5+, sostituisci `aemVersion="cloud"` con `aemVersion="6.5.5"`. Se si esegue il targeting della versione 6.4.8 e successive, utilizzare `aemVersion="6.4.8"`.
 
-   Osserva la proprietà `frontendModule=react`. Questo comunica all&#39;Archetipo progetto AEM di avviare il progetto con una [Base di codice React](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) iniziale da utilizzare con l&#39;Editor SPA di AEM. Proprietà come `appTitle`, `appId`, `artifactId` e `groupId` vengono utilizzate per identificare il progetto e lo scopo.
+   Osserva la proprietà `frontendModule=react`. Questo comunica all&#39;Archetipo progetto AEM di avviare il progetto con una [Base di codice React](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=it) iniziale da utilizzare con l&#39;Editor SPA di AEM. Proprietà come `appTitle`, `appId`, `artifactId` e `groupId` vengono utilizzate per identificare il progetto e lo scopo.
 
    Un elenco completo delle proprietà disponibili per la configurazione di un progetto [ è disponibile qui](https://github.com/adobe/aem-project-archetype#available-properties).
 

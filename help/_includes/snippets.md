@@ -31,7 +31,7 @@ ht-degree: 79%
 
 >[!IMPORTANT]
 >
->L&#39;editor per applicazioni a pagina singola (o editor SPA) [ è stato dichiarato obsoleto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/spa-editor-deprecation) per i nuovi progetti. Continua a essere supportato da Adobe per i progetti esistenti, ma non dovrebbe essere utilizzato per i nuovi progetti. Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora i seguenti:
+>L&#39;editor per applicazioni a pagina singola (o editor SPA) [ è stato dichiarato obsoleto](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/spa-editor-deprecation) per i nuovi progetti. Continua a essere supportato da Adobe per i progetti esistenti, ma non dovrebbe essere utilizzato per i nuovi progetti. Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora i seguenti:
 >
 >* [Editor universale](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring) per la modifica visiva di contenuti headless.
->* [Editor frammenti di contenuto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing) per la modifica di contenuti headless basata su modulo.
+>* [Editor frammenti di contenuto](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing) per la modifica di contenuti headless basata su modulo.
