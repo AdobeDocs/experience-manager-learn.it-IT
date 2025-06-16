@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
 duration: 669
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2531'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Aggiungi navigazione e indirizzamento {#navigation-routing}
+
+{{spa-editor-deprecation}}
 
 Scopri come sono supportate più visualizzazioni nell’applicazione a pagina singola utilizzando AEM Pages e l’editor per applicazioni a pagina singola SDK. La navigazione dinamica viene implementata utilizzando i percorsi di Angular e aggiunta a un componente Intestazione esistente.
 
@@ -30,7 +33,7 @@ Scopri come sono supportate più visualizzazioni nell’applicazione a pagina si
 
 ## Cosa verrà creato
 
-Questo capitolo aggiunge un menu di navigazione a un componente `Header` esistente. Il menu di navigazione è gestito dalla gerarchia di pagine di AEM e utilizza il modello JSON fornito dal [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=it).
+Questo capitolo aggiunge un menu di navigazione a un componente `Header` esistente. Il menu di navigazione è gestito dalla gerarchia di pagine di AEM e utilizza il modello JSON fornito dal [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navigazione implementata](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -113,7 +116,7 @@ Nei capitoli precedenti, il componente `HeaderComponent` è stato aggiunto come 
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   Il componente AEM `Header` erediterà tutte le funzionalità del [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=it) tramite la proprietà `sling:resourceSuperType`.
+   Il componente AEM `Header` erediterà tutte le funzionalità del [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) tramite la proprietà `sling:resourceSuperType`.
 
 ## Aggiungere il componente HeaderComponent al modello di applicazione a pagina singola {#add-header-template}
 

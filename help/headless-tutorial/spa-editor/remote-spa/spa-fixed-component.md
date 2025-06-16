@@ -1,6 +1,6 @@
 ---
-title: Aggiungere componenti fissi modificabili a un SPA remoto
-description: Scopri come aggiungere componenti fissi modificabili a un SPA remoto.
+title: Aggiungere componenti fissi modificabili a un’applicazione a pagina singola remota
+description: Scopri come aggiungere componenti fissi modificabili a un’applicazione a pagina singola remota.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -12,7 +12,8 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
 duration: 164
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 1%
@@ -21,7 +22,9 @@ ht-degree: 1%
 
 # Componenti fissi modificabili
 
-I componenti React modificabili possono essere &quot;fissi&quot; o codificati nelle viste SPA. Questo consente agli sviluppatori di inserire componenti compatibili con l’editor SPA nelle viste SPA e agli utenti di creare i contenuti dei componenti nell’editor AEM SPA.
+{{spa-editor-deprecation}}
+
+I componenti React modificabili possono essere &quot;fissi&quot; o codificati nelle visualizzazioni dell’applicazione a pagina singola. Questo consente agli sviluppatori di inserire componenti compatibili con l’Editor SPA nelle visualizzazioni SPA e agli utenti di creare i contenuti dei componenti nell’Editor SPA di AEM.
 
 ![Componenti fissi](./assets/spa-fixed-component/intro.png)
 
@@ -31,12 +34,12 @@ In questo capitolo, il titolo della visualizzazione Home, &quot;Avventure corren
 
 Per aggiungere un componente __Fisso__ alla visualizzazione Home:
 
-+ Creare un componente Titolo modificabile personalizzato e registrarlo nel tipo di risorsa Titolo del progetto
-+ Posizionare il componente Titolo modificabile nella vista Home del SPA
+* Creare un componente Titolo modificabile personalizzato e registrarlo nel tipo di risorsa Titolo del progetto
+* Posizionare il componente Titolo modificabile nella visualizzazione Home dell’applicazione a pagina singola
 
 ### Creare un componente Titolo di React modificabile
 
-Nella visualizzazione Home SPA sostituire il testo hardcoded `<h2>Current Adventures</h2>` con un componente Titolo modificabile personalizzato. Prima di poter utilizzare il componente Titolo, è necessario:
+Nella visualizzazione Home dell&#39;applicazione a pagina singola, sostituire il testo hardcoded `<h2>Current Adventures</h2>` con un componente Titolo modificabile personalizzato. Prima di poter utilizzare il componente Titolo, è necessario:
 
 1. Creare un componente React titolo personalizzato
 1. Decorare il componente Titolo personalizzato utilizzando i metodi di `@adobe/aem-react-editable-components` per renderlo modificabile.
@@ -44,7 +47,7 @@ Nella visualizzazione Home SPA sostituire il testo hardcoded `<h2>Current Advent
 
 Per effettuare questo collegamento:
 
-1. Apri progetto SPA remoto in `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` nell&#39;IDE
+1. Apri il progetto di applicazione a pagina singola remota in `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` nell&#39;IDE
 1. Crea un componente React in `react-app/src/components/editable/core/Title.js`
 1. Aggiungere il codice seguente a `Title.js`.
 
@@ -91,7 +94,7 @@ Per effettuare questo collegamento:
    export const titleIsEmpty = (props) => props.text == null || props.text.trim().length === 0
    ```
 
-   Questo componente React non è ancora modificabile tramite l’Editor SPA dell’AEM. Questo componente di base diventerà modificabile nel passaggio successivo.
+   Tieni presente che questo componente React non è ancora modificabile utilizzando AEM SPA Editor. Questo componente di base diventerà modificabile nel passaggio successivo.
 
    Leggi i commenti del codice per i dettagli sull’implementazione.
 
@@ -132,7 +135,7 @@ Per effettuare questo collegamento:
    export default EditableTitle;
    ```
 
-   Questo componente React `EditableTitle` racchiude il componente React `Title`, racchiudendolo e decorandolo per renderlo modificabile nell&#39;editor SPA dell&#39;AEM.
+   Questo componente React `EditableTitle` esegue il wrapping del componente React `Title`, eseguendo il wrapping e decorando il componente affinché sia modificabile nell&#39;editor di applicazioni a pagina singola di AEM.
 
 ### Utilizzare il componente React EditableTitle
 
@@ -163,9 +166,9 @@ Il file `Home.js` deve essere simile al seguente:
 
 ![Home.js](./assets/spa-fixed-component/home-js-update.png)
 
-## Creare il componente Titolo nell’AEM
+## Creare il componente Titolo in AEM
 
-1. Accedi a AEM Author
+1. Accedi ad AEM Author
 1. Passa a __Sites > App WKND__
 1. Tocca __Home__ e seleziona __Modifica__ dalla barra delle azioni superiore
 1. Seleziona __Modifica__ dal selettore della modalità di modifica in alto a destra nell&#39;Editor pagina
@@ -175,25 +178,25 @@ Il file `Home.js` deve essere simile al seguente:
    ![Barra delle azioni del componente Titolo](./assets/spa-fixed-component/title-action-bar.png)
 
 1. Creare il componente Titolo:
-   + Titolo: __Avventure WKND__
-   + Tipo/Dimensione: __H2__
+   1. Titolo: __Avventure WKND__
+   1. Tipo/Dimensione: __H2__
 
-     ![Finestra di dialogo del componente Titolo](./assets/spa-fixed-component/title-dialog.png)
+      ![Finestra di dialogo del componente Titolo](./assets/spa-fixed-component/title-dialog.png)
 
 1. Tocca __Fine__ per salvare
-1. Visualizzare l’anteprima delle modifiche nell’Editor SPA dell’AEM
+1. Visualizzare l’anteprima delle modifiche in AEM SPA Editor
 1. Aggiorna l&#39;app WKND in esecuzione localmente su [http://localhost:3000](http://localhost:3000) e visualizza immediatamente le modifiche apportate al titolo.
 
-   ![Componente titolo in SPA](./assets/spa-fixed-component/title-final.png)
+   ![Componente titolo nell&#39;applicazione a pagina singola](./assets/spa-fixed-component/title-final.png)
 
 ## Congratulazioni.
 
 Hai aggiunto un componente fisso e modificabile all’app WKND. Ora sai come:
 
-+ Creazione di un componente fisso ma modificabile per l&#39;SPA
-+ Creare il componente fisso nell’AEM
-+ Visualizzare i contenuti creati nell’SPA remoto
+* È stato creato un componente fisso ma modificabile per l’applicazione a pagina singola
+* Creare il componente fisso in AEM
+* Visualizzare i contenuti creati nell’applicazione a pagina singola remota
 
 ## Passaggi successivi
 
-I passaggi successivi consistono nell&#39;aggiungere [un componente contenitore di AEM ResponsiveGrid](./spa-container-component.md) all&#39;SPA che consente all&#39;autore di aggiungere e modificare componenti all&#39;SPA.
+I passaggi successivi consistono nell&#39;aggiungere [un componente contenitore AEM ResponsiveGrid](./spa-container-component.md) all&#39;applicazione a pagina singola che consente all&#39;autore di aggiungere e modificare componenti all&#39;applicazione a pagina singola.

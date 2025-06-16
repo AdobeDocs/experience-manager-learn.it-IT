@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 337
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1481'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Aggiungi navigazione e indirizzamento {#navigation-routing}
+
+{{spa-editor-deprecation}}
 
 Scopri come supportare più visualizzazioni nell’applicazione a pagina singola effettuando la mappatura sulle pagine AEM con l’editor per applicazioni a pagina singola SDK. La navigazione dinamica viene implementata utilizzando React Router e React Core Components.
 
@@ -30,7 +33,7 @@ Scopri come supportare più visualizzazioni nell’applicazione a pagina singola
 
 ## Cosa verrà creato
 
-Questo capitolo aggiungerà la navigazione a un’applicazione a pagina singola in AEM. Il menu di navigazione è gestito dalla gerarchia di pagine di AEM e utilizzerà il modello JSON fornito dal [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=it).
+Questo capitolo aggiungerà la navigazione a un’applicazione a pagina singola in AEM. Il menu di navigazione è gestito dalla gerarchia di pagine di AEM e utilizzerà il modello JSON fornito dal [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![Navigazione aggiunta](assets/navigation-routing/navigation-added.png)
 

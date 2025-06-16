@@ -1,8 +1,8 @@
 ---
-source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 69%
+source-wordcount: '168'
+ht-degree: 79%
 
 ---
 # Snippet
@@ -19,10 +19,19 @@ ht-degree: 69%
 
 [!BADGE Per la pubblicazione da AEM Sites tramite Edge Delivery Services, fai clic qui.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=it" tooltip="Pubblicare da AEM a Edge Delivery Services"}
 
-## AEM tradizionale {#traditional-aem}
+## AEM tradizionale{#traditional-aem}
 
 >[!TIP]
 >
 >**Hai considerato Edge Delivery Services per AEM?**
 >
 >È possibile continuare a utilizzare i metodi descritti in questo documento per i progetti esistenti. Tuttavia, per i nuovi progetti, Adobe consiglia di sfruttare [Edge Delivery Services.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview)
+
+## Rimozione dell’editor di SPA{#spa-editor-deprecation}
+
+>[!IMPORTANT]
+>
+>L&#39;editor per applicazioni a pagina singola (o editor SPA) [ è stato dichiarato obsoleto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/spa-editor-deprecation) per i nuovi progetti. Continua a essere supportato da Adobe per i progetti esistenti, ma non dovrebbe essere utilizzato per i nuovi progetti. Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora i seguenti:
+>
+>* [Editor universale](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring) per la modifica visiva di contenuti headless.
+>* [Editor frammenti di contenuto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing) per la modifica di contenuti headless basata su modulo.
