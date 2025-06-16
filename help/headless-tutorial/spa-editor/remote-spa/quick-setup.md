@@ -69,7 +69,7 @@ Scarica e installa AEM SDK Quickstart sulla porta 4502, con le credenziali prede
    # Provide `admin` as the admin user's password
    ```
 
-AEM SDK viene avviato e avviato automaticamente il [http://localhost:4502](Http://localhost:4502). Accedi utilizzando le seguenti credenziali:
+AEM SDK viene avviato e avviato automaticamente il [http://localhost:4502](http://localhost:4502). Accedi utilizzando le seguenti credenziali:
 
 + Nome utente: `admin`
 + Password: `admin`
@@ -131,7 +131,7 @@ Verificare che l&#39;applicazione a pagina singola sia in esecuzione in [http://
 
 Prima di creare il contenuto, disporre le finestre del browser in modo che AEM Author (`http://localhost:4502`) sia a sinistra e l&#39;applicazione a pagina singola remota (`http://localhost:3000`) sia a destra. Questa disposizione consente di vedere come le modifiche ai contenuti originati da AEM vengono immediatamente riportate nell’applicazione a pagina singola.
 
-1. Accedi al servizio [AEM SDK Author](Http://localhost:4502) come `admin`
+1. Accedi al servizio [AEM SDK Author](http://localhost:4502) come `admin`
 1. Passa a __Sites > App WKND > us > en__
 1. Modifica __Home page app WKND__
 1. Passa alla modalità __Modifica__
