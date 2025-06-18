@@ -497,7 +497,7 @@ Segui le istruzioni riportate nell&#39;articolo [Configura le API AEM basate su 
 
 Per impostazione predefinita, il progetto WKND Sites non dispone dello schema di metadati delle risorse necessario per visualizzare gli attributi del prodotto. Creiamo e applichiamo lo schema di metadati di risorse a una cartella di risorse nell’istanza di AEM.
 
-1. Accedi all’istanza di AEM as a Cloud Service Asset. Utilizzando la [visualizzazione risorse](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views), passa alla cartella `/content/dam/wknd-shared/en`.
+1. Accedi all’istanza di AEM as a Cloud Service Asset. Utilizzando la [visualizzazione risorse](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/authoring/switch-views), passa alla cartella `/content/dam/wknd-shared/en`.
 
    ![Accedi alla cartella](../assets/web-app/navigate-to-folder.png)
 
