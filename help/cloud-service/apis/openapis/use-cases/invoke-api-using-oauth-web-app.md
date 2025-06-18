@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2262'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Scopri come richiamare su AEM as a Cloud Service le API AEM basate su OpenAPI ut
 
 L&#39;autenticazione OAuth Web App è ideale per le applicazioni Web con componenti front-end e _back-end_ che devono **accedere alle API AEM per conto di un utente**. Utilizza il tipo di concessione _authorization_code_ di OAuth 2.0 per ottenere un token di accesso per conto dell&#39;utente per accedere alle API di AEM. Per ulteriori informazioni, vedi [Differenza tra le credenziali da server a server OAuth e da app Web e app a pagina singola](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
-## Cosa impara{#what-you-learn}
+## Argomenti trattati{#what-you-learn}
 
 In questo tutorial imparerai a:
 
@@ -49,7 +49,7 @@ L’app PIM WKND è un’applicazione web di esempio progettata per gestire gli 
 
 Il progetto Adobe Developer Console (ADC) è configurato per accedere all’API di authoring di Assets utilizzando l’autenticazione OAuth Web App. Fornisce il _client_id_ e il _client_secret_ necessari all&#39;app Web WKND-PIM per avviare il flusso di sovvenzione _authorization_code_.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442765?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 Il diagramma seguente illustra il flusso funzionale dell&#39;app Web WKND-PIM _che ottiene token di accesso specifici dell&#39;utente per interagire con l&#39;API di authoring di Assets_.
@@ -461,6 +461,10 @@ Il passaggio di configurazione del progetto ADC è _repeat_ dalle [API AEM basat
 
    ![Aggiungi API AEM](../assets/s2s/add-aem-api.png)
 
+   >[!TIP]
+   >
+   >Se la **scheda API AEM** desiderata è disabilitata e _Perché è disabilitata?Le informazioni di_ mostrano il messaggio **Licenza richiesta** uno dei motivi potrebbe essere che NON hai modernizzato l&#39;ambiente AEM as a Cloud Service. Per ulteriori informazioni, consulta [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](../setup.md#modernization-of-aem-as-a-cloud-service-environment).
+
 1. Nella finestra di dialogo _Configura API_, selezionare l&#39;opzione di autenticazione **Autenticazione utente** e fare clic su **Avanti**.
 
    ![Configurare l&#39;API di AEM](../assets/web-app/configure-aem-api.png)
@@ -493,7 +497,7 @@ Segui le istruzioni riportate nell&#39;articolo [Configura le API AEM basate su 
 
 Per impostazione predefinita, il progetto WKND Sites non dispone dello schema di metadati delle risorse necessario per visualizzare gli attributi del prodotto. Creiamo e applichiamo lo schema di metadati di risorse a una cartella di risorse nell’istanza di AEM.
 
-1. Accedi all’istanza di AEM as a Cloud Service Asset. Utilizzando la [visualizzazione risorse](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/authoring/switch-views), passa alla cartella `/content/dam/wknd-shared/en`.
+1. Accedi all’istanza di AEM as a Cloud Service Asset. Utilizzando la [visualizzazione risorse](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views), passa alla cartella `/content/dam/wknd-shared/en`.
 
    ![Accedi alla cartella](../assets/web-app/navigate-to-folder.png)
 

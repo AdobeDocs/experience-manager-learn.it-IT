@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 9a5d811cf92a09da27057f99e1b6b2ed8df2a414
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1776'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Scopri come richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da
 
 L’autenticazione server-to-server di OAuth è ideale per i servizi back-end che richiedono l’accesso API senza l’interazione dell’utente. Utilizza il tipo di sovvenzione OAuth 2.0 _client_credentials_ per autenticare l&#39;applicazione client.
 
-## Cosa impara{#what-you-learn}
+## Argomenti trattati{#what-you-learn}
 
 In questo tutorial imparerai a:
 
@@ -84,6 +84,10 @@ Il passaggio di configurazione del progetto ADC è _repeat_ dalle [API AEM basat
 1. Nella finestra di dialogo _Aggiungi API_, filtra per _Experience Cloud_, seleziona la scheda **API Autore AEM Assets** e fai clic su **Avanti**.
 
    ![Aggiungi API AEM](../assets/s2s/add-aem-api.png)
+
+   >[!TIP]
+   >
+   >Se la **scheda API AEM** desiderata è disabilitata e _Perché è disabilitata?Le informazioni di_ mostrano il messaggio **Licenza richiesta** uno dei motivi potrebbe essere che NON hai modernizzato l&#39;ambiente AEM as a Cloud Service. Per ulteriori informazioni, consulta [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](../setup.md#modernization-of-aem-as-a-cloud-service-environment).
 
 1. Nella finestra di dialogo _Configura API_, selezionare l&#39;opzione di autenticazione **Server-to-Server** e fare clic su **Avanti**. L’autenticazione server-to-server è ideale per i servizi back-end che richiedono accesso API senza interazione da parte dell’utente.
 

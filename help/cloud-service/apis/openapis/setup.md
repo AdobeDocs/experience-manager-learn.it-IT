@@ -12,10 +12,10 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 0%
+source-wordcount: '1493'
+ht-degree: 11%
 
 ---
 
@@ -27,7 +27,7 @@ In questo esempio, per illustrare il processo di configurazione viene utilizzata
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
-Il processo di configurazione ad alto livello prevede le seguenti fasi:
+Il processo di configurazione di alto livello prevede i seguenti passaggi:
 
 1. Modernizzazione dell’ambiente AEM as a Cloud Service.
 1. Abilita l’accesso alle API di AEM.
@@ -134,6 +134,10 @@ Dopo aver creato il progetto ADC, devi aggiungere le API AEM desiderate, configu
 
    ![Aggiungi API AEM](./assets/s2s/add-aem-api.png)
 
+   >[!TIP]
+   >
+   >    Se la **scheda API AEM** desiderata è disabilitata e _Perché è disabilitata?Le informazioni di_ mostrano il messaggio **Licenza richiesta** uno dei motivi potrebbe essere che NON hai modernizzato l&#39;ambiente AEM as a Cloud Service. Per ulteriori informazioni, consulta [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](#modernization-of-aem-as-a-cloud-service-environment).
+
 1. Quindi, nella finestra di dialogo _Configura API_, seleziona l&#39;opzione di autenticazione desiderata. In questo caso, ad esempio, è selezionata l&#39;opzione di autenticazione **Server-to-Server**.
 
    ![Seleziona autenticazione](./assets/s2s/select-authentication.png)
@@ -222,8 +226,8 @@ Una volta configurata l’istanza di AEM per abilitare la comunicazione con il p
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/invoke-api-using-oauth-s2s.md" title="Richiama API tramite autenticazione server-to-server" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/s2s/OAuth-S2S.png" alt="Richiama API tramite autenticazione server-to-server"
+                    <a href="./use-cases/invoke-api-using-oauth-s2s.md" title="Richiamare l’API tramite autenticazione da server a server" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/s2s/OAuth-S2S.png" alt="Richiamare l’API tramite autenticazione da server a server"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -231,9 +235,9 @@ Una volta configurata l’istanza di AEM per abilitare la comunicazione con il p
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Richiama API tramite autenticazione server-to-server">Richiama API tramite autenticazione server-to-server</a>
+                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Richiamare l’API tramite autenticazione da server a server">Richiamare l’API tramite autenticazione da server a server</a>
                     </p>
-                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione NodeJS personalizzata utilizzando l’autenticazione server-to-server di OAuth.</p>
+                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione NodeJS personalizzata utilizzando l’autenticazione da server a server di OAuth.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -245,8 +249,8 @@ Una volta configurata l’istanza di AEM per abilitare la comunicazione con il p
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/invoke-api-using-oauth-web-app.md" title="Richiama l’API tramite l’autenticazione tramite app web" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/web-app/OAuth-WebApp.png" alt="Richiama l’API tramite l’autenticazione tramite app web"
+                    <a href="./use-cases/invoke-api-using-oauth-web-app.md" title="Richiamare l’API tramite l’autenticazione da app web" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/web-app/OAuth-WebApp.png" alt="Richiamare l’API tramite l’autenticazione da app web"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -254,9 +258,9 @@ Una volta configurata l’istanza di AEM per abilitare la comunicazione con il p
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Richiama l’API tramite l’autenticazione tramite app web">Richiama l'API tramite l'autenticazione dell'app Web</a>
+                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Richiamare l’API tramite l’autenticazione da app web">Richiamare l’API tramite l’autenticazione da app web</a>
                     </p>
-                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione web personalizzata utilizzando l’autenticazione OAuth Web App.</p>
+                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione web personalizzata utilizzando l’autenticazione app web OAuth.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -268,8 +272,8 @@ Una volta configurata l’istanza di AEM per abilitare la comunicazione con il p
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" title="Richiama API tramite autenticazione app a pagina singola" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/spa/OAuth-SPA.png" alt="Richiama API tramite autenticazione app a pagina singola"
+                    <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" title="Richiamare l’API tramite l’autenticazione da applicazione a pagina singola" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/spa/OAuth-SPA.png" alt="Richiamare l’API tramite l’autenticazione da applicazione a pagina singola"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -277,7 +281,7 @@ Una volta configurata l’istanza di AEM per abilitare la comunicazione con il p
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" title="Richiama API tramite autenticazione app a pagina singola">Richiama API tramite autenticazione app a pagina singola</a>
+                        <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" title="Richiamare l’API tramite l’autenticazione da applicazione a pagina singola">Richiamare l’API tramite l’autenticazione da applicazione a pagina singola</a>
                     </p>
                     <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’app a pagina singola personalizzata (SPA) utilizzando il flusso PKCE di OAuth 2.0.</p>
                 </div>

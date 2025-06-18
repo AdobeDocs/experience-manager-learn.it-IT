@@ -12,9 +12,9 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '2081'
+source-wordcount: '2130'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ L’autenticazione tramite app a pagina singola OAuth è ideale per le applicazi
 
 Il flusso PKCE estende il tipo di concessione _authorization_code_ di OAuth 2.0, migliorando la sicurezza impedendo l’intercettazione del codice di autorizzazione. Per ulteriori informazioni, consulta la sezione [Differenza tra le credenziali da server a server OAuth e da app Web e credenziali app a pagina singola](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
-## Cosa impara{#what-you-learn}
+## Argomenti trattati{#what-you-learn}
 
 In questo tutorial imparerai a:
 
@@ -59,7 +59,7 @@ Il progetto Adobe Developer Console (ADC) è configurato per abilitare l&#39;aut
 >Il progetto ADC NON fornisce un _client_secret_. L&#39;applicazione a pagina singola genera invece un _code_verifier_ e un _code_challenge_ per scambiare in modo sicuro il codice di autorizzazione per un _token di accesso_. Elimina la necessità di memorizzare un segreto client sul lato client, migliorando la sicurezza.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456972?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 
@@ -384,6 +384,10 @@ Il passaggio di configurazione del progetto ADC è _repeat_ dalle [API AEM basat
 1. Nella finestra di dialogo _Aggiungi API_, filtra per _Experience Cloud_, seleziona la scheda **Gestione contenuto siti AEM CS** e fai clic su **Avanti**.
 
    ![Aggiungi API AEM](../assets/spa/add-aem-sites-api.png)
+
+   >[!TIP]
+   >
+   >Se la **scheda API AEM** desiderata è disabilitata e _Perché è disabilitata?Le informazioni di_ mostrano il messaggio **Licenza richiesta** uno dei motivi potrebbe essere che NON hai modernizzato l&#39;ambiente AEM as a Cloud Service. Per ulteriori informazioni, consulta [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](../setup.md#modernization-of-aem-as-a-cloud-service-environment).
 
 1. Nella finestra di dialogo _Configura API_, selezionare l&#39;opzione di autenticazione **Autenticazione utente** e fare clic su **Avanti**.
 
