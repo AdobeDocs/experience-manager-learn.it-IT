@@ -34,4 +34,4 @@ Questa integrazione consente al servizio di authoring di AEM di comunicare diret
 
 >[!CAUTION]
 >
->Esiste un problema noto con la configurazione di Adobe Target Cloud Services mostrato nel video. Fino a quando questo problema non viene risolto, segui gli stessi passaggi nel video ma utilizza la [configurazione legacy di Adobe Target Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>Esiste un problema noto con la configurazione di Adobe Target Cloud Services mostrato nel video. Fino a quando questo problema non viene risolto, segui gli stessi passaggi nel video ma utilizza la [configurazione legacy di Adobe Target Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html?lang=it).
