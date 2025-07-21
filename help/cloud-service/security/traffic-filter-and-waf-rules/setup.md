@@ -10,7 +10,8 @@ doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18306
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: 0a738af8-666b-48dc-8187-9b7e6a8d7e1b
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 14%
@@ -22,6 +23,8 @@ ht-degree: 14%
 Scopri **come impostare** le regole del filtro del traffico, incluse le regole del firewall dell&#39;applicazione Web (WAF). In questo tutorial, abbiamo impostato le basi per i tutorial successivi, in cui configurerai e distribuirai le regole, seguite da test e analisi dei risultati.
 
 Per illustrare il processo di installazione, l&#39;esercitazione utilizza il [progetto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469396/?quality=12&learn=on)
 
 ## Panoramica sulla configurazione
 

@@ -11,7 +11,8 @@ last-substantial-update: 2025-06-04T00:00:00Z
 badgeLicense: label="Richiede una licenza" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 7%
@@ -27,6 +28,9 @@ Gli attacchi sofisticati sono caratterizzati da elevate percentuali di richieste
 >[!IMPORTANT]
 >
 > Le regole del filtro del traffico WAF richiedono un&#39;ulteriore licenza **Protezione WAF-DDoS** o **Protezione avanzata**. Le regole del filtro del traffico standard sono disponibili per impostazione predefinita per i clienti Sites e Forms.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Obiettivi di apprendimento
 
@@ -59,7 +63,7 @@ Esaminiamo tre regole di WAF consigliate che devono essere aggiunte al file `cdn
 
 Questa regola **blocca** le richieste che sembrano entrambe sospette *e* provengono da indirizzi IP contrassegnati come dannosi. Poiché entrambi questi criteri sono soddisfatti, possiamo essere certi che il rischio di falsi positivi (blocco del traffico legittimo) è molto basso. Gli IP notoriamente negativi sono identificati in base ai feed di intelligence sulle minacce e ad altre fonti.
 
-Il flag WAF `ATTACK-FROM-BAD-IP` viene utilizzato per identificare queste richieste. Aggrega diversi flag di WAF [elencati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list).
+Il flag WAF `ATTACK-FROM-BAD-IP` viene utilizzato per identificare queste richieste. Aggrega diversi flag di WAF [elencati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list).
 
 ```yaml
 kind: "CDN"
@@ -220,7 +224,7 @@ Per perfezionare le regole, considera i seguenti passaggi:
 
 - **Monitoraggio dei pattern di traffico**: utilizza i registri CDN e il dashboard ELK per monitorare i pattern di traffico e identificare eventuali anomalie o picchi di traffico. Presta attenzione ai pannelli _Distribuzione flag WAF_ e _Attacchi principali_ nel dashboard ELK per comprendere i tipi di attacchi rilevati.
 - **Regola wafFlags**: se `ATTACK` flag vengono attivati troppo frequentemente o
-per ottimizzare il vettore di attacco, puoi creare regole personalizzate con flag di WAF specifici. Vedi l&#39;elenco completo dei [flag WAF](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) nella documentazione. Provare prima a provare nuove regole personalizzate in modalità `log`.
+per ottimizzare il vettore di attacco, puoi creare regole personalizzate con flag di WAF specifici. Vedi l&#39;elenco completo dei [flag WAF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) nella documentazione. Provare prima a provare nuove regole personalizzate in modalità `log`.
 - **Passa alle regole di blocco**: dopo aver convalidato i pattern di traffico e regolato i flag di WAF, puoi passare alle regole di blocco.
 
 ## Riepilogo
@@ -316,5 +320,5 @@ Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano c
 
 ## Risorse aggiuntive
 
-- [Regole iniziali consigliate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
-- [Elenco flag WAF](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
+- [Regole iniziali consigliate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
+- [Elenco flag WAF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
