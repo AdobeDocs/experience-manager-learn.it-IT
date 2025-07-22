@@ -32,8 +32,8 @@ All&#39;interno del progetto Adobe Developer Console, la registrazione di ogni e
 >[!IMPORTANT]
 >
 >Gli endpoint demo live in questa esercitazione erano precedentemente ospitati su [Glitch](https://glitch.com/). A partire da luglio 2025, Glitch ha interrotto il suo servizio di hosting e gli endpoint non sono più accessibili.
->>Stiamo lavorando attivamente alla migrazione delle demo verso una piattaforma alternativa. Il contenuto del tutorial rimane accurato e a breve verranno forniti collegamenti aggiornati.
->>Grazie per la comprensione e la pazienza.
+>&#x200B;>Stiamo lavorando attivamente alla migrazione delle demo verso una piattaforma alternativa. Il contenuto del tutorial rimane accurato e a breve verranno forniti collegamenti aggiornati.
+>&#x200B;>Grazie per la comprensione e la pazienza.
 
 Utilizza la tua applicazione finché gli endpoint demo live non saranno nuovamente disponibili.
 
@@ -69,7 +69,7 @@ Per recuperare gli eventi AEM dal giornale di registrazione, sono necessarie cre
 
   ![Credenziali copia progetto Adobe Developer Console](../assets/examples/journaling/adobe-developer-console-project-copy-credentials.png)
 
-- Ogni registrazione di evento viene automaticamente abilitata per la registrazione nel journal. Per ottenere l&#39;_endpoint API di inserimento nel journal univoco_ della registrazione dell&#39;evento, fare clic sulla scheda evento sottoscritta agli eventi di AEM. Dalla scheda **Dettagli registrazione**, copia l&#39;ENDPOINT API UNIVOCO PER IL JOURNAL ****.
+- Ogni registrazione di evento viene automaticamente abilitata per la registrazione nel journal. Per ottenere l&#39;_endpoint API di inserimento nel journal univoco_ della registrazione dell&#39;evento, fare clic sulla scheda evento sottoscritta agli eventi di AEM. Dalla scheda **Dettagli registrazione**, copia l&#39;ENDPOINT API UNIVOCO PER IL JOURNAL **&#x200B;**.
 
   ![Scheda Eventi progetto Adobe Developer Console](../assets/examples/journaling/adobe-developer-console-project-events-card.png)
 

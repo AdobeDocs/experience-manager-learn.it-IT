@@ -30,8 +30,8 @@ Scopri come ricevere eventi AEM su un webhook e rivedere i dettagli dell’event
 >[!IMPORTANT]
 >
 >Gli endpoint demo live in questa esercitazione erano precedentemente ospitati su [Glitch](https://glitch.com/). A partire da luglio 2025, Glitch ha interrotto il suo servizio di hosting e gli endpoint non sono più accessibili.
->>Stiamo lavorando attivamente alla migrazione delle demo verso una piattaforma alternativa. Il contenuto del tutorial rimane accurato e a breve verranno forniti collegamenti aggiornati.
->>Grazie per la comprensione e la pazienza.
+>&#x200B;>Stiamo lavorando attivamente alla migrazione delle demo verso una piattaforma alternativa. Il contenuto del tutorial rimane accurato e a breve verranno forniti collegamenti aggiornati.
+>&#x200B;>Grazie per la comprensione e la pazienza.
 
 Utilizza il tuo webhook finché gli endpoint demo live non saranno nuovamente disponibili.
 
