@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 0%
+source-wordcount: '579'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,13 @@ Il journal è un metodo pull per utilizzare gli eventi AEM e un journal è un el
 
 All&#39;interno del progetto Adobe Developer Console, la registrazione di ogni evento viene abilitata automaticamente per il journaling, consentendo un&#39;integrazione perfetta.
 
-In questo esempio, l&#39;utilizzo di un&#39;_applicazione Web ospitata_ fornita da Adobe consente di recuperare il primo batch di eventi AEM dal giornale di registrazione senza dover configurare l&#39;applicazione. Questa applicazione Web fornita da Adobe è ospitata su [Glitch](https://glitch.com/), una piattaforma nota per offrire un ambiente basato su Web che favorisce la creazione e la distribuzione di applicazioni Web. Tuttavia, se preferisci, è anche disponibile l’opzione per utilizzare la tua applicazione.
+>[!IMPORTANT]
+>
+>Gli endpoint demo live in questa esercitazione erano precedentemente ospitati su [Glitch](https://glitch.com/). A partire da luglio 2025, Glitch ha interrotto il suo servizio di hosting e gli endpoint non sono più accessibili.
+>>Stiamo lavorando attivamente alla migrazione delle demo verso una piattaforma alternativa. Il contenuto del tutorial rimane accurato e a breve verranno forniti collegamenti aggiornati.
+>>Grazie per la comprensione e la pazienza.
+
+Utilizza la tua applicazione finché gli endpoint demo live non saranno nuovamente disponibili.
 
 ## Prerequisiti
 
@@ -63,11 +69,11 @@ Per recuperare gli eventi AEM dal giornale di registrazione, sono necessarie cre
 
   ![Credenziali copia progetto Adobe Developer Console](../assets/examples/journaling/adobe-developer-console-project-copy-credentials.png)
 
-- Ogni registrazione di evento viene automaticamente abilitata per la registrazione nel journal. Per ottenere l&#39;_endpoint API di inserimento nel journal univoco_ della registrazione dell&#39;evento, fare clic sulla scheda evento sottoscritta agli eventi di AEM. Dalla scheda **Dettagli registrazione**, copia l&#39;ENDPOINT API UNIVOCO PER IL JOURNAL **&#x200B;**.
+- Ogni registrazione di evento viene automaticamente abilitata per la registrazione nel journal. Per ottenere l&#39;_endpoint API di inserimento nel journal univoco_ della registrazione dell&#39;evento, fare clic sulla scheda evento sottoscritta agli eventi di AEM. Dalla scheda **Dettagli registrazione**, copia l&#39;ENDPOINT API UNIVOCO PER IL JOURNAL ****.
 
   ![Scheda Eventi progetto Adobe Developer Console](../assets/examples/journaling/adobe-developer-console-project-events-card.png)
 
-## Carica giornale di registrazione eventi di AEM
+## Caricare il giornale di registrazione eventi di AEM
 
 Per semplificare, questa applicazione Web in hosting recupera solo il primo batch di eventi AEM dal giornale di registrazione. Si tratta dei più vecchi eventi disponibili nel giornale di registrazione. Per ulteriori dettagli, vedere [primo batch di eventi](https://developer.adobe.com/events/docs/guides/api/journaling_api/#fetching-your-first-batch-of-events-from-the-journal).
 
@@ -82,7 +88,5 @@ Per semplificare, questa applicazione Web in hosting recupera solo il primo batc
   ![Payload evento AEM completo](../assets/examples/journaling/complete-journal-data.png)
 
 ## Risorse aggiuntive
-
-- [Il codice sorgente del webhook Glitch](https://glitch.com/edit/#!/indigo-speckle-antler) è disponibile come riferimento. Si tratta di una semplice applicazione React che utilizza [componenti Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) per eseguire il rendering dell&#39;interfaccia utente.
 
 - [API di Adobe I/O Events Journaling](https://developer.adobe.com/events/docs/guides/api/journaling_api/) fornisce informazioni dettagliate sull&#39;API, ad esempio il primo, il successivo e l&#39;ultimo batch di eventi, la paginazione e altro ancora.

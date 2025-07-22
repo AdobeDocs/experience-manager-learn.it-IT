@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 0%
+source-wordcount: '533'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +23,17 @@ ht-degree: 0%
 
 Scopri come ricevere eventi AEM su un webhook e rivedere i dettagli dell’evento come payload, intestazioni e metadati.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449756?quality=12&learn=on&captions=ita)
 
-In questo esempio, l&#39;utilizzo di un _webhook ospitato_ fornito da Adobe consente di ricevere eventi AEM senza dover configurare un webhook personalizzato. Questo webhook fornito da Adobe è ospitato su [Glitch](https://glitch.com/), una piattaforma nota per offrire un ambiente basato su Web che favorisce la creazione e la distribuzione di applicazioni Web. Tuttavia, se preferisci, è anche disponibile l’opzione per utilizzare il tuo webhook.
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+
+
+>[!IMPORTANT]
+>
+>Gli endpoint demo live in questa esercitazione erano precedentemente ospitati su [Glitch](https://glitch.com/). A partire da luglio 2025, Glitch ha interrotto il suo servizio di hosting e gli endpoint non sono più accessibili.
+>>Stiamo lavorando attivamente alla migrazione delle demo verso una piattaforma alternativa. Il contenuto del tutorial rimane accurato e a breve verranno forniti collegamenti aggiornati.
+>>Grazie per la comprensione e la pazienza.
+
+Utilizza il tuo webhook finché gli endpoint demo live non saranno nuovamente disponibili.
 
 ## Prerequisiti
 
@@ -155,4 +163,4 @@ Puoi vedere che i dettagli dell’evento AEM contengono tutte le informazioni ne
 
 ## Risorse aggiuntive
 
-- [Il codice sorgente del webhook Glitch](https://glitch.com/edit/#!/incantevole-antico-montagne russe) è disponibile come riferimento.
+- [Il codice sorgente del webhook con eventi AEM](../assets/examples/webhook/aemeventing-webhook.tgz) è disponibile come riferimento.
