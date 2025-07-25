@@ -7,9 +7,9 @@ sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
 source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -192,16 +192,16 @@ ht-degree: 98%
       + [Servizio e-mail](./networking/examples/email-service.md)
 + Sicurezza {#security}
    + [Bloccare gli attacchi DoS/DDoS utilizzando le regole del filtro del traffico](./security/blocking-dos-attack-using-traffic-filter-rules.md)
-   + Regole del filtro del traffico, incluse le regole di WAF {#traffic-filter-and-waf-rules}
+   + Regole del filtro del traffico che includono le regole WAF {#traffic-filter-and-waf-rules}
       + [Protezione dei siti web di AEM](./security/traffic-filter-and-waf-rules/overview.md)
-      + [Come impostare](./security/traffic-filter-and-waf-rules/setup.md)
-      + [Utilizzo delle regole del filtro del traffico](./security/traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md)
+      + [Configurazione](./security/traffic-filter-and-waf-rules/setup.md)
+      + [Utilizzo delle regole per il filtro del traffico](./security/traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md)
       + [Utilizzo delle regole di WAF](./security/traffic-filter-and-waf-rules/use-cases/using-waf-rules.md)
       + [Best practice](./security/traffic-filter-and-waf-rules/best-practices.md)
       + Procedura{#how-to}
          + [Monitoraggio delle richieste sensibili](./security/traffic-filter-and-waf-rules/how-to/request-logging.md)
          + [Limitazione dell’accesso](./security/traffic-filter-and-waf-rules/how-to/request-blocking.md)
-         + [Normalizzazione delle richieste](./security/traffic-filter-and-waf-rules/how-to/request-transformation.md)
+         + [Normalizzare le richieste](./security/traffic-filter-and-waf-rules/how-to/request-transformation.md)
 + Eventi AEM{#aem-eventing}
    + [Panoramica](./eventing/overview.md)
    + Esempi{#examples}
