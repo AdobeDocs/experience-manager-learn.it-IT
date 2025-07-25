@@ -14,86 +14,86 @@ exl-id: e6d67204-2f76-441c-a178-a34798fe266d
 source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Panoramica - Protezione dei siti web di AEM
 
-Scopri come proteggere i siti web di AEM da Denial of Service (DoS), Distributed Denial of Service (DDoS), traffico dannoso e attacchi sofisticati utilizzando **regole del filtro del traffico**, inclusa la sottocategoria di **regole del firewall dell’applicazione web (WAF)** in AEM as a Cloud Service.
+Scopri come proteggere i siti web di AEM da attacchi di negazione del servizio (DoS, Denial of Service), attacchi distribuiti di negazione del servizio (DDoS, Distributed Denial of Service), traffico dannoso e attacchi sofisticati utilizzando **regole del filtro del traffico**, inclusa la sottocategoria di **regole del firewall dell’applicazione web (WAF)** in AEM as a Cloud Service.
 
-Scopri anche le differenze tra il filtro del traffico standard e le regole del filtro del traffico di WAF, quando utilizzarle e come iniziare a utilizzare le regole consigliate da Adobe.
+Scopri anche le differenze tra il filtro del traffico standard e le regole del filtro del traffico WAF, quando utilizzarle e come iniziare a utilizzare le regole consigliate da Adobe.
 
 >[!IMPORTANT]
 >
-> Le regole del filtro del traffico WAF richiedono un&#39;ulteriore licenza **Protezione WAF-DDoS** o **Protezione avanzata**. Le regole del filtro del traffico standard sono disponibili per impostazione predefinita per i clienti Sites e Forms.
+> Le regole del filtro del traffico WAF richiedono un’ulteriore licenza **Protezione WAF-DDoS** o **Sicurezza avanzata**. Le regole del filtro del traffico standard sono disponibili per impostazione predefinita per la clientela di Sites e Forms.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3469394/?quality=12&learn=on)
 
 ## Introduzione alla sicurezza del traffico in AEM as a Cloud Service
 
-AEM as a Cloud Service sfrutta un livello CDN integrato per proteggere e ottimizzare la distribuzione del sito web. Uno dei componenti più critici del livello CDN è la capacità di definire e applicare le regole del traffico. Queste regole fungono da scudo protettivo per proteggere il sito da abusi, abusi e attacchi, senza compromettere le prestazioni.
+AEM as a Cloud Service sfrutta un livello CDN integrato per proteggere e ottimizzare la distribuzione del sito web. Uno dei componenti fondamentali del livello CDN è la capacità di definire e applicare le regole del traffico. Queste regole agiscono come uno scudo protettivo che aiuta a difendere il sito da abusi, usi impropri e attacchi, senza compromettere le prestazioni.
 
 La sicurezza del traffico è essenziale per mantenere i tempi di attività, proteggere i dati sensibili e garantire un’esperienza fluida per gli utenti legittimi. AEM fornisce due categorie di regole di sicurezza:
 
-- **Regole filtro traffico standard**
-- **Regole filtro del traffico di Firewall applicazione Web (WAF)**
+- **Regole standard per il filtro del traffico**
+- **Regole per il filtro traffico del firewall per l’applicazione Web (WAF)**
 
-I set di regole consentono ai clienti di prevenire minacce web comuni e sofisticate, ridurre il rumore causato da client malintenzionati o che si comportano in modo errato e migliorare l’osservabilità tramite la registrazione delle richieste, il blocco e il rilevamento dei pattern.
+I set di regole consentono alla clientela di prevenire minacce web comuni e sofisticate, ridurre il rumore causato da client dannosi o malfunzionanti e a migliorare l’osservabilità tramite la registrazione delle richieste, il blocco e il rilevamento dei pattern.
 
-## Differenza tra le regole del filtro del traffico standard e WAF
+## Differenza tra le regole per il filtro del traffico standard e WAF
 
-| Funzione | Regole filtro traffico standard | Regole filtro traffico WAF |
+| Funzione | Regole per il filtro del traffico standard | Regole per il filtro del traffico WAF |
 |--------------------------|--------------------------------------------------|---------------------------------------------------------|
-| Scopo | Previeni gli abusi come DoS, DoS, scraping o attività bot | Rileva e reagisce a modelli di attacco sofisticati (ad esempio, OWASP Top 10), che proteggono anche dai bot |
+| Scopo | Prevenire abusi come attacchi DoS, DDoS, estrazioni di dati da un sito web (scraping) o attività bot | Rileva e reagisce a pattern di attacco sofisticati (ad esempio, OWASP Top 10), che proteggono anche dai bot |
 | Esempi | Limitazione di frequenza, blocco geografico, filtro dell’agente utente | SQL injection, XSS, IP di attacco noti |
 | Flessibilità | Altamente configurabile tramite YAML | Altamente configurabile tramite YAML, con flag WAF predefiniti |
-| Modalità consigliata | Iniziare con la modalità `log`, quindi passare alla modalità `block` | Inizia con la modalità `block` per il flag WAF `ATTACK-FROM-BAD-IP` e la modalità `log` per il flag WAF `ATTACK`, quindi passa alla modalità `block` per entrambi |
-| Distribuzione | Definito in YAML e distribuito tramite Pipeline di configurazione Cloud Manager | Definito in YAML con `wafFlags` e distribuito tramite pipeline di configurazione Cloud Manager |
-| Licenze | Incluso con le licenze Sites e Forms | **Richiede la licenza Protezione WAF DDoS o Protezione avanzata** |
+| Modalità consigliata | Iniziare con la modalità `log`, quindi spostarsi sulla modalità `block` | Inizia con le modalità `block` per il flag WAF `ATTACK-FROM-BAD-IP` e `log` per il flag WAF `ATTACK`, quindi spostati sulla modalità `block` per entrambe |
+| Distribuzione | Definito in YAML e distribuito tramite pipeline di configurazione Cloud Manager | Definito in YAML con `wafFlags` e distribuito tramite pipeline di configurazione Cloud Manager |
+| Licenze | Incluso con le licenze Sites e Forms | **Richiede la licenza di protezione WAF DDoS o di sicurezza avanzata** |
 
-Le regole standard per il filtro del traffico sono utili per applicare criteri specifici per l’azienda, ad esempio limiti di velocità o blocchi di aree specifiche, nonché per bloccare il traffico in base alle proprietà e alle intestazioni della richiesta, ad esempio indirizzo IP, percorso o agente utente.
-Le regole del filtro del traffico di WAF, d&#39;altra parte, forniscono una protezione proattiva completa per attacchi web e vettori di attacco noti e dispongono di informazioni avanzate per limitare i falsi positivi (ovvero, il blocco del traffico legittimo).
-Per definire entrambi i tipi di regole, si utilizza la sintassi YAML. Per ulteriori dettagli, vedere [Sintassi delle regole del filtro del traffico](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax).
+Le regole standard per il filtro del traffico sono utili per applicare criteri specifici per l’azienda, ad esempio limiti di frequenza o blocchi di aree geografiche specifiche, nonché per bloccare il traffico in base alle proprietà e alle intestazioni della richiesta, ad esempio indirizzo IP, percorso o agente utente.
+Le regole per il filtro del traffico WAF, d’altra parte, forniscono una protezione proattiva completa per attacchi web e vettori di attacco noti e dispongono di un’intelligence avanzata per limitare i falsi positivi (ovvero, il blocco del traffico legittimo).
+Per definire entrambi i tipi di regole, è necessario utilizzare la sintassi YAML. Per ulteriori dettagli, consulta [Sintassi delle regole per il filtro del traffico](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax).
 
-## Quando e perché utilizzarli
+## Quando e perché utilizzarle
 
-**Utilizza le regole del filtro del traffico standard** quando:
+**Utilizza le regole standard per il filtro del traffico** quando:
 
 - Desideri applicare limiti specifici dell’organizzazione, ad esempio la limitazione della velocità IP.
 - Conosci pattern specifici (ad esempio indirizzi IP dannosi, aree geografiche, intestazioni) che devono essere filtrati.
 
-**Utilizza le regole del filtro del traffico di WAF** quando:
+**Utilizza le regole per il filtro del traffico WAF** quando:
 
-- Desideri una **protezione proattiva** completa da pattern di attacco noti diffusi (ad esempio, iniezione, abuso di protocollo), nonché da IP dannosi noti, raccolti da origini dati esperte.
-- Desideri negare le richieste dannose e al tempo stesso limitare la possibilità di bloccare il traffico legittimo.
-- Desideri limitare il lavoro di difesa da minacce comuni e sofisticate, applicando semplici regole di configurazione.
+- Desideri una **protezione proattiva** completa da pattern di attacco noti diffusi (ad esempio, injection, abuso di protocollo), nonché da IP dannosi noti, raccolti da origini dati esperte.
+- Desideri rifiutare le richieste dannose e al tempo stesso limitare la possibilità di bloccare il traffico legittimo.
+- Desideri limitare la quantità di lavoro nella difesa da minacce comuni e sofisticate, applicando semplici regole di configurazione.
 
-Insieme, queste regole forniscono una strategia di difesa approfondita che consente ai clienti di AEM as a Cloud Service di adottare misure proattive e reattive per proteggere le loro proprietà digitali.
+Insieme, queste regole forniscono una strategia di difesa approfondita che consente alla clientela di AEM as a Cloud Service di adottare misure proattive e reattive per proteggere le rispettive proprietà digitali.
 
 ## Regole consigliate da Adobe
 
 Adobe fornisce regole consigliate per il filtro del traffico standard e per le regole del filtro del traffico WAF per aiutarti a proteggere rapidamente i siti AEM.
 
-- **Regole del filtro del traffico standard** (disponibile per impostazione predefinita): consente di risolvere gli scenari di abuso più comuni, ad esempio attacchi DoS, DDoS e bot, contro **l&#39;edge della rete CDN**, **l&#39;origine** o il traffico proveniente da paesi sanzionati.\
+- **Regole standard per il filtro del traffico** (disponibile per impostazione predefinita): consente di risolvere gli scenari di abuso più comuni, ad esempio attacchi DoS, DDoS e di bot, contro l’**edge della rete CDN**, **l’origine** o il traffico proveniente da paesi sanzionati.\
   Alcuni esempi:
-   - Limitazione di frequenza degli IP che effettuano più di 500 richieste al secondo _al perimetro della rete CDN_
-   - Limitazione di frequenza degli IP che effettuano più di 100 richieste al secondo _all&#39;origine_
-   - Blocco del traffico proveniente dai paesi elencati dall&#39;Office of Foreign Assets Control (OFAC)
+   - Limitazione di frequenza degli IP che effettuano più di 500 richieste al secondo _nell’edge della rete CDN_
+   - Limitazione di frequenza degli IP che effettuano più di 100 richieste al secondo _all’origine_
+   - Blocco del traffico proveniente dai Paesi elencati dall’Office of Foreign Assets Control (OFAC, Ufficio di controllo dei beni stranieri)
 
-- **Regole filtro del traffico WAF** (richiede una licenza aggiuntiva): fornisce una protezione aggiuntiva contro minacce sofisticate, tra cui [OWASP Top Ten](https://owasp.org/www-project-top-ten/) minacce come SQL injection, cross-site scripting (XSS) e altri attacchi alle applicazioni Web.
+- **Regole per il filtro del traffico WAF** (richiede una licenza aggiuntiva): fornisce una protezione aggiuntiva contro minacce sofisticate, incluse quelle elencate tra le [dieci principali di OWASP](https://owasp.org/www-project-top-ten/), come SQL injection, cross-site scripting (XSS) e altri attacchi alle applicazioni web.
 Alcuni esempi:
-   - Blocco delle richieste da indirizzi IP danneggiati noti
+   - Blocco delle richieste da indirizzi IP malevoli noti
    - Registrazione o blocco di richieste sospette contrassegnate come attacchi
 
 >[!TIP]
 >
-> Inizia applicando le **regole consigliate da Adobe** per sfruttare l&#39;esperienza di Adobe in materia di sicurezza e gli aggiornamenti continui. Se la tua azienda presenta rischi specifici o casi limite, oppure nota falsi positivi (blocco del traffico legittimo), puoi definire **regole personalizzate** o estendere il set predefinito in base alle tue esigenze.
+> Inizia applicando le **regole consigliate da Adobe** per sfruttare l’esperienza di Adobe in materia di sicurezza e gli aggiornamenti continui. Se la tua azienda presenta rischi specifici o casi relativi all’edge, oppure nota falsi positivi (blocco del traffico legittimo), puoi definire **regole personalizzate** o estendere il set predefinito per soddisfare le tue esigenze.
 
 ## Introduzione
 
-Scopri come definire, distribuire, testare e analizzare le regole del filtro del traffico, incluse le regole di WAF, in AEM as a Cloud Service seguendo la guida alla configurazione e i casi d’uso riportati di seguito. In questo modo puoi acquisire le conoscenze di base necessarie per applicare in un secondo momento le regole consigliate da Adobe.
+Scopri come definire, distribuire, testare e analizzare le regole per il filtro del traffico, incluse le regole di WAF, in AEM as a Cloud Service seguendo la guida alla configurazione e i casi d’uso riportati di seguito. Questo fornisce le conoscenze di base necessarie per applicare con sicurezza, in un secondo momento, le regole consigliate da Adobe.
 
 <!-- CARDS
 {target = _self}
@@ -110,8 +110,8 @@ Scopri come definire, distribuire, testare e analizzare le regole del filtro del
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./setup.md" title="Come impostare le regole del filtro del traffico, incluse le regole di WAF" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/setup/rules-setup.png" alt="Come impostare le regole del filtro del traffico, incluse le regole di WAF"
+                    <a href="./setup.md" title="Come configurare le regole di filtro del traffico incluse le regole WAF" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/setup/rules-setup.png" alt="Come configurare le regole di filtro del traffico incluse le regole WAF"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -119,9 +119,9 @@ Scopri come definire, distribuire, testare e analizzare le regole del filtro del
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./setup.md" target="_self" rel="referrer" title="Come impostare le regole del filtro del traffico, incluse le regole di WAF">Impostare le regole del filtro del traffico, incluse le regole di WAF</a>
+                        <a href="./setup.md" target="_self" rel="referrer" title="Come configurare le regole di filtro del traffico incluse le regole WAF">Come configurare le regole per il filtro del traffico incluse le regole WAF</a>
                     </p>
-                    <p class="is-size-6">Scopri come configurare per creare, distribuire, testare e analizzare i risultati delle regole del filtro del traffico, incluse le regole di WAF.</p>
+                    <p class="is-size-6">Scopri come configurare, distribuire, testare e analizzare i risultati delle regole di filtro del traffico, incluse le regole WAF.</p>
                 </div>
                 <a href="./setup.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Inizia ora</span>
@@ -134,7 +134,7 @@ Scopri come definire, distribuire, testare e analizzare le regole del filtro del
 
 ## Guida alla configurazione delle regole consigliate da Adobe
 
-Questa guida fornisce istruzioni dettagliate per impostare e distribuire regole standard per il filtro del traffico e per il filtro del traffico WAF consigliate da Adobe nell’ambiente AEM as a Cloud Service.
+Questa guida fornisce istruzioni dettagliate per configurare e distribuire regole standard per il filtro del traffico e per il filtro del traffico WAF consigliate da Adobe nell’ambiente AEM as a Cloud Service.
 
 <!-- CARDS
 {target = _self}
@@ -166,12 +166,12 @@ Questa guida fornisce istruzioni dettagliate per impostare e distribuire regole 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protezione dei siti web di AEM tramite le regole standard per il filtro del traffico">Protezione dei siti Web di AEM tramite le regole del filtro del traffico standard</a>
+                        <a href="./use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protezione dei siti web di AEM tramite le regole standard per il filtro del traffico">Protezione dei siti Web di AEM tramite le regole standard per il filtro del traffico</a>
                     </p>
-                    <p class="is-size-6">Scopri come proteggere i siti web di AEM dall’abuso di DoS, DDoS e bot utilizzando le regole standard consigliate da Adobe per il filtro del traffico in AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Scopri come proteggere i siti web di AEM dall’abuso di DoS, DDoS e bot utilizzando le regole standard per il filtro del traffico consigliate da Adobe in AEM as a Cloud Service.</p>
                 </div>
                 <a href="./use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Applica regole</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Applica le regole</span>
                 </a>
             </div>
         </div>
@@ -189,9 +189,9 @@ Questa guida fornisce istruzioni dettagliate per impostare e distribuire regole 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/using-waf-rules.md" target="_self" rel="referrer" title="Protezione dei siti web di AEM tramite le regole di WAF">Protezione dei siti Web di AEM tramite le regole di WAF</a>
+                        <a href="./use-cases/using-waf-rules.md" target="_self" rel="referrer" title="Protezione dei siti web di AEM tramite le regole di WAF">Protezione dei siti web di AEM tramite le regole di WAF</a>
                     </p>
-                    <p class="is-size-6">Scopri come proteggere i siti web di AEM da minacce sofisticate, inclusi attacchi DoS, DDoS e abusi di bot, utilizzando le regole del filtro del traffico di WAF (Web Application Firewall) consigliate da Adobe in AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Scopri come proteggere i siti web di AEM da minacce sofisticate, tra cui DoS, DDoS e abusi di bot, utilizzando le regole per il filtro del traffico del firewall per l’applicazione web (WAF) consigliate da Adobe in AEM as a Cloud Service.</p>
                 </div>
                 <a href="./use-cases/using-waf-rules.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Attiva WAF</span>
@@ -204,7 +204,7 @@ Questa guida fornisce istruzioni dettagliate per impostare e distribuire regole 
 
 ## Casi d’uso avanzati
 
-Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano come implementare regole di filtro del traffico personalizzate in base a requisiti di business specifici:
+Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano come implementare regole per il filtro del traffico personalizzate in base a requisiti di business specifici:
 
 <!-- CARDS
 {target = _self}
@@ -232,7 +232,7 @@ Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano c
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./how-to/request-logging.md" target="_self" rel="referrer" title="Monitoraggio delle richieste sensibili">Monitoraggio delle richieste sensibili</a>
                     </p>
-                    <p class="is-size-6">Scopri come monitorare le richieste sensibili registrandole utilizzando le regole del filtro del traffico in AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Scopri come monitorare le richieste sensibili registrandole utilizzando le regole per il filtro del traffico in AEM as a Cloud Service.</p>
                 </div>
                 <a href="./how-to/request-logging.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -253,9 +253,9 @@ Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano c
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./how-to/request-blocking.md" target="_self" rel="referrer" title="Limitazione dell’accesso">Limitazione dell'accesso</a>
+                        <a href="./how-to/request-blocking.md" target="_self" rel="referrer" title="Limitazione dell’accesso">Limitazione dell’accesso</a>
                     </p>
-                    <p class="is-size-6">Scopri come limitare l’accesso bloccando richieste specifiche utilizzando le regole del filtro del traffico in AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Scopri come limitare l’accesso bloccando richieste specifiche tramite le regole per il filtro del traffico in AEM as a Cloud Service.</p>
                 </div>
                 <a href="./how-to/request-blocking.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -267,8 +267,8 @@ Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano c
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./how-to/request-transformation.md" title="Normalizzazione delle richieste" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/how-to/aemrequest-log-transformation.png" alt="Normalizzazione delle richieste"
+                    <a href="./how-to/request-transformation.md" title="Normalizzare le richieste" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="assets/how-to/aemrequest-log-transformation.png" alt="Normalizzare le richieste"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -276,9 +276,9 @@ Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano c
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./how-to/request-transformation.md" target="_self" rel="referrer" title="Normalizzazione delle richieste">Normalizzazione delle richieste</a>
+                        <a href="./how-to/request-transformation.md" target="_self" rel="referrer" title="Normalizzare le richieste">Normalizzare le richieste</a>
                     </p>
-                    <p class="is-size-6">Scopri come normalizzare le richieste trasformandole utilizzando le regole del filtro del traffico in AEM as a Cloud Service.</p>
+                    <p class="is-size-6">Scopri come normalizzare le richieste trasformandole utilizzando le regole per il filtro del traffico in AEM as a Cloud Service.</p>
                 </div>
                 <a href="./how-to/request-transformation.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -291,4 +291,4 @@ Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano c
 
 ## Risorse aggiuntive
 
-- [Regole filtro del traffico, incluse le regole di WAF](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
+- [Regole per il filtro del traffico che includono le regole WAF](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
