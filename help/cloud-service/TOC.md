@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
-source-wordcount: '1400'
-ht-degree: 100%
+source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+workflow-type: tm+mt
+source-wordcount: '1414'
+ht-degree: 99%
 
 ---
 
@@ -141,6 +141,13 @@ ht-degree: 100%
       + [Browser dell’archivio](./debugging/cloud-service/repository-browser.md)
       + Rischi{#risks}
          + [Avvisi di attraversamento](./debugging/cloud-service/risks/traversals.md)
++ Personalizzazione {#personalization}
+   + [Panoramica](./personalization/overview.md)
+   + Configurazione{#setup}
+      + [Integrare Adobe Target](./personalization/setup/integrate-adobe-target.md)
+      + [Integrare i tag](./personalization/setup/integrate-adobe-tags.md)
+   + Casi d’uso {#use-cases}
+      + [Sperimentazione (Test A/B)](./personalization/use-cases/experimentation.md)
 + API di AEM{#aem-apis}
    + [Panoramica](./apis/overview.md)
    + OpenAPI{#openapis}
