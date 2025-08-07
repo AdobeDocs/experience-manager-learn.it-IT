@@ -5,9 +5,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '177'
+source-git-commit: 82437ad5d395c5261b3a913b168e4068abb55206
+workflow-type: tm+mt
+source-wordcount: '128'
 ht-degree: 100%
 
 ---
@@ -36,54 +36,6 @@ Scopri che cos’è AEM Assets e come utilizzarlo per raggiungere gli obiettivi 
 <div id="recs-overview-body-4"></div>
 <div id="recs-overview-body-5"></div>
 <div id="recs-overview-body-6"></div>
-
-<div id="staff-picks-section">
-
-## Scelte del personale
-
-<table>
-<td>
-   <a href="./creative-workflows/aem-desktop-app.md">
-   <img alt="Tag avanzati migliorati" src="./assets/overview/desktop-app.png" />
-   </a>
-   <div>
-      <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>Usare l’app desktop AEM</strong>
-      </a>
-   </div>
-   <p>
-      <em>Accedi alle risorse in AEM direttamente dal desktop</em>
-   </p>
-</td>
-<td>
-   <a href="../assets-essentials/overview.md">
-   <img alt="AEM Assets Essentials" src="../assets-essentials/assets/overview/getting-started.png"/>
-   </a>
-   <div>
-      <a href="../assets-essentials/overview.md">
-      <strong>Guida introduttiva ad Assets Essentials</strong>
-      </a>
-   </div>
-   <p>
-      <em>Accelera la creazione dell’esperienza dal concetto alla progettazione fino alla consegna.</em>
-   <p>
-</td>
-<td>
-   <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Panoramica di Dynamic Media" src="./assets/overview/dynamic-media.png" />
-   </a>
-   <div>
-      <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Panoramica di Dynamic Media</strong>
-      </a>
-   </div>
-   <p>
-      <em>Gestione e accesso ai contenuti multimediali tramite Dynamic Media</em>
-   <p>
-</td>
-</table>
-
-</div>
 
 ## Risorse aggiuntive
 
