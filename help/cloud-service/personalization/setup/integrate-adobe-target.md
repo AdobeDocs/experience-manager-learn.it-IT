@@ -140,7 +140,7 @@ Per verificare il corretto funzionamento dell’integrazione, verifica la funzio
 
 ## Risorse aggiuntive
 
-- [Panoramica API di Target](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/target-api-overview)
-- [Offerta Target](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/manage-content)
+- [Panoramica API di Target](https://experienceleague.adobe.com/it/docs/target-dev/developer/api/target-api-overview)
+- [Offerta Target](https://experienceleague.adobe.com/it/docs/target/using/experiences/offers/manage-content)
 - [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/)
-- [Frammenti esperienza in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)
+- [Frammenti esperienza in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)
