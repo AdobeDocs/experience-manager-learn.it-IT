@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Scopri le best practice per la pubblicazione e l’ottimizzazione di video in AEM Dynamic Media, tra cui lo streaming adattivo, il ritaglio intelligente per schermi di dimensioni diverse, predefiniti visualizzatore personalizzati e il supporto per didascalie, tracce audio e marcatori capitoli. Evidenzia come migliorare l’esperienza degli utenti, l’accessibilità e l’impatto sul marketing tra i dispositivi.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470634/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470686/?learn=on&enablevpops&captions=ita)
 
 ## Risorse di supporto
 
