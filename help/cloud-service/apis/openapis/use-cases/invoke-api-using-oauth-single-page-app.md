@@ -1,7 +1,7 @@
 ---
 title: Richiama le API AEM basate su OpenAPI tramite l’app a pagina singola OAuth
 description: Scopri come richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service utilizzando l’autenticazione basata sull’utente da un’app a pagina singola personalizzata (SPA) tramite il flusso PKCE OAuth 2.0.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Il progetto Adobe Developer Console (ADC) è configurato per abilitare l&#39;aut
 >Il progetto ADC NON fornisce un _client_secret_. L&#39;applicazione a pagina singola genera invece un _code_verifier_ e un _code_challenge_ per scambiare in modo sicuro il codice di autorizzazione per un _token di accesso_. Elimina la necessità di memorizzare un segreto client sul lato client, migliorando la sicurezza.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456972?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 
