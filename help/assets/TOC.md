@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 82437ad5d395c5261b3a913b168e4068abb55206
+source-git-commit: 4a4334047f600cd64a6f6be82974f280b786d0c1
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '459'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
    + [Guardare](./collaboration/watch.md)
    + [Timeline e casella in entrata](./collaboration/timeline-and-inbox.md)
    + [Commenti e annotazioni](./collaboration/comments-and-annotations.md)
-   + [Consegnate e ritirate](./collaboration/check-in-and-check-out.md)
+   + [Archiviazione ed estrazione](./collaboration/check-in-and-check-out.md)
    + [Versioni](./collaboration/versions.md)
    + [Attività di revisione](./collaboration/review-task.md)
 
@@ -117,6 +117,7 @@ ht-degree: 100%
    + [App desktop AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
+   + [Figma](./creative-workflows/figma.md)
 
 + Adobe Asset Link{#adobe-asset-link}
    + [Configurazione](./adobe-asset-link/setup.md)
