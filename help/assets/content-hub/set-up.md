@@ -23,4 +23,4 @@ ht-degree: 29%
 
 Scopri come impostare Experience Manager Assets Content Hub utilizzando il programma Adobe Cloud Manager e il componente aggiuntivo Assets. Scopri anche come configurare l’accesso per gli utenti che utilizzano i profili di prodotto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3472943/?learn=on&captions=ita)
