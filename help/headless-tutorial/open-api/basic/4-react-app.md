@@ -113,9 +113,9 @@ Per ottenere l’app React:
 >   Questa app React è parzialmente implementata. Segui i passaggi descritti in questo tutorial per completare l’implementazione. I file JavaScript che richiedono un lavoro di implementazione presentano il seguente commento. Accertati di aggiungere/aggiornare il codice in tali file con il codice specificato in questa esercitazione.
 >
 >
->  //*********************************
->  >  // TODO: implementalo seguendo i passaggi dell’esercitazione AEM Headless
->  >  //*********************************
+>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
+>  &#x200B;>  // TODO: implementalo seguendo i passaggi dell’esercitazione AEM Headless
+>  &#x200B;>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
 >
 
 ## Anatomia dell’app React
