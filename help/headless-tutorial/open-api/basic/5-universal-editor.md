@@ -46,7 +46,7 @@ Universal Editor richiede [attributi HTML e metatag](https://experienceleague.ad
 Innanzitutto, aggiungi i metatag necessari per identificare l’app React come compatibile con Universal Editor.
 
 1. Apri `public/index.html` nella tua app React.
-1. Aggiungi i metatag [Universal Editor e lo script CORS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) nella sezione `<head>` dell&#39;app React:
+1. Aggiungi i metatag [Universal Editor e lo script CORS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) nella sezione `<head>` dell&#39;app React:
 
    ```html
    <!DOCTYPE html>
