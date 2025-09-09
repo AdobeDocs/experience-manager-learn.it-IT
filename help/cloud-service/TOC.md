@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 7d6f6d710f7ecbe01359f54e0f51d3e84ec64373
+source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1405'
 ht-degree: 99%
 
 ---
@@ -88,11 +88,11 @@ ht-degree: 99%
                + [Badge per l’editor Rich Text](./developing/extensibility/ui/content-fragments/examples/editor-rte-badges.md)
                + [Campi personalizzati](./developing/extensibility/ui/content-fragments/examples/editor-custom-field.md)
    + Nozioni di base sullo sviluppo{#basics}
-      + [AEM SDK](./developing/basics/aem-sdk.md)
+      + [SDK AEM](./developing/basics/aem-sdk.md)
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo di progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuti mutabili e immutabili](./developing/basics/mutable-immutable.md)
+      + [Contenuti mutabili e immutabili ](./developing/basics/mutable-immutable.md)
       + [Pacchetto di struttura dell’archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
@@ -147,7 +147,8 @@ ht-degree: 99%
       + [Integrare Adobe Target](./personalization/setup/integrate-adobe-target.md)
       + [Integrare i tag](./personalization/setup/integrate-adobe-tags.md)
    + Casi d’uso {#use-cases}
-      + [Sperimentazione (Test A/B)](./personalization/use-cases/experimentation.md)
+      + [Sperimentazione (test A/B)](./personalization/use-cases/experimentation.md)
+      + [Targeting comportamentale](./personalization/use-cases/behavioral-targeting.md)
 + API di AEM{#aem-apis}
    + [Panoramica](./apis/overview.md)
    + OpenAPI{#openapis}
@@ -234,7 +235,7 @@ ht-degree: 99%
          + [Servizio di importazione in blocco](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [Strumento di trasferimento contenuti](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [Domande frequenti](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
-      + [Risoluzione dei problemi](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
+      + [Risoluzione di problemi](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [Introduzione](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Registrazione digitale](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
@@ -421,12 +422,12 @@ ht-degree: 99%
       + [Integrare con AEM](./asset-compute/deploy/processing-profiles.md)
    + Avanzato{#advanced}
       + [Processi di lavoro metadati](./asset-compute/advanced/metadata.md)
-   + [Risoluzione dei problemi](./asset-compute/troubleshooting.md)
+   + [Risoluzione di problemi](./asset-compute/troubleshooting.md)
 
 + Tutorial in più passaggi{#multi-step-tutorials}
-   + [Sviluppo AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview){target=_blank}
+   + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it){target=_blank}
-   + [Editor SPA (React)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview){target=_blank}
+   + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
    + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/it/docs/experience-manager-learn/aem-target-tutorial/overview){target=_blank}
    + [Autenticazione basata su token](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview){target=_blank}
 + Risorse da esperti {#expert-resources}
