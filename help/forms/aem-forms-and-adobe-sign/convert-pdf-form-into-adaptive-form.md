@@ -1,6 +1,6 @@
 ---
-title: Converti modulo PDF in modulo adattivo
-description: Il servizio di Automated forms conversion AEM Forms, basato su Adobe Sensei, converte automaticamente i PDF forms in moduli adattivi facili da usare e reattivi. Che si utilizzino PDF forms non interattivi, Acro Forms o PDF forms basati su XFA, il servizio di Automated forms conversion può facilmente convertire questi moduli in moduli adattivi.
+title: Convertire un modulo PDF in un modulo adattivo
+description: Il servizio di conversione automatica dei moduli di AEM Forms converte automaticamente il PDF forms in moduli adattivi reattivi e facili da usare sui dispositivi. Che si utilizzi PDF forms non interattivo, Acro Forms o PDF forms basato su XFA, il servizio di conversione automatica dei moduli può facilmente convertire questi moduli in moduli adattivi.
 feature: Adaptive Forms
 thumbnail: 39495.jpg
 jira: KT-6115
@@ -11,20 +11,20 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 9aab3eb0-03a5-4962-a2ff-d44a17dc140e
 duration: 395
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 2%
+source-wordcount: '127'
+ht-degree: 14%
 
 ---
 
-# Converti modulo PDF in modulo adattivo
+# Convertire un modulo PDF in un modulo adattivo
 
-Il servizio di Automated forms conversion AEM Forms, basato su Adobe Sensei, converte automaticamente i PDF forms in moduli adattivi facili da usare e reattivi. Che si utilizzino PDF forms non interattivi, Acro Forms o PDF forms basati su XFA, il servizio di Automated forms conversion può facilmente convertire questi moduli in moduli adattivi.
+Il servizio di conversione automatica dei moduli di AEM Forms converte automaticamente il PDF forms in moduli adattivi reattivi e facili da usare sui dispositivi. Che si utilizzi PDF forms non interattivo, Acro Forms o PDF forms basato su XFA, il servizio di conversione automatica dei moduli può facilmente convertire questi moduli in moduli adattivi.
 
-Il video seguente illustra i passaggi necessari per convertire un modulo PDF in un modulo adattivo tramite il servizio di Automated forms conversion
+Il video seguente illustra i passaggi necessari per convertire un modulo PDF in un modulo adattivo utilizzando il servizio di conversione automatica dei moduli
 
->[!VIDEO](https://video.tv.adobe.com/v/327719?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)
 
 ## Passaggi successivi
 

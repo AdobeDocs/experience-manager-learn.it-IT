@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di Smart Crop con AEM Assets Dynamic Media
-description: Il ritaglio avanzato utilizza Adobe Sensei per eliminare le attività di ritaglio dei contenuti che richiedono tempo e denaro per una progettazione reattiva.
+description: Il ritaglio avanzato elimina le lunghe e costose attività di ritaglio dei contenuti per una progettazione reattiva.
 feature: Smart Crop, Image Profiles
 version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
@@ -10,18 +10,18 @@ jira: KT-784
 doc-type: Feature Video
 exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
 duration: 443
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
 
 # Utilizzo di Smart Crop con AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
-Il ritaglio avanzato utilizza Adobe Sensei per eliminare le attività di ritaglio dei contenuti che richiedono tempo e denaro per una progettazione reattiva.
+Il ritaglio avanzato elimina le lunghe e costose attività di ritaglio dei contenuti per una progettazione reattiva.
 
->[!VIDEO](https://video.tv.adobe.com/v/327277?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
 
 >[!NOTE]
 >

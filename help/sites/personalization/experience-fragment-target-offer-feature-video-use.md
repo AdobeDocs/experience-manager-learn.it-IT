@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 9ee826cf-389f-4570-bfe1-0d43d3fed3e1
 duration: 574
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Adobe Experience Manager reimmagina il flusso di lavoro di personalizzazione tra AEM e Target. Le esperienze create all’interno di AEM ora possono essere consegnate direttamente alle offerte di Adobe Target as HTML. Consente agli addetti al marketing di testare e personalizzare facilmente i contenuti tra canali diversi.
 
->[!VIDEO](https://video.tv.adobe.com/v/326989?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/22383?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ Adobe Experience Manager reimmagina il flusso di lavoro di personalizzazione tra
 * La differenza principale tra le offerte di HTML e le offerte dei frammenti di esperienza è che la modifica per la versione successiva può essere eseguita solo in AEM e quindi sincronizzata con Adobe Target
 * La configurazione del servizio cloud di Target applicata alla cartella Frammenti di esperienza eredita tutti i Frammenti di esperienza creati direttamente nella cartella principale. La cartella secondaria non eredita la configurazione dei servizi cloud principali.
 * Per creare un’offerta personalizzata ora possiamo facilmente sfruttare i contenuti memorizzati all’interno di AEM.
-* Puoi creare tipi di attività Target, comprese le attività basate su Sensei come Allocazione automatica, Targeting automatico e Automated Personalization
+* Puoi creare tipi di attività Target, comprese le attività basate sull’intelligenza artificiale come Allocazione automatica, Targeting automatico e Automated Personalization
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione sui frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=it)
-* [Utilizzo di Frammenti esperienza](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)
+* [Documentazione sui frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
+* [Utilizzo di frammenti esperienza](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

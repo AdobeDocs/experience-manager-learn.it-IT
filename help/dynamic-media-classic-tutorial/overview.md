@@ -8,9 +8,9 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ In questa guida verranno illustrate le seguenti funzionalità principali di Dyna
 
 - **Dynamic Imaging.** Il termine generale per la modifica in tempo reale, la formattazione e il ridimensionamento, lo zoom e la panoramica interattivi, il colore e il campione di texture, la rotazione a 360 gradi, i modelli di immagine e i visualizzatori multimediali.
 - **Video.** Carica i video finali, pubblicali e scaricali progressivamente in visualizzatori video configurabili.
-- **Imaging avanzato.Tecnologia** che sfrutta le funzionalità di intelligenza artificiale di Adobe Sensei e funziona con i &quot;predefiniti immagine&quot; esistenti per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
+- **Imaging avanzato.Tecnologia** che funziona con i &quot;predefiniti immagine&quot; esistenti per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
-Per scoprire ulteriori funzionalità della soluzione, visita la [documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=it).
+Per scoprire ulteriori funzionalità della soluzione, visita la [documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interfaccia utente di Dynamic Media Classic
 
@@ -64,12 +64,12 @@ _Interfaccia utente di Dynamic Media Classic_
 
 >[!IMPORTANT]
 >
->Accanto a ogni ID risorsa è presente l&#39;opzione **Contrassegna per Publish**. Quando l’interruttore è attivato (verde), questo indica che la risorsa è contrassegnata per la pubblicazione.
+>Accanto a ogni ID risorsa è presente l&#39;opzione **Contrassegna per pubblicazione**. Quando l’interruttore è attivato (verde), questo indica che la risorsa è contrassegnata per la pubblicazione.
 
 ![immagine](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Seleziona la casella di controllo **Publish dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
+>Seleziona la casella di controllo **Pubblica dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
 
-Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html?lang=it).
+Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
