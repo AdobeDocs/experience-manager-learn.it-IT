@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Il ritaglio avanzato elimina le lunghe e costose attività di ritaglio dei contenuti per una progettazione reattiva.
 
->[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327277?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

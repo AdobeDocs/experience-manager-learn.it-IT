@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Dynamic Media Smart Crop for video tiene traccia in modo intelligente del punto di interesse nel video, garantendo che i video abbiano un aspetto ottimale su tutte le dimensioni di schermo.
 
->[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326470?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

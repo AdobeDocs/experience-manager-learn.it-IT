@@ -24,7 +24,7 @@ Il servizio di conversione automatica dei moduli di AEM Forms converte automatic
 
 Il video seguente illustra i passaggi necessari per convertire un modulo PDF in un modulo adattivo utilizzando il servizio di conversione automatica dei moduli
 
->[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327719?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 
