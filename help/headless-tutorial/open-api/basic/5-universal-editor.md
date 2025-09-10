@@ -1,5 +1,5 @@
 ---
-title: Rendi l’app React modificabile con Universal Editor | Tutorial di headless - Parte 5
+title: Modificare l’app React con l’editor universale | Tutorial di headless - Parte 5
 description: Scopri come rendere modificabile l’app React in AEM Universal Editor aggiungendo la strumentazione e la configurazione necessarie.
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
@@ -8,15 +8,15 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 800
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: da3bfa25a424e3176fb7d53189169515db225228
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 2%
 
 ---
 
 
-# Rendere modificabile l’app React con Universal Editor
+# Modificare l’app React con Universal Editor
 
 In questo capitolo imparerai a rendere modificabile l&#39;app React integrata nel [capitolo precedente](./4-react-app.md) tramite AEM Universal Editor. Universal Editor consente agli autori di contenuti di modificare i contenuti direttamente nel contesto dell’esperienza dell’app React, mantenendo al contempo l’esperienza fluida di un’applicazione headless.
 
@@ -46,7 +46,7 @@ Universal Editor richiede [attributi HTML e metatag](https://experienceleague.ad
 Innanzitutto, aggiungi i metatag necessari per identificare l’app React come compatibile con Universal Editor.
 
 1. Apri `public/index.html` nella tua app React.
-1. Aggiungi i metatag [Universal Editor e lo script CORS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) nella sezione `<head>` dell&#39;app React:
+1. Aggiungi i metatag [Universal Editor e lo script CORS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) nella sezione `<head>` dell&#39;app React:
 
    ```html
    <!DOCTYPE html>
