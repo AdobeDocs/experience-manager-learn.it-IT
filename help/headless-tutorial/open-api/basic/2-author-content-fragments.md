@@ -50,7 +50,7 @@ AEM supporta l’organizzazione di cartelle &quot;flat&quot;, il che significa c
    * Titolo: **Inglese**
    * Nome: **en**
 
-   Viene creata una cartella della lingua principale per posizionare il progetto e supportare le funzionalità di localizzazione native di AEM. Una best practice prevede la configurazione di progetti per il supporto multilingue, anche se attualmente non è necessaria la localizzazione. Per ulteriori informazioni, consulta [la seguente pagina della documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+   Viene creata una cartella della lingua principale per posizionare il progetto e supportare le funzionalità di localizzazione native di AEM. Una best practice prevede la configurazione di progetti per il supporto multilingue, anche se attualmente non è necessaria la localizzazione. Per ulteriori informazioni, consulta [la seguente pagina della documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=it).
 
 1. Crea due sottocartelle nella nuova cartella **Progetto personale > Inglese** con i seguenti valori:
 
