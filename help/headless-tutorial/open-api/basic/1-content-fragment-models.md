@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 430
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: a3d2a88232cae941647464be8e215a47c85bc0ab
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 3%
 
 ---
 
-# Definizione dei modelli per frammenti di contenuto
+# Creare modelli di frammenti di contenuto
 
 In questo capitolo, scopri come modellare il contenuto e creare uno schema con **Modelli per frammenti di contenuto** e i diversi tipi di dati che definiscono un modello per frammenti di contenuto.
 
@@ -160,5 +160,5 @@ Nel prossimo capitolo, [Creazione di modelli per frammenti di contenuto](2-autho
 
 ## Documentazione correlata
 
-* [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=it)
+* [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)
 
