@@ -160,5 +160,5 @@ Nel prossimo capitolo, [Creazione di modelli per frammenti di contenuto](2-autho
 
 ## Documentazione correlata
 
-* [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)
+* [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=it)
 
