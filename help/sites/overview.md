@@ -6,7 +6,7 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 14ca2ba3d5b6c116e3fa8b437aa9ed90375ae468
+source-git-commit: 999bbe542e5c71ae537f93a4c89acf6d304a4292
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 38%
@@ -23,9 +23,9 @@ Adobe Experience Manager (AEM) Sites è la piattaforma di gestione delle esperie
 
 AEM Sites offre tre modi per creare, eseguire l’authoring e distribuire esperienze. Sia che si tratti della creazione di siti web, dell’ottimizzazione delle prestazioni edge o dell’attivazione di app headless, AEM Sites offre opzioni flessibili per soddisfare le esigenze del progetto:
 
-1. Le **esperienze Edge Delivery Services** utilizzano l&#39;Edge Network di Adobe per distribuire contenuti ad alta velocità e a bassa latenza. Il servizio ottimizza automaticamente i contenuti per il dispositivo che consuma, i motori di ricerca e gli agenti GenAI. Gli autori creano contenuti utilizzando Adobe Universal Editor o l’authoring basato su documenti.
+1. Le **esperienze Edge Delivery Services** utilizzano l&#39;Edge Network di Adobe per distribuire contenuti ad alta velocità e bassa latenza. Il servizio ottimizza automaticamente i contenuti per il dispositivo che consuma, i motori di ricerca e gli agenti GenAI. Gli autori creano contenuti utilizzando Adobe Universal Editor o l’authoring basato su documenti.
 1. **Headless/API-first** le esperienze utilizzano AEM Publish per distribuire contenuti come JSON su API HTTP per app mobili, applicazioni a pagina singola (SPA) o altri client headless. Gli autori creano contenuti utilizzando l’Editor frammento di contenuto o l’Editor universale.
-1. **Le esperienze AEM** tradizionali utilizzano AEM Publish per distribuire contenuti come pagine Web HTML. Gli autori creano contenuti utilizzando Editor pagina di AEM Author. Questa opzione è consigliata per i progetti esistenti o per i progetti già migrati.
+1. **Le esperienze AEM** tradizionali utilizzano AEM Publish per distribuire contenuti come pagine Web HTML. Gli autori creano contenuti con l’Editor pagina di AEM Author. Questa opzione è consigliata per i progetti esistenti o per i progetti già migrati.
 
 Tutte e tre le opzioni sono approcci efficaci e la scelta migliore dipende dal caso d’uso e dalle esigenze organizzative. Ogni approccio consente ai team di fornire esperienze personalizzate e coinvolgenti in modo rapido e scalabile su qualsiasi canale o dispositivo.
 
@@ -67,12 +67,12 @@ Esplora i tre approcci per la creazione di con AEM Sites in modo più dettagliat
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with Edge Delivery Services.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
   {target = _self}
-* https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional AEM - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
