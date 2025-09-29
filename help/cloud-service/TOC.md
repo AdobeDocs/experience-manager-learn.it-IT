@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
+source-git-commit: 5f135785f9ff696e75d07b6c22442febd3aa35da
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1407'
 ht-degree: 99%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 99%
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Strategia e leadership di pensiero{#strategy}
       + [Experience Manager - Modelli e archetipi per governance e personale](./introduction/experience-manager-governance-and-staffing-models.md)
++ [Experience Hub](./experience-hub.md)
 + Integrazioni di Experience Cloud{#integrations}
    + [Integrazioni](./integrations/experience-cloud.md)
    + [AEM Headless e Target](./integrations/target.md)
@@ -356,14 +357,14 @@ ht-degree: 99%
       + [Testare la soluzione](./forms/prefill-core-component-form/test-solution.md)
    + Portale archiviazione di Azure{#forms-cs-azure-portal}
       + [Introduzione](./forms/forms-cs-azure-portal/introduction.md)
-      + [Creare un modello di dati modulo](./forms/forms-cs-azure-portal/create-fdm.md)
+      + [Creare un modello di dati per moduli](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Archiviare dati modulo in Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
       + [Precompilare un modulo](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Invii di query](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + Salvare e riprendere la compilazione di un modulo{#prefill-azure-storage}
       + [1- Introduzione](./forms/prefill-azure-storage/introduction.md)
       + [2- Creare il componente Pagina](./forms/prefill-azure-storage/page-component.md)
-      + [3- Creare un modello di modulo adattivo](./forms/prefill-azure-storage/associate-page-component.md)
+      + [3- Creare un modello per moduli adattivi](./forms/prefill-azure-storage/associate-page-component.md)
       + [4- Creare l’integrazione di archiviazione Azure](./forms/prefill-azure-storage/create-fdm.md)
       + [5 - Creare l’integrazione SendGrid](./forms/prefill-azure-storage/send-grid-fdm.md)
       + [6 - Creare il modulo adattivo](./forms/prefill-azure-storage/create-af.md)
@@ -387,14 +388,14 @@ ht-degree: 99%
    + Integrare con Microsoft Dynamics{#formscs-dynamics-crm}
       + [Creare un’applicazione Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Configurare l’origine dati](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
-      + [Creare un modello di dati modulo](./forms/formscs-dynamics-crm/create-form-data-model.md)
+      + [Creare un modello di dati per moduli](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [Creare un modulo adattivo](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integrare con Salesforce{#integrate-with-salesforce}
       + [Introduzione](./forms/integrate-with-salesforce/introduction.md)
       + [Creare un’app connessa](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Creare un file Swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
       + [Creare l’origine dati](./forms/integrate-with-salesforce/create-data-source.md)
-      + [Creare un modello di dati modulo](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Creare un modello di dati per moduli](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Inviare un modulo di prova](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Testare un evento clic](./forms/integrate-with-salesforce/create-lead-click-event.md)
    + Memorizzare gli invii di moduli in OneDrive e SharePoint{#one-drive}
