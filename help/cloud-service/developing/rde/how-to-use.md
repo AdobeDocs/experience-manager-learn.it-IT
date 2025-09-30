@@ -11,10 +11,10 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 2f7e10680c7211da836e33fdd241cd7f5d633d5f
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 0%
+source-wordcount: '788'
+ht-degree: 1%
 
 ---
 
@@ -49,9 +49,9 @@ $ mvn clean package
 
 ## Distribuire gli artefatti di AEM utilizzando il plug-in AEM-RDE
 
-Verificare innanzitutto che sia installato il [più recente modulo CLI `aio`](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
+Verificare innanzitutto che sia installato il [più recente modulo CLI `aio`](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
 
-Quindi, utilizzare il comando `aio aem:rde:install` per distribuire vari artefatti di AEM. Ora che devi
+Quindi, utilizzare il comando `aio aem:rde:install` per distribuire vari artefatti di AEM.
 
 ### Distribuisci `all` e `dispatcher` pacchetti
 
@@ -176,7 +176,7 @@ $ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
 
 ### Distribuire la configurazione di Apache o Dispatcher
 
-Impossibile distribuire singolarmente i file di configurazione Apache o Dispatcher **&#x200B;**, ma è necessario distribuire l&#39;intera struttura di cartelle Dispatcher sotto forma di file ZIP.
+Impossibile distribuire singolarmente i file di configurazione Apache o Dispatcher ****, ma è necessario distribuire l&#39;intera struttura di cartelle Dispatcher sotto forma di file ZIP.
 
 1. Apportare la modifica desiderata nel file di configurazione del modulo `dispatcher`. A scopo dimostrativo, aggiornare `dispatcher/src/conf.d/available_vhosts/wknd.vhost` in modo da memorizzare nella cache i file `html` solo per 60 secondi.
 
@@ -204,7 +204,7 @@ Impossibile distribuire singolarmente i file di configurazione Apache o Dispatch
 
 ### Distribuisci file di configurazione (YAML)
 
-I file di configurazione CDN, delle attività di manutenzione, dell&#39;inoltro del registro e dell&#39;autenticazione API AEM possono essere distribuiti in RDE utilizzando il comando `install`. Queste configurazioni vengono gestite come file YAML nella cartella `config` del progetto AEM. Per ulteriori dettagli, vedi [Configurazioni supportate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations).
+I file di configurazione CDN, delle attività di manutenzione, dell&#39;inoltro del registro e dell&#39;autenticazione API AEM possono essere distribuiti in RDE utilizzando il comando `install`. Queste configurazioni vengono gestite come file YAML nella cartella `config` del progetto AEM. Per ulteriori dettagli, vedi [Configurazioni supportate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations).
 
 Per informazioni su come distribuire i file di configurazione, è possibile migliorare il file di configurazione `cdn` e distribuirlo in RDE.
 
@@ -273,8 +273,8 @@ Scopri il ciclo di vita di [sviluppo/distribuzione utilizzando RDE](./developmen
 
 ## Risorse aggiuntive
 
-[Documentazione sui comandi RDE](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
+[Documentazione sui comandi RDE](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [Plug-in CLI di Adobe I/O Runtime per interazioni con ambienti di sviluppo rapido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Configurazione del progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
+[Configurazione del progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
