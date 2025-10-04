@@ -208,7 +208,7 @@ Questi video illustrano le funzioni chiave di Content Hub di AEM Assets: dalla g
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./attribute-based-access-control.md" title="Controllo degli accessi basato su attributi" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475413/?format=jpeg&nocache=1759339175804" alt="Controllo degli accessi basato su attributi"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475422/?format=jpeg&nocache=1759339175804&captions=ita" alt="Controllo degli accessi basato su attributi"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
