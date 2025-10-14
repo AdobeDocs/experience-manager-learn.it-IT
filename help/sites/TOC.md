@@ -58,7 +58,7 @@ ht-degree: 99%
 + Authoring pagina {#page-authoring}
    + [Authoring](page-authoring/aem-sites-authoring-overview.md)
    + [Navigazione](page-authoring/basic-handling-sites-feature-video-use.md)
-   + [Struttura sito ](page-authoring/content-hierarchy-feature-video-use.md)
+   + [Struttura sito &#x200B;](page-authoring/content-hierarchy-feature-video-use.md)
    + [Creazione pagina](page-authoring/creating-page-feature-video-use.md)
    + [Authoring pagina](page-authoring/page-authoring-overview-feature-video-use.md)
    + [Editor pagina](page-authoring/page-editor-feature-video-use.md)
@@ -71,7 +71,7 @@ ht-degree: 99%
    + [Pubblicazione](page-authoring/publication-management-feature-video-use.md)
    + [Modelli modificabili](page-authoring/template-editor-feature-video-use.md)
    + [Sistema di stili](page-authoring/style-system-feature-video-use.md)
-   + [Timewarp  ](page-authoring/timewarp-feature-video-use.md)
+   + [Timewarp  &#x200B;](page-authoring/timewarp-feature-video-use.md)
    + [Lanci](page-authoring/launches.md)
    + Impara dai tuoi colleghi {#expert-advice}
       + [Suggerimenti sulla gerarchia dei siti](page-authoring/expert-advice/site-hierarchy.md)

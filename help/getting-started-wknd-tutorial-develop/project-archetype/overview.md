@@ -46,7 +46,7 @@ Per completare questo tutorial è necessario un ambiente di sviluppo locale. Le 
 
 È necessario installare localmente quanto segue:
 
-* [Istanza ](https://experience.adobe.com/#/downloads) dell&#39;istanza **Author** di AEM locale (Cloud Service SDK o 6.5.14+)
+* [Istanza &#x200B;](https://experience.adobe.com/#/downloads) dell&#39;istanza **Author** di AEM locale (Cloud Service SDK o 6.5.14+)
 * [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
 * [Node.js](https://nodejs.org/it/) (LTS - Supporto a lungo termine)

@@ -121,7 +121,7 @@ $ find /mnt/var/www/html/ -type f -name ".stat"
 
 Ecco un diagramma che mostra come apparirà questa struttura di file quando si hanno elementi nella cache e una richiesta di scaricamento inviata ed elaborata dal modulo Dispatcher
 
-![statfile misti con contenuto e date mostrati con i livelli di stat ](assets/disp-flushing/dispatcher-statfiles.png "dispatcher-statfiles")
+![statfile misti con contenuto e date mostrati con i livelli di stat &#x200B;](assets/disp-flushing/dispatcher-statfiles.png "dispatcher-statfiles")
 
 ### LIVELLO DEL FILE STAT
 

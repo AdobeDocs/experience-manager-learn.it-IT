@@ -38,5 +38,5 @@ Per testare questa funzionalità sul server, attieniti alle istruzioni seguenti
    * Modulo adattivo per attivare il flusso di lavoro all’invio.
 * Aprire [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Inserisci i dettagli e invia. All&#39;invio del modulo viene attivato il [flusso di lavoro Loanapplication](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html).
 
-![ flusso di lavoro ](assets/invokefdm651.PNG).
+![&#x200B; flusso di lavoro &#x200B;](assets/invokefdm651.PNG).
 Il flusso di lavoro utilizza il componente Dividi o per instradare l’applicazione all’amministratore se il punteggio di credito è superiore a 500. Se il punteggio di credito è inferiore a 500, l’applicazione viene instradata a cavery.

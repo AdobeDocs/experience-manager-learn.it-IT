@@ -106,4 +106,4 @@ export default function Contact(){
 }
 ```
 
-Il codice di cui sopra utilizza componenti HTML nativi mappati sui componenti utilizzati nel modulo adattivo. Ad esempio, stiamo mappando il componente del modulo adattivo per l’immissione di testo al componente TextField. I componenti nativi utilizzati nell&#39;articolo [ possono essere scaricati da qui](./assets/native-components.zip)
+Il codice di cui sopra utilizza componenti HTML nativi mappati sui componenti utilizzati nel modulo adattivo. Ad esempio, stiamo mappando il componente del modulo adattivo per l’immissione di testo al componente TextField. I componenti nativi utilizzati nell&#39;articolo [&#x200B; possono essere scaricati da qui](./assets/native-components.zip)

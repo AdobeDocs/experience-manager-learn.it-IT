@@ -137,7 +137,7 @@ L’estensione Target è costituita da due parti principali:
 
 >[!NOTE]
 >
-> Concedi all&#39;integrazione Adobe Developer l&#39;accesso a specifiche aree di lavoro con il ruolo [ appropriato per consentire a un team centrale di apportare modifiche basate su API solo a poche aree di lavoro](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html?lang=it).
+> Concedi all&#39;integrazione Adobe Developer l&#39;accesso a specifiche aree di lavoro con il ruolo [&#x200B; appropriato per consentire a un team centrale di apportare modifiche basate su API solo a poche aree di lavoro](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html?lang=it).
 
 1. Crea l’integrazione IMS nell’AEM utilizzando le credenziali di Adobe Developer. (01:12 alle 03:55)
 2. In Raccolta dati, crea una proprietà. (ha coperto [sopra](#create-launch-property))

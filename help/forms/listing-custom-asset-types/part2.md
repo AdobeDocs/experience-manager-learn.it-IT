@@ -75,7 +75,7 @@ Di seguito è riportato un elenco dei vari tipi di risorse che utilizzano il com
 
 ## Configurare Il Componente Ricerca Ed Elenco {#configure-search-and-lister-component}
 
-Dopo aver definito il modello personalizzato, è necessario associarlo al componente &quot;Ricerca ed elenco&quot;. Puntare il browser [ a questo URL](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Dopo aver definito il modello personalizzato, è necessario associarlo al componente &quot;Ricerca ed elenco&quot;. Puntare il browser [&#x200B; a questo URL](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Passa alla modalità Progettazione e configura il sistema paragrafo in modo da includere il componente Ricerca ed elenco nel gruppo di componenti consentiti. Il componente Ricerca ed elenco fa parte del gruppo Servizi basati su documenti.
 
@@ -105,7 +105,7 @@ La schermata seguente mostra i tipi di risorse configurati per l’inserzione
 
 ![tipi di risorse](assets/assettypes.png)
 
-Dopo aver configurato il componente Portale di ricerca ed elenco, è ora di visualizzare il lister in azione. Puntare il browser [ a questo URL](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). I risultati dovrebbero essere simili all’immagine mostrata di seguito.
+Dopo aver configurato il componente Portale di ricerca ed elenco, è ora di visualizzare il lister in azione. Puntare il browser [&#x200B; a questo URL](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). I risultati dovrebbero essere simili all’immagine mostrata di seguito.
 
 >[!NOTE]
 >

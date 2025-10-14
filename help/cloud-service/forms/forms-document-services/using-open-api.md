@@ -22,7 +22,7 @@ ht-degree: 2%
 ## Prerequisiti
 
 * Istanza più recente di AEM Forms as a Cloud Service.
-* Tutti i profili di prodotto [ necessari vengono aggiunti all&#39;ambiente.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
+* Tutti i profili di prodotto [&#x200B; necessari vengono aggiunti all&#39;ambiente.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
 
 * Abilita l’accesso API di AEM al profilo di prodotto come mostrato di seguito
   ![profilo_prodotto1](assets/product-profiles1.png)
@@ -55,7 +55,7 @@ Copia l’ID client, il segreto client e gli ambiti
 
 Se disponi già di un progetto AEM Forms, [segui queste istruzioni](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) per abilitare l&#39;ID client delle credenziali server-to-server OAuth del progetto Adobe Developer Console per comunicare con l&#39;istanza AEM
 
-Se non disponi di un progetto AEM Forms, crea un progetto AEM Forms [ seguendo questa documentazione.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started) e quindi abilitare l&#39;ID client delle credenziali server-to-server OAuth del progetto Adobe Developer Console per comunicare con l&#39;istanza AEM [utilizzando questa documentazione.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
+Se non disponi di un progetto AEM Forms, crea un progetto AEM Forms [&#x200B; seguendo questa documentazione.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started) e quindi abilitare l&#39;ID client delle credenziali server-to-server OAuth del progetto Adobe Developer Console per comunicare con l&#39;istanza AEM [utilizzando questa documentazione.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
 
 
 ## Passaggi successivi

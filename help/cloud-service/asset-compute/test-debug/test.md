@@ -85,7 +85,7 @@ Questo caso di test afferma l&#39;input con parametri (`params.json`) per il fil
    + Verificare che [Docker Desktop](../set-up/development-environment.md#docker) e le immagini Docker di supporto siano installati e avviati
    + Termina tutte le istanze dello strumento di sviluppo in esecuzione
 
-![Test - Completato ](./assets/test/success-parameterized/result.png)
+![Test - Completato &#x200B;](./assets/test/success-parameterized/result.png)
 
 ## Scrittura di un test case di controllo degli errori
 

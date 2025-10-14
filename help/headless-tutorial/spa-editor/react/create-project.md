@@ -69,7 +69,7 @@ Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente d
 
    Osserva la proprietà `frontendModule=react`. Questo comunica all&#39;Archetipo progetto AEM di avviare il progetto con una [Base di codice React](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=it) iniziale da utilizzare con l&#39;Editor SPA di AEM. Proprietà come `appTitle`, `appId`, `artifactId` e `groupId` vengono utilizzate per identificare il progetto e lo scopo.
 
-   Un elenco completo delle proprietà disponibili per la configurazione di un progetto [ è disponibile qui](https://github.com/adobe/aem-project-archetype#available-properties).
+   Un elenco completo delle proprietà disponibili per la configurazione di un progetto [&#x200B; è disponibile qui](https://github.com/adobe/aem-project-archetype#available-properties).
 
 1. La seguente struttura di file e cartelle è generata dall’archetipo Maven sul file system locale:
 

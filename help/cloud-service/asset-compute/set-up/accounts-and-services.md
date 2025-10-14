@@ -29,7 +29,7 @@ Tutti i servizi Adobe devono essere accessibili tramite la stessa organizzazione
    + Il provisioning può richiedere da 2 a 10 giorni
 + Archiviazione cloud
    + [Archiviazione BLOB di Azure](https://azure.microsoft.com/en-us/services/storage/blobs/)
-   + o [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card)
+   + o [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card)
 
 >[!WARNING]
 >
@@ -84,7 +84,7 @@ _Click-through del provisioning di Azure Blob Storage (nessun audio)_
 
 ### Amazon S3{#amazon-s3}
 
-Per completare questa esercitazione si consiglia di utilizzare [Archiviazione BLOB di Microsoft Azure](#azure-blob-storage), tuttavia è possibile utilizzare anche [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card).
+Per completare questa esercitazione si consiglia di utilizzare [Archiviazione BLOB di Microsoft Azure](#azure-blob-storage), tuttavia è possibile utilizzare anche [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card).
 
 Se utilizzi l&#39;archiviazione Amazon S3, specifica le credenziali dell&#39;archiviazione cloud Amazon S3 durante [la configurazione delle variabili di ambiente del progetto](../develop/environment-variables.md#amazon-s3).
 

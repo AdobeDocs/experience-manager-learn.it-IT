@@ -79,7 +79,7 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-Il modulo di esempio [ può essere scaricato](assets/auto-complete-form.zip) da qui. Assicurati di fornire un nome utente/chiave API personalizzato utilizzando l’editor di codice per il codice per effettuare chiamate REST riuscite.
+Il modulo di esempio [&#x200B; può essere scaricato](assets/auto-complete-form.zip) da qui. Assicurati di fornire un nome utente/chiave API personalizzato utilizzando l’editor di codice per il codice per effettuare chiamate REST riuscite.
 
 >[!NOTE]
 >

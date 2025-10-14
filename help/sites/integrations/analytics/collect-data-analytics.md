@@ -55,7 +55,7 @@ Sono necessari i seguenti elementi:
 Invece di configurare un ambiente AEM e installare la base di codice WKND, puoi utilizzare il debugger di Experience Platform per **cambiare** il [sito WKND](https://wknd.site/us/en.html) live in *proprietà tag*. Tuttavia, puoi utilizzare il tuo sito AEM se dispone già di [Adobe Client Data Layer abilitato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it#installation-activation).
 
 1. Accedi ad Experience Platform e [crea una proprietà tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=it) (se non lo hai già fatto).
-1. Assicurati che sia stata creata una libreria [ di JavaScript con tag iniziale](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=it#create-a-library) e promossa al tag [environment](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=it).
+1. Assicurati che sia stata creata una libreria [&#x200B; di JavaScript con tag iniziale](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=it#create-a-library) e promossa al tag [environment](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=it).
 1. Copia il codice di incorporamento di JavaScript dall’ambiente di tag in cui è stata pubblicata la libreria.
 
    ![Copia codice di incorporamento proprietà tag](assets/collect-data-analytics/launch-environment-copy.png)

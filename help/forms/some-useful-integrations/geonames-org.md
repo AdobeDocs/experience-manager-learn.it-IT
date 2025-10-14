@@ -91,6 +91,6 @@ Scarica le seguenti risorse per iniziare subito a creare l’esempio dell’elen
 I file Swagger completati possono essere scaricati da [qui](assets/geonames-swagger-files.zip)
 I file swagger descrivono la seguente API REST
 * [Ottieni tutti i paesi](https://secure.geonames.org/countryInfoJSON?username=yourusername)
-* [Ottieni elementi figlio dell&#39;oggetto Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Ottieni elementi figlio dell&#39;oggetto Geoname](https://secure.geonames.org/children?formatted=true&geonameId=6252001&username=yourusername)
 
 Il [modello dati modulo completato può essere scaricato da qui](assets/geonames-api-form-data-model.zip)

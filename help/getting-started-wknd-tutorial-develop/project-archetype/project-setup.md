@@ -91,7 +91,7 @@ La serie successiva di passaggi si svolgerà utilizzando un terminale della riga
    >
    > Inoltre, utilizza sempre l&#39;ultimo `archetypeVersion` facendo riferimento a [Archetipo progetto AEM > Utilizzo](https://github.com/adobe/aem-project-archetype#usage)
 
-   Un elenco completo delle proprietà disponibili per la configurazione di un progetto [ è disponibile qui](https://github.com/adobe/aem-project-archetype#available-properties).
+   Un elenco completo delle proprietà disponibili per la configurazione di un progetto [&#x200B; è disponibile qui](https://github.com/adobe/aem-project-archetype#available-properties).
 
 1. La seguente struttura di file e cartelle è generata dall’archetipo Maven sul file system locale:
 

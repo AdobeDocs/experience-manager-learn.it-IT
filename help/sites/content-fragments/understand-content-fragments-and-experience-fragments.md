@@ -131,7 +131,7 @@ I frammenti di contenuto e i frammenti di esperienza di Adobe Experience Manager
 </td>
 </tr><tr><td><strong>Documentazione</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=it&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Guida utente sui frammenti di contenuto di AEM</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=it&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Guida utente sui frammenti di contenuto di AEM</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=it" target="_blank">Utilizzo dei frammenti di contenuto in AEM</a></li>
 </ul>
 </td>
@@ -172,7 +172,7 @@ Il diagramma seguente illustra l’architettura generale dei frammenti di conten
 
 ## Risorsa di supporto per i frammenti di contenuto
 
-+ [Guida utente frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=it&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
++ [Guida utente frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=it&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [Introduzione a Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=it)
 + [Utilizzo di frammenti di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=it)
 + [Componente Frammento di contenuto dei componenti core WCM di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)

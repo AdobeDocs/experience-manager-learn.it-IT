@@ -145,7 +145,7 @@ Per ricevere gli eventi AEM ed eseguire l’azione Adobe I/O Runtime creata nel 
 
 - Infine, nel passaggio **Ricezione degli eventi**, espandi l&#39;opzione **Azione di runtime** e seleziona l&#39;azione _generica_ creata nel passaggio precedente. Fai clic su **Salva eventi configurati**.
 
-  ![Azione runtime - Configura progetto ](../assets/examples/runtime-action/select-runtime-action.png)
+  ![Azione runtime - Configura progetto &#x200B;](../assets/examples/runtime-action/select-runtime-action.png)
 
 - Rivedi i dettagli di registrazione dell&#39;evento, la scheda **Traccia debug** e verifica la richiesta e la risposta di **Challenge Probe**.
 

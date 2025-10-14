@@ -31,7 +31,7 @@ Prerequisiti per questa esercitazione:
    * [Documentazione ufficiale per l&#39;abilitazione di SSL su AEM 6.4](https://helpx.adobe.com/it/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Devi avere un account Salesforce
-* Devi creare un’app connessa. La documentazione ufficiale di Salesforce per la creazione dell&#39;app è elencata [qui](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
+* Devi creare un’app connessa. La documentazione ufficiale di Salesforce per la creazione dell&#39;app è elencata [qui](https://help.salesforce.com/articleView?id=connected_app_create.htm&type=0).
 * Fornisci ambiti OAuth appropriati per l&#39;app (ho selezionato tutti gli ambiti OAuth disponibili a scopo di test)
 * Specifica l&#39;URL di callback. L&#39;URL di callback nel mio caso era
 

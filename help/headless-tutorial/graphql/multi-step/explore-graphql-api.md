@@ -106,7 +106,7 @@ Un requisito comune consiste nell’eseguire query per più frammenti di contenu
 
 1. Posizionare il cursore sotto il testo `title` e immettere **CTRL+spazio** per attivare il suggerimento del codice. Aggiungere `shortname` e `description` alla query.
 
-   ![Aggiorna query con codice ](assets/explore-graphql-api/update-query-codehinting.png)
+   ![Aggiorna query con codice &#x200B;](assets/explore-graphql-api/update-query-codehinting.png)
 
 1. Eseguire nuovamente la query premendo il pulsante **Riproduci**. I risultati dovrebbero includere le proprietà aggiuntive di `shortname` e `description`.
 

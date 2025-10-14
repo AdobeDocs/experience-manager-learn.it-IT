@@ -28,7 +28,7 @@ Per fare in modo che questo caso d’uso funzioni sul tuo sistema, segui le segu
 
 ## Crea database
 
-In questo esempio si utilizza il database MySQL per memorizzare i dati del modulo adattivo. Sarà necessario creare lo schema di database [ importando il file di schema](assets/data-base-schema.sql) in MySQL Workbench.
+In questo esempio si utilizza il database MySQL per memorizzare i dati del modulo adattivo. Sarà necessario creare lo schema di database [&#x200B; importando il file di schema](assets/data-base-schema.sql) in MySQL Workbench.
 
 ## Crea origine dati
 

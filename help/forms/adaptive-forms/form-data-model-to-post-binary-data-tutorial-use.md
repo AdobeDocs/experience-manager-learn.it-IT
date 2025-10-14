@@ -57,7 +57,7 @@ Per testare questa funzionalità sul server, segui i passaggi indicati di seguit
    1. Origine dati configurata per utilizzare il file PostToDam.JSON
    1. Modello dati modulo che utilizza il Data Source
 
-1. Scegli il browser [ per aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+1. Scegli il browser [&#x200B; per aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 1. Compila il modulo e invia.
 1. Se il documento di record viene creato e memorizzato, controlla l’applicazione Assets.
 

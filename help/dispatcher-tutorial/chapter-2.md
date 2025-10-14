@@ -27,7 +27,7 @@ Descriveremo le topologie più comuni e i vantaggi e le situazioni in cui non so
 
 All&#39;inizio, il numero di potenziali visitatori era limitato, l&#39;hardware costoso e i server web non erano visti come business critical come lo sono oggi. Una configurazione comune consisteva nell’avere un Dispatcher che fungeva da load balancer e una cache davanti a due o più sistemi Publish. Il server Apache nel nucleo di Dispatcher era molto stabile e, nella maggior parte delle impostazioni, abbastanza capace per soddisfare una quantità decente di richieste.
 
-![ Installazione di Dispatcher &quot;legacy&quot; - Non molto comune negli standard attuali](assets/chapter-2/legacy-dispatcher-setup.png)
+![&#x200B; Installazione di Dispatcher &quot;legacy&quot; - Non molto comune negli standard attuali](assets/chapter-2/legacy-dispatcher-setup.png)
 
 *Installazione di Dispatcher &quot;legacy&quot; - Non molto comune negli standard attuali*
 
@@ -61,7 +61,7 @@ Ecco le ragioni di questo tipo di configurazione,
 
 I server Apache sono economici e facili da predisporre, perché non spingere di più la scalabilità di quel livello. Perché non ci sono due o più Dispatcher davanti a ciascun server Publish?
 
-Installazione di ![ &quot;Scale Out&quot;: presenta alcune aree dell&#39;applicazione, ma anche limitazioni e avvertenze](assets/chapter-2/scale-out-setup.png)
+Installazione di ![&#x200B; &quot;Scale Out&quot;: presenta alcune aree dell&#39;applicazione, ma anche limitazioni e avvertenze](assets/chapter-2/scale-out-setup.png)
 
 Installazione di *&quot;Scale Out&quot;: presenta alcune aree dell&#39;applicazione, ma anche limitazioni e avvertenze*
 

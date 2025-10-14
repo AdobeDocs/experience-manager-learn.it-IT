@@ -60,7 +60,7 @@ Distribuire gli aggiornamenti a un tema in un ambiente AEM utilizzando la pipeli
 
 Passaggi di alto livello per il video:
 
-1. Crea un nuovo archivio Git [ in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html?lang=it)
+1. Crea un nuovo archivio Git [&#x200B; in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html?lang=it)
 1. Aggiungi il progetto origini tema all’archivio Git Cloud Manager:
 
    ```shell

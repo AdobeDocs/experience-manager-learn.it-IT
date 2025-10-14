@@ -42,7 +42,7 @@ Se hai poca esperienza con AEM, è possibile installare due modalità di esecuzi
 ### Passaggi
 
 1. Verificare che Java™ sia installato.
-   * Preferisci [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) per AEM 6.5+
+   * Preferisci [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) per AEM 6.5+
    * [Java™ JDK 8](https://www.oracle.com/java/technologies/downloads/) per le versioni di AEM precedenti a AEM 6.5
 1. Ottieni una copia di [AEM QuickStart Jar e a [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it).
 1. Crea nel computer una struttura di cartelle come quella riportata di seguito:

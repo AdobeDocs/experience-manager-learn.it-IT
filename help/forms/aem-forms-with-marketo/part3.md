@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Dopo aver configurato l’origine dati, il passaggio successivo consiste nel creare un modello dati del modulo basato sull’origine dati configurata nel passaggio precedente. Per creare un modello dati modulo, segui i passaggi seguenti:
 
-Puntare il browser alla pagina [ integrazioni dati.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Elenca tutte le integrazioni di dati create nell&#39;istanza AEM.
+Puntare il browser alla pagina [&#x200B; integrazioni dati.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Elenca tutte le integrazioni di dati create nell&#39;istanza AEM.
 
 1. Fai clic su Crea. | Modello dati modulo
 1. Fornisci un titolo significativo come FormsAndMarketo e fai clic su Avanti
