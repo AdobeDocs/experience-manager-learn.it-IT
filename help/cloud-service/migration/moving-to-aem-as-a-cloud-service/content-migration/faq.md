@@ -207,7 +207,7 @@ L&#39;approccio di cui sopra può essere utilizzato solo per misurare la durata 
 
 ## Risorse aggiuntive
 
-+ [Suggerimenti per la migrazione ad Experience Manager nel cloud ( Summit 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
++ [Suggerimenti per la migrazione ad Experience Manager nel cloud ( Summit 2022)](https://business.adobe.com/it/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
 + [Video serie esperti CTT](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html?lang=it)
 
