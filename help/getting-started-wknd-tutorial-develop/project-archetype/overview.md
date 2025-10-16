@@ -30,8 +30,8 @@ Questo tutorial inizia utilizzando [Archetipo progetto AEM](https://experiencele
 Il tutorial è progettato per funzionare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti di **AEM 6.5.14+**. Il sito viene implementato utilizzando:
 
 * [Archetipo di progetto AEM Maven](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview)
-* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?=it)
+* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=it&=it)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it)
 * [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=it)
