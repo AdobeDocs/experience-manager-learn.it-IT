@@ -11,9 +11,9 @@ thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
 duration: 28
-source-git-commit: 777d5514d0fe79948289e9e24fe20273e48972f8
+source-git-commit: 5674261f0d030c8cb4dfc823b944fba29b8d562a
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '137'
 ht-degree: 5%
 
 ---
@@ -25,10 +25,11 @@ AEM as a Cloud Service supporta più opzioni di autenticazione e varia in base a
 |                       | AEM Author | Pubblicazione AEM |
 |-----------------------|:----------:|:-----------:|
 | [Adobe IMS](../accessing/overview.md) | ✔ | ✔ |
-| · [SAML 2.0 tramite Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=it#how-to-set-up) | ✔ | ✔ |
+| [Connessione OpenID (OIDC)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
+| [SAML 2.0 tramite Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✔ |
 | [SAML 2.0](./saml-2-0.md) | ✘ | ✔ |
-| [Single Sign-On (SSO)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=it#integration-with-an-idp) | ✘ | ✔ |
-| [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=it#integration-with-an-idp) | ✘ | ✔ |
+| [Single Sign-On (SSO)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
 | [Autenticazione token](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
 | Autenticazione di base | ✘ | ✘ |
 
