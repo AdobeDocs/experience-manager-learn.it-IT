@@ -10,9 +10,10 @@ doc-type: Tutorial
 last-substantial-update: 2025-09-10T00:00:00Z
 jira: KT-19113
 thumbnail: KT-19113.jpeg
-source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
+exl-id: fd7204fa-03f2-40df-9f0a-487a5aec2891
+source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
 workflow-type: tm+mt
-source-wordcount: '4180'
+source-wordcount: '4185'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ Visita il [sito Web WKND Enablement](https://wknd.enablementadobe.com/us/en.html
 
 - **Pagina rivista**: quando gli utenti leggono _tre o più_ articoli, vengono classificati come **lettori rivista** e visualizzano una sezione protagonista personalizzata nella pagina della rivista.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474009/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
 
 >[!TIP]
 >
@@ -58,7 +59,7 @@ Prima di procedere con il caso di utilizzo del targeting comportamentale, assicu
 - [Integrare Adobe Target](../setup/integrate-adobe-target.md): consente ai team di creare e gestire contenuti personalizzati centralmente in AEM e attivarli come offerte in Adobe Target.
 - [Integrare i tag in Adobe Experience Platform](../setup/integrate-adobe-tags.md): consente ai team di gestire e distribuire JavaScript per la personalizzazione e la raccolta dati senza dover ridistribuire il codice AEM.
 
-Conoscere inoltre i concetti di [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/it/docs/id-service/using/home) e [Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/landing/home), ad esempio schema, flusso di dati, tipi di pubblico, identità e profili.
+Conoscere inoltre i concetti di [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/en/docs/id-service/using/home) e [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home), ad esempio schema, flusso di dati, tipi di pubblico, identità e profili.
 
 Sebbene sia possibile creare tipi di pubblico semplici in Adobe Target, Adobe Experience Platform (AEP) offre l’approccio moderno per creare e gestire tipi di pubblico e creare profili cliente completi utilizzando varie origini dati, come dati comportamentali e transazionali.
 
@@ -86,7 +87,7 @@ Il processo di configurazione del targeting comportamentale prevede diversi pass
 
 4. **Verifica l&#39;implementazione del targeting comportamentale nelle tue pagine AEM**
 
-Le varie soluzioni di AEP vengono utilizzate per raccogliere, gestire e raccogliere dati comportamentali per creare tipi di pubblico. Questi tipi di pubblico vengono quindi attivati in Adobe Target. Utilizzando le attività in Adobe Target, le esperienze personalizzate vengono consegnate agli utenti.
+Le varie soluzioni di AEP vengono utilizzate per raccogliere, gestire e raccogliere dati comportamentali per creare tipi di pubblico. Questi tipi di pubblico vengono quindi attivati in Adobe Target. Utilizzando le attività in Adobe Target, le esperienze personalizzate vengono distribuite agli utenti che corrispondono ai criteri di pubblico.
 
 ## Passaggi di Adobe Experience Platform
 
@@ -413,7 +414,7 @@ Una libreria è una raccolta di tutte le configurazioni di tag (elementi di dati
 - Una volta creata la libreria per la corsia di nuoto **Sviluppo**, fai clic sui tre puntini di sospensione e seleziona l&#39;opzione **Approva e pubblica in produzione**.
   ![Approva e pubblica in produzione](../assets/use-cases/behavioral-targeting/approve-publish-to-production.png)
 
-Congratulazioni Hai creato la proprietà Tag con la regola per raccogliere i dettagli della pagina e inviarli ad Experience Platform. Questo è il passaggio fondamentale per creare tipi di pubblico comportamentali.
+Congratulazioni. Hai creato la proprietà Tag con la regola per raccogliere i dettagli della pagina e inviarli ad Experience Platform. Questo è il passaggio fondamentale per creare tipi di pubblico comportamentali.
 
 ### Configurare i criteri di unione per il profilo
 
@@ -501,7 +502,7 @@ La procedura seguente illustra come creare un pubblico:
 
   ![Conteggio pubblico](../assets/use-cases/behavioral-targeting/audience-count.png)
 
-Congratulazioni Hai creato il pubblico e l’hai attivato nella destinazione Adobe Target.
+Congratulazioni. Hai creato il pubblico e l’hai attivato nella destinazione Adobe Target.
 
 Questo completa i passaggi di Adobe Experience Platform ed è pronto per creare l’esperienza personalizzata in AEM e utilizzarla in Adobe Target.
 
@@ -568,7 +569,7 @@ Crea un nuovo frammento di esperienza con contenuti personalizzati per il pubbli
 
   ![Esporta in Adobe Target](../assets/use-cases/behavioral-targeting/export-to-adobe-target.png)
 
-Congratulazioni Hai creato ed esportato le offerte del pubblico **Family Travelers** in Adobe Target. Il frammento di esperienza è ora disponibile in Adobe Target come offerta personalizzata che può essere utilizzata nelle attività di personalizzazione.
+Congratulazioni. Hai creato ed esportato le offerte del pubblico **Family Travelers** in Adobe Target. Il frammento di esperienza è ora disponibile in Adobe Target come offerta personalizzata che può essere utilizzata nelle attività di personalizzazione.
 
 ## Passaggi di Adobe Target
 
@@ -615,7 +616,7 @@ Ora viene creata un&#39;attività per fornire l&#39;esperienza personalizzata al
 
   ![Attiva con obiettivi e impostazioni](../assets/use-cases/behavioral-targeting/activate-with-goals-and-settings.png)
 
-Congratulazioni Hai creato e avviato l&#39;attività per fornire l&#39;esperienza personalizzata al pubblico **Family Traveller** nella home page del sito WKND. L’attività è ora live e mostra contenuti personalizzati agli utenti che corrispondono ai criteri comportamentali.
+Congratulazioni. Hai creato e avviato l&#39;attività per fornire l&#39;esperienza personalizzata al pubblico **Family Traveller** nella home page del sito WKND. L’attività è ora live e mostra contenuti personalizzati agli utenti che corrispondono ai criteri comportamentali.
 
 ## Verificare l’implementazione del targeting comportamentale nelle pagine di AEM
 
@@ -637,7 +638,7 @@ Verifica l’implementazione del targeting comportamentale sulle pagine di AEM.
 
   ![Risposta Web SDK](../assets/use-cases/behavioral-targeting/web-sdk-response-on-home-page.png)
 
-Congratulazioni Hai verificato l’implementazione del targeting comportamentale sulle tue pagine AEM. Il flusso completo dalla raccolta dati alla valutazione del pubblico e alla personalizzazione ora funziona correttamente.
+Congratulazioni. Hai verificato l’implementazione del targeting comportamentale sulle tue pagine AEM. Il flusso completo dalla raccolta dati alla valutazione del pubblico e alla personalizzazione ora funziona correttamente.
 
 ## Demo live
 
@@ -658,9 +659,9 @@ Il primo pubblico utilizza la valutazione **Edge** per la personalizzazione in t
 
 ## Risorse aggiuntive
 
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home)
-- [Panoramica sugli stream di dati](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overview)
-- [Compositore esperienza visivo](https://experienceleague.adobe.com/it/docs/target/using/experiences/vec/visual-experience-composer)
-- [Segmentazione di Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Tipi di pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/types/overview)
-- [Connessione Adobe Target](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Panoramica sugli stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+- [Compositore esperienza visivo](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [Segmentazione di Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Tipi di pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
+- [Connessione Adobe Target](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)

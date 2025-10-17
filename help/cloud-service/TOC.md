@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: ef790e3f4fccb2c8b2205332df3466731c2826dc
+source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1412'
 ht-degree: 99%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 99%
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo di progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuti mutabili e immutabili &#x200B;](./developing/basics/mutable-immutable.md)
+      + [Contenuti mutabili e immutabili ](./developing/basics/mutable-immutable.md)
       + [Pacchetto di struttura dell’archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
@@ -151,6 +151,7 @@ ht-degree: 99%
    + Casi d’uso {#use-cases}
       + [Sperimentazione (test A/B)](./personalization/use-cases/experimentation.md)
       + [Targeting comportamentale](./personalization/use-cases/behavioral-targeting.md)
+      + [Personalization per utenti noti](./personalization/use-cases/known-user-personalization.md)
 + API di AEM{#aem-apis}
    + [Panoramica](./apis/overview.md)
    + OpenAPI{#openapis}
