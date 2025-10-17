@@ -76,7 +76,7 @@ In questa parte dell’esercitazione, creerai un nuovo Modello per pagina di art
 
 Di solito, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe XD](https://helpx.adobe.com/it/support/xd.html) è uno strumento di progettazione che crea l’esperienza utente. Ora sarà esaminato un kit di interfaccia utente e modelli che consentono di pianificare la struttura del modello per la pagina dell’articolo.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36172?captions=ita&quality=12&learn=on)
 
 **Scarica il [file dell’articolo della progettazione WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -96,7 +96,7 @@ Sono disponibili tre aree principali di [modelli modificabili](https://experienc
 
 Quindi, crea un modello in AEM che corrisponda alla struttura dei modelli. Ciò si verifica in un’istanza locale di AEM. Segui i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36173?captions=ita&quality=12&learn=on)
 
 Passaggi principali per il video precedente:
 
@@ -164,7 +164,7 @@ Per la creazione di un contenuto globale, ad esempio un&#39;intestazione o un pi
 
 L’Archetipo progetto AEM ha generato un’intestazione e un piè di pagina. Quindi, aggiorna i Frammenti di esperienza in modo che corrispondano ai modelli. Segui i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447497?captions=ita&quality=12&learn=on)
 
 Passaggi principali per il video precedente:
 
@@ -210,7 +210,7 @@ Passaggi principali per il video precedente:
 
 Quindi, crea una pagina utilizzando il modello Pagina articolo. Crea il contenuto della pagina in modo che corrisponda ai modelli del sito. Segui i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446450?captions=ita&quality=12&learn=on)
 
 Passaggi principali per il video precedente:
 

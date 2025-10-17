@@ -25,7 +25,7 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno
 
 ## Esercitazione per sviluppatori WKND {#wknd-developer-tutorial}
 
->[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36052?captions=ita&quality=12&learn=on)
 
 L&#39;esercitazione è progettata per utilizzare **AEM as a Cloud Service** ed è compatibile con le versioni precedenti di **AEM 6.5+** e **AEM 6.4.2+**.
 
@@ -35,7 +35,7 @@ L&#39;esercitazione è progettata per utilizzare **AEM as a Cloud Service** ed �
 
 Dopo aver completato l&#39;esercitazione WKND, guarda il video seguente per una panoramica su come implementare il progetto WKND in AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39832?captions=ita&quality=12&learn=on)
 
 Il video mostra come può essere il progetto del sito WKND:
 

@@ -36,7 +36,7 @@ Esamina gli strumenti e le istruzioni necessari per configurare un [ambiente di 
 
 ## Cosa stai per creare {#what-build}
 
->[!VIDEO](https://video.tv.adobe.com/v/30152?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36158?captions=ita&quality=12&learn=on)
 
 In questo capitolo verrà generato un nuovo progetto Adobe Experience Manager utilizzando l&#39;[Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype). Il progetto AEM contiene codice, contenuto e configurazioni complete utilizzati per un’implementazione di Sites. Il progetto generato in questo capitolo funge da base per un&#39;implementazione del sito WKND e viene sviluppato nei capitoli futuri.
 
