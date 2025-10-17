@@ -21,7 +21,7 @@ ht-degree: 100%
 
 # Librerie client e flusso di lavoro front-end {#client-side-libraries}
 
-Scopri come le librerie o le clientlibs lato client vengono utilizzate per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites. Questo tutorial illustra anche come integrare il modulo [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?=it), un progetto [webpack](https://webpack.js.org/) separato, nel processo di build end-to-end.
+Scopri come le librerie o le clientlibs lato client vengono utilizzate per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites. Questo tutorial illustra anche come integrare il modulo [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it&=it), un progetto [webpack](https://webpack.js.org/) separato, nel processo di build end-to-end.
 
 ## Prerequisiti {#prerequisites}
 
@@ -120,7 +120,7 @@ Esaminiamo ora l’organizzazione delle clientlibs generate da [Archetipo proget
 
 ## Aggiorna stili di base {#base-styles}
 
-Aggiorna quindi gli stili di base definiti nel modulo **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?=it)**. I file nel modulo `ui.frontend` generano le librerie `clientlib-site` e `clientlib-dependecies` che contengono il tema del sito ed eventuali dipendenze di terze parti.
+Aggiorna quindi gli stili di base definiti nel modulo **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it&=it)**. I file nel modulo `ui.frontend` generano le librerie `clientlib-site` e `clientlib-dependecies` che contengono il tema del sito ed eventuali dipendenze di terze parti.
 
 Le librerie lato client non supportano linguaggi più avanzati come [Sass](https://sass-lang.com/) o [TypeScript](https://www.typescriptlang.org/). Esistono diversi strumenti open source come [NPM](https://www.npmjs.com/) e [webpack](https://webpack.js.org/) che accelerano e ottimizzano lo sviluppo front-end. L’obiettivo del modulo **ui.frontend** è quello di poter utilizzare questi strumenti per gestire la maggior parte dei file di origine front-end.
 
@@ -220,7 +220,7 @@ L&#39;Archetipo progetto AEM imposta automaticamente questa integrazione. Quindi
 
    >[!NOTE]
    >
-   >Esiste anche un profilo `npm run prod` che minimizza JS e CSS. Questa è la compilazione standard ogni volta che la generazione del webpack viene attivata tramite Maven. Ulteriori dettagli sul modulo [ui.frontend sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?=it).
+   >Esiste anche un profilo `npm run prod` che minimizza JS e CSS. Questa è la compilazione standard ogni volta che la generazione del webpack viene attivata tramite Maven. Ulteriori dettagli sul modulo [ui.frontend sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it&=it).
 
 1. Ispeziona il file `site.css` sotto `ui.frontend/dist/clientlib-site/site.css`. Si tratta del CSS compilato basato sui file di origine Sass.
 

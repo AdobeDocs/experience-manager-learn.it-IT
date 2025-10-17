@@ -177,7 +177,7 @@ Crea e implementa il codice del progetto in un&#39;istanza locale di AEM.
 Il progetto AEM generato è costituito da singoli moduli Maven, ciascuno con un ruolo diverso. Questa esercitazione e la maggior parte degli sviluppi si concentrano su questi moduli:
 
 * [core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html?lang=it) - Codice Java, principalmente sviluppatori back-end.
-* [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?=it) - Contiene il codice origine per CSS, JavaScript, Sass, TypeScript, principalmente per sviluppatori front-end.
+* [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it&=it) - Contiene il codice origine per CSS, JavaScript, Sass, TypeScript, principalmente per sviluppatori front-end.
 * [ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html?lang=it) - Contiene definizioni di componenti e finestre di dialogo, incorpora CSS e JavaScript compilati come librerie client.
 * [ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=it) - Contiene contenuti strutturali e configurazioni come modelli modificabili, schemi di metadati (/content, /conf).
 
@@ -189,11 +189,11 @@ Per ulteriori informazioni su **tutti** i moduli Maven, consulta la [documentazi
 
 ### Inclusione dei Componenti core {#core-components}
 
-I [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) sono un set di componenti WCM (Gestione contenuti web) standardizzati per AEM. Questi componenti forniscono un set di base di una funzionalità e sono formattati, personalizzati ed estesi per singoli progetti.
+I [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) sono un set di componenti WCM (Gestione contenuti web) standardizzati per AEM. Questi componenti forniscono un set di base di una funzionalità e sono formattati, personalizzati ed estesi per singoli progetti.
 
-L&#39;ambiente AEM as a Cloud Service include la versione più recente dei [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Pertanto, i progetti generati per AEM as a Cloud Service **non** includono un incorporamento di Componenti core AEM.
+L&#39;ambiente AEM as a Cloud Service include la versione più recente dei [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it). Pertanto, i progetti generati per AEM as a Cloud Service **non** includono un incorporamento di Componenti core AEM.
 
-Per i progetti generati da AEM 6.5/6.4, l&#39;archetipo incorpora automaticamente i [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) nel progetto. Per AEM 6.5/6.4 è consigliabile incorporare i Componenti core AEM per garantire che venga implementata con il progetto l&#39;ultima versione. Ulteriori informazioni sull&#39;inclusione dei Componenti core [nel progetto sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#core-components).
+Per i progetti generati da AEM 6.5/6.4, l&#39;archetipo incorpora automaticamente i [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) nel progetto. Per AEM 6.5/6.4 è consigliabile incorporare i Componenti core AEM per garantire che venga implementata con il progetto l&#39;ultima versione. Ulteriori informazioni sull&#39;inclusione dei Componenti core [nel progetto sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it#core-components).
 
 ## Gestione controllo origine {#source-control}
 

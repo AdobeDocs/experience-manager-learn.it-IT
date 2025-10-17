@@ -23,7 +23,7 @@ ht-degree: 100%
 
 {{edge-delivery-services-and-page-editor}}
 
-In questo capitolo, esaminiamo la relazione tra un componente della pagina base e i modelli modificabili. Scopri come creare un modello di articolo senza stili basato su alcuni modelli di [Adobe XD](https://helpx.adobe.com/support/xd.html). Durante la creazione del modello, sono trattati i Componenti core e le configurazioni avanzate dei criteri dei modelli modificabili.
+In questo capitolo, esaminiamo la relazione tra un componente della pagina base e i modelli modificabili. Scopri come creare un modello di articolo senza stili basato su alcuni modelli di [Adobe XD](https://helpx.adobe.com/it/support/xd.html). Durante la creazione del modello, sono trattati i Componenti core e le configurazioni avanzate dei criteri dei modelli modificabili.
 
 ## Prerequisiti {#prerequisites}
 
@@ -74,7 +74,7 @@ In questa parte dell’esercitazione, creerai un nuovo Modello per pagina di art
 
 ## Pianificazione dell’interfaccia utente con Adobe XD {#adobexd}
 
-Di solito, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe XD](https://helpx.adobe.com/support/xd.html) è uno strumento di progettazione che crea l’esperienza utente. Ora sarà esaminato un kit di interfaccia utente e modelli che consentono di pianificare la struttura del modello per la pagina dell’articolo.
+Di solito, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe XD](https://helpx.adobe.com/it/support/xd.html) è uno strumento di progettazione che crea l’esperienza utente. Ora sarà esaminato un kit di interfaccia utente e modelli che consentono di pianificare la struttura del modello per la pagina dell’articolo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
@@ -82,7 +82,7 @@ Di solito, la pianificazione di un nuovo sito web inizia con modelli e progetti 
 
 >[!NOTE]
 >
-> Un [kit di interfaccia utente per componenti core di AEM generico è disponibile](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) come punto di partenza per i progetti personalizzati.
+> Un [kit di interfaccia utente per componenti core di AEM generico è disponibile](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=it) come punto di partenza per i progetti personalizzati.
 
 ## Creare il modello per la pagina dell’articolo
 
