@@ -3,10 +3,10 @@ title: Tutorial su AEM
 description: Raccolta di video e tutorial su Adobe Experience Manager.
 exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
 doc-type: Catalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
-workflow-type: ht
-source-wordcount: '110'
-ht-degree: 100%
+source-git-commit: e0e57a56090f38c4baf357946ef35d1477ab5675
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 69%
 
 ---
 
@@ -29,7 +29,9 @@ Adobe Experience Manager (AEM) è la piattaforma leader per la gestione delle es
 
 + [Guida introduttiva ad AEM Sites - Tutorial WKND](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 + [Guida introduttiva ad AEM Headless](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/overview)
-+ [Guida introduttiva all’editor di SPA di AEM e React](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview)
-+ [Guida introduttiva ad AEM e Adobe Target](https://experienceleague.adobe.com/it/docs/experience-manager-learn/aem-target-tutorial/overview)
-+ [Tutorial sulla cache di Dispatcher AEM 6.x](https://experienceleague.adobe.com/it/docs/experience-manager-learn/dispatcher-tutorial/overview)
-+ [Tutorial su Dynamic Media Classic di AEM 6.x](https://experienceleague.adobe.com/it/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview)
++ [Guida introduttiva alla distribuzione dei frammenti di contenuto di AEM con API OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview)
++ [Modifica app React tramite Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview)
++ [Guida introduttiva a Personalization](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
++ [Guida introduttiva a RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)
++ [Guida introduttiva alle API di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/overview)
++ [Protezione dei siti Web AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
