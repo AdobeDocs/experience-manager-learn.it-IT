@@ -8,9 +8,9 @@ level: Beginner
 thumbnail: 30476.jpeg
 duration: 411
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '290'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -25,22 +25,22 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno
 
 ## Esercitazione per sviluppatori WKND {#wknd-developer-tutorial}
 
->[!VIDEO](https://video.tv.adobe.com/v/36052?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-L&#39;esercitazione è progettata per funzionare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti di **AEM 6.5+** e **AEM 6.4.2+**.
+L&#39;esercitazione è progettata per utilizzare **AEM as a Cloud Service** ed è compatibile con le versioni precedenti di **AEM 6.5+** e **AEM 6.4.2+**.
 
 **[Visualizza l&#39;esercitazione qui!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)**
 
-## Distribuzione di WKND in AEM as a Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
+## Implementazione di WKND in AEM as a Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
 
-Dopo aver completato l’esercitazione WKND, guarda il video seguente per una panoramica su come distribuire il progetto WKND in AEM as a Cloud Service.
+Dopo aver completato l&#39;esercitazione WKND, guarda il video seguente per una panoramica su come implementare il progetto WKND in AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/39832?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=12&learn=on)
 
 Il video mostra come può essere il progetto del sito WKND:
 
 1. Originato da un archivio Git di terze parti, in questo caso Github.com, ma potrebbe essere qualsiasi archivio Git
-2. Push in un archivio Git Cloud Manager di Adobe upstream registrato con un programma AEM as a Cloud Service
-3. Distribuito tramite pipeline Cloud Manager negli ambienti AEM as a Cloud Service
+2. Push in un archivio Git di Adobe Cloud Manager upstream registrato con un programma AEM as a Cloud Service
+3. Distribuito tramite pipeline di Cloud Manager negli ambienti AEM as a Cloud Service
 
-Per una panoramica completa su come distribuire il progetto AEM a AEM as a Cloud Service, guarda la serie di video su come [integrare Git con Adobe Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+Per una panoramica completa su come implementare il progetto AEM in AEM as a Cloud Service, guarda la serie di video su come [integrare Git con Adobe Cloud Manager](https://docs.adobe.com/content/help/it/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).

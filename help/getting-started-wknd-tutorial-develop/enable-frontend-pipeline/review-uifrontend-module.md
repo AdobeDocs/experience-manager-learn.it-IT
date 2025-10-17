@@ -14,28 +14,28 @@ doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
 duration: 364
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Rivedi il modulo &quot;ui.frontend&quot; del progetto AEM full-stack {#aem-full-stack-ui-frontent}
 
-In questo capitolo esaminiamo lo sviluppo, la distribuzione e la distribuzione di artefatti front-end di un progetto AEM full-stack, concentrandoci sul modulo &quot;ui.frontend&quot; del __progetto Sites WKND__.
+In questo capitolo esaminiamo lo sviluppo, la distribuzione e la consegna di artefatti front-end di un progetto AEM full-stack, concentrandoci sul modulo &quot;ui.frontend&quot; del __progetto Sites WKND__.
 
 
 ## Obiettivi {#objective}
 
 * Comprendere la generazione e il flusso di distribuzione di artefatti front-end in un progetto full-stack di AEM
-* Verifica le configurazioni [webpack](https://webpack.js.org/) del modulo `ui.frontend` del progetto full stack di AEM
+* Rivedere le configurazioni [webpack](https://webpack.js.org/) del modulo `ui.frontend` del progetto full stack di AEM
 * Processo di generazione della libreria client di AEM (nota anche come clientlibs)
 
-## Flusso di distribuzione front-end per progetti AEM full-stack e Creazione rapida di siti
+## Flusso di distribuzione front-end per progetti full-stack di AEM e Creazione rapida di siti
 
 >[!IMPORTANT]
 >
->Questo video illustra e illustra il flusso front-end per i progetti **Full-Stack e Creazione rapida di siti** per delineare la sottile differenza nel modello di creazione, distribuzione e consegna delle risorse front-end.
+>Questo video illustra il flusso front-end per i progetti **Full-Stack e Creazione rapida di siti** per delineare la sottile differenza nel modello di creazione, distribuzione e consegna delle risorse front-end.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409344?quality=12&learn=on)
 
@@ -49,27 +49,27 @@ Per ulteriori dettagli, vedi il progetto del sito WKND AEM [README.md](https://g
 
 ## Flusso di artefatti front-end per progetto full-stack di AEM {#flow-of-frontend-artifacts}
 
-Di seguito è riportata una rappresentazione di alto livello del flusso __sviluppo, distribuzione e consegna__ degli artefatti front-end in un progetto AEM full-stack.
+Di seguito è riportata una rappresentazione di alto livello del flusso di __sviluppo, distribuzione e consegna__ degli artefatti front-end in un progetto full-stack di AEM.
 
-![Sviluppo, distribuzione e distribuzione di artifact front-end](assets/Dev-Deploy-Delivery-AEM-Project.png)
+![Sviluppo, distribuzione e consegna di artefatti front-end](assets/Dev-Deploy-Delivery-AEM-Project.png)
 
 
 Durante la fase di sviluppo, le modifiche front-end come lo stile e il rebranding vengono eseguite aggiornando i file CSS e JS dalla cartella `ui.frontend/src/main/webpack`. Quindi, durante la fase di creazione, il modulo-bundler [webpack](https://webpack.js.org/) e il plug-in maven trasformano questi file in clientlibs ottimizzati di AEM nel modulo `ui.apps`.
 
-Le modifiche front-end vengono distribuite nell&#39;ambiente AEM as a Cloud Service durante l&#39;esecuzione della pipeline [__Full-stack__ in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=it).
+Le modifiche front-end vengono distribuite nell&#39;ambiente AEM as a Cloud Service durante l&#39;esecuzione della pipeline [__Full-stack__ in Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines).
 
 Le risorse front-end vengono distribuite ai browser web tramite percorsi URI che iniziano con `/etc.clientlibs/` e sono in genere memorizzate nella cache in AEM Dispatcher e CDN.
 
 
 >[!NOTE]
 >
-> Analogamente, nel __Percorso di Creazione Rapida dei Siti AEM__, le [modifiche front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html?lang=it) vengono distribuite nell&#39;ambiente AEM as a Cloud Service eseguendo la pipeline __front-end__. Vedere [Configurazione della pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html?lang=it)
+> Analogamente, nel __Percorso di creazione rapida dei siti AEM__, le [modifiche front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) vengono distribuite nell&#39;ambiente AEM as a Cloud Service eseguendo la pipeline __front-end__. Vedi [Configurazione della pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
 
-### Verifica configurazioni webpack nel progetto WKND Sites {#development-frontend-webpack-clientlib}
+### Rivedere le configurazioni webpack nel progetto WKND Sites {#development-frontend-webpack-clientlib}
 
 * Sono disponibili tre file di configurazione __webpack__ utilizzati per raggruppare le risorse front-end dei siti WKND.
 
-   1. `webpack.common` - Contiene la configurazione __common__ per istruire il bundling e l&#39;ottimizzazione delle risorse WKND. La proprietà __output__ indica dove emettere i file consolidati (noti anche come bundle di JavaScript, ma da non confondere con i bundle OSGi di AEM) che crea. Il nome predefinito è `clientlib-site/js/[name].bundle.js`.
+   1. `webpack.common` - Contiene la configurazione __common__ per istruire il bundling e l&#39;ottimizzazione delle risorse WKND. La proprietà __output__ indica dove emettere i file consolidati (noti anche come bundle di JavaScript, ma da non confondere con i bundle OSGi di AEM) che crea. Il nome predefinito è impostato su `clientlib-site/js/[name].bundle.js`.
 
   ```javascript
       ...
@@ -80,7 +80,7 @@ Le risorse front-end vengono distribuite ai browser web tramite percorsi URI che
       ...    
   ```
 
-   1. `webpack.dev.js` contiene la configurazione __development__ per webpack-dev-server e punta al modello HTML da utilizzare. Contiene anche una configurazione proxy a un&#39;istanza AEM in esecuzione su `localhost:4502`.
+   1. `webpack.dev.js` contiene la configurazione __development__ del webpack-dev-server e punta al modello HTML da utilizzare. Contiene anche una configurazione proxy a un&#39;istanza di AEM in esecuzione su `localhost:4502`.
 
   ```javascript
       ...
@@ -134,12 +134,12 @@ Le risorse front-end vengono distribuite ai browser web tramite percorsi URI che
 
 ### Implementazione in AEM as a Cloud Service {#deployment-frontend-aemaacs}
 
-La pipeline [__full stack__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=it&#full-stack-pipeline) distribuisce queste modifiche in un ambiente AEM as a Cloud Service.
+La pipeline [__full stack__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?=it#full-stack-pipeline) distribuisce queste modifiche in un ambiente AEM as a Cloud Service.
 
 
 ### Consegna da AEM as a Cloud Service {#delivery-frontend-aemaacs}
 
-Le risorse front-end distribuite tramite la pipeline full-stack vengono distribuite dal sito AEM ai browser Web come `/etc.clientlibs` file. Puoi verificare questo fatto visitando il [sito WKND ospitato pubblicamente](https://wknd.site/content/wknd/us/en.html) e visualizzando l&#39;origine della pagina Web.
+Le risorse front-end distribuite tramite la pipeline full-stack vengono consegnate dal sito AEM ai browser web come `/etc.clientlibs` file. Puoi verificare questo fatto visitando il [sito WKND ospitato pubblicamente](https://wknd.site/content/wknd/us/en.html) e visualizzando l&#39;origine della pagina web.
 
 ```html
     ....
@@ -157,4 +157,4 @@ Congratulazioni, hai esaminato il modulo ui.frontend del progetto full stack
 
 ## Passaggi successivi {#next-steps}
 
-Nel prossimo capitolo, [Aggiorna progetto per utilizzare la pipeline front-end](update-project.md), aggiornerai il progetto AEM WKND Sites per abilitarlo per il contratto della pipeline front-end.
+Nel prossimo capitolo, [Aggiornare il progetto per utilizzare la pipeline front-end](update-project.md), imparerai come aggiornare il progetto AEM WKND Sites per abilitarlo per il contratto della pipeline front-end.

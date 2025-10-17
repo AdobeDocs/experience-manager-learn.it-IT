@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 source-git-commit: bc1c7a96a3d5dbc23fb7d34343cee0cfc2853be9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 99%
 + Authoring pagina {#page-authoring}
    + [Authoring](page-authoring/aem-sites-authoring-overview.md)
    + [Navigazione](page-authoring/basic-handling-sites-feature-video-use.md)
-   + [Struttura sito &#x200B;](page-authoring/content-hierarchy-feature-video-use.md)
+   + [Struttura sito](page-authoring/content-hierarchy-feature-video-use.md)
    + [Creazione pagina](page-authoring/creating-page-feature-video-use.md)
    + [Authoring pagina](page-authoring/page-authoring-overview-feature-video-use.md)
    + [Editor pagina](page-authoring/page-editor-feature-video-use.md)
@@ -71,7 +71,7 @@ ht-degree: 99%
    + [Pubblicazione](page-authoring/publication-management-feature-video-use.md)
    + [Modelli modificabili](page-authoring/template-editor-feature-video-use.md)
    + [Sistema di stili](page-authoring/style-system-feature-video-use.md)
-   + [Timewarp  &#x200B;](page-authoring/timewarp-feature-video-use.md)
+   + [Timewarp](page-authoring/timewarp-feature-video-use.md)
    + [Lanci](page-authoring/launches.md)
    + Impara dai tuoi colleghi {#expert-advice}
       + [Suggerimenti sulla gerarchia dei siti](page-authoring/expert-advice/site-hierarchy.md)
@@ -111,7 +111,7 @@ ht-degree: 99%
          + Procedura{#how-to}
             + [Opzioni di blocco](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
             + [Intestazione e piè di pagina](./edge-delivery-services/developing/universal-editor/how-to/header-and-footer.md)
-            + [Anteprima dell&#39;estensione locale](./edge-delivery-services/developing/universal-editor/how-to/local-extension-preview.md)
+            + [Visualizzazione in anteprima dell’estensione locale](./edge-delivery-services/developing/universal-editor/how-to/local-extension-preview.md)
    + Procedura{#how-to}
       + [Feed RSS](edge-delivery-services/how-to/rss.md)
       + [Condivisione sui social media](edge-delivery-services/how-to/social-media-sharing.md)
@@ -119,7 +119,7 @@ ht-degree: 99%
 + Sviluppo {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Archetipo di progetto AEM](developing/aem-project-archetype.md)
-   + [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview){target=_blank}
+   + [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
    + [Guida introduttiva ad AEM headless](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/overview){target=_blank}
    + [Guida introduttiva all’editor di SPA di AEM e React](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview){target=_blank}
    + [Estensione delle proprietà di pagina](developing/page-properties-technical-video-develop.md)
