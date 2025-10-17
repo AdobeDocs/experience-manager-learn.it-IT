@@ -29,9 +29,9 @@ Adobe Experience Manager (AEM) è la piattaforma leader per la gestione delle es
 
 + [Guida introduttiva ad AEM Sites - Tutorial WKND](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 + [Guida introduttiva ad AEM Headless](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/overview)
-+ [Guida introduttiva alla distribuzione dei frammenti di contenuto di AEM con API OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview)
++ [Guida introduttiva alla distribuzione dei frammenti di contenuto di AEM con API OpenAPI](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview)
 + [Modifica app React tramite Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview)
-+ [Guida introduttiva a Personalization](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
-+ [Guida introduttiva a RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)
-+ [Guida introduttiva alle API di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/overview)
++ [Guida introduttiva a Personalization](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/personalization/overview)
++ [Guida introduttiva a RDE](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/overview)
++ [Guida introduttiva alle API di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/overview)
 + [Protezione dei siti Web AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
