@@ -46,7 +46,7 @@ Visita il [sito Web WKND Enablement](https://wknd.enablementadobe.com/us/en.html
 
 - **Pagina rivista**: quando gli utenti leggono _tre o più_ articoli, vengono classificati come **lettori rivista** e visualizzano una sezione protagonista personalizzata nella pagina della rivista.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474009/?captions=ita&learn=on&enablevpops)
 
 >[!TIP]
 >
