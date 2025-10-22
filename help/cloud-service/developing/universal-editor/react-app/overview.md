@@ -1,6 +1,7 @@
 ---
 title: Modifica delle app React tramite l’editor universale
 description: Scopri come modificare i contenuti di un’app React di esempio utilizzando l’editor universale.
+short-description: Scopri come modificare i contenuti di un’app React di esempio utilizzando l’editor universale. In AEM, i contenuti vengono memorizzati all’interno dei Frammenti di contenuto e recuperati utilizzando le API di GraphQL.
 version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
@@ -12,9 +13,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 69ed610e-2eff-43b3-98f9-3dc40594e879
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '415'
+source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
+workflow-type: tm+mt
+source-wordcount: '444'
 ht-degree: 100%
 
 ---

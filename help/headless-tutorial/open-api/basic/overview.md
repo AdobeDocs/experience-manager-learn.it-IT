@@ -1,6 +1,7 @@
 ---
 title: Tutorial su AEM Headless OpenAPI | Consegna dei frammenti di contenuto
 description: Un tutorial end-to-end che illustra come creare ed esporre contenuti utilizzando le API di distribuzione dei frammenti di contenuto basate su OpenAPI di AEM.
+short-description: Un tutorial che illustra come creare ed esporre contenuti AEM utilizzando Content Fragment Delivery (Distribuzione di frammenti di contenuto) con API OpenAPI e utilizzarli in un’app esterna per scenari CMS headless.
 doc-type: Tutorial
 mini-toc-levels: 1
 jira: KT-6678
@@ -11,10 +12,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 duration: 54
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+exl-id: 1bb7c415-58f8-4f6c-a0bc-38bdbdb521cf
+source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 22%
+source-wordcount: '393'
+ht-degree: 20%
 
 ---
 
