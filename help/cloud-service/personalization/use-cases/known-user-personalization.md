@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2025-10-17T00:00:00Z
 jira: KT-16331
 thumbnail: KT-16331.jpeg
-source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
+source-git-commit: 418e61e28e4a03a5b9657e80534926fe40ccefbd
 workflow-type: tm+mt
-source-wordcount: '6446'
+source-wordcount: '6447'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,8 @@ Gli scenari comuni includono:
 La tua organizzazione potrebbe avere casi d’uso diversi per la personalizzazione degli utenti noti. I precedenti sono solo alcuni esempi.
 
 ## Caso d’uso di esempio
+
+![VIDEO](https://video.tv.adobe.com/v/3476105/?learn=on&enablevpops)
 
 In questa esercitazione, utilizzando il [sito WKND di esempio](https://github.com/adobe/aem-guides-wknd), il processo dimostra come **gli utenti che hanno effettuato l&#39;accesso** che hanno acquistato un&#39;avventura **Ski** vedano un protagonista personalizzato nella **home page WKND**.
 
@@ -76,7 +78,7 @@ Prima di procedere con il caso di utilizzo di personalizzazione utente noto, ass
 - [Integrare Adobe Target](../setup/integrate-adobe-target.md): consente ai team di creare e gestire contenuti personalizzati centralmente in AEM e attivarli come offerte in Adobe Target.
 - [Integrare i tag in Adobe Experience Platform](../setup/integrate-adobe-tags.md): consente ai team di gestire e distribuire JavaScript per la personalizzazione e la raccolta dati senza dover ridistribuire il codice AEM.
 
-Conoscere anche i concetti di [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/it/docs/id-service/using/home) e [Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/landing/home), ad esempio schema, set di dati, flusso di dati, tipi di pubblico, identità e profili.
+Conoscere anche i concetti di [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/en/docs/id-service/using/home) e [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home), ad esempio schema, set di dati, flusso di dati, tipi di pubblico, identità e profili.
 
 In questo tutorial, scopri l’unione di identità e la creazione di un profilo cliente in Adobe Experience Platform. Pertanto, combinando i dati comportamentali con i dati transazionali per creare un profilo cliente completo.
 
@@ -1184,9 +1186,9 @@ Congratulazioni. Sei un esperto nella creazione di un profilo cliente completo u
 
 ## Risorse aggiuntive
 
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home)
-- [Panoramica sugli stream di dati](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overview)
-- [Compositore esperienza visivo](https://experienceleague.adobe.com/it/docs/target/using/experiences/vec/visual-experience-composer)
-- [Segmentazione di Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Tipi di pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/types/overview)
-- [Connessione Adobe Target](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Panoramica sugli stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+- [Compositore esperienza visivo](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [Segmentazione di Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Tipi di pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
+- [Connessione Adobe Target](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
