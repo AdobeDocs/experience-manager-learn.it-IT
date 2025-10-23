@@ -33,7 +33,7 @@ La tua organizzazione potrebbe avere casi d’uso diversi per la personalizzazio
 
 ## Caso d’uso di esempio
 
-![VIDEO](https://video.tv.adobe.com/v/3476105/?learn=on&enablevpops)
+![VIDEO](https://video.tv.adobe.com/v/3476117/?captions=ita&learn=on&enablevpops)
 
 In questa esercitazione, utilizzando il [sito WKND di esempio](https://github.com/adobe/aem-guides-wknd), il processo dimostra come **gli utenti che hanno effettuato l&#39;accesso** che hanno acquistato un&#39;avventura **Ski** vedano un protagonista personalizzato nella **home page WKND**.
 
