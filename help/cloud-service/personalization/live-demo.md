@@ -26,7 +26,7 @@ Questa pagina ti guida attraverso dimostrazioni pratiche di ogni scenario di per
 >[!IMPORTANT]
 >
 > Apri il sito demo in più finestre del browser o in modalità di navigazione in incognito/privata per sperimentare diverse varianti personalizzate contemporaneamente.
-> > Quando si utilizza la modalità di navigazione privata, Firefox e Safari potrebbero bloccare il cookie ECID, in alternativa utilizzare la modalità di navigazione regolare o cancellare i cookie prima di provare un nuovo scenario di personalizzazione.
+> &#x200B;> Quando si utilizza la modalità di navigazione privata, Firefox e Safari potrebbero bloccare il cookie ECID, in alternativa utilizzare la modalità di navigazione regolare o cancellare i cookie prima di provare un nuovo scenario di personalizzazione.
 
 ## Casi d’uso demo
 
