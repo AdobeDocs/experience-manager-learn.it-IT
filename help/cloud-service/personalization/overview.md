@@ -11,7 +11,7 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 055dc7d666d082244d73d3494bac54d7eb4bb886
+source-git-commit: 4d345ba7b10ea21d7bc7eee89157de782e1c4350
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 7%
@@ -38,7 +38,7 @@ Per illustrare vari scenari di personalizzazione, questo tutorial utilizza il pr
 
 ## Demo live dei casi di utilizzo di Personalization
 
-Personalizzazione dell&#39;esperienza in azione nel [sito Web di abilitazione WKND](https://wknd.enablementadobe.com/us/en.html){target="_blank"}. Il sito demo illustra tre tipi di personalizzazione: test A/B, targeting comportamentale e personalizzazione per utenti noti.
+Personalizzazione dell&#39;esperienza in azione nel [sito Web di abilitazione WKND](https://wknd.enablementadobe.com/us/en.html){target="wknd"}. Il sito demo illustra tre tipi di personalizzazione: test A/B, targeting comportamentale e personalizzazione per utenti noti.
 
 >[!TIP]
 >
