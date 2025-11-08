@@ -131,7 +131,7 @@ Procedura video per l&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling D
 
    >[!TIP]
    >
-   > Se si lascia inattivo `*` finale nella regola glob `*.nocache.html*` precedente, si potrebbero verificare [problemi nelle richieste di risorse secondarie](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
+   > Se si lascia inattivo `*` finale nella regola glob `*.nocache.html*` precedente, si potrebbero verificare [problemi nelle richieste di risorse secondarie](https://github.com/AdobeDocs/experience-manager-learn.it-IT/issues/16).
 
    ```shell
    /cache {
