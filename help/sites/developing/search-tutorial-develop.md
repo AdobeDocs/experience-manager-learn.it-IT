@@ -77,7 +77,7 @@ L&#39;implementazione della ricerca semplice è costituita dai materiali di **Ad
 * [Archivio Github](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Esportatore modello Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [API QueryBuilder](https://experienceleague.adobe.com/docs/)
+* [API QueryBuilder](https://experienceleague.adobe.com/docs/?lang=it)
 * [Plug-in di AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Pagina documentazione](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correzioni e follow-up {#corrections-and-follow-up}
