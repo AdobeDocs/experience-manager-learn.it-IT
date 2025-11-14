@@ -99,7 +99,7 @@ Sono disponibili _più metodi di autenticazione_ supportati dalla libreria [aem-
 
 | | Autenticazione di base | [Token di sviluppo locale](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [Credenziali servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [OAuth S2S](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [App Web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [SPA OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
 |---|---|---|---|---|---|---|
-| È supportato? | &amp;check; | &amp;check; | &amp;check; | &amp;cross; | &amp;cross; | &amp;cross; |
+| È supportato? | &check; | &check; | &check; | &cross; | &cross; | &cross; |
 | Scopo | Sviluppo locale | Sviluppo locale | Produzione | N/D | N/D | N/D |
 
 Per configurare l’applicazione di esempio, effettua le seguenti operazioni:
