@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 4d17b28ed67d7e5b03caa5fb57701ab7ddbcb77f
+source-git-commit: bf996405c360c77475d9f76d5de9bcd4fde3c163
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 99%
+source-wordcount: '467'
+ht-degree: 98%
 
 ---
 
@@ -69,6 +69,7 @@ ht-degree: 99%
    + [Autorizzazioni basate su metadati](./advanced/metadata-driven-permissions.md)
    + [Sottotitoli video codificati](./advanced/video-closed-captions.md)
    + [Filigrane](./advanced/watermarks.md)
+   + [Caricamento di risorse a livello di programmazione](./advanced/programmatic-asset-upload.md)
 
 + Gestione avanzata dei metadati{#metadata}
    + [Metadati GenAI](metadata/genai-metadata.md)
@@ -169,7 +170,7 @@ ht-degree: 99%
    + Tutorial {#tutorials}
       + [Creazione di set carosello](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Creazione di set di immagini](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
-      + [Creazione di predefiniti di immagine](dynamic-media/tutorials/creating-image-presets.md)
+      + [Creazione di predefiniti per immagini](dynamic-media/tutorials/creating-image-presets.md)
       + [Creazione di profili di immagine di ritaglio avanzato](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
       + [Creazione di profili video](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
       + [Elaborazione delle risorse](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
