@@ -24,9 +24,9 @@ ht-degree: 52%
 + [Guide AEM](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/overview){target=_blank}
 + Tutorial in più passaggi {#multi}
    + [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview){target=_blank}
-   + [Guida introduttiva alla distribuzione dei frammenti di contenuto di AEM con API OpenAPI](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview){target=_blank}
+   + [Guida introduttiva alla distribuzione dei frammenti di contenuto di AEM con API OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview){target=_blank}
    + [Modifica app React tramite Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview){target=_blank}
-   + [Guida introduttiva a Personalization](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/personalization/overview){target=_blank}
-   + [Guida introduttiva a RDE](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/overview){target=_blank}
-   + [Guida introduttiva alle API di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/overview){target=_blank}
+   + [Guida introduttiva a Personalization](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview){target=_blank}
+   + [Guida introduttiva a RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview){target=_blank}
+   + [Guida introduttiva alle API di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/overview){target=_blank}
    + [Protezione dei siti Web AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview){target=_blank}

@@ -9,7 +9,7 @@ sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
 source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2104'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 + [Configurazione dell’autenticazione OKTA con l’authoring di AEM](adaptive-forms/single-sign-on-with-okta.md)
 + Creazione del primo modulo adattivo {#creating-your-first-adaptive-form}
    + [1 - Introduzione e configurazione](creating-your-first-adaptive-form/introduction-and-setup.md)
-   + [2 - Creare un modello di modulo adattivo](creating-your-first-adaptive-form/create-adaptive-form-template.md)
+   + [2 - Creare un modello per moduli adattivi](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [3 - Creare un frammento di modulo](creating-your-first-adaptive-form/create-form-fragment.md)
    + [4 - Creare un modulo adattivo](creating-your-first-adaptive-form/create-adaptive-form.md)
    + [5 - Configurazione del pannello principale e aggiunta di pannelli secondari](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
@@ -188,7 +188,7 @@ ht-degree: 100%
    + [5 - Aggiornare il flusso di lavoro per stato della firma](sign-multiple-documents/update-signature-status.md)
    + [6 - Personalizzare il componente di riepilogo](sign-multiple-documents/customize-summary-component.md)
    + [7 - Creare una libreria client](sign-multiple-documents/create-client-lib.md)
-   + [8 - Creare un modello di modulo](sign-multiple-documents/create-af-template.md)
+   + [8 - Creare un modello per moduli](sign-multiple-documents/create-af-template.md)
    + [9 - Creare il modulo iniziale](sign-multiple-documents/create-initial-form.md)
    + [10 - Creare moduli per la firma](sign-multiple-documents/create-forms-for-signing.md)
    + [11 - Testare la soluzione](sign-multiple-documents/testing-and-trouble-shooting.md)
@@ -220,7 +220,7 @@ ht-degree: 100%
    + [Servizio per memorizzare i dati](storing-retrieving-form-data/part3.md)
    + [Creare il servlet](storing-retrieving-form-data/part2.md)
    + [Libreria client](storing-retrieving-form-data/part4.md)
-   + [Modello di modulo adattivo](storing-retrieving-form-data/part5.md)
+   + [Modello per moduli adattivi](storing-retrieving-form-data/part5.md)
    + [Implementare le risorse di esempio](storing-retrieving-form-data/part6.md)
 + Attivare un flusso di lavoro AEM all’invio del modulo PDF{#offline-mobile-form-submission}
    + [Parte - 1](offline-mobile-form-submission/introduction.md)
@@ -305,7 +305,7 @@ ht-degree: 100%
 + Forms Designer{#forms-designer}
    + [Vista Progettazione](forms-designer/design-view.md)
    + [Creare il primo modulo](forms-designer/create-simple-form.md)
-   + [Creare un modello di modulo](forms-designer/creating-form-template.md)
+   + [Creare un modello per moduli](forms-designer/creating-form-template.md)
    + [Scripting di un modulo](forms-designer/first-script-designer.md)
    + [Associazione dati XML](forms-designer/xml-data-binding.md)
    + [Associazione database](forms-designer/binding-to-mysql-db.md)
