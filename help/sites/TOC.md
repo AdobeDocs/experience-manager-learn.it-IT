@@ -171,7 +171,7 @@ ht-degree: 98%
       + [Generare FPID](integrations/platform/fpid.md)
       + [Web SDK](integrations/platform/web-sdk.md)
       + [Analisi utilizzando Platform Web SDK](integrations/platform/analytics-using-web-sdk.md)
-      + [Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Adobe Target](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/personalization/overview)
    + Tag in Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Panoramica](integrations/experience-platform/data-collection/tags/overview.md)
       + [Creare una proprietà tag](integrations/experience-platform/data-collection/tags/create-tag-property.md)
@@ -186,9 +186,9 @@ ht-degree: 98%
       + [Tracciare componenti selezionati con Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analizzare i dati con Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [Panoramica](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
-      + [Configurazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
-      + [Casi d’uso](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
+      + [Panoramica](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Configurazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
+      + [Casi d’uso](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 + Impara dai tuoi colleghi {#expert-resources}
    + [Panoramica](expert-resources/learn-from-your-peers-overview.md)
    + [Guida alla creazione dell’authoring in AEM Sites](expert-resources/authoring-guide-in-sites.md)
