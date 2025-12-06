@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve introduzione all’editor dei frammenti di contenuto di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424373/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477335/?captions=ita&learn=on)

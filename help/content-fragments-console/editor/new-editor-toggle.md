@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri in che modo il nuovo editor consente di passare facilmente dal nuovo editor predefinito per frammenti di contenuto all’editor classico.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419312/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477324/?captions=ita&learn=on)

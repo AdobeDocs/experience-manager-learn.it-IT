@@ -71,7 +71,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <a href="./basics/content-fragment-editor.md" title="Panoramica dell’editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3424373?format=jpeg"
+                src="https://video.tv.adobe.com/v/3477335?captions=ita&format=jpeg"
                 alt="Panoramica dell’editor">
             </a>
           </figure>
@@ -138,7 +138,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-
             <a href="./editor/new-editor-toggle.md" title="Opzione per passare al nuovo Editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Opzione per passare
+                src="https://video.tv.adobe.com/v/3477324?captions=ita&format=jpeg" alt="Opzione per passare
                 al nuovo Editor">
             </a>
           </figure>

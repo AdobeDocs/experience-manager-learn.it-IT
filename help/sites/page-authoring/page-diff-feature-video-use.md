@@ -41,7 +41,7 @@ Le funzionalità di AEM Sites per la visualizzazione delle differenze di pagina 
 
 ## Confronto delle pagine di lancio {#comparing-launch-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477346?captions=ita&quality=12&learn=on)
 
 La funzione Differenza pagina può essere utilizzata anche per identificare la differenza tra blueprint e Live Copy, e blueprint e copie in lingua.
 

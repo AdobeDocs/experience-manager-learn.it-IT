@@ -27,4 +27,4 @@ In questo video:
 + Scopri l’architettura AEM Author e Publish e come viene pubblicato il contenuto
 + Scopri le best practice per la distribuzione headless con un ambiente di pubblicazione AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450957?captions=ita&quality=12&learn=on)
