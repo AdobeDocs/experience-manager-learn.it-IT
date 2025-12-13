@@ -52,7 +52,7 @@ Una visualizzazione consolidata dei meccanismi di autenticazione (e occasionalme
             <td>✔</td>
         </tr>
         <tr>
-            <td>Basato su token (con <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token incapsulato</a>)</td>
+            <td>Basato su token (con <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html?lang=it" target="_blank">token incapsulato</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -63,7 +63,7 @@ Una visualizzazione consolidata dei meccanismi di autenticazione (e occasionalme
             <td></td>
             <td></td>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html?lang=it" target="_blank">LDAP</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>

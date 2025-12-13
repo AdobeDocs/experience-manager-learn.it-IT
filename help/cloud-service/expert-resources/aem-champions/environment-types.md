@@ -27,4 +27,4 @@ Consulta questi suggerimenti dal tuo collega tecnico, Rakesh Pasupuleti. Rakesh 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it) - Documentazione sulla gestione degli ambienti in AEM as a Cloud Service
-* [Ambienti di sviluppo rapido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html) - Documentazione sugli RDE in AEM as a Cloud Service
+* [Ambienti di sviluppo rapido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=it) - Documentazione sugli RDE in AEM as a Cloud Service

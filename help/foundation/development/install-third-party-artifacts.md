@@ -27,7 +27,7 @@ I **artefatti di terze parti** possono essere:
 
 - [Bundle OSGi](https://www.osgi.org/resources/architecture/): un bundle OSGi è un file di archivio Java™ che contiene classi Java, risorse e un manifesto che descrive il bundle e le relative dipendenze.
 - [Java jar](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): file di archivio Java™ contenente classi e risorse Java.
-- [Pacchetto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): un pacchetto è un file zip contenente il contenuto del repository nel modulo di serializzazione del file system.
+- [Pacchetto](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): un pacchetto è un file zip contenente il contenuto del repository nel modulo di serializzazione del file system.
 
 ## Scenario standard
 
@@ -57,7 +57,7 @@ I motivi potrebbero essere:
 
 Per seguire questa esercitazione, è necessario:
 
-- Configurazione di [ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o [ambiente di sviluppo rapido (RDE)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+- Configurazione di [ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o [ambiente di sviluppo rapido (RDE)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 - Il [progetto AEM WKND](https://github.com/adobe/aem-guides-wknd) _per aggiungere il bundle, il file jar o il pacchetto di terze parti_ e verificare le modifiche.
 

@@ -29,11 +29,11 @@ Poiché la maggior parte dei servizi di posta non viene eseguita su HTTP/HTTPS, 
 + `smtp.port` è impostato sulla porta `portForward.portOrig` mappata all&#39;host e alla porta del servizio e-mail di destinazione. In questo esempio viene utilizzata la mappatura: `AEM_PROXY_HOST:30465` → `smtp.sendgrid.com:465`.
    + `smpt.port` è impostato sulla porta `portForward.portOrig` e NON sulla porta effettiva del server SMTP. Il mapping tra `smtp.port` e la porta `portForward.portOrig` è stabilito dalla regola Cloud Manager `portForwards` (come illustrato di seguito).
 
-Poiché i segreti non devono essere archiviati nel codice, è consigliabile fornire il nome utente e la password del servizio e-mail utilizzando [variabili di configurazione OSGi segrete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), impostate utilizzando la CLI AIO o l&#39;API Cloud Manager.
+Poiché i segreti non devono essere archiviati nel codice, è consigliabile fornire il nome utente e la password del servizio e-mail utilizzando [variabili di configurazione OSGi segrete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#secret-configuration-values), impostate utilizzando la CLI AIO o l&#39;API Cloud Manager.
 
 In genere, [l&#39;uscita da porta flessibile](../flexible-port-egress.md) viene utilizzata per soddisfare l&#39;integrazione con un servizio e-mail a meno che non sia necessario `allowlist` l&#39;IP di Adobe, nel qual caso è possibile utilizzare [l&#39;indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md).
 
-Inoltre, consulta la documentazione di AEM in [invio di posta elettronica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Inoltre, consulta la documentazione di AEM in [invio di posta elettronica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=it#sending-email).
 
 ## Supporto di rete avanzato
 
@@ -61,7 +61,7 @@ Questo esempio di configurazione OSGi configura il servizio OSGi Mail di AEM per
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/config/com.day.cq.mailer.DefaultMailService.cfg.json`
 
-Configura il [DefaultMailService](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) di AEM come richiesto dal tuo provider di posta elettronica (ad esempio `smtp.ssl`, ecc.).
+Configura il [DefaultMailService](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=it#sending-email) di AEM come richiesto dal tuo provider di posta elettronica (ad esempio `smtp.ssl`, ecc.).
 
 ```json
 {
@@ -80,7 +80,7 @@ Configura il [DefaultMailService](https://experienceleague.adobe.com/docs/experi
 
 La variabile OSGi `EMAIL_USERNAME` e `EMAIL_PASSWORD` e il segreto possono essere impostati per ambiente utilizzando:
 
-+ [Configurazione ambiente Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
++ [Configurazione ambiente Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=it)
 + o utilizzando il comando `aio CLI`
 
   ```shell

@@ -27,7 +27,7 @@ Lo strumento di importazione in blocco disponibile in AEM as a Cloud Service con
 
 >[!TAB Vista risorse]
 
-Scopri come importare numerosi file in AEM Assets utilizzando la [vista risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [importazione in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), con Dropbox che funge da provider di archiviazione cloud di esempio per un processo di integrazione chiaro e facile da seguire.
+Scopri come importare numerosi file in AEM Assets utilizzando la [vista risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=it) [importazione in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=it), con Dropbox che funge da provider di archiviazione cloud di esempio per un processo di integrazione chiaro e facile da seguire.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
@@ -37,7 +37,7 @@ Scopri come importare numerosi file in AEM Assets utilizzando la [vista risorse]
 
 >[!TIP]
 >
-> Le origini di input in questo video mostrano solo Azure Blob Storage e Amazon S3; tuttavia, le origini disponibili continuano a crescere nel tempo. Per un elenco completo delle origini di input supportate, fare riferimento alle opzioni disponibili nel prodotto o alla [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> Le origini di input in questo video mostrano solo Azure Blob Storage e Amazon S3; tuttavia, le origini disponibili continuano a crescere nel tempo. Per un elenco completo delle origini di input supportate, fare riferimento alle opzioni disponibili nel prodotto o alla [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=it#bulk-upload).
 
 ## Pianifica importazione in blocco
 

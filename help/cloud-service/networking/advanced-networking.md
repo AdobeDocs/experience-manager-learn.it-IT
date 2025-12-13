@@ -37,7 +37,7 @@ La rete avanzata di AEM comprende tre opzioni per la gestione della connettivit�
 | [__Rete privata virtuale__](./vpn.md) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 
-Per ulteriori dettagli sulle considerazioni relative alla selezione del tipo di rete avanzato appropriato, vedere [documentazione sulle reti avanzate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html).
+Per ulteriori dettagli sulle considerazioni relative alla selezione del tipo di rete avanzato appropriato, vedere [documentazione sulle reti avanzate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=it).
 
 ## Tutorial di rete avanzati
 
@@ -106,15 +106,15 @@ Prima di seguire queste esercitazioni, assicurati che sia stata impostata la [co
       </p>
     </td>   
     <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html"><img alt="Applicazione di un elenco consentiti IP" src="./assets/code_examples__vpn-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html">Applicazione di un inserisco nell'elenco Consentiti di</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=it"><img alt="Applicazione di un elenco consentiti IP" src="./assets/code_examples__vpn-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=it">Applicazione di un inserisco nell'elenco Consentiti di</a></strong></div>
       <p>
             Inserire nell'elenco Consentiti Configura un IP in modo che solo il traffico VPN possa accedere ad AEM.
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Limitazioni dell’accesso VPN basato su percorsi per AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Restrizioni all'accesso VPN basato su percorsi per AEM Publish</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=it#restrict-vpn-to-ingress-connections"><img alt="Limitazioni dell’accesso VPN basato su percorsi per AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html?lang=it#restrict-vpn-to-ingress-connections">Restrizioni all'accesso VPN basato su percorsi per AEM Publish</a></strong></div>
       <p>
             Richiedi accesso VPN per percorsi specifici in AEM Publish.
       </p>

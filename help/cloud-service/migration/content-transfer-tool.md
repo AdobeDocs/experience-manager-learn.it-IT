@@ -26,4 +26,4 @@ Lo strumento Content Transfer è il metodo consigliato per migrare il contenuto 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Panoramica dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
+* [Panoramica dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it)

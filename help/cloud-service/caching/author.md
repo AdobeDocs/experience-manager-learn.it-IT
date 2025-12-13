@@ -35,7 +35,7 @@ Il servizio di authoring di AEM utilizza una rete CDN, tuttavia il suo scopo è 
 
 La rete CDN di AEM Author si trova tra l’utente finale, in genere un addetto al marketing o un autore di contenuti, e l’autore di AEM. Memorizza nella cache i file immutabili, ad esempio le risorse statiche che alimentano l’esperienza di authoring di AEM, e non i contenuti creati.
 
-Il CDN di AEM Author memorizza nella cache diversi tipi di risorse che potrebbero essere di interesse, tra cui un TTL [personalizzabile su query persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?author-instances) e un TTL [lungo su librerie client personalizzate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries).
+Il CDN di AEM Author memorizza nella cache diversi tipi di risorse che potrebbero essere di interesse, tra cui un TTL [personalizzabile su query persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=it&author-instances) e un TTL [lungo su librerie client personalizzate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#client-side-libraries).
 
 ### Durata predefinita della cache
 
@@ -43,9 +43,9 @@ Le seguenti risorse rivolte al cliente sono memorizzate nella cache dalla rete C
 
 | Tipo di contenuto | Durata predefinita cache CDN |
 |:------------ |:---------- |
-| [Query persistenti (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?author-instances) | 1 minuto |
-| [Librerie client (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30 giorni |
-| [Tutto il resto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | Non memorizzato in cache |
+| [Query persistenti (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=it&author-instances) | 1 minuto |
+| [Librerie client (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#client-side-libraries) | 30 giorni |
+| [Tutto il resto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#other-content) | Non memorizzato in cache |
 
 
 ## Dispatcher AEM

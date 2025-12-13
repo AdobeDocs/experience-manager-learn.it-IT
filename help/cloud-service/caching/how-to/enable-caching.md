@@ -31,7 +31,7 @@ Quando NON sono presenti configurazioni personalizzate, vengono utilizzati i val
 
 ![Comportamento predefinito per la memorizzazione nella cache](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 
-Rivedi [Pubblicazione AEM - Durata predefinita cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) e [Autore AEM - Durata predefinita cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life) per ulteriori informazioni.
+Rivedi [Pubblicazione AEM - Durata predefinita cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html?lang=it#cdn-cache-life) e [Autore AEM - Durata predefinita cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?lang=it&#default-cache-life) per ulteriori informazioni.
 
 In sintesi, AEM as a Cloud Service memorizza nella cache la maggior parte dei tipi di contenuto (HTML, JSON, JS, CSS e Assets) in AEM Publish e alcuni tipi di contenuto (JS, CSS) in AEM Author.
 
@@ -99,7 +99,7 @@ Per aumentare la durata della cache CDN e del browser Web del tipo di contenuto 
    ```
 
    I file vhost nella directory `dispatcher/src/conf.d/enabled_vhosts` sono **symlinks** ai file nella directory `dispatcher/src/conf.d/available_vhosts`. Assicurarsi quindi di creare symlink se non presenti.
-1. Distribuisci le modifiche vhost nell&#39;ambiente AEM as a Cloud Service desiderato utilizzando [Cloud Manager - Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
+1. Distribuisci le modifiche vhost nell&#39;ambiente AEM as a Cloud Service desiderato utilizzando [Cloud Manager - Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=it&#web-tier-config-pipelines) o [Comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=it#deploy-apache-or-dispatcher-configuration).
 
 Tuttavia, per avere valori diversi per il browser web e la durata della cache CDN, puoi utilizzare l&#39;intestazione `Surrogate-Control` nell&#39;esempio precedente. Allo stesso modo, per far scadere la cache a una data e un&#39;ora specifiche, è possibile utilizzare l&#39;intestazione `Expires`. Inoltre, utilizzando gli attributi `stale-while-revalidate` e `stale-if-error`, è possibile controllare il trattamento dello stato non aggiornato del contenuto della risposta. Il progetto AEM WKND ha una configurazione della cache CDN [reference stale state treatment](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155).
 

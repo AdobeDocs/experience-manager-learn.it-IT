@@ -136,7 +136,7 @@ Questo è spesso problematico se il lavoro è responsabile del cambiamento dello
 
 Se si desidera eseguire il processo una sola volta nel servizio AEM Author, aggiungere la [configurazione della coda processi](#how-to-run-a-job-on-the-leader-instance) descritta di seguito.
 
-Puoi verificarlo consultando i registri del servizio AEM Author in [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
+Puoi verificarlo consultando i registri del servizio AEM Author in [Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
 
 ![Processo elaborato da tutte le istanze](./assets/run-job-once/job-processed-by-all-instances.png)
 

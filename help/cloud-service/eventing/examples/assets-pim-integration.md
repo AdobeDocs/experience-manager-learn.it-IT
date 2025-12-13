@@ -57,8 +57,8 @@ Per completare questa esercitazione, è necessario:
 
 Le fasi di sviluppo di alto livello sono:
 
-1. [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [Abilitare l&#39;accesso alle API di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
+1. [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
+1. [Abilitare l&#39;accesso alle API di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
 1. [Creare un progetto in Adobe Developer Console (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [Inizializzare il progetto per lo sviluppo locale](./runtime-action.md#initialize-project-for-local-development)
 1. Configurare il progetto in ADC
@@ -293,7 +293,7 @@ Per il codice completo, fai riferimento al file [WKND-Assets-PIM-Integration.zip
 
 Per impostazione predefinita, il progetto WKND Sites non dispone dello schema metadati risorse per visualizzare i metadati specifici PIM come SKU, Nome fornitore, ecc. Creiamo e applichiamo lo schema di metadati di risorse a una cartella di risorse nell’istanza di AEM.
 
-1. Accedi all&#39;istanza di AEM as a Cloud Service Asset e accedi alla [visualizzazione risorse](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views).
+1. Accedi all&#39;istanza di AEM as a Cloud Service Asset e accedi alla [visualizzazione risorse](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/authoring/switch-views).
 
    ![Vista AEM Assets](../assets/examples/assets-pim-integration/aem-assets-view.png)
 

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Utilizzo di Adobe Cloud Manager - Ambienti
 
-[Gli ambienti Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) sono composti dai servizi AEM Author, AEM Publish e Dispatcher. Diversi ambienti supportano i ruoli e possono essere attivati utilizzando diverse pipeline CI/CD. In genere, gli ambienti Cloud Manager dispongono di un ambiente Produzione, un ambiente Stage e un ambiente Sviluppo.
+[Gli ambienti Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=it) sono composti dai servizi AEM Author, AEM Publish e Dispatcher. Diversi ambienti supportano i ruoli e possono essere attivati utilizzando diverse pipeline CI/CD. In genere, gli ambienti Cloud Manager dispongono di un ambiente Produzione, un ambiente Stage e un ambiente Sviluppo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
