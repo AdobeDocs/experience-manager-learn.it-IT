@@ -82,7 +82,7 @@ In questo esempio, l&#39;applicazione a pagina singola viene distribuita a un do
 
 1. L’applicazione a pagina singola viene fornita da un dominio Netlify, ma effettua una chiamata XHR alle API GraphQL di AEM su un dominio diverso. Questa richiesta intersito richiede la configurazione di [CORS](./configurations/cors.md) in AEM per consentire l&#39;accesso al contenuto da parte del dominio Netlify.
 
-   ![Richiesta SPA inviata dagli host SPA e AEM ](assets/spa/cors-requirement.png)
+   ![Richiesta SPA inviata dagli host SPA e AEM &#x200B;](assets/spa/cors-requirement.png)
 
 2. Durante l&#39;analisi della richiesta XHR all&#39;API GraphQL di AEM, `Access-Control-Allow-Origin` è presente, indicando al browser Web che AEM consente alla richiesta di questo dominio Netlify di accedere al relativo contenuto.
 

@@ -80,7 +80,7 @@ public class SimpleJobCreaterImpl {
 I punti chiave da notare nel codice precedente sono:
 
 - Il payload del processo ha due proprietà: `action` e `message`.
-- Utilizzando il metodo [ di ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html)JobManager`addJob(...)`, il processo viene aggiunto all&#39;argomento `wknd/simple/job/topic`.
+- Utilizzando il metodo [&#x200B; di &#x200B;](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html)JobManager`addJob(...)`, il processo viene aggiunto all&#39;argomento `wknd/simple/job/topic`.
 
 ### Elabora un processo
 

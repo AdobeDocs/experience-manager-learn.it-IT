@@ -148,7 +148,7 @@ Di seguito sono riportati gli elementi di rilievo del codice `LargeBookingsCusto
 + `guestConnection` è inizializzato con l&#39;hook `useEffect` [React](https://react.dev/reference/react/useEffect) ed è gestito come stato del componente. Viene utilizzato per comunicare con l’host AEM.
 + La funzione `handleCustomerServiceChange` ottiene il nome e il numero di telefono del rappresentante e aggiorna le variabili dello stato del componente.
 + La funzione `addCustomerServiceDetails` che utilizza l&#39;oggetto `guestConnection` fornisce istruzioni RTE da eseguire. In questo caso, istruzione `insertContent` e snippet di codice HTML.
-+ Per rendere non modificabile il numero di telefono **** utilizzando i badge, viene aggiunto il carattere speciale `#` prima e dopo la variabile `phoneNumber`, ad esempio `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
++ Per rendere non modificabile il numero di telefono **&#x200B;**&#x200B;utilizzando i badge, viene aggiunto il carattere speciale `#` prima e dopo la variabile `phoneNumber`, ad esempio `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
 
 `src/aem-cf-editor-1/web-src/src/components/LargeBookingsCustomerService.js`
 

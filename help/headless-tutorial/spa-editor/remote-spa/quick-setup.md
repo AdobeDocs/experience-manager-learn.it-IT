@@ -69,7 +69,7 @@ Scarica e installa AEM SDK Quickstart sulla porta 4502, con le credenziali prede
    # Provide `admin` as the admin user's password
    ```
 
-AEM SDK viene avviato e avviato automaticamente il [http://localhost:4502](Http://localhost:4502). Accedi utilizzando le seguenti credenziali:
+AEM SDK viene avviato e avviato automaticamente il [http://localhost:4502](http://localhost:4502). Accedi utilizzando le seguenti credenziali:
 
 + Nome utente: `admin`
 + Password: `admin`
@@ -87,8 +87,8 @@ Questa esercitazione ha una dipendenza dal progetto __di__ WKND 2.1.0+ (per il c
 
 Per eseguire una configurazione rapida, qui vengono forniti i pacchetti AEM che contengono la configurazione e il contenuto finali di AEM del tutorial.
 
-1. [Scarica ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Scarica ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. [Scarica &#x200B;](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Scarica &#x200B;](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
 1. Accedi a Gestione pacchetti di AEM SDK all&#39;indirizzo [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) con le credenziali `admin`.
 1. __Carica__ `wknd-app.all.x.x.x.zip` scaricato nel passaggio 1
 1. Tocca il pulsante __Installa__ per la voce `wknd-app.all.x.x.x.zip`
@@ -131,7 +131,7 @@ Verificare che l&#39;applicazione a pagina singola sia in esecuzione in [http://
 
 Prima di creare il contenuto, disporre le finestre del browser in modo che AEM Author (`http://localhost:4502`) sia a sinistra e l&#39;applicazione a pagina singola remota (`http://localhost:3000`) sia a destra. Questa disposizione consente di vedere come le modifiche ai contenuti originati da AEM vengono immediatamente riportate nell’applicazione a pagina singola.
 
-1. Accedi al servizio [AEM SDK Author](Http://localhost:4502) come `admin`
+1. Accedi al servizio [AEM SDK Author](http://localhost:4502) come `admin`
 1. Passa a __Sites > App WKND > us > en__
 1. Modifica __Home page app WKND__
 1. Passa alla modalità __Modifica__

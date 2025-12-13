@@ -70,7 +70,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 ...
 ```
 
-È possibile specificare `.env` file per altri usi [](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) tramite il postfix di `.env` e un descrittore semantico, ad esempio `.env.stage` o `.env.production`. È possibile utilizzare file `.env` diversi durante l&#39;esecuzione o la creazione dell&#39;app React impostando `REACT_APP_ENV` prima di eseguire un comando `npm`.
+È possibile specificare `.env` file per altri usi [&#128279;](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) tramite il postfix di `.env` e un descrittore semantico, ad esempio `.env.stage` o `.env.production`. È possibile utilizzare file `.env` diversi durante l&#39;esecuzione o la creazione dell&#39;app React impostando `REACT_APP_ENV` prima di eseguire un comando `npm`.
 
 Ad esempio, `package.json` di un&#39;app React può contenere la seguente configurazione `scripts`:
 
@@ -185,7 +185,7 @@ AEM_HOST = publish-p123-e789.adobeaemcloud.com
 
 #### Inizializzare il client headless AEM personalizzato
 
-L&#39;app iOS headless AEM [ di esempio ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app) utilizza un client AEM headless personalizzato inizializzato con i valori di configurazione per `AEM_SCHEME` e `AEM_HOST`.
+L&#39;app iOS headless AEM [&#x200B; di esempio &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app) utilizza un client AEM headless personalizzato inizializzato con i valori di configurazione per `AEM_SCHEME` e `AEM_HOST`.
 
 ```swift
 ...
@@ -361,7 +361,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 ...
 ```
 
-È possibile specificare `.env` file per altri usi [](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) tramite il postfix di `.env` e un descrittore semantico, ad esempio `.env.stage` o `.env.production`. È possibile utilizzare un file `.env` diverso durante l&#39;esecuzione o la creazione dell&#39;app React impostando `REACT_APP_ENV` prima di eseguire un comando `npm`.
+È possibile specificare `.env` file per altri usi [&#128279;](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) tramite il postfix di `.env` e un descrittore semantico, ad esempio `.env.stage` o `.env.production`. È possibile utilizzare un file `.env` diverso durante l&#39;esecuzione o la creazione dell&#39;app React impostando `REACT_APP_ENV` prima di eseguire un comando `npm`.
 
 Ad esempio, `package.json` di un&#39;app React può contenere la seguente configurazione `scripts`:
 

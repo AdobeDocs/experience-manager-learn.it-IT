@@ -25,7 +25,7 @@ Le connessioni HTTP/HTTPS vengono automaticamente escluse da AEM as a Cloud Serv
 
 Il codice di esempio seguente è supportato dalle seguenti opzioni di rete avanzate.
 
-Prima di seguire questa esercitazione, assicurati che la configurazione di rete avanzata VPN[ o l&#39;indirizzo IP in uscita dedicato ](../advanced-networking.md#advanced-networking) sia stata configurata.
+Prima di seguire questa esercitazione, assicurati che la configurazione di rete avanzata VPN[&#x200B; o l&#39;indirizzo IP in uscita dedicato &#x200B;](../advanced-networking.md#advanced-networking) sia stata configurata.
 
 | Nessuna rete avanzata | [Uscita porta flessibile](../flexible-port-egress.md) | [Indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md) | [Rete privata virtuale](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|

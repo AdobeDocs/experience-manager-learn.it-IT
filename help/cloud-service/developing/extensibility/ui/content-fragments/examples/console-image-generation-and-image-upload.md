@@ -76,7 +76,7 @@ L&#39;app di estensione App Builder generata viene aggiornata come descritto di 
 
 ### Configurazione iniziale
 
-1. Registrati per un account API [ OpenAI gratuito ](https://openai.com/api/)e crea una [chiave API](https://beta.openai.com/account/api-keys)
+1. Registrati per un account API [&#x200B; OpenAI gratuito &#x200B;](https://openai.com/api/)e crea una [chiave API](https://beta.openai.com/account/api-keys)
 1. Aggiungi questa chiave al file `.env` del progetto App Builder
 
    ```
@@ -223,7 +223,7 @@ Nell&#39;app di esempio è presente un componente React modale (`GenerateImageMo
 È importante sottolineare che qualsiasi interazione con AEM da parte dell&#39;estensione deve essere delegata a un&#39;azione [AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), che è un processo separato senza server in esecuzione in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 L’utilizzo delle azioni di Adobe I/O Runtime per comunicare con AEM consiste nell’evitare problemi di connettività CORS (Cross-Origin Resource Sharing).
 
-Quando il modulo _Genera immagine_ viene inviato, un `onSubmitHandler()` personalizzato richiama l&#39;azione Adobe I/O Runtime, trasmettendo la descrizione dell&#39;immagine, l&#39;host AEM corrente (dominio) e il token di accesso AEM dell&#39;utente. L&#39;azione chiama quindi l&#39;API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) di OpenAI per generare un&#39;immagine utilizzando la descrizione dell&#39;immagine inviata. Successivamente, utilizzando la classe [ del modulo nodo ](https://github.com/adobe/aem-upload)Caricamento AEM`DirectBinaryUpload`, carica l&#39;immagine generata in AEM e infine utilizza l&#39;[API Frammento di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) per aggiornare i frammenti di contenuto.
+Quando il modulo _Genera immagine_ viene inviato, un `onSubmitHandler()` personalizzato richiama l&#39;azione Adobe I/O Runtime, trasmettendo la descrizione dell&#39;immagine, l&#39;host AEM corrente (dominio) e il token di accesso AEM dell&#39;utente. L&#39;azione chiama quindi l&#39;API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) di OpenAI per generare un&#39;immagine utilizzando la descrizione dell&#39;immagine inviata. Successivamente, utilizzando la classe [&#x200B; del modulo nodo &#x200B;](https://github.com/adobe/aem-upload)Caricamento AEM`DirectBinaryUpload`, carica l&#39;immagine generata in AEM e infine utilizza l&#39;[API Frammento di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) per aggiornare i frammenti di contenuto.
 
 Quando viene ricevuta la risposta dall’azione Adobe I/O Runtime, il modale viene aggiornato per visualizzare i risultati dell’operazione di generazione dell’immagine.
 

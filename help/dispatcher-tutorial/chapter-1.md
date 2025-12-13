@@ -106,7 +106,7 @@ In linea di principio, se tutti i file sono memorizzati nella cache e quindi mem
 
 Per comprendere il Dispatcher in modo più dettagliato, rivediamo la struttura di un semplice URL di esempio.  Vediamo l’esempio seguente,
 
-`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&amp;otherparameter=value#fragment`
+`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&otherparameter=value#fragment`
 
 * `http` indica il protocollo
 

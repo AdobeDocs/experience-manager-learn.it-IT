@@ -45,7 +45,7 @@ Scopri come impostare Purge API Token per eliminare la cache CDN.
 
 Il token API di eliminazione viene creato configurando la regola CDN nel codice del progetto AEM.
 
-1. Apri il file `cdn.yaml` dalla cartella principale `config` del progetto AEM. Ad esempio, il file cdn.yaml[ del progetto ](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml)WKND.
+1. Apri il file `cdn.yaml` dalla cartella principale `config` del progetto AEM. Ad esempio, il file cdn.yaml[&#x200B; del progetto &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml)WKND.
 
 1. Aggiungi la seguente regola CDN al file `cdn.yaml`:
 

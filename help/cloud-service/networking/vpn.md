@@ -32,7 +32,7 @@ Scopri come collegare AEM as a Cloud Service alla tua VPN per creare canali di c
 
 Virtual Private Network (VPN) consente a un cliente AEM as a Cloud Service di connettere **gli ambienti AEM** all&#39;interno di un programma Cloud Manager a una VPN esistente [supportata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking). La VPN consente connessioni sicure e controllate tra AEM as a Cloud Service e i servizi all’interno della rete del cliente.
 
-Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, verificare che Virtual Private Network sia il tipo di infrastruttura di rete [ più ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)appropriato per il proprio AEM as a Cloud Service.
+Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, verificare che Virtual Private Network sia il tipo di infrastruttura di rete [&#x200B; più &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking)appropriato per il proprio AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __s
 Quando si configura una rete privata virtuale utilizzando le API di Cloud Manager, è necessario quanto segue:
 
 + Account Adobe con [autorizzazioni Proprietario business Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ Accedi alle credenziali di autenticazione dell&#39;API Cloud Manager [](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
++ Accedi alle credenziali di autenticazione dell&#39;API Cloud Manager [&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
    + ID organizzazione (ID organizzazione IMS)
    + ID client (alias chiave API)
    + Token di accesso (token Bearer)
@@ -261,7 +261,7 @@ Una volta creata la VPN, ora puoi configurarla utilizzando le API di Cloud Manag
    Se la distribuzione AEM __only__ richiede connessioni HTTP/HTTPS al servizio esterno, lasciare vuoto l&#39;array `portForwards`, in quanto queste regole sono necessarie solo per le richieste non HTTP/HTTPS.
 
 
-2. Per ogni ambiente, verificare che le regole di routing VPN siano attive utilizzando l&#39;operazione [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager.
+&#x200B;2. Per ogni ambiente, verificare che le regole di routing VPN siano attive utilizzando l&#39;operazione [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager.
 
    __getEnvironmentAdvancedNetworkingConfiguration richiesta HTTP__
 
@@ -273,9 +273,9 @@ Una volta creata la VPN, ora puoi configurarla utilizzando le API di Cloud Manag
        -H 'Content-Type: application/json'
    ```
 
-3. È possibile aggiornare le configurazioni proxy di rete privata virtuale utilizzando l&#39;operazione [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager. Ricorda che `enableEnvironmentAdvancedNetworkingConfiguration` è un&#39;operazione `PUT`, pertanto tutte le regole devono essere fornite con ogni chiamata di questa operazione.
+&#x200B;3. È possibile aggiornare le configurazioni proxy di rete privata virtuale utilizzando l&#39;operazione [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager. Ricorda che `enableEnvironmentAdvancedNetworkingConfiguration` è un&#39;operazione `PUT`, pertanto tutte le regole devono essere fornite con ogni chiamata di questa operazione.
 
-4. Ora puoi utilizzare la configurazione di uscita Virtual Private Network nel codice e nella configurazione personalizzati di AEM.
+&#x200B;4. Ora puoi utilizzare la configurazione di uscita Virtual Private Network nel codice e nella configurazione personalizzati di AEM.
 
 ## Connessione a servizi esterni tramite la rete privata virtuale
 

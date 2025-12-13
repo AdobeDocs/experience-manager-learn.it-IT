@@ -27,7 +27,7 @@ Questa è la parte 3 di una serie in tre parti da memorizzare nella cache in AEM
 
 ## Memorizzazione in cache in generale
 
-[Il Capitolo 1](chapter-1.md) e il Capitolo 2[ di questa serie si concentrano principalmente su Dispatcher. ](chapter-2.md) Abbiamo spiegato le nozioni di base, i limiti e dove è necessario fare alcuni compromessi.
+[Il Capitolo 1](chapter-1.md) e il Capitolo 2[&#x200B; di questa serie si concentrano principalmente su Dispatcher. &#x200B;](chapter-2.md) Abbiamo spiegato le nozioni di base, i limiti e dove è necessario fare alcuni compromessi.
 
 La complessità e le complessità della memorizzazione nella cache non sono problemi specifici di Dispatcher. La memorizzazione in cache è difficile in generale.
 
