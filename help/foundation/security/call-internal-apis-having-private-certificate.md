@@ -4,7 +4,7 @@ description: Scopri come chiamare le API interne con certificati privati o autof
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 jira: KT-11548
 thumbnail: KT-11548.png
@@ -12,8 +12,8 @@ doc-type: Article
 last-substantial-update: 2023-08-25T00:00:00Z
 exl-id: c88aa724-9680-450a-9fe8-96e14c0c6643
 duration: 332
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 100%
 
@@ -157,4 +157,4 @@ Tuttavia, questo metodo non è allineato alle best practice di sicurezza e AEM o
 
 Il progetto Node.js di esempio illustrato nel video può essere scaricato da [qui](assets/internal-api-call/REST-APIs.zip).
 
-Il codice servlet di AEM è disponibile nel ramo `tutorial/web-api-invocation` del progetto del sito WKND, disponibile [qui](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
+Il codice servlet di AEM è disponibile nel ramo `tutorial/web-api-invocation` del progetto WKND Sites, disponibile [qui](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).

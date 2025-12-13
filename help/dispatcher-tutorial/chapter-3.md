@@ -1,16 +1,16 @@
 ---
 title: Capitolo 3 - Argomenti avanzati sulla memorizzazione in cache di Dispatcher
-description: Questa è la Parte 3 di una serie in tre parti da memorizzare nella cache in AEM. Le prime due parti si concentrano sul caching http semplice in Dispatcher e sulle limitazioni esistenti. Questa parte illustra alcune idee su come superare queste limitazioni.
+description: Questa è la Parte 3 di una serie in tre parti da memorizzare nella cache in AEM. Le prime due parti si concentrano sul caching http semplice in Dispatcher e sulle limitazioni esistenti. Questa parte descrive alcune idee su come superare queste limitazioni.
 feature: Dispatcher
 topic: Architecture
-role: Architect
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
 duration: 1353
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '6172'
+source-wordcount: '6173'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 ## Panoramica
 
-Questa è la parte 3 di una serie in tre parti dedicata al caching nell&#39;AEM. Le prime due parti si concentrano sul caching http semplice in Dispatcher e sulle limitazioni esistenti. Questa parte illustra alcune idee su come superare queste limitazioni.
+Questa è la parte 3 di una serie in tre parti da memorizzare nella cache in AEM. Le prime due parti si concentrano sul caching http semplice in Dispatcher e sulle limitazioni esistenti. Questa parte descrive alcune idee su come superare queste limitazioni.
 
 ## Memorizzazione in cache in generale
 
-[Il Capitolo 1](chapter-1.md) e il Capitolo 2[&#128279;](chapter-2.md) di questa serie si concentrano principalmente su Dispatcher.  Abbiamo spiegato le nozioni di base, i limiti e dove è necessario fare alcuni compromessi.
+[Il Capitolo 1](chapter-1.md) e il Capitolo 2[ di questa serie si concentrano principalmente su Dispatcher. ](chapter-2.md) Abbiamo spiegato le nozioni di base, i limiti e dove è necessario fare alcuni compromessi.
 
 La complessità e le complessità della memorizzazione nella cache non sono problemi specifici di Dispatcher. La memorizzazione in cache è difficile in generale.
 
@@ -38,7 +38,7 @@ In questo capitolo vogliamo ampliare ulteriormente la nostra visione sulla memor
 Dovrai fare dei compromessi in queste aree,
 
 * Prestazioni e latenza
-* Consumo risorse / Carico CPU / Utilizzo disco
+* Consumo risorse / Caricamento CPU / Utilizzo disco
 * Precisione / Valuta / Stabilità / Sicurezza
 * Semplicità / Complessità / Costo / Manutenzione / Prontezza all&#39;errore
 
@@ -66,7 +66,7 @@ Innanzitutto, il disco rigido (HDD) stesso ha alcune cache integrate nell&#39;ha
 
 #### Archivio dei contenuti
 
-Il livello successivo è CRX o Oak, ovvero il database di documenti utilizzato dall&#39;AEM. CRX e Oak dividono i dati in segmenti che possono essere memorizzati nella cache, anche per evitare un accesso più lento all’HDD.
+Il livello successivo è CRX o Oak, ovvero il database di documenti utilizzato da AEM. CRX e Oak dividono i dati in segmenti che possono essere memorizzati nella cache, anche per evitare un accesso più lento all’HDD.
 
 #### Dati di terze parti
 
@@ -82,7 +82,7 @@ Il modello ora è la base per il rendering del markup di un componente. Perché 
 
 #### Dispatcher, CDN e altri proxy
 
-Off passa il rendering della pagina HTML a Dispatcher. Abbiamo già discusso del fatto che lo scopo principale di Dispatcher sia quello di memorizzare in cache le pagine HTML e altre risorse web (nonostante il nome). Prima che le risorse raggiungano il browser, è possibile che passi un proxy inverso, che può memorizzare in cache e una rete CDN, utilizzato anche per il caching. Il client può trovarsi in un ufficio, che concede l’accesso web solo tramite un proxy e tale proxy può anche decidere di memorizzare in cache per risparmiare traffico.
+Off passa la pagina HTML di cui è stato eseguito il rendering al Dispatcher. Abbiamo già discusso del fatto che lo scopo principale di Dispatcher è quello di memorizzare in cache le pagine HTML e altre risorse web (nonostante il nome). Prima che le risorse raggiungano il browser, è possibile che passi un proxy inverso, che può memorizzare in cache e una rete CDN, utilizzato anche per il caching. Il client può trovarsi in un ufficio, che concede l’accesso web solo tramite un proxy e tale proxy può anche decidere di memorizzare in cache per risparmiare traffico.
 
 #### Cache browser
 
@@ -98,7 +98,7 @@ Per darvi un&#39;idea approssimativa di quali fattori potreste prendere in consi
 
 **Durata** - Se gli oggetti hanno una durata breve intrinseca (i dati sul traffico potrebbero avere una durata inferiore ai dati meteo), potrebbe non valere la pena di essere memorizzati nella cache.
 
-**Costo di produzione -** Quanto costoso (in termini di cicli della CPU e I/O) è la riproduzione e la consegna di un oggetto. In caso affermativo, la memorizzazione nella cache potrebbe non essere necessaria.
+**Costo di produzione -** Quanto costoso (in termini di cicli CPU e I/O) è la riproduzione e la consegna di un oggetto. In caso affermativo, la memorizzazione nella cache potrebbe non essere necessaria.
 
 **Dimensione** - Per gli oggetti di grandi dimensioni sono necessarie più risorse nella cache. Questo potrebbe essere un fattore limitante e deve essere valutato in rapporto al beneficio.
 
@@ -118,14 +118,14 @@ Ancora una volta - la memorizzazione nella cache è difficile. Condividiamo alcu
 
 #### Evita il Double Caching
 
-Ciascuno dei livelli introdotti nell&#39;ultimo capitolo fornisce un valore nella catena di memorizzazione in cache. Salvando i cicli di elaborazione o avvicinando i dati al consumatore. Non è sbagliato memorizzare in cache una parte di dati in più fasi della catena, ma è sempre necessario considerare i vantaggi e i costi della fase successiva. La memorizzazione in cache di una pagina intera nel sistema Publish di solito non offre alcun vantaggio, come già avviene in Dispatcher.
+Ciascuno dei livelli introdotti nell&#39;ultimo capitolo fornisce un valore nella catena di memorizzazione in cache. Salvando i cicli di elaborazione o avvicinando i dati al consumatore. Non è sbagliato memorizzare in cache una parte di dati in più fasi della catena, ma è sempre necessario considerare i vantaggi e i costi della fase successiva. La memorizzazione in cache di una pagina intera nel sistema di pubblicazione solitamente non offre alcun vantaggio, come già avviene in Dispatcher.
 
 #### Unione di strategie di invalidazione
 
 Esistono tre strategie di invalidazione di base:
 
 * **TTL, durata:** Un oggetto scade dopo un periodo di tempo fisso (ad esempio, &quot;2 ore da ora&quot;)
-* **Data di scadenza:** L&#39;oggetto scade all&#39;ora futura definita (ad esempio, &quot;17:00 del 10 giugno 2019&quot;)
+* **Data di scadenza:** L&#39;oggetto scade in un momento futuro definito (ad esempio, &quot;5:00 PM 10 giugno 2019&quot;)
 * **Basato su evento:** l&#39;oggetto viene invalidato esplicitamente da un evento che si è verificato nella piattaforma (ad esempio, quando una pagina viene modificata e attivata)
 
 Ora puoi utilizzare strategie diverse su diversi livelli di cache, ma ce ne sono alcune &quot;tossiche&quot;.
@@ -196,9 +196,9 @@ Tuttavia, non tutte le cache sono in grado di propagare le date. E può diventar
 
 <br> 
 
-Un altro schema comune nel mondo dell’AEM è quello di utilizzare l’invalidazione basata sugli eventi nelle cache interne (ad esempio, cache in memoria in cui gli eventi possono essere elaborati quasi in tempo reale) e nelle cache basate su TTL all’esterno, dove forse non si ha accesso all’invalidazione esplicita.
+Anche uno schema comune nel mondo AEM consiste nell’utilizzare l’invalidazione basata sugli eventi nelle cache interne (ad esempio, cache in memoria in cui gli eventi possono essere elaborati quasi in tempo reale) e nelle cache basate su TTL all’esterno, dove forse non hai accesso all’invalidazione esplicita.
 
-Nel mondo AEM, si avrebbe una cache in memoria per oggetti business e frammenti HTML nei sistemi Publish, che viene invalidata, quando cambiano le risorse sottostanti e si propaga questo evento di modifica al dispatcher, che funziona anche in base agli eventi. Prima di questo avresti, ad esempio, una rete CDN basata su TTL.
+Nel mondo AEM, si avrebbe una cache in memoria per oggetti business e frammenti HTML nei sistemi Publish, che viene invalidata, quando cambiano le risorse sottostanti e si propaga questo evento di modifica al dispatcher, che funziona anche in base all’evento. Prima di questo avresti, ad esempio, una rete CDN basata su TTL.
 
 Avere un livello di caching basato su TTL (breve) davanti a un Dispatcher potrebbe attenuare efficacemente un picco che solitamente si verifica dopo un’invalidazione automatica.
 
@@ -226,9 +226,9 @@ Potete agganciarvi allo stadio del processo di rendering per aggiungere livelli 
 
 #### Rispetta controllo di accesso
 
-Le tecniche qui descritte sono piuttosto potenti e un _must-have_ in ogni casella degli strumenti per gli sviluppatori AEM. Ma non emozionatevi troppo, usateli con saggezza. Memorizzare un oggetto in una cache e condividerlo con altri utenti nelle richieste di follow-up significa in realtà eludere il controllo degli accessi. Questo di solito non è un problema sui siti web rivolti al pubblico, ma può esserlo, quando un utente deve effettuare l’accesso prima di ottenerlo.
+Le tecniche qui descritte sono piuttosto potenti e un _must-have_ in ogni casella degli strumenti per gli sviluppatori di AEM. Ma non emozionatevi troppo, usateli con saggezza. Memorizzare un oggetto in una cache e condividerlo con altri utenti nelle richieste di follow-up significa in realtà eludere il controllo degli accessi. Questo di solito non è un problema sui siti web rivolti al pubblico, ma può esserlo, quando un utente deve effettuare l’accesso prima di ottenerlo.
 
-Considera di memorizzare il markup HTML del menu principale Sites in una cache in memoria per condividerlo tra varie pagine. In realtà si tratta di un esempio perfetto per archiviare HTML parzialmente renderizzati, in quanto la creazione di una navigazione è solitamente costosa in quanto richiede l’attraversamento di molte pagine.
+Considera di memorizzare il markup HTML del menu principale Sites in una cache in memoria per condividerlo tra varie pagine. In realtà si tratta di un esempio perfetto per memorizzare HTML parzialmente renderizzato, in quanto la creazione di una navigazione è solitamente costosa in quanto richiede l’attraversamento di molte pagine.
 
 Non stai condividendo la stessa struttura di menu tra tutte le pagine, ma anche con tutti gli utenti, il che la rende ancora più efficiente. Ma aspetta ... forse ci sono alcuni elementi nel menu che sono riservati solo a un certo gruppo di utenti. In tal caso, il caching può diventare un po’ più complesso.
 
@@ -248,7 +248,7 @@ Che cosa significa?
 
 3. Soprattutto in Sling, puoi adattare (quasi) ogni oggetto l’uno all’altro. Considera di inserire una risorsa nella cache. La richiesta successiva (con diritti di accesso diversi), recupera tale risorsa e la adatta in un resourceResolver o in una sessione per accedere ad altre risorse a cui non avrebbe accesso.
 
-4. Anche se si crea un &quot;wrapper&quot; sottile intorno a una risorsa dell’AEM, non è necessario memorizzarlo in cache, anche se è proprio e immutabile. L’oggetto racchiuso sarebbe un riferimento (che non consentiamo di utilizzare in precedenza) e, se guardiamo in modo nitido, questo fondamentalmente crea gli stessi problemi descritti nell’ultimo elemento.
+4. Anche se crei un &quot;wrapper&quot; sottile intorno a una risorsa da AEM, non devi memorizzarlo in cache, anche se è tuo e immutabile. L’oggetto racchiuso sarebbe un riferimento (che non consentiamo di utilizzare in precedenza) e, se guardiamo in modo nitido, questo fondamentalmente crea gli stessi problemi descritti nell’ultimo elemento.
 
 5. Se desideri memorizzare in cache, crea i tuoi oggetti copiando dati primitivi nei tuoi oggetti shallo. Potrebbe essere necessario creare un collegamento tra i propri oggetti tramite riferimenti, ad esempio per memorizzare in cache una struttura ad albero di oggetti. Va bene, ma memorizza in cache solo gli oggetti appena creati nella stessa richiesta e nessun oggetto richiesto da un’altra posizione (anche se si tratta del namespace dell’oggetto &quot;tuo&quot;). _La chiave è la copia degli oggetti_. Assicurati inoltre di eliminare l’intera struttura di oggetti collegati contemporaneamente ed evitare riferimenti in entrata e in uscita alla struttura.
 
@@ -260,7 +260,7 @@ Ci sono molte regole, ma vale la pena seguirle. Anche se sei esperto e super int
 
 Questa serie tratta di comprendere i concetti e consentire di creare un’architettura che si adatta al meglio al caso d’uso.
 
-Non stiamo promuovendo alcuno strumento in particolare. Ma fornisci suggerimenti su come valutarli. Ad esempio, l’AEM ha una semplice cache integrata con un TTL fisso a partire dalla versione 6.0. La userai? Probabilmente non in pubblicazione dove segue nella catena una cache basata su eventi (suggerimento: Dispatcher). Ma potrebbe essere una scelta decente per un autore. Esiste anche una cache HTTP per Adobe ACS commons che potrebbe essere utile considerare.
+Non stiamo promuovendo alcuno strumento in particolare. Ma fornisci suggerimenti su come valutarli. Ad esempio, AEM dispone di una semplice cache integrata con un TTL fisso a partire dalla versione 6.0. La userai? Probabilmente non in pubblicazione dove segue nella catena una cache basata su eventi (suggerimento: Dispatcher). Ma potrebbe essere una scelta decente per un autore. Esiste anche una cache HTTP di Adobe ACS commons che potrebbe essere utile considerare.
 
 Oppure puoi crearne una tua, in base a un framework di caching maturo come [Ehcache](https://www.ehcache.org). Può essere utilizzato per memorizzare nella cache oggetti Java e markup di cui è stato eseguito il rendering (`String` oggetti).
 
@@ -287,7 +287,7 @@ La memorizzazione in cache preventiva comporta la ricreazione della voce con con
 
 Il riscaldamento della cache è strettamente correlato al caching preventivo. Anche se non usereste quel termine per un sistema live. Ed è meno vincolato nel tempo rispetto al primo. Non si rimemorizza la cache immediatamente dopo l’annullamento della validità, ma si riempie gradualmente la cache quando il tempo lo consente.
 
-Ad esempio, puoi estrarre una gamba Publish/Dispatcher dal load balancer per aggiornarla. Prima di reintegrarla, esegui automaticamente la ricerca per indicizzazione delle pagine a cui si accede più di frequente per riportarle nella cache. Quando la cache è &quot;calda&quot; - riempita adeguatamente si reintegra la gamba nel load balancer.
+Ad esempio, estrai una tappa Publish/Dispatcher dal load balancer per aggiornarla. Prima di reintegrarla, esegui automaticamente la ricerca per indicizzazione delle pagine a cui si accede più di frequente per riportarle nella cache. Quando la cache è &quot;calda&quot; - riempita adeguatamente si reintegra la gamba nel load balancer.
 
 O forse reintegrare la gamba in una volta sola, ma si limita il traffico a quella gamba in modo che abbia la possibilità di riscaldarla con l&#39;uso regolare.
 
@@ -315,7 +315,7 @@ Ciò si riferisce all’annullamento della validità basato su eventi. Su quali 
 
 Quali oggetti dipendono dall&#39;autenticità degli altri in ogni singola applicazione. In seguito verranno forniti alcuni esempi su come implementare una strategia di dipendenza.
 
-### Memorizzazione in cache di frammenti di HTML
+### Memorizzazione in cache di frammenti HTML
 
 ![Riutilizzo di un frammento sottoposto a rendering in pagine diverse](assets/chapter-3/re-using-rendered-fragment.png)
 
@@ -337,7 +337,7 @@ Ci sono due meravigliose bellezze di questo schema facilmente perduto:
 
 2. Anche l’invalidazione è estremamente semplice. Ogni volta che cambia qualcosa nel tuo sito web, vuoi annullare la validità di questa voce della cache. La ricostruzione è relativamente economica, in quanto deve essere eseguita una sola volta e poi viene riutilizzata da tutte le centinaia di pagine.
 
-Questo è un grande sollievo per i server Publish.
+Questo è un grande sollievo per i server di pubblicazione.
 
 ### Implementazione delle cache dei frammenti
 
@@ -503,9 +503,9 @@ Un errore comune, che abbiamo riscontrato troppo spesso, è che il test delle pr
 
 Se promuovi l’applicazione al sistema live, il carico è completamente diverso da quello testato.
 
-Nel sistema live, il pattern di accesso non è quel numero ridotto di pagine equamente distribuite che si hanno nei test (pagina home e poche pagine di contenuto). Il numero di pagine è molto più grande e le richieste sono distribuite in modo molto disomogeneo. E, naturalmente, le pagine live non possono essere servite al 100% dalla cache: esistono richieste di invalidazione provenienti dal sistema Publish che causano l’invalidazione automatica di una porzione enorme delle tue preziose risorse.
+Nel sistema live, il pattern di accesso non è quel numero ridotto di pagine equamente distribuite che si hanno nei test (pagina home e poche pagine di contenuto). Il numero di pagine è molto più grande e le richieste sono distribuite in modo molto disomogeneo. E naturalmente le pagine live non possono essere servite al 100% dalla cache: esistono richieste di invalidazione provenienti dal sistema di pubblicazione che causano l’invalidazione automatica di una porzione enorme delle tue preziose risorse.
 
-Ah sì - e quando si sta ricostruendo la cache di Dispatcher, scoprirete, che il sistema Publish si comporta in modo molto diverso, a seconda se si richiede solo una manciata di pagine - o un numero più grande. Anche se tutte le pagine sono altrettanto complesse, il loro numero ha un ruolo. Ricordate cosa abbiamo detto sul caching concatenato? Se richiedi sempre lo stesso numero ridotto di pagine, è probabile che i blocchi corrispondenti con i dati non elaborati si trovino nella cache dei dischi rigidi o che i blocchi vengano memorizzati nella cache dal sistema operativo. Inoltre, c’è una buona probabilità che l’archivio abbia memorizzato nella cache il segmento corrispondente nella sua memoria principale. Il rendering è quindi notevolmente più rapido rispetto a quando altre pagine venivano eliminate a vicenda di tanto in tanto da diverse cache.
+Ah sì - e quando si sta ricostruendo la cache di Dispatcher, scoprirai che il sistema di pubblicazione si comporta in modo molto diverso, a seconda che si richieda solo una manciata di pagine - o un numero maggiore. Anche se tutte le pagine sono altrettanto complesse, il loro numero ha un ruolo. Ricordate cosa abbiamo detto sul caching concatenato? Se richiedi sempre lo stesso numero ridotto di pagine, è probabile che i blocchi corrispondenti con i dati non elaborati si trovino nella cache dei dischi rigidi o che i blocchi vengano memorizzati nella cache dal sistema operativo. Inoltre, c’è una buona probabilità che l’archivio abbia memorizzato nella cache il segmento corrispondente nella sua memoria principale. Il rendering è quindi notevolmente più rapido rispetto a quando altre pagine venivano eliminate a vicenda di tanto in tanto da diverse cache.
 
 La memorizzazione in cache è difficile, così come il test di un sistema che si basa sulla memorizzazione in cache. Quindi, cosa si può fare per avere uno scenario più accurato nella vita reale?
 
@@ -513,7 +513,7 @@ La memorizzazione in cache è difficile, così come il test di un sistema che si
 
 Se disponi già di un sito web, misura il numero di richieste e come vengono distribuite. Prova a modellare un test che utilizza una distribuzione simile delle richieste. Aggiungere un po&#39; di casualità non poteva far male. Non è necessario simulare un browser che carichi risorse statiche come JS e CSS, perché in realtà non contano. Alla fine vengono memorizzati nella cache nel browser o nel Dispatcher e non tornano al carico in modo significativo. Ma le immagini di riferimento hanno un impatto reale. Trova la loro distribuzione anche nei vecchi file di registro e modella un modello di richiesta simile.
 
-Ora esegui un test con il Dispatcher che non memorizza nella cache. Quello è lo scenario peggiore. Scoprite a quale picco di carico il vostro sistema sta diventando instabile in queste peggiori condizioni. Se lo desideri, potresti anche peggiorare la situazione togliendo alcune gambe Dispatcher/Publish.
+Ora esegui un test con il Dispatcher che non memorizza nella cache. Quello è lo scenario peggiore. Scoprite a quale picco di carico il vostro sistema sta diventando instabile in queste peggiori condizioni. Se lo desideri, potresti anche peggiorare la situazione togliendo alcune gambe a Dispatcher/Publish.
 
 Quindi, esegui lo stesso test con tutte le impostazioni della cache richieste su &quot;on&quot;. Aumenta lentamente le richieste parallele per riscaldare la cache e osserva quanto il sistema può richiedere in queste condizioni di caso migliore.
 
@@ -523,4 +523,4 @@ Puoi variare l’ultimo scenario aumentando le richieste di invalidazione e aume
 
 È un po&#39; più complesso di un semplice test di carico lineare, ma offre molta più fiducia nella tua soluzione.
 
-Potresti evitare lo sforzo. Ma almeno condurre un test del caso peggiore sul sistema Publish con un numero maggiore di pagine (equamente distribuite) per vedere i limiti del sistema. Assicurati di interpretare correttamente il numero dello scenario migliore e di eseguire il provisioning dei sistemi con sufficiente spazio di crescita.
+Potresti evitare lo sforzo. Ma almeno esegui un test del caso peggiore sul sistema Publish con un numero maggiore di pagine (equamente distribuite) per vedere i limiti del sistema. Assicurati di interpretare correttamente il numero dello scenario migliore e di eseguire il provisioning dei sistemi con sufficiente spazio di crescita.

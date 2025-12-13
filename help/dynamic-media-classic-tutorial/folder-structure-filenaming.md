@@ -8,10 +8,10 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
 duration: 253
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -77,7 +77,7 @@ Si tratta di un sistema molto semplice, utile se si hanno esigenze modeste. Tutt
 | AA123 | Visualizzazioni alternative | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |         | Visualizzazioni colorate | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_ROSSO AA123_MARRONE |
 |         | Campioni | AA123_BLU_SW.tif | AA123_BLU_SW |
-|         | Set immagini o set campioni |                                             | AA123 o AA123_SET | — |
+|         | Set immagini o set campioni |                                             | AA123 o AA123_SET |
 
 Quando si tratta di insiemi di set di immagini, ad esempio Set di immagini e Set di campioni, anche il set deve avere un nome univoco. In questo caso, al set si può assegnare lo SKU di base come nome o lo SKU con un&#39;estensione &quot;_SET&quot;.
 

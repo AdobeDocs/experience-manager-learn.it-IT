@@ -1,16 +1,16 @@
 ---
 title: Capitolo 1 - Concetti, modelli e antipatemi di Dispatcher
-description: Questo capitolo fornisce una breve introduzione sulla storia e la meccanica di Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore AEM progetterebbe i suoi componenti.
+description: Questo capitolo fornisce una breve introduzione alla storia e alla meccanica di Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore AEM progetterebbe i suoi componenti.
 feature: Dispatcher
 topic: Architecture
-role: Architect
+role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
 duration: 3855
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '17384'
+source-wordcount: '17382'
 ht-degree: 0%
 
 ---
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 ## Panoramica
 
-Questo capitolo fornisce una breve introduzione sulla storia e la meccanica di Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore AEM progetterebbe i suoi componenti.
+Questo capitolo fornisce una breve introduzione alla storia e alla meccanica di Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore AEM progetterebbe i suoi componenti.
 
 ## Perché gli sviluppatori dovrebbero preoccuparsi dell&#39;infrastruttura
 
-Il Dispatcher è una parte essenziale della maggior parte delle installazioni dell&#39;AEM, se non di tutte. Puoi trovare molti articoli online che illustrano come configurare Dispatcher, nonché suggerimenti e trucchi.
+Dispatcher è una parte essenziale della maggior parte delle installazioni di AEM, se non di tutte. Puoi trovare molti articoli online che illustrano come configurare Dispatcher, nonché suggerimenti e trucchi.
 
 Tuttavia, queste informazioni partono sempre da un livello molto tecnico, supponendo che tu sappia già cosa desideri fare e quindi fornisca solo i dettagli su come ottenere ciò che desideri. Non è mai stato trovato alcun documento concettuale che descriva _cosa è e perché è_ quando si tratta di cosa è possibile fare con Dispatcher.
 
 ### Antipattern: Dispatcher come postpensiero
 
-Questa mancanza di informazioni di base porta a una serie di anti-pattern che abbiamo visto in una serie di progetti AEM:
+Questa mancanza di informazioni di base porta a una serie di anti-pattern Che abbiamo visto in diversi progetti AEM:
 
 1. Poiché Dispatcher viene installato nel server web Apache, la sua configurazione spetta agli &quot;dei Unix&quot; del progetto. Uno &quot;sviluppatore Java mortale&quot; non ha bisogno di preoccuparsi di esso.
 
@@ -51,7 +51,7 @@ Tuttavia, il consiglio di &quot;prima farlo funzionare - poi farlo in fretta&quo
 
 3. Modelli di software che vengono utilizzati e riutilizzati più e più volte, in tutte le parti del sistema. Se il modello software risulta non ottimale, tutti gli artefatti che utilizzano il modello devono essere codificati nuovamente.
 
-Ricordi? In cima a questa pagina abbiamo detto che il Dispatcher è una parte essenziale di un&#39;applicazione AEM. L’accesso a un’applicazione web è molto casuale: gli utenti arrivano e partono in momenti imprevedibili. Alla fine, tutti i contenuti saranno (o dovrebbero) memorizzati nella cache di Dispatcher. Quindi, se presti molta attenzione, potresti aver capito che la memorizzazione in cache potrebbe essere vista come un artefatto &quot;architetturale&quot; e quindi dovrebbe essere compresa da tutti i membri del team, sviluppatori e amministratori allo stesso modo.
+Ricordi? In cima a questa pagina abbiamo detto che Dispatcher è una parte essenziale di un’applicazione AEM. L’accesso a un’applicazione web è molto casuale: gli utenti arrivano e partono in momenti imprevedibili. Alla fine, tutti i contenuti saranno (o dovrebbero) memorizzati nella cache di Dispatcher. Quindi, se presti molta attenzione, potresti aver capito che la memorizzazione in cache potrebbe essere vista come un artefatto &quot;architetturale&quot; e quindi dovrebbe essere compresa da tutti i membri del team, sviluppatori e amministratori allo stesso modo.
 
 Non stiamo dicendo che uno sviluppatore debba effettivamente configurare Dispatcher. Devono conoscere i concetti, in particolare i confini, per assicurarsi che il loro codice possa essere utilizzato anche da Dispatcher.
 
@@ -69,9 +69,9 @@ Il Dispatcher è
 
 * Un proxy inverso
 
-* Un modulo per il server web Apache httpd, che aggiunge funzionalità relative all’AEM alla versatilità di Apache e funziona senza problemi insieme a tutti gli altri moduli Apache (come SSL o anche SSI include come vedremo in seguito)
+* Un modulo per il server web Apache httpd, che aggiunge funzioni relative ad AEM alla versatilità di Apache e funziona senza problemi insieme a tutti gli altri moduli Apache (come SSL o anche SSI include come vedremo in seguito)
 
-Nei primi giorni del web, ci si aspetta qualche centinaio di visitatori di un sito. La configurazione di un Dispatcher, &quot;inviato&quot; o bilanciava il carico di richieste a diversi server di pubblicazione AEM e che di solito era sufficiente, quindi il nome &quot;Dispatcher&quot;. Al giorno d’oggi, tuttavia, questa configurazione non viene più utilizzata molto frequentemente.
+Nei primi giorni del web, ci si aspetta qualche centinaio di visitatori di un sito. La configurazione di un’istanza di Dispatcher, ha &quot;inviato&quot; o bilanciato il carico di richieste a diversi server di pubblicazione AEM e in genere era sufficiente, quindi il nome &quot;Dispatcher&quot;. Al giorno d’oggi, tuttavia, questa configurazione non viene più utilizzata molto frequentemente.
 
 Vedremo diversi modi per configurare i sistemi Dispatcher e Publish più avanti in questo articolo. Iniziamo con alcune nozioni di base sulla memorizzazione in cache http.
 
@@ -85,28 +85,28 @@ Le nozioni di base del dispatcher sono illustrate qui. Dispatcher è un proxy in
 
 1. Un utente richiede una pagina
 2. Dispatcher controlla se dispone già di una versione di cui è stato eseguito il rendering della pagina. Supponiamo che sia la prima richiesta per questa pagina e che Dispatcher non riesca a trovare una copia locale memorizzata nella cache.
-3. Il Dispatcher richiede la pagina dal sistema Publish
-4. Sul sistema Publish, la pagina viene riprodotta da una JSP o da un modello HTL
+3. Dispatcher richiede la pagina dal sistema di pubblicazione
+4. Nel sistema di pubblicazione, la pagina viene riprodotta da un modello JSP o HTL
 5. La pagina viene restituita al Dispatcher
 6. Dispatcher memorizza nella cache la pagina
 7. Dispatcher restituisce la pagina al browser
-8. Se la stessa pagina viene richiesta una seconda volta, può essere servita direttamente dalla cache di Dispatcher senza la necessità di eseguirne nuovamente il rendering sull’istanza di Publish. Questo consente di risparmiare tempo di attesa per i cicli dell’utente e della CPU sull’istanza di Publish.
+8. Se la stessa pagina viene richiesta una seconda volta, può essere servita direttamente dalla cache di Dispatcher senza la necessità di eseguirne nuovamente il rendering sull’istanza Publish. In questo modo si risparmia il tempo di attesa per i cicli dell’utente e di CPU sull’istanza Publish.
 
 Stavamo parlando di &quot;pagine&quot; nell&#39;ultima sezione. Ma lo stesso schema si applica anche ad altre risorse come immagini, file CSS, download di PDF e così via.
 
 #### Memorizzazione In Cache Dei Dati
 
-Il modulo Dispatcher sfrutta le funzionalità fornite dal server Apache che lo ospita. Risorse quali pagine di HTML, download e immagini vengono memorizzate come file semplici nel file system Apache. È così semplice.
+Il modulo Dispatcher sfrutta le funzionalità fornite dal server Apache che lo ospita. Risorse quali pagine HTML, download e immagini vengono memorizzate come file semplici nel file system Apache. È così semplice.
 
 Il nome del file è derivato dall’URL della risorsa richiesta. Se si richiede un file `/foo/bar.html`, questo verrà memorizzato, ad esempio, in /`var/cache/docroot/foo/bar.html`.
 
-In linea di principio, se tutti i file sono memorizzati nella cache e quindi memorizzati in modo statico in Dispatcher, è possibile estrarre la spina del sistema Publish e il Dispatcher funge da semplice server web. Ma questo serve solo per illustrare il principio. La vita reale è più complicata. Non è possibile memorizzare tutto in cache e la cache non è mai completamente &quot;piena&quot;, in quanto il numero di risorse può essere infinito a causa della natura dinamica del processo di rendering. Il modello di un file system statico consente di generare un’immagine approssimativa delle funzionalità del dispatcher. E aiuta a spiegare i limiti del dispatcher.
+In linea di principio, se tutti i file sono memorizzati nella cache e quindi memorizzati in modo statico in Dispatcher, è possibile richiamare la spina del sistema Publish e Dispatcher funge da semplice server web. Ma questo serve solo per illustrare il principio. La vita reale è più complicata. Non è possibile memorizzare tutto in cache e la cache non è mai completamente &quot;piena&quot;, in quanto il numero di risorse può essere infinito a causa della natura dinamica del processo di rendering. Il modello di un file system statico consente di generare un’immagine approssimativa delle funzionalità del dispatcher. E aiuta a spiegare i limiti del dispatcher.
 
-#### Struttura degli URL dell’AEM e mappatura del file system
+#### Struttura degli URL di AEM e mappatura del file system
 
 Per comprendere il Dispatcher in modo più dettagliato, rivediamo la struttura di un semplice URL di esempio.  Vediamo l’esempio seguente,
 
-`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&otherparameter=value#fragment`
+`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&amp;otherparameter=value#fragment`
 
 * `http` indica il protocollo
 
@@ -114,9 +114,9 @@ Per comprendere il Dispatcher in modo più dettagliato, rivediamo la struttura d
 
 * `path/to/resource` è il percorso in cui la risorsa viene archiviata in CRX e successivamente nel file system del server Apache
 
-Da qui, le cose sono un po&#39; diverse tra il file system dell&#39;AEM e quello di Apache.
+Da qui, le cose tra il file system di AEM e quello di Apache sono un po’ diverse.
 
-Nell&#39;AEM,
+In AEM,
 
 * `pagename` è l&#39;etichetta delle risorse
 
@@ -124,11 +124,11 @@ Nell&#39;AEM,
 
 * `html` come ultimo dei &quot;selettori&quot; è chiamato estensione. In AEM/Sling determina anche in parte lo script di rendering.
 
-* `path/suffix.ext` è un&#39;espressione simile a un percorso che può essere un suffisso per l&#39;URL.  Può essere utilizzato negli script AEM per controllare ulteriormente il rendering di una risorsa. In seguito verrà visualizzata un&#39;intera sezione relativa a questa parte. Per il momento, dovrebbe essere sufficiente sapere che puoi utilizzarlo come parametro aggiuntivo. I suffissi devono avere un&#39;estensione.
+* `path/suffix.ext` è un&#39;espressione simile a un percorso che può essere un suffisso per l&#39;URL.  Può essere utilizzato negli script di AEM per controllare ulteriormente il rendering di una risorsa. In seguito verrà visualizzata un&#39;intera sezione relativa a questa parte. Per il momento, dovrebbe essere sufficiente sapere che puoi utilizzarlo come parametro aggiuntivo. I suffissi devono avere un&#39;estensione.
 
-* `?parameter=value&otherparameter=value` è la sezione query dell&#39;URL. Viene utilizzato per trasmettere parametri arbitrari all’AEM. Gli URL con parametri non possono essere memorizzati in cache e pertanto i parametri devono essere limitati ai casi in cui sono assolutamente necessari.
+* `?parameter=value&otherparameter=value` è la sezione query dell&#39;URL. Viene utilizzato per trasmettere parametri arbitrari ad AEM. Gli URL con parametri non possono essere memorizzati in cache e pertanto i parametri devono essere limitati ai casi in cui sono assolutamente necessari.
 
-* `#fragment`, la parte di frammento di un URL non viene passata all&#39;AEM e viene utilizzata solo nel browser; in JavaScript funziona come &quot;parametri di routing&quot; o per passare a una determinata parte della pagina.
+* `#fragment`, la parte di frammento di un URL non viene passata ad AEM ma viene utilizzata solo nel browser; in JavaScript funziona come &quot;parametri di routing&quot; o per passare a una determinata parte della pagina.
 
 In Apache (*fare riferimento al diagramma seguente*),
 
@@ -162,7 +162,7 @@ Potresti tuttavia aver notato alcune trappole,
 
 #### Gli URL senza estensione non vengono memorizzati in cache
 
-Gli URL devono sempre avere un’estensione. Anche se puoi distribuire URL senza estensioni in AEM. Questi URL non verranno memorizzati nella cache in Dispatcher.
+Gli URL devono sempre avere un’estensione. Anche se è possibile distribuire URL senza estensioni in AEM. Questi URL non verranno memorizzati nella cache in Dispatcher.
 
 **Esempi**
 
@@ -200,11 +200,11 @@ e
 
 `http://domain.com/home.html/suffix.html`
 
-Sono assolutamente validi nell&#39;AEM. Non vedrai alcun problema sul tuo computer di sviluppo locale (senza un Dispatcher). Molto probabilmente non incontrerai alcun problema nei test UAT o di carico. Il problema che stiamo affrontando è così sottile che passa attraverso la maggior parte dei test.  Ti colpirà duramente quando sei al momento di picco e hai un tempo limitato per affrontarlo, probabilmente non hai accesso al server e non disponi di risorse per correggerlo. Siamo stati lì...
+Sono assolutamente validi in AEM. Non vedrai alcun problema sul tuo computer di sviluppo locale (senza un Dispatcher). Molto probabilmente non incontrerai alcun problema nei test UAT o di carico. Il problema che stiamo affrontando è così sottile che passa attraverso la maggior parte dei test.  Ti colpirà duramente quando sei al momento di picco e hai un tempo limitato per affrontarlo, probabilmente non hai accesso al server e non disponi di risorse per correggerlo. Siamo stati lì...
 
 Allora... qual è il problema?
 
-`home.html` in un file system può essere un file o una cartella. Non entrambi contemporaneamente all’AEM.
+`home.html` in un file system può essere un file o una cartella. Non entrambi contemporaneamente come in AEM.
 
 Se prima richiedi `home.html`, verrà creato come file.
 
@@ -261,7 +261,7 @@ Esaminiamo un breve riepilogo dell’ultimo capitolo, oltre ad altre eccezioni. 
 * URL senza estensione
 * URL con suffisso senza estensione
 * Risposta che restituisce un codice di stato diverso da 200
-* Richiesta POST
+* richiesta POST
 
 ## Annullamento della validità e svuotamento della cache
 
@@ -277,7 +277,7 @@ Questo sembra essere un compito banale a prima vista... ma non lo è. Leggi l’
 
 ### Risorse semplici e scaricamento
 
-Abbiamo impostato il nostro sistema AEM per creare in modo dinamico una rappresentazione in miniatura di ogni immagine, quando richiesta con uno speciale selettore &quot;thumb&quot;:
+Abbiamo impostato il nostro sistema AEM per creare in modo dinamico una rappresentazione in miniatura di ogni immagine, quando richiesto con uno speciale selettore &quot;thumb&quot;:
 
 `/content/dam/path/to/image.thumb.png`
 
@@ -295,7 +295,7 @@ Se scaricassimo entrambi, la miniatura e l&#39;immagine originale, finiremo con 
 
 nel file system Dispatcher.
 
-Ora l’utente carica e attiva una nuova versione di tale file. In ultima analisi, l’AEM invia una richiesta di annullamento della validità al Dispatcher,
+Ora l’utente carica e attiva una nuova versione di tale file. In ultima analisi, viene inviata una richiesta di annullamento della validità da AEM a Dispatcher,
 
 ```
 GET /invalidate
@@ -304,7 +304,7 @@ invalidate-path:  /content/dam/path/to/image
 <no body>
 ```
 
-L’annullamento della validità è così semplice: una semplice richiesta di GET a un URL speciale &quot;/invalidate&quot; su Dispatcher. Non è necessario un corpo HTTP, il &quot;payload&quot; è solo l’intestazione &quot;invalidate-path&quot;. Inoltre, il percorso invalidate nell’intestazione è la risorsa nota all’AEM e non il file o i file memorizzati in cache da Dispatcher. L&#39;AEM sa solo delle risorse. Le estensioni, i selettori e i suffissi vengono utilizzati in fase di esecuzione quando viene richiesta una risorsa. L’AEM non esegue alcuna contabilità relativa ai selettori utilizzati in una risorsa, pertanto il percorso della risorsa è tutto ciò che sa con certezza quando attiva una risorsa.
+L’annullamento della validità è così semplice: una semplice richiesta GET a un URL speciale &quot;/invalidate&quot; sul Dispatcher. Non è necessario un corpo HTTP, il &quot;payload&quot; è solo l’intestazione &quot;invalidate-path&quot;. Inoltre, il percorso invalidate nell’intestazione è la risorsa nota ad AEM e non il file o i file memorizzati in cache da Dispatcher. AEM conosce solo le risorse. Le estensioni, i selettori e i suffissi vengono utilizzati in fase di esecuzione quando viene richiesta una risorsa. AEM non esegue alcuna contabilità relativa ai selettori utilizzati in una risorsa, pertanto il percorso della risorsa è tutto ciò che sa con certezza quando attiva una risorsa.
 
 Questo è sufficiente nel nostro caso. Se una risorsa è stata modificata, possiamo tranquillamente supporre che siano state modificate anche tutte le relative rappresentazioni. Nel nostro esempio, se l’immagine è stata modificata, viene riprodotta anche una nuova miniatura.
 
@@ -320,7 +320,7 @@ Super semplice, infatti... purché si utilizzi una sola risorsa solo per rispond
 
 #### Il problema del contenuto mescolato
 
-A differenza delle immagini o di altri file binari caricati su AEM, le pagine di HTML non sono animali solitari. Vivono in stormi e sono altamente interconnessi tra loro tramite collegamenti ipertestuali e riferimenti. Il semplice collegamento è innocuo, ma diventa difficile quando si parla di riferimenti ai contenuti. L’onnipresente navigazione superiore o i teaser sulle pagine sono riferimenti a contenuti.
+A differenza delle immagini o di altri file binari caricati su AEM, le pagine HTML non sono animali solitari. Vivono in stormi e sono altamente interconnessi tra loro tramite collegamenti ipertestuali e riferimenti. Il semplice collegamento è innocuo, ma diventa difficile quando si parla di riferimenti ai contenuti. L’onnipresente navigazione superiore o i teaser sulle pagine sono riferimenti a contenuti.
 
 #### Riferimenti ai contenuti e perché sono un problema
 
@@ -336,7 +336,7 @@ oppure
 
 ![](assets/chapter-1/content-references.png)
 
-Solo sull&#39;AEM funziona come fascino, ma se usi un Dispatcher sull&#39;istanza Publish succede qualcosa di strano.
+Solo su AEM funziona come charm, ma se usi un Dispatcher sull’istanza Publish succede qualcosa di strano.
 
 Immagina di aver pubblicato il sito web. Il titolo sulla pagina Canada è &quot;Canada&quot;. Quando un visitatore richiede la tua home page (che ha un riferimento teaser a quella pagina), il componente della pagina &quot;Canada&quot; esegue il rendering di un elemento simile a
 
@@ -351,7 +351,7 @@ Immagina di aver pubblicato il sito web. Il titolo sulla pagina Canada è &quot;
 
 Ora l’addetto al marketing ha imparato che i titoli dei teaser dovrebbero essere actionable. Decide quindi di cambiare il titolo da &quot;Canada&quot; a &quot;Visit Canada&quot; (Visita il Canada) e aggiorna anche l&#39;immagine.
 
-Pubblica la pagina &quot;Canada&quot; modificata e rivede la home page precedentemente pubblicata per vedere le sue modifiche. Ma... non è cambiato niente. Viene comunque visualizzato il vecchio teaser. Fa un doppio controllo sul &quot;Winter Special&quot;. Tale pagina non è mai stata richiesta in precedenza e pertanto non viene memorizzata nella cache statica di Dispatcher. Pertanto, questa pagina è stata appena renderizzata da Publish e ora contiene il nuovo teaser &quot;Visit Canada&quot; (Visita Canada).
+Pubblica la pagina &quot;Canada&quot; modificata e rivede la home page precedentemente pubblicata per vedere le sue modifiche. Ma... non è cambiato niente. Viene comunque visualizzato il vecchio teaser. Fa un doppio controllo sul &quot;Winter Special&quot;. Tale pagina non è mai stata richiesta in precedenza e pertanto non viene memorizzata nella cache statica di Dispatcher. Quindi, questa pagina è stata appena renderizzata da Publish e ora contiene il nuovo teaser &quot;Visit Canada&quot; (Visita Canada).
 
 ![Archiviazione di contenuto incluso non aggiornato in Dispatcher nella home page](assets/chapter-1/dispatcher-storing-stale-content.png)
 
@@ -365,13 +365,13 @@ Dispatcher, essendo un semplice server web basato su file system, è veloce ma a
 
 La pagina &quot;Programma speciale invernale&quot; non è ancora stata renderizzata, quindi non esiste una versione statica di Dispatcher e viene visualizzata con il nuovo teaser in quanto viene riprodotto di recente su richiesta.
 
-Potresti pensare che Dispatcher tenga traccia di ogni risorsa toccata durante il rendering e lo scaricamento di tutte le pagine che hanno utilizzato questa risorsa, quando tale risorsa cambia. Ma Dispatcher non esegue il rendering delle pagine. Il rendering viene eseguito dal sistema Publish. Dispatcher non sa quali risorse vanno in un file con estensione html sottoposto a rendering.
+Potresti pensare che Dispatcher tenga traccia di ogni risorsa toccata durante il rendering e lo scaricamento di tutte le pagine che hanno utilizzato questa risorsa, quando tale risorsa cambia. Ma Dispatcher non esegue il rendering delle pagine. Il rendering viene eseguito dal sistema di pubblicazione. Dispatcher non sa quali risorse vanno in un file con estensione html sottoposto a rendering.
 
-Non sei ancora convinto? Potresti pensare che *&quot;ci debba essere un modo per implementare un qualche tipo di tracciamento delle dipendenze&quot;*. Beh, c&#39;è, o più precisamente c&#39;è *era*. Comunicato 3 il bis-bis-bis-bisnonno dell&#39;AEM ha implementato un tracciatore delle dipendenze nella _sessione_ che è stato utilizzato per il rendering di una pagina.
+Non sei ancora convinto? Potresti pensare che *&quot;ci debba essere un modo per implementare un qualche tipo di tracciamento delle dipendenze&quot;*. Beh, c&#39;è, o più precisamente c&#39;è *era*. Comunicato 3 il bis-bis-bis-bisnonno di AEM aveva un tracciatore delle dipendenze implementato nella _sessione_ che veniva utilizzato per il rendering di una pagina.
 
 Durante una richiesta, ogni risorsa acquisita tramite questa sessione è stata tracciata come una dipendenza dell’URL di cui era in corso il rendering.
 
-Ma si è scoperto che tenere traccia delle dipendenze era molto costoso. Le persone hanno presto scoperto che il sito web è più veloce se hanno disattivato completamente la funzione di tracciamento delle dipendenze e si sono affidate al rendering di tutte le pagine html dopo che una pagina html è stata modificata. Inoltre, anche tale regime non era perfetto, vi erano numerose insidie ed eccezioni in arrivo. In alcuni casi, non utilizzavi la sessione predefinita richieste per ottenere una risorsa, ma una sessione amministratore per ottenere alcune risorse di supporto per il rendering di una richiesta. Queste dipendenze di solito non venivano tracciate e portavano a problemi di testa e telefonate al team ops che chiedeva di svuotare manualmente la cache. Sei stato fortunato se avessero avuto una procedura standard per farlo. C&#39;erano altri errori lungo la strada, ma... smettiamola di ricordare. Questo ci porta molto indietro al 2005. In definitiva, questa funzione è stata disattivata nel comunicato 4 per impostazione predefinita e non è stata reinserita nel successivo CQ5 che è poi diventato AEM.
+Ma si è scoperto che tenere traccia delle dipendenze era molto costoso. Le persone hanno presto scoperto che il sito web è più veloce se hanno disattivato completamente la funzione di tracciamento delle dipendenze e si sono affidate al rendering di tutte le pagine html dopo che una pagina html è stata modificata. Inoltre, anche tale regime non era perfetto, vi erano numerose insidie ed eccezioni in arrivo. In alcuni casi, non utilizzavi la sessione predefinita richieste per ottenere una risorsa, ma una sessione amministratore per ottenere alcune risorse di supporto per il rendering di una richiesta. Queste dipendenze di solito non venivano tracciate e portavano a problemi di testa e telefonate al team ops che chiedeva di svuotare manualmente la cache. Sei stato fortunato se avessero avuto una procedura standard per farlo. C&#39;erano altri errori lungo la strada, ma... smettiamola di ricordare. Questo ci porta molto indietro al 2005. In ultima analisi, questa funzione è stata disattivata nel comunicato 4 per impostazione predefinita e non è stata reinserita nel successivo CQ5, che in seguito è diventato AEM.
 
 ### Annullamento automatico della validità
 
@@ -405,7 +405,7 @@ Se modifichi il NavTitle nella pagina Islanda da &quot;Islanda&quot; a &quot;Bel
 
 Ora, se si dispone di un sito di grandi dimensioni con migliaia di pagine, ci vorrebbe un po&#39; di tempo per eseguire un ciclo tra tutte le pagine ed eliminarle fisicamente. Durante questo periodo, Dispatcher potrebbe distribuire involontariamente contenuti non aggiornati. Ancora peggio, potrebbero verificarsi alcuni conflitti durante l’accesso ai file della cache, ad esempio una pagina viene richiesta mentre è in corso la sua eliminazione o una pagina viene eliminata di nuovo a causa di un secondo annullamento della validità che si è verificato dopo un’attivazione immediatamente successiva. Considera che casino sarebbe. Fortunatamente questo non è quello che succede. Dispatcher utilizza un trucco intelligente per evitare che: invece di eliminare centinaia e migliaia di file, inserisce un file semplice e vuoto nella radice del file system quando un file viene pubblicato e quindi tutti i file dipendenti vengono considerati non validi. Questo file è denominato &quot;statfile&quot;. Lo statfile è un file vuoto - ciò che conta sullo statfile è solo la sua data di creazione.
 
-Tutti i file nel dispatcher, che hanno una data di creazione precedente allo statfile, sono stati renderizzati prima dell’ultima attivazione (e invalidamento) e sono quindi considerati &quot;non validi&quot;. Sono ancora fisicamente presenti nel file system, ma la Dispatcher li ignora. Sono &quot;obsoleti&quot;. Ogni volta che viene effettuata una richiesta a una risorsa non aggiornata, il Dispatcher chiede al sistema AEM di eseguire nuovamente il rendering della pagina. La pagina appena sottoposta a rendering viene quindi memorizzata nel file system, ora con una nuova data di creazione ed è di nuovo aggiornata.
+Tutti i file nel dispatcher, che hanno una data di creazione precedente allo statfile, sono stati renderizzati prima dell’ultima attivazione (e invalidamento) e sono quindi considerati &quot;non validi&quot;. Sono ancora fisicamente presenti nel file system, ma la Dispatcher li ignora. Sono &quot;obsoleti&quot;. Ogni volta che viene effettuata una richiesta a una risorsa non aggiornata, Dispatcher chiede al sistema AEM di eseguire nuovamente il rendering della pagina. La pagina appena sottoposta a rendering viene quindi memorizzata nel file system, ora con una nuova data di creazione ed è di nuovo aggiornata.
 
 ![La data di creazione del file .stat definisce quale contenuto è obsoleto e quale fresco](assets/chapter-1/creation-date.png)
 
@@ -429,7 +429,7 @@ Il Dispatcher decide sull’estensione del file se applicare o meno lo schema di
 
 È possibile configurare le terminazioni dei file per l’annullamento automatico della validità. In teoria, puoi includere tutte le estensioni all’annullamento automatico della validità. Ma tenete presente che il prezzo è molto alto. Non vedrai risorse obsolete consegnate involontariamente, ma le prestazioni di consegna si riducono notevolmente a causa di un annullamento eccessivo della validità.
 
-Immagina, ad esempio, di implementare uno schema in cui i PNG e i JPG dell’vengono sottoposti a rendering in modo dinamico e dipendono da altre risorse per farlo. È possibile ridimensionare le immagini ad alta risoluzione a una risoluzione compatibile con il Web più piccola. Mentre ci sei, cambia anche il tasso di compressione. La risoluzione e il tasso di compressione in questo esempio non sono costanti fisse, ma parametri configurabili nel componente che utilizza l’immagine. Ora, se questo parametro viene modificato, devi invalidare le immagini.
+Immagina, ad esempio, di implementare uno schema in cui i file PNG e JPG vengono riprodotti in modo dinamico e dipendono da altre risorse per farlo. È possibile ridimensionare le immagini ad alta risoluzione a una risoluzione compatibile con il Web più piccola. Mentre ci sei, cambia anche il tasso di compressione. La risoluzione e il tasso di compressione in questo esempio non sono costanti fisse, ma parametri configurabili nel componente che utilizza l’immagine. Ora, se questo parametro viene modificato, devi invalidare le immagini.
 
 Nessun problema - abbiamo appena appreso che potevamo aggiungere immagini all’annullamento automatico della validità e avere sempre immagini appena riprodotte ogni volta che qualcosa cambia.
 
@@ -445,7 +445,7 @@ Le risorse autonome devono essere distribuite nel percorso della risorsa. Questo
 
 ##### Eccezioni all&#39;annullamento automatico della validità: annullamento della validità solo risorsa
 
-La richiesta di annullamento della validità per Dispatcher viene in genere attivata dai sistemi Publish da un agente di replica.
+La richiesta di annullamento della validità per Dispatcher viene in genere attivata dai sistemi di pubblicazione da un agente di replica.
 
 Se si è certi delle proprie dipendenze, è possibile provare a creare un agente di replica di cui annullare la validità.
 
@@ -479,11 +479,11 @@ Ora vogliamo applicare queste meccaniche a un tipo di componenti che molto proba
 
 Illustriamo un pattern comune (o anti-pattern) di un componente con binari interconnessi. Creeremo un componente &quot;respi&quot; per &quot;responsive-image&quot;. Questo componente deve essere in grado di adattare l’immagine visualizzata al dispositivo su cui viene visualizzata. Su desktop e tablet mostra la piena risoluzione dell&#39;immagine, su telefoni una versione più piccola con un ritaglio stretto - o forse anche un motivo completamente diverso (questo è chiamato &quot;art direction&quot; nel mondo reattivo).
 
-Le risorse vengono caricate nell&#39;area DAM dell&#39;AEM e solo _a cui si fa riferimento_ nel componente responsive-image.
+Le risorse vengono caricate nell&#39;area DAM di AEM e solo _a cui si fa riferimento_ nel componente immagine reattiva.
 
 Il componente respi si occupa sia del rendering del markup che della distribuzione dei dati dell’immagine binaria.
 
-Il modo in cui lo implementiamo qui è un modello comune che abbiamo visto in molti progetti e anche uno dei componenti core dell&#39;AEM si basa su questo modello. Pertanto, è molto probabile che voi come sviluppatore possiate adattare quel modello. Ha i suoi punti dolci in termini di incapsulamento, ma richiede un grande sforzo per renderlo Dispatcher-ready. In seguito verranno illustrate diverse opzioni per mitigare il problema.
+Il modo in cui lo implementiamo qui è un modello comune che abbiamo visto in molti progetti e anche uno dei Componenti core di AEM si basa su tale modello. Pertanto, è molto probabile che voi come sviluppatore possiate adattare quel modello. Ha i suoi punti dolci in termini di incapsulamento, ma richiede un grande sforzo per renderlo Dispatcher-ready. In seguito verranno illustrate diverse opzioni per mitigare il problema.
 
 Chiamiamo il modello usato qui il &quot;modello spooler&quot;, perché il problema risale ai primi giorni del comunicato 3 dove c&#39;era un metodo &quot;spooler&quot; che poteva essere chiamato su una risorsa per trasmettere i suoi dati binari nella risposta.
 
@@ -493,7 +493,7 @@ Il termine originale &quot;spooling&quot; in realtà si riferisce a periferiche 
 
 Ecco come viene implementato il componente immagine reattivo:
 
-Il componente è costituito da due parti; la prima esegue il rendering del markup HTML dell&#39;immagine, la seconda esegue lo spool dei dati binari dell&#39;immagine di riferimento. Poiché si tratta di un sito Web moderno con un design reattivo, non viene eseguito il rendering di un semplice tag `<img src"…">`, ma di un set di immagini nel tag `<picture/>`. Per ogni dispositivo, carichiamo due immagini diverse in DAM e facciamo riferimento a esse dal nostro componente immagine.
+Il componente è composto da due parti; la prima parte esegue il rendering del markup HTML dell&#39;immagine, la seconda &quot;effettua lo spool&quot; dei dati binari dell&#39;immagine di riferimento. Poiché si tratta di un sito Web moderno con un design reattivo, non viene eseguito il rendering di un semplice tag `<img src"…">`, ma di un set di immagini nel tag `<picture/>`. Per ogni dispositivo, carichiamo due immagini diverse in DAM e facciamo riferimento a esse dal nostro componente immagine.
 
 Il componente dispone di tre script di rendering (implementati in JSP, HTL o come servlet), ciascuno indirizzato con un selettore dedicato:
 
@@ -544,7 +544,7 @@ Ora l’utente richiede la pagina e le risorse tramite Dispatcher. Questo determ
 
 <br> 
 
-Considera che un utente carica e attiva una nuova versione delle due immagini fiore in DAM. L’AEM invierà la richiesta di annullamento della validità per
+Considera che un utente carica e attiva una nuova versione delle due immagini fiore in DAM. AEM invierà la richiesta di annullamento della validità per
 
 `/content/dam/flower.jpg`
 
@@ -572,7 +572,7 @@ C&#39;è un&#39;altra cautela in questo approccio. Considera di utilizzare lo st
 …
 ```
 
-Ogni volta che viene richiesta una pagina nuova e non memorizzata nella cache, le risorse vengono recuperate dall’AEM con URL diversi. La consegna non può essere velocizzata da un caching di Dispatcher o da un caching del browser.
+Ogni volta che viene richiesta una pagina nuova e non memorizzata in cache, le risorse vengono recuperate da AEM con URL diversi. La consegna non può essere velocizzata da un caching di Dispatcher o da un caching del browser.
 
 #### Punto di visualizzazione del motivo dello spooler
 
@@ -624,15 +624,15 @@ Una marca temporale Unix è sufficiente per un’implementazione reale. Per una 
 
 L’impronta digitale non deve essere utilizzata come parametro di query, in quanto gli URL con parametri di query   non può essere memorizzato nella cache. È possibile utilizzare un selettore o il suffisso per l&#39;impronta digitale.
 
-Supponiamo che il file `/content/dam/flower.jpg` abbia una data `jcr:lastModified` il 31 dicembre 2018, alle 23:59. L&#39;URL con l&#39;impronta digitale è `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
+Supponiamo che il file `/content/dam/flower.jpg` abbia una data `jcr:lastModified` il 31 dicembre 2018, 23:59. L&#39;URL con l&#39;impronta digitale è `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
 
 L&#39;URL rimane stabile finché il file della risorsa di riferimento (`flower.jpg`) non viene modificato. Quindi può essere memorizzato nella cache per un periodo di tempo indefinito e non è un cache killer.
 
-Nota: questo URL deve essere creato e gestito dal componente immagine reattivo. Non è una funzionalità AEM preconfigurata.
+Nota: questo URL deve essere creato e gestito dal componente immagine reattivo. Non è una funzionalità di AEM preconfigurata.
 
 Questo è il concetto di base. Ci sono tuttavia alcuni dettagli che potrebbero facilmente essere trascurati.
 
-Nel nostro esempio, il componente è stato renderizzato e memorizzato nella cache alle 23:59. Ora l’immagine è stata modificata, diciamo alle 00:00.  Il componente _avrebbe_ generato un nuovo URL impresso nel relativo markup.
+Nel nostro esempio, il componente è stato renderizzato e memorizzato nella cache in 23:59. Ora l&#39;immagine è stata modificata, ad esempio alle 00:00.  Il componente _avrebbe_ generato un nuovo URL impresso nel relativo markup.
 
 Potresti pensare che _dovrebbe_... ma non è così. Poiché è stato modificato solo il binario dell’immagine e la pagina inclusa non è stata toccata, non è necessario eseguire nuovamente il rendering del markup HTML. Quindi, il Dispatcher serve la pagina con la vecchia impronta digitale, e quindi la vecchia versione dell&#39;immagine.
 
@@ -664,7 +664,7 @@ Comprenderai i vantaggi di livelli di statfile più profondi un po&#39; più tar
 
 #### Implementazione di un agente di invalidazione personalizzato
 
-In ogni caso, è necessario informare in qualche modo Dispatcher, per annullare la validità dei HTML-page se viene modificato un &quot;.jpg&quot; o un &quot;.png&quot; per consentire il rendering con un nuovo URL.
+In ogni caso, dobbiamo informare in qualche modo Dispatcher, per annullare la validità delle HTML-Pages se viene modificato un &quot;.jpg&quot; o un &quot;.png&quot; per consentire il rendering con un nuovo URL.
 
 Ciò che abbiamo visto nei progetti è, ad esempio, agenti di replica speciali sul sistema di pubblicazione che inviano richieste di invalidazione per un sito ogni volta che viene pubblicata un’immagine di quel sito.
 
@@ -742,9 +742,9 @@ Stiamo abusando di un selettore come parametro: fp-2018-31-12-23-59 viene genera
 …
 ```
 
-Ogni richiesta ignora il Dispatcher, causando il caricamento su un’istanza di Publish. E - ancora peggio - creare un file corrispondente sul Dispatcher.
+Ogni richiesta ignora il Dispatcher, causando il caricamento su un’istanza Publish. E - ancora peggio - creare un file corrispondente sul Dispatcher.
 
-Quindi... invece di usare l&#39;impronta digitale come un semplice cache-killer, dovresti controllare la data jcr:lastModified dell&#39;immagine e restituire un 404 se non è la data prevista. Questo richiede un po&#39; di tempo e cicli di CPU sul sistema Publish... che è quello che volevi evitare in primo luogo.
+Quindi... invece di utilizzare l&#39;impronta digitale come semplice cache-killer, è necessario controllare la data jcr:lastModified dell&#39;immagine e restituire 404 se non è la data prevista. Questo richiede un po&#39; di tempo e cicli di CPU sul sistema di pubblicazione... che è quello che volevi evitare in primo luogo.
 
 #### Avvertenze relative alle impronte digitali degli URL nelle versioni ad alta frequenza
 
@@ -752,11 +752,11 @@ Puoi utilizzare lo schema di impronta digitale non solo per le risorse provenien
 
 [Clientlibs con versione](https://adobe-consulting-services.github.io/acs-aem-commons/features/versioned-clientlibs/index.html) è un modulo che utilizza questo approccio.
 
-Ma qui potresti trovarti di fronte a un’altra avvertenza: collegare l’URL al contenuto. Non è possibile modificare il contenuto senza modificare anche l’URL (ad esempio, aggiornare la data di modifica). Questo è ciò per cui le impronte digitali sono state progettate. Ma considera che stai implementando una nuova versione, con nuovi file CSS e JS e quindi nuovi URL con nuove impronte digitali. Tutte le pagine HTML contengono ancora riferimenti ai vecchi URL prestampati con le impronte digitali. Pertanto, per far funzionare la nuova versione in modo coerente, è necessario invalidare tutte le pagine HTML contemporaneamente per forzare un nuovo rendering con riferimenti ai file appena rilevati dalle impronte digitali. Se più siti si basano sulle stesse librerie, potrebbe essere necessario eseguire un rendering molto più rapido. In questo caso non è possibile sfruttare `statfiles`. Preparati quindi a visualizzare i picchi di carico sui sistemi Publish dopo un rollout. Potresti considerare una distribuzione blu-verde con riscaldamento della cache o forse una cache basata su TTL di fronte al Dispatcher ... le possibilità sono infinite.
+Ma qui potresti trovarti di fronte a un’altra avvertenza: collegare l’URL al contenuto. Non è possibile modificare il contenuto senza modificare anche l’URL (ad esempio, aggiornare la data di modifica). Questo è ciò per cui le impronte digitali sono state progettate. Ma considera che stai implementando una nuova versione, con nuovi file CSS e JS e quindi nuovi URL con nuove impronte digitali. Tutte le pagine HTML contengono ancora riferimenti ai vecchi URL prestampati con le impronte digitali. Quindi, per far funzionare la nuova versione in modo coerente, è necessario invalidare tutte le pagine HTML contemporaneamente per forzare un nuovo rendering con riferimenti ai file appena rilevati dalle impronte. Se più siti si basano sulle stesse librerie, potrebbe essere necessario eseguire un rendering molto più rapido. In questo caso non è possibile sfruttare `statfiles`. Preparati quindi a visualizzare i picchi di carico sui sistemi Publish dopo un rollout. Potresti considerare una distribuzione blu-verde con riscaldamento della cache o forse una cache basata su TTL di fronte al Dispatcher ... le possibilità sono infinite.
 
 #### Break Break
 
-Wow - Ci sono molti dettagli da considerare, giusto? E si rifiuta di essere compreso, testato e debuggato facilmente. E tutto per una soluzione apparentemente elegante. Certo, è elegante, ma solo dal punto di vista dell&#39;AEM. Insieme alla Dispatcher, la situazione è deprimente.
+Wow - Ci sono molti dettagli da considerare, giusto? E si rifiuta di essere compreso, testato e debuggato facilmente. E tutto per una soluzione apparentemente elegante. Certo, è elegante, ma solo dal punto di vista di AEM. Insieme alla Dispatcher, la situazione è deprimente.
 
 Tuttavia, questo non risolve un problema di base: se un’immagine viene utilizzata più volte su pagine diverse, vengono memorizzate nella cache sotto tali pagine. Non c&#39;è molta sinergia nella cache.
 
@@ -772,17 +772,17 @@ Ecco l&#39;idea di base:
 
 Dispatcher non è a conoscenza delle dipendenze delle risorse. È solo una serie di file singoli con poca semantica.
 
-Anche l&#39;AEM sa poco sulle dipendenze. Manca di una semantica corretta o di un &quot;tracciatore delle dipendenze&quot;.
+Anche AEM sa poco sulle dipendenze. Manca di una semantica corretta o di un &quot;tracciatore delle dipendenze&quot;.
 
-L&#39;AEM è a conoscenza di alcuni riferimenti. Utilizza questa conoscenza per avvisarti quando tenti di eliminare o spostare una pagina o una risorsa di riferimento. A tale scopo, esegue una query sulla ricerca interna al momento dell’eliminazione di una risorsa. I riferimenti ai contenuti hanno un modulo molto particolare. Sono espressioni di percorso che iniziano con &quot;/content&quot;. Pertanto, possono essere facilmente indicizzati full-text e interrogati quando necessario.
+AEM è a conoscenza di alcuni riferimenti. Utilizza questa conoscenza per avvisarti quando tenti di eliminare o spostare una pagina o una risorsa di riferimento. A tale scopo, esegue una query sulla ricerca interna al momento dell’eliminazione di una risorsa. I riferimenti ai contenuti hanno un modulo molto particolare. Sono espressioni di percorso che iniziano con &quot;/content&quot;. Pertanto, possono essere facilmente indicizzati full-text e interrogati quando necessario.
 
-Nel nostro caso, avremmo bisogno di un agente di replica personalizzato sul sistema Publish, che attivi la ricerca di un percorso specifico quando quel percorso è stato modificato.
+Nel nostro caso, avremmo bisogno di un agente di replica personalizzato sul sistema di pubblicazione, che attivi una ricerca per un percorso specifico quando quel percorso è stato modificato.
 
 Diciamo che
 
 `/content/dam/flower.jpg`
 
-È cambiato su Publish. L&#39;agente attiverebbe una ricerca per &quot;/content/dam/flower.jpg&quot; e troverebbe tutte le pagine che fanno riferimento a tali immagini.
+È stato modificato al momento della pubblicazione. L&#39;agente attiverebbe una ricerca per &quot;/content/dam/flower.jpg&quot; e troverebbe tutte le pagine che fanno riferimento a tali immagini.
 
 Potrebbe quindi inviare una serie di richieste di annullamento della validità al Dispatcher. Uno per ogni pagina contenente la risorsa.
 
@@ -806,7 +806,7 @@ Il nostro esempio è facilmente risolvibile:
 
 <br> 
 
-Utilizziamo i percorsi delle risorse originali per eseguire il rendering dei dati. Per riprodurre l’immagine originale così com’è, possiamo semplicemente utilizzare il renderer predefinito AEM per le risorse.
+Utilizziamo i percorsi delle risorse originali per eseguire il rendering dei dati. Se dobbiamo eseguire il rendering dell’immagine originale così com’è, possiamo semplicemente utilizzare il renderer predefinito di AEM per le risorse.
 
 Se è necessario eseguire un’elaborazione speciale per un componente specifico, viene registrato un servlet dedicato nel percorso e un selettore per eseguire la trasformazione per conto del componente. L&#39;abbiamo fatto qui esemplare con il &quot;.respi.&quot; selettore. È consigliabile tenere traccia dei nomi dei selettori utilizzati nello spazio URL globale (ad esempio `/content/dam`) e avere una buona convenzione di denominazione per evitare conflitti di denominazione.
 
@@ -910,14 +910,14 @@ Anche in questo caso, la cache viene ignorata e viene creato un carico sul siste
 
 #### Filtro di richieste non valide quando si utilizzano i selettori
 
-Ridurre il numero di selettori è stato un buon inizio. Come regola empirica, devi sempre limitare il numero di parametri validi a un minimo assoluto. In questo modo è anche possibile sfruttare un firewall dell&#39;applicazione Web al di fuori dell&#39;AEM utilizzando un set statico di filtri senza conoscere a fondo il sistema AEM sottostante per proteggere i sistemi:
+Ridurre il numero di selettori è stato un buon inizio. Come regola empirica, devi sempre limitare il numero di parametri validi a un minimo assoluto. In questo modo è anche possibile sfruttare un firewall per applicazioni web al di fuori di AEM utilizzando un set statico di filtri senza conoscere a fondo il sistema AEM sottostante per proteggere i sistemi:
 
 ```
 Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
        \.respi\.q-(20|40|60|80|100)\.jpg
 ```
 
-Se non si dispone di un firewall applicazione Web, è necessario filtrare in Dispatcher o nell&#39;AEM stesso. Se lo fai nell’AEM, assicurati che
+Se non si dispone di un firewall applicazione Web, è necessario filtrare in Dispatcher o in AEM. Se lo fai in AEM, assicurati che
 
 1. Il filtro è implementato in modo super efficiente, senza accedere troppo al CRX e sprecando memoria e tempo.
 
@@ -958,7 +958,7 @@ La soluzione migliore consiste nel restituire `301 – Moved permanently`:
 
 Qui AEM lo dice al browser. &quot;Non ho `q-41`. Ma puoi chiedermi di `q-40` &quot;.
 
-In questo modo alla conversazione viene aggiunto un ciclo di richiesta-risposta aggiuntivo, che è un po&#39; un sovraccarico, ma è più economico che eseguire l&#39;elaborazione completa su `q-41`. È inoltre possibile sfruttare il file già memorizzato nella cache in `q-40`. Devi capire, però, che le risposte 302 non sono memorizzate nella cache di Dispatcher, stiamo parlando di logica che viene eseguita nell&#39;AEM. Continuamente. Quindi è meglio che lo rendiate sottile e veloce.
+In questo modo alla conversazione viene aggiunto un ciclo di richiesta-risposta aggiuntivo, che è un po&#39; un sovraccarico, ma è più economico che eseguire l&#39;elaborazione completa su `q-41`. È inoltre possibile sfruttare il file già memorizzato nella cache in `q-40`. Tuttavia, devi capire che le risposte 302 non sono memorizzate nella cache in Dispatcher. Stiamo parlando di logica eseguita in AEM. Continuamente. Quindi è meglio che lo rendiate sottile e veloce.
 
 Personalmente, il 404 ci piace di più. Rende molto ovvio ciò che sta accadendo. Consente inoltre di rilevare gli errori nel sito Web durante l&#39;analisi dei file di registro. 301s può essere previsto, dove 404 dovrebbe sempre essere analizzato ed eliminato.
 
@@ -974,11 +974,11 @@ Beh, dipende. Prima è meglio è.
 
 #### Firewall applicazione Web
 
-Se si dispone di un accessorio Web Application Firewall o &quot;WAF&quot; progettato per la sicurezza Web, è assolutamente necessario sfruttare queste funzionalità. Tuttavia, potresti scoprire che il WAF è gestito da persone con una conoscenza limitata dell’applicazione dei contenuti e che filtrano le richieste valide o lasciano passare troppe richieste dannose. Forse scoprirai che le persone che gestiscono la WAF sono assegnate a un reparto diverso con turni e pianificazioni di rilascio diversi, la comunicazione potrebbe non essere così stretta come con i tuoi diretti compagni di squadra e non sempre si ottengono i cambiamenti nel tempo, il che significa che alla fine lo sviluppo e la velocità dei contenuti soffrono.
+Se si dispone di un accessorio di web application firewall o &quot;WAF&quot; progettato per la sicurezza Web, è assolutamente necessario sfruttare queste funzionalità. Tuttavia, potresti scoprire che WAF è gestito da persone con una conoscenza limitata dell’applicazione dei contenuti e che filtrano le richieste valide o lasciano passare troppe richieste dannose. Forse scoprirai che le persone che gestiscono WAF sono assegnate a un reparto diverso con turni e pianificazioni di rilascio diversi, la comunicazione potrebbe non essere così stretta come con i tuoi diretti compagni di team e non sempre si ottengono i cambiamenti nel tempo, il che significa che in ultima analisi la velocità di sviluppo e di contenuto soffre.
 
 Potresti finire con qualche regola generale o anche un inserisco nell&#39;elenco Bloccati di, che il tuo istinto dice, potrebbe essere reso più rigido.
 
-#### Filtro Dispatcher e Publish
+#### Filtraggio di Dispatcher e pubblicazione
 
 Il passaggio successivo consiste nell’aggiungere regole di filtro URL nel core Apache e/o in Dispatcher.
 
@@ -986,7 +986,7 @@ Qui puoi accedere solo agli URL. Puoi usare solo filtri basati su pattern. Se de
 
 #### Monitoraggio e debug
 
-In pratica, avrai una certa sicurezza a ogni livello. Ma assicurati di disporre dei mezzi per scoprire a quale livello una richiesta è filtrata. Assicurati di avere accesso diretto al sistema Publish, al Dispatcher e ai file di registro sul WAF per scoprire quale filtro nella catena blocca le richieste.
+In pratica, avrai una certa sicurezza a ogni livello. Ma assicurati di disporre dei mezzi per scoprire a quale livello una richiesta è filtrata. Assicurati di avere accesso diretto al sistema di pubblicazione, al Dispatcher e ai file di registro sul WAF per scoprire quale filtro nella catena blocca le richieste.
 
 ### Selettori e proliferazione dei selettori
 
@@ -1080,7 +1080,7 @@ Tutti i file di cache nel file system di Dispatcher configurati per l&#39;annull
 >
 >L’ultima data modificata di cui parliamo è il file memorizzato in cache, cioè la data in cui il file è stato richiesto dal browser del client e infine creato nel file system. Non è la data `jcr:lastModified` della risorsa.
 
-La data dell&#39;ultima modifica dello statfile (`.stat`) è la data in cui la richiesta di annullamento della validità da parte dell&#39;AEM è stata ricevuta sul Dispatcher.
+La data dell&#39;ultima modifica dello statfile (`.stat`) è la data in cui la richiesta di annullamento della validità da parte di AEM è stata ricevuta in Dispatcher.
 
 Se si dispone di più Dispatcher, si possono verificare strani effetti. Se disponi di più di un’istanza di Dispatcher, il browser può avere una versione più recente, ovvero Dispatcher. Oppure un Dispatcher potrebbe pensare che la versione del browser rilasciata dall&#39;altro Dispatcher è obsoleta e invia inutilmente una nuova copia. Questi effetti non hanno un impatto significativo sulle prestazioni o sui requisiti funzionali. E si livelleranno nel tempo, quando il browser avrà la versione più recente. Tuttavia, può creare un po’ di confusione durante l’ottimizzazione e il debug del comportamento di caching del browser. Quindi siate avvisati.
 
@@ -1088,7 +1088,7 @@ Se si dispone di più Dispatcher, si possono verificare strani effetti. Se dispo
 
 Quando abbiamo introdotto l&#39;annullamento automatico della validità e lo statfile abbiamo detto che *tutti* i file sono considerati non validi in presenza di modifiche e che tutti i file sono comunque interdipendenti.
 
-Non è del tutto accurato. In genere, tutti i file che condividono una directory principale di navigazione comune sono interdipendenti. Ma un&#39;istanza AEM può ospitare diversi siti Web: *siti Web indipendenti*. Non condividendo una navigazione comune; infatti non condividendo nulla.
+Non è del tutto accurato. In genere, tutti i file che condividono una directory principale di navigazione comune sono interdipendenti. Tuttavia, un&#39;istanza di AEM può ospitare diversi siti Web: *siti Web indipendenti*. Non condividendo una navigazione comune; infatti non condividendo nulla.
 
 Non sarebbe un rifiuto per invalidare il Sito B perché c&#39;è una modifica nel Sito A? Sì, lo è. E non deve per forza essere così.
 
@@ -1167,7 +1167,7 @@ La soluzione migliore, ovviamente, è quella di rendere le radici di tutti i sit
 
 Qual è il livello giusto? Questo dipende dal numero di dipendenze che hai tra i siti. Le inclusioni che risolvi per il rendering di una pagina sono considerate &quot;dipendenze rigide&quot;. Abbiamo dimostrato tale _inclusione_ quando abbiamo introdotto il componente _Teaser_ all&#39;inizio di questa guida.
 
-_I collegamenti ipertestuali_ sono una forma più morbida di dipendenze. È molto probabile che si creeranno collegamenti ipertestuali all&#39;interno di un sito Web... e non è improbabile che ci siano collegamenti tra i siti Web. I collegamenti ipertestuali semplici in genere non creano dipendenze tra siti Web. È sufficiente pensare a un collegamento esterno impostato dal sito a facebook... Non dovrai eseguire il rendering della pagina se cambia qualcosa su facebook e viceversa, giusto?
+_I collegamenti ipertestuali_ sono una forma più morbida di dipendenze. È molto probabile che si creeranno collegamenti ipertestuali all&#39;interno di un sito Web... e non è improbabile che ci siano collegamenti tra i siti Web. I collegamenti ipertestuali semplici in genere non creano dipendenze tra siti Web. Basta pensare a un collegamento esterno impostato dal tuo sito a Facebook... Non dovreste eseguire il rendering della pagina se cambia qualcosa su Facebook e viceversa, giusto?
 
 Una dipendenza si verifica quando si legge il contenuto dalla risorsa collegata (ad esempio, il titolo della navigazione). Tali dipendenze possono essere evitate se ti basi solo sui titoli di navigazione inseriti localmente e non disegnarli dalla pagina di destinazione (come faresti con i collegamenti esterni).
 
@@ -1181,7 +1181,7 @@ Il cliente aveva una struttura del sito come quella descritta nell’ultimo capi
 /content/brand/country/language
 ```
 
-Ad esempio:
+Ad esempio,
 
 ```
 /content/shiny-brand/switzerland/fr
@@ -1298,27 +1298,27 @@ Concluderemo la prima parte di questo libro con una raccolta casuale di suggerim
 
 ### Correggi tempi di invalidazione
 
-Se installi un autore di AEM e Publish preconfigurato, la topologia è un po&#39; strana. L’autore invia contemporaneamente il contenuto ai sistemi Publish e la richiesta di annullamento della validità ai Dispatcher. Poiché sia i sistemi Publish che il Dispatcher sono separati dall&#39;Autore dalle code, la tempistica può essere un po&#39; sfortunata. Dispatcher può ricevere la richiesta di annullamento della validità dall’autore prima che il contenuto venga aggiornato sul sistema Publish.
+Se installi un’istanza di AEM Author e Publish pronta all’uso, la topologia è un po’ strana. L’autore invia contemporaneamente il contenuto ai sistemi di pubblicazione e la richiesta di annullamento della validità ai Dispatcher. Poiché sia i sistemi Publish che Dispatcher sono separati dall&#39;autore da code, la tempistica può essere un po&#39; sfortunata. Dispatcher può ricevere la richiesta di annullamento della validità dall’autore prima che il contenuto venga aggiornato nel sistema di pubblicazione.
 
 Se un client richiede tale contenuto nel frattempo, Dispatcher richiederà e memorizzerà il contenuto non aggiornato.
 
-Una configurazione più affidabile sta inviando la richiesta di annullamento della validità dai sistemi Publish _dopo_ che hanno ricevuto il contenuto. L&#39;articolo &quot;[Annullamento della validità della cache di Dispatcher da un&#39;istanza Publish](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; descrive i dettagli.
+Una configurazione più affidabile sta inviando la richiesta di annullamento della validità dai sistemi di pubblicazione _dopo_ che hanno ricevuto il contenuto. L&#39;articolo &quot;[Annullamento della validità della cache di Dispatcher da un&#39;istanza Publish](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; descrive i dettagli.
 
 **Riferimenti**
 
-[helpx.adobe.com - Annullamento della validità della cache di Dispatcher da un&#39;istanza Publish](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
+[helpx.adobe.com - Annullamento della validità della cache di Dispatcher da un&#39;istanza Publish](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
 
 ### Memorizzazione in cache di intestazioni e intestazioni HTTP
 
-In passato, Dispatcher memorizzava solo file semplici nel file system. Se hai bisogno di intestazioni HTTP per essere consegnato al cliente, l’hai fatto configurando Apache in base alle poche informazioni che hai avuto dal file o dalla posizione. Ciò era particolarmente fastidioso quando hai implementato un’applicazione web in AEM che si basava fortemente sulle intestazioni HTTP. Tutto ha funzionato bene solo nell’istanza AEM, ma non quando si utilizzava un Dispatcher.
+In passato, Dispatcher memorizzava solo file semplici nel file system. Se hai bisogno di intestazioni HTTP per essere consegnato al cliente, l’hai fatto configurando Apache in base alle poche informazioni che hai avuto dal file o dalla posizione. Questa situazione era particolarmente fastidiosa quando hai implementato un’applicazione web in AEM che si basava notevolmente sulle intestazioni HTTP. Tutto funzionava correttamente nell’istanza Solo AEM, ma non quando utilizzavi un Dispatcher.
 
 In genere si è iniziato a riapplicare le intestazioni mancanti alle risorse nel server Apache con `mod_headers` utilizzando le informazioni che si potevano derivare dal percorso e dal suffisso delle risorse. Ma questo non è stato sempre sufficiente.
 
-Particolarmente fastidioso era che anche con Dispatcher la prima risposta _uncached_ al browser proveniva dal sistema Publish con una gamma completa di intestazioni, mentre le risposte successive venivano generate da Dispatcher con un set limitato di intestazioni.
+Particolarmente fastidioso era il fatto che anche con Dispatcher la prima risposta _uncached_ al browser proveniva dal sistema di pubblicazione con una gamma completa di intestazioni, mentre le risposte successive venivano generate da Dispatcher con un set limitato di intestazioni.
 
-A partire da Dispatcher 4.1.11, Dispatcher può memorizzare le intestazioni generate dai sistemi Publish.
+A partire da Dispatcher 4.1.11, Dispatcher può memorizzare le intestazioni generate dai sistemi di pubblicazione.
 
-In questo modo si evita di duplicare la logica di intestazione in Dispatcher e si libera tutta la potenza espressiva di HTTP e AEM.
+In questo modo si evita di duplicare la logica di intestazione in Dispatcher e si libera la piena potenza espressiva di HTTP e AEM.
 
 **Riferimenti**
 
@@ -1326,7 +1326,7 @@ In questo modo si evita di duplicare la logica di intestazione in Dispatcher e s
 
 ### Singole eccezioni alla memorizzazione in cache
 
-Puoi memorizzare nella cache tutte le pagine e le immagini in generale, ma in alcuni casi fare eccezioni. Ad esempio, si desidera memorizzare in cache le immagini PNG, ma non le immagini PNG che visualizzano un captcha (che si suppone venga modificato a ogni richiesta). Il Dispatcher potrebbe non riconoscere un captcha come un captcha... ma l&#39;AEM certamente lo fa. Può chiedere al Dispatcher di non memorizzare in cache quella richiesta inviando un’intestazione conforme insieme alla risposta:
+Puoi memorizzare nella cache tutte le pagine e le immagini in generale, ma in alcuni casi fare eccezioni. Ad esempio, si desidera memorizzare in cache le immagini PNG, ma non le immagini PNG che visualizzano un captcha (che si suppone venga modificato a ogni richiesta). Dispatcher potrebbe non riconoscere un captcha come un captcha... ma AEM certamente lo fa. Può chiedere al Dispatcher di non memorizzare in cache quella richiesta inviando un’intestazione conforme insieme alla risposta:
 
 ```plain
   response.setHeader("Dispatcher", "no-cache");
@@ -1350,7 +1350,7 @@ La risposta http più veloce è la risposta fornita dal browser stesso. Dove la 
 
 Puoi aiutare il browser a decidere quando richiedere al server una nuova versione del file impostando una data di scadenza su una risorsa.
 
-In genere, è possibile farlo in modo statico utilizzando `mod_expires` di Apache o memorizzando l’intestazione Cache-Control e Expires che provengono dall’AEM, se è necessario un controllo più individuale.
+In genere, è possibile farlo in modo statico utilizzando `mod_expires` di Apache o memorizzando l’intestazione Cache-Control e Expires proveniente da AEM, se è necessario un controllo più individuale.
 
 Un documento memorizzato nella cache del browser può avere tre livelli di aggiornamento.
 
@@ -1376,17 +1376,17 @@ Per far funzionare questa seconda parte, assicurati di trasmettere la data `Last
 
 Abbiamo spiegato in precedenza che quando la data `Last-Modified` viene generata da Dispatcher, può variare tra richieste diverse perché il file memorizzato in cache - e la relativa data - viene generato quando il file viene richiesto dal browser. In alternativa, potrebbe essere possibile utilizzare i &quot;tag elettronici&quot;, ovvero numeri che identificano il contenuto effettivo (ad esempio, generando un codice hash) invece di una data.
 
-&quot;[Supporto Etag](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; dal _pacchetto ACS Commons_ utilizza questo approccio. Tuttavia, questo viene fornito con un prezzo: poiché l’E-Tag deve essere inviato come intestazione, ma il calcolo del codice hash richiede la lettura completa della risposta, la risposta deve essere completamente inserita nel buffer della memoria principale prima che possa essere consegnata. Questo può avere un impatto negativo sulla latenza quando il sito web ha maggiori probabilità di avere risorse non memorizzate in cache e, naturalmente, è necessario tenere d’occhio la memoria utilizzata dal sistema AEM.
+&quot;[Supporto Etag](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; dal _pacchetto ACS Commons_ utilizza questo approccio. Tuttavia, questo viene fornito con un prezzo: poiché l’E-Tag deve essere inviato come intestazione, ma il calcolo del codice hash richiede la lettura completa della risposta, la risposta deve essere completamente inserita nel buffer della memoria principale prima che possa essere consegnata. Questo può avere un impatto negativo sulla latenza quando è più probabile che il sito web contenga risorse non memorizzate in cache e, naturalmente, è necessario tenere d’occhio la memoria utilizzata dal sistema AEM.
 
 Se utilizzi le impronte digitali degli URL, puoi impostare date di scadenza molto lunghe. Puoi memorizzare nella cache le risorse impronte digitali per sempre nel browser. Una nuova versione è contrassegnata con un nuovo URL e le versioni precedenti non devono mai essere aggiornate.
 
 Abbiamo usato le impronte digitali degli URL quando abbiamo introdotto il pattern dello spooler. I file statici provenienti da `/etc/design` (CSS, JS) vengono modificati raramente, rendendo tali file validi anche per l&#39;utilizzo come impronte digitali.
 
-Per i file normali di solito abbiamo impostato uno schema fisso, come ricontrollare HTML ogni 30 minuti, immagini ogni 4 ore e così via.
+Per i file normali, in genere viene impostato uno schema fisso, come ricontrollare HTML ogni 30 minuti, le immagini ogni 4 ore e così via.
 
 La memorizzazione nella cache del browser è estremamente utile nel sistema di authoring. Desideri memorizzare nella cache il più possibile nel browser per migliorare l’esperienza di modifica. Sfortunatamente, le risorse più costose, le pagine HTML non possono essere memorizzate nella cache... si suppone che cambino frequentemente nell’autore.
 
-Le librerie granite, che compongono l’interfaccia utente dell’AEM, possono essere memorizzate nella cache per un periodo di tempo piuttosto lungo. Puoi anche memorizzare nella cache i file statici dei siti (font, CSS e JavaScript) nel browser. Anche le immagini in `/content/dam` possono in genere essere memorizzate nella cache per circa 15 minuti poiché non vengono modificate con la stessa frequenza del testo copiato nelle pagine. Le immagini non vengono modificate in modo interattivo nell&#39;AEM. Vengono modificati e approvati prima di essere caricati nell&#39;AEM. Pertanto, si può supporre che non vengano modificate con la stessa frequenza del testo.
+Le librerie granite, che costituiscono l’interfaccia utente di AEM, possono essere memorizzate nella cache per un periodo di tempo piuttosto lungo. Puoi anche memorizzare nella cache i file statici dei siti (font, CSS e JavaScript) nel browser. Anche le immagini in `/content/dam` possono in genere essere memorizzate nella cache per circa 15 minuti poiché non vengono modificate con la stessa frequenza del testo copiato nelle pagine. Le immagini non vengono modificate in modo interattivo in AEM. Vengono modificati e approvati prima di essere caricati in AEM. Pertanto, si può supporre che non vengano modificate con la stessa frequenza del testo.
 
 La memorizzazione nella cache dei file dell’interfaccia utente, dei file della libreria Sites e delle immagini può velocizzare il ricaricamento delle pagine in modo significativo in modalità di modifica.
 
@@ -1420,15 +1420,15 @@ vorresti avere,
 
 `www.shiny-brand.fi/home.html`
 
-Devi implementare questa mappatura sull&#39;AEM, perché l&#39;AEM deve sapere come eseguire il rendering dei collegamenti in base a quel formato troncato.
+Devi implementare la mappatura su AEM, perché AEM deve sapere come eseguire il rendering dei collegamenti in base a quel formato troncato.
 
-Ma non affidatevi solo all&#39;AEM. In caso contrario, nella directory principale della cache saranno presenti percorsi come `/home.html`. Ora, questa è la &quot;casa&quot; per il sito web finlandese o tedesco o canadese? E se nel Dispatcher è presente un file `/home.html`, in che modo Dispatcher sa che deve essere invalidato quando arriva una richiesta di invalidazione per `/content/brand/fi/fi/home`?
+Ma non affidarti solo ad AEM. In caso contrario, nella directory principale della cache saranno presenti percorsi come `/home.html`. Ora, questa è la &quot;casa&quot; per il sito web finlandese o tedesco o canadese? E se nel Dispatcher è presente un file `/home.html`, in che modo Dispatcher sa che deve essere invalidato quando arriva una richiesta di invalidazione per `/content/brand/fi/fi/home`?
 
 Abbiamo visto un progetto che aveva docroot separati per ogni dominio. È stato un incubo eseguire il debug e la manutenzione - e in realtà non l&#39;abbiamo mai visto funzionare senza problemi.
 
 Potremmo risolvere i problemi ristrutturando la cache. Disponevamo di un&#39;unica directory principale dei documenti per tutti i domini e le richieste di annullamento della validità potevano essere gestite 1:1 poiché tutti i file sul server iniziavano con `/content`.
 
-Anche il tronco era molto facile.  L&#39;AEM ha generato collegamenti troncati a causa di una configurazione corrispondente in `/etc/map`.
+Anche il tronco era molto facile.  AEM ha generato collegamenti troncati a causa di una configurazione corrispondente in `/etc/map`.
 
 Ora, quando una richiesta `/home.html` arriva al Dispatcher, la prima cosa che accade è applicare una regola di riscrittura che espande internamente il percorso.
 
@@ -1440,7 +1440,7 @@ La regola è stata impostata in modo statico in ogni configurazione vhost. In po
   RewriteRule "^(.\*\.html)" "/content/shiny-brand/finland/fi/$1"
 ```
 
-Nel file system ora sono presenti percorsi basati su `/content` semplici, disponibili anche in Author e Publish, che hanno contribuito notevolmente al debug. Per non parlare dell&#39;invalidazione corretta - questo non era più un problema.
+Nel file system sono ora disponibili percorsi basati su `/content` semplici, disponibili anche nell&#39;ambiente Author e Publish, che facilitano notevolmente il debug. Per non parlare dell&#39;invalidazione corretta - questo non era più un problema.
 
 Questo è stato fatto solo per gli URL &quot;visibili&quot;, ovvero per gli URL visualizzati nello slot URL del browser. Gli URL per le immagini, ad esempio, erano ancora URL puri &quot;/content&quot;. Riteniamo che abbellire l’URL &quot;principale&quot; sia sufficiente in termini di ottimizzazione dei motori di ricerca.
 
@@ -1454,7 +1454,7 @@ Avere una directory principale dei documenti comune aveva anche un&#39;altra bel
 
 * [apache.org - Mod Riscrittura](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 
-* [helpx.adobe.com - Mappatura risorse](https://helpx.adobe.com/it/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
+* [helpx.adobe.com - Mappatura risorse](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
 
 ### Gestione degli errori
 
@@ -1462,7 +1462,7 @@ Nelle classi AEM imparerai a programmare un gestore degli errori in Sling. Quest
 
 Sì, ma questa è solo la parte AEM. Ricorda: Dispatcher non memorizza nella cache le risposte `404 – not found` o `500 – internal server error`.
 
-Se esegui il rendering dinamico di queste pagine su ogni richiesta (non riuscita), si verifica un carico elevato non necessario sui sistemi Publish.
+Se esegui il rendering dinamico di queste pagine su ogni richiesta (non riuscita), si verifica un carico elevato non necessario sui sistemi di pubblicazione.
 
 Ciò che abbiamo trovato utile è non eseguire il rendering dell’intera pagina di errore quando si verifica un errore, ma solo una versione super semplificata e piccola, anche statica, di quella pagina, senza alcun ornamento o logica.
 
@@ -1473,13 +1473,13 @@ ErrorDocument 404 "/content/shiny-brand/fi/fi/edocs/error-404.html"
 ErrorDocument 500 "/content/shiny-brand/fi/fi/edocs/error-500.html"
 ```
 
-Il sistema AEM poteva semplicemente segnalare alla Dispatcher che c&#39;era qualcosa di sbagliato, e la Dispatcher poteva fornire una versione elegante e brillante del documento di errore.
+Ora il sistema AEM potrebbe semplicemente notificare alla Dispatcher che qualcosa non va, e la Dispatcher potrebbe fornire una versione brillante e bella del documento di errore.
 
 A questo proposito, due sono le cose da considerare.
 
 Innanzitutto, `error-404.html` è sempre la stessa pagina. Pertanto, non è presente alcun messaggio individuale come &quot;La ricerca di &quot;_produkten_&quot; non ha prodotto alcun risultato&quot;. Ci potremmo convivere con facilità.
 
-Secondo... beh, se notiamo un errore interno del server - o peggio, se notiamo un&#39;interruzione del sistema AEM, non c&#39;è modo di chiedere all&#39;AEM di visualizzare una pagina di errore, giusto? Anche la richiesta successiva necessaria, come definita nella direttiva `ErrorDocument`, avrebbe esito negativo. Il problema è stato risolto eseguendo un processo cron che richiamava periodicamente le pagine di errore dalle posizioni definite tramite `wget` e le memorizzava in posizioni di file statiche definite nella direttiva `ErrorDocuments`.
+Secondo... beh, se notiamo un errore interno del server o peggio, se notiamo un’interruzione del sistema AEM, non c’è modo di chiedere ad AEM di eseguire il rendering di una pagina di errore, giusto? Anche la richiesta successiva necessaria, come definita nella direttiva `ErrorDocument`, avrebbe esito negativo. Il problema è stato risolto eseguendo un processo cron che richiamava periodicamente le pagine di errore dalle posizioni definite tramite `wget` e le memorizzava in posizioni di file statiche definite nella direttiva `ErrorDocuments`.
 
 **Riferimenti**
 
@@ -1489,28 +1489,28 @@ Secondo... beh, se notiamo un errore interno del server - o peggio, se notiamo u
 
 Per impostazione predefinita, Dispatcher non controlla le autorizzazioni quando distribuisce una risorsa. È implementato come questo di proposito - per velocizzare il vostro sito web pubblico. Se desideri proteggere alcune risorse tramite un accesso, in pratica hai tre opzioni:
 
-1. Protect la risorsa prima che la richiesta raggiunga la cache, ovvero da un gateway SSO (Single Sign On) davanti a Dispatcher o come modulo nel server Apache
+1. Proteggere la risorsa prima che la richiesta raggiunga la cache, ad esempio tramite un gateway SSO (Single Sign On) davanti a Dispatcher o come modulo nel server Apache
 
-2. Escludi le risorse sensibili dalla cache e quindi distribuiscile sempre dal sistema Publish.
+2. Escludi le risorse sensibili dalla cache, in modo che vengano sempre distribuite dal sistema di pubblicazione.
 
 3. Utilizzare il caching sensibile alle autorizzazioni in Dispatcher
 
 E naturalmente, potete applicare la vostra combinazione di tutti e tre gli approcci.
 
-**Opzione 1**. Un gateway &quot;SSO&quot; potrebbe comunque essere applicato dalla tua organizzazione. Se il tuo schema di accesso è a grana grossa, potresti non aver bisogno delle informazioni dell&#39;AEM per decidere se concedere o negare l&#39;accesso a una risorsa.
+**Opzione 1**. Un gateway &quot;SSO&quot; potrebbe comunque essere applicato dalla tua organizzazione. Se il tuo schema di accesso è a grana grossa, potresti non aver bisogno delle informazioni di AEM per decidere se concedere o negare l’accesso a una risorsa.
 
 >[!NOTE]
 >
 >Questo modello richiede un _Gateway_ che _intercetta_ ogni richiesta ed esegue l&#39;effettiva _autorizzazione_ - concedendo o negando le richieste a Dispatcher. Se il sistema SSO è un _autenticatore_, che stabilisce solo l&#39;identità di un utente è necessario implementare l&#39;opzione 3. Se leggi termini come &quot;SAML&quot; o &quot;OAauth&quot; nel manuale del sistema SSO, questo è un forte indicatore che devi implementare l’opzione 3.
 
 
-**Opzione 2**. &quot;Non memorizzare in cache&quot; in genere è una cattiva idea. Se procedi in questo modo, assicurati che la quantità di traffico e il numero di risorse sensibili escluse siano limitati. In alternativa, assicurarsi di disporre di una cache in memoria nel sistema Publish installata, che i sistemi Publish possano gestire il carico risultante, per ulteriori informazioni sulla parte III di questa serie.
+**Opzione 2**. &quot;Non memorizzare in cache&quot; in genere è una cattiva idea. Se procedi in questo modo, assicurati che la quantità di traffico e il numero di risorse sensibili escluse siano limitati. In alternativa, assicurati di avere installata una cache in memoria nel sistema di pubblicazione, in modo che i sistemi di pubblicazione possano gestire il carico risultante, più di quanto previsto nella Parte III di questa serie.
 
-**Opzione 3**. Il &quot;caching sensibile alle autorizzazioni&quot; è un approccio interessante. Il Dispatcher sta memorizzando nella cache una risorsa, ma prima di distribuirla, chiede al sistema AEM se può farlo. Questo crea una richiesta aggiuntiva dal Dispatcher al Publish, ma in genere evita al sistema Publish di eseguire nuovamente il rendering di una pagina se è già memorizzata nella cache. Tuttavia, questo approccio richiede un’implementazione personalizzata. I dettagli sono disponibili qui nell&#39;articolo [Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/it/experience-manager/dispatcher/using/permissions-cache.html).
+**Opzione 3**. Il &quot;caching sensibile alle autorizzazioni&quot; è un approccio interessante. Dispatcher sta memorizzando nella cache una risorsa, ma prima di distribuirla, chiede ad AEM se è possibile che lo faccia. In questo modo si crea una richiesta aggiuntiva da Dispatcher alla pubblicazione, ma in genere si evita che il sistema di pubblicazione riesegua il rendering di una pagina se è già memorizzata nella cache. Tuttavia, questo approccio richiede un’implementazione personalizzata. I dettagli sono disponibili qui nell&#39;articolo [Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
 
 **Riferimenti**
 
-* [helpx.adobe.com - Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/it/experience-manager/dispatcher/using/permissions-cache.html)
+* [helpx.adobe.com - Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html)
 
 ### Impostazione del periodo di tolleranza
 
@@ -1528,7 +1528,7 @@ Per attenuare il problema di questa &quot;tempesta di invalidazione della cache&
 
 È possibile impostare Dispatcher per l&#39;utilizzo di `grace period` per l&#39;annullamento automatico della validità. Questo aggiungerebbe internamente del tempo alla data di modifica `statfiles`.
 
-Supponiamo che `statfile` abbia un orario di modifica di oggi alle 12:00 e che `gracePeriod` sia impostato su 2 minuti. Quindi tutti i file invalidati automaticamente sono considerati validi alle 12:01 e alle 12:02. Vengono nuovamente rappresentati dopo le 12:02.
+Supponiamo che `statfile` abbia un orario di modifica di oggi 12:00 e che `gracePeriod` sia impostato su 2 minuti. Quindi tutti i file invalidati automaticamente sono considerati validi alle ore 12:01 e alle ore 12:02. Viene eseguito un nuovo rendering dopo 12:02.
 
 La configurazione di riferimento propone un `gracePeriod` di due minuti per un buon motivo. Potresti pensare &quot;Due minuti? Non è quasi niente. Posso aspettare 10 minuti prima che il contenuto venga visualizzato...&quot;.  Quindi potresti essere tentato di impostare un periodo più lungo, diciamo 10 minuti, supponendo che il contenuto venga visualizzato almeno dopo questi 10 minuti.
 
@@ -1540,13 +1540,13 @@ Illustriamo come `gracePeriod` funziona effettivamente con un esempio:
 
 Si supponga che si stia utilizzando un sito multimediale e che il personale addetto all&#39;editing possa aggiornare regolarmente i contenuti ogni 5 minuti. Considera di impostare gracePeriod su 5 minuti.
 
-Inizieremo con un rapido esempio alle 12:00.
+Inizieremo con un rapido esempio al 12:00.
 
-12:00 - Statfile è impostato su 12:00. Tutti i file memorizzati in cache sono considerati validi fino alle 12:05.
+12:00 - Statfile è impostato su 12:00. Tutti i file memorizzati in cache sono considerati validi fino al 12:05.
 
-12:01 - Si verifica un’invalidazione. Questo prolunga il tempo di grata alle 12:06
+12:01 - Si è verificato un annullamento della validità. Questo prolunga il tempo di grata a 12:06
 
-12:05 - Un altro editore pubblica il suo articolo - prolungare il tempo di grazia di un altro gracePeriod alle 12:10.
+12:05 - Un altro editor pubblica questo articolo - prolungando il tempo di tolleranza di un altro gracePeriod a 12:10.
 
 E così via... il contenuto non viene mai invalidato. Ogni invalidazione *entro* il gracePeriod prolunga efficacemente il periodo di tolleranza. Il `gracePeriod` è progettato per resistere alla tempesta di invalidazione... ma alla fine devi uscire sotto la pioggia... quindi, tieni il `gracePeriod` considerevolmente breve per evitare di nasconderti nel rifugio per sempre.
 
@@ -1556,7 +1556,7 @@ Vorremmo introdurre un&#39;altra idea su come superare una tempesta di invalidaz
 
 `gracePeriod` può diventare imprevedibilmente lungo, se l&#39;intervallo di replica regolare è più breve di `gracePeriod`.
 
-L’idea alternativa è la seguente: Invalida solo in intervalli di tempo fissi. Il tempo che intercorre tra le due opzioni significa sempre fornire contenuto non aggiornato. L’invalidazione avverrà alla fine, ma una serie di invalidazioni viene raccolta in un’unica invalidazione &quot;in blocco&quot;, in modo che il Dispatcher abbia la possibilità di distribuire nel frattempo alcuni contenuti memorizzati nella cache e dare al sistema Publish un po’ di aria da respirare.
+L’idea alternativa è la seguente: Invalida solo in intervalli di tempo fissi. Il tempo che intercorre tra le due opzioni significa sempre fornire contenuto non aggiornato. L’invalidazione avverrà alla fine, ma una serie di invalidazioni viene raccolta in un’unica invalidazione &quot;in blocco&quot;, in modo che Dispatcher abbia la possibilità di distribuire alcuni contenuti memorizzati nella cache nel frattempo e dare al sistema di pubblicazione un po’ di aria da respirare.
 
 L’implementazione sarà simile alla seguente:
 
@@ -1570,7 +1570,7 @@ Ad esempio, se imposti il periodo di tolleranza su 30 sec, Dispatcher arrotonder
 
 <br> 
 
-Gli hit della cache che si verificano tra la richiesta di invalidazione e lo slot di 30 secondi del turno successivo vengono quindi considerati obsoleti. È stato effettuato un aggiornamento su Publish, ma Dispatcher fornisce ancora contenuti obsoleti.
+Gli hit della cache che si verificano tra la richiesta di invalidazione e lo slot di 30 secondi del turno successivo vengono quindi considerati obsoleti; si è verificato un aggiornamento in Pubblicazione, ma Dispatcher fornisce ancora contenuti obsoleti.
 
 Questo approccio potrebbe aiutare a definire periodi di tolleranza più lunghi senza dover temere che le richieste successive prolunghino il periodo in modo indeterministico. Anche se come abbiamo detto prima - è solo un&#39;idea e non abbiamo avuto la possibilità di testarla.
 
@@ -1588,11 +1588,11 @@ Viene inviata una richiesta di annullamento arbitrario della validità al Dispat
 
 Di conseguenza, poiché queste pagine sono così popolari, ci sono nuove richieste in arrivo da diversi browser. Prendiamo la home page come esempio.
 
-Poiché ora la cache non è valida, tutte le richieste alla home page che arrivano contemporaneamente vengono inoltrate al sistema Publish generando un carico elevato.
+Poiché ora la cache non è valida, tutte le richieste alla home page che arrivano contemporaneamente vengono inoltrate al sistema di pubblicazione generando un carico elevato.
 
-![Richieste parallele alla stessa risorsa in cache vuota: le richieste vengono inoltrate a Publish](assets/chapter-1/parallel-requests.png)
+![Richieste parallele alla stessa risorsa in cache vuota: le richieste vengono inoltrate alla pubblicazione](assets/chapter-1/parallel-requests.png)
 
-*Richieste parallele alla stessa risorsa in cache vuota: le richieste vengono inoltrate a Publish*
+*Richieste parallele alla stessa risorsa in cache vuota: le richieste vengono inoltrate alla pubblicazione*
 
 Con il recupero automatico puoi attenuarlo in qualche misura. La maggior parte delle pagine invalidate viene comunque fisicamente memorizzata sul Dispatcher dopo l’annullamento automatico della validità. Sono solo _considerati_ non aggiornati. _Recupero automatico_ significa che le pagine non aggiornate vengono comunque distribuite per alcuni secondi durante l&#39;avvio di _una singola_ richiesta al sistema di pubblicazione per recuperare nuovamente il contenuto non aggiornato:
 
@@ -1604,7 +1604,7 @@ Con il recupero automatico puoi attenuarlo in qualche misura. La maggior parte d
 
 Per abilitare il recupero, è necessario comunicare al Dispatcher le risorse da recuperare dopo un’annullamento automatico della validità. Ricorda che qualsiasi pagina attivata annulla automaticamente anche tutte le altre pagine, incluse quelle più popolari.
 
-Recuperare di nuovo significa in realtà comunicare al Dispatcher in ogni (!) richiesta di annullamento della validità per recuperare quelli più popolari e quali sono quelli più popolari.
+Recuperare di nuovo significa in realtà dire al Dispatcher in ogni richiesta di annullamento della validità (!) che desideri recuperare quelli più popolari e quali sono quelli più popolari.
 
 A tal fine, inserisci un elenco di URL di risorse (URL effettivi, non solo percorsi) nel corpo delle richieste di invalidazione:
 
@@ -1623,25 +1623,25 @@ Content-Length: 207
 /content/my-brand/products/product-2.html
 ```
 
-Quando Dispatcher riceve una richiesta di questo tipo, attiva l’annullamento automatico della validità come di consueto e mette immediatamente in coda le richieste per recuperare nuovi contenuti dal sistema Publish.
+Quando Dispatcher riceve una richiesta di questo tipo, attiva l’annullamento automatico della validità come di consueto e mette immediatamente in coda le richieste per recuperare nuovi contenuti dal sistema di pubblicazione.
 
 Poiché ora utilizziamo un corpo della richiesta, è necessario impostare content-type e content-length in base allo standard HTTP.
 
 Dispatcher inoltre contrassegna internamente gli URL corrispondenti in modo da sapere che può consegnare direttamente queste risorse anche se sono considerate non valide in seguito all’annullamento automatico della validità.
 
-Tutti gli URL elencati sono richiesti singolarmente. Non è quindi necessario preoccuparsi di creare un carico di lavoro troppo elevato sui sistemi Publish. Tuttavia, non vorresti inserire troppi URL nell’elenco. Alla fine, la coda deve essere elaborata alla fine in un tempo limitato per non distribuire contenuto non aggiornato per troppo tempo. È sufficiente includere le 10 pagine a cui si accede più di frequente.
+Tutti gli URL elencati sono richiesti singolarmente. Quindi non dovete preoccuparvi di creare un carico di lavoro troppo elevato sui sistemi di pubblicazione. Tuttavia, non vorresti inserire troppi URL nell’elenco. Alla fine, la coda deve essere elaborata alla fine in un tempo limitato per non distribuire contenuto non aggiornato per troppo tempo. È sufficiente includere le 10 pagine a cui si accede più di frequente.
 
 Se si esamina la directory della cache di Dispatcher, verranno visualizzati i file temporanei contrassegnati con i timestamp. Si tratta dei file attualmente caricati in background.
 
 **Riferimenti**
 
-[helpx.adobe.com - Annullamento della validità delle pagine in cache da AEM](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html)
+[helpx.adobe.com - Annullamento della validità delle pagine in cache da AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
 
-### Schermatura del sistema Publish
+### Schermatura del sistema di pubblicazione
 
-Il Dispatcher offre un po&#39; più di sicurezza proteggendo il sistema Publish dalle richieste che sono destinate solo a scopi di manutenzione. Non esporre ad esempio `/crx/de` o `/system/console` URL al pubblico.
+Dispatcher offre un po’ di sicurezza aggiuntiva proteggendo il sistema di pubblicazione dalle richieste destinate solo a scopi di manutenzione. Non esporre ad esempio `/crx/de` o `/system/console` URL al pubblico.
 
-L&#39;installazione di un firewall per applicazioni web (WAF) nel sistema non comporta alcun danno. Ma questo aggiunge un numero significativo al vostro budget e non tutti i progetti sono in una situazione in cui possono permettersi e - non dimentichiamolo - operare e mantenere un WAF.
+L&#39;installazione di un firewall per applicazioni Web (WAF) nel sistema non comporta alcun danno. Ma questo aggiunge un numero significativo al vostro budget e non tutti i progetti sono in una situazione in cui possono permettersi e - non dimentichiamo - operare e mantenere un WAF.
 
 Quello che vediamo spesso è un set di regole di riscrittura Apache nella configurazione di Dispatcher che impediscono l’accesso alle risorse più vulnerabili.
 
@@ -1672,7 +1672,7 @@ Ma perché associare il gestore all’intera directory principale dei documenti,
 …
 ```
 
-In questo caso, non dimenticare di associare sempre il gestore del dispatcher all’URL di annullamento della validità di Dispatcher, altrimenti non potrai inviare richieste di annullamento della validità dall’AEM a Dispatcher.
+In questo caso, non dimenticare di associare sempre il gestore del dispatcher all’URL di annullamento della validità di Dispatcher, altrimenti non potrai inviare richieste di annullamento della validità da AEM a Dispatcher.
 
 Un&#39;altra alternativa per utilizzare Dispatcher come filtro consiste nell&#39;impostare le direttive filtro in `dispatcher.any`
 
@@ -1684,13 +1684,13 @@ Un&#39;altra alternativa per utilizzare Dispatcher come filtro consiste nell&#39
 
 Non stiamo imponendo l&#39;uso di una direttiva rispetto all&#39;altra, ma raccomandiamo un&#39;adeguata combinazione di tutte le direttive.
 
-Ma proponiamo di considerare la possibilità di restringere lo spazio URL il più presto possibile nella catena, per quanto necessario, e di farlo nel modo più semplice possibile. Tieni presente che queste tecniche non sostituiscono una WAF su siti web altamente sensibili. Alcune persone chiamano queste tecniche &quot;il firewall dell&#39;uomo povero&quot; - per un motivo.
+Ma proponiamo di considerare la possibilità di restringere lo spazio URL il più presto possibile nella catena, per quanto necessario, e di farlo nel modo più semplice possibile. Tieni presente che queste tecniche non sostituiscono un WAF su siti web altamente sensibili. Alcune persone chiamano queste tecniche &quot;il firewall dell&#39;uomo povero&quot; - per un motivo.
 
 **Riferimenti**
 
 [apache.org- direttiva sethandler](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
 
-[helpx.adobe.com - Configurazione dell&#39;accesso al filtro dei contenuti](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
+[helpx.adobe.com - Configurazione dell&#39;accesso al filtro dei contenuti](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
 
 ### Filtrare utilizzando espressioni regolari e globi
 
@@ -1843,13 +1843,13 @@ Puoi quindi denominare e raggruppare le regole di conseguenza e fornire al letto
 
 **Riferimenti**
 
-[helpx.adobe.com - Progettazione di modelli per le proprietà glob](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
+[helpx.adobe.com - Progettazione di modelli per le proprietà glob](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
 
 ### Specifiche del protocollo
 
 L&#39;ultimo consiglio non è reale, ma abbiamo pensato che valesse la pena condividerlo comunque con voi.
 
-L’AEM e la Dispatcher, nella maggior parte dei casi, funzionano in modo predefinito. Pertanto, non troverai una specifica completa del protocollo Dispatcher sul protocollo di invalidazione su cui basare la tua applicazione. L&#39;informazione è pubblica, ma un po&#39; dispersa su un certo numero di risorse.
+AEM e Dispatcher nella maggior parte dei casi sono pronti all’uso. Pertanto, non troverai una specifica completa del protocollo Dispatcher sul protocollo di invalidazione su cui basare la tua applicazione. L&#39;informazione è pubblica, ma un po&#39; dispersa su un certo numero di risorse.
 
 Cerchiamo di colmare il divario in una certa misura qui. Ecco come si presenta una richiesta di invalidazione:
 
@@ -1906,18 +1906,18 @@ Elenca gli URL che desideri recuperare immediatamente dopo l’annullamento dell
 
 ## Risorse aggiuntive
 
-Panoramica e introduzione al caching di Dispatcher: [https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher.html)
+Panoramica e introduzione al caching di Dispatcher: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 
-Documentazione di Dispatcher con tutte le direttive spiegate: [https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html)
+Documentazione di Dispatcher con tutte le direttive spiegate: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
-Alcune domande frequenti: [https://helpx.adobe.com/it/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/it/experience-manager/using/dispatcher-faq.html)
+Alcune domande frequenti: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/it/experience-manager/using/dispatcher-faq.html)
 
 Registrazione di un webinar sull&#39;ottimizzazione di Dispatcher. Si consiglia di effettuare le seguenti operazioni: [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 
 Presentazione &quot;Il potere sottovalutato dell&#39;invalidazione dei contenuti&quot;, conferenza &quot;adaptTo()&quot; a Potsdam 2018 [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
 
-Annullamento della validità delle pagine in cache da AEM: [https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html)
+Annullamento della validità delle pagine in cache da AEM: [https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
 
 ## Passaggio successivo
 
-* [2 - Schema dell&#39;infrastruttura](chapter-2.md)
+* [2 - Pattern dell’infrastruttura](chapter-2.md)

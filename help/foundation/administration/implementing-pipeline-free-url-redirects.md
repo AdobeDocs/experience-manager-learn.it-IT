@@ -1,10 +1,10 @@
 ---
-title: Implementazione dei reindirizzamenti URL privi di pipeline
+title: Implementazione dei reindirizzamenti URL senza pipeline
 description: Scopri come implementare reindirizzamenti URL senza pipeline in AEM as a Cloud Service per consentire al team marketing di gestire i reindirizzamenti senza la necessità di uno sviluppatore.
 version: Experience Manager as a Cloud Service
 feature: Operations, Dispatcher
 topic: Development, Content Management, Administration
-role: Architect, Developer, User
+role: Developer, User
 level: Beginner, Intermediate
 doc-type: Article
 duration: 0
@@ -12,16 +12,16 @@ last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
 exl-id: 3b0f5971-38b8-4b9e-b90e-9de7432e0e9d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# Implementazione dei reindirizzamenti URL privi di pipeline
+# Implementazione dei reindirizzamenti URL senza pipeline
 
-Scopri come implementare [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) in AEM as a Cloud Service per consentire al team marketing di gestire i reindirizzamenti senza dover ricorrere a uno sviluppatore.
+Scopri come implementare [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) in AEM as a Cloud Service per consentire al team marketing di gestire i reindirizzamenti senza dover ricorrere a uno sviluppatore.
 
 Esistono diverse opzioni per gestire i reindirizzamenti URL in AEM. Per ulteriori informazioni, vedi [Reindirizzamenti URL](url-redirection.md).
 
@@ -37,11 +37,11 @@ Per completare questa esercitazione, è necessario:
 
 ## Caso di utilizzo del tutorial
 
-Ai fini della demo, supponiamo che il team di marketing WKND stia lanciando una nuova campagna di sci. Vorrebbe creare brevi URL per le pagine di avventura sciistica e gestirle in modo autonomo, come nel caso di come gestiscono il contenuto. Hanno deciso di utilizzare l&#39;approccio [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) per gestire i reindirizzamenti URL.
+Ai fini della demo, supponiamo che il team di marketing WKND stia lanciando una nuova campagna di sci. Vorrebbe creare brevi URL per le pagine di avventura sciistica e gestirle in modo autonomo, come nel caso di come gestiscono il contenuto. Hanno deciso di utilizzare l&#39;approccio [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) per gestire i reindirizzamenti URL.
 
 In base ai requisiti del team di marketing, di seguito sono riportati i reindirizzamenti URL da creare.
 
-| URL SOURCE | URL destinazione |
+| URL di origine | URL destinazione |
 |------------|------------|
 | /ski | /us/en/adventures.html |
 | /ski/northamerica | /us/en/adventures/downhill-skiing-wyoming.html |
@@ -134,7 +134,7 @@ RewriteRule ^(.*)$ ${<MAPALIAS>:$1|/} [L,R=301]
 ...
 ```
 
-### Esempi di configurazioni
+### Configurazioni di esempio
 
 Esaminiamo le configurazioni di Dispatcher per ciascuna delle opzioni di gestione del reindirizzamento URL [sopra](#manage-redirects).
 
@@ -144,7 +144,7 @@ Esaminiamo le configurazioni di Dispatcher per ciascuna delle opzioni di gestion
 
 Quando i reindirizzamenti URL vengono gestiti come coppie chiave-valore in un file di testo e caricati in DAM, le configurazioni sono le seguenti.
 
-[!BADGE dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```yaml
 maps:
@@ -152,7 +152,7 @@ maps:
   path: /content/dam/wknd/redirects/skicampaign.txt
 ```
 
-[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```
 ...
@@ -171,7 +171,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 Quando i reindirizzamenti URL vengono gestiti utilizzando ACS Commons - Redirect Map Manager, le configurazioni sono le seguenti.
 
-[!BADGE dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```yaml
 maps:
@@ -179,7 +179,7 @@ maps:
   path: /etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt
 ```
 
-[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```
 ...
@@ -198,7 +198,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 Quando i reindirizzamenti URL vengono gestiti utilizzando ACS Commons - Redirect Manager, le configurazioni sono le seguenti.
 
-[!BADGE dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```yaml
 maps:
@@ -206,7 +206,7 @@ maps:
   path: /conf/wknd/settings/redirects.txt
 ```
 
-[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
+[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Nome file dell’esempio di codice riportato di seguito."}
 
 ```
 ...
@@ -229,7 +229,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 >
 >Il termine *senza pipeline* viene utilizzato per sottolineare che le configurazioni sono *distribuite una sola volta* e che il team di marketing può gestire i reindirizzamenti URL aggiornando il file di testo.
 
-Per distribuire le configurazioni, utilizzare la pipeline [full-stack](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) o [configurazione a livello web](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) in [Cloud Manager](https://my.cloudmanager.adobe.com/).
+Per distribuire le configurazioni, utilizzare la pipeline [full-stack](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) o [configurazione a livello web](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) in [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
 ![Distribuzione tramite pipeline full stack](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
 
@@ -248,5 +248,5 @@ Il team marketing può gestire i reindirizzamenti URL come coppie chiave-valore 
 
 ## Risorse aggiuntive
 
-- [Reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [Reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
 - [Reindirizzamenti URL](url-redirection.md)

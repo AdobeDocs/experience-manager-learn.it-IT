@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 167a4b11-1202-4c7a-b022-f3f996348a4e
 duration: 476
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 Scopri come aggiungere widget all’Editor Rich Text nell’Editor frammenti di contenuto di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447440?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
 Per aggiungere contenuto dinamico nell&#39;editor Rich Text, è possibile utilizzare la funzionalità **widget**. I widget consentono di integrare l’interfaccia utente semplice o complessa nell’editor Rich Text e l’interfaccia utente tramite il framework JS scelto. Possono essere considerate finestre di dialogo aperte premendo il tasto speciale `{` nell&#39;editor Rich Text.
 
 In genere, i widget vengono utilizzati per inserire il contenuto dinamico che ha una dipendenza di sistema esterna o che potrebbe cambiare in base al contesto corrente.
 
-I **widget** vengono aggiunti all&#39;editor **RTE** nell&#39;editor frammenti di contenuto utilizzando il punto di estensione `rte`. Utilizzando il metodo `getWidgets()` del punto di estensione `rte`, vengono aggiunti uno o più widget. Vengono attivati premendo il tasto speciale `{` per aprire l&#39;opzione del menu di scelta rapida, quindi selezionare il widget desiderato per caricare l&#39;interfaccia utente della finestra di dialogo personalizzata.
+I **widget** vengono aggiunti all&#39;editor **RTE** nell&#39;editor frammenti di contenuto utilizzando il punto di estensione `rte`. Utilizzando il metodo `rte` del punto di estensione `getWidgets()`, vengono aggiunti uno o più widget. Vengono attivati premendo il tasto speciale `{` per aprire l&#39;opzione del menu di scelta rapida, quindi selezionare il widget desiderato per caricare l&#39;interfaccia utente della finestra di dialogo personalizzata.
 
 In questo esempio viene illustrato come aggiungere un widget denominato _Elenco codici sconto_ per trovare, selezionare e aggiungere il codice sconto WKND specifico dell&#39;avventura all&#39;interno di un contenuto RTE. Questi codici di sconto possono essere gestiti in sistemi esterni come Order Management System (OMS), Product Information Management (PIM), applicazioni sviluppate in casa o un&#39;azione Adobe AppBuilder.
 
@@ -40,7 +40,7 @@ Per semplificare, in questo esempio viene utilizzato il framework [Adobe React S
 Questo esempio si estende fino al punto di estensione `rte` per aggiungere un widget all&#39;editor Rich Text nell&#39;Editor frammenti di contenuto.
 
 | Interfaccia utente di AEM estesa | Punto di estensione |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Widget editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Estensione di esempio

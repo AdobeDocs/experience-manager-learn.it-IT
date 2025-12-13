@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 Questo esempio si estende al punto di estensione `contentFragmentGrid` per aggiungere una colonna personalizzata alla console Frammenti di contenuto.
 
 | Interfaccia utente di AEM estesa | Punto di estensione |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Console Frammenti di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Colonne griglia](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
 ## Estensione di esempio
@@ -208,7 +208,7 @@ Se sono necessari altri dati per compilare la colonna personalizzata, è possibi
 
 >[!IMPORTANT]
 >
-> Assicurati che l&#39;istanza Autore AEM sia configurata per consentire [richieste tra origini diverse](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=it) dalle origini su cui è in esecuzione l&#39;app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine dello stage di AppBuilder e l&#39;origine della produzione di AppBuilder.
+> Assicurati che l&#39;istanza Autore AEM sia configurata per consentire [richieste tra origini diverse](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) dalle origini su cui è in esecuzione l&#39;app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine dello stage di AppBuilder e l&#39;origine della produzione di AppBuilder.
 >
 > In alternativa, l&#39;estensione può chiamare un&#39;azione [AppBuilder](../../runtime-action.md) personalizzata che effettua la richiesta ad AEM Author per conto dell&#39;estensione.
 

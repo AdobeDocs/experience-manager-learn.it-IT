@@ -4,7 +4,7 @@ description: Scopri come gestire le autorizzazioni per i gruppi di utenti Profil
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Article
 jira: KT-17429
@@ -12,7 +12,7 @@ thumbnail: KT-17429.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 3230a8e7-6342-4497-9163-1898700f29a4
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -28,7 +28,7 @@ In questa esercitazione imparerai:
 - Profilo di prodotto e sua associazione ai Servizi.
 - Aggiornamento delle autorizzazioni del gruppo utenti Servizi.
 
-## Informazioni di base
+## Esperienza pregressa
 
 Quando utilizzi un&#39;API di AEM, devi assegnare il _profilo di prodotto_ alle _credenziali_ nel progetto Adobe Developer Console (o ADC). Il _profilo prodotto_ (e servizio associato) fornisce le _autorizzazioni o autorizzazioni_ alle credenziali per accedere alle risorse di AEM. Nella schermata seguente puoi visualizzare le _credenziali_ e il _profilo di prodotto_ per un&#39;API di authoring AEM Assets:
 
@@ -90,7 +90,7 @@ Per aggiornare le autorizzazioni del gruppo di utenti dei servizi (ad esempio `A
 
 - Esegui il commit e invia le modifiche all’archivio.
 
-- Distribuisci le modifiche all&#39;istanza di AEM utilizzando la [pipeline full stack di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
+- Distribuisci le modifiche all&#39;istanza di AEM utilizzando la [pipeline full stack di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
 
 - Puoi anche verificare le autorizzazioni del gruppo di utenti utilizzando la visualizzazione **Autorizzazioni**. Passa a **Strumenti** > **Sicurezza** > **Autorizzazioni** nell&#39;istanza di AEM.
 

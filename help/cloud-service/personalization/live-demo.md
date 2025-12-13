@@ -4,13 +4,13 @@ description: Personalizzazione delle esperienze in azione sul sito web WKND Enab
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations
-role: Developer, Architect, Leader, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-11-03T00:00:00Z
 jira: KT-19546
 thumbnail: KT-19546.jpeg
-source-git-commit: ed7af09d747d54a84d2583073d3c731388b5f516
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Visita il [sito Web WKND Enablement](https://wknd.enablementadobe.com/us/en.html){target="wknd"} per visualizzare esempi reali di test A/B, targeting comportamentale e personalizzazione di utenti noti.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476469/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
 
 Questa pagina ti guida attraverso dimostrazioni pratiche di ogni scenario di personalizzazione. Utilizzalo per esplorare le possibilità prima di creare queste funzionalità sul tuo sito AEM.
 

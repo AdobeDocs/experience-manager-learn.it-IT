@@ -4,16 +4,16 @@ description: Scopri come configurare i filtri AEM Publish Dispatcher per l’uti
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10829
 thumbnail: kt-10829.jpg
 exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
 duration: 48
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '200'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Adobe Experience Manager as a Cloud Service utilizza i filtri AEM Publish Dispatcher per garantire che solo le richieste che devono raggiungere AEM raggiungano AEM. Per impostazione predefinita, tutte le richieste sono negate e i modelli per gli URL consentiti devono essere aggiunti esplicitamente.
 
-| Tipo di client | [App a pagina singola (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Mobile](../mobile.md) | [Server-to-server](../server-to-server.md) |
+| Tipo di client | [App a pagina singola (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Dispositivi mobili](../mobile.md) | [Server-to-server](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
 | Richiede la configurazione dei filtri di Dispatcher | ✔ | ✔ | ✔ | ✔ |
 
@@ -33,7 +33,7 @@ Adobe Experience Manager as a Cloud Service utilizza i filtri AEM Publish Dispat
 
 La configurazione del filtro Dispatcher di pubblicazione di AEM definisce i pattern di URL consentiti per raggiungere AEM e deve includere il prefisso URL per l’endpoint di query persistente di AEM.
 
-| Il client si collega a | AEM Author | AEM Publish | Anteprima AEM |
+| Il client si collega a | AEM Author | Pubblicazione AEM | Anteprima AEM |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
 | Richiede la configurazione dei filtri di Dispatcher | ✘ | ✔ | ✔ |
 

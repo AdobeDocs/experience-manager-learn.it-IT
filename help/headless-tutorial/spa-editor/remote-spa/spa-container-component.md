@@ -3,7 +3,7 @@ title: Aggiungere componenti contenitore React modificabili a un’applicazione 
 description: Scopri come aggiungere componenti contenitore modificabili a un’applicazione a pagina singola remota che consentono agli autori di AEM di trascinarvi i componenti.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7635
 thumbnail: kt-7635.jpeg
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 1%
@@ -266,7 +266,7 @@ L’implementazione del componente Immagine modificabile sarà simile alla segue
 Nell&#39;applicazione a pagina singola viene fatto riferimento ai componenti React `EditableText` e `EditableImage` appena creati e vengono create dinamicamente in base al JSON restituito da AEM. Per assicurarsi che questi componenti siano disponibili per l&#39;applicazione a pagina singola, creare le relative istruzioni di importazione in `Home.js`
 
 1. Apri il progetto SPA nell’IDE
-1. Apri il file `src/Home.js`
+1. Apri il file in `src/Home.js`
 1. Aggiungi istruzioni di importazione per `AEMText` e `AEMImage`
 
    ```javascript

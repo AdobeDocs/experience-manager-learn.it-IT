@@ -1,16 +1,16 @@
 ---
 title: Acroforms con AEM Forms
 description: Tutorial che illustra come creare un modulo adattivo utilizzando Acroform e unire i dati per ottenere un PDF. Il PDF con i dati uniti può quindi essere inviato per la firma utilizzando Acrobat Sign.
-feature: adaptive-forms
+feature: Adaptive Forms
 doc-type: Tutorial
 version: Experience Manager 6.5
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 45
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

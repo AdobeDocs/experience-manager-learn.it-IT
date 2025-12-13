@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
@@ -33,7 +33,7 @@ Quindi, verrà fornita una dimostrazione della creazione di frammenti di contenu
 
 Inoltre, esploreremo la definizione degli endpoint di AEM GraphQL. GraphQL recupera i dati da AEM in modo efficiente e configurerà gli endpoint per esporre i dati desiderati. Le query persistenti ottimizzano le prestazioni e la memorizzazione in cache.
 
-Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggerimenti pratici. Entro la fine, avrai acquisito le competenze necessarie per abilitare Frammenti di contenuto, creare Modelli di frammenti, generare Frammenti e definire endpoint AEM GraphQL e query persistenti. Iniziamo!
+Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggerimenti pratici. Entro la fine, avrai acquisito le competenze necessarie per abilitare Frammenti di contenuto, creare Modelli di frammenti, generare Frammenti e definire endpoint AEM GraphQL e query persistenti. Iniziamo.
 
 ## Configurazione in base al contesto
 
@@ -55,8 +55,8 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
    | Tipo di dati | Nome | Obbligatorio | Opzioni |
    |----------|------|----------|---------|
    | Riferimento contenuto | Risorsa | sì | Se lo desideri, aggiungi un’immagine predefinita. Esempio: /content/dam/wknd-headless/assets/AdobeStock_307513975.mp4 |
-   | Testo su riga singola | Titolo | sì |
-   | Testo su riga singola | Pre-titolo | no |
+   | Testo su riga singola | Titolo | sì | |
+   | Testo su riga singola | Pre-titolo | no | |
    | Testo su più righe | Descrizione | no | Assicurati che il tipo predefinito sia RTF |
    | Enumerazione | Stile | sì | Menu a discesa Rendering come. Le opzioni sono Eroe -> protagonista e In primo piano -> in primo piano |
 
@@ -193,6 +193,6 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
 ## Passaggi successivi
 
-Congratulazioni Hai configurato correttamente AEM as a Cloud Service per consentire la creazione di frammenti di contenuto ed endpoint GraphQL. Hai anche creato un modello per frammenti di contenuto e un frammento di contenuto, definito un endpoint GraphQL e una query persistente. Ora puoi passare al prossimo capitolo dell’esercitazione, dove scoprirai come creare un’applicazione AEM Headless React che utilizza i frammenti di contenuto e l’endpoint GraphQL creati in questo capitolo.
+Congratulazioni. Hai configurato correttamente AEM as a Cloud Service per consentire la creazione di frammenti di contenuto ed endpoint GraphQL. Hai anche creato un modello per frammenti di contenuto e un frammento di contenuto, definito un endpoint GraphQL e una query persistente. Ora puoi passare al prossimo capitolo dell’esercitazione, dove scoprirai come creare un’applicazione AEM Headless React che utilizza i frammenti di contenuto e l’endpoint GraphQL creati in questo capitolo.
 
 [Prossimo capitolo: API headless di AEM e React](./2-aem-headless-apis-and-react.md)

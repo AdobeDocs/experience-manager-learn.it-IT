@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
-source-git-commit: d2714443fa644ba17afdfbed5e6da8091425aeab
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 5%
@@ -25,9 +25,9 @@ Scopri come incrementare l’ottimizzazione SEO (Search Engine Optimization) cre
 
 >[!WARNING]
 >
->Questo video illustra l’utilizzo di URL relativi nella mappa del sito. Le mappe del sito [&#x200B; devono utilizzare URL assoluti](https://sitemaps.org/protocol.html). Per informazioni su come abilitare gli URL assoluti, consulta [Configurazioni](#absolute-sitemap-urls), in quanto questo argomento non è trattato nel video seguente.
+>Questo video illustra l’utilizzo di URL relativi nella mappa del sito. Le mappe del sito [ devono utilizzare URL assoluti](https://sitemaps.org/protocol.html). Per informazioni su come abilitare gli URL assoluti, consulta [Configurazioni](#absolute-sitemap-urls), in quanto questo argomento non è trattato nel video seguente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454369?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## Configurazioni
 
@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Risorse
 
-+ [Documentazione di AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=it)
++ [Documentazione di AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentazione di Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Sitemap.org Documentazione sitemap](https://www.sitemaps.org/protocol.html)
 + [Sitemap.org Documentazione del file di indice Sitemap](https://www.sitemaps.org/protocol.html#index)

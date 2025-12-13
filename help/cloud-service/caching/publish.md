@@ -1,10 +1,10 @@
 ---
-title: Memorizzazione in cache del servizio di pubblicazione AEM
+title: Memorizzazione in cache del servizio Publish AEM
 description: Panoramica generale del caching del servizio di pubblicazione di AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Dispatcher, Developer Tools
 topic: Performance
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Article
 last-substantial-update: 2023-08-28T00:00:00Z
@@ -12,14 +12,14 @@ jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: 1a1accbe-7706-4f9b-bf63-755090d03c4c
 duration: 240
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 2%
 
 ---
 
-# AEM Publish
+# Pubblicazione AEM
 
 Il servizio di pubblicazione di AEM dispone di due livelli di caching principali, AEM as a Cloud Service CDN e AEM Dispatcher. Facoltativamente, è possibile inserire una rete CDN gestita dal cliente davanti alla rete CDN di AEM as a Cloud Service. La rete CDN di AEM as a Cloud Service fornisce una distribuzione ai margini dei contenuti, garantendo che le esperienze vengano distribuite agli utenti di tutto il mondo con una latenza ridotta. AEM Dispatcher fornisce la memorizzazione in cache direttamente prima di AEM Publish e viene utilizzato per mitigare il carico non necessario sulla stessa AEM Publish.
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service CDN memorizza in cache quanto segue:
 + Corpo della risposta HTTP
 + Intestazioni di risposta HTTP
 
-In genere, una richiesta/risposta HTTP per un singolo URL viene memorizzata nella cache come oggetto singolo. Tuttavia, la rete CDN può gestire la memorizzazione nella cache di più oggetti per un singolo URL quando l&#39;intestazione `Vary` è impostata sulla risposta HTTP. Evita di specificare `Vary` nelle intestazioni i cui valori non hanno un set di valori strettamente controllato, in quanto ciò può causare molti errori nella cache, riducendo il rapporto di hit della cache. Per supportare il caching di diverse richieste in AEM Dispatcher, [consulta la documentazione sul caching delle varianti](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/variant-caching.html?lang=it).
+In genere, una richiesta/risposta HTTP per un singolo URL viene memorizzata nella cache come oggetto singolo. Tuttavia, la rete CDN può gestire la memorizzazione nella cache di più oggetti per un singolo URL quando l&#39;intestazione `Vary` è impostata sulla risposta HTTP. Evita di specificare `Vary` nelle intestazioni i cui valori non hanno un set di valori strettamente controllato, in quanto ciò può causare molti errori nella cache, riducendo il rapporto di hit della cache. Per supportare il caching di diverse richieste in AEM Dispatcher, [consulta la documentazione sul caching delle varianti](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/variant-caching.html).
 
 ### Durata cache{#cdn-cache-life}
 
@@ -71,15 +71,15 @@ Se una risposta HTTP è idonea per il caching di AEM Dispatcher [per qualificato
 
 | Tipo di contenuto | Durata predefinita cache CDN |
 |:------------ |:---------- |
-| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#html-text) | 5 minuti |
-| [Assets (immagini, video, documenti e così via)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#images) | 10 minuti |
-| [Query persistenti (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=it&publish-instances) | 2 ore |
-| [Librerie client (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#client-side-libraries) | 30 giorni |
-| [Altro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#other-content) | Non memorizzato in cache |
+| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#html-text) | 5 minuti |
+| [Assets (immagini, video, documenti e così via)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | 10 minuti |
+| [Query persistenti (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 2 ore |
+| [Librerie client (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30 giorni |
+| [Altro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | Non memorizzato in cache |
 
 ### Personalizzare le regole della cache
 
-[La configurazione della modalità con cui la rete CDN memorizza in cache il contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#disp) è limitata all&#39;impostazione delle intestazioni della cache nelle risposte HTTP. Queste intestazioni della cache sono in genere impostate nelle configurazioni di AEM Dispatcher `vhost` utilizzando `mod_headers`, ma possono anche essere impostate nel codice Java™ personalizzato in esecuzione nella stessa pubblicazione AEM.
+[La configurazione della modalità con cui la rete CDN memorizza in cache il contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#disp) è limitata all&#39;impostazione delle intestazioni della cache nelle risposte HTTP. Queste intestazioni della cache sono in genere impostate nelle configurazioni di AEM Dispatcher `vhost` utilizzando `mod_headers`, ma possono anche essere impostate nel codice Java™ personalizzato in esecuzione nella stessa pubblicazione AEM.
 
 ## Dispatcher AEM
 
@@ -95,10 +95,10 @@ Le risposte HTTP per le richieste HTTP corrispondenti vengono memorizzate nella 
 + La risposta HTTP NON è per un file binario.
 + Il percorso URL della richiesta HTTP termina con un&#39;estensione, ad esempio: `.html`, `.json`, `.css`, `.js`, ecc.
 + La richiesta HTTP non contiene autorizzazioni e non è autenticata da AEM.
-   + Tuttavia, la memorizzazione nella cache delle richieste autenticate [&#x200B; può essere abilitata a livello globale](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-when-authentication-is-used) o in modo selettivo tramite [memorizzazione nella cache sensibile alle autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it).
+   + Tuttavia, la memorizzazione nella cache delle richieste autenticate [ può essere abilitata a livello globale](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) o in modo selettivo tramite [memorizzazione nella cache sensibile alle autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it).
 + La richiesta HTTP non contiene parametri di query.
-   + Tuttavia, la configurazione di [Parametri di query ignorati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#ignoring-url-parameters) consente di memorizzare nella cache/gestire le richieste HTTP con i parametri di query ignorati.
-+ Il percorso della richiesta HTTP [corrisponde a una regola Dispatcher consentita e non corrisponde a una regola nega](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#specifying-the-documents-to-cache).
+   + Tuttavia, la configurazione di [Parametri di query ignorati](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters) consente di memorizzare nella cache/gestire le richieste HTTP con i parametri di query ignorati.
++ Il percorso della richiesta HTTP [corrisponde a una regola Dispatcher consentita e non corrisponde a una regola nega](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache).
 + La risposta HTTP non ha una delle seguenti intestazioni di risposta HTTP impostate da AEM Publish:
 
    + `no-cache`
@@ -110,7 +110,7 @@ Le risposte HTTP per le richieste HTTP corrispondenti vengono memorizzate nella 
 AEM Dispatcher memorizza nella cache quanto segue:
 
 + Corpo della risposta HTTP
-+ Intestazioni di risposta HTTP specificate nella configurazione delle [intestazioni cache di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers). Vedere la configurazione predefinita fornita con [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L106-L113).
++ Intestazioni di risposta HTTP specificate nella configurazione delle [intestazioni cache di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers). Vedere la configurazione predefinita fornita con [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L106-L113).
    + `Cache-Control`
    + `Content-Disposition`
    + `Content-Type`
@@ -123,7 +123,7 @@ AEM Dispatcher memorizza nella cache quanto segue:
 AEM Dispatcher memorizza nella cache le risposte HTTP utilizzando i seguenti approcci:
 
 + Fino a quando l’annullamento della validità non viene attivato tramite meccanismi quali la pubblicazione o l’annullamento della pubblicazione del contenuto.
-+ TTL (time-to-live) quando [è configurato in modo esplicito nella configurazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#configuring-time-based-cache-invalidation-enablettl). Vedere la configurazione predefinita in [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127) esaminando la configurazione `enableTTL`.
++ TTL (time-to-live) quando [è configurato in modo esplicito nella configurazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl). Vedere la configurazione predefinita in [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/available_farms/default.farm#L122-L127) esaminando la configurazione `enableTTL`.
 
 #### Durata predefinita della cache
 
@@ -131,15 +131,15 @@ Se una risposta HTTP è idonea per il caching di AEM Dispatcher [per qualificato
 
 | Tipo di contenuto | Durata predefinita cache CDN |
 |:------------ |:---------- |
-| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#html-text) | Fino all’annullamento della validità |
-| [Assets (immagini, video, documenti e così via)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#images) | Mai |
-| [Query persistenti (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?lang=it&publish-instances) | 1 minuto |
-| [Librerie client (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#client-side-libraries) | 30 giorni |
-| [Altro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it#other-content) | Fino all’annullamento della validità |
+| [HTML/JSON/XML](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#html-text) | Fino all’annullamento della validità |
+| [Assets (immagini, video, documenti e così via)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#images) | Mai |
+| [Query persistenti (JSON)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html?publish-instances) | 1 minuto |
+| [Librerie client (JS/CSS)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#client-side-libraries) | 30 giorni |
+| [Altro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content) | Fino all’annullamento della validità |
 
 ### Personalizzare le regole della cache
 
-La cache di AEM Dispatcher può essere configurata tramite la [configurazione Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#configuring-the-dispatcher-cache-cache), inclusi:
+La cache di AEM Dispatcher può essere configurata tramite la [configurazione Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache), inclusi:
 
 + Cosa viene memorizzato nella cache
 + Quali parti della cache vengono invalidate al momento della pubblicazione o dell’annullamento della pubblicazione

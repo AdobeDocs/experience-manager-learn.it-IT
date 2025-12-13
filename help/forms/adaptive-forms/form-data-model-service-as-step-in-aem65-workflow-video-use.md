@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
 duration: 239
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -21,6 +21,8 @@ ht-degree: 0%
 
 A partire da AEM Forms 6.4, ora è possibile utilizzare il Servizio modello dati modulo come parte del flusso di lavoro AEM. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo nel flusso di lavoro di AEM
 
+>[!NOTE]
+>
 >La funzionalità illustrata in questo video richiede AEM Forms 6.5.1
 
 
@@ -38,5 +40,6 @@ Per testare questa funzionalità sul server, attieniti alle istruzioni seguenti
    * Modulo adattivo per attivare il flusso di lavoro all’invio.
 * Aprire [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Inserisci i dettagli e invia. All&#39;invio del modulo viene attivato il [flusso di lavoro Loanapplication](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html).
 
-![&#x200B; flusso di lavoro &#x200B;](assets/invokefdm651.PNG).
+![workflow](assets/invokefdm651.PNG).
+
 Il flusso di lavoro utilizza il componente Dividi o per instradare l’applicazione all’amministratore se il punteggio di credito è superiore a 500. Se il punteggio di credito è inferiore a 500, l’applicazione viene instradata a cavery.

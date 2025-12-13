@@ -3,7 +3,7 @@ title: Aggiungere componenti modificabili alle route dinamiche dell'applicazione
 description: Scopri come aggiungere componenti modificabili alle route dinamiche in un’applicazione a pagina singola remota.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7636
 thumbnail: kt-7636.jpeg
@@ -13,9 +13,9 @@ doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
 duration: 202
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ La route dell&#39;applicazione a pagina singola Adventure Detail è definita com
 
 Nei due capitoli precedenti, il contenuto dei componenti modificabili è stato mappato dalla vista Home dell&#39;applicazione a pagina singola alla pagina principale dell&#39;applicazione a pagina singola remota corrispondente in AEM all&#39;indirizzo `/content/wknd-app/us/en/`.
 
-La definizione della mappatura per i componenti modificabili per le route dinamiche dell’applicazione a pagina singola è simile, tuttavia è necessario trovare uno schema di mappatura 1:1 tra le istanze della route e le pagine AEM.
+La definizione della mappatura per i componenti modificabili per le route dinamiche dell&#39;applicazione a pagina singola è simile, tuttavia è necessario trovare uno schema di mappatura 1:1 tra le istanze della route e le pagine AEM.
 
 In questo tutorial, prendiamo il nome del frammento di contenuto WKND Adventure, che è l’ultimo segmento del percorso, e lo mappiamo su un percorso semplice in `/content/wknd-app/us/en/adventure`.
 
@@ -174,7 +174,7 @@ Quando si passa a un percorso di dettaglio avventura privo di una pagina AEM map
 
 ## Congratulazioni.
 
-Congratulazioni Hai aggiunto la possibilità di authoring per le route dinamiche nell’applicazione a pagina singola.
+Congratulazioni. Hai aggiunto la possibilità di authoring per le route dinamiche nell’applicazione a pagina singola.
 
 * Aggiunta del componente ResponsiveGrid del componente AEM React Editable a una route dinamica
 * Sono state create pagine AEM per supportare l’authoring di due percorsi specifici nell’applicazione a pagina singola (Bali Surf Camp e Beervana a Portland)

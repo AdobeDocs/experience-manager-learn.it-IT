@@ -10,10 +10,10 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
 duration: 247
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ Si tratta del file di configurazione Apache `<VirtualHost>` che consente l&#39;e
 ```
 Listen 81
 <VirtualHost *:81>
-    ServerName	"health"
+    ServerName "health"
     ...SNIP...
     ScriptAlias /health/ "/var/www/cgi-bin/health/"
 </VirtualHost>
@@ -128,8 +128,9 @@ RELOAD_MODE='author'
 ```
 
 Opzioni valide:
+
 - author
-   - Questa è l&#39;opzione predefinita.
+   - Questa è l’opzione predefinita.
    - Verrà visualizzata una pagina di manutenzione per l’autore quando non è integro
 - pubblicazione
    - Questa opzione consente di impostare una pagina di manutenzione per l’editore quando non è integra
@@ -142,27 +143,27 @@ Se si visualizza l&#39;impostazione `VirtualHost` per questi elementi, verrà vi
 
 ```
 <VirtualHost *:80>
-	ServerName	unhealthyauthor
-	ServerAlias	${AUTHOR_DEFAULT_HOSTNAME}
-	ErrorDocument	503 /error.html
-	DocumentRoot	/mnt/var/www/default
-	<Directory />
-		Options FollowSymLinks
-		AllowOverride None
-	</Directory>
-	<Directory "/mnt/var/www/default">
-		AllowOverride None
-		Require all granted
-	</Directory>
-	<IfModule mod_headers.c>
-		Header always add X-Dispatcher ${DISP_ID}
-		Header always add X-Vhost "unhealthy-author"
-	</IfModule>
-	<IfModule mod_rewrite.c>
-		ReWriteEngine   on
-		RewriteCond %{REQUEST_URI} !^/error.html$
-		RewriteRule ^/* /error.html [R=503,L,NC]
-	</IfModule>
+    ServerName    unhealthyauthor
+    ServerAlias    ${AUTHOR_DEFAULT_HOSTNAME}
+    ErrorDocument    503 /error.html
+    DocumentRoot    /mnt/var/www/default
+    <Directory />
+        Options FollowSymLinks
+        AllowOverride None
+    </Directory>
+    <Directory "/mnt/var/www/default">
+        AllowOverride None
+        Require all granted
+    </Directory>
+    <IfModule mod_headers.c>
+        Header always add X-Dispatcher ${DISP_ID}
+        Header always add X-Vhost "unhealthy-author"
+    </IfModule>
+    <IfModule mod_rewrite.c>
+        ReWriteEngine   on
+        RewriteCond %{REQUEST_URI} !^/error.html$
+        RewriteRule ^/* /error.html [R=503,L,NC]
+    </IfModule>
 </VirtualHost>
 ```
 

@@ -4,7 +4,7 @@ description: Scopri come proteggere i siti web di AEM da minacce sofisticate, tr
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
@@ -12,8 +12,8 @@ badgeLicense: label="Richiede una licenza" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Gli attacchi sofisticati sono caratterizzati da un’elevata frequenza di richie
 > Le regole del filtro del traffico WAF richiedono un’ulteriore licenza **Protezione WAF-DDoS** o **Sicurezza avanzata**. Le regole del filtro del traffico standard sono disponibili per impostazione predefinita per la clientela di Sites e Forms.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469438/?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Obiettivi di apprendimento
 

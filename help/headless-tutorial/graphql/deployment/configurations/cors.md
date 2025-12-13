@@ -4,16 +4,16 @@ description: Scopri come configurare la condivisione CORS (Cross-origin resource
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10830
 thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2024-03-22T00:00:00Z
 duration: 185
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '593'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ La condivisione CORS (Cross-Origin Resource Sharing) di Adobe Experience Manager
 
 CORS è richiesto per le connessioni basate su browser alle API GraphQL di AEM, quando il client che si connette ad AEM NON viene gestito dalla stessa origine (nota anche come host o dominio) di AEM.
 
-| Tipo di client | [App a pagina singola (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Mobile](../mobile.md) | [Server-to-server](../server-to-server.md) |
+| Tipo di client | [App a pagina singola (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Dispositivi mobili](../mobile.md) | [Server-to-server](../server-to-server.md) |
 |----------------------------:|:---------------------:|:-------------:|:---------:|:----------------:|
 | Richiede la configurazione CORS | ✔ | ✔ | ✘ | ✘ |
 
@@ -42,7 +42,7 @@ L’abilitazione di CORS sul servizio AEM Author è diversa dai servizi AEM Publ
 
 Il factory di configurazione AEM CORS OSGi definisce i criteri consentiti per l’accettazione delle richieste HTTP CORS.
 
-| Il client si collega a | AEM Author | AEM Publish | Anteprima AEM |
+| Il client si collega a | AEM Author | Pubblicazione AEM | Anteprima AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Richiede la configurazione OSGi CORS | ✔ | ✘ | ✘ |
 
@@ -59,7 +59,7 @@ Le proprietà chiave di configurazione sono:
 + `supportedheaders` include `"Authorization"` perché le richieste ad AEM Author devono essere autorizzate.
 + `supportscredentials` è impostato su `true` perché la richiesta ad AEM Author deve essere autorizzata.
 
-[Ulteriori informazioni sulla configurazione OSGi CORS.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=it)
+[Ulteriori informazioni sulla configurazione OSGi CORS.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 
 L’esempio seguente supporta l’utilizzo di query persistenti di AEM GraphQL in AEM Author. Per utilizzare le query GraphQL definite dal client, aggiungere un URL dell&#39;endpoint GraphQL in `allowedpaths` e `POST` in `supportedmethods`.
 
@@ -100,7 +100,7 @@ L’esempio seguente supporta l’utilizzo di query persistenti di AEM GraphQL i
 
 + [Un esempio della configurazione OSGi è disponibile nel progetto WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json)
 
-## AEM Publish
+## Pubblicazione AEM
 
 L’abilitazione di CORS sui servizi di pubblicazione (e anteprima) di AEM è diversa dal servizio di authoring di AEM. Il servizio di pubblicazione di AEM richiede che una configurazione di AEM Dispatcher sia aggiunta alla configurazione di Dispatcher di AEM Publish. AEM Publish non utilizza una configurazione [OSGi](#osgi-configuration).
 
@@ -109,11 +109,11 @@ Durante la configurazione di CORS in AEM Publish, assicurati:
 + Impossibile inviare l&#39;intestazione di richiesta HTTP `Origin` al servizio di pubblicazione AEM rimuovendo l&#39;intestazione `Origin` (se aggiunta in precedenza) dal file `clientheaders.any` del progetto AEM Dispatcher. Tutte le intestazioni `Access-Control-` devono essere rimosse dal file `clientheaders.any` e Dispatcher le gestisce, non il servizio AEM Publish.
 + Se nel servizio di pubblicazione AEM sono abilitate [configurazioni OSGi CORS](#osgi-configuration), devi rimuoverle e migrarne le configurazioni alla [configurazione vhost Dispatcher](#set-cors-headers-in-vhost) descritta di seguito.
 
-### Configurazione Dispatcher
+### Configurazione del Dispatcher
 
 Il Dispatcher del servizio AEM Publish (e Anteprima) deve essere configurato per supportare CORS.
 
-| Il client si collega a | AEM Author | AEM Publish | Anteprima AEM |
+| Il client si collega a | AEM Author | Pubblicazione AEM | Anteprima AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Richiede la configurazione Dispatcher CORS | ✘ | ✔ | ✔ |
 

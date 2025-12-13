@@ -3,7 +3,7 @@ title: Guida introduttiva all’editor di SPA e alle applicazioni a pagina singo
 description: Ti diamo il benvenuto in questo tutorial in più parti progettato per gli sviluppatori che desiderano potenziare un’applicazione a pagina singola remota (SPA) esistente con contenuti AEM modificabili tramite l’editor di SPA di AEM.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7630
 thumbnail: 333272.jpeg
@@ -12,8 +12,8 @@ doc-type: Tutorial
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
 duration: 294
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Ti diamo il benvenuto in questo tutorial in più parti progettato per gli svilup
 
 Questo tutorial si basa sull’[app GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), un’app React che utilizza contenuto di frammenti di contenuto AEM tramite le API GraphQL di AEM, ma non fornisce alcuna creazione di contenuti SPA nel contesto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444855?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## Informazioni sul tutorial
 

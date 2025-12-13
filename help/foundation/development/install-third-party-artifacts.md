@@ -4,7 +4,7 @@ description: Scopri come installare artefatti di terze parti *non disponibili ne
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: OSGI
 topic: Development
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-09-13T00:00:00Z
 jira: KT-16207
 thumbnail: KT-16207.jpeg
 exl-id: 0cec14b3-4be5-4666-a36c-968ea2fc634f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 0%
@@ -27,7 +27,7 @@ I **artefatti di terze parti** possono essere:
 
 - [Bundle OSGi](https://www.osgi.org/resources/architecture/): un bundle OSGi è un file di archivio Java™ che contiene classi Java, risorse e un manifesto che descrive il bundle e le relative dipendenze.
 - [Java jar](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): file di archivio Java™ contenente classi e risorse Java.
-- [Pacchetto](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): un pacchetto è un file zip contenente il contenuto del repository nel modulo di serializzazione del file system.
+- [Pacchetto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): un pacchetto è un file zip contenente il contenuto del repository nel modulo di serializzazione del file system.
 
 ## Scenario standard
 
@@ -35,9 +35,9 @@ In genere si installa il bundle di terze parti, pacchetto che *è disponibile* n
 
 Ad esempio:
 
-- [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components) **bundle** è stato aggiunto come dipendenza nel file `pom.xml` [&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) del progetto WKND. In questo caso, l&#39;ambito `provided` viene utilizzato poiché il bundle dei Componenti core WCM AEM viene fornito dal runtime AEM. Se il bundle non viene fornito dal runtime di AEM, viene utilizzato l&#39;ambito `compile` che è l&#39;ambito predefinito.
+- [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components) **bundle** è stato aggiunto come dipendenza nel file [ ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) del progetto `pom.xml`WKND. In questo caso, l&#39;ambito `provided` viene utilizzato poiché il bundle dei Componenti core WCM AEM viene fornito dal runtime AEM. Se il bundle non viene fornito dal runtime di AEM, viene utilizzato l&#39;ambito `compile` che è l&#39;ambito predefinito.
 
-- [Pacchetto **pacchetto** condiviso WKND](https://github.com/adobe/aem-guides-wknd-shared) aggiunto come dipendenza nel file `pom.xml` del progetto [WKND](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773).
+- [Pacchetto ](https://github.com/adobe/aem-guides-wknd-shared)pacchetto **condiviso WKND** aggiunto come dipendenza nel file [ del progetto ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773)WKND`pom.xml`.
 
 
 
@@ -57,7 +57,7 @@ I motivi potrebbero essere:
 
 Per seguire questa esercitazione, è necessario:
 
-- Configurazione di [ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o [ambiente di sviluppo rapido (RDE)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+- Configurazione di [ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o [ambiente di sviluppo rapido (RDE)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 - Il [progetto AEM WKND](https://github.com/adobe/aem-guides-wknd) _per aggiungere il bundle, il file jar o il pacchetto di terze parti_ e verificare le modifiche.
 
@@ -158,7 +158,7 @@ Utilizziamo il servizio OSGi `HelloWorldService` di `my-example-bundle` nel prog
    - `systemPath` è il percorso del file `my-example-bundle` nel modulo `all` del progetto WKND di AEM.
    - `${maven.multiModuleProjectDirectory}` è una proprietà Maven che punta alla directory principale del progetto con più moduli.
 
-- Nel file `core/pom.xml` del modulo `core` del progetto WKND di AEM, aggiungi `my-example-bundle` come dipendenza.
+- Nel file `core` del modulo `core/pom.xml` del progetto WKND di AEM, aggiungi `my-example-bundle` come dipendenza.
 
   ```xml
   ...
@@ -188,7 +188,7 @@ Il ramo [tutorial/install-3rd-party-bundle](https://github.com/adobe/aem-guides-
 
 I bundle OSGi che non sono disponibili nell’archivio Maven pubblico possono essere installati in un progetto AEM seguendo questi passaggi:
 
-- Copiare il bundle OSGi nella directory `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` del modulo `all`. Questo passaggio è necessario per creare un pacchetto e distribuire il bundle nell’istanza di AEM.
+- Copiare il bundle OSGi nella directory `all` del modulo `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install`. Questo passaggio è necessario per creare un pacchetto e distribuire il bundle nell’istanza di AEM.
 
 - Aggiorna i file `pom.xml` del modulo radice e core per aggiungere il bundle OSGi come dipendenza con l&#39;ambito `system` e `systemPath` che puntano al file del bundle. Questo passaggio è necessario per compilare il progetto.
 
@@ -278,7 +278,7 @@ Usiamo `MyHelloWorldService` da `my-example-jar` nel progetto WKND di AEM.
    - `systemPath` è il percorso del file `my-example-jar` nel modulo `all` del progetto WKND di AEM.
    - `${maven.multiModuleProjectDirectory}` è una proprietà Maven che punta alla directory principale del progetto con più moduli.
 
-- Nel file `core/pom.xml` del modulo `core` del progetto WKND di AEM, apporta due modifiche:
+- Nel file `core` del modulo `core/pom.xml` del progetto WKND di AEM, apporta due modifiche:
 
    - Aggiungi `my-example-jar` come dipendenza.
 
@@ -333,7 +333,7 @@ Usiamo `MyHelloWorldService` da `my-example-jar` nel progetto WKND di AEM.
 
 Il ramo [tutorial/install-3rd-party-jar](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-jar) del progetto AEM WKND presenta le modifiche precedenti per riferimento.
 
-Negli scenari in cui il file Java jar _è disponibile nell&#39;archivio Maven pubblico ma NON è un bundle OSGi_, puoi seguire i passaggi precedenti eccetto l&#39;ambito `system` di `<dependency>` e gli elementi `systemPath` non sono necessari.
+Negli scenari in cui il file Java jar _è disponibile nell&#39;archivio Maven pubblico ma NON è un bundle OSGi_, puoi seguire i passaggi precedenti eccetto l&#39;ambito `<dependency>` di `system` e gli elementi `systemPath` non sono necessari.
 
 ### Apprendimenti chiave{#key-learnings-jar}
 
@@ -343,7 +343,7 @@ I Java JAR che non sono bundle OSGi e che possono essere o meno disponibili nell
 
 I passaggi seguenti sono necessari solo se Java jar non è disponibile nell’archivio Maven pubblico:
 
-- Copiare il file jar Java nella directory `resource/jar` del modulo `all`.
+- Copiare il file jar Java nella directory `all` del modulo `resource/jar`.
 
 - Aggiorna i file `pom.xml` del modulo radice e core per aggiungere il file Java jar come dipendenza con l&#39;ambito `system` e `systemPath` che punta al file jar.
 
@@ -397,7 +397,7 @@ Il primo passaggio consiste nell&#39;aggiungere il pacchetto al modulo `all` del
 
 I pacchetti AEM che non sono disponibili nell’archivio Maven pubblico possono essere installati in un progetto AEM seguendo questi passaggi:
 
-- Copiare il pacchetto nella directory `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` del modulo `all`. Questo passaggio è necessario per creare un pacchetto e distribuirlo all’istanza di AEM.
+- Copiare il pacchetto nella directory `all` del modulo `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install`. Questo passaggio è necessario per creare un pacchetto e distribuirlo all’istanza di AEM.
 
 
 ## Riepilogo

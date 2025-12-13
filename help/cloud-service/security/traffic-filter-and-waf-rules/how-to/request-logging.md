@@ -4,14 +4,15 @@ description: Scopri come monitorare le richieste sensibili registrandole utilizz
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18311
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: 8fa0488f-b901-49bf-afa5-5ed29242355f
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 100%
 
@@ -104,4 +105,3 @@ Di seguito vengono analizzati i risultati della regola `publish-auth-requests` s
 - Rivedi i pannelli della dashboard aggiornati per le **richieste analizzate**, le **richieste contrassegnate** e i **dettagli delle richieste contrassegnate**. Per le voci di registro CDN corrispondenti, la dashboard dovrebbe mostrare i valori dell’IP client (cli_ip), dell’host, dell’URL, dell’azione (waf_action) e del nome della regola (waf_match) di ciascuna voce.
 
   ![Dashboard dello strumento ELK](../assets/how-to/elk-tool-dashboard.png)
-

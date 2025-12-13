@@ -4,7 +4,7 @@ description: Scopri come eseguire un processo sull’istanza leader in AEM as a 
 version: Experience Manager as a Cloud Service
 topic: Development
 feature: OSGI, Cloud Manager
-role: Architect, Developer
+role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-10-23T00:00:00Z
 jira: KT-16399
 thumbnail: KT-16399.jpeg
 exl-id: b8b88fc1-1de1-4b5e-8c65-d94fcfffc5a5
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -80,7 +80,7 @@ public class SimpleJobCreaterImpl {
 I punti chiave da notare nel codice precedente sono:
 
 - Il payload del processo ha due proprietà: `action` e `message`.
-- Utilizzando il metodo `addJob(...)` di [JobManager](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html), il processo viene aggiunto all&#39;argomento `wknd/simple/job/topic`.
+- Utilizzando il metodo [ di ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html)JobManager`addJob(...)`, il processo viene aggiunto all&#39;argomento `wknd/simple/job/topic`.
 
 ### Elabora un processo
 
@@ -136,7 +136,7 @@ Questo è spesso problematico se il lavoro è responsabile del cambiamento dello
 
 Se si desidera eseguire il processo una sola volta nel servizio AEM Author, aggiungere la [configurazione della coda processi](#how-to-run-a-job-on-the-leader-instance) descritta di seguito.
 
-Puoi verificarlo consultando i registri del servizio AEM Author in [Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
+Puoi verificarlo consultando i registri del servizio AEM Author in [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
 
 ![Processo elaborato da tutte le istanze](./assets/run-job-once/job-processed-by-all-instances.png)
 

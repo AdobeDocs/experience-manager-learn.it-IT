@@ -8,7 +8,7 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '2104'
 ht-degree: 100%
@@ -316,8 +316,7 @@ ht-degree: 100%
    + [Introduzione a Workbench](aem-forms-workbench/workbench-introduction.md)
    + [Creazione di un processo di modulo](aem-forms-workbench/workbench-creating-a-process.md)
    + [Processo di debug](aem-forms-workbench/workbench-recording-and-testing-process.md)
-+ Comunicazioni interattive per canale di stampa 
-{#ic-print-channel-tutorial}
++ Comunicazioni interattive per canale di stampa {#ic-print-channel-tutorial}
    + [1 - Introduzione](ic-print-channel-tutorial/introduction.md)
    + [2 - Configurare Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
    + [3 - Creare l’origine dati](ic-print-channel-tutorial/create-data-source.md)

@@ -1,12 +1,12 @@
 ---
 title: Memorizzazione in cache delle varianti di pagina con AEM as a Cloud Service
 description: Scopri come impostare e utilizzare AEM as a Cloud Service per supportare il caching delle varianti di pagina.
-role: Architect, Developer
+role: Developer
 topic: Development
 feature: CDN Cache, Dispatcher
 exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
 duration: 149
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Scopri come impostare e utilizzare AEM as a Cloud Service per supportare il cach
 
 + Una regola di riscrittura Apache modifica il percorso della richiesta per includere il valore di intestazione nell’URL della pagina come selettore Sling di Apache (ad esempio, `/page.variant=NY.html`). Questo consente a AEM Publish di distribuire contenuti diversi in base al selettore e al dispatcher di memorizzare in cache una pagina per variante.
 
-+ La risposta inviata dal Dispatcher AEM deve contenere un&#39;intestazione di risposta HTTP `Vary: x-aem-variant`. Questo indica alla rete CDN di memorizzare diverse copie della cache per diversi valori di intestazione.
++ La risposta inviata da AEM Dispatcher deve contenere un&#39;intestazione HTTP `Vary: x-aem-variant`. Questo indica alla rete CDN di memorizzare diverse copie della cache per diversi valori di intestazione.
 
 >[!TIP]
 >
@@ -53,7 +53,7 @@ Scopri come impostare e utilizzare AEM as a Cloud Service per supportare il cach
 
 1. Implementa un [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) in AEM per impostare il cookie `x-aem-variant` nella risposta HTTP, con un valore variante.
 
-1. Il CDN dell&#39;AEM trasforma automaticamente il cookie `x-aem-variant` in un&#39;intestazione HTTP con lo stesso nome.
+1. Il CDN di AEM trasforma automaticamente il cookie `x-aem-variant` in un&#39;intestazione HTTP con lo stesso nome.
 
 1. Aggiungi al progetto `dispatcher` una regola mod_rewrite del server Web Apache che modifica il percorso della richiesta in modo da includere il selettore delle varianti.
 
@@ -134,7 +134,7 @@ Scopri come impostare e utilizzare AEM as a Cloud Service per supportare il cach
 
 ## Limitazioni delle varianti
 
-+ La rete CDN dell’AEM può gestire fino a 200 varianti. Ciò significa che l&#39;intestazione `x-aem-variant` può avere fino a 200 valori univoci. Per ulteriori informazioni, controlla i [limiti di configurazione CDN](https://docs.fastly.com/en/guides/resource-limits).
++ Il CDN di AEM può gestire fino a 200 varianti. Ciò significa che l&#39;intestazione `x-aem-variant` può avere fino a 200 valori univoci. Per ulteriori informazioni, controlla i [limiti di configurazione CDN](https://docs.fastly.com/en/guides/resource-limits).
 
 + Fai attenzione a che il codice variante scelto non superi mai questo numero.  Ad esempio, un ID utente non è una buona chiave in quanto supererebbe facilmente i 200 valori per la maggior parte dei siti web, mentre gli stati/territori di un paese sono più adatti se ci sono meno di 200 stati in quel paese.
 

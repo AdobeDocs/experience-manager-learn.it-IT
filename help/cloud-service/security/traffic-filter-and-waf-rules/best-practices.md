@@ -4,14 +4,15 @@ description: Scopri le best practice consigliate per la configurazione delle reg
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18310
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 100%
 
@@ -93,7 +94,7 @@ Scopri come implementare le regole per il filtro del traffico e le regole WAF in
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protezione dei siti web di AEM tramite le regole standard per il filtro del traffico">Protezione dei siti web di AEM tramite le regole standard per il filtro del traffico</a>
+                        <a href="./use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protezione dei siti web di AEM tramite le regole standard per il filtro del traffico">Protezione dei siti Web di AEM tramite le regole standard per il filtro del traffico</a>
                     </p>
                     <p class="is-size-6">Scopri come proteggere i siti web di AEM dall’abuso di DoS, DDoS e bot utilizzando le regole standard per il filtro del traffico consigliate da Adobe in AEM as a Cloud Service.</p>
                 </div>
@@ -134,4 +135,3 @@ Scopri come implementare le regole per il filtro del traffico e le regole WAF in
 - [Regole per il filtro del traffico che includono le regole WAF](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
 - [Informazioni sulla prevenzione da DoS/DDoS in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
 - [Bloccare gli attacchi DoS e DDoS utilizzando le regole per il filtro del traffico](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)
-

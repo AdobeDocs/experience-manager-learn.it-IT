@@ -6,14 +6,14 @@ sub-product: Experience Manager, Experience Manager Sites
 feature: Search
 doc-type: Article
 topic: Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 duration: 373
 last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 1048beba42011eccb1ebdd43458591c8e953fb8a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 0%
@@ -41,7 +41,7 @@ A volte, è necessario creare indici personalizzati per supportare i requisiti d
 
 - Comprendi i requisiti di ricerca e verifica se gli indici OOTB possono supportare i requisiti di ricerca. Utilizza **Strumento Prestazioni query**, disponibile in [SDK locale](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- Definisci una query ottimale, utilizza il [diagramma di flusso dell&#39;ottimizzazione delle query](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) e [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=it) per riferimento.
+- Definisci una query ottimale, utilizza il [diagramma di flusso dell&#39;ottimizzazione delle query](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) e [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) per riferimento.
 
 - Se gli indici OOTB non supportano i requisiti di ricerca, sono disponibili due opzioni. Tuttavia, consulta i [suggerimenti per la creazione di indici efficienti](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
    - Personalizza l’indice OOTB: opzione preferita in quanto è facile da mantenere e aggiornare.
@@ -253,7 +253,7 @@ per convertire le query XPath in SQL-2 e per confrontare gli indici.
 
 ### Strumento Prestazioni query
 
-Lo _strumento Prestazioni query_ OOTB disponibile in [SDK locale](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` consente a **di analizzare le prestazioni delle query** e [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=it) di definire la query ottimale.
+Lo _strumento Prestazioni query_ OOTB disponibile in [SDK locale](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` consente a **di analizzare le prestazioni delle query** e [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) di definire la query ottimale.
 
 ### Strumenti e suggerimenti per la risoluzione dei problemi
 
@@ -274,6 +274,6 @@ La maggior parte delle seguenti opzioni è applicabile per AEM 6.X e per la riso
 Per ulteriori informazioni, consulta la seguente documentazione:
 
 - [Query e indicizzazione Oak](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
-- [Best practice per query e indicizzazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [Best practice per query e indicizzazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
 - [Procedure consigliate per query e indicizzazione](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
 

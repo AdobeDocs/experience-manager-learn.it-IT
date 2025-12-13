@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: f3047f1d-1c46-4aee-9262-7aab35e9c4cb
 duration: 1438
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Il flusso funzionale dell’estensione di esempio è il seguente:
 Questo esempio si estende al punto di estensione `actionBar` per aggiungere un pulsante personalizzato alla console Frammenti di contenuto.
 
 | Interfaccia utente di AEM estesa | Punto di estensione |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Console Frammenti di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barra delle azioni](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
 ## Estensione di esempio
@@ -76,7 +76,7 @@ L&#39;app di estensione App Builder generata viene aggiornata come descritto di 
 
 ### Configurazione iniziale
 
-1. Registrati per un account API [&#128279;](https://openai.com/api/) OpenAI gratuito e crea una [chiave API](https://beta.openai.com/account/api-keys)
+1. Registrati per un account API [ OpenAI gratuito ](https://openai.com/api/)e crea una [chiave API](https://beta.openai.com/account/api-keys)
 1. Aggiungi questa chiave al file `.env` del progetto App Builder
 
    ```
@@ -223,7 +223,7 @@ Nell&#39;app di esempio è presente un componente React modale (`GenerateImageMo
 È importante sottolineare che qualsiasi interazione con AEM da parte dell&#39;estensione deve essere delegata a un&#39;azione [AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), che è un processo separato senza server in esecuzione in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 L’utilizzo delle azioni di Adobe I/O Runtime per comunicare con AEM consiste nell’evitare problemi di connettività CORS (Cross-Origin Resource Sharing).
 
-Quando il modulo _Genera immagine_ viene inviato, un `onSubmitHandler()` personalizzato richiama l&#39;azione Adobe I/O Runtime, trasmettendo la descrizione dell&#39;immagine, l&#39;host AEM corrente (dominio) e il token di accesso AEM dell&#39;utente. L&#39;azione chiama quindi l&#39;API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) di OpenAI per generare un&#39;immagine utilizzando la descrizione dell&#39;immagine inviata. Successivamente, utilizzando la classe `DirectBinaryUpload` del modulo nodo [Caricamento AEM](https://github.com/adobe/aem-upload), carica l&#39;immagine generata in AEM e infine utilizza l&#39;[API Frammento di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=it) per aggiornare i frammenti di contenuto.
+Quando il modulo _Genera immagine_ viene inviato, un `onSubmitHandler()` personalizzato richiama l&#39;azione Adobe I/O Runtime, trasmettendo la descrizione dell&#39;immagine, l&#39;host AEM corrente (dominio) e il token di accesso AEM dell&#39;utente. L&#39;azione chiama quindi l&#39;API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) di OpenAI per generare un&#39;immagine utilizzando la descrizione dell&#39;immagine inviata. Successivamente, utilizzando la classe [ del modulo nodo ](https://github.com/adobe/aem-upload)Caricamento AEM`DirectBinaryUpload`, carica l&#39;immagine generata in AEM e infine utilizza l&#39;[API Frammento di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) per aggiornare i frammenti di contenuto.
 
 Quando viene ricevuta la risposta dall’azione Adobe I/O Runtime, il modale viene aggiornato per visualizzare i risultati dell’operazione di generazione dell’immagine.
 
@@ -482,7 +482,7 @@ export default function GenerateImageModal() {
 
 >[!NOTE]
 >
->Nella funzione `buildAssetDetailsURL()`, il valore della variabile `aemAssetdetailsURL` presuppone che [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=it#overview) sia abilitato. Se Unified Shell è stato disabilitato, è necessario rimuovere `/ui#/aem` dal valore della variabile.
+>Nella funzione `buildAssetDetailsURL()`, il valore della variabile `aemAssetdetailsURL` presuppone che [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) sia abilitato. Se Unified Shell è stato disabilitato, è necessario rimuovere `/ui#/aem` dal valore della variabile.
 
 
 ### Azione Adobe I/O Runtime

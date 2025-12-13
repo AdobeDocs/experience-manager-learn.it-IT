@@ -4,7 +4,7 @@ description: Scopri come richiamare le API AEM basate su OpenAPI su AEM as a Clo
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Intermediate
 doc-type: Tutorial
 jira: KT-17430
@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Il progetto Adobe Developer Console (ADC) è configurato per abilitare l&#39;aut
 >Il progetto ADC NON fornisce un _client_secret_. L&#39;applicazione a pagina singola genera invece un _code_verifier_ e un _code_challenge_ per scambiare in modo sicuro il codice di autorizzazione per un _token di accesso_. Elimina la necessità di memorizzare un segreto client sul lato client, migliorando la sicurezza.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456972?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 

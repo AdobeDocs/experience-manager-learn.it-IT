@@ -4,15 +4,15 @@ description: Scopri come configurare gli host AEM nell’app headless di AEM.
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10831
 thumbnail: KT-10831.jpg
 exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
 duration: 496
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1610'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ In genere, un’app AEM Headless interagisce con un singolo servizio AEM sia per
 |-------------------------------|:---------------------:|:----------------:|
 | Produzione | Produzione | Pubblicazione |
 | Anteprima di authoring | Produzione | Anteprima |
-| Ambiente di sviluppo | Ambiente di sviluppo | Pubblicazione |
+| Sviluppo | Sviluppo | Pubblicazione |
 
 Per gestire le permutazioni del tipo di distribuzione, ogni distribuzione di app viene creata utilizzando una configurazione che specifica il servizio AEM a cui connettersi. L’host/dominio del servizio AEM configurato viene quindi utilizzato per creare gli URL API e gli URL immagine di AEM GraphQL. Per determinare l’approccio corretto per la gestione delle configurazioni dipendenti dalla build, fai riferimento alla documentazione del framework dell’app AEM Headless (ad esempio, React, iOS, Android™ e così via), in quanto l’approccio varia in base al framework.
 
-| Tipo di client | [App a pagina singola (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Mobile](../mobile.md) | [Server-to-server](../server-to-server.md) |
+| Tipo di client | [App a pagina singola (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Dispositivi mobili](../mobile.md) | [Server-to-server](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
 | Configurazione degli host AEM | ✔ | ✔ | ✔ | ✔ |
 
@@ -70,7 +70,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 ...
 ```
 
-È possibile specificare `.env` file per altri usi [&#128279;](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) tramite il postfix di `.env` e un descrittore semantico, ad esempio `.env.stage` o `.env.production`. È possibile utilizzare file `.env` diversi durante l&#39;esecuzione o la creazione dell&#39;app React impostando `REACT_APP_ENV` prima di eseguire un comando `npm`.
+È possibile specificare `.env` file per altri usi [](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) tramite il postfix di `.env` e un descrittore semantico, ad esempio `.env.stage` o `.env.production`. È possibile utilizzare file `.env` diversi durante l&#39;esecuzione o la creazione dell&#39;app React impostando `REACT_APP_ENV` prima di eseguire un comando `npm`.
 
 Ad esempio, `package.json` di un&#39;app React può contenere la seguente configurazione `scripts`:
 
@@ -162,7 +162,7 @@ let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures
 
 +++
 
-+++ iOS™ esempio
++++ iOS™ esempio 
 
 Questo esempio, basato sull&#39;[app AEM Headless iOS™](../../example-apps/ios-swiftui-app.md), illustra come configurare le richieste API di AEM GraphQL per connettersi a diversi host AEM in base a [variabili di configurazione specifiche della build](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
 
@@ -185,7 +185,7 @@ AEM_HOST = publish-p123-e789.adobeaemcloud.com
 
 #### Inizializzare il client headless AEM personalizzato
 
-L&#39;app iOS headless AEM [&#128279;](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app) di esempio  utilizza un client AEM headless personalizzato inizializzato con i valori di configurazione per `AEM_SCHEME` e `AEM_HOST`.
+L&#39;app iOS headless AEM [ di esempio ](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app) utilizza un client AEM headless personalizzato inizializzato con i valori di configurazione per `AEM_SCHEME` e `AEM_HOST`.
 
 ```swift
 ...
@@ -361,7 +361,7 @@ REACT_APP_AEM_HOST=https://publish-p123-e456.adobeaemcloud.com
 ...
 ```
 
-È possibile specificare `.env` file per altri usi [&#128279;](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) tramite il postfix di `.env` e un descrittore semantico, ad esempio `.env.stage` o `.env.production`. È possibile utilizzare un file `.env` diverso durante l&#39;esecuzione o la creazione dell&#39;app React impostando `REACT_APP_ENV` prima di eseguire un comando `npm`.
+È possibile specificare `.env` file per altri usi [](https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used) tramite il postfix di `.env` e un descrittore semantico, ad esempio `.env.stage` o `.env.production`. È possibile utilizzare un file `.env` diverso durante l&#39;esecuzione o la creazione dell&#39;app React impostando `REACT_APP_ENV` prima di eseguire un comando `npm`.
 
 Ad esempio, `package.json` di un&#39;app React può contenere la seguente configurazione `scripts`:
 

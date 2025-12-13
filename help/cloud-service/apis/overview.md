@@ -4,7 +4,7 @@ description: Scopri i diversi tipi di API in Adobe Experience Manager (AEM) e qu
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Article
 jira: KT-17425
@@ -12,10 +12,10 @@ thumbnail: KT-17425.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: 7cd9efb62d1afdcc089e1e6260d6cf2fc5495afe
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 4%
+ht-degree: 13%
 
 ---
 
@@ -34,9 +34,9 @@ AEM offre le seguenti API per interagire con i suoi tipi di servizi Author e Pub
 | Tipo di API di AEM | Descrizione | Disponibilità | Caso d’uso | Esempi di API |
 | --- | --- | --- | --- | --- |
 | API AEM basate su OpenAPI | API standardizzate e leggibili da dispositivo automatico per Assets, Sites e Forms. | **Solo AEM as a Cloud Service** | Sviluppo API-first, applicazioni moderne | [API Autore Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [API Cartelle](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [API AEM Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [API Forms Document Services](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) e altri |
-| API RESTful | Endpoint REST tradizionali per l’interazione con le risorse AEM. | AEM 6.X, AEM as a Cloud Service | Operazioni CRUD, applicazioni moderne | [API HTTP Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [API REST flusso di lavoro](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [Esportatore JSON per Content Services](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) e altri |
-| API di GraphQL | Ottimizzato per recuperare in modo efficiente i contenuti strutturati con query flessibili. | AEM 6.X, AEM as a Cloud Service | CMS headless, SPA, app per dispositivi mobili | [API GraphQL](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
-| API tradizionali (non RESTful) | API meno recenti come JCR, modelli Sling, Query Builder e altri. | AEM 6.X, AEM as a Cloud Service | Integrazioni legacy, compatibilità con le versioni precedenti | [API Query Builder](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) e altri |
+| API RESTful | Endpoint REST tradizionali per l’interazione con le risorse AEM. | AEM 6.X, AEM as a Cloud Service | Operazioni CRUD, applicazioni moderne | [API HTTP Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [API REST flusso di lavoro](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [Esportatore JSON per Content Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) e altri |
+| API di GraphQL | Ottimizzato per recuperare in modo efficiente i contenuti strutturati con query flessibili. | AEM 6.X, AEM as a Cloud Service | CMS headless, SPA, app per dispositivi mobili | [API GraphQL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
+| API tradizionali (non RESTful) | API meno recenti come JCR, modelli Sling, Query Builder e altri. | AEM 6.X, AEM as a Cloud Service | Integrazioni legacy, compatibilità con le versioni precedenti | [API Query Builder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) e altri |
 
 Per ulteriori dettagli, visita la pagina [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
@@ -66,7 +66,7 @@ Confrontiamo JSON Web Token (JWT) e OAuth 2.0, due meccanismi di autenticazione 
 | Ideale per | Chiamate API server-to-server | Accesso sicuro e consentito per app e utenti |
 | Informazioni richieste | Chiave privata per la firma JWT | ID client e segreto client per OAuth 2.0 |
 | Scadenza token | Breve durata, spesso necessita di aggiornamento | Il token di accesso è di breve durata. Il token di aggiornamento ha una lunga durata e viene utilizzato per ottenere un nuovo token di accesso |
-| Gestione credenziali | [AEM Developer Console](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) | [Adobe Developer Console](https://developer.adobe.com/developer-console/) |
+| Gestione credenziali | [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) | [Adobe Developer Console](https://developer.adobe.com/developer-console/) |
 
 ## API AEM basate su OpenAPI
 
@@ -96,8 +96,8 @@ Ulteriori informazioni sulle API AEM basate su OpenAPI e sui concetti importanti
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" title="Richiama API tramite autenticazione server-to-server" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./openapis/assets/s2s/OAuth-S2S.png" alt="Richiama API tramite autenticazione server-to-server"
+                    <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" title="Richiamare l’API tramite autenticazione da server a server" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./openapis/assets/s2s/OAuth-S2S.png" alt="Richiamare l’API tramite autenticazione da server a server"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,9 +105,9 @@ Ulteriori informazioni sulle API AEM basate su OpenAPI e sui concetti importanti
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Richiama API tramite autenticazione server-to-server">Richiama API tramite autenticazione server-to-server</a>
+                        <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Richiamare l’API tramite autenticazione da server a server">Richiamare l’API tramite autenticazione da server a server</a>
                     </p>
-                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione NodeJS personalizzata utilizzando l’autenticazione server-to-server di OAuth.</p>
+                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione NodeJS personalizzata utilizzando l’autenticazione da server a server di OAuth.</p>
                 </div>
                 <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -119,8 +119,8 @@ Ulteriori informazioni sulle API AEM basate su OpenAPI e sui concetti importanti
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" title="Richiama l’API tramite l’autenticazione tramite app web" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./openapis/assets/web-app/OAuth-WebApp.png" alt="Richiama l’API tramite l’autenticazione tramite app web"
+                    <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" title="Richiamare l’API tramite l’autenticazione da app web" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./openapis/assets/web-app/OAuth-WebApp.png" alt="Richiamare l’API tramite l’autenticazione da app web"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,9 +128,9 @@ Ulteriori informazioni sulle API AEM basate su OpenAPI e sui concetti importanti
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Richiama l’API tramite l’autenticazione tramite app web">Richiama l'API tramite l'autenticazione dell'app Web</a>
+                        <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Richiamare l’API tramite l’autenticazione da app web">Richiamare l’API tramite l’autenticazione da app web</a>
                     </p>
-                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione web personalizzata utilizzando l’autenticazione OAuth Web App.</p>
+                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione web personalizzata utilizzando l’autenticazione app web OAuth.</p>
                 </div>
                 <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -168,22 +168,22 @@ Ulteriori informazioni sulle API AEM basate su OpenAPI e sui concetti importanti
 
 ## API di GraphQL - Esempi
 
-Ulteriori informazioni sulle API di GraphQL e su come utilizzarle nella [Guida introduttiva ad AEM Headless - GraphQL](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview)
+Ulteriori informazioni sulle API di GraphQL e su come utilizzarle nella [Guida introduttiva ad AEM Headless - GraphQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview)
 
 ### Casi d’uso
 
 <!-- CARDS
 {target = _self}
 
-* https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app
   {title = Single Page Application (SPA)}
   {description = Learn how to build a Single Page Application (SPA) that fetches content from AEM using GraphQL APIs.}
   {image = ./assets/react-app-card.png}
-* https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps
   {title = Mobile App}
   {description = Learn how to build a mobile app that fetches content from AEM using GraphQL APIs.}
   {image = ./assets/ios-app-card.png}
-* https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component
   {title = Web Component}
   {description = Learn how to build a web component that fetches content from AEM using GraphQL APIs.}
   {image = ./assets/web-component-card.png}
@@ -194,7 +194,7 @@ Ulteriori informazioni sulle API di GraphQL e su come utilizzarle nella [Guida i
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" title="Applicazione a pagina singola" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" title="Applicazione a pagina singola" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/react-app-card.png" alt="Applicazione a pagina singola"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -203,11 +203,11 @@ Ulteriori informazioni sulle API di GraphQL e su come utilizzarle nella [Guida i
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" target="_self" rel="referrer" title="Applicazione a pagina singola">Applicazione a pagina singola</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" target="_self" rel="referrer" title="Applicazione a pagina singola">Applicazione a pagina singola</a>
                     </p>
                     <p class="is-size-6">Scopri come creare un’applicazione a pagina singola che recupera contenuti da AEM utilizzando le API di GraphQL.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
@@ -217,7 +217,7 @@ Ulteriori informazioni sulle API di GraphQL e su come utilizzarle nella [Guida i
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" title="App mobile" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" title="App mobile" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/ios-app-card.png" alt="App mobile"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -226,11 +226,11 @@ Ulteriori informazioni sulle API di GraphQL e su come utilizzarle nella [Guida i
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" target="_self" rel="referrer" title="App mobile">App mobile</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" target="_self" rel="referrer" title="App mobile">App mobile</a>
                     </p>
                     <p class="is-size-6">Scopri come creare un’app mobile che recuperi contenuti da AEM utilizzando le API di GraphQL.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
@@ -240,7 +240,7 @@ Ulteriori informazioni sulle API di GraphQL e su come utilizzarle nella [Guida i
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" title="Componente Web" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" title="Componente Web" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/web-component-card.png" alt="Componente Web"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -249,11 +249,11 @@ Ulteriori informazioni sulle API di GraphQL e su come utilizzarle nella [Guida i
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" target="_self" rel="referrer" title="Componente Web">Componente Web</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" target="_self" rel="referrer" title="Componente Web">Componente Web</a>
                     </p>
                     <p class="is-size-6">Scopri come creare un componente web che recupera contenuti da AEM utilizzando le API di GraphQL.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
@@ -264,18 +264,18 @@ Ulteriori informazioni sulle API di GraphQL e su come utilizzarle nella [Guida i
 
 ## API RESTful - Esempi
 
-Ulteriori informazioni sulle API RESTful, ad esempio [Assets HTTP API](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) e [JSON Exporter](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter).
+Ulteriori informazioni sulle API RESTful, ad esempio [Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) e [JSON Exporter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter).
 
 ### Casi d’uso
 
 <!-- CARDS
 {target = _self}
 
-* https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview
   {title = Using Content Services for Headless App}
   {description = Learn how to build a native mobile app that fetches content from AEM using Content Services RESTful APIs.}
   {image = ./assets/RESTful-Content-Service.png}
-* https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview
   {title = Token-based Authentication for RESTful APIs}
   {description = Learn how to invoke RESTful APIs using JSON Web Token (JWT) authentication.}
   {image = ./assets/RESTful-TokenAuth.png}
@@ -286,7 +286,7 @@ Ulteriori informazioni sulle API RESTful, ad esempio [Assets HTTP API](https://e
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" title="Utilizzo di Content Services per l’app headless" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" title="Utilizzo di Content Services per l’app headless" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/RESTful-Content-Service.png" alt="Utilizzo di Content Services per l’app headless"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -295,11 +295,11 @@ Ulteriori informazioni sulle API RESTful, ad esempio [Assets HTTP API](https://e
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" title="Utilizzo di Content Services per l’app headless">Utilizzo di Content Services per l'app headless</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" title="Utilizzo di Content Services per l’app headless">Utilizzo di Content Services per l'app headless</a>
                     </p>
                     <p class="is-size-6">Scopri come creare un’app mobile nativa che recuperi contenuti da AEM utilizzando le API RESTful di Content Services.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
@@ -309,7 +309,7 @@ Ulteriori informazioni sulle API RESTful, ad esempio [Assets HTTP API](https://e
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" title="Autenticazione basata su token per le API RESTful" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" title="Autenticazione basata su token per le API RESTful" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/RESTful-TokenAuth.png" alt="Autenticazione basata su token per le API RESTful"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -318,11 +318,11 @@ Ulteriori informazioni sulle API RESTful, ad esempio [Assets HTTP API](https://e
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" target="_self" rel="referrer" title="Autenticazione basata su token per le API RESTful">Autenticazione basata su token per le API RESTful</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" target="_self" rel="referrer" title="Autenticazione basata su token per le API RESTful">Autenticazione basata su token per le API RESTful</a>
                     </p>
                     <p class="is-size-6">Scopri come richiamare le API RESTful utilizzando l’autenticazione JSON Web Token (JWT).</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>

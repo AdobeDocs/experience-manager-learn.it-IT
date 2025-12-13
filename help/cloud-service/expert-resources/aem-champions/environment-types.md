@@ -4,14 +4,14 @@ description: Consulta questi suggerimenti sui tipi di ambiente di Cloud Manager 
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Administration
-role: Admin, Architect
+role: Admin, Developer
 level: Beginner
 doc-type: Value Video
 last-substantial-update: 2023-05-11T00:00:00Z
 jira: KT-13229
 exl-id: 66159aac-a5ca-47fb-b374-f0fe5f8e1198
 duration: 306
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 3%
@@ -27,4 +27,4 @@ Consulta questi suggerimenti dal tuo collega tecnico, Rakesh Pasupuleti. Rakesh 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Gestione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it) - Documentazione sulla gestione degli ambienti in AEM as a Cloud Service
-* [Ambienti di sviluppo rapido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=it) - Documentazione sugli RDE in AEM as a Cloud Service
+* [Ambienti di sviluppo rapido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html) - Documentazione sugli RDE in AEM as a Cloud Service

@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 345
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Scopri come aggiungere un pulsante personalizzato alla barra degli strumenti Edi
 
 I pulsanti personalizzati possono essere aggiunti alla barra degli strumenti **Editor Rich Text** nell&#39;Editor frammenti di contenuto utilizzando il punto di estensione `rte`. In questo esempio viene illustrato come aggiungere un pulsante personalizzato denominato _Aggiungi suggerimento_ alla barra degli strumenti dell&#39;editor Rich Text e modificare il contenuto dell&#39;editor Rich Text.
 
-Utilizzando il metodo `getCustomButtons()` del punto di estensione di `rte` è possibile aggiungere uno o più pulsanti personalizzati alla barra degli strumenti **Editor Rich Text**. È inoltre possibile aggiungere o rimuovere pulsanti standard dell&#39;editor Rich Text come _Copia, Incolla, Grassetto e Corsivo_ utilizzando i metodi `getCoreButtons()` e `removeButtons)` rispettivamente.
+Utilizzando il metodo `rte` del punto di estensione di `getCustomButtons()` è possibile aggiungere uno o più pulsanti personalizzati alla barra degli strumenti **Editor Rich Text**. È inoltre possibile aggiungere o rimuovere pulsanti standard dell&#39;editor Rich Text come _Copia, Incolla, Grassetto e Corsivo_ utilizzando i metodi `getCoreButtons()` e `removeButtons)` rispettivamente.
 
 In questo esempio viene illustrato come inserire una nota o un suggerimento evidenziato utilizzando il pulsante personalizzato _Aggiungi suggerimento_ della barra degli strumenti. Il contenuto della nota o del suggerimento evidenziato presenta una formattazione speciale applicata tramite elementi HTML e le classi CSS associate. Il contenuto segnaposto e il codice HTML vengono inseriti utilizzando il metodo di callback `onClick()` di `getCustomButtons()`.
 
@@ -36,7 +36,7 @@ In questo esempio viene illustrato come inserire una nota o un suggerimento evid
 Questo esempio si estende al punto di estensione `rte` per aggiungere un pulsante personalizzato alla barra degli strumenti dell’editor Rich Text nell’Editor frammento di contenuto.
 
 | Interfaccia utente di AEM estesa | Punto di estensione |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Barra degli strumenti Editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
 ## Estensione di esempio

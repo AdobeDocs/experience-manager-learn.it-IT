@@ -9,9 +9,9 @@ exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
 thumbnail: 328618.jpg
 last-substantial-update: 2022-07-20T00:00:00Z
 duration: 626
-source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
-workflow-type: ht
-source-wordcount: '266'
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
+source-wordcount: '265'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Una moderna API per la distribuzione dei contenuti è fondamentale per l’effic
 
 Per superare queste difficoltà, GraphQL fornisce un’API basata su query che consente ai client di eseguire query su AEM solo per il contenuto di cui necessitano, e di ricevere utilizzando una singola chiamata API.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452887?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/328618?quality=12&learn=on)
 
 Questo video offre una panoramica dell’API GraphQL implementata in AEM. L’API GraphQL in AEM è progettata principalmente per distribuire i frammenti di contenuto AEM alle applicazioni a valle come parte di una distribuzione headless.
 
@@ -36,7 +36,7 @@ Questo video offre una panoramica dell’API GraphQL implementata in AEM. L’AP
 >id="aemcloud_learn_headless_graphql_overview"
 >title="Guida introduttiva ad AEM Headless - GraphQL"
 >abstract="Scopri come distribuire frammenti di contenuto utilizzando GraphQL."
->additional-url="https://video.tv.adobe.com/v/3452887?captions=ita" text="Panoramica di GraphQL in AEM"
+>additional-url="https://video.tv.adobe.com/v/328618" text="Panoramica di GraphQL in AEM"
 
 ## Serie video su GraphQL di AEM Headless
 
@@ -54,7 +54,7 @@ Esplora le funzionalità GraphQL di AEM creando un’app React che utilizza fram
 
 |                                | API GraphQL di AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
-| Definizione dello schema | Modelli per frammenti di contenuto strutturati | Componenti di AEM |
+| Definizione dello schema | Modelli per frammenti di contenuti strutturati | Componenti di AEM |
 | Contenuto | Frammenti di contenuto | Componenti di AEM |
 | Individuazione del contenuto | Per query basata su GraphQL | Per pagina AEM |
 | Formato di consegna | JSON di GraphQL | JSON ComponentExporter di AEM |

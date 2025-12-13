@@ -3,7 +3,7 @@ title: Configurare AEM per l’editor di applicazioni a pagina singola e l’app
 description: È necessario un progetto AEM per configurare i requisiti di configurazione e contenuto che supportano AEM SPA Editor per creare un’applicazione a pagina singola remota.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7631
 thumbnail: kt-7631.jpeg
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 0%
@@ -45,7 +45,7 @@ $ cd remote-spa-tutorial
 
 ## Creazione di un progetto AEM
 
-Crea un progetto AEM in cui vengono gestite le configurazioni e i contenuti della linea di base. Questo progetto verrà generato nella cartella `remote-spa-tutorial` del progetto `aem-guides-wknd-graphql` clonato.
+Crea un progetto AEM in cui vengono gestite le configurazioni e i contenuti della linea di base. Questo progetto verrà generato nella cartella `aem-guides-wknd-graphql` del progetto `remote-spa-tutorial` clonato.
 
 _Utilizza sempre la versione più recente di [Archetipo AEM](https://github.com/adobe/aem-project-archetype)._
 
@@ -214,7 +214,7 @@ Gli effetti di mappatura Sling in AEM sono in esecuzione su `http` e `localhost`
 
 ## Criteri di sicurezza per la condivisione delle risorse tra diverse origini
 
-Quindi, configura AEM per proteggere il contenuto in modo che solo questa applicazione a pagina singola possa accedere al contenuto di AEM. Configura [Condivisione risorse tra le origini in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=it).
+Quindi, configura AEM per proteggere il contenuto in modo che solo questa applicazione a pagina singola possa accedere al contenuto di AEM. Configura [Condivisione risorse tra le origini in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
 1. Nell&#39;IDE aprire il sottoprogetto Maven `ui.config`
 1. Passa a `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
@@ -354,7 +354,7 @@ Ricorda che il tipo di questa pagina è stato modificato in **Pagina applicazion
 
 Questa configurazione deve essere impostata solo sulla pagina AEM che corrisponde alla radice dell’applicazione a pagina singola. Tutte le pagine di AEM sotto questa pagina ereditano il valore.
 
-## Complimenti
+## Congratulazioni
 
 Hai preparato le configurazioni di AEM e le hai distribuite all’autore AEM locale. Ora sai come:
 

@@ -4,7 +4,7 @@ description: Scopri come abilitare la memorizzazione nella cache delle risposte 
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2023-11-17T00:00:00Z
@@ -12,10 +12,10 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 544c3230-6eb6-4f06-a63c-f56d65c0ff4b
 duration: 174
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 0%
+source-wordcount: '631'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +31,11 @@ Quando NON sono presenti configurazioni personalizzate, vengono utilizzati i val
 
 ![Comportamento predefinito per la memorizzazione nella cache](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 
-Rivedi [Pubblicazione AEM - Durata predefinita cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html?lang=it#cdn-cache-life) e [Autore AEM - Durata predefinita cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?lang=it&#default-cache-life) per ulteriori informazioni.
+Rivedi [Pubblicazione AEM - Durata predefinita cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) e [Autore AEM - Durata predefinita cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life) per ulteriori informazioni.
 
 In sintesi, AEM as a Cloud Service memorizza nella cache la maggior parte dei tipi di contenuto (HTML, JSON, JS, CSS e Assets) in AEM Publish e alcuni tipi di contenuto (JS, CSS) in AEM Author.
 
-## Abilita caching
+## Abilitare la memorizzazione in cache
 
 Per modificare il comportamento di caching predefinito, puoi aggiornare le intestazioni della cache in due modi.
 
@@ -99,7 +99,7 @@ Per aumentare la durata della cache CDN e del browser Web del tipo di contenuto 
    ```
 
    I file vhost nella directory `dispatcher/src/conf.d/enabled_vhosts` sono **symlinks** ai file nella directory `dispatcher/src/conf.d/available_vhosts`. Assicurarsi quindi di creare symlink se non presenti.
-1. Distribuisci le modifiche vhost nell&#39;ambiente AEM as a Cloud Service desiderato utilizzando [Cloud Manager - Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=it&#web-tier-config-pipelines) o [Comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=it#deploy-apache-or-dispatcher-configuration).
+1. Distribuisci le modifiche vhost nell&#39;ambiente AEM as a Cloud Service desiderato utilizzando [Cloud Manager - Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
 Tuttavia, per avere valori diversi per il browser web e la durata della cache CDN, puoi utilizzare l&#39;intestazione `Surrogate-Control` nell&#39;esempio precedente. Allo stesso modo, per far scadere la cache a una data e un&#39;ora specifiche, è possibile utilizzare l&#39;intestazione `Expires`. Inoltre, utilizzando gli attributi `stale-while-revalidate` e `stale-if-error`, è possibile controllare il trattamento dello stato non aggiornato del contenuto della risposta. Il progetto AEM WKND ha una configurazione della cache CDN [reference stale state treatment](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155).
 

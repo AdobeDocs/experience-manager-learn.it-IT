@@ -4,16 +4,16 @@ description: Scopri come configurare l’autenticazione SAML 2.0 sul servizio di
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '4262'
+source-wordcount: '4233'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Scopri come impostare e autenticare gli utenti finali (non autori di AEM) in un 
 
 L’integrazione SAML 2.0 con AEM Publish (o Anteprima), consente agli utenti finali di un’esperienza web basata su AEM di autenticarsi in un IDP (Identity Provider) non Adobe e di accedere ad AEM come utente autorizzato con nome.
 
-|                       | AEM Author | AEM Publish |
+|                       | AEM Author | Pubblicazione AEM |
 |-----------------------|:----------:|:-----------:|
 | Supporto SAML 2.0 | ✘ | ✔ |
 
@@ -56,7 +56,7 @@ Il flusso tipico di un’integrazione SAML di pubblicazione AEM è il seguente:
 
 ## Procedura dettagliata della configurazione
 
->[!VIDEO](https://video.tv.adobe.com/v/3455351?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 Questo video illustra come configurare l’integrazione SAML 2.0 con il servizio AEM as a Cloud Service Publish e utilizzare Okta come IDP.
 
@@ -76,7 +76,7 @@ SAML 2.0 è supportato solo per l’autenticazione degli utilizzi in AEM Publish
 
 Il certificato pubblico dell&#39;IDP viene aggiunto all&#39;archivio fonti attendibili globale di AEM e utilizzato per convalidare la validità dell&#39;asserzione SAML inviata dall&#39;IDP.
 
-+++Flusso di firma asserzione SAML
++++Flusso di firma dell&#39;asserzione SAML
 
 ![SAML 2.0 - Firma dell&#39;asserzione SAML IDP](./assets/saml-2-0/idp-signing-diagram.png)
 
@@ -130,7 +130,7 @@ L’archivio fonti attendibili globale è configurato con il certificato pubblic
 
 ## Crea keystore del servizio di autenticazione{#authentication-service-keystore}
 
-_È necessario creare un keystore per il servizio di autenticazione quando la proprietà di configurazione OSGi `handleLogout` del gestore di autenticazione [SAML 2.0 è impostata su `true`](#saml-20-authenticationsaml-2-0-authentication) o quando [è richiesta la firma AuthnRequest/la crittografia dell&#39;asserzione SAML](#install-aem-public-private-key-pair)_
+_È necessario creare un keystore per il servizio di autenticazione quando la proprietà di configurazione OSGi [ del gestore di autenticazione `handleLogout`SAML 2.0 è impostata su `true`](#saml-20-authenticationsaml-2-0-authentication) o quando [è richiesta la firma AuthnRequest/la crittografia dell&#39;asserzione SAML](#install-aem-public-private-key-pair)_
 
 1. Accedi ad AEM Author come amministratore di AEM per caricare la chiave privata.
 1. Passa a __Strumenti > Protezione > Utenti__, seleziona l&#39;utente __authentication-service__ e seleziona __Proprietà__ dalla barra delle azioni superiore.
@@ -141,7 +141,7 @@ _È necessario creare un keystore per il servizio di autenticazione quando la pr
 1. Seleziona __Salva e chiudi__.
 1. Crea un pacchetto contenente l&#39;utente __authentication-service__ aggiornato.
 
-   _Utilizzare la seguente soluzione alternativa temporanea utilizzando i pacchetti:_
+   _Utilizza la seguente soluzione alternativa temporanea utilizzando i pacchetti :_
 
    1. Passa a __Strumenti > Distribuzione > Pacchetti__.
    1. Creare un pacchetto
@@ -191,7 +191,7 @@ Tutte le comunicazioni HTTP tra IDP e AEM Publish devono essere effettuate trami
 
 +++
 
-Sia la firma AuthnRequest che la crittografia delle asserzioni SAML sono facoltative, ma entrambe sono abilitate, utilizzando la proprietà di configurazione OSGi `useEncryption`[&#128279;](#saml-20-authenticationsaml-2-0-authentication) del gestore di autenticazione SAML 2.0, che indica che è possibile utilizzare entrambe o nessuna delle due.
+Sia la firma AuthnRequest che la crittografia delle asserzioni SAML sono facoltative, ma entrambe sono abilitate, utilizzando la proprietà di configurazione OSGi [ del gestore di autenticazione `useEncryption`](#saml-20-authenticationsaml-2-0-authentication)SAML 2.0, che indica che è possibile utilizzare entrambe o nessuna delle due.
 
 ![Archivio chiavi del servizio di autenticazione AEM](./assets/saml-2-0/authentication-service-key-store.png)
 
@@ -228,7 +228,7 @@ Sia la firma AuthnRequest che la crittografia delle asserzioni SAML sono facolta
 1. Seleziona __Salva e chiudi__.
 1. Crea un pacchetto contenente l&#39;utente __authentication-service__ aggiornato.
 
-   _Utilizzare la seguente soluzione alternativa temporanea utilizzando i pacchetti:_
+   _Utilizza la seguente soluzione alternativa temporanea utilizzando i pacchetti :_
 
    1. Passa a __Strumenti > Distribuzione > Pacchetti__.
    1. Creare un pacchetto
@@ -335,7 +335,7 @@ Le configurazioni OSGi per ambiente (`config.publish.dev`, `config.publish.stage
 
 Quando [si crittografano le asserzioni AuthnRequest e SAML](#encrypting-the-authnrequest-and-saml-assertion), sono necessarie le seguenti proprietà: `useEncryption`, `spPrivateKeyAlias` e `keyStorePassword`. `keyStorePassword` contiene una password, pertanto il valore non deve essere memorizzato nel file di configurazione OSGi, ma inserito utilizzando [valori di configurazione segreti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=it#secret-configuration-values)
 
-+++Facoltativamente, aggiorna la configurazione OSGi per utilizzare la crittografia
++++Se necessario, aggiorna la configurazione OSGi per utilizzare la crittografia
 
 1. Apri `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` nell&#39;IDE.
 1. Aggiungere le tre proprietà `useEncryption`, `spPrivateKeyAlias` e `keyStorePassword` come illustrato di seguito.
@@ -452,7 +452,7 @@ L&#39;appartenenza al gruppo dinamico è una funzionalità di [Apache Jackrabbit
 ### Abilitare l’iscrizione al gruppo dinamico per gli utenti SAML nei nuovi ambienti
 
 Per migliorare in modo significativo le prestazioni di valutazione dei gruppi nei nuovi ambienti AEM as a Cloud Service, si consiglia di attivare la funzione di iscrizione al gruppo dinamico nei nuovi ambienti.
-Questo è anche un passaggio necessario quando viene attivata la sincronizzazione dei dati. Ulteriori dettagli [qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+Questo è anche un passaggio necessario quando viene attivata la sincronizzazione dei dati. Ulteriori dettagli [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 A questo scopo, aggiungi la seguente proprietà al file di configurazione OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
@@ -597,7 +597,7 @@ e fornendo parametri di query:
 
 | Nome parametro query | Valore parametro query |
 |----------------------|-----------------------|
-| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà `path` [&#128279;](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi Adobe Granite SAML 2.0 Authentication Handler. |
+| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà [ ](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi `path`Adobe Granite SAML 2.0 Authentication Handler. |
 | `saml_request_path` | Percorso URL a cui deve essere indirizzato l’utente dopo l’autenticazione SAML riuscita. |
 
 Questo collegamento HTML, ad esempio, attiverà il flusso di accesso SAML e, in caso di esito positivo, porterà l&#39;utente a `/content/wknd/us/en/protected/page.html`. Questi parametri di query possono essere impostati a livello di programmazione in base alle esigenze.
@@ -618,7 +618,7 @@ e fornendo i dati del modulo:
 
 | Nome dati modulo | Valore dati modulo |
 |----------------------|-----------------------|
-| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà `path` [&#128279;](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi Adobe Granite SAML 2.0 Authentication Handler. |
+| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà [ ](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi `path`Adobe Granite SAML 2.0 Authentication Handler. |
 | `saml_request_path` | Percorso URL a cui deve essere indirizzato l’utente dopo l’autenticazione SAML riuscita. |
 
 
@@ -632,7 +632,7 @@ Questo pulsante HTML, ad esempio, utilizzerà un POST HTTP per attivare il fluss
 </form>
 ```
 
-### Configurazione Dispatcher
+### Configurazione del Dispatcher
 
 Entrambi i metodi HTTP GET e POST richiedono l&#39;accesso client agli endpoint `/system/sling/login` di AEM e pertanto devono essere consentiti tramite AEM Dispatcher.
 

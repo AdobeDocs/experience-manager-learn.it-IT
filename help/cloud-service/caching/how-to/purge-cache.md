@@ -4,7 +4,7 @@ description: Scopri come eliminare o rimuovere la risposta HTTP dalla cache dal 
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Scopri come eliminare o rimuovere la risposta HTTP dalla cache dal CDN di AEM as
 
 In questa esercitazione imparerai a impostare e utilizzare Purge API Token per eliminare la cache CDN del sito [AEM WKND](https://github.com/adobe/aem-guides-wknd) di esempio utilizzando la funzione self-service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3436939?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
 
 ## Annullamento della validità della cache ed eliminazione esplicita
 
@@ -45,7 +45,7 @@ Scopri come impostare Purge API Token per eliminare la cache CDN.
 
 Il token API di eliminazione viene creato configurando la regola CDN nel codice del progetto AEM.
 
-1. Apri il file `cdn.yaml` dalla cartella principale `config` del progetto AEM. Ad esempio, il file cdn.yaml[&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) del progetto WKND.
+1. Apri il file `cdn.yaml` dalla cartella principale `config` del progetto AEM. Ad esempio, il file cdn.yaml[ del progetto ](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml)WKND.
 
 1. Aggiungi la seguente regola CDN al file `cdn.yaml`:
 

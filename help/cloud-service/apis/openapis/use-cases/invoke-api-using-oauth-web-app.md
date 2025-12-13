@@ -4,7 +4,7 @@ description: Scopri come richiamare su AEM as a Cloud Service le API AEM basate 
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 0%
@@ -49,7 +49,7 @@ L’app PIM WKND è un’applicazione web di esempio progettata per gestire gli 
 
 Il progetto Adobe Developer Console (ADC) è configurato per accedere all’API di authoring di Assets utilizzando l’autenticazione OAuth Web App. Fornisce il _client_id_ e il _client_secret_ necessari all&#39;app Web WKND-PIM per avviare il flusso di sovvenzione _authorization_code_.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442765?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 Il diagramma seguente illustra il flusso funzionale dell&#39;app Web WKND-PIM _che ottiene token di accesso specifici dell&#39;utente per interagire con l&#39;API di authoring di Assets_.
@@ -497,7 +497,7 @@ Segui le istruzioni riportate nell&#39;articolo [Configura le API AEM basate su 
 
 Per impostazione predefinita, il progetto WKND Sites non dispone dello schema di metadati delle risorse necessario per visualizzare gli attributi del prodotto. Creiamo e applichiamo lo schema di metadati di risorse a una cartella di risorse nell’istanza di AEM.
 
-1. Accedi all’istanza di AEM as a Cloud Service Asset. Utilizzando la [visualizzazione risorse](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/authoring/switch-views), passa alla cartella `/content/dam/wknd-shared/en`.
+1. Accedi all’istanza di AEM as a Cloud Service Asset. Utilizzando la [visualizzazione risorse](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views), passa alla cartella `/content/dam/wknd-shared/en`.
 
    ![Accedi alla cartella](../assets/web-app/navigate-to-folder.png)
 

@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Apache Web Server non si preoccupa effettivamente dell’estensione di un file q
 | File | Destinazione file | Descrizione |
 | --- | --- | --- |
 | NOME FILE`.any` | `/etc/httpd/conf.dispatcher.d/` | Il modulo Apache di AEM Dispatcher origina le impostazioni da `*.any` file. Il file di inclusione padre predefinito è `conf.dispatcher.d/dispatcher.any` |
-| NOME FILE`_farm.any` | In attesa: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Attivo: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>Nota:</b> questi file della farm non devono essere copiati nella cartella `enabled_farms` ma utilizzano `symlinks` in un percorso relativo al file `available_farms/*_farm.any` <br/>`*_farm.any` sono inclusi nel file `conf.dispatcher.d/dispatcher.any`. Questi file della farm padre consentono di controllare il comportamento del modulo per ogni tipo di rendering o sito Web. I file vengono creati nella directory `available_farms` e abilitati con `symlink` nella directory `enabled_farms`.  <br/>Le include automaticamente per nome dal file `dispatcher.any`.<br/><b>Previsione</b> i file della farm iniziano con `000_` per assicurarsi che vengano caricati per primi.<br><b>I file di farm personalizzati</b> devono essere caricati dopo avviando lo schema numerico in `100_` per garantire il corretto comportamento di inclusione. |
+| NOME FILE`_farm.any` | In attesa: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Attivo: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>Nota:</b> questi file della farm non devono essere copiati nella cartella `enabled_farms` ma utilizzano `symlinks` in un percorso relativo al file `available_farms/*_farm.any` <br/>`*_farm.any` sono inclusi nel file `conf.dispatcher.d/dispatcher.any`. Questi file della farm padre consentono di controllare il comportamento del modulo per ogni tipo di rendering o sito Web. I file vengono creati nella directory `available_farms` e abilitati con `symlink` nella directory `enabled_farms`.  <br/>Le include automaticamente per nome dal file `dispatcher.any`.<br/><b>Previsione</b> i file della farm iniziano con `000_` per assicurarsi che vengano caricati per primi.<br><b>I file di farm personalizzati</b> devono essere caricati dopo avviando lo schema numerico in `100_` per garantire il corretto comportamento di inclusione. | |
 | NOME FILE`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any` file inclusi nei file `conf.dispatcher.d/enabled_farms/*_farm.any`. Ogni farm dispone di un set di regole che modificano il traffico da filtrare e non da inviare ai renderer. |
 | NOME FILE`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any` file inclusi nei file `conf.dispatcher.d/enabled_farms/*_farm.any`. Questi file sono un elenco di nomi host o percorsi URI a cui deve corrispondere la corrispondenza BLOB per determinare quale renderer utilizzare per soddisfare tale richiesta |
 | NOME FILE`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any` file inclusi nei file `conf.dispatcher.d/enabled_farms/*_farm.any`. Questi file specificano quali elementi vengono memorizzati in cache e quali no |
@@ -249,11 +249,11 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 ### La farm AMS include
 
-![&lt;FILENAME>_farms.any includerà i file .any secondari per completare la configurazione di una farm.  In questa immagine puoi vedere che una farm includerà ogni file di sezione di livello superiore, cache, clientheaders, filtri, rendering e vhosts .any file](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")
+![<FILENAME>_farms.any includerà i file .any secondari per completare la configurazione di una farm.  In questa immagine puoi vedere che una farm includerà ogni file di sezione di livello superiore, cache, clientheaders, filtri, rendering e vhosts .any file](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")
 
 Quando un file FILENAME_farm.any della directory `/etc/httpd/conf.dispatcher.d/available_farms/` viene collegato alla directory `/etc/httpd/conf.dispatcher.d/enabled_farms/`, verrà utilizzato nella configurazione in esecuzione.
 
-I file della farm contengono sottoinclusioni basate su [sezioni di primo livello della farm](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#defining-farms-farms) come cache, clientheaders, filtri, rendering e vhosts.
+I file della farm contengono sottoinclusioni basate su [sezioni di primo livello della farm](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms) come cache, clientheaders, filtri, rendering e vhosts.
 
 I file `FILENAME_farm.any` avranno istruzioni di inclusione per ciascun file in base alla posizione in cui devono essere inclusi nel file farm.  Di seguito è riportata una sintassi di esempio di un file `FILENAME_farm.any` come riferimento valido:
 

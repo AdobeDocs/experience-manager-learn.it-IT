@@ -1,10 +1,10 @@
 ---
-title: Eventi AEM Assets per l’integrazione con la soluzione PIM
+title: Eventi AEM Assets per l’integrazione PIM
 description: Scopri come integrare i sistemi AEM Assets e Product Information Management (PIM) per gli aggiornamenti dei metadati delle risorse.
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 761
@@ -12,14 +12,14 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: ab499385a1df8c4b0ac58b6a382faa29b262e3ba
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1518'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Eventi AEM Assets per l’integrazione con la soluzione PIM
+# Eventi AEM Assets per l’integrazione PIM
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ Per ricevere ed elaborare l&#39;evento AEM Assets, [Adobe I/O Runtime](https://d
 
 Il flusso di alto livello dell’integrazione è il seguente:
 
-![Eventi AEM Assets per integrazione PIM](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
+![Eventi AEM Assets per l’integrazione PIM](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
 1. Il servizio AEM Author attiva un evento _Elaborazione risorsa completata_ al completamento del caricamento di una risorsa e di tutte le attività di elaborazione delle risorse. In attesa del completamento dell’elaborazione delle risorse, viene verificata l’avvenuto completamento di qualsiasi elaborazione predefinita, ad esempio l’estrazione dei metadati.
 1. Evento inviato al servizio [Adobe I/O Events](https://developer.adobe.com/events/).
@@ -57,8 +57,8 @@ Per completare questa esercitazione, è necessario:
 
 Le fasi di sviluppo di alto livello sono:
 
-1. [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [Abilitare l&#39;accesso alle API di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
+1. [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
+1. [Abilitare l&#39;accesso alle API di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
 1. [Creare un progetto in Adobe Developer Console (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [Inizializzare il progetto per lo sviluppo locale](./runtime-action.md#initialize-project-for-local-development)
 1. Configurare il progetto in ADC
@@ -293,7 +293,7 @@ Per il codice completo, fai riferimento al file [WKND-Assets-PIM-Integration.zip
 
 Per impostazione predefinita, il progetto WKND Sites non dispone dello schema metadati risorse per visualizzare i metadati specifici PIM come SKU, Nome fornitore, ecc. Creiamo e applichiamo lo schema di metadati di risorse a una cartella di risorse nell’istanza di AEM.
 
-1. Accedi all&#39;istanza di AEM as a Cloud Service Asset e accedi alla [visualizzazione risorse](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/authoring/switch-views).
+1. Accedi all&#39;istanza di AEM as a Cloud Service Asset e accedi alla [visualizzazione risorse](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views).
 
    ![Vista AEM Assets](../assets/examples/assets-pim-integration/aem-assets-view.png)
 

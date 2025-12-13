@@ -3,7 +3,7 @@ title: Bootstrap l’applicazione a pagina singola remota per l’editor di appl
 description: Scopri come avviare un’applicazione a pagina singola remota per garantire la compatibilità con AEM SPA Editor.
 topic: Headless, SPA, Development
 feature: SPA Editor, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7633
 thumbnail: kt-7633.jpeg
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
 duration: 327
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ $ npm install @adobe/aem-react-editable-components
 È necessario esporre diverse variabili di ambiente all’applicazione a pagina singola remota in modo che sappia come interagire con AEM.
 
 * Apri il progetto di applicazione a pagina singola remota in `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` nell&#39;IDE
-* Apri il file `.env.development`
+* Apri il file in `.env.development`
 * Nel file, presta particolare attenzione alle chiavi e, se necessario, aggiorna:
 
   ```
@@ -81,7 +81,7 @@ Con le dipendenze npm dell&#39;applicazione a pagina singola AEM disponibili per
 [ModelManager](https://github.com/adobe/aem-spa-page-model-manager/blob/master/src/ModelManager.ts) è responsabile della connessione ad AEM per il recupero del contenuto modificabile.
 
 1. Apri il progetto di applicazione a pagina singola remota nell’IDE
-1. Apri il file `src/index.js`
+1. Apri il file in `src/index.js`
 1. Aggiungi l&#39;importazione `ModelManager` e inizializzala prima della chiamata `root.render(..)`,
 
    ```javascript
@@ -129,7 +129,7 @@ Durante la creazione di un&#39;applicazione a pagina singola modificabile, è co
        * @returns true if the SPA request should be re-routed to AEM
        */
        const toAEM = function(path, req) {
-           return path.startsWith('/content') || 
+           return path.startsWith('/content') ||
                path.startsWith('/graphql') ||
                path.endsWith('.model.json')
        }
@@ -191,7 +191,7 @@ Durante la creazione di un&#39;applicazione a pagina singola modificabile, è co
    1. Aggiunge intestazioni CORS a tutte le richieste per consentire l&#39;accesso al contenuto di AEM, come definito da `res.header("Access-Control-Allow-Origin", REACT_APP_HOST_URI);`
       * Se non viene aggiunto, si verificano errori CORS durante il caricamento del contenuto AEM nell’applicazione a pagina singola.
 
-1. Apri il file `src/setupProxy.js`
+1. Apri il file in `src/setupProxy.js`
 1. Rivedere la riga che punta al file di configurazione proxy `setupProxy.spa-editor.auth.basic`:
 
    ```
@@ -223,7 +223,7 @@ Per risolvere questo problema, fai in modo che una risorsa statica ospitata dall
 
    _Durante la distribuzione in AEM as a Cloud Service, è necessario fare lo stesso per i file `.env` corrispondenti._
 
-1. Apri il file `src/App.js`
+1. Apri il file in `src/App.js`
 1. Importare l’URI pubblico dell’applicazione a pagina singola dalle variabili di ambiente dell’applicazione a pagina singola
 
    ```javascript

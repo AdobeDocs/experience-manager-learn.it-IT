@@ -4,7 +4,7 @@ description: Scopri come ricevere eventi AEM utilizzando l’azione Adobe I/O Ru
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 457
@@ -12,10 +12,10 @@ last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
 exl-id: b1c127a8-24e7-4521-b535-60589a1391bf
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -145,7 +145,7 @@ Per ricevere gli eventi AEM ed eseguire l’azione Adobe I/O Runtime creata nel 
 
 - Infine, nel passaggio **Ricezione degli eventi**, espandi l&#39;opzione **Azione di runtime** e seleziona l&#39;azione _generica_ creata nel passaggio precedente. Fai clic su **Salva eventi configurati**.
 
-  ![Azione runtime - Configura progetto &#x200B;](../assets/examples/runtime-action/select-runtime-action.png)
+  ![Azione runtime - Configura progetto ](../assets/examples/runtime-action/select-runtime-action.png)
 
 - Rivedi i dettagli di registrazione dell&#39;evento, la scheda **Traccia debug** e verifica la richiesta e la risposta di **Challenge Probe**.
 

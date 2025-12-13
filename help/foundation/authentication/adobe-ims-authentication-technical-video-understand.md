@@ -6,16 +6,16 @@ feature: User and Groups
 doc-type: Technical Video
 jira: KT-781
 topic: Architecture
-role: Architect
+role: Developer
 level: Experienced
 exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
 duration: 405
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Adobe Experience Manager presenta il supporto di Admin Console per le istanze di AEM e l’autenticazione basata su Adobe Identity Management System (IMS) per AEM su Managed Services.   Questa integrazione consente ai clienti di AEM Managed Services di gestire tutti gli utenti di Experience Cloud in un’unica console web unificata. È possibile assegnare utenti e gruppi ai profili di prodotto associati alle istanze di AEM, consentendo l’accesso gestito a livello centrale alle istanze di AEM specifiche.
 
->[!VIDEO](https://video.tv.adobe.com/v/328574?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/26170?quality=12&learn=on)
 
 * Il supporto per l’autenticazione IMS di Adobe Experience Manager è destinato solo agli utenti &quot;interni&quot; (autori, revisori, amministratori, sviluppatori e così via) e non agli utenti finali esterni come i visitatori del sito web.
 * [Admin Console](https://adminconsole.adobe.com/) rappresenta i clienti AEM Managed Services come organizzazioni IMS e le istanze AEM come contesti di prodotto. Gli amministratori di sistema e di prodotto di Admin Console possono definire e gestire.

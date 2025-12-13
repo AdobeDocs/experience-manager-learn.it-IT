@@ -4,7 +4,7 @@ description: Scopri come configurare l’ambiente AEM as a Cloud Service per abi
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Article
 jira: KT-17426
@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 2160ed585ebfd958275af9aa8ef0aab750f684ef
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 9%
@@ -210,11 +210,11 @@ Seguiamo i passaggi per configurare l’istanza di AEM per abilitare la comunica
 
 1. Apporta le modifiche alla configurazione e le invia all’archivio Git remoto a cui è connessa la pipeline Cloud Manager.
 
-1. Distribuisci le modifiche precedenti utilizzando [Pipeline di configurazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) in Cloud Manager.
+1. Distribuisci le modifiche precedenti utilizzando [Pipeline di configurazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) in Cloud Manager.
 
    ![Distribuisci YAML](./assets/setup/config-pipeline.png)
 
-Il file `api.yaml` può essere installato anche in un [RDE](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/overview), [utilizzando gli strumenti della riga di comando](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Questo è utile per testare le modifiche di configurazione prima di distribuirle nell’ambiente di produzione.
+Il file `api.yaml` può essere installato anche in un [RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview), [utilizzando gli strumenti della riga di comando](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Questo è utile per testare le modifiche di configurazione prima di distribuirle nell’ambiente di produzione.
 
 ## Passaggi successivi
 

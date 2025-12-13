@@ -4,7 +4,7 @@ description: Scopri come implementare un nome di dominio personalizzato nel sito
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Operations
 topic: Administration, Architecture
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -41,13 +41,13 @@ I passaggi di alto livello sono i seguenti:
    - CDN cliente: per configurare la CDN cliente e aggiungere certificati SSL e dettagli del dominio, come AWS CloudFront, Azure CDN o Akamai.
    - Servizio di hosting DNS (Domain Name System): consente di aggiungere record DNS per il dominio personalizzato, ad esempio DNS di Azure o Route 53 di AWS.
 - Accedi a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) per distribuire la regola CDN di convalida dell&#39;intestazione HTTP nell&#39;ambiente AEM as a Cloud Service.
-- Il sito di esempio [AEM WKND](https://github.com/adobe/aem-guides-wknd) è stato distribuito nell&#39;ambiente AEM as a Cloud Service di tipo [programma di produzione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- Il sito di esempio [AEM WKND](https://github.com/adobe/aem-guides-wknd) è stato distribuito nell&#39;ambiente AEM as a Cloud Service di tipo [programma di produzione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Se non hai accesso a servizi di terze parti, _collabora con il tuo team di sicurezza o di hosting per completare i passaggi_.
 
 ## Genera certificato SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3441497?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
 
 Sono disponibili due opzioni:
 
@@ -222,7 +222,7 @@ Per configurare e distribuire la regola CDN di convalida dell’intestazione HTT
 
 ## Passare il segreto nell’intestazione HTTP X-AEM-Edge-Key
 
->[!VIDEO](https://video.tv.adobe.com/v/3445053?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
 Aggiorna la rete CDN del cliente in modo che passi il segreto nell&#39;intestazione HTTP `X-AEM-Edge-Key`. Il segreto viene utilizzato dal CDN di Adobe per verificare che la richiesta provenga dal CDN del cliente e trasformare il valore dell&#39;intestazione `Host` nel valore di `X-Forwarded-Host` ricevuto dal CDN del cliente.
 

@@ -12,10 +12,10 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 538
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Il caso d&#39;uso più comune per i badge Editor Rich Text consiste nell&#39;uti
 
 In genere, i badge in associazione ai widget vengono utilizzati per aggiungere il contenuto dinamico con una dipendenza di sistema esterna, ma _gli autori di contenuto non possono modificare_ il contenuto dinamico inserito per mantenerne l&#39;integrità. Possono essere rimossi solo come un intero elemento.
 
-I **badge** vengono aggiunti all&#39;editor **RTE** nell&#39;editor frammenti di contenuto utilizzando il punto di estensione `rte`. Utilizzando il metodo `getBadges()` del punto di estensione `rte`, vengono aggiunti uno o più badge.
+I **badge** vengono aggiunti all&#39;editor **RTE** nell&#39;editor frammenti di contenuto utilizzando il punto di estensione `rte`. Utilizzando il metodo `rte` del punto di estensione `getBadges()`, vengono aggiunti uno o più badge.
 
 In questo esempio viene illustrato come aggiungere un widget denominato _Servizio clienti per prenotazioni di gruppi di grandi dimensioni_ per trovare, selezionare e aggiungere i dettagli del servizio clienti specifici dell&#39;avventura WKND, ad esempio **Nome rappresentante** e **Numero di telefono** all&#39;interno di un contenuto dell&#39;editor Rich Text. Utilizzando la funzionalità dei badge, **Il numero di telefono** è reso **non modificabile**, ma gli autori di contenuto WKND possono modificare il nome del rappresentante.
 
@@ -44,7 +44,7 @@ Per semplificare, in questo esempio viene utilizzato il framework [Adobe React S
 Questo esempio si estende fino al punto di estensione `rte` per aggiungere un badge all’editor Rich Text nell’Editor frammenti di contenuto.
 
 | Interfaccia utente di AEM estesa | Punti dell’estensione |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Badge editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) e [Widget editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Estensione di esempio
@@ -148,7 +148,7 @@ Di seguito sono riportati gli elementi di rilievo del codice `LargeBookingsCusto
 + `guestConnection` è inizializzato con l&#39;hook `useEffect` [React](https://react.dev/reference/react/useEffect) ed è gestito come stato del componente. Viene utilizzato per comunicare con l’host AEM.
 + La funzione `handleCustomerServiceChange` ottiene il nome e il numero di telefono del rappresentante e aggiorna le variabili dello stato del componente.
 + La funzione `addCustomerServiceDetails` che utilizza l&#39;oggetto `guestConnection` fornisce istruzioni RTE da eseguire. In questo caso, istruzione `insertContent` e snippet di codice HTML.
-+ Per rendere non modificabile il numero di telefono **&#x200B;**&#x200B;utilizzando i badge, viene aggiunto il carattere speciale `#` prima e dopo la variabile `phoneNumber`, ad esempio `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
++ Per rendere non modificabile il numero di telefono **** utilizzando i badge, viene aggiunto il carattere speciale `#` prima e dopo la variabile `phoneNumber`, ad esempio `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
 
 `src/aem-cf-editor-1/web-src/src/components/LargeBookingsCustomerService.js`
 

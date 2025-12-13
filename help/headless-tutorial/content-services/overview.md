@@ -8,8 +8,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
 duration: 311
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ AEM Content Services consente di utilizzare le stesse astrazioni di contenuto ut
 
 Tutorial end-to-end che illustra come creare ed esporre contenuti tramite AEM e utilizzati da un’app mobile nativa, in uno scenario CMS headless.
 
->[!VIDEO](https://video.tv.adobe.com/v/329219?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
 Questo tutorial esplora come AEM Content Services può essere utilizzato per potenziare l’esperienza di un’app mobile che mostra informazioni su eventi (musica, spettacoli, arte, ecc.) curate dal team WKND.
 
@@ -39,7 +39,7 @@ Questo tutorial tratta i seguenti argomenti:
 
 ## Progetto GitHub
 
-Il codice sorgente e i pacchetti dei contenuti sono disponibili in [AEM Guides: progetto GitHub WKND per dispositivi mobili](https://github.com/adobe/aem-guides-wknd-mobile).
+Il codice sorgente e i pacchetti di contenuti sono disponibili in [AEM Guides: progetto GitHub WKND per dispositivi mobili](https://github.com/adobe/aem-guides-wknd-mobile).
 
 Se riscontri un problema con l’esercitazione o con il codice, puoi segnalarlo mediante la funzione [Issues di GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
@@ -47,7 +47,7 @@ Se riscontri un problema con l’esercitazione o con il codice, puoi segnalarlo 
 
 |                                | API GraphQL di AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
-| Definizione dello schema | Modelli per frammenti di contenuto strutturati | Componenti di AEM |
+| Definizione dello schema | Modelli per frammenti di contenuti strutturati | Componenti di AEM |
 | Contenuto | Frammenti di contenuto | Componenti di AEM |
 | Individuazione del contenuto | Per query basata su GraphQL | Per pagina AEM |
 | Formato di consegna | JSON di GraphQL | JSON ComponentExporter di AEM |

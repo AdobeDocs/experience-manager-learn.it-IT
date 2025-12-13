@@ -4,7 +4,7 @@ description: Scopri come disattivare la memorizzazione nella cache delle rispost
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2023-11-30T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: cf006f24abbc5aa4b91277b91d68538c41d33e15
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -32,7 +32,7 @@ La memorizzazione nella cache delle risposte HTTP nella rete CDN di AEM as a Clo
 Rivedi il [comportamento di caching predefinito](./enable-caching.md#default-caching-behavior) per AEM Publish e Author quando viene distribuito un progetto AEM basato su Archetipo progetto AEM.
 
 
-## Disattiva caching
+## Disabilitare la memorizzazione in cache
 
 La disattivazione della memorizzazione nella cache può avere un impatto negativo sulle prestazioni dell’istanza di AEM as a Cloud Service, pertanto è necessario prestare attenzione quando si disattiva il comportamento di memorizzazione nella cache predefinito.
 
@@ -88,7 +88,7 @@ Per ignorare la cache CSS esistente, è necessario modificare il file CSS per ge
    ```
 
    I file vhost nella directory `dispatcher/src/conf.d/enabled_vhosts` sono **symlinks** ai file nella directory `dispatcher/src/conf.d/available_vhosts`. Assicurarsi quindi di creare symlink se non presenti.
-1. Distribuisci le modifiche vhost nell&#39;ambiente AEM as a Cloud Service desiderato utilizzando [Cloud Manager - Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=it&#web-tier-config-pipelines) o [Comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=it#deploy-apache-or-dispatcher-configuration).
+1. Distribuisci le modifiche vhost nell&#39;ambiente AEM as a Cloud Service desiderato utilizzando [Cloud Manager - Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
 ### Codice Java™ personalizzato
 

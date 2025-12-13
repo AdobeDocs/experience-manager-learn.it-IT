@@ -11,7 +11,7 @@ last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
 exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
-source-git-commit: be710750cd6f2c71fa6b5eb8a6309d5965d67c82
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Scopri come creare campi personalizzati nell’Editor frammento di contenuto di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437642?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
 Le estensioni dell&#39;interfaccia utente di AEM devono essere sviluppate utilizzando il framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), in quanto mantiene un aspetto coerente con il resto di AEM e dispone anche di un&#39;ampia libreria di funzionalità predefinite, riducendo i tempi di sviluppo.
 
@@ -31,7 +31,7 @@ Le estensioni dell&#39;interfaccia utente di AEM devono essere sviluppate utiliz
 Questo esempio sostituisce un campo esistente nell’Editor frammento di contenuto con un’implementazione personalizzata.
 
 | Interfaccia utente di AEM estesa | Punto di estensione |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Rendering elemento modulo personalizzato](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
 ## Estensione di esempio

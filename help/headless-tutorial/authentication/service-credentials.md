@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: dc29a4b7857ee8d1405c9ef8d14f09374c2bfd01
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Le integrazioni con Adobe Experience Manager (AEM) as a Cloud Service devono essere in grado di eseguire l’autenticazione al servizio AEM in modo sicuro. Il Developer Console di AEM consente di accedere alle credenziali del servizio, utilizzate per facilitare l’interazione programmatica tra applicazioni, sistemi e servizi esterni e AEM Author o Publish Services tramite HTTP.
 
-AEM si integra con altri prodotti Adobe utilizzando [S2S OAuth gestito tramite Adobe Developer Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Per le integrazioni personalizzate con gli account del servizio, le credenziali JWT vengono utilizzate e gestite in AEM Developer Console.
+AEM si integra con altri prodotti Adobe utilizzando [S2S OAuth gestito tramite Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Per le integrazioni personalizzate con gli account del servizio, le credenziali JWT vengono utilizzate e gestite in AEM Developer Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/342223?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
 Le credenziali del servizio potrebbero essere simili [Token di accesso per lo sviluppo locale](./local-development-access-token.md), ma sono diverse in alcuni modi:
 
@@ -53,8 +53,10 @@ A differenza dei token di accesso per lo sviluppo locale, le credenziali del ser
 Gli account tecnici vengono creati una volta, tuttavia le chiavi private utilizzate per gestire le credenziali del servizio associate all’account tecnico possono essere gestite nel tempo. Ad esempio, è necessario generare nuove credenziali chiave privata/servizio prima della scadenza della chiave privata corrente, per consentire a un utente di accedere ininterrottamente alle credenziali del servizio.
 
 1. Assicurati di aver effettuato l’accesso come:
+
    + __Amministratore di sistema dell&#39;organizzazione Adobe IMS__
    + Membro del profilo di prodotto IMS __Amministratori AEM__ in __Autore AEM__
+
 1. Accedi a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Apri il programma contenente l’ambiente AEM as a Cloud Service per integrare configurare le credenziali del servizio per
 1. Tocca i puntini di sospensione accanto all&#39;ambiente nella sezione __Ambienti__ e seleziona __Developer Console__
@@ -74,8 +76,10 @@ Una volta inizializzate le credenziali del servizio dell’ambiente AEM as Cloud
 Il download delle credenziali del servizio segue la stessa procedura dell&#39;inizializzazione.
 
 1. Assicurati di aver effettuato l’accesso come:
+
    + __Amministratore organizzazione Adobe IMS__
    + Membro del profilo di prodotto IMS __Amministratori AEM__ in __Autore AEM__
+
 1. Accedi a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Apri il programma contenente l’ambiente AEM as a Cloud Service da integrare con
 1. Tocca i puntini di sospensione accanto all&#39;ambiente nella sezione __Ambienti__ e seleziona __Developer Console__
@@ -93,6 +97,7 @@ Le credenziali del servizio forniscono i dettagli necessari per generare un JWT,
 Per semplicità, questo tutorial trasmette le credenziali del servizio in tramite la riga di comando. Tuttavia, rivolgiti al tuo team di sicurezza IT per scoprire come memorizzare e accedere a queste credenziali in conformità alle linee guida di sicurezza della tua organizzazione.
 
 1. Copia il file [JSON](#download-service-credentials) delle credenziali del servizio scaricato in un file denominato `service_token.json` nella radice del progetto
+
    + Ricorda, non eseguire mai il commit di _credenziali_ in Git.
 
 ## Usa credenziali servizio
@@ -107,7 +112,9 @@ Le credenziali del servizio, un oggetto JSON completo, non corrispondono al JWT 
 1. L’applicazione esterna utilizza le informazioni contenute nelle credenziali del servizio per creare un token JWT
 1. Il token JWT viene inviato ad Adobe IMS per scambiarlo con un token di accesso
 1. Adobe IMS restituisce un token di accesso che può essere utilizzato per accedere ad AEM as a Cloud Service
+
    + I token di accesso non possono modificare un’ora di scadenza.
+
 1. L’applicazione esterna effettua richieste HTTP ad AEM as a Cloud Service, aggiungendo il token di accesso come token Bearer all’intestazione Autorizzazione delle richieste HTTP
 1. AEM as a Cloud Service riceve la richiesta HTTP, la autentica ed esegue il lavoro richiesto dalla richiesta HTTP e restituisce una risposta HTTP all’applicazione esterna.
 
@@ -117,12 +124,12 @@ Per accedere ad AEM as a Cloud Service utilizzando le credenziali del servizio, 
 
 1. Leggi nelle credenziali del servizio
 
-+ Per semplicità, le credenziali del servizio vengono lette dal file JSON scaricato. Tuttavia, in scenari di utilizzo reale, le credenziali del servizio devono essere memorizzate in modo sicuro in conformità alle linee guida sulla sicurezza della tua organizzazione
+   + Per semplicità, le credenziali del servizio vengono lette dal file JSON scaricato. Tuttavia, in scenari di utilizzo reale, le credenziali del servizio devono essere memorizzate in modo sicuro in conformità alle linee guida sulla sicurezza della tua organizzazione
 
 1. Generare un JWT dalle credenziali del servizio
 1. Sostituire il JWT con un token di accesso
 
-+ Se sono presenti credenziali del servizio, l’applicazione esterna utilizza questo token di accesso invece del token di accesso per lo sviluppo locale, quando accede ad AEM as a Cloud Service
+   + Se sono presenti credenziali del servizio, l’applicazione esterna utilizza questo token di accesso invece del token di accesso per lo sviluppo locale, quando accede ad AEM as a Cloud Service
 
 In questa esercitazione, il modulo npm `@adobe/jwt-auth` di Adobe viene utilizzato per entrambi, (1) generare il JWT dalle credenziali del servizio e (2) scambiarlo per un token di accesso, in una singola chiamata di funzione. Se l’applicazione non è basata su JavaScript, puoi sviluppare un codice personalizzato nella lingua desiderata che crei il JWT dalle credenziali del servizio e lo scambia con un token di accesso Adobe IMS.
 
@@ -153,38 +160,38 @@ Questa applicazione di esempio è basata su Node.js, quindi è consigliabile uti
 
 1. Aggiornare `getAccessToken(..)` per esaminare il contenuto del file JSON e determinare se rappresenta un token di accesso per lo sviluppo locale o credenziali del servizio. Ciò può essere facilmente ottenuto verificando l&#39;esistenza della proprietà `.accessToken`, che esiste solo per il token di accesso per lo sviluppo locale JSON.
 
-   Se vengono fornite le credenziali del servizio, l’applicazione genera un JWT e lo scambia con Adobe IMS per ottenere un token di accesso. Utilizza la funzione [&#x200B; di &#x200B;](https://www.npmjs.com/package/@adobe/jwt-auth)@adobe/jwt-auth`auth(...)` che genera un JWT e lo scambia per un token di accesso in una singola chiamata di funzione. I parametri del metodo `auth(..)` sono un oggetto [JSON costituito da informazioni specifiche](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponibili nel codice JSON delle credenziali del servizio, come descritto di seguito nel codice.
+   Se vengono fornite le credenziali del servizio, l’applicazione genera un JWT e lo scambia con Adobe IMS per ottenere un token di accesso. Utilizza la funzione [ di ](https://www.npmjs.com/package/@adobe/jwt-auth)@adobe/jwt-auth`auth(...)` che genera un JWT e lo scambia per un token di accesso in una singola chiamata di funzione. I parametri del metodo `auth(..)` sono un oggetto [JSON costituito da informazioni specifiche](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponibili nel codice JSON delle credenziali del servizio, come descritto di seguito nel codice.
 
-```javascript
- async function getAccessToken(developerConsoleCredentials) {
+   ```javascript
+    async function getAccessToken(developerConsoleCredentials) {
+   
+        if (developerConsoleCredentials.accessToken) {
+            // This is a Local Development access token
+            return developerConsoleCredentials.accessToken;
+        } else {
+            // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
+            let serviceCredentials = developerConsoleCredentials.integration;
+   
+            // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
+            // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
+            let { access_token } = await auth({
+                clientId: serviceCredentials.technicalAccount.clientId, // Client Id
+                technicalAccountId: serviceCredentials.id,              // Technical Account Id
+                orgId: serviceCredentials.org,                          // Adobe IMS Org Id
+                clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
+                privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
+                metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
+                ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
+            });
+   
+            return access_token;
+        }
+    }
+   ```
 
-     if (developerConsoleCredentials.accessToken) {
-         // This is a Local Development access token
-         return developerConsoleCredentials.accessToken;
-     } else {
-         // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
-         let serviceCredentials = developerConsoleCredentials.integration;
+   Ora, a seconda del file JSON (JSON per il token di accesso per lo sviluppo locale o JSON per le credenziali del servizio) trasmesso tramite il parametro della riga di comando `file`, l&#39;applicazione ricava un token di accesso.
 
-         // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
-         // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
-         let { access_token } = await auth({
-             clientId: serviceCredentials.technicalAccount.clientId, // Client Id
-             technicalAccountId: serviceCredentials.id,              // Technical Account Id
-             orgId: serviceCredentials.org,                          // Adobe IMS Org Id
-             clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
-             privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
-             metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
-             ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
-         });
-
-         return access_token;
-     }
- }
-```
-
-    Ora, a seconda del file JSON (JSON per il token di accesso per lo sviluppo locale o JSON per le credenziali del servizio) passato tramite il parametro della riga di comando &quot;file&quot;, l&#39;applicazione ricava un token di accesso.
-    
-    Ricorda che mentre le credenziali del servizio scadono ogni 365 giorni, il JWT e il token di accesso corrispondente scadono di frequente e devono essere aggiornati prima della scadenza. Questa operazione può essere eseguita utilizzando un &quot;refresh_token&quot; [fornito da Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
+   Tieni presente che mentre le credenziali del servizio scadono ogni 365 giorni, il JWT e il token di accesso corrispondente scadono di frequente e devono essere aggiornati prima della scadenza. Questa operazione può essere eseguita utilizzando un `refresh_token` [fornito da Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
 
 1. Con queste modifiche implementate, il codice JSON per le credenziali del servizio è stato scaricato da AEM Developer Console e per semplicità è stato salvato come `service_token.json` nella stessa cartella di `index.js`. Ora eseguiamo l&#39;applicazione sostituendo il parametro della riga di comando `file` con `service_token.json` e aggiornando `propertyValue` in un nuovo valore in modo che gli effetti siano evidenti in AEM.
 
@@ -224,7 +231,9 @@ Una volta che l’utente AEM dell’account tecnico esiste in AEM (dopo la prima
 1. Passa a __Strumenti__ > __Sicurezza__ > __Utenti__
 1. Individua l&#39;utente AEM con il __Nome di accesso__ identificato nel passaggio 1 e apri le relative __Proprietà__
 1. Passa alla scheda __Gruppi__ e aggiungi il gruppo __Utenti DAM__ (che dispone dell&#39;accesso in scrittura alle risorse)
-   + [Consulta l&#39;elenco dei gruppi di utenti forniti da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it#built-in-users-and-groups) a cui aggiungere l&#39;utente del servizio per ottenere le autorizzazioni ottimali. Se nessun gruppo di utenti fornito da AEM è sufficiente, creane uno tuo e aggiungi le autorizzazioni appropriate.
+
+   + [Consulta l&#39;elenco dei gruppi di utenti forniti da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) a cui aggiungere l&#39;utente del servizio per ottenere le autorizzazioni ottimali. Se nessun gruppo di utenti fornito da AEM è sufficiente, creane uno tuo e aggiungi le autorizzazioni appropriate.
+
 1. Tocca __Salva e chiudi__
 
 Con l’account tecnico consentito in AEM per disporre delle autorizzazioni di scrittura per le risorse, esegui nuovamente l’applicazione:

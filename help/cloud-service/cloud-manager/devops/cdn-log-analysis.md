@@ -4,7 +4,7 @@ description: Scopri gli strumenti di analisi del registro CDN di AEM Cloud Servi
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Development
-role: Developer, Architect, Admin
+role: Developer, Admin
 level: Beginner
 doc-type: Tutorial
 duration: 219
@@ -12,10 +12,10 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Scopri gli _strumenti di analisi del registro CDN di AEM Cloud Service_ forniti da Adobe e come consentono di ottenere informazioni sia sulle prestazioni CDN che sull’implementazione di AEM.
  
->[!VIDEO](https://video.tv.adobe.com/v/3446113?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
 
 ## Panoramica
 
@@ -44,11 +44,11 @@ Utilizzando questo strumento è possibile eseguire il monitoraggio in tempo real
 
 Per avviare rapidamente l’analisi del registro, Adobe fornisce dashboard predefiniti sia per lo stack Splunk che per lo stack ELK.
 
-- **Percentuale riscontri cache CDN**: fornisce informazioni sulla percentuale di riscontri totali nella cache e sul numero totale di richieste in base allo stato HIT, PASS e MISS. Inoltre, fornisce gli URL principali HIT, PASS e MISS.
+- **Rapporto hit della cache CDN**: fornisce informazioni sul rapporto hit della cache totale e sul numero totale di richieste in base allo stato HIT, PASS e MISS. Inoltre, fornisce gli URL principali HIT, PASS e MISS.
 
   ![Percentuale riscontri cache CDN](assets/CHR-dashboard.png)
 
-- **Dashboard traffico CDN**: fornisce informazioni sul traffico tramite CDN e il tasso di richieste di origine, i tassi di errore 4xx e 5xx e le richieste non memorizzate nella cache. Inoltre, fornisce il massimo di richieste CND e Origin al secondo per indirizzo IP del client e ulteriori informazioni per ottimizzare le configurazioni CDN.
+- **Dashboard sul traffico CDN**: fornisce informazioni sul traffico tramite CDN e la frequenza di richieste di origine, le percentuali di errore 4xx e 5xx e le richieste non memorizzate nella cache. Inoltre, fornisce il massimo di richieste CND e Origin al secondo per indirizzo IP del client e ulteriori informazioni per ottimizzare le configurazioni CDN.
 
   ![Dashboard traffico CDN](assets/Traffic-dashboard.png)
 

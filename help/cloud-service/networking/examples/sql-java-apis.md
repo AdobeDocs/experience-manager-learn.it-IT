@@ -4,15 +4,15 @@ description: Scopri come connettersi ai database SQL da AEM as a Cloud Service u
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 duration: 124
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Prima di seguire questa esercitazione, assicurati che la configurazione di rete 
 
 ## Configurazione OSGi
 
-Poiché i segreti non devono essere archiviati nel codice, è consigliabile fornire il nome utente e la password della connessione SQL tramite [variabili di configurazione OSGi segrete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#secret-configuration-values), impostate con CLI AIO o API Cloud Manager.
+Poiché i segreti non devono essere archiviati nel codice, è consigliabile fornire il nome utente e la password della connessione SQL tramite [variabili di configurazione OSGi segrete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), impostate con CLI AIO o API Cloud Manager.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 

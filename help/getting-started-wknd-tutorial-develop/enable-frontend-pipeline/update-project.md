@@ -4,7 +4,7 @@ description: Scopri come aggiornare il progetto AEM full-stack per abilitarlo pe
 version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
-role: Developer, Architect, Admin
+role: Developer, Admin
 level: Intermediate
 jira: KT-10689
 mini-toc-levels: 1
@@ -13,8 +13,8 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: b395b3b84e63fe6c24e597d1628f4aed5ba47469
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ In questo capitolo vengono apportate modifiche di configurazione al __progetto W
 
 ## Panoramica delle modifiche alla configurazione nel progetto full-stack di AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/3453617?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
 ## Prerequisiti {#prerequisites}
 

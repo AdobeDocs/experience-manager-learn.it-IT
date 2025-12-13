@@ -4,7 +4,7 @@ description: Scopri come bloccare attacchi DoS, DDoS e sofisticati tramite le re
 version: Experience Manager as a Cloud Service
 feature: Security, Operations
 topic: Security, Administration, Performance
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 436
@@ -12,8 +12,8 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Ecco le informazioni sulle protezioni DDoS predefinite per il tuo sito web AEM:
 - **Blocco:** la rete CDN di Adobe blocca il traffico verso l’origine se supera un limite definito da Adobe da un indirizzo IP specifico, per ciascun PoP (punto di presenza) della rete CDN.
 - **Avvisi:** il centro azioni invia una notifica di avviso di picco di traffico all’origine quando il traffico supera un determinato limite. Questo avviso viene attivato quando il traffico verso un determinato PoP della rete CDN supera una frequenza di richieste _definita da Adobe_ per indirizzo IP. Per ulteriori informazioni, consulta [Avvisi sulle regole del filtro del traffico](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts).
 
-Queste protezioni integrate devono essere considerate una linea di base per la capacità di un’organizzazione di ridurre al minimo l’impatto sulle prestazioni di un attacco DDoS. Poiché ogni sito web ha caratteristiche di prestazioni diverse ed è possibile notare un degrado delle prestazioni prima che venga raggiunto il limite di frequenza definito da Adobe, si consiglia di estendere le protezioni predefinite tramite la _configurazione della clientela_.
+Queste protezioni incorporate devono essere considerate una linea di base per la capacità di un’organizzazione di ridurre al minimo l’impatto sulle prestazioni di un attacco DDoS. Poiché ogni sito web ha caratteristiche di prestazioni diverse ed è possibile notare un degrado delle prestazioni prima che venga raggiunto il limite di frequenza definito da Adobe, si consiglia di estendere le protezioni predefinite tramite la _configurazione della clientela_.
 
 ## Estensione della protezione con le regole per il filtro del traffico
 
@@ -110,7 +110,7 @@ Esplora i seguenti tutorial per configurare le regole consigliate da Adobe per i
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protezione dei siti web di AEM tramite le regole standard per il filtro del traffico">Protezione dei siti web di AEM tramite le regole standard per il filtro del traffico</a>
+                        <a href="./traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" title="Protezione dei siti web di AEM tramite le regole standard per il filtro del traffico">Protezione dei siti Web di AEM tramite le regole standard per il filtro del traffico</a>
                     </p>
                     <p class="is-size-6">Scopri come proteggere i siti web di AEM dall’abuso di DoS, DDoS e bot utilizzando le regole standard per il filtro del traffico consigliate da Adobe in AEM as a Cloud Service.</p>
                 </div>

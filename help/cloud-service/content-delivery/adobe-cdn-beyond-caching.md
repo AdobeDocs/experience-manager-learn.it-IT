@@ -4,7 +4,7 @@ description: Scopri le funzioni avanzate di Adobe CDN oltre la memorizzazione in
 version: Experience Manager as a Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
-role: Developer, Architect, User, Leader
+role: Developer, User, Leader
 level: Beginner
 doc-type: Article
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Oltre a memorizzare in cache i contenuti, Adobe CDN offre diverse funzioni avanz
 
 Queste funzionalità sono **funzionalità self-service**. Configurato nel file `cdn.yaml` del progetto AEM e distribuito utilizzando la pipeline di configurazione Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440281?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
 
 ## Configurazione del traffico sulla rete CDN
 
@@ -91,13 +91,13 @@ data:
 
 [Protezione dei siti Web con regole filtro traffico](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
-[Configura e distribuisci la regola CDN di convalida dell&#39;intestazione HTTP](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
+[Configura e distribuisci la regola CDN di convalida dell&#39;intestazione HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
 
-[Eliminare la cache CDN](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
+[Eliminare la cache CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
 
-[Configurazione delle pagine di errore CDN](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
+[Configurazione delle pagine di errore CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
 
-[Configurazione del traffico sulla rete CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
+[Configurazione del traffico sulla rete CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
 
-[Configurazione credenziali e autenticazione CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+[Configurazione credenziali e autenticazione CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 

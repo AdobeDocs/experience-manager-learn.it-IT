@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
 duration: 1362
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Estensione di esempio per aggiornamento proprietà in blocco
 
->[!VIDEO](https://video.tv.adobe.com/v/3454464?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
 
 Questo esempio di estensione della Console Frammenti di contenuto di AEM è un&#39;estensione della [barra delle azioni](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) che aggiorna in blocco una proprietà Frammento di contenuto a un valore comune.
 
@@ -42,7 +42,7 @@ Il flusso funzionale dell’estensione di esempio è il seguente:
 Questo esempio si estende al punto di estensione `actionBar` per aggiungere un pulsante personalizzato alla console Frammenti di contenuto.
 
 | Interfaccia utente di AEM estesa | Punto di estensione |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Console Frammenti di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barra delle azioni](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
 
@@ -171,7 +171,7 @@ Nell&#39;app di esempio è presente un componente React modale (`BulkPropertyUpd
 È importante sottolineare che qualsiasi interazione con AEM da parte dell&#39;estensione deve essere delegata a un&#39;azione [AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), che è un processo separato senza server in esecuzione in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 L’utilizzo delle azioni di Adobe I/O Runtime per comunicare con AEM consiste nell’evitare problemi di connettività CORS (Cross-Origin Resource Sharing).
 
-Quando il modulo Bulk Property Update viene inviato, un `onSubmitHandler()` personalizzato richiama l&#39;azione Adobe I/O Runtime, passando l&#39;host AEM (dominio) corrente e il token di accesso AEM dell&#39;utente, che a sua volta chiama l&#39;[API AEM Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=it) per aggiornare i frammenti di contenuto.
+Quando il modulo Bulk Property Update viene inviato, un `onSubmitHandler()` personalizzato richiama l&#39;azione Adobe I/O Runtime, passando l&#39;host AEM (dominio) corrente e il token di accesso AEM dell&#39;utente, che a sua volta chiama l&#39;[API AEM Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) per aggiornare i frammenti di contenuto.
 
 Quando viene ricevuta la risposta dall’azione Adobe I/O Runtime, il modale viene aggiornato per visualizzare i risultati dell’operazione di aggiornamento in blocco delle proprietà.
 

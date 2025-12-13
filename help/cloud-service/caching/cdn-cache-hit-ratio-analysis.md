@@ -4,7 +4,7 @@ description: Scopri come analizzare i registri CDN forniti da AEM as a Cloud Ser
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2023-11-10T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Il contenuto memorizzato nella cache della rete CDN riduce la latenza per gli ut
 Scopri come analizzare i **registri CDN** forniti da AEM as a Cloud Service e ottenere informazioni quali **proporzioni di hit della cache** e **URL principali di _tipi di cache MISS_ e _PASS_**, a scopo di ottimizzazione.
 
 
-I registri CDN sono disponibili in formato JSON, che contiene vari campi tra cui `url`, `cache`. Per ulteriori informazioni, vedere [Formato di registro CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=it#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). Il campo `cache` fornisce informazioni sullo stato _della cache_ e i valori possibili sono HIT, MISS o PASS. Esaminiamo i dettagli dei valori possibili.
+I registri CDN sono disponibili in formato JSON, che contiene vari campi tra cui `url`, `cache`. Per ulteriori informazioni, vedere [Formato di registro CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). Il campo `cache` fornisce informazioni sullo stato _della cache_ e i valori possibili sono HIT, MISS o PASS. Esaminiamo i dettagli dei valori possibili.
 
 | Stato della cache </br> valore possibile | Descrizione |
 |------------------------------------|:-----------------------------------------------------:|
@@ -67,7 +67,7 @@ Per analizzare i registri CDN, questa esercitazione presenta tre opzioni:
 
 1. **Elasticsearch, Logstash e Kibana (ELK)**: è possibile installare localmente gli strumenti del dashboard [ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md).
 1. **Splunk**: [Gli strumenti del dashboard Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) richiedono l&#39;accesso a Splunk e [l&#39;inoltro dei registri AEMCS è abilitato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) per acquisire i registri CDN.
-1. **Jupyter Notebook**: è possibile accedervi in remoto come parte di [Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) senza installare software aggiuntivo, per i clienti che hanno concesso in licenza Adobe Experience Platform.
+1. **Jupyter Notebook**: è possibile accedervi in remoto come parte di [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) senza installare software aggiuntivo, per i clienti che hanno concesso in licenza Adobe Experience Platform.
 
 ### Opzione 1: utilizzo degli strumenti del dashboard ELK
 
@@ -149,7 +149,7 @@ Per identificare i dettagli chiave, utilizziamo il progetto [AEMCS-CDN-Log-Analy
 
 Per coloro che preferiscono non installare il software localmente (ovvero, gli strumenti del dashboard ELK della sezione precedente), esiste un&#39;altra opzione, ma richiede una licenza per Adobe Experience Platform.
 
-[Jupyter Notebook](https://jupyter.org/) è un&#39;applicazione Web open source che consente di creare documenti contenenti codice, testo e visualizzazione. Viene utilizzato per la trasformazione dei dati, la visualizzazione e la modellazione statistica. È possibile accedervi in remoto [come parte di Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
+[Jupyter Notebook](https://jupyter.org/) è un&#39;applicazione Web open source che consente di creare documenti contenenti codice, testo e visualizzazione. Viene utilizzato per la trasformazione dei dati, la visualizzazione e la modellazione statistica. È possibile accedervi in remoto [come parte di Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### Download del file del blocco appunti Python interattivo
 

@@ -4,17 +4,17 @@ description: Scopri come impostare e utilizzare l’indirizzo IP in uscita dedic
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 24d634fd1e62e873bc1dbb3ac0cd18f70129ee86
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1370'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -26,11 +26,11 @@ Scopri come impostare e utilizzare l’indirizzo IP in uscita dedicato, che cons
 
 L’indirizzo IP in uscita dedicato consente alle richieste di AEM as a Cloud Service di utilizzare un indirizzo IP dedicato, consentendo ai servizi esterni di filtrare le richieste in ingresso in base a tale indirizzo IP. Come [porte di uscita flessibili](./flexible-port-egress.md), l&#39;IP di uscita dedicato consente di uscire su porte non standard.
 
-Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, assicurati che l&#39;indirizzo IP in uscita dedicato sia il tipo di infrastruttura di rete [&#128279;](./advanced-networking.md) più appropriato per il tuo AEM as a Cloud Service.
+Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, assicurati che l&#39;indirizzo IP in uscita dedicato sia il tipo di infrastruttura di rete [ più ](./advanced-networking.md)appropriato per il tuo AEM as a Cloud Service.
 
 >[!MORELIKETHIS]
 >
-> Per ulteriori dettagli sull&#39;indirizzo IP in uscita dedicato, leggi la [documentazione sulla configurazione di rete avanzata di AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Per ulteriori dettagli sull&#39;indirizzo IP in uscita dedicato, leggi la [documentazione sulla configurazione di rete avanzata di AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 ## Prerequisiti
 
@@ -44,7 +44,7 @@ Quando si imposta un indirizzo IP in uscita dedicato utilizzando le API di Cloud
 + ID del programma Cloud Manager
 + ID dell’ambiente Cloud Manager
 
-Per ulteriori dettagli [consulta come impostare, configurare e ottenere le credenziali API di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), per utilizzarle per effettuare una chiamata API di Cloud Manager.
+Per ulteriori dettagli [consulta come impostare, configurare e ottenere le credenziali API di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), per utilizzarle per effettuare una chiamata API di Cloud Manager.
 
 Questo tutorial utilizza `curl` per creare le configurazioni API di Cloud Manager. I comandi `curl` forniti assumono una sintassi Linux/macOS. Se si utilizza il prompt dei comandi di Windows, sostituire il carattere di interruzione di riga `\` con `^`.
 
@@ -86,7 +86,7 @@ Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizza
 
 1. In primo luogo, determinare l&#39;area in cui è necessaria la rete avanzata utilizzando l&#39;operazione [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager. `region name` è necessario per effettuare chiamate API Cloud Manager successive. In genere, viene utilizzata l’area in cui risiede l’ambiente di produzione.
 
-   Trova l&#39;area geografica dell&#39;ambiente AEM as a Cloud Service in [Cloud Manager](https://my.cloudmanager.adobe.com) nei [dettagli ambiente](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Il nome dell&#39;area visualizzato in Cloud Manager può essere [mappato al codice dell&#39;area](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments.it) utilizzato nell&#39;API Cloud Manager.
+   Trova l&#39;area geografica dell&#39;ambiente AEM as a Cloud Service in [Cloud Manager](https://my.cloudmanager.adobe.com) nei [dettagli ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Il nome dell&#39;area visualizzato in Cloud Manager può essere [mappato al codice dell&#39;area](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments.it) utilizzato nell&#39;API Cloud Manager.
 
    __richiesta HTTP listRegions__
 
@@ -221,7 +221,7 @@ Per impostazione predefinita, le richieste HTTP/HTTPS provenienti da AEM su port
 
 >[!TIP]
 >
-> Consulta la documentazione dedicata sugli indirizzi IP in uscita di AEM as a Cloud Service per [l&#39;intero set di regole di routing](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Consulta la documentazione dedicata sugli indirizzi IP in uscita di AEM as a Cloud Service per [l&#39;intero set di regole di routing](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 
 ### HTTP/HTTPS

@@ -4,15 +4,15 @@ description: Scopri come effettuare richieste HTTP/HTTPS da AEM as a Cloud Servi
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9354
 thumbnail: KT-9354.jpeg
 exl-id: a565bc3a-675f-4d5e-b83b-c14ad70a800b
 duration: 70
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Le connessioni HTTP/HTTPS vengono automaticamente escluse da AEM as a Cloud Serv
 
 Il codice di esempio seguente è supportato dalle seguenti opzioni di rete avanzate.
 
-Prima di seguire questa esercitazione, assicurati che la configurazione di rete avanzata VPN[&#128279;](../advanced-networking.md#advanced-networking) o l&#39;indirizzo IP in uscita dedicato  sia stata configurata.
+Prima di seguire questa esercitazione, assicurati che la configurazione di rete avanzata VPN[ o l&#39;indirizzo IP in uscita dedicato ](../advanced-networking.md#advanced-networking) sia stata configurata.
 
 | Nessuna rete avanzata | [Uscita porta flessibile](../flexible-port-egress.md) | [Indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md) | [Rete privata virtuale](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
