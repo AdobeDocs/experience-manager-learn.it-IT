@@ -21,4 +21,4 @@ ht-degree: 17%
 
 Scopri in che modo Best Practice Analyzer può aiutarti a prepararti a passare da AEM on-premise o Adobe Managed Services ad Experience Manager as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336690?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446461?captions=ita&quality=12&learn=on)

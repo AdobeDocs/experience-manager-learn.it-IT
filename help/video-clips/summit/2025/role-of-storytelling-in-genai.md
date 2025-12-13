@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come i principi della narrazione nella musica country si relazionano alla progettazione di strumenti GenAI per le esperienze digitali.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459229/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462017/?captions=ita&learn=on&enablevpops)

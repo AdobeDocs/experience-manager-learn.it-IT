@@ -29,11 +29,11 @@ Lo strumento di importazione in blocco disponibile in AEM as a Cloud Service con
 
 Scopri come importare numerosi file in AEM Assets utilizzando la [vista risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=it) [importazione in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=it), con Dropbox che funge da provider di archiviazione cloud di esempio per un processo di integrazione chiaro e facile da seguire.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3451967/?captions=ita&learn=on)
 
 >[!TAB Vista amministratore]
 
->[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341387?captions=ita&quality=12&learn=on)
 
 >[!TIP]
 >

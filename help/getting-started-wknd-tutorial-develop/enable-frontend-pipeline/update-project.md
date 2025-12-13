@@ -30,7 +30,7 @@ In questo capitolo vengono apportate modifiche di configurazione al __progetto W
 
 ## Panoramica delle modifiche alla configurazione nel progetto full-stack di AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453617?captions=ita&quality=12&learn=on)
 
 ## Prerequisiti {#prerequisites}
 

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Emily Kellman condivide come Adobe.com utilizzasse Generare varianti per velocizzare la trasmissione dei contenuti, ridurre le timeline e stimolare le conversioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459232/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462726/?captions=ita&learn=on&enablevpops)

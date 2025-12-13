@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Esplora l’architettura sottostante e i componenti importanti di AEM as a Cloud Service con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/330542?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346182?captions=ita&quality=12&learn=on)

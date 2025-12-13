@@ -24,7 +24,7 @@ ht-degree: 15%
 
 Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring di AEM. Usa la console Sites come base.
 
->[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37004?captions=ita&quality=12&learn=on)
 
 In questo video vengono trattate le seguenti funzionalità:
 

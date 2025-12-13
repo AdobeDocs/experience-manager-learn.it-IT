@@ -26,7 +26,7 @@ ht-degree: 2%
 
 Frammenti di esperienza consente agli autori di contenuti di riutilizzare i contenuti tra canali diversi, incluse le pagine Sites e i sistemi di terze parti.
 
->[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445615?captions=ita&quality=12&learn=on)
 
 Un frammento di esperienza è un set raggruppato di componenti che, se combinati, crea un’esperienza. È ad esempio possibile combinare un *Titolo*, *Immagine*, *Descrizione* e *Pulsante Call to action* per creare un&#39;esperienza teaser.
 

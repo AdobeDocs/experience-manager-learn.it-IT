@@ -23,7 +23,7 @@ ht-degree: 11%
 
 Scopri gli _strumenti di analisi del registro CDN di AEM Cloud Service_ forniti da Adobe e come consentono di ottenere informazioni sia sulle prestazioni CDN che sull’implementazione di AEM.
  
->[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446113?captions=ita&quality=12&learn=on)
 
 ## Panoramica
 

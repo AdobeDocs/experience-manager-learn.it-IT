@@ -27,7 +27,7 @@ Scopri come incrementare l’ottimizzazione SEO (Search Engine Optimization) cre
 >
 >Questo video illustra l’utilizzo di URL relativi nella mappa del sito. Le mappe del sito [&#x200B; devono utilizzare URL assoluti](https://sitemaps.org/protocol.html). Per informazioni su come abilitare gli URL assoluti, consulta [Configurazioni](#absolute-sitemap-urls), in quanto questo argomento non è trattato nel video seguente.
 
->[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454369?captions=ita&quality=12&learn=on)
 
 ## Configurazioni
 

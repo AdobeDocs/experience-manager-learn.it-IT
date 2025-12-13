@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Scopri come creare campi personalizzati nell’Editor frammento di contenuto di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437642?captions=ita&learn=on)
 
 Le estensioni dell&#39;interfaccia utente di AEM devono essere sviluppate utilizzando il framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), in quanto mantiene un aspetto coerente con il resto di AEM e dispone anche di un&#39;ampia libreria di funzionalità predefinite, riducendo i tempi di sviluppo.
 

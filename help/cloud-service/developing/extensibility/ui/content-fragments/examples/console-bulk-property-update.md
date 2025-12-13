@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Estensione di esempio per aggiornamento proprietà in blocco
 
->[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454464?captions=ita&quality=12&learn=on)
 
 Questo esempio di estensione della Console Frammenti di contenuto di AEM è un&#39;estensione della [barra delle azioni](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) che aggiorna in blocco una proprietà Frammento di contenuto a un valore comune.
 

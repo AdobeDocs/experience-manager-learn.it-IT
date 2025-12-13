@@ -24,7 +24,7 @@ ht-degree: 100%
 Scopri come abilitare ModSecurity per proteggere il tuo sito dagli attacchi DoS (Denial of Service) utilizzando il **ModSecurity CRS (Core Rule Set) di OWASP** nel Publish Dispatcher di Adobe Experience Manager (AEM).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452137?captions=ita&quality=12&learn=on)
 
 ## Panoramica
 

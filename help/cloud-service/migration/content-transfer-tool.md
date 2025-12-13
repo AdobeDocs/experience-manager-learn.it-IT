@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Lo strumento Content Transfer è il metodo consigliato per migrare il contenuto da una versione in hosting locale o AMS di AEM a un ambiente AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/35460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327073?captions=ita&quality=12&learn=on)
 
 ## Risorse aggiuntive {#additional-resources}
 

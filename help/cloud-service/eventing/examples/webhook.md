@@ -24,7 +24,7 @@ ht-degree: 1%
 Scopri come ricevere eventi AEM su un webhook e rivedere i dettagli dell’evento come payload, intestazioni e metadati.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449756?captions=ita&quality=12&learn=on)
 
 
 >[!IMPORTANT]

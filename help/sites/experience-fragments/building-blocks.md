@@ -25,7 +25,7 @@ ht-degree: 0%
 
 I blocchi predefiniti sono una sottofunzione dei Frammenti esperienza. I blocchi predefiniti consentono agli autori di contenuti di riutilizzare i componenti tra diverse varianti di Frammenti esperienza.
 
->[!VIDEO](https://video.tv.adobe.com/v/331786?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410270?captions=ita&quality=12&learn=on)
 
 >[!NOTE]
 >

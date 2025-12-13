@@ -25,7 +25,7 @@ Scopri come eliminare o rimuovere la risposta HTTP dalla cache dal CDN di AEM as
 
 In questa esercitazione imparerai a impostare e utilizzare Purge API Token per eliminare la cache CDN del sito [AEM WKND](https://github.com/adobe/aem-guides-wknd) di esempio utilizzando la funzione self-service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436939?captions=ita&quality=12&learn=on)
 
 ## Annullamento della validità della cache ed eliminazione esplicita
 

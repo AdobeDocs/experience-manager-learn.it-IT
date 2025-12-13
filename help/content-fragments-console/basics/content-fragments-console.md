@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri le funzioni di base della console di authoring Frammenti di contenuto di AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409492?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449340?captions=ita&quality=12&learn=on)

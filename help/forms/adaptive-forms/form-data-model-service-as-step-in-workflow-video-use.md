@@ -22,7 +22,7 @@ ht-degree: 0%
 A partire da AEM Forms 6.4, ora è possibile utilizzare il modello dati del modulo come parte del flusso di lavoro AEM. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo nel flusso di lavoro di AEM
 
 
->[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41741?captions=ita&quality=12&learn=on)
 
 Per testare questa funzionalità sul server, attieniti alle istruzioni seguenti
 

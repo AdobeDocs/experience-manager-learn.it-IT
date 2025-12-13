@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Panoramica delle funzionalità di Photoshop e Lightroom applicate con Adobe Experience Manager Assets Content Automation.
 
->[!VIDEO](https://video.tv.adobe.com/v/333197?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416630?captions=ita&quality=12&learn=on)

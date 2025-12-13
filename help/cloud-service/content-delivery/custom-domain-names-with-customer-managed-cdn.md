@@ -47,7 +47,7 @@ Se non hai accesso a servizi di terze parti, _collabora con il tuo team di sicur
 
 ## Genera certificato SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441497?captions=ita&quality=12&learn=on)
 
 Sono disponibili due opzioni:
 
@@ -222,7 +222,7 @@ Per configurare e distribuire la regola CDN di convalida dell’intestazione HTT
 
 ## Passare il segreto nell’intestazione HTTP X-AEM-Edge-Key
 
->[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445053?captions=ita&quality=12&learn=on)
 
 Aggiorna la rete CDN del cliente in modo che passi il segreto nell&#39;intestazione HTTP `X-AEM-Edge-Key`. Il segreto viene utilizzato dal CDN di Adobe per verificare che la richiesta provenga dal CDN del cliente e trasformare il valore dell&#39;intestazione `Host` nel valore di `X-Forwarded-Host` ricevuto dal CDN del cliente.
 

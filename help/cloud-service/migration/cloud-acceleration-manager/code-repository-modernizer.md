@@ -21,4 +21,4 @@ ht-degree: 13%
 
 Scopri in che modo Core Repository Modernizer aggiorna automaticamente i progetti AEM Maven esistenti affinché siano compatibili con AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336694?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444670?captions=ita&quality=12&learn=on)
