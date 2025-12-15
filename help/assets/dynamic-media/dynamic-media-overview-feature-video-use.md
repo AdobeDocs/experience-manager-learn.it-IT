@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: a43bd7ae4e5b0a6793c52b5a8d0f36e3c1b260b1
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Esplora le possibilità di Adobe Dynamic Media con la nostra [**demo live**](htt
 
 ## Panoramica di Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/328562?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Questo video descrive come gestire e accedere ai contenuti multimediali utilizza
 
 ## Utilizzo con AEM Sites
 
->[!VIDEO](https://video.tv.adobe.com/v/328564?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Questo video descrive come il contenuto multimediale viene gestito in Adobe Expe
 
 ## Creare una raccolta di file multimediali diversi
 
->[!VIDEO](https://video.tv.adobe.com/v/328560?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Questo video descrive il semplice processo di creazione di una raccolta di visua
 
 ## Predefiniti per immagini
 
->[!VIDEO](https://video.tv.adobe.com/v/328144?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 Questo video descrive come vengono creati i predefiniti immagine e cos’è un predefinito immagine, un URL abbreviato per una serie di argomenti del server immagini che operano su un’immagine ogni volta che un URL lo richiede. Scopri tecniche utili per estendere e modificare i predefiniti immagine.
 
@@ -84,7 +84,7 @@ Questo video descrive come vengono creati i predefiniti immagine e cos’è un p
 
 ## Modificatori URL avanzati
 
->[!VIDEO](https://video.tv.adobe.com/v/328143?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 Questo video descrive come andare oltre il ridimensionamento delle immagini, sfruttando le funzioni del file sorgente stesso: trasparenza di sfondo, tracciati di ritaglio incorporati, ritaglio e testo come variabili con i modificatori URL di Dynamic Media.
 
@@ -96,7 +96,7 @@ Questo video descrive come andare oltre il ridimensionamento delle immagini, sfr
 
 ## Gestione dimensioni file JPEG
 
->[!VIDEO](https://video.tv.adobe.com/v/328253?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -105,18 +105,9 @@ Questo video descrive come andare oltre il ridimensionamento delle immagini, sfr
 
 Bilanciare la qualità dell&#39;immagine jpeg rispetto alle dimensioni del file risultanti (in kilobyte) per migliorare la velocità di caricamento della pagina, utilizzando 2 comandi per regolare le impostazioni di compressione jpeg. QLT definisce la qualità dell&#39;immagine regolando le impostazioni di qualità della compressione JPEG. Il comando Dimensione JPEG consente di specificare la dimensione del file da raggiungere mediante la compressione.
 
-## Sottotitoli
+## Sottotitoli codificati
 
->[!VIDEO](https://video.tv.adobe.com/v/328808?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Aggiungi facilmente i sottotitoli codificati ai video Dynamic Media aggiungendo l’URL della copia a un documento aggiuntivo del file dei sottotitoli codificati, un file sidecar web.VTT, contenente le informazioni CC per qualsiasi video.
 
-## Nitidezza delle immagini
-
-Questo video illustra perché la nitidezza di un’immagine è fondamentale per mantenere la fedeltà dell’immagine e come utilizzare impostazioni avanzate per creare l’immagine perfetta.
-
-<!--
-This link is broken
-
->[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&config=/etc/dam/presets/viewer/Video_social&serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&contenturl=%2F&config2=/etc/dam/presets/analytics&videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)
--->
