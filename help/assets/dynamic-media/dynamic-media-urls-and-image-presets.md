@@ -23,4 +23,4 @@ Scopri la sintassi URL di AEM Assets Dynamic Media e come massimizzare il valore
 
 >[!VIDEO](https://video.tv.adobe.com/v/3477924/?learn=on&enablevpops)
 
-Guarda questo breve video su [come creare predefiniti immagine in AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
+Guarda questo breve video su [come creare predefiniti immagine in AEM Assets](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
