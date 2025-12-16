@@ -21,6 +21,6 @@ ht-degree: 0%
 
 Scopri la sintassi URL di AEM Assets Dynamic Media e come massimizzare il valore utilizzando i predefiniti per immagini. Migliora le funzionalità di gestione delle risorse e l’efficienza del flusso di lavoro.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477924/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477944/?captions=ita&learn=on&enablevpops)
 
 Guarda questo breve video su [come creare predefiniti immagine in AEM Assets](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
