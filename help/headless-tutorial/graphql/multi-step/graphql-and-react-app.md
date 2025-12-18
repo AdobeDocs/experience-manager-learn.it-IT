@@ -35,9 +35,9 @@ _Le schermate IDE in questo capitolo provengono da [Visual Studio Code](https://
 
 Per completare questa esercitazione, ti consigliamo di avere accesso come amministratore AEM a uno dei seguenti elementi:
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
 + Configurazione locale con [AEM Cloud Service SDK](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)
-+ [AEM 6.5 LTS](https://experienceleague.adobe.com/docs/experience-manager-65/content/release-notes/release-notes.html) con [Pacchetto indice GraphQL 1.0.5+](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/graphql-api/graphql-endpoint.html) installato
++ [AEM 6.5 LTS](https://experienceleague.adobe.com/docs/experience-manager-65/content/release-notes/release-notes.html?lang=it) con [Pacchetto indice GraphQL 1.0.5+](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/graphql-api/graphql-endpoint.html) installato
 
 ### Requisiti software
 
