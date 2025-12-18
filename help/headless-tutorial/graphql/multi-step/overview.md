@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: e7f556737cdf6a92c0503d3b4a52eef1f71c8330
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 91%
+source-wordcount: '240'
+ht-degree: 80%
 
 ---
 
@@ -50,10 +50,11 @@ Per completare questa esercitazione, ti consigliamo di avere accesso come ammini
 
 ## Iniziamo.
 
-Inizia il tutorial con la sezione [Definizione dei modelli per frammenti di contenuto](content-fragment-models.md).
+Inizia l&#39;esercitazione con [definizione dei modelli per frammenti di contenuto](content-fragment-models.md).
 
 ## Progetto GitHub
 
-Il codice sorgente e i pacchetti di contenuti sono disponibili in [Guide AEM - Progetto WKND GraphQL di GitHub](https://github.com/adobe/aem-guides-wknd-graphql).
+Il codice sorgente e i pacchetti di contenuti sono disponibili nella cartella `basic-tutorial` del [progetto GitHub AEM Guides - WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial).
+
 
 Se riscontri un problema con il tutorial o con il codice, crea un [problema GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
