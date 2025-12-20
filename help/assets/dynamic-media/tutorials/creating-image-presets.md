@@ -23,4 +23,4 @@ Questo video illustra i passaggi per creare predefiniti per immagini in Dynamic 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418241?captions=ita&quality=12&learn=on)
 
-Scopri le best practice per la creazione di URL Dynamic Media e predefiniti per immagini in AEM Assets e come funziona il tutto! [Guarda il video qui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
+Scopri le best practice per la creazione di URL Dynamic Media e predefiniti per immagini in AEM Assets e come funziona il tutto! [Guarda il video qui](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
