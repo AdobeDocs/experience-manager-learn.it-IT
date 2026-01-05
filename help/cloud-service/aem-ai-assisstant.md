@@ -20,11 +20,11 @@ ht-degree: 6%
 
 Scopri in che modo [AEM AI Assistant](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) semplifica i flussi di lavoro di Adobe Experience Manager. Dalla ricerca delle funzionalità, all’apprendimento delle best practice, alla risoluzione dei problemi e persino alla creazione di ticket di supporto, è il tuo compagno intelligente in AEM. Aumenta la produttività con guide, informazioni e supporto basati sull’intelligenza artificiale, il tutto in un’unica posizione.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475366/?captions=ita&learn=on&enablevpops)
 
 
 ## Configurare l’accesso all’assistente di AEM AI
 
 Scopri come configurare l&#39;accesso all&#39;Assistente AI in Adobe Experience Manager utilizzando [Adobe Admin Console](https://adminconsole.adobe.com). Questo passaggio è necessario per consentire agli utenti di ottenere risposte dall’Assistente e sfruttare la creazione automatica dei ticket.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474066/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474074/?captions=ita&learn=on&enablevpops)
