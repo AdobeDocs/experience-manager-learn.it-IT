@@ -31,7 +31,7 @@ Oltre a memorizzare in cache i contenuti, Adobe CDN offre diverse funzioni avanz
 
 Queste funzionalità sono **funzionalità self-service**. Configurato nel file `cdn.yaml` del progetto AEM e distribuito utilizzando la pipeline di configurazione Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440281?captions=ita&quality=12&learn=on)
 
 ## Configurazione del traffico sulla rete CDN
 
