@@ -22,6 +22,6 @@ Scopri come utilizzare gli agenti, esposti tramite [AEM AI Assistant](./ai-assis
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478455/?learn=on&enablevpops)
 
-Per un elenco completo degli agenti disponibili in AEM e delle relative funzionalità, inclusi i prompt di esempio, consulta [Agenti nella documentazione di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
+Per un elenco completo degli agenti disponibili in AEM e delle relative funzionalità, inclusi i prompt di esempio, consulta [Agenti nella documentazione di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
 
 *Per accedere agli agenti in AEM, assicurati di aver impostato l&#39;accesso nel tuo ambiente AEM seguendo la [guida all&#39;installazione](./setup.md#agents-in-aem).*
