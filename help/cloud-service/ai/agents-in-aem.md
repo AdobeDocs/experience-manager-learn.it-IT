@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Scopri come utilizzare gli agenti, esposti tramite [AEM AI Assistant](./ai-assistant.md), per automatizzare le attività e semplificare i flussi di lavoro. Scopri cosa sono gli agenti, come funzionano e dove si adattano al lavoro che svolgi in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478455/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3478463/?captions=ita&learn=on&enablevpops)
 
 Per un elenco completo degli agenti disponibili in AEM e delle relative funzionalità, inclusi i prompt di esempio, consulta [Agenti nella documentazione di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
 
