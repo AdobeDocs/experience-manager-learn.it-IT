@@ -25,4 +25,4 @@ ht-degree: 25%
 
 Una guida dettagliata su come creare e pubblicare contenuti tramite l’authoring dei documenti.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425700/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441349/?captions=ita&learn=on)

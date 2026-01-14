@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come incorporare contenuti utilizzando iFrame con l’authoring di documenti AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425719/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438397/?captions=ita&learn=on)

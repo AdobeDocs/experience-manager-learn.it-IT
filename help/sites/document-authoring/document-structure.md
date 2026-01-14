@@ -25,4 +25,4 @@ ht-degree: 7%
 
 Scopri in che modo l’authoring dei documenti viene creato utilizzando contenuti, blocchi e altro di default.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425701/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438821/?captions=ita&learn=on)

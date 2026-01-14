@@ -25,4 +25,4 @@ ht-degree: 8%
 
 Scopri come aggiungere testo alternativo alle immagini nelle pagine create utilizzando la funzione di authoring dei documenti di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425721/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438683/?captions=ita&learn=on)

@@ -25,4 +25,4 @@ ht-degree: 4%
 
 Approfondisci il funzionamento dei reindirizzamenti nell’authoring dei documenti e come gli autori possono facilmente impostare i reindirizzamenti senza competenze tecniche.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425704/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438551/?captions=ita&learn=on)

@@ -25,4 +25,4 @@ ht-degree: 12%
 
 Scopri in che modo l’authoring dei documenti gestisce i metadati a livello di pagina e come gli autori possono aggiornarli senza alcuna esperienza tecnica.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425706/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438076/?captions=ita&learn=on)

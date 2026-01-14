@@ -25,4 +25,4 @@ ht-degree: 7%
 
 Scopri come utilizzare i flussi di lavoro dei documenti con l’authoring dei documenti AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425720/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438298/?captions=ita&learn=on)

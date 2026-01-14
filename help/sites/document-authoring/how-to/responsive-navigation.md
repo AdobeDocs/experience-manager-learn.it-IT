@@ -25,4 +25,4 @@ ht-degree: 16%
 
 Scopri come eseguire la navigazione reattiva nell’authoring dei documenti.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425707/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438175/?captions=ita&learn=on)
