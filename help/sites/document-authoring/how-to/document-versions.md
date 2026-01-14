@@ -1,7 +1,7 @@
 ---
 title: Documenti di versione con authoring di documenti AEM
 description: Creare versioni del contenuto con l’authoring dei documenti di AEM.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User, Developer
@@ -12,7 +12,7 @@ jira: KT-14494
 thumbnail: 3425728.jpeg
 duration: 105
 exl-id: 0ef31876-5813-4219-b356-cc581544bac3
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '26'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come creare versioni di documenti creati con AEM Document Authoring.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438804/?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3425728/?learn=on)

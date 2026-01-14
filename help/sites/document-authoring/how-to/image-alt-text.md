@@ -1,7 +1,7 @@
 ---
 title: Aggiungere testo alternativo all’immagine con l’authoring dei documenti AEM
 description: Scopri come utilizzare il testo alternativo per le immagini nella creazione dei documenti.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User, Developer
@@ -12,17 +12,17 @@ jira: KT-14488
 thumbnail: 3425721.jpeg
 duration: 101
 exl-id: 9577aa66-25a7-4092-984d-52eb2662c4ff
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '37'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
-# Testo alternativo immagine
+# Testo alternativo dell’immagine
 
 {{edge-delivery-services}}
 
 Scopri come aggiungere testo alternativo alle immagini nelle pagine create utilizzando la funzione di authoring dei documenti di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438683/?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3425721/?learn=on)

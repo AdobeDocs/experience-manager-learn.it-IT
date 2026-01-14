@@ -1,7 +1,7 @@
 ---
 title: Metadati in blocco
-description: Scopri come vengono gestiti i metadati in blocco nella creazione dei documenti.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+description: Scopri in che modo vengono gestiti i metadati in blocco nell’authoring dei documenti.
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -12,10 +12,10 @@ jira: KT-14471
 thumbnail: 3425705.jpeg
 duration: 96
 exl-id: cada8642-b677-4b61-927b-f640b3e2a1ac
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '33'
-ht-degree: 0%
+ht-degree: 39%
 
 ---
 
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come vengono gestiti i metadati in blocco nell’authoring dei documenti e come gli autori possono aggiornare i metadati in blocco senza alcuna esperienza tecnica.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438430/?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3425705/?learn=on)
