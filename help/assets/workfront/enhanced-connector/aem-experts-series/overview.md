@@ -13,10 +13,10 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
 duration: 49
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+source-git-commit: 866dca32844a7185bdf3980e38570da1d44d8b83
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ Questa serie degli esperti in quattro parti segue un gruppo di esperti di Adobe,
 
 1. [Esecuzione delle configurazioni iniziali in Workfront ed AEM](./setup.md)
 2. [Configurazione della sincronizzazione dei metadati tra i moduli personalizzati di Workfront ed AEM](./custom-forms.md)
-3. [Utilizzo di Tag AEM, cartelle collegate a progetti, Adobe Asset Link e schemi di metadati delle cartelle per ottimizzare il valore](./aem-tags-project-linked-folders-and-folder-metadata.md)
+3. [Utilizzo di Tag AEM, cartelle collegate a progetti, Adobe Asset Link e schemi di metadati per cartelle per ottimizzare il valore](./aem-tags-project-linked-folders-and-folder-metadata.md)
 4. [Utilizzo del flusso di lavoro avanzato di AEM per semplificare i processi aziendali in AEM e Workfront e altre impostazioni avanzate](./advanced-settings-and-workflows.md)
 
 <table>
@@ -60,7 +60,7 @@ Questa serie degli esperti in quattro parti segue un gruppo di esperti di Adobe,
       </div>
       <p>
         <br/>
-         Scopri di più sui moduli personalizzati Workfront e come vengono mappati agli schemi di metadati di Experience Manager Assets per sincronizzare i dati.
+         Scopri di più sui moduli personalizzati di Workfront e come vengono mappati agli schemi di metadati di Experience Manager Assets per sincronizzare i dati.
       </p>
     </td>
     <!-- AEM Tags, project linked folders, and folder metadata -->
@@ -95,3 +95,9 @@ Questa serie degli esperti in quattro parti segue un gruppo di esperti di Adobe,
    </td>
   </tr>  
 </tbody></table>
+
+## Connessione tramite Workfront Fusion
+
+Se utilizzi Workfront Fusion per collegare Workfront e AEM Assets, per automatizzare la creazione di progetti e l’orchestrazione dei flussi di lavoro, consulta la documentazione sull’integrazione di Workfront Fusion e AEM Assets.
+
+[Utilizzare Workfront Fusion per convertire un problema di Workfront in un progetto con flussi di lavoro AEM](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/use-fusion-to-create-project-with-workflows)
