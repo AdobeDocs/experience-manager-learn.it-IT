@@ -111,7 +111,7 @@ Il certificato pubblico dell&#39;IDP viene aggiunto all&#39;archivio attendibili
 1. Lascia __vuoto Map Certificate to User__ .
 1. Seleziona __Invia__.
 1. Il certificato appena aggiunto viene visualizzato sopra la __sezione Aggiungi certificato da file__ CRT.
-1. Prendi nota dell&#39;alias ____, poiché questo valore viene utilizzato nella configurazione[ OSGi di ](#saml-2-0-authentication-handler-osgi-configuration)SAML 2.0 Authentication Handler.
+1. Prendi nota dell&#39;alias ____, poiché questo valore viene utilizzato nella configurazione[&#x200B; OSGi di &#x200B;](#saml-2-0-authentication-handler-osgi-configuration)SAML 2.0 Authentication Handler.
 1. Seleziona __Salva e chiudi__.
 
 L&#39;archivio attendibilità globale è configurato con il certificato pubblico dell&#39;IDP in Autore AEM, ma poiché SAML viene utilizzato solo su AEM Publish, l&#39;archivio attendibilità globale deve essere replicato in AEM Publish affinché il certificato pubblico IDP sia accessibile lì.
@@ -131,7 +131,7 @@ L&#39;archivio attendibilità globale è configurato con il certificato pubblico
 
 ## Crea keystore del servizio di autenticazione{#authentication-service-keystore}
 
-_È necessario creare un keystore per il servizio di autenticazione quando la proprietà di configurazione OSGi [ del gestore di autenticazione `handleLogout`SAML 2.0 è impostata su `true`](#saml-20-authenticationsaml-2-0-authentication) o quando [è richiesta la firma AuthnRequest/la crittografia dell&#39;asserzione SAML](#install-aem-public-private-key-pair)_
+_È necessario creare un keystore per il servizio di autenticazione quando la proprietà di configurazione OSGi [&#x200B; del gestore di autenticazione `handleLogout`SAML 2.0 è impostata su `true`](#saml-20-authenticationsaml-2-0-authentication) o quando [è richiesta la firma AuthnRequest/la crittografia dell&#39;asserzione SAML](#install-aem-public-private-key-pair)_
 
 1. Accedi ad AEM Author come amministratore di AEM per caricare la chiave privata.
 1. Passa a __Strumenti > Protezione > Utenti__, seleziona l&#39;utente __authentication-service__ e seleziona __Proprietà__ dalla barra delle azioni superiore.
@@ -461,7 +461,7 @@ A tale scopo, aggiungere la seguente proprietà al file di configurazione OSGI:
 Con questa configurazione, gli utenti e i gruppi vengono creati come [Oak utenti](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html) esterni. In AEM, gli utenti e i gruppi esterni hanno un&#39;impostazione predefinita `rep:principalName` composta da `[user name];[idp]` o `[group name];[idp]`.
 Si noti che gli elenchi di controllo di accesso (ACL) sono associati al PrincipalName di utenti o gruppi.
 Quando si distribuisce questa configurazione in una distribuzione esistente in cui in precedenza `identitySyncType` non era specificato o impostato su `default`, verranno creati nuovi utenti e gruppi e ACL deve essere applicato a questi nuovi utenti e gruppi. Si noti che i gruppi esterni non possono contenere utenti locali. [Repoinit](https://sling.apache.org/documentation/bundles/repository-initialization.html) può essere utilizzato per creare ACL per gruppi esterni SAML lineare se verranno creati solo quando il utente eseguirà un login.
-Per evitare questo refactoring su ACL, è stata implementata una funzionalità[ di migrazione standard](#automatic-migration-to-dynamic-group-membership-for-existing-environments).
+Per evitare questo refactoring su ACL, è stata implementata una funzionalità[&#x200B; di migrazione standard](#automatic-migration-to-dynamic-group-membership-for-existing-environments).
 
 ### Come vengono memorizzate le appartenenze in gruppi locali ed esterni con iscrizione al gruppo dinamico
 
@@ -543,7 +543,7 @@ Quando questa migrazione è abilitata, viene eseguita durante l’autenticazione
 
 Ad istanza, se prima della migrazione `user1` c&#39;è un utente locale e un membro di un gruppo `group1`locale, dopo la migrazione si verificheranno le seguenti modifiche:
 `user1` diventa un utente esterno. L&#39;attributo `rep:externalId` viene aggiunto al suo profilo.
-`user1`diventa membro di un gruppo esterno: `group1;idp`non è più un membro diretto del gruppo locale: `user1``group1` è un membro del gruppo locale: `group1;idp`.`group1`
+`user1`diventa membro di un gruppo esterno: `group1;idp`non è più un membro diretto del gruppo locale: `user1` `group1` è un membro del gruppo locale: `group1;idp`.`group1`
 
 `user1` è quindi un membro del gruppo locale: `group1` sebbene l&#39;ereditarietà
 
@@ -597,7 +597,7 @@ e fornendo parametri di query:
 
 | Nome parametro query | Valore parametro query |
 |----------------------|-----------------------|
-| `resource` | Qualsiasi percorso JCR, o sottopercorso, che è il gestore di autenticazione SAML è in ascolto, come definito nella proprietà della configurazione[ ](#configure-saml-2-0-authentication-handler) OSGi del `path`gestore di Authentication Adobe Systems Granite SAML 2.0 Granite. |
+| `resource` | Qualsiasi percorso JCR, o sottopercorso, che è il gestore di autenticazione SAML è in ascolto, come definito nella proprietà della configurazione[&#x200B; &#x200B;](#configure-saml-2-0-authentication-handler) OSGi del `path`gestore di Authentication Adobe Systems Granite SAML 2.0 Granite. |
 | `saml_request_path` | Percorso URL a cui deve essere seguito il utente dopo aver eseguito correttamente l&#39;autenticazione SAML. |
 
 Ad esempio, questo collegare HTML attiverà il flusso di log in SAML e, in caso di esito positivo, porterà il utente a `/content/wknd/us/en/protected/page.html`. Questi parametri di query possono essere impostati in modo programmaticale in base alle esigenze.
@@ -618,7 +618,7 @@ e fornendo i dati del modulo:
 
 | Nome dati modulo | Valore dei dati del modulo |
 |----------------------|-----------------------|
-| `resource` | Qualsiasi percorso JCR, o sottopercorso, che è il gestore di autenticazione SAML è in ascolto, come definito nella proprietà della configurazione[ ](#configure-saml-2-0-authentication-handler) OSGi del `path`gestore di Authentication Adobe Systems Granite SAML 2.0 Granite. |
+| `resource` | Qualsiasi percorso JCR, o sottopercorso, che è il gestore di autenticazione SAML è in ascolto, come definito nella proprietà della configurazione[&#x200B; &#x200B;](#configure-saml-2-0-authentication-handler) OSGi del `path`gestore di Authentication Adobe Systems Granite SAML 2.0 Granite. |
 | `saml_request_path` | Percorso URL a cui deve essere seguito il utente dopo aver eseguito correttamente l&#39;autenticazione SAML. |
 
 
