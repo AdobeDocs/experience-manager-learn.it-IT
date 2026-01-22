@@ -24,7 +24,7 @@ AEM as a Cloud Service supporta più opzioni di autenticazione e varia in base a
 
 |                       | AEM Author | Pubblicazione AEM |
 |-----------------------|:----------:|:-----------:|
-| [Adobe IMS ](../accessing/overview.md)<br>*(l&#39;anteprima di AEM non supporta Adobe IMS)* | ✔ | ✔ |
+| [Adobe IMS &#x200B;](../accessing/overview.md)<br>*(l&#39;anteprima di AEM non supporta Adobe IMS)* | ✔ | ✔ |
 | [Connessione OpenID (OIDC)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
 | [SAML 2.0 tramite Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✔ |
 | [SAML 2.0](./saml-2-0.md) | ✘ | ✔ |
