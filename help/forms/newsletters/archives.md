@@ -4,9 +4,9 @@ description: Scarica le versioni archiviate della newsletter.
 hidefromtoc: true
 hide: true
 exl-id: 16133400-b4c6-4d86-9c28-d5e230d55839
-source-git-commit: 42d1e4c0b2fa9413f57a27d4b247389f17fe9163
+source-git-commit: 5de1edcc2349330d31f1adb8944acab1eb2b9352
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '57'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Le nostre newsletter mensili sui contenuti di Experience League sono disponibili per il download su questa pagina. Seleziona un mese per accedere e scaricare l’edizione corrispondente.
 
-| 2025 - Newsletter |
+| Newsletter del 2025 |
 |------------|
 | [Gennaio](assets/Jan-Newsletter.pdf) |
 | [Febbraio](assets/Feb-Newsletter.pdf) |
@@ -29,4 +29,10 @@ Le nostre newsletter mensili sui contenuti di Experience League sono disponibili
 | [Ottobre](assets/Oct-Newsletter.pdf) |
 | [Novembre](assets/Nov-Newsletter.pdf) |
 | [Dicembre](assets/Dec-Newsletter.pdf) |
+
+
+| Newsletter del 2026 |
+|------------|
+| [Gennaio](assets/Jan-2026.pdf) |
+
 
