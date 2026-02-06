@@ -99,7 +99,7 @@ ht-degree: 98%
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo di progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuti mutabili e immutabili ](./developing/basics/mutable-immutable.md)
+      + [Contenuti mutabili e immutabili &#x200B;](./developing/basics/mutable-immutable.md)
       + [Pacchetto di struttura dell’archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
