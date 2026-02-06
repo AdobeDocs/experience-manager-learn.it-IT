@@ -25,7 +25,7 @@ AEM Development Agent consente ai team tecnici, inclusi sviluppatori, ingegneri 
 
 >[!TIP]
 >
-> Vedi anche [Panoramica degli agenti in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) per un elenco completo degli agenti disponibili in AEM as a Cloud Service, delle loro funzionalità e di come puoi accedervi.
+> Vedi anche [Panoramica degli agenti in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) per un elenco completo degli agenti disponibili in AEM as a Cloud Service, delle loro funzionalità e di come puoi accedervi.
 
 
 ## Panoramica
@@ -41,9 +41,9 @@ Per semplicità, questo tutorial introduce un errore di unit test nel file `Byli
 Per seguire questa esercitazione, è necessario:
 
 - Assistente AI e agenti in AEM abilitati. Per informazioni dettagliate, consulta [Configurare IA in AEM](./setup.md) e tieni presente che i parchi gioco menzionati in tale articolo non dispongono delle funzionalità di AEM Development Agent.
-- Accesso a Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/) con ruolo Sviluppatore o Responsabile del programma. Per ulteriori informazioni, vedere [definizioni dei ruoli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles#role-definitions).
+- Accesso a Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/) con ruolo Sviluppatore o Responsabile del programma. Per ulteriori informazioni, vedere [definizioni dei ruoli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles#role-definitions).
 - Un ambiente AEM as a Cloud Service
-- Accesso agli agenti in AEM tramite il [programma Beta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)
+- Accesso agli agenti in AEM tramite il [programma Beta](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)
 - Il [progetto WKND Sites](https://github.com/adobe/aem-guides-wknd) clonato nel computer locale
 
 ### Funzionalità attuali di AEM Development Agent
@@ -122,7 +122,7 @@ Questa esercitazione utilizza il ramo `tutorial/dev-agent/unit-test-failure` del
 
 ### Creare e configurare una pipeline di qualità del codice
 
-Questa esercitazione utilizza una pipeline di qualità del codice (non di produzione) per attivare l’errore della pipeline per la risoluzione dei problemi. Per ulteriori informazioni sulle pipeline di qualità del codice, consulta [Introduzione alle pipeline CI/CD](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#introduction).
+Questa esercitazione utilizza una pipeline di qualità del codice (non di produzione) per attivare l’errore della pipeline per la risoluzione dei problemi. Per ulteriori informazioni sulle pipeline di qualità del codice, consulta [Introduzione alle pipeline CI/CD](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#introduction).
 
 - In Cloud Manager, passa alla sezione **Pipeline** e seleziona **Aggiungi** > **Aggiungi pipeline non di produzione**.
 - Nella finestra di dialogo **Aggiungi pipeline non di produzione** configura quanto segue:
@@ -210,17 +210,17 @@ Il progetto WKND Sites include ulteriori esempi di problemi di codice e configur
 
 ![Confronta rami](./assets/dev-agent/compare-branches.png)
 
-Vedi anche [Esempi di prompt](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview#sample-prompts) per ulteriori idee su come utilizzare l&#39;agente di sviluppo AEM.
+Vedi anche [Esempi di prompt](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview#sample-prompts) per ulteriori idee su come utilizzare l&#39;agente di sviluppo AEM.
 
 ## Riepilogo
 
 In questo tutorial, hai imparato a utilizzare AEM Development Agent per risolvere i problemi relativi a una pipeline CI/CD non riuscita utilizzando l’Assistente all’intelligenza artificiale. Hai anche imparato come l’intelligenza artificiale dinamica accelera i flussi di lavoro tecnici fornendo informazioni fruibili e modifiche al codice.
 
-Inizia a utilizzare AEM Development Agent e altri agenti in AEM per accelerare i flussi di lavoro. Per ulteriori informazioni, consulta [Panoramica degli agenti in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
+Inizia a utilizzare AEM Development Agent e altri agenti in AEM per accelerare i flussi di lavoro. Per ulteriori informazioni, consulta [Panoramica degli agenti in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
 
 ## Risorse aggiuntive
 
 - [IA in Experience Manager](./overview.md)
-- [Panoramica degli agenti in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
-- [Panoramica dell&#39;agente di sviluppo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview)
-- [Panoramica degli agenti in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
+- [Panoramica degli agenti in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
+- [Panoramica dell&#39;agente di sviluppo](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview)
+- [Panoramica degli agenti in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
