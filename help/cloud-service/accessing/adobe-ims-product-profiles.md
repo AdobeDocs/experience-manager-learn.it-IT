@@ -31,4 +31,4 @@ I profili di prodotto di Adobe IMS consentono agli utenti di accedere a un servi
 
 ## Risorse aggiuntive
 
-+ [Gestione di prodotti e accesso utente nella documentazione di Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
++ [Gestione di prodotti e accesso utente nella documentazione di Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=it#managing-products-and-user-access-in-admin-console)
