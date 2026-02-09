@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 6fa0f88c231f7b68392a77a60491d4f741140a5a
+source-git-commit: 6c5b911d1d59573338dd1a30eb95289bc1339f19
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1433'
 ht-degree: 98%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 98%
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo di progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuti mutabili e immutabili &#x200B;](./developing/basics/mutable-immutable.md)
+      + [Contenuti mutabili e immutabili ](./developing/basics/mutable-immutable.md)
       + [Pacchetto di struttura dell’archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
@@ -121,6 +121,7 @@ ht-degree: 98%
       + [Utenti del servizio](./developing/advanced/service-users.md)
       + [API per immagini ottimizzate per il web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
       + [Eseguire il processo sull’istanza iniziale nell’Authoring AEM](./developing/advanced/run-job-on-leader-instance-in-aem-author.md)
+      + [Trovare e rimuovere le API obsolete](./developing/advanced/deprecated-apis-find-removal.md)
    + Ambiente di sviluppo rapido{#rde}
       + [Panoramica](./developing/rde/overview.md)
       + [Procedura di configurazione](./developing/rde/how-to-setup.md)
