@@ -27,4 +27,4 @@ ht-degree: 65%
 
  I gruppi di utenti di Adobe IMS stabiliscono set logici di utenti esposti ad AEM, in cui possono essere utilizzati per definire autorizzazioni ottimizzate per gli utenti di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/39150?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327869?captions=ita&quality=12&learn=on)
