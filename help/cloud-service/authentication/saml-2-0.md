@@ -68,7 +68,7 @@ Per configurare l’autenticazione SAML 2.0 sono necessari i seguenti elementi:
 + Accesso amministratore AEM all’ambiente AEM as a Cloud Service
 + Accesso amministratore all&#39;IDP
 + Facoltativamente, accesso a una coppia di chiavi pubblica/privata utilizzata per crittografare i payload SAML
-+ Pagine AEM Sites (o strutture di pagina), pubblicate in AEM Publish e [protette da gruppi di utenti chiusi (CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ Pagine AEM Sites (o strutture di pagina), pubblicate in AEM Publish e [protette da gruppi di utenti chiusi (CUG)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0 è supportato solo per l’autenticazione degli utilizzi in AEM Publish o Preview. Per gestire l&#39;autenticazione di AEM Author tramite e IDP, [integra l&#39;IDP con Adobe IMS](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html).
 
@@ -453,7 +453,7 @@ L&#39;appartenenza al gruppo dinamico è una funzionalità di [Apache Jackrabbit
 ### Abilitare l’iscrizione al gruppo dinamico per gli utenti SAML nei nuovi ambienti
 
 Per migliorare in modo significativo le prestazioni di valutazione dei gruppi nei nuovi ambienti AEM as a Cloud Service, si consiglia di attivare la funzione di iscrizione al gruppo dinamico nei nuovi ambienti.
-Questo è anche un passaggio necessario quando viene attivata la sincronizzazione dei dati. Ulteriori dettagli [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+Questo è anche un passaggio necessario quando viene attivata la sincronizzazione dei dati. Ulteriori dettagli [qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 A questo scopo, aggiungi la seguente proprietà al file di configurazione OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
@@ -623,7 +623,7 @@ public void postSyncUserProcess(
 
 **Importante:** Per modificare le proprietà utente nell&#39;archivio, l&#39;implementazione dell&#39;hook richiede:
 + Un riferimento `SlingRepository` inserito tramite `@Reference`
-+ Un [utente del servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurato con le autorizzazioni appropriate (configurato in &quot;Apache Sling Service User Mapper Service Amendment&quot;)
++ Un [utente del servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurato con le autorizzazioni appropriate (configurato in &quot;Apache Sling Service User Mapper Service Amendment&quot;)
 + Gestione corretta delle sessioni con blocchi try-catch-finally
 
 ### Implementazione di un hook SAML personalizzato
@@ -809,7 +809,7 @@ L&#39;artefatto `aem-sdk-api` contiene tutte le interfacce SAML di Adobe Granite
 
 #### Passaggio 4: configurare l’utente del servizio (se si modifica l’archivio)
 
-Se l&#39;hook SAML deve modificare le proprietà utente nel repository (come illustrato nell&#39;esempio `postSyncUserProcess`), è necessario configurare un [utente del servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users):
+Se l&#39;hook SAML deve modificare le proprietà utente nel repository (come illustrato nell&#39;esempio `postSyncUserProcess`), è necessario configurare un [utente del servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/service-users):
 
 1. Creare una mappatura utente del servizio nel progetto in `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`:
 
@@ -852,8 +852,8 @@ Distribuisci l’hook SAML personalizzato in AEM as a Cloud Service:
 + **Test**: verifica accurata degli hook personalizzati negli ambienti inferiori prima della distribuzione in produzione
 + **Più hook**: è possibile configurare più implementazioni di hook SAML; tutti gli hook corrispondenti verranno eseguiti. Utilizza la proprietà `service.ranking` nel componente OSGi per controllare l’ordine di esecuzione (vengono eseguiti prima i valori di classificazione più elevati). Per riutilizzare un hook SAML in più configurazioni factory del gestore di autenticazione SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`), creare più configurazioni hook (configurazioni factory OSGi), ciascuna con un `idpIdentifier` diverso corrispondente al rispettivo gestore di autenticazione SAML
 + **Sicurezza**: convalida e bonifica tutti i dati dalle asserzioni SAML prima di utilizzarli nella logica di business
-+ **Accesso all&#39;archivio**: quando si modificano le proprietà utente in `postSyncUserProcess`, utilizzare sempre un [utente del servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) con autorizzazioni appropriate anziché sessioni amministrative
-+ **Autorizzazioni utente del servizio**: concedere autorizzazioni minime richieste all&#39;utente [del servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (ad esempio, solo `jcr:read` e `rep:write` in `/home/users`, non diritti di amministratore completi)
++ **Accesso all&#39;archivio**: quando si modificano le proprietà utente in `postSyncUserProcess`, utilizzare sempre un [utente del servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) con autorizzazioni appropriate anziché sessioni amministrative
++ **Autorizzazioni utente del servizio**: concedere autorizzazioni minime richieste all&#39;utente [del servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (ad esempio, solo `jcr:read` e `rep:write` in `/home/users`, non diritti di amministratore completi)
 + **Gestione delle sessioni**: utilizzare sempre i blocchi try-catch-finally per garantire la corretta chiusura delle sessioni dell&#39;archivio, anche in caso di eccezioni
 + **Intervallo di sincronizzazione utenti**: l&#39;hook `postSyncUserProcess` viene eseguito dopo che l&#39;utente è stato sincronizzato con OAK, pertanto l&#39;oggetto utente sarà sicuramente presente nell&#39;archivio a quel punto
 
