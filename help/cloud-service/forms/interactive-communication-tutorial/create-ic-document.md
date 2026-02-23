@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Crea documenti di comunicazione interattiva utilizzando modelli predefiniti e frammenti riutilizzabili. Ciò garantisce coerenza ed efficienza nella creazione dei documenti. Incorpora i dati dinamici selezionando il modello di dati del modulo (FDM) corretto e inserendo frammenti in aree di destinazione designate. Verificare la precisione e la formattazione dell&#39;output finale.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480073/?captions=ita&learn=on&enablevpops)
 
 ## Passaggi successivi
 

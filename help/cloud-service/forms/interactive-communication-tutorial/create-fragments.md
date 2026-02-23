@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Scopri come sviluppare frammenti riutilizzabili per documenti di comunicazione interattivi. Ottimizza i layout e assicurati l’associazione dinamica dei dati per le sezioni dell’indirizzo del cliente e del corpo della lettera. Miglioramento della progettazione dei documenti grazie ai controlli di formattazione, posizionamento e margine.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480042/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480062/?captions=ita&learn=on&enablevpops)
 
 ## Passaggi successivi
 

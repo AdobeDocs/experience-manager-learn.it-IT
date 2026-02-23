@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Scopri come creare modelli di comunicazione interattivi per standardizzare le comunicazioni in uscita. Questi modelli garantiscono coerenza, governance e allineamento del brand nelle comunicazioni con i clienti. Scopri il processo di creazione, modifica e abilitazione dei modelli per utilizzi futuri, utilizzando strumenti come IC Web Designer e Libreria oggetti.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480029/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480050/?captions=ita&learn=on&enablevpops)
 
 ## Passaggi successivi
 

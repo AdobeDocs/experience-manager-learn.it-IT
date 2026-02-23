@@ -25,7 +25,7 @@ Crea un modello dati Forms per integrare origini dati esterne con la comunicazio
 
 Il file swagger utilizzato per creare il modello dati del modulo può essere [scaricato da qui](assets/UsersAndOrders.json)
 
->[!VIDEO](https://video.tv.adobe.com/v/3480005/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480025/?captions=ita&learn=on&enablevpops)
 
 ## Passaggi successivi
 
