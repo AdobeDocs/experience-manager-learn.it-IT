@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 6c5b911d1d59573338dd1a30eb95289bc1339f19
+source-git-commit: c2dde214df0dabe8d856751a9d16afb1423e7450
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 98%
+source-wordcount: '1455'
+ht-degree: 96%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 98%
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo di progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuti mutabili e immutabili &#x200B;](./developing/basics/mutable-immutable.md)
+      + [Contenuti mutabili e immutabili ](./developing/basics/mutable-immutable.md)
       + [Pacchetto di struttura dell’archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
@@ -325,6 +325,13 @@ ht-degree: 98%
       + [&#x200B;4. Aggiunta di icone](./forms/using-vertical-tabs/icons.md)
    + Utilizzo del servizio di output e moduli{#forms-cs-output-and-forms-service}
       + [Generare un PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
+   + Tutorial sulla comunicazione interattiva{#interactive-communication-tutorial}
+      + [&#x200B;1. Introduzione](./forms/interactive-communication-tutorial/introduction.md)
+      + [&#x200B;2. Creare FDM](./forms/interactive-communication-tutorial/create-form-data-model.md)
+      + [&#x200B;3. Creare un modello](./forms/interactive-communication-tutorial/create-template.md)
+      + [&#x200B;4. Creare frammenti](./forms/interactive-communication-tutorial/create-fragments.md)
+      + [&#x200B;5. Crea documento IC](./forms/interactive-communication-tutorial/create-ic-document.md)
+      + [&#x200B;6. Genera documento IC](./forms/interactive-communication-tutorial/test-document-generation.md)
    + Generazione di documenti in AEM Forms CS{#doc-gen-formscs}
       + [Introduzione](./forms/doc-gen-forms-cs/introduction.md)
       + [Creare le credenziali del servizio](./forms/doc-gen-forms-cs/service-credentials.md)
