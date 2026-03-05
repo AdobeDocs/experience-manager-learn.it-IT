@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 6313c25d9f660adc2a76fc8b3baf66ff081d2868
+source-git-commit: c5f1c7f57181b1e9de6dd91aa2428f2fe1a04893
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1469'
 ht-degree: 96%
 
 ---
@@ -32,10 +32,12 @@ ht-degree: 96%
    + [Panoramica](./ai/overview.md)
    + [Configurazione e provisioning](./ai/setup.md)
    + [Assistente IA](./ai/ai-assistant.md)
-   + N. agenti{#agents}
+   + Agenti {#agents}
       + [Panoramica](./ai/agents/agents-in-aem.md)
       + [Risoluzione dei problemi di agente di sviluppo e CI/CD](./ai/agents/development-agent-troubleshoot-ci-cd-pipeline.md)
-   + Server MCP {#mcp-server}
+   + Server MCP {#mcp-servers}
+      + [Panoramica](./ai/mcp/overview.md)
+      + [Accelerazione delle operazioni sui contenuti AEM con il server MCP](./ai/mcp/accelerate-content-operations-with-aem-mcp-server.md)
       + [Server Cloud Manager MCP](./ai/mcp/cloud-manager.md)
 + Integrazioni di Experience Cloud{#integrations}
    + [Integrazioni](./integrations/experience-cloud.md)
@@ -102,7 +104,7 @@ ht-degree: 96%
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo di progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuti mutabili e immutabili &#x200B;](./developing/basics/mutable-immutable.md)
+      + [Contenuti mutabili e immutabili ](./developing/basics/mutable-immutable.md)
       + [Pacchetto di struttura dell’archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
