@@ -8,19 +8,21 @@ doc-type: tutorial
 duration: null
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20474
-source-git-commit: c5f1c7f57181b1e9de6dd91aa2428f2fe1a04893
+exl-id: 843209cb-2f31-466c-b5b1-a9fb26965bc0
+source-git-commit: 6a0eb6e8f5fa9d7152f46d6b8054dc89ff656507
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
-
 # Accelerazione delle operazioni sui contenuti AEM tramite Content MCP Server
 
 Utilizza il **Content MCP Server** da un IDE basato sull&#39;intelligenza artificiale come [Cursor IDE](https://www.cursor.com/) per lavorare con contenuti AEM in linguaggio naturale, senza codice API di basso livello o navigazione nell&#39;interfaccia utente.
 
 In questo tutorial _rivedi_ i dettagli dei frammenti di contenuto di Adventure, _aggiorna_ un frammento (ad esempio, il prezzo di un&#39;avventura) e _verifica_ la modifica nell&#39;app [WKND Adventures React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app), tutto dall&#39;IDE rispetto a un ambiente AEM _inferiore_ (RDE o Sviluppo) senza uscire dal flusso MCP.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480895/?learn=on&enablevpops)
 
 ## Panoramica
 
@@ -92,7 +94,7 @@ Quindi, imposta l&#39;[app WKND Adventures React](https://github.com/adobe/aem-g
    $ git clone git@github.com:adobe/aem-guides-wknd.git
    ```
 
-1. Distribuisci il progetto [WKND Site](https://github.com/adobe/aem-guides-wknd) nel tuo RDE. Per i passaggi dettagliati, vedi [Come utilizzare l&#39;ambiente di sviluppo rapido](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin).
+1. Distribuisci il progetto [WKND Site](https://github.com/adobe/aem-guides-wknd) nel tuo RDE. Per i passaggi dettagliati, vedi [Come utilizzare l&#39;ambiente di sviluppo rapido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin).
 
 1. Aprire la cartella `react-app` nell&#39;IDE.
 
