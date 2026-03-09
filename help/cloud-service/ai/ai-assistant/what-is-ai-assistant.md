@@ -20,4 +20,4 @@ ht-degree: 0%
 
 L’Assistente AI accelera le attività di AEM, fornisce risposte immediate, guida l’utilizzo delle funzioni, risolve i problemi e crea ticket di supporto, il tutto dall’interfaccia di Experience Manager. Consente ai team di distribuire i contenuti più rapidamente, ridurre le ricerche nella documentazione e migliorare l’efficienza operativa.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480859/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480878/?captions=ita&learn=on&enablevpops)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri in che modo l’Assistente AI accelera i flussi di lavoro di AEM fornendo indicazioni immediate, snippet di codice e passaggi per la risoluzione dei problemi. In questo modo è possibile ridurre l&#39;impegno di supporto e consentire ai team di distribuire i contenuti in modo più rapido e di qualità superiore.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480858/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480867/?captions=ita&learn=on&enablevpops)
