@@ -9,7 +9,7 @@ duration: 140
 last-substantial-update: 2026-01-05T00:00:00Z
 jira: KT-20040
 exl-id: e5b50205-d348-46b3-b564-50c3967c73b0
-source-git-commit: 6313c25d9f660adc2a76fc8b3baf66ff081d2868
+source-git-commit: bf6a6f467c3ded713552e0077b13c41fb45511cb
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Agenti in AEM
 
-Scopri come utilizzare gli agenti, esposti tramite [AEM AI Assistant](../ai-assistant.md), per automatizzare le attività e semplificare i flussi di lavoro. Scopri cosa sono gli agenti, come funzionano e dove si adattano al lavoro che svolgi in AEM.
+Scopri come utilizzare gli agenti, esposti tramite [AEM AI Assistant](../ai-assistant/overview.md), per automatizzare le attività e semplificare i flussi di lavoro. Scopri cosa sono gli agenti, come funzionano e dove si adattano al lavoro che svolgi in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478463/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3478455/?learn=on&enablevpops)
 
-Per un elenco completo degli agenti disponibili in AEM e delle relative funzionalità, inclusi i prompt di esempio, consulta [Agenti nella documentazione di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
+Per un elenco completo degli agenti disponibili in AEM e delle relative funzionalità, inclusi i prompt di esempio, consulta [Agenti nella documentazione di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview).
 
 *Per accedere agli agenti in AEM, assicurati di aver impostato l&#39;accesso nel tuo ambiente AEM seguendo la [guida all&#39;installazione](../setup.md#agents-in-aem).*
