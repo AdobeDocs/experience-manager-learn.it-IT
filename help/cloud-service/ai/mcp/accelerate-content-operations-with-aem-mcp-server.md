@@ -22,7 +22,7 @@ Utilizza il **Content MCP Server** da un IDE basato sull&#39;intelligenza artifi
 
 In questo tutorial _rivedi_ i dettagli dei frammenti di contenuto di Adventure, _aggiorna_ un frammento (ad esempio, il prezzo di un&#39;avventura) e _verifica_ la modifica nell&#39;app [WKND Adventures React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app), tutto dall&#39;IDE rispetto a un ambiente AEM _inferiore_ (RDE o Sviluppo) senza uscire dal flusso MCP.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480895/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480903/?captions=ita&learn=on&enablevpops)
 
 ## Panoramica
 
