@@ -8,9 +8,10 @@ doc-type: Article
 duration: 0
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20473
-source-git-commit: c5f1c7f57181b1e9de6dd91aa2428f2fe1a04893
+exl-id: 7f2e4e37-6440-423e-9ba9-9228fe03600b
+source-git-commit: ac44a73d2b63dba5292393730c712aec68ddea6c
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ Scopri come utilizzare i server AEM _Model Context Protocol (MCP)_ dalle applica
 
 ## Elenco dei server MCP di AEM
 
-Tutti i server MCP di AEM sono disponibili in `https://mcp.adobeaemcloud.com/adobe/mcp/`. Per ulteriori informazioni, vedere [Utilizzo di MCP con AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service).
+Tutti i server MCP di AEM sono disponibili in `https://mcp.adobeaemcloud.com/adobe/mcp/`. Per ulteriori informazioni, vedere [Utilizzo di MCP con AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service).
 
 - **Contenuto** (`/content`): accesso completo per creare, leggere, aggiornare ed eliminare pagine, frammenti e risorse.
 - **Contenuto (sola lettura)** (`/content-readonly`): sola lettura per elencare e ottenere pagine, frammenti e risorse (nessuna modifica).
@@ -69,14 +70,8 @@ In breve, **Host** è la tua applicazione basata su IDE o Chat, **Client** è la
 
 ## Configurazione
 
-I server MCP di AEM sono progettati per funzionare con un set definito di applicazioni compatibili con MCP. Sono ufficialmente supportate le seguenti applicazioni:
-
-- [Claude antropico](https://claude.com/product/overview)
-- [Cursore](https://www.cursor.com/)
-- [ChatGPT OpenAI](https://chatgpt.com/)
-- [Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-365-copilot/microsoft-copilot-studio)
-
-Per ulteriori informazioni, vedere [Panoramica installazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service#setup-overview).
+I server MCP di AEM sono progettati per funzionare con un set definito di applicazioni compatibili con MCP.
+Per configurare i server MCP di AEM nell&#39;applicazione basata su IDE o Chat preferita, vedere [Applicazioni MCP supportate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) per ulteriori informazioni.
 
 ## Casi d’uso
 
