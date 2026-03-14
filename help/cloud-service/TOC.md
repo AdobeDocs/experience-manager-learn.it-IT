@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: bf6a6f467c3ded713552e0077b13c41fb45511cb
+source-git-commit: 34f098de6bd15875e5534250b28c08bdb62e74fa
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1484'
 ht-degree: 95%
 
 ---
@@ -108,7 +108,7 @@ ht-degree: 95%
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo di progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuti mutabili e immutabili &#x200B;](./developing/basics/mutable-immutable.md)
+      + [Contenuti mutabili e immutabili ](./developing/basics/mutable-immutable.md)
       + [Pacchetto di struttura dell’archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
@@ -206,6 +206,7 @@ ht-degree: 95%
 + Autenticazione{#authentication}
    + [Panoramica](./authentication/authentication.md)
    + [SAML 2.0](./authentication/saml-2-0.md)
+   + [Hook di accesso SAML](./authentication/saml-2-0-login-hook.md)
 + Rete avanzata{#networking}
    + [Panoramica](./networking/advanced-networking.md)
    + [Uscita da porta flessibile](./networking/flexible-port-egress.md)
