@@ -66,7 +66,7 @@ Per configurare l’autenticazione SAML 2.0 sono necessari i seguenti elementi:
 + Accesso amministratore AEM all’ambiente AEM as a Cloud Service
 + Accesso amministratore all&#39;IDP
 + Facoltativamente, accesso a una coppia di chiavi pubblica/privata utilizzata per crittografare i payload SAML
-+ Pagine AEM Sites (o strutture di pagina), pubblicate in AEM Publish e [protette da gruppi di utenti chiusi (CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ Pagine AEM Sites (o strutture di pagina), pubblicate in AEM Publish e [protette da gruppi di utenti chiusi (CUG)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0 è supportato solo per autenticare gli utilizzi in AEM Publish o Preview. Per gestire l&#39;autenticazione dell&#39;autore dell&#39;AEM tramite e IDP, [integra l&#39;IDP con Adobe IMS](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html).
 
@@ -74,7 +74,7 @@ SAML 2.0 è supportato solo per autenticare gli utilizzi in AEM Publish o Previe
 
 SAML 2.0 è supportato su AEM come Cloud Service, inclusa AEM Preview. Tuttavia, le configurazioni SAML dell&#39;AEM si basano sulle configurazioni OSGi e sia l&#39;anteprima AEM che l&#39;AEM Publish condividono la stessa risoluzione della modalità di esecuzione OSGi (`config.publish`). Di conseguenza, non è possibile creare file di configurazioni SAML separati per Preview e Publish.
 
-Utilizza invece [valori di configurazione specifici dell&#39;ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) nelle configurazioni OSGi e [imposta i valori di variabile appropriati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) per gli ambienti di anteprima e pubblicazione.
+Utilizza invece [valori di configurazione specifici dell&#39;ambiente](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) nelle configurazioni OSGi e [imposta i valori di variabile appropriati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) per gli ambienti di anteprima e pubblicazione.
 
 ## Installare il certificato pubblico IDP su AEM
 
@@ -456,7 +456,7 @@ L&#39;appartenenza al gruppo dinamico è una funzionalità di [Apache Jackrabbit
 ### Come abilitare l&#39;iscrizione a gruppi dinamici per gli utenti SAML in nuovi ambienti
 
 Per migliorare in modo significativo le prestazioni di valutazione dei gruppi nei nuovi ambienti AEM come Cloud Service, si consiglia di attivare la funzione di iscrizione dinamica ai gruppi in nuovi ambienti.
-Si tratta di un passaggio necessario anche quando viene attivata la sincronizzazione dei dati. Ulteriori dettagli [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+Si tratta di un passaggio necessario anche quando viene attivata la sincronizzazione dei dati. Ulteriori dettagli [qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 A tale scopo, aggiungere la seguente proprietà al file di configurazione OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`

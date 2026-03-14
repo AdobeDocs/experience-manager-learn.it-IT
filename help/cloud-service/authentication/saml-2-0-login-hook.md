@@ -81,7 +81,7 @@ public void postSyncUserProcess(
 **Important:** To modify user properties in the repository, the hook implementation requires:
 
 + Un riferimento `SlingRepository` inserito tramite `@Reference`
-+ Un [utente del servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurato con le autorizzazioni appropriate (configurato in &quot;Apache Sling Service User Mapper Service Amendment&quot;)
++ Un [utente del servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurato con le autorizzazioni appropriate (configurato in &quot;Apache Sling Service User Mapper Service Amendment&quot;)
 + Gestione corretta delle sessioni con blocchi try-catch-finally
 
 ## Implementare un hook SAML personalizzato
@@ -267,7 +267,7 @@ L&#39;artifact `aem-sdk-api` contiene tutte le interfacce SAML Adobe Granite nec
 
 ### Configurare l&#39;utente del servizio (facoltativo)
 
-Se l&#39;hook SAML deve modificare il contenuto nell&#39;archivio JCR di AEM, ad esempio le proprietà dell&#39;utente (come mostrato nell&#39;esempio `postSyncUserProcess`), è necessario configurare un [utente del servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users):
+Se l&#39;hook SAML deve modificare il contenuto nell&#39;archivio JCR di AEM, ad esempio le proprietà dell&#39;utente (come mostrato nell&#39;esempio `postSyncUserProcess`), è necessario configurare un [utente del servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/service-users):
 
 1. Creare una mappatura utente del servizio nel progetto in `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`:
 
@@ -310,7 +310,7 @@ Distribuisci l’hook SAML personalizzato in AEM as a Cloud Service:
 + **Verifica**: verifica accuratamente gli hook personalizzati in ambienti inferiori prima della distribuzione in produzione
 + **Hook multipli**: è possibile configurare più implementazioni di hook SAML; tutti gli hook corrispondenti verranno eseguiti. Utilizzare la proprietà `service.ranking` nel componente OSGi per controllare l&#39;ordine di esecuzione (i valori di classificazione più alti vengono eseguiti per primi). Per riutilizzare un hook SAML in più configurazioni factory del gestore di autenticazione SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`), creare più configurazioni hook (configurazioni factory OSGi), ciascuna con un `idpIdentifier` diverso corrispondente al rispettivo gestore di autenticazione SAML
 + **Sicurezza**: convalida e bonifica tutti i dati dalle asserzioni SAML prima di utilizzarli nella logica di business
-+ **Repository access**: When modifying user properties in `postSyncUserProcess`, always use a [service user](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) with appropriate permissions rather than administrative sessions
-+ **Autorizzazioni utente del servizio**: concedere autorizzazioni minime richieste all&#39;utente [del servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (ad esempio, solo `jcr:read` e `rep:write` in `/home/users`, non diritti di amministratore completi)
++ **Repository access**: When modifying user properties in `postSyncUserProcess`, always use a [service user](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) with appropriate permissions rather than administrative sessions
++ **Autorizzazioni utente del servizio**: concedere autorizzazioni minime richieste all&#39;utente [del servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (ad esempio, solo `jcr:read` e `rep:write` in `/home/users`, non diritti di amministratore completi)
 + **Gestione delle sessioni**: utilizzare sempre i blocchi try-catch-finally per garantire la corretta chiusura delle sessioni dell&#39;archivio, anche in caso di eccezioni
 + **Intervallo di sincronizzazione utenti**: l&#39;hook `postSyncUserProcess` viene eseguito dopo che l&#39;utente è stato sincronizzato con OAK, pertanto l&#39;oggetto utente sarà sicuramente presente nell&#39;archivio a quel punto
