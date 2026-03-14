@@ -134,7 +134,7 @@ L&#39;archivio protetto globale è configurato con il certificato pubblico dell&
 
 ## Crea keystore del servizio di autenticazione{#authentication-service-keystore}
 
-_La creazione di un archivio chiavi per il servizio di autenticazione è necessaria quando la proprietà di configurazione OSGi [ del gestore di autenticazione `handleLogout`SAML 2.0 è impostata su `true`](#saml-20-authenticationsaml-2-0-authentication) o quando è richiesta la [firma AuthnRequest/la crittografia dell&#39;asserzione SAML](#install-aem-public-private-key-pair)_
+_La creazione di un archivio chiavi per il servizio di autenticazione è necessaria quando la proprietà di configurazione OSGi [&#x200B; del gestore di autenticazione `handleLogout`SAML 2.0 è impostata su `true`](#saml-20-authenticationsaml-2-0-authentication) o quando è richiesta la [firma AuthnRequest/la crittografia dell&#39;asserzione SAML](#install-aem-public-private-key-pair)_
 
 1. Accedi ad AEM Author come amministratore di AEM per caricare la chiave privata.
 1. Passa a __Strumenti > Protezione > Utenti__, seleziona l&#39;utente __authentication-service__ e seleziona __Proprietà__ dalla barra delle azioni superiore.
@@ -195,7 +195,7 @@ Tutte le comunicazioni HTTP tra IDP e AEM Publish devono essere effettuate trami
 
 +++
 
-Sia la firma di AuthnRequest che la crittografia delle asserzioni SAML sono facoltative, tuttavia entrambe sono abilitate, utilizzando la proprietà di configurazione OSGi [ del gestore di autenticazione `useEncryption`](#saml-20-authenticationsaml-2-0-authentication)SAML 2.0, che indica che è possibile utilizzare entrambe le proprietà o nessuna delle due.
+Sia la firma di AuthnRequest che la crittografia delle asserzioni SAML sono facoltative, tuttavia entrambe sono abilitate, utilizzando la proprietà di configurazione OSGi [&#x200B; del gestore di autenticazione `useEncryption`](#saml-20-authenticationsaml-2-0-authentication)SAML 2.0, che indica che è possibile utilizzare entrambe le proprietà o nessuna delle due.
 
 ![Archivio chiavi servizio di autenticazione AEM](./assets/saml-2-0/authentication-service-key-store.png)
 
@@ -607,7 +607,7 @@ e fornendo parametri di query:
 
 | Nome parametro query | Valore parametro query |
 |----------------------|-----------------------|
-| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà [ ](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi `path`Adobe Granite SAML 2.0 Authentication Handler. |
+| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà [&#x200B; &#x200B;](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi `path`Adobe Granite SAML 2.0 Authentication Handler. |
 | `saml_request_path` | Il percorso URL a cui deve essere indirizzato l&#39;utente dopo aver completato l&#39;autenticazione SAML. |
 
 Questo collegamento HTML, ad esempio, attiverà il flusso di accesso SAML e, al termine dell&#39;operazione, porterà l&#39;utente a `/content/wknd/us/en/protected/page.html`. Questi parametri di query possono essere impostati a livello di programmazione in base alle esigenze.
@@ -628,7 +628,7 @@ e fornendo i dati del modulo:
 
 | Nome dati modulo | Valore dati modulo |
 |----------------------|-----------------------|
-| `resource` | Qualsiasi percorso JCR, o sottopercorso, su cui il gestore di autenticazione SAML è in ascolto, come definito nella proprietà [ di configurazione OSGi ](#configure-saml-2-0-authentication-handler)Adobe Granite SAML 2.0 Authentication Handler `path`. |
+| `resource` | Qualsiasi percorso JCR, o sottopercorso, su cui il gestore di autenticazione SAML è in ascolto, come definito nella proprietà [&#x200B; di configurazione OSGi &#x200B;](#configure-saml-2-0-authentication-handler)Adobe Granite SAML 2.0 Authentication Handler `path`. |
 | `saml_request_path` | Il percorso URL a cui deve essere indirizzato l&#39;utente dopo aver completato l&#39;autenticazione SAML. |
 
 
