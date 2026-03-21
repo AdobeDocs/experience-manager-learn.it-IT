@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Scopri come impostare una configurazione cloud in AEM Forms e come integrarla in modo sicuro con Adobe Experience Platform. Utilizza le credenziali di Adobe Developer Console per consentire l’invio e il recupero diretti dei dati nei moduli. Questa guida fornisce istruzioni dettagliate per configurare la connessione in modo efficiente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481496/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481504/?captions=ita&learn=on&enablevpops)
 
 
 ## Passaggi successivi
