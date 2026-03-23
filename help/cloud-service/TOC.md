@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 4c5bec95d74d3611dc96d1d23dcd4d3d708e0243
+source-git-commit: 3e57cadc429724a49464a6a26c6f32ddf24228b1
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1500'
 ht-degree: 94%
 
 ---
@@ -108,7 +108,7 @@ ht-degree: 94%
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo di progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuti mutabili e immutabili &#x200B;](./developing/basics/mutable-immutable.md)
+      + [Contenuti mutabili e immutabili ](./developing/basics/mutable-immutable.md)
       + [Pacchetto di struttura dell’archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
@@ -336,6 +336,7 @@ ht-degree: 94%
    + Utilizzo del servizio di output e moduli{#forms-cs-output-and-forms-service}
       + [Generare un PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
    + Creare un profilo in AEP all’invio del modulo{#aep-integration}
+      + [Introduzione](./forms/aep-integration/introduction.md)
       + [Creare una configurazione cloud](./forms/aep-integration/create-cloud-configuration.md)
       + [Configurare il modulo per l’invio AEP](./forms/aep-integration/create-integration-with-aep.md)
    + Tutorial sulla comunicazione interattiva{#interactive-communication-tutorial}
