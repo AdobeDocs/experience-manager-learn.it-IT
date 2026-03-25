@@ -22,4 +22,4 @@ ht-degree: 44%
 
 *Questo video illustra i passaggi necessari per analizzare i problemi correlati alla ricerca in AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335467?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418319?captions=ita&quality=12&learn=on)

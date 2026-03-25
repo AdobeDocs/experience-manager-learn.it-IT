@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Questo video descrive il processo di risoluzione dei problemi di conversione PDFG per più utenti in una configurazione Unix.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335549?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417612?captions=ita&quality=12&learn=on)

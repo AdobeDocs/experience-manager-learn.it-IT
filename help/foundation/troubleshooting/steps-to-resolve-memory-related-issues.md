@@ -22,4 +22,4 @@ ht-degree: 21%
 
 *Questo video illustra i passaggi per risolvere i problemi relativi alla memoria in AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335473?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418354?captions=ita&quality=12&learn=on)

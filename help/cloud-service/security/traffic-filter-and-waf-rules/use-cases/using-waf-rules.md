@@ -30,7 +30,7 @@ Gli attacchi sofisticati sono caratterizzati da un’elevata frequenza di richie
 > Le regole del filtro del traffico WAF richiedono una licenza aggiuntiva per la protezione estesa (precedentemente denominata protezione WAF-DDoS) o la protezione estesa per l&#39;assistenza sanitaria (in precedenza denominata protezione avanzata). Le regole del filtro del traffico standard sono disponibili per impostazione predefinita per la clientela di Sites e Forms.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469438/?captions=ita&quality=12&learn=on)
 
 ## Obiettivi di apprendimento
 
