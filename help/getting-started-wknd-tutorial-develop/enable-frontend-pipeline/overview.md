@@ -8,14 +8,14 @@ role: Developer, Admin
 level: Intermediate
 jira: KT-10689
 mini-toc-levels: 1
-index: y
+index: true
 recommendations: disable
 thumbnail: 53409343.jpg
 last-substantial-update: 2022-09-23T00:00:00Z
 doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
 duration: 206
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 100%
@@ -35,10 +35,10 @@ Tuttavia, dopo la conversione del progetto AEM WKND Sites, gli sviluppatori fron
 
 >[!IMPORTANT]
 >
->In generale, la pipeline front-end viene in genere utilizzata con la [Creazione rapida sito di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=it). È disponibile un&#39;esercitazione correlata [Guida introduttiva ad AEM Sites - Creazione rapida sito](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=it) per ulteriori informazioni. Quindi in questo tutorial e nei video associati ci si imbatte in riferimenti ad esso, in modo da assicurare che siano evidenziate sottili differenze e che ci sia qualche confronto diretto o indiretto per spiegare i concetti fondamentali.
+>In generale, la pipeline front-end viene in genere utilizzata con la [Creazione rapida sito di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=it). È disponibile un&#39;esercitazione correlata [Guida introduttiva ad AEM Sites - Creazione rapida sito](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) per ulteriori informazioni. Quindi in questo tutorial e nei video associati ci si imbatte in riferimenti ad esso, in modo da assicurare che siano evidenziate sottili differenze e che ci sia qualche confronto diretto o indiretto per spiegare i concetti fondamentali.
 
 
-Una [esercitazione con più passaggi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=it) correlata illustra come implementare un sito AEM per un brand di lifestyle fittizio, WKND, utilizzando la funzione Creazione rapida di siti. È inoltre utile rivedere il [flusso di lavoro temi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=it) per comprendere il funzionamento della pipeline front-end.
+Una [esercitazione con più passaggi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) correlata illustra come implementare un sito AEM per un brand di lifestyle fittizio, WKND, utilizzando la funzione Creazione rapida di siti. È inoltre utile rivedere il [flusso di lavoro temi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=it) per comprendere il funzionamento della pipeline front-end.
 
 ## Panoramica, vantaggi e considerazioni per la pipeline front-end
 

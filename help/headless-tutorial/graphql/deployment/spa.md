@@ -11,7 +11,7 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 5%
@@ -34,7 +34,7 @@ Esistono varie opzioni di **hosting** a seconda dei requisiti della tua organizz
 
 2. **On-Premise** hosting in un **data center** aziendale
 
-3. **Piattaforme di hosting front-end** quali **AWS Amplify**, **Azure App Service**, **Netlify**, **Heroku**, **Vercel** e così via.
+3. **Piattaforme di hosting front-end** come **AWS Amplify**, **Azure App Service**, **Netlify**, **Heroku**, **Vercel**, ecc.
 
 ## Configurazioni di distribuzione
 
@@ -82,7 +82,7 @@ In questo esempio, l&#39;applicazione a pagina singola viene distribuita a un do
 
 1. L’applicazione a pagina singola viene fornita da un dominio Netlify, ma effettua una chiamata XHR alle API GraphQL di AEM su un dominio diverso. Questa richiesta intersito richiede la configurazione di [CORS](./configurations/cors.md) in AEM per consentire l&#39;accesso al contenuto da parte del dominio Netlify.
 
-   ![Richiesta SPA inviata dagli host SPA e AEM &#x200B;](assets/spa/cors-requirement.png)
+   ![Richiesta SPA inviata dagli host SPA e AEM ](assets/spa/cors-requirement.png)
 
 2. Durante l&#39;analisi della richiesta XHR all&#39;API GraphQL di AEM, `Access-Control-Allow-Origin` è presente, indicando al browser Web che AEM consente alla richiesta di questo dominio Netlify di accedere al relativo contenuto.
 
@@ -94,7 +94,8 @@ In questo esempio, l&#39;applicazione a pagina singola viene distribuita a un do
 
 Adobe fornisce un esempio di app a pagina singola codificata in React.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ../example-apps/react-app.md
 

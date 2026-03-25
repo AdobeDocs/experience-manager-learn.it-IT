@@ -8,7 +8,7 @@ doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
 exl-id: cc255744-bb86-49cb-88ca-1266d28985a5
-source-git-commit: bf6a6f467c3ded713552e0077b13c41fb45511cb
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 22%
@@ -21,7 +21,8 @@ ht-degree: 22%
 
 Experience Manager as a Cloud Service fornisce funzionalità di intelligenza artificiale avanzate per migliorare la gestione dei contenuti, semplificare i flussi di lavoro e migliorare le esperienze utente. Integrando funzioni basate sull’intelligenza artificiale come l’Assistente all’intelligenza artificiale di AEM e gli agenti di intelligenza artificiale di AEM, gli utenti possono automatizzare le attività, ottenere informazioni approfondite e ottimizzare la distribuzione dei contenuti.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./ai-assistant/overview.md
     {title = AEM AI Assistant}
@@ -55,7 +56,7 @@ Experience Manager as a Cloud Service fornisce funzionalità di intelligenza art
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./ai-assistant/overview.md" title="Assistente IA di AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475366/?captions=ita&format=jpeg&nocache=1773082651757" alt="Assistente IA di AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1773082651757" alt="Assistente IA di AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

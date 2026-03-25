@@ -1,5 +1,5 @@
 ---
-title: Filtraggio dell’app React
+title: Filtro dell’app React
 description: Una semplice app React che filtra le attività WKND modellate utilizzando Frammenti di contenuto.
 version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
@@ -13,14 +13,14 @@ hide: true
 hidefromtoc: true
 exl-id: 1eb9487e-a82a-4d15-a776-cf004f2e3f01
 duration: 26
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# Filtraggio dell’app React
+# Filtro dell’app React
 
 Scopri le API AEM Headless GraphQL per filtrare i dati tramite un&#39;app [React](https://reactjs.org/). Questa app React crea un elenco di attività WKND filtrabili per tipo di attività.
 

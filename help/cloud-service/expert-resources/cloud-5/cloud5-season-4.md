@@ -1,16 +1,16 @@
 ---
 title: Cloud 5 - Stagione 4
-description: La quarta stagione ti consente di conoscere il servizio Edge Delivery dell’AEM attraverso interviste approfondite con esperti che hanno lavorato su progetti complicati
+description: La quarta stagione ti consente di conoscere il servizio AEM Edge Delivery tramite interviste approfondite con esperti che hanno lavorato su progetti complicati
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 duration: 30
 last-substantial-update: 2024-12-15T00:00:00Z
 exl-id: ede3fb19-d803-4b21-8c03-4283f7b4f7f4
-source-git-commit: 155fc2ec8df735888be303242d6221a64e31daad
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,8 @@ Visitare la [Casella suggerimenti](https://forms.office.com/r/74P5Xz4UH0) per in
 
 Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Visita questa pagina per aggiornamenti settimanali o seguici sul social network di tua scelta.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./season-4/cloud5-edge-delivery-services-best-practices.md {title=Development best practices for Edge Delivery Services}
 * ./season-4/cloud5-search-optimization.md {title=Search optimization in Edge Delivery Services}
@@ -41,8 +42,8 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Visit
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" title="Best practice di sviluppo per i Edge Delivery Services" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441008/?format=jpeg&nocache=1734040055526&captions=ita" alt="Best practice di sviluppo per i Edge Delivery Services"
+                    <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" title="Best practice di sviluppo per Edge Delivery Services" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440978/?format=jpeg&nocache=1734040055526" alt="Best practice di sviluppo per Edge Delivery Services"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -50,12 +51,12 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Visit
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" target="_blank" rel="referrer" title="Best practice di sviluppo per i Edge Delivery Services">Best practice di sviluppo per i Edge Delivery Services</a>
+                        <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" target="_blank" rel="referrer" title="Best practice di sviluppo per Edge Delivery Services">Best practice di sviluppo per Edge Delivery Services</a>
                     </p>
-                    <p class="is-size-6">Esplora le tecniche di sviluppo nei Edge Delivery Services con un architetto esperto.</p>
+                    <p class="is-size-6">Esplora le tecniche di sviluppo in Edge Delivery Services con un architetto esperto.</p>
                 </div>
                 <a href="./season-4/cloud5-edge-delivery-services-best-practices.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -65,7 +66,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Visit
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./season-4/cloud5-search-optimization.md" title="Ottimizzazione della ricerca in Edge Delivery Services" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440986/?format=jpeg&nocache=1734040055519&captions=ita" alt="Ottimizzazione della ricerca in Edge Delivery Services"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440976/?format=jpeg&nocache=1734040055519" alt="Ottimizzazione della ricerca in Edge Delivery Services"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -78,7 +79,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Visit
                     <p class="is-size-6">Ottieni il punteggio del faro a 100 acquisti utilizzando l’ottimizzazione delle query e delle ricerche quando gestisci un numero elevato di record.</p>
                 </div>
                 <a href="./season-4/cloud5-search-optimization.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -88,7 +89,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Visit
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./season-4/cloud5-google-maps.md" title="Integrare con Google Maps" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440997/?format=jpeg&nocache=1734040055523&captions=ita" alt="Integrare con Google Maps"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440977/?format=jpeg&nocache=1734040055523" alt="Integrare con Google Maps"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -98,10 +99,10 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Visit
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./season-4/cloud5-google-maps.md" target="_blank" rel="referrer" title="Integrare con Google Maps">Integrare con Google Maps</a>
                     </p>
-                    <p class="is-size-6">Scopri come integrare i Edge Delivery Services con Google Maps.</p>
+                    <p class="is-size-6">Scopri come integrare Edge Delivery Services con Google Maps.</p>
                 </div>
                 <a href="./season-4/cloud5-google-maps.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>

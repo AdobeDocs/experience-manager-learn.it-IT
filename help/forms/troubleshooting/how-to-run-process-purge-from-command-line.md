@@ -6,10 +6,10 @@ role: Developer
 level: Intermediate
 version: Experience Manager 6.5
 topic: Development
-index: y
+index: true
 exl-id: 1f539f1c-b3be-4e21-b0fe-6f523a453c5f
 duration: 97
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per eseguire lo strumento di eliminazione dei processi dalla riga di comando.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3438375?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/335508?quality=12&learn=on)

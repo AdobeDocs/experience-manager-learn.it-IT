@@ -8,12 +8,12 @@ role: Developer, Admin
 level: Intermediate
 jira: KT-10689
 mini-toc-levels: 1
-index: y
+index: true
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
 duration: 364
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 100%
@@ -63,7 +63,7 @@ Le risorse front-end vengono distribuite ai browser web tramite percorsi URI che
 
 >[!NOTE]
 >
-> Analogamente, nel __Percorso di creazione rapida dei siti AEM__, le [modifiche front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html?lang=it) vengono distribuite nell&#39;ambiente AEM as a Cloud Service eseguendo la pipeline __front-end__. Vedi [Configurazione della pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html?lang=it)
+> Analogamente, nel __Percorso di creazione rapida dei siti AEM__, le [modifiche front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) vengono distribuite nell&#39;ambiente AEM as a Cloud Service eseguendo la pipeline __front-end__. Vedi [Configurazione della pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
 
 ### Rivedere le configurazioni webpack nel progetto WKND Sites {#development-frontend-webpack-clientlib}
 
@@ -134,7 +134,7 @@ Le risorse front-end vengono distribuite ai browser web tramite percorsi URI che
 
 ### Implementazione in AEM as a Cloud Service {#deployment-frontend-aemaacs}
 
-La pipeline [__full stack__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=it&=it#full-stack-pipeline) distribuisce queste modifiche in un ambiente AEM as a Cloud Service.
+La pipeline [__full stack__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?=it#full-stack-pipeline) distribuisce queste modifiche in un ambiente AEM as a Cloud Service.
 
 
 ### Consegna da AEM as a Cloud Service {#delivery-frontend-aemaacs}

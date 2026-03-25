@@ -11,8 +11,8 @@ doc-type: Catalog
 duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -22,16 +22,17 @@ ht-degree: 100%
 
 Scopri come rendere veloci i siti web con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3453459/?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
 Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview) per informazioni complete su Edge Delivery Services e sulle relative funzionalità.
 
 
 ## Tutorial per sviluppatori di Edge Delivery Services
 
-<!-- CARDS 
+<!-- 
+CARDS
 
-* https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial
+* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial
   {title = Document-based authoring and Edge Delivery Services tutorial}
   {description = Learn how to create Edge Delivery Services web sites authored using Document-based authoring.}
   {cta = Start the tutorial}
@@ -49,7 +50,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutorial sull’authoring basato su documenti e Edge Delivery Services" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Tutorial sull’authoring basato su documenti e Edge Delivery Services"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Tutorial sull’authoring basato su documenti e Edge Delivery Services"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -108,7 +109,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/prerequisites.md" title="Prerequisiti"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434592/?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
                 alt="Prerequisiti">
             </a>
           </figure>
@@ -140,7 +141,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/aem-boilerplate.md" title="Usare un modello standard"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434619/?format=jpeg&captions=ita" alt="Configurazione
+                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configurazione
                 standard">
             </a>
           </figure>
@@ -172,7 +173,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/content-repository.md" title="Collegamento a Google Drive"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434728/?format=jpeg&captions=ita" alt="Collegamento a Google Drive">
+                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Collegamento a Google Drive">
             </a>
           </figure>
         </div>
@@ -202,7 +203,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
           <figure class="image is-16by9">
             <a href="./developing/content-repository.md" title="Collegamento a SharePoint" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3446036/?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
                 alt="Collegamento a SharePoint">
             </a>
           </figure>
@@ -234,7 +235,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/preview-and-publish.md" title="Anteprima e pubblicazione del contenuto"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434717/?format=jpeg&captions=ita" alt="Anteprima e pubblicazione del contenuto">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Anteprima e pubblicazione del contenuto">
             </a>
           </figure>
         </div>
@@ -265,7 +266,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/sidekick.md" title="Utilizzo di Sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441294/?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
                 alt="Utilizzo di Sidekick">
             </a>
           </figure>
@@ -297,7 +298,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/document-structure.md" title="Struttura dei documenti"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3445197/?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
                 alt="Struttura dei documenti">
             </a>
           </figure>
@@ -329,7 +330,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/local-development.md" title="Sviluppo locale"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434739/?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3425717/?format=jpeg"
                 alt="Sviluppo locale">
             </a>
           </figure>
@@ -361,7 +362,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/git.md" title="Integrare con Git"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441834/?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
                 alt="Integrare con Git">
             </a>
           </figure>
@@ -398,7 +399,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./how-to/rss.md" title="Creare feed RSS"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438007/?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3425725/?format=jpeg"
                 alt="Creare feed RSS">
             </a>
           </figure>
@@ -430,7 +431,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./how-to/social-media-sharing.md" title="Condivisione sui social media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3439445/?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3425974/?format=jpeg"
                 alt="Condivisione sui social media">
             </a>
           </figure>
@@ -462,7 +463,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./how-to/delete-page.md" title="Eliminazione di pagine"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438098/?format=jpeg&captions=ita"
+                src="https://video.tv.adobe.com/v/3425973/?format=jpeg"
                 alt="Eliminazione di pagine">
             </a>
           </figure>

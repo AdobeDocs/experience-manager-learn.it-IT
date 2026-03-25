@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 98%
@@ -95,7 +95,8 @@ Alcuni esempi:
 
 Scopri come definire, distribuire, testare e analizzare le regole per il filtro del traffico, incluse le regole di WAF, in AEM as a Cloud Service seguendo la guida alla configurazione e i casi d’uso riportati di seguito. Questo fornisce le conoscenze di base necessarie per applicare con sicurezza, in un secondo momento, le regole consigliate da Adobe.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./setup.md
@@ -136,7 +137,8 @@ Scopri come definire, distribuire, testare e analizzare le regole per il filtro 
 
 Questa guida fornisce istruzioni dettagliate per configurare e distribuire regole standard per il filtro del traffico e per il filtro del traffico WAF consigliate da Adobe nell’ambiente AEM as a Cloud Service.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./use-cases/using-traffic-filter-rules.md
@@ -206,7 +208,8 @@ Questa guida fornisce istruzioni dettagliate per configurare e distribuire regol
 
 Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano come implementare regole per il filtro del traffico personalizzate in base a requisiti di business specifici:
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./how-to/request-logging.md

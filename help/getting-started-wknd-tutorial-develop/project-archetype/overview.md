@@ -7,12 +7,12 @@ topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-index: y
+index: true
 doc-type: Tutorial
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: display, noCatalog
 duration: 74
-source-git-commit: b612e2e36af8f56661a07577e979959c650564ee
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 100%
@@ -30,8 +30,8 @@ Questo tutorial inizia utilizzando [Archetipo progetto AEM](https://experiencele
 Il tutorial è progettato per funzionare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti di **AEM 6.5.14+**. Il sito viene implementato utilizzando:
 
 * [Archetipo di progetto AEM Maven](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview)
-* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=it&=it)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?=it)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it)
 * [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=it)

@@ -11,7 +11,7 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 7%
@@ -44,7 +44,8 @@ Personalizzazione dell&#39;esperienza in azione nel [sito Web di abilitazione WK
 >
 > Esplorare la demo live per prima cosa ti aiuta a comprendere il valore e le funzionalità di ogni tecnica di personalizzazione prima di investire tempo nella configurazione e nell’implementazione.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./live-demo.md
@@ -85,7 +86,8 @@ Personalizzazione dell&#39;esperienza in azione nel [sito Web di abilitazione WK
 
 Prima di esplorare casi d’uso specifici, configura AEM as a Cloud Service per la personalizzazione. Inizia integrando Adobe Target e i tag per abilitare la personalizzazione lato client tramite Web SDK. Questi passaggi fondamentali consentono alle pagine AEM di supportare la sperimentazione, il targeting del pubblico e la personalizzazione in tempo reale.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./setup/integrate-adobe-target.md
@@ -158,7 +160,8 @@ Prima di esplorare casi d’uso specifici, configura AEM as a Cloud Service per 
 
 Esplora i seguenti casi d’uso comuni per la personalizzazione supportati da AEMCS, Adobe Target e Adobe Experience Platform.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./use-cases/experimentation.md

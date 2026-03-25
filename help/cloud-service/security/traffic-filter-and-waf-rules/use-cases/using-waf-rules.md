@@ -12,7 +12,7 @@ badgeLicense: label="Richiede una licenza" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
-source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 98%
@@ -30,7 +30,7 @@ Gli attacchi sofisticati sono caratterizzati da un’elevata frequenza di richie
 > Le regole del filtro del traffico WAF richiedono una licenza aggiuntiva per la protezione estesa (precedentemente denominata protezione WAF-DDoS) o la protezione estesa per l&#39;assistenza sanitaria (in precedenza denominata protezione avanzata). Le regole del filtro del traffico standard sono disponibili per impostazione predefinita per la clientela di Sites e Forms.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469438/?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Obiettivi di apprendimento
 
@@ -235,7 +235,8 @@ In questo tutorial, hai imparato a proteggere i siti web di AEM da minacce sofis
 
 Per scenari più avanzati, puoi esplorare i seguenti casi d’uso che mostrano come implementare regole per il filtro del traffico personalizzate in base a requisiti di business specifici:
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ../how-to/request-logging.md

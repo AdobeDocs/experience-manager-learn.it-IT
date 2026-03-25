@@ -1,6 +1,6 @@
 ---
 title: Creare un invio personalizzato per gestire l’invio di moduli basati su componenti core
-description: Crea un invio personalizzato per memorizzare i dati del modulo con allegati in Azure
+description: Creare un invio personalizzato per memorizzare i dati del modulo con allegati in Azure
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -10,7 +10,7 @@ topic: Integrations
 jira: KT-14794
 exl-id: c4257567-76bd-417e-a1a2-38a0647767d9
 duration: 147
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
@@ -40,9 +40,9 @@ Per soddisfare il caso d’uso, è stato creato un servizio di invio personalizz
 }
 ```
 
-L&#39;elemento _&#x200B;**contractcopy**&#x200B;_ rappresenta un componente file allegato e viene utilizzato per acquisire gli allegati inviati con il modulo.
-Per poter precompilare il modulo adattivo con i dati e i relativi allegati, gli allegati inviati verranno salvati nel portale di Azure e l’elemento dati dell’oggetto contractcopy nei dati inviati verrà aggiornato con l’URL dell’allegato salvato.
-Il servizio di invio personalizzato estrae e memorizza gli allegati nel portale di Azure.  I dati inviati aggiornati avranno un aspetto simile a questo
+L&#39;elemento _**contractcopy**_ rappresenta un componente file allegato e viene utilizzato per acquisire gli allegati inviati con il modulo.
+Per poter precompilare il modulo adattivo con i dati e i relativi allegati, gli allegati inviati verranno salvati nel portale Azure e l’elemento dati dell’oggetto contractcopy nei dati inviati verrà aggiornato con l’URL dell’allegato salvato.
+Il servizio di invio personalizzato estrae e memorizza gli allegati nel portale Azure.  I dati inviati aggiornati avranno un aspetto simile a questo
 
 
 ```json
@@ -62,9 +62,7 @@ Il servizio di invio personalizzato estrae e memorizza gli allegati nel portale 
     },
     "Message": "We would like to renew our annual contract "
 }
-``
 ```
-
 
 [Il gestore di invio personalizzato di esempio per il modulo adattivo basato su componenti core è disponibile qui](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). Il seguente invio personalizzato è stato scritto per gestire l’invio del modulo
 
@@ -170,7 +168,7 @@ public class StoreFormDataWithAttachments implements FormSubmitActionService {
 }
 ```
 
-## Salva allegati modulo in Azure
+## Salvare gli allegati del modulo in Azure
 
 ```java
 @Override
@@ -216,7 +214,7 @@ public String saveFormAttachmentinAzure(InputStream attachmentStream, String fil
 }
 ```
 
-## Salva dati modulo in Azure
+## Salvare i dati del modulo in Azure
 
 ```java
 @Override

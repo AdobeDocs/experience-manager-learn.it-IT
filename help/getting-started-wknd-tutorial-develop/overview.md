@@ -4,7 +4,7 @@ description: Scopri come implementare un sito AEM per un brand fittizio del sett
 version: Experience Manager as a Cloud Service
 jira: KT-13565
 mini-toc-levels: 1
-index: y
+index: true
 thumbnail: 30476.jpg
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
 topic: Content Management, Development
@@ -13,8 +13,8 @@ level: Beginner
 doc-type: Catalog
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
-workflow-type: ht
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Ti diamo il benvenuto in un tutorial in più parti, progettato per sviluppatori 
 
 L’obiettivo di questo tutorial in più parti è quello di insegnare a uno sviluppatore come implementare un sito web utilizzando gli standard e le tecnologie più recenti in Adobe Experience Manager (AEM). Dopo aver completato questo tutorial, uno sviluppatore dovrebbe comprendere le nozioni di base della piattaforma e i modelli di progettazione comuni di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/36052?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
 ## Opzioni per avviare un progetto Sites
 

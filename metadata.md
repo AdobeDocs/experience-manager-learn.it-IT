@@ -4,15 +4,17 @@ solution-title: Experience Manager
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-learn.it-IT
 product: experience manager
-index: y
+index: true
 type: Tutorial
 solution: Experience Manager
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Cloud Manager, Experience Manager Forms, Experience Manager Screens, Experience Manager Sites
+landing-page-name: experience-manager
+landing-page-breadcrumb-title: AEM
 auto-video-transcripts: true
-source-git-commit: 445e69684160350bb55171cbcecd61325dcfa643
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 96%
+source-wordcount: '128'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +23,7 @@ ht-degree: 96%
 
 Il file metadata.md include metadati a livello di archivio che vengono trasmessi ai file TOC.md della guida utente nell’archivio. Se desideri modificare il contenuto di metadata.md per una guida utente, puoi farlo intervenendo su un file TOC.md.
 
-| Metadati | Funzione |
+| metadati | Funzione |
 |--- |--- |
 | solution-title | Utilizzato nell’intestazione dell’articolo come collegamento |
 | solution-hub-url | Apre la pagina centrale della guida helpx |
@@ -33,7 +35,7 @@ Il file metadata.md include metadati a livello di archivio che vengono trasmessi
 
 In un file TOC.md
 
-| Metadati | Funzione |
+| metadati | Funzione |
 |--- |--- |
 | user-guide-title | Utilizzato nell’intestazione dell’articolo come collegamento |
 | user-guide-url | Apre la pagina centrale della guida helpx |
