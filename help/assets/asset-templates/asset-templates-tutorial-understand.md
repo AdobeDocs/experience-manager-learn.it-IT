@@ -76,5 +76,5 @@ File di modello InDesign e immagini di supporto
 
 Scarica [file modello InDesign e immagini di supporto](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
-* [Download di prova di InDesign CC](https://creative.adobe.com/products/download/indesign)
-* La versione di prova di InDesign Server può essere scaricata dal [sito prerelease di Adobe](https://www.adobeprerelease.com/) o [CC I clienti Enterprise possono contattare il proprio Account Executive per richiedere la licenza di prova di InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+* [Download di prova di InDesign CC](https://creative.adobe.com/it/products/download/indesign)
+* La versione di prova di InDesign Server può essere scaricata dal [sito prerelease di Adobe](https://www.adobeprerelease.com/) o [CC I clienti Enterprise possono contattare il proprio Account Executive per richiedere la licenza di prova di InDesign Server](https://www.adobe.com/it/products/indesignserver/faq.html)

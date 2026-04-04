@@ -62,7 +62,7 @@ Passaggi di alto livello:
 
 Congratulazioni, hai imparato come utilizzare i kit di interfaccia utente di Adobe XD per mappare e pianificare un’implementazione di AEM Sites.
 
-Sono disponibili ulteriori [kit dell’interfaccia utente](https://www.adobe.com/products/xd/features/ui-kits.html) per l’ispezione e il download.
+Sono disponibili ulteriori [kit dell’interfaccia utente](https://www.adobe.com/it/products/xd/features/ui-kits.html) per l’ispezione e il download.
 
 ### Passaggi successivi {#next-steps}
 
