@@ -9,9 +9,9 @@ duration: 97
 last-substantial-update: 2026-03-02T00:00:00Z
 jira: KT-20425
 exl-id: 0811742a-7f1b-4659-8ab0-982ef1527483
-source-git-commit: e630a91aa965df4d1222d7949a61dc0fa6f2865b
+source-git-commit: 12f517200fd777390fc17fcc389fb59644299ac9
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '54'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,4 @@ ht-degree: 0%
 
 Cloud Manager MCP Server consente agli sviluppatori di AEM di eseguire pipeline, eseguire il debug degli errori e accedere agli strumenti di Cloud Manager direttamente nell’IDE, senza cambiare contesto.
 
->[!AVAILABILITY]
->
-> Cloud Manager MCP Server è ora in versione beta. Per richiedere l&#39;accesso, invia un&#39;e-mail a [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) con una descrizione del caso d&#39;uso.
-
->[!VIDEO](https://video.tv.adobe.com/v/3480350/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?learn=on&enablevpops)
