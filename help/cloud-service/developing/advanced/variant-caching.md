@@ -6,16 +6,18 @@ topic: Development
 feature: CDN Cache, Dispatcher
 exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
 duration: 149
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 0f9480bb52765daa01c5372a117a441adb03bb9d
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 1%
+source-wordcount: '696'
+ht-degree: 0%
 
 ---
 
 # Memorizzazione in cache delle varianti di pagina
 
-Scopri come impostare e utilizzare AEM as a Cloud Service per supportare il caching delle varianti di pagina.
+Le esperienze web spesso devono adattare i contenuti per tipi di pubblico diversi, siano essi geografici, di personalizzazione o di sperimentazione. In questo tutorial imparerai a configurare Adobe Experience Manager (AEM) as a Cloud Service per memorizzare in cache e distribuire in modo efficiente più varianti di pagina utilizzando il cookie `x-aem-variant`, garantendo flessibilità e prestazioni elevate su larga scala.
+
+Ad alto livello, l&#39;approccio prevede che il codice del progetto imposti un cookie `x-aem-variant` specifico per il visitatore (ad esempio, in base alla posizione), che viene quindi trasformato in un&#39;intestazione di richiesta alla rete CDN. Questo valore viene incorporato nell’URL della richiesta tramite una regola di riscrittura del dispatcher, che consente ad AEM di eseguire il rendering della variante corretta e al contempo di abilitare la CDN e il dispatcher per memorizzare in cache una versione separata della pagina per ogni variante.
 
 ## Casi d’uso di esempio
 
@@ -27,7 +29,7 @@ Scopri come impostare e utilizzare AEM as a Cloud Service per supportare il cach
 
 + Identifica la chiave della variante e il numero di valori che può avere. Nel nostro esempio, variiamo in base allo stato USA, quindi il numero massimo è 50. È abbastanza piccolo da non causare problemi con i limiti delle varianti nella rete CDN. [Rivedi la sezione limitazioni varianti](#variant-limitations).
 
-+ Il codice AEM deve impostare il cookie __&quot;x-aem-variant&quot;__ sullo stato preferito del visitatore (ad esempio `Set-Cookie: x-aem-variant=NY`) nella risposta HTTP corrispondente della richiesta HTTP iniziale.
++ Il codice del progetto deve impostare il cookie __&quot;x-aem-variant&quot;__ sullo stato preferito del visitatore (ad esempio `Set-Cookie: x-aem-variant=NY`) nella risposta HTTP corrispondente della richiesta HTTP iniziale. AEM e la rete CDN gestita da Adobe non determinano o impostano automaticamente `x-aem-variant`. Se l’intestazione/cookie è presente, è perché è stato impostato dall’applicazione. Questa intestazione può essere impostata tramite un servlet AEM personalizzato o un filtro servlet AEM (come mostrato nell’esempio di codice seguente).
 
 + Le richieste successive del visitatore inviano quel cookie (esempio: `"Cookie: x-aem-variant=NY"`) e il cookie viene trasformato a livello CDN in un&#39;intestazione predefinita (ovvero `x-aem-variant:NY`) che viene passata al dispatcher.
 
@@ -55,7 +57,7 @@ Scopri come impostare e utilizzare AEM as a Cloud Service per supportare il cach
 
 1. Il CDN di AEM trasforma automaticamente il cookie `x-aem-variant` in un&#39;intestazione HTTP con lo stesso nome.
 
-1. Aggiungi al progetto `dispatcher` una regola mod_rewrite del server Web Apache che modifica il percorso della richiesta in modo da includere il selettore delle varianti.
+1. Aggiungi al progetto `mod_rewrite` una regola del server Web Apache `dispatcher` che modifica il percorso della richiesta in modo da includere il selettore delle varianti.
 
 1. Distribuisci il filtro e riscrivi le regole utilizzando Cloud Manager.
 
