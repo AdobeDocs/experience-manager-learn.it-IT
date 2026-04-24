@@ -11,10 +11,10 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 794a0109e4b28b452c462c5cab37e2d094ab4897
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 0%
+source-wordcount: '783'
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,9 @@ Per implementare le autorizzazioni basate sui metadati, uno sviluppatore deve im
        "status",
        "brand"
      ],
-     "restrictionContentPropertyNames":[],
+     "restrictionContentPropertyNames":[
+       "dam:rightsManaged"
+     ],
      "enabled":true
    }
    ```
@@ -108,8 +110,7 @@ I vantaggi delle autorizzazioni basate sui metadati includono:
 > È importante notare che:
 > 
 > - Le proprietà vengono valutate in base alle restrizioni utilizzando __Uguaglianza stringa__ (`=`) (altri tipi di dati o operatori non sono ancora supportati, per valori maggiori di (`>`) o proprietà Data)
-> - Per consentire più valori per una proprietà di restrizione, è possibile aggiungere ulteriori restrizioni alla voce di controllo dell&#39;accesso selezionando la stessa proprietà dal menu a discesa &quot;Seleziona tipo&quot; e immettendo un nuovo valore di restrizione (ad esempio `status=approved`, `status=wip`) e facendo clic su &quot;+&quot; per aggiungere la restrizione alla voce
-> ![Consenti più valori](./assets/metadata-driven-permissions/allow-multiple-values.png)
+> - Per consentire più valori per una proprietà di restrizione, è possibile aggiungere ulteriori restrizioni alla voce di controllo dell&#39;accesso selezionando la stessa proprietà dal menu a discesa &quot;Seleziona tipo&quot; e immettendo un nuovo valore di restrizione (ad esempio `status=approved`, `status=wip`) e facendo clic su &quot;+&quot; per aggiungere la restrizione alla voce> ![Consenti più valori](./assets/metadata-driven-permissions/allow-multiple-values.png)
 > - Sono supportate __restrizioni AND__, tramite più restrizioni in una singola voce di controllo di accesso con nomi di proprietà diversi (ad esempio `status=approved`, `brand=Adobe`) verrà valutata come condizione AND, ovvero al gruppo di utenti selezionato verrà concesso l&#39;accesso in lettura alle risorse con `status=approved AND brand=Adobe`
 > ![Consenti più restrizioni](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
 > - Le __restrizioni OR__ sono supportate aggiungendo una nuova voce di controllo di accesso con una restrizione di proprietà dei metadati che stabilirà una condizione OR per le voci. Ad esempio, una singola voce con restrizione `status=approved` e una singola voce con `brand=Adobe` verranno valutate come `status=approved OR brand=Adobe`

@@ -9,9 +9,9 @@ duration: 0
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20473
 exl-id: 7f2e4e37-6440-423e-9ba9-9228fe03600b
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: 794a0109e4b28b452c462c5cab37e2d094ab4897
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,10 @@ Scopri come utilizzare i server AEM _Model Context Protocol (MCP)_ dalle applica
 
 ## Elenco dei server MCP di AEM
 
-Tutti i server MCP di AEM sono disponibili in `https://mcp.adobeaemcloud.com/adobe/mcp/`. Per ulteriori informazioni, vedere [Utilizzo di MCP con AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service).
+Tutti i server MCP di AEM sono disponibili in `https://mcp.adobeaemcloud.com/adobe/mcp/`. Per ulteriori informazioni, vedere [Utilizzo di MCP con AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service).
 
-- **Contenuto** (`/content`): accesso completo per creare, leggere, aggiornare ed eliminare pagine, frammenti e risorse.
-- **Contenuto (sola lettura)** (`/content-readonly`): sola lettura per elencare e ottenere pagine, frammenti e risorse (nessuna modifica).
+- **Contenuto** (`/content`): operazioni relative al contenuto, tra cui creazione, lettura, aggiornamento ed eliminazione (CRUD) per pagine e frammenti di contenuto, oltre all&#39;importazione di risorse.
+- **Contenuto (sola lettura)** (`/content-readonly`): operazioni sul contenuto di sola lettura (lettura, elenco/ricerca) per pagine e frammenti di contenuto.
 - **Cloud Manager** (`/cloudmanager`): per gestire programmi, ambienti, archivi e pipeline di Adobe Cloud Manager.
 
 >[!TIP]
@@ -43,7 +43,7 @@ Ecco come si confrontano questi due modelli di utilizzo:
 
 | Aspetto | Incentrato sull&#39;uomo | Agentico |
 | ------ | ------------- | ------- |
-| **Chi gestisce le azioni** | Tu. <br> L&#39;intelligenza artificiale suggerisce o esegue gli strumenti necessari nell&#39;applicazione basata su IDE o Chat. | L&#39;intelligenza artificiale. <br> seleziona gli strumenti da utilizzare e continua con indicazioni minime. |
+| **Chi gestisce le azioni** | Tu. <br> L’intelligenza artificiale suggerisce o esegue gli strumenti necessari nell’applicazione basata su IDE o Chat. | IA. <br> Scegli gli strumenti da utilizzare e continua ad andare avanti con una guida minima. |
 | **Autorità di decisione** | Tu rimani in controllo. Approva o attiva ogni passaggio. | L&#39;intelligenza artificiale ha più libertà. Le azioni ad alto impatto possono richiedere guardrail o approvazioni. |
 | **Schema di utilizzo tipico** | **Per-developer**, utilizzalo dalla tua applicazione basata su IDE o Chat, uno sviluppatore per sessione, buono per il lavoro di sviluppo giornaliero. | **Condiviso** tramite un&#39;applicazione agente, come servizi condivisi e gateway per molti utenti o agenti. |
 | **Più adatto per** | Revisione del contenuto, esecuzione di aggiornamenti guidati, esplorazione o ripetizione di attività mentre si resta nel loop. | Flussi di lavoro agenti, processi batch, pipeline e obiettivi in cui il sistema deve essere eseguito con il minimo intervento. |
@@ -71,7 +71,7 @@ In breve, **Host** è la tua applicazione basata su IDE o Chat, **Client** è la
 ## Configurazione
 
 I server MCP di AEM sono progettati per funzionare con un set definito di applicazioni compatibili con MCP.
-Per configurare i server MCP di AEM nell&#39;applicazione basata su IDE o Chat preferita, vedere [Applicazioni MCP supportate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) per ulteriori informazioni.
+Per configurare i server MCP di AEM nell&#39;applicazione basata su IDE o Chat preferita, vedere [Applicazioni MCP supportate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) per ulteriori informazioni.
 
 ## Casi d’uso
 
