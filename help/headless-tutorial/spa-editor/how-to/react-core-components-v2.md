@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
 duration: 190
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 1%
+source-wordcount: '634'
+ht-degree: 4%
 
 ---
 
@@ -27,18 +27,18 @@ AEM fornisce [AEM React Editable Components v2](https://www.npmjs.com/package/@a
 
 * [modulo npm](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Progetto Github](https://github.com/adobe/aem-react-editable-components)
-* [Documentazione di Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=it)
+* [Documentazione di Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
 
 
 Per ulteriori dettagli ed esempi di codice per AEM React Editable Components v2, consulta la documentazione tecnica:
 
 * [Integrazione con la documentazione di AEM](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
 * [Documentazione del componente modificabile](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
-* [Documentazione Helpers](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
+* [Documentazione degli helper](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
 
 ## Pagine AEM
 
-I componenti AEM React Editable funzionano sia con l’editor di applicazioni a pagina singola che con le app Remote SPA React. Il contenuto dei componenti React modificabili deve essere esposto tramite pagine AEM che estendono il [componente Pagina SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=it). I componenti AEM mappati su componenti React modificabili devono implementare il framework di esportazione di componenti [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=it), ad esempio [Componenti WCM core di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+I componenti AEM React Editable funzionano sia con l’editor di applicazioni a pagina singola che con le app Remote SPA React. Il contenuto dei componenti React modificabili deve essere esposto tramite pagine AEM che estendono il [componente Pagina SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). I componenti AEM mappati su componenti React modificabili devono implementare il framework di esportazione di componenti [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html), ad esempio [Componenti WCM core di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
 
 
 ## Dipendenze

@@ -13,9 +13,9 @@ doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1121'
 ht-degree: 1%
 
 ---
@@ -277,77 +277,77 @@ Nell&#39;applicazione a pagina singola viene fatto riferimento ai componenti Rea
    ...
    ```
 
-Il risultato dovrebbe essere simile al seguente:
+The result should look like:
 
 ![Home.js](./assets/spa-container-component/home-js-imports.png)
 
-Se queste importazioni sono _non_ aggiunte, il codice `EditableText` e `EditableImage` non può essere richiamato dall&#39;applicazione a pagina singola e, pertanto, i componenti non sono mappati ai tipi di risorsa forniti.
+If these imports are _not_ added, the `EditableText` and `EditableImage` code is not be invoked by SPA, and thus, the components are not mapped to the provided resource types.
 
-## Configurazione del contenitore in AEM
+## Configuring the container in AEM
 
-I componenti contenitore di AEM utilizzano i criteri per determinare i componenti consentiti. Si tratta di una configurazione critica quando si utilizza l’editor di applicazioni a pagina singola, in quanto solo i componenti di AEM che hanno mappato le controparti dei componenti di applicazioni a pagina singola possono essere sottoposti a rendering dall’applicazione a pagina singola. Assicurati che siano consentiti solo i componenti per i quali abbiamo fornito implementazioni di applicazioni a pagina singola:
+AEM container components use policies to dictate their allowed components. This is a critical configuration when using SPA Editor, since only AEM Components that have mapped SPA component counterparts are render-able by the SPA. Ensure only the components which we&#39;ve provided SPA implementations for are allowed:
 
-* `EditableTitle` mappato a `wknd-app/components/title`
-* `EditableText` mappato a `wknd-app/components/text`
-* `EditableImage` mappato a `wknd-app/components/image`
+* `EditableTitle` mapped to `wknd-app/components/title`
+* `EditableText` mapped to `wknd-app/components/text`
+* `EditableImage` mapped to `wknd-app/components/image`
 
-Per configurare il contenitore reponsivegrid del modello Pagina applicazione a pagina singola remota:
+To configure the Remote SPA Page template&#39;s reponsivegrid container:
 
 1. Accedi ad AEM Author
-1. Passa a __Strumenti > Generale > Modelli > App WKND__
-1. Modifica __Pagina SPA report__
+1. Navigate to __Tools > General > Templates > WKND App__
+1. Edit __Report SPA Page__
 
-   ![Criteri griglia reattiva](./assets/spa-container-component/templates-remote-spa-page.png)
+   ![Responsive Grid policies](./assets/spa-container-component/templates-remote-spa-page.png)
 
-1. Seleziona __Struttura__ nel commutatore modalità in alto a destra
-1. Tocca per selezionare il __Contenitore di layout__
-1. Tocca l&#39;icona __Criterio__ nella barra a comparsa
+1. Select __Structure__ in the mode switcher in the top right
+1. Tap to select the __Layout Container__
+1. Tap the __Policy__ icon in the popup bar
 
-   ![Criteri griglia reattiva](./assets/spa-container-component/templates-policies-action.png)
+   ![Responsive Grid policies](./assets/spa-container-component/templates-policies-action.png)
 
-1. A destra, nella scheda __Componenti consentiti__, espandi __APP WKND - CONTENUTO__
-1. Accertati che siano selezionati solo i seguenti elementi:
+1. On the right, under the __Allowed Components__ tab, expand __WKND APP - CONTENT__
+1. Ensure only following are selected:
    1. Immagine
    1. Testo
    1. Titolo
 
-   ![Pagina applicazione a pagina singola remota](./assets/spa-container-component/templates-allowed-components.png)
+   ![Remote SPA Page](./assets/spa-container-component/templates-allowed-components.png)
 
 1. Tocca __Fine__
 
-## Authoring del contenitore in AEM
+## Authoring the container in AEM
 
-Dopo l&#39;aggiornamento dell&#39;applicazione a pagina singola per incorporare `<ResponsiveGrid...>`, i wrapper per tre componenti React modificabili (`EditableTitle`, `EditableText` e `EditableImage`) e l&#39;aggiornamento di AEM con un criterio di modello corrispondente, è possibile iniziare a creare contenuti nel componente contenitore.
+After the SPA updated to embed the `<ResponsiveGrid...>`, wrappers for three editable React components (`EditableTitle`, `EditableText`, and `EditableImage`), and AEM is updated with a matching Template policy, we can start authoring content in the container component.
 
 1. Accedi ad AEM Author
 1. Passa a __Sites > App WKND__
 1. Tocca __Home__ e seleziona __Modifica__ dalla barra delle azioni superiore
-   1. Viene visualizzato un componente Testo &quot;Hello World&quot;, che veniva aggiunto automaticamente durante la generazione del progetto dall’archetipo del progetto AEM
-1. Seleziona __Modifica__ dal selettore modalità in alto a destra nell&#39;Editor pagina
-1. Individua l&#39;area modificabile __Contenitore di layout__ sotto il titolo
+   1. A &quot;Hello World&quot; Text component displays, as this was automatically added when generating the project from the AEM Project archetype
+1. Select __Edit__ from the mode-selector in the top right of the Page Editor
+1. Locate the __Layout Container__ editable area beneath the Title
 1. Apri la barra laterale dell&#39;__Editor pagine__ e seleziona la __visualizzazione Componenti__
-1. Trascina i seguenti componenti nel __Contenitore di layout__
+1. Drag the following components into the __Layout Container__
    1. Immagine
    1. Titolo
-1. Trascina i componenti per riordinarli nell’ordine seguente:
+1. Drag the components to reorder them to the following order:
    1. Titolo
    1. Immagine
    1. Testo
-1. __Crea__ il componente __Titolo__
-   1. Tocca il componente Titolo, quindi tocca l&#39;icona __chiave inglese__ per __modificare__ il componente Titolo
-   1. Aggiungere il testo seguente:
-      1. Titolo: __L&#39;estate sta arrivando, sfruttiamola al massimo!__
-      1. Tipo: __H1__
+1. __Author__ the __Title__ component
+   1. Tap the Title component, and tap the __wrench__ icon to __edit__ the Title component
+   1. Add the following text:
+      1. Title: __Summer is coming, let&#39;s make the most of it!__
+      1. Type: __H1__
    1. Tocca __Fine__
-1. __Crea__ il componente __Immagine__
-   1. Trascina un’immagine in dalla barra laterale (dopo il passaggio alla vista Assets) sul componente Immagine
-   1. Tocca il componente Immagine, quindi tocca l&#39;icona __chiave inglese__ per modificare
-   1. Seleziona la casella di controllo __L&#39;immagine è decorativa__
+1. __Author__ the __Image__ component
+   1. Drag an image in from the Side bar (after switching to the Assets view) on the Image component
+   1. Tap the Image component, and tap the __wrench__ icon to edit
+   1. Check the __Image is decorative__ checkbox
    1. Tocca __Fine__
-1. __Crea__ il componente __Testo__
-   1. Modifica il componente Testo toccando il componente Testo e toccando l&#39;icona __chiave inglese__
-   1. Aggiungere il testo seguente:
-      1. _Al momento, puoi ottenere il 15% su tutte le avventure di 1 settimana e il 20% su tutte le avventure che durano 2 settimane o più! Al momento del pagamento, aggiungi il codice della campagna SUMMERISCOMING per ottenere i tuoi sconti!_
+1. __Author__ the __Text__ component
+   1. Edit the Text component by tapping the Text component, and tapping the __wrench__ icon
+   1. Add the following text:
+      1. _Right now, you can get 15% on all 1-week adventures, and 20% off on all adventures that are 2 weeks or longer! At checkout, add the campaign code SUMMERISCOMING to get your discounts!_
    1. Tocca __Fine__
 
 1. I componenti ora sono creati, ma si sovrappongono in verticale.

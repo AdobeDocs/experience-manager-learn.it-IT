@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
 duration: 294
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 100%
+source-wordcount: '667'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Ti diamo il benvenuto in questo tutorial in più parti progettato per gli svilup
 
 Questo tutorial si basa sull’[app GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), un’app React che utilizza contenuto di frammenti di contenuto AEM tramite le API GraphQL di AEM, ma non fornisce alcuna creazione di contenuti SPA nel contesto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444855?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## Informazioni sul tutorial
 
@@ -54,7 +54,7 @@ Questo tutorial richiede quanto segue:
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
 + [aem-guides-wknd.all-2.1.0.zip o versione successiva](https://github.com/adobe/aem-guides-wknd/releases)
-+ [codice sorgente aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
++ [aem-guides-wknd-graphql source code](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
 
 Questo tutorial presuppone:
 
@@ -66,27 +66,27 @@ Questo tutorial presuppone:
 
 >[!NOTE]
 >
-> **Hai bisogno di assistenza per configurare l’ambiente di sviluppo locale?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando l’SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview).
+> **Need help with setting up your local development environment?** Check out the [following guide to setting up a local development environment using the AEM as a Cloud Service SDK](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview).
 
-## &#x200B;1. Configurare AEM per l’editor di SPA
+## 1. Configure AEM for SPA Editor
 
 Per integrare un’applicazione a pagina singola con l’editor di SPA di AEM sono necessarie configurazioni di AEM. Queste configurazioni vengono gestite e distribuite tramite un progetto AEM. In questo capitolo, scoprirai quali configurazioni sono necessarie e come definirle.
 
 + [Scopri come configurare AEM per l’editor di SPA](./aem-configure.md)
 
-## &#x200B;2. Bootstrap dell’applicazione a pagina singola
+## 2. Bootstrap the SPA
 
 Affinché l’editor SPA di AEM possa integrare un’applicazione a pagina singola nel contesto di authoring, è necessario apportare alcune aggiunte alla SPA.
 
 + [Scopri come eseguire il bootstrap dell’applicazione a pagina singola per l’editor di SPA di AEM](./spa-bootstrap.md)
 
-## &#x200B;3. Componenti fissi modificabili
+## 3. Editable fixed components
 
 Innanzitutto, prova ad aggiungere un “componente fisso” modificabile all’applicazione a pagina singola. Questo illustra come uno sviluppatore può posizionare un componente modificabile specifico nell’applicazione a pagina singola. L’autore può modificare il contenuto del componente, ma non può rimuoverlo né modificarne la posizione o le dimensioni.
 
 + [Scopri di più sui componenti fissi modificabili](./spa-fixed-component.md)
 
-## &#x200B;4. Componenti dei contenitori modificabili
+## &#x200B;4. Componenti contenitore modificabili
 
 Successivamente, prova ad aggiungere un “componente contenitore” modificabile all’applicazione a pagina singola. Questo illustra come uno sviluppatore può posizionare un componente contenitore nell’applicazione a pagina singola. I componenti contenitore consentono agli autori di posizionare in essi il componente consentito e di regolare il layout dei componenti.
 

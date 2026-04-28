@@ -1,5 +1,5 @@
 ---
-title: Mappare i componenti dell’applicazione a pagina singola ai componenti di AEM | Guida introduttiva dell’Editor SPA di AEM e di Angular
+title: Mappatura di componenti SPA su componenti AEM | Guida introduttiva ad AEM SPA Editor e Angular
 description: Scopri come mappare i componenti di Angular ai componenti di Adobe Experience Manager (AEM) con AEM SPA Editor JS SDK. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti delle applicazioni a pagina singola nell’Editor delle applicazioni a pagina singola di AEM, in modo simile all’authoring tradizionale AEM.
 feature: SPA Editor
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
 duration: 509
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 0%
+source-wordcount: '2475'
+ht-degree: 8%
 
 ---
 
@@ -30,18 +30,18 @@ Questo capitolo approfondisce l’analisi dell’API del modello JSON AEM e di c
 ## Obiettivo
 
 1. Scopri come mappare i componenti di AEM ai componenti SPA.
-2. Comprendere la differenza tra i componenti **Container** e i componenti **Content**.
-3. Crea un nuovo componente Angular mappato su un componente AEM esistente.
+2. Understand the difference between **Container** components and **Content** components.
+3. Create a new Angular component that maps to an existing AEM component.
 
 ## Cosa verrà creato
 
-Questo capitolo esaminerà come il componente SPA `Text` fornito è mappato al componente `Text` di AEM. Viene creato un nuovo componente `Image` per applicazioni a pagina singola che può essere utilizzato nell&#39;applicazione a pagina singola e creato in AEM. Le funzionalità predefinite dei criteri **Contenitore di layout** e **Editor modelli** verranno utilizzate anche per creare una visualizzazione con un aspetto leggermente più variabile.
+This chapter will inspect how the provided `Text` SPA component is mapped to the AEM `Text`component. A new `Image` SPA component is created that can be used in the SPA and authored in AEM. Out of the box features of the **Layout Container** and **Template Editor** policies will also be used to create a view that is a little more varied in appearance.
 
-![Authoring finale del capitolo](./assets/map-components/final-page.png)
+![Chapter sample final authoring](./assets/map-components/final-page.png)
 
 ## Prerequisiti
 
-Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment).
+Rivedi gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment).
 
 ### Ottieni il codice
 
@@ -65,25 +65,25 @@ Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente d
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) o estrarre il codice localmente passando al ramo `Angular/map-components-solution`.
+You can always view the finished code on [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) or check the code out locally by switching to the branch `Angular/map-components-solution`.
 
-## Approccio di mappatura
+## Mapping Approach
 
-Il concetto di base è quello di mappare un componente SPA a un componente AEM. I componenti AEM, esegui lato server, esportano contenuti come parte dell’API del modello JSON. Il contenuto JSON viene utilizzato dall’applicazione a pagina singola, che esegue sul lato client nel browser. Viene creata una mappatura 1:1 tra i componenti SPA e un componente AEM.
+The basic concept is to map a SPA Component to an AEM Component. AEM components, run server-side, export content as part of the JSON model API. The JSON content is consumed by the SPA, running client-side in the browser. A 1:1 mapping between SPA components and an AEM component is created.
 
-![Panoramica di alto livello sulla mappatura di un componente AEM a un componente Angular](./assets/map-components/high-level-approach.png)
+![High-level overview of mapping an AEM Component to a Angular Component](./assets/map-components/high-level-approach.png)
 
-*Panoramica di alto livello sulla mappatura di un componente AEM a un componente Angular*
+*High-level overview of mapping an AEM Component to a Angular Component*
 
-## Controllare il componente Testo
+## Inspect the Text Component
 
-L&#39;[Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) fornisce un componente `Text` mappato al [Componente testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=it) di AEM. Questo è un esempio di un componente **content**, in quanto esegue il rendering di *content* da AEM.
+The [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) provides a `Text` component that is mapped to the AEM [Text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=it). This is an example of a **content** component, in that it renders *content* from AEM.
 
-Vediamo come funziona il componente.
+Let&#39;s see how the component works.
 
-### Verifica il modello JSON
+### Inspect the JSON model
 
-1. Prima di passare al codice SPA, è importante comprendere il modello JSON fornito da AEM. Passa alla [libreria dei componenti core](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) e visualizza la pagina per il componente Testo. La libreria dei componenti core fornisce esempi di tutti i componenti core di AEM.
+1. Before jumping into the SPA code, it is important to understand the JSON model that AEM provides. Navigate to the [Core Component Library](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) and view the page for the Text component. La libreria dei componenti core fornisce esempi di tutti i componenti core di AEM.
 2. Selezionare la scheda **JSON** per uno degli esempi:
 
    ![Modello JSON di testo](./assets/map-components/text-json.png)
@@ -340,62 +340,62 @@ Prima di passare al codice SPA, controlla il modello JSON fornito da AEM.
 
    Come `TextComponent`, `ImageComponent` è caricato in modo dinamico e deve essere incluso nell&#39;array `entryComponents`.
 
-7. Avvia il server di sviluppo **webpack** per visualizzare il rendering `ImageComponent`.
+7. Start the **webpack dev server** to see the `ImageComponent` render.
 
    ```shell
    $ npm run start:mock
    ```
 
-   ![Immagine aggiunta al modello](assets/map-components/image-added-mock.png)
+   ![Image added to the mock](assets/map-components/image-added-mock.png)
 
-   *Immagine aggiunta all&#39;applicazione a pagina singola*
+   *Image added to the SPA*
 
    >[!NOTE]
    >
-   > **Richiesta bonus**: implementa un nuovo metodo per visualizzare il valore di `title` come didascalia sotto l&#39;immagine.
+   > **Bonus challenge**: Implement a new method to display the value of `title` as a caption beneath the image.
 
-## Aggiornare i criteri in AEM
+## Update Policies in AEM
 
-Il componente `ImageComponent` è visibile solo nel server di sviluppo **webpack**. Quindi, distribuisci l’applicazione a pagina singola aggiornata in AEM e aggiorna i criteri dei modelli.
+The `ImageComponent` component is only visible in the **webpack dev server**. Next, deploy the updated SPA to AEM and update the template policies.
 
-1. Arresta il **server di sviluppo Webpack** e dalla **radice** del progetto, distribuisci le modifiche in AEM utilizzando le abilità Maven:
+1. Stop the **webpack dev server** and from the **root** of the project, deploy the changes to AEM using your Maven skills:
 
    ```shell
    $ cd aem-guides-wknd-spa
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. Dalla schermata iniziale di AEM, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]** > **[Angular SPA WKND](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
+2. From the AEM Start screen navigate to **[!UICONTROL Tools]** > **[!UICONTROL Templates]** > **[WKND SPA Angular](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
 
-   Seleziona e modifica la **pagina SPA**:
+   Select and edit the **SPA Page**:
 
-   ![Modifica modello pagina applicazione a pagina singola](assets/map-components/edit-spa-page-template.png)
+   ![Edit SPA Page Template](assets/map-components/edit-spa-page-template.png)
 
-3. Seleziona il **Contenitore di layout** e fai clic sulla relativa icona **criterio** per modificare il criterio:
+3. Select the **Layout Container** and click it&#39;s **policy** icon to edit the policy:
 
-   ![Criteri contenitore layout](./assets/map-components/layout-container-policy.png)
+   ![Layout Container Policy](./assets/map-components/layout-container-policy.png)
 
-4. In **Componenti consentiti** > **Angular SPA WKND - Contenuto** > controlla il componente **Immagine**:
+4. Under **Allowed Components** > **WKND SPA Angular - Content** > check the **Image** component:
 
-   ![Componente immagine selezionato](assets/map-components/check-image-component.png)
+   ![Image Component selected](assets/map-components/check-image-component.png)
 
-   In **Componenti predefiniti** > **Aggiungi mappatura** e scegli il componente **Immagine - Angular SPA WKND - Contenuto**:
+   Under **Default Components** > **Add mapping** and choose the **Image - WKND SPA Angular - Content** component:
 
-   ![Imposta componenti predefiniti](assets/map-components/default-components.png)
+   ![Set default components](assets/map-components/default-components.png)
 
-   Immetti un tipo **mime** di `image/*`.
+   Enter a **mime type** of `image/*`.
 
-   Fai clic su **Fine** per salvare gli aggiornamenti dei criteri.
+   Click **Done** to save the policy updates.
 
-5. Nel **Contenitore di layout** fare clic sull&#39;icona **criterio** per il componente **Testo**:
+5. In the **Layout Container** click the **policy** icon for the **Text** component:
 
-   ![Icona criterio componente testo](./assets/map-components/edit-text-policy.png)
+   ![Text component policy icon](./assets/map-components/edit-text-policy.png)
 
-   Crea un nuovo criterio denominato **Testo SPA WKND**. In **Plug-in** > **Formattazione** > seleziona tutte le caselle per abilitare opzioni di formattazione aggiuntive:
+   Create a new policy named **WKND SPA Text**. Under **Plugins** > **Formatting** > check all the boxes to enable additional formatting options:
 
-   ![Abilita formattazione editor Rich Text](assets/map-components/enable-formatting-rte.png)
+   ![Enable RTE Formatting](assets/map-components/enable-formatting-rte.png)
 
-   In **Plug-in** > **Stili di paragrafo** > seleziona la casella per **Abilitare gli stili di paragrafo**:
+   Under **Plugins** > **Paragraph Styles** > check the box to **Enable paragraph styles**:
 
    ![Abilita stili paragrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
@@ -437,19 +437,19 @@ Esaminiamo ulteriormente il Contenitore di layout.
 
    Il componente **Contenitore di layout** ha `sling:resourceType` di `wcm/foundation/components/responsivegrid` ed è riconosciuto dall&#39;editor SPA tramite la proprietà `:type`, proprio come i componenti `Text` e `Image`.
 
-   Le stesse funzionalità di ridimensionamento di un componente mediante la [modalità Layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=it#defining-layouts-layout-mode) sono disponibili con l&#39;editor SPA.
+   Le stesse funzionalità di ridimensionamento di un componente mediante la [modalità Layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sono disponibili con l&#39;editor SPA.
 
 3. Torna a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Aggiungi altri componenti **Immagine** e prova a ridimensionarli utilizzando l&#39;opzione **Layout**:
 
    ![Ridimensiona l&#39;immagine utilizzando la modalità Layout](./assets/map-components/responsive-grid-layout-change.gif)
 
-4. Riapri il modello JSON [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) e osserva `columnClassNames` come parte del JSON:
+4. Riapri il modello JSON [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) e osserva `columnClassNames` come parte del codice JSON:
 
    ![Nomi classi colonna](./assets/map-components/responsive-grid-classnames.png)
 
    Il nome di classe `aem-GridColumn--default--4` indica che il componente deve avere una larghezza di 4 colonne in base a una griglia a 12 colonne. Ulteriori dettagli sulla [griglia reattiva sono disponibili qui](https://adobe-marketing-cloud.github.io/aem-responsivegrid/).
 
-5. Tornare all&#39;IDE e nel modulo `ui.apps` è presente una libreria lato client definita in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-grid`. Aprire il file `less/grid.less`.
+5. Tornare all&#39;IDE e nel modulo `ui.apps` è presente una libreria lato client definita in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-grid`. Apri il file in `less/grid.less`.
 
    Questo file determina i punti di interruzione (`default`, `tablet` e `phone`) utilizzati dal **Contenitore di layout**. Questo file è stato progettato per essere personalizzato in base alle specifiche del progetto. Attualmente i punti di interruzione sono impostati su `1200px` e `650px`.
 
@@ -479,7 +479,7 @@ I passaggi successivi verranno eseguiti utilizzando l&#39;IDE del codice di Visu
 
 2. Espandi il modulo **ui.content** in Esplora progetti e passa a `/conf/wknd-spa-angular/settings/wcm/templates`.
 
-3. **Fare clic con il pulsante destro del mouse** sulla cartella `templates` e selezionare **Importa da AEM Server**:
+3. **Fai clic con il pulsante destro del mouse** sulla cartella `templates` e seleziona **Importa da AEM Server**:
 
    ![Modello di importazione VSCode](assets/map-components/import-aem-servervscode.png)
 
@@ -498,6 +498,6 @@ I passaggi successivi verranno eseguiti utilizzando l&#39;IDE del codice di Visu
     </workspaceFilter>
    ```
 
-   Il file `filter.xml` è responsabile dell&#39;identificazione dei percorsi dei nodi installati con il pacchetto. Osserva `mode="merge"` su ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, ma che verrà aggiunto solo il nuovo contenuto. Poiché gli autori di contenuto potrebbero aggiornare questi percorsi, è importante che una distribuzione del codice **non** sovrascriva il contenuto. Per ulteriori informazioni sull&#39;utilizzo degli elementi del filtro, vedere la [documentazione di FileVault](https://jackrabbit.apache.org/filevault/filter.html).
+   Il file `filter.xml` è responsabile dell&#39;identificazione dei percorsi dei nodi installati con il pacchetto. Osserva `mode="merge"` su ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, ma che verrà aggiunto solo il nuovo contenuto. Poiché gli autori di contenuto potrebbero aggiornare questi percorsi, è importante che una distribuzione del codice **non** sovrascriva il contenuto. Per ulteriori informazioni sull&#39;utilizzo degli elementi del filtro, consulta la [documentazione di FileVault](https://jackrabbit.apache.org/filevault/filter.html).
 
-   Confrontare `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.
+   Confronta `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.

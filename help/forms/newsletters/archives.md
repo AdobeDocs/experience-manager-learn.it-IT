@@ -1,40 +1,40 @@
 ---
-title: Archivio mensile newsletter di Experience League.
-description: Scarica le versioni archiviate della newsletter.
+title: Experience League Monthly Newsletters Archive.
+description: Download archived versions of the newsletter.
 hidefromtoc: true
 hide: true
 exl-id: 16133400-b4c6-4d86-9c28-d5e230d55839
-source-git-commit: cfe98419bc04ad757adb8a14dde9068e62f0ea78
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
 
 ---
 
-# Archivio newsletter mensile Experience League
+# Experience League Monthly Newsletters Archive
 
-Le nostre newsletter mensili sui contenuti di Experience League sono disponibili per il download su questa pagina. Seleziona un mese per accedere e scaricare l’edizione corrispondente.
+Our monthly Experience League Content Newsletters are available for download on this page. Please select a month to access and download the corresponding edition.
 
-| Newsletter del 2025 |
+| 2025 newsletters |
 |------------|
-| [Gennaio](assets/Jan-Newsletter.pdf) |
-| [Febbraio](assets/Feb-Newsletter.pdf) |
-| [Marzo](assets/March-Newsletter.pdf) |
-| [Aprile](assets/April-Newsletter.pdf) |
-| [Maggio](assets/May-Newsletter.pdf) |
-| [Giugno](assets/June-Newsletter.pdf) |
-| [Luglio](assets/July-Newsletter.pdf) |
-| [Agosto](assets/August-Newsletter.pdf) |
-| [Settembre](assets/Sept-Newsletter.pdf) |
-| [Ottobre](assets/Oct-Newsletter.pdf) |
-| [Novembre](assets/Nov-Newsletter.pdf) |
-| [Dicembre](assets/Dec-Newsletter.pdf) |
+| [January](assets/Jan-Newsletter.pdf) |
+| [February](assets/Feb-Newsletter.pdf) |
+| [March](assets/March-Newsletter.pdf) |
+| [April](assets/April-Newsletter.pdf) |
+| [May](assets/May-Newsletter.pdf) |
+| [June](assets/June-Newsletter.pdf) |
+| [July](assets/July-Newsletter.pdf) |
+| [August](assets/August-Newsletter.pdf) |
+| [September](assets/Sept-Newsletter.pdf) |
+| [October](assets/Oct-Newsletter.pdf) |
+| [November](assets/Nov-Newsletter.pdf) |
+| [December](assets/Dec-Newsletter.pdf) |
 
 
-| Newsletter del 2026 |
+| 2026 newsletters |
 |------------|
-| [Gennaio](assets/Jan-2026.pdf) |
-| [Febbraio](assets/Feb-2026.pdf) |
-| [Marzo](assets/March-2026.pdf) |
+| [January](assets/Jan-2026.pdf) |
+| [February](assets/Feb-2026.pdf) |
+| [March](assets/March-2026.pdf) |
 
 

@@ -13,10 +13,10 @@ exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
 duration: 71
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
-source-wordcount: '417'
-ht-degree: 100%
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 86%
 
 ---
 
@@ -62,10 +62,10 @@ Per completare questo tutorial è necessario un ambiente di sviluppo locale. Le 
 
 >[!NOTE]
 >
-> **Ti avvicini adesso ad AEM as a Cloud Service?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview).
+> **Novità di AEM as a Cloud Service?** Consulta la [guida seguente per configurare un ambiente di sviluppo locale utilizzando AEM as a Cloud Service SDK](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview).
 >
-> **Utilizzi AEM 6.5 per la prima volta?** Consulta la [guida seguente per configurare un ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
+> **Novità di AEM 6.5?** Consulta la [guida seguente per configurare un ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
 ## Passaggi successivi {#next-steps}
 
-Per iniziare il tutorial, passa al capitolo [Crea progetto](create-project.md) e scopri come creare un progetto abilitato per l’editor SPA utilizzando l’archetipo di progetto AEM.
+Cosa state aspettando?! Avvia l&#39;esercitazione passando al capitolo [Crea progetto](create-project.md) e scopri come generare un progetto abilitato per l&#39;editor SPA utilizzando l&#39;archetipo di progetto AEM.

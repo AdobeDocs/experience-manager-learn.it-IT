@@ -1,6 +1,6 @@
 ---
-title: Successo nel mondo reale con generazione di varianti
-description: Emily Kellman condivide come Adobe.com utilizzasse Generare varianti per velocizzare la trasmissione dei contenuti, ridurre le timeline e stimolare le conversioni.
+title: Real-World Success with Generate Variations
+description: Emily Kellman shares how Adobe.com used Generate Variations to increase content velocity, reduce timelines, and boost conversions.
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: df0a03c1-d278-4c45-afff-bfbdaffe83bd
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '44'
+source-wordcount: '46'
 ht-degree: 0%
 
 ---
 
-# Successo nel mondo reale con generazione di varianti
+# Real-World Success with Generate Variations
 
-Emily Kellman condivide come Adobe.com utilizzasse Generare varianti per velocizzare la trasmissione dei contenuti, ridurre le timeline e stimolare le conversioni.
+Emily Kellman shares how Adobe.com used Generate Variations to increase content velocity, reduce timelines, and boost conversions.
 
->[!VIDEO](https://video.tv.adobe.com/v/3462726/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459232/?learn=on&enablevpops)

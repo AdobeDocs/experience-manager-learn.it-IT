@@ -1,6 +1,6 @@
 ---
-title: Problematiche relative all'individuazione e al riutilizzo dei contenuti
-description: Comprendi le difficoltà che le organizzazioni incontrano nell’individuare e riutilizzare i contenuti e come Experience Generation risolve questi problemi.
+title: Content Discovery and Reuse Challenges
+description: Understand the difficulties organizations face in discovering and reusing content, and how Experience Generation addresses these issues.
 cloud: Experience Cloud
 solution: Experience Manager Assets, Experience Manager Sites
 feature-set: Experience Manager Assets, Experience Manager Sites
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 07b2d50c-9243-4142-9357-29c36856c29d
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%
 
 ---
 
-# Problematiche relative all&#39;individuazione e al riutilizzo dei contenuti
+# Content Discovery and Reuse Challenges
 
-Comprendi le difficoltà che le organizzazioni incontrano nell’individuare e riutilizzare i contenuti e come Experience Generation risolve questi problemi.
+Understand the difficulties organizations face in discovering and reusing content, and how Experience Generation addresses these issues.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459243/?learn=on&enablevpops)

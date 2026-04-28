@@ -13,10 +13,10 @@ doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 0%
+source-wordcount: '1278'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,7 @@ $ cd remote-spa-tutorial
 
 ## Creazione di un progetto AEM
 
-Crea un progetto AEM in cui vengono gestite le configurazioni e i contenuti della linea di base. Questo progetto verrà generato nella cartella `aem-guides-wknd-graphql` del progetto `remote-spa-tutorial` clonato.
+Crea un progetto AEM in cui vengono gestite le configurazioni e i contenuti della linea di base. Questo progetto verrà generato nella cartella `remote-spa-tutorial` del progetto `aem-guides-wknd-graphql` clonato.
 
 _Utilizza sempre la versione più recente di [Archetipo AEM](https://github.com/adobe/aem-project-archetype)._
 
@@ -69,22 +69,22 @@ Se si specifica `frontendModule="react"`, il progetto `ui.frontend` non viene ut
 
 L’Archetipo progetto AEM genera i seguenti elementi che vengono utilizzati per configurare AEM per l’integrazione con l’applicazione a pagina singola.
 
-* **Proxy dei componenti core WCM di AEM** in `ui.apps/src/.../apps/wknd-app/components`
-* **Proxy pagina remota per applicazioni a pagina singola di AEM** alle `ui.apps/src/.../apps/wknd-app/components/remotepage`
-* **Modelli di pagina AEM** in `ui.content/src/.../conf/wknd-app/settings/wcm/templates`
-* **Sottoprogetto per definire le mappature dei contenuti** in `ui.content/src/...`
-* **Pagine AEM SPA remote previste** alle `ui.content/src/.../content/wknd-app`
-* **Cartelle di configurazione OSGi** in `ui.config/src/.../apps/wknd-app/osgiconfig`
+* **AEM WCM Core Components proxies** at `ui.apps/src/.../apps/wknd-app/components`
+* **AEM SPA Remote Page proxy** at `ui.apps/src/.../apps/wknd-app/components/remotepage`
+* **AEM Page Templates** at `ui.content/src/.../conf/wknd-app/settings/wcm/templates`
+* **Subproject to define content mappings** at `ui.content/src/...`
+* **Baseline Remote SPA AEM pages** at `ui.content/src/.../content/wknd-app`
+* **OSGi configuration folders** at `ui.config/src/.../apps/wknd-app/osgiconfig`
 
-Quando viene generato il progetto di base AEM, alcune modifiche garantiscono la compatibilità dell’editor SPA con le applicazioni a pagina singola remote.
+With the base AEM project is generated, a few adjustments ensure SPA Editor compatibility with Remote SPAs.
 
-## Rimuovi progetto ui.frontend
+## Remove ui.frontend project
 
-Poiché l’applicazione a pagina singola è un’applicazione a pagina singola remota, supponiamo che sia sviluppata e gestita al di fuori del progetto AEM. Per evitare conflitti, rimuovere il progetto `ui.frontend` dalla distribuzione. Se il progetto `ui.frontend` non viene rimosso, due applicazioni a pagina singola, quella predefinita fornita nel progetto `ui.frontend` e quella remota, vengono caricate contemporaneamente nell&#39;editor di applicazioni a pagina singola di AEM.
+Since the SPA is a Remote SPA, assume it&#39;s developed and managed outside of the AEM project. To avoid conflicts, remove the `ui.frontend` project from deploying. If the `ui.frontend` project is not removed, two SPAs, the default SPA provided in the `ui.frontend` project and the Remote SPA, is loaded at the same time in the AEM SPA Editor.
 
-1. Apri il progetto AEM (`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) nell&#39;IDE
-1. Apri la directory principale `pom.xml`
-1. Commenta `<module>ui.frontend</module` dall&#39;elenco `<modules>`
+1. Open the AEM project (`~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app`) in your IDE
+1. Open the root `pom.xml`
+1. Comment the `<module>ui.frontend</module` out from the `<modules>` list
 
    ```
    <modules>
@@ -106,10 +106,10 @@ Poiché l’applicazione a pagina singola è un’applicazione a pagina singola 
 
    Il file `pom.xml` deve essere simile al seguente:
 
-   ![Rimuovi il modulo ui.frontend dal POM di Reactor](./assets/aem-project/uifrontend-reactor-pom.png)
+   ![Remove ui.frontend module from reactor pom](./assets/aem-project/uifrontend-reactor-pom.png)
 
-1. Apri `ui.apps/pom.xml`
-1. Commento su `<dependency>` il `<artifactId>wknd-app.ui.frontend</artifactId>`
+1. Open the `ui.apps/pom.xml`
+1. Comment out the `<dependency>` on `<artifactId>wknd-app.ui.frontend</artifactId>`
 
    ```
    <dependencies>
@@ -127,24 +127,24 @@ Poiché l’applicazione a pagina singola è un’applicazione a pagina singola 
 
    Il file `ui.apps/pom.xml` deve essere simile al seguente:
 
-   ![Rimuovi la dipendenza ui.frontend da ui.apps](./assets/aem-project/uifrontend-uiapps-pom.png)
+   ![Remove ui.frontend dependency from ui.apps](./assets/aem-project/uifrontend-uiapps-pom.png)
 
-Se il progetto AEM è stato creato prima di queste modifiche, eliminare manualmente la libreria client generata da `ui.frontend` dal progetto `ui.apps` in `ui.apps/src/main/content/jcr_root/apps/wknd-app/clientlibs/clientlib-react`.
+If the AEM project was built before these changes, manually delete the `ui.frontend` generated Client Library from the `ui.apps` project at `ui.apps/src/main/content/jcr_root/apps/wknd-app/clientlibs/clientlib-react`.
 
-## Mappatura dei contenuti AEM
+## AEM content mapping
 
-Affinché AEM possa caricare l’applicazione a pagina singola remota nell’editor di applicazioni a pagina singola, è necessario stabilire le mappature tra le route dell’applicazione a pagina singola e le pagine AEM utilizzate per aprire e creare i contenuti.
+For AEM to load the Remote SPA in the SPA Editor, mappings between the SPA&#39;s routes and the AEM Pages used to open and author content must be established.
 
-L’importanza di questa configurazione viene esaminata in seguito.
+The importance of this configuration is explored later.
 
-È possibile eseguire la mappatura con [Mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1) definita in `/etc/map`.
+The mapping can be done with [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1) defined in `/etc/map`.
 
-1. Nell&#39;IDE, apri il sottoprogetto `ui.content`
-1. Passa a `src/main/content/jcr_root`
-1. Crea una cartella `etc`
-1. In `etc`, creare una cartella `map`
-1. In `map`, creare una cartella `http`
-1. In `http`, creare un file `.content.xml` con il contenuto:
+1. In the IDE, open the `ui.content` subproject
+1. Navigate to  `src/main/content/jcr_root`
+1. Create a folder `etc`
+1. In `etc`, create a folder `map`
+1. In `map`, create a folder `http`
+1. In `http`, create a file `.content.xml` with the contents:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -154,8 +154,8 @@ L’importanza di questa configurazione viene esaminata in seguito.
    </jcr:root>
    ```
 
-1. In `http` , creare una cartella `localhost_any`
-1. In `localhost_any`, creare un file `.content.xml` con il contenuto:
+1. In `http` , create a folder `localhost_any`
+1. In `localhost_any`, create a file `.content.xml` with the contents:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -166,8 +166,8 @@ L’importanza di questa configurazione viene esaminata in seguito.
    </jcr:root>
    ```
 
-1. In `localhost_any` , creare una cartella `wknd-app-routes-adventure`
-1. In `wknd-app-routes-adventure`, creare un file `.content.xml` con il contenuto:
+1. In `localhost_any` , create a folder `wknd-app-routes-adventure`
+1. In `wknd-app-routes-adventure`, create a file `.content.xml` with the contents:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -185,7 +185,7 @@ L’importanza di questa configurazione viene esaminata in seguito.
        sling:internalRedirect="/content/wknd-app/us/en/home/adventure/$1"/>
    ```
 
-1. Aggiungere i nodi di mappatura a `ui.content/src/main/content/META-INF/vault/filter.xml` a quelli inclusi nel pacchetto AEM.
+1. Add the mapping nodes to `ui.content/src/main/content/META-INF/vault/filter.xml` to they included in the AEM package.
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -200,25 +200,25 @@ L’importanza di questa configurazione viene esaminata in seguito.
    </workspaceFilter>
    ```
 
-La struttura delle cartelle e i file `.context.xml` dovrebbero essere simili a:
+The folder structure and `.context.xml` files should look like:
 
-![Mappatura Sling](./assets/aem-project/sling-mapping.png)
+![Sling Mapping](./assets/aem-project/sling-mapping.png)
 
 Il file `filter.xml` deve essere simile al seguente:
 
-![Mappatura Sling](./assets/aem-project/sling-mapping-filter.png)
+![Sling Mapping](./assets/aem-project/sling-mapping-filter.png)
 
-Ora, quando il progetto AEM viene implementato, queste configurazioni vengono incluse automaticamente.
+Now, when the AEM project is deployed, these configurations are automatically included.
 
-Gli effetti di mappatura Sling in AEM sono in esecuzione su `http` e `localhost`, pertanto supportano solo lo sviluppo locale. Durante la distribuzione in AEM as a Cloud Service, è necessario aggiungere mappature Sling simili che hanno come destinazione `https` e i domini AEM as a Cloud Service appropriati. Per ulteriori informazioni, consulta la [documentazione sulle mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
+The Sling Mapping effects AEM running on `http` and `localhost`, so only support local development. When deploying to AEM as a Cloud Service, similar Sling Mappings must be added that target `https` and the appropriate AEM as a Cloud Service domain/s. For more information, see the [Sling Mapping documentation](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
 
-## Criteri di sicurezza per la condivisione delle risorse tra diverse origini
+## Cross-Origin Resource Sharing security policies
 
-Quindi, configura AEM per proteggere il contenuto in modo che solo questa applicazione a pagina singola possa accedere al contenuto di AEM. Configura [Condivisione risorse tra le origini in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=it).
+Next, configure AEM to protect the content so only this SPA can access the AEM content. Configure [Cross-Origin Resource Sharing in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
-1. Nell&#39;IDE aprire il sottoprogetto Maven `ui.config`
-1. Passa a `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
-1. Crea un file denominato `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json`
+1. In your IDE, open the `ui.config` Maven subproject
+1. Navigate `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
+1. Create a file named `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json`
 1. Aggiungi quanto segue al file:
 
    ```

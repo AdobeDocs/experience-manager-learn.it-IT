@@ -1,6 +1,6 @@
 ---
-title: Ricerca semantica in AEM Assets
-description: Scopri in che modo la ricerca semantica in AEM Assets consente di trovare contenuti che corrispondono al tuo intento in modo più efficace.
+title: Semantic Search in AEM Assets
+description: Explore how Semantic Search in AEM Assets helps you find content that matches your intent more effectively.
 cloud: Experience Cloud
 solution: Experience Manager
 feature-set: Experience Manager
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 1666878c-11ee-4f94-a307-605d96e21619
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%
 
 ---
 
-# Ricerca semantica in AEM Assets
+# Semantic Search in AEM Assets
 
-Scopri in che modo la ricerca semantica in AEM Assets consente di trovare contenuti che corrispondono al tuo intento in modo più efficace.
+Explore how Semantic Search in AEM Assets helps you find content that matches your intent more effectively.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461896/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459226/?learn=on&enablevpops)

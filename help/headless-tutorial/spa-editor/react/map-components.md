@@ -1,5 +1,5 @@
 ---
-title: Mappare i componenti dell’applicazione a pagina singola ai componenti di AEM | Guida introduttiva dell’Editor SPA di AEM e React
+title: Mappare i componenti dell’applicazione a pagina singola ai componenti di AEM | Guida introduttiva all’Editor applicazioni a pagina singola di AEM e React
 description: Scopri come mappare i componenti React ai componenti Adobe Experience Manager (AEM) con AEM SPA Editor JS SDK. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti delle applicazioni a pagina singola nell’Editor delle applicazioni a pagina singola di AEM, in modo simile all’authoring tradizionale AEM. Scoprirai anche come utilizzare i componenti core React di AEM forniti con il prodotto.
 feature: SPA Editor
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
 duration: 477
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2123'
-ht-degree: 0%
+source-wordcount: '2357'
+ht-degree: 8%
 
 ---
 
@@ -41,7 +41,7 @@ In questo capitolo viene verificato il modo in cui il componente SPA `Text` forn
 
 ## Prerequisiti
 
-Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment). Questo capitolo è una continuazione del capitolo [Integrare l&#39;applicazione a pagina singola](integrate-spa.md), tuttavia seguire tutto ciò che ti serve è un progetto AEM abilitato per l&#39;applicazione a pagina singola.
+Rivedi gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment). Questo capitolo è una continuazione del capitolo [Integrare l&#39;applicazione a pagina singola](integrate-spa.md), tuttavia seguire tutto ciò che ti serve è un progetto AEM abilitato per l&#39;applicazione a pagina singola.
 
 ## Approccio di mappatura
 
@@ -70,7 +70,7 @@ Vediamo come funziona il componente.
 
    `text` e `richText` sono proprietà aggiuntive esposte al componente SPA.
 
-1. Visualizza l&#39;output JSON in [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Dovresti essere in grado di trovare una voce simile a:
+1. View the JSON output at [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). You should be able to find an entry similar to:
 
    ```json
    "text": {
@@ -82,11 +82,11 @@ Vediamo come funziona il componente.
       }
    ```
 
-### Controllare il componente Text SPA
+### Inspect the Text SPA component
 
-1. Nell’IDE che preferisci, apri il progetto AEM per l’applicazione a pagina singola. Espandere il modulo `ui.frontend` e aprire il file `Text.js` in `ui.frontend/src/components/Text/Text.js`.
+1. In the IDE of your choice open up the AEM Project for the SPA. Expand the `ui.frontend` module and open the file `Text.js` under `ui.frontend/src/components/Text/Text.js`.
 
-1. La prima area da controllare è `class Text` a ~riga 40:
+1. The first area we will inspect is the `class Text` at ~line 40:
 
    ```js
    class Text extends Component {
@@ -109,11 +109,11 @@ Vediamo come funziona il componente.
    }
    ```
 
-   `Text` è un componente React standard. Il componente utilizza `this.props.richText` per determinare se il contenuto da riprodurre sarà in formato Rich Text o testo normale. Il &quot;contenuto&quot; effettivo utilizzato proviene da `this.props.text`.
+   `Text` is a standard React component. The component uses `this.props.richText` to determine whether the content to render is going to be rich text or plain text. The actual &quot;content&quot; used comes from `this.props.text`.
 
-   Per evitare un potenziale attacco XSS, al testo RTF viene applicato l&#39;escape tramite `DOMPurify` prima di utilizzare [dangerouslySetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) per il rendering del contenuto. Richiama le proprietà `richText` e `text` dal modello JSON in precedenza nell&#39;esercizio.
+   To avoid a potential XSS attack, the rich text is escaped via `DOMPurify` before using [dangerouslySetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) to render the content. Recall the `richText` and `text` properties from the JSON model earlier in the exercise.
 
-1. Apri `ui.frontend/src/components/import-components.js`, quindi dai un&#39;occhiata a `TextEditConfig` alla ~riga 86:
+1. Next, open `ui.frontend/src/components/import-components.js` take a look at the `TextEditConfig` at ~line 86:
 
    ```js
    const TextEditConfig = {
@@ -127,19 +127,19 @@ Vediamo come funziona il componente.
 
    Il codice di cui sopra è responsabile di determinare quando eseguire il rendering del segnaposto nell’ambiente di authoring di AEM. Se il metodo `isEmpty` restituisce **true**, viene eseguito il rendering del segnaposto.
 
-1. Infine, dare un&#39;occhiata alla chiamata `MapTo` a ~riga 94:
+1. Finally take a look at the `MapTo` call at ~line 94:
 
    ```js
    export default MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
    ```
 
-   `MapTo` è fornito da AEM SPA Editor JS SDK (`@adobe/aem-react-editable-components`). Il percorso `wknd-spa-react/components/text` rappresenta `sling:resourceType` del componente AEM. Questo percorso viene confrontato con `:type` esposto dal modello JSON osservato in precedenza. `MapTo` si occupa di analizzare la risposta del modello JSON e di passare i valori corretti come `props` al componente SPA.
+   `MapTo` is provided by the AEM SPA Editor JS SDK (`@adobe/aem-react-editable-components`). Il percorso `wknd-spa-react/components/text` rappresenta `sling:resourceType` del componente AEM. Questo percorso viene confrontato con `:type` esposto dal modello JSON osservato in precedenza. `MapTo` takes care of parsing the JSON model response and passing the correct values as `props` to the SPA component.
 
    La definizione del componente AEM `Text` è disponibile in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/text`.
 
-## Utilizzare i componenti core React
+## Use React Core Components
 
-[Componenti AEM WCM - Implementazione React Core](https://github.com/adobe/aem-react-core-wcm-components-base) e [Componenti AEM WCM - Editor SPA - Implementazione React Core](https://github.com/adobe/aem-react-core-wcm-components-spa). Si tratta di un set di componenti riutilizzabili dell’interfaccia utente mappati su componenti AEM predefiniti. La maggior parte dei progetti può riutilizzare questi componenti come punto di partenza per la propria implementazione.
+[AEM WCM Components - React Core implementation](https://github.com/adobe/aem-react-core-wcm-components-base) and [AEM WCM Components - Spa editor - React Core implementation](https://github.com/adobe/aem-react-core-wcm-components-spa). These are a set of re-usable UI components that map to out of the box AEM components. Most projects can re-use these components as a starting point for their own implementation.
 
 1. Nel codice del progetto apri il file `import-components.js` in `ui.frontend/src/components`.
 Questo file importa tutti i componenti SPA mappati ai componenti AEM. Data la natura dinamica dell’implementazione dell’editor di applicazioni a pagina singola, è necessario fare riferimento esplicito a qualsiasi componente di applicazioni a pagina singola associato ai componenti Author di AEM. Questo consente all’autore di AEM di scegliere di utilizzare un componente in qualsiasi posizione all’interno dell’applicazione.
@@ -184,7 +184,7 @@ I criteri sono una funzione dei modelli di AEM e offrono agli sviluppatori e agl
 
    ![Abilita formattazione editor Rich Text](assets/map-components/enable-formatting-rte.png)
 
-   In **Plug-in** > **Stili di paragrafo** > seleziona la casella per **Abilitare gli stili di paragrafo**:
+   Under **Plugins** > **Paragraph Styles** > check the box to **Enable paragraph styles**:
 
    ![Abilita stili paragrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
@@ -192,11 +192,11 @@ I criteri sono una funzione dei modelli di AEM e offrono agli sviluppatori e agl
 
 ### Contenuto autore
 
-1. Passa alla **home page** [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
+1. Navigate to the **Homepage** [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
 
-1. Ora dovresti essere in grado di utilizzare i componenti aggiuntivi **Immagine**, **Teaser** e **Titolo** nella pagina.
+1. You should now be able to use the additional components **Image**, **Teaser**, and **Title** on the page.
 
-   ![Componenti aggiuntivi](assets/map-components/additional-components.png)
+   ![Additional components](assets/map-components/additional-components.png)
 
 1. Dovresti anche poter modificare il componente `Text` e aggiungere altri stili di paragrafo in modalità **schermo intero**.
 
@@ -206,7 +206,7 @@ I criteri sono una funzione dei modelli di AEM e offrono agli sviluppatori e agl
 
    ![Trascina e rilascia l&#39;immagine](assets/map-components/drag-drop-image.png)
 
-1. Esperienza con i componenti **Title** e **Teaser**.
+1. Experiement with the **Title** and **Teaser** components.
 
 1. Aggiungi le tue immagini tramite [AEM Assets](http://localhost:4502/assets.html/content/dam) o installa la base di codice completata per il [sito di riferimento WKND standard](https://github.com/adobe/aem-guides-wknd/releases/latest). Il [sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) include molte immagini che possono essere riutilizzate nell&#39;applicazione a pagina singola WKND. È possibile installare il pacchetto utilizzando [Gestione pacchetti di AEM](http://localhost:4502/crx/packmgr/index.jsp).
 
@@ -218,25 +218,25 @@ Il supporto per **Contenitore di layout** viene fornito automaticamente da AEM S
 
 Esaminiamo ulteriormente il Contenitore di layout.
 
-1. In un browser passa a [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
+1. In a browser navigate to [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
 
    ![API modello JSON - Griglia reattiva](./assets/map-components/responsive-grid-modeljson.png)
 
    Il componente **Contenitore di layout** ha `sling:resourceType` di `wcm/foundation/components/responsivegrid` ed è riconosciuto dall&#39;editor SPA tramite la proprietà `:type`, proprio come i componenti `Text` e `Image`.
 
-   Le stesse funzionalità di ridimensionamento di un componente mediante la [modalità Layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=it#defining-layouts-layout-mode) sono disponibili con l&#39;editor SPA.
+   Le stesse funzionalità di ridimensionamento di un componente mediante la [modalità Layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sono disponibili con l&#39;editor SPA.
 
 2. Torna a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Aggiungi altri componenti **Immagine** e prova a ridimensionarli utilizzando l&#39;opzione **Layout**:
 
    ![Ridimensiona l&#39;immagine utilizzando la modalità Layout](./assets/map-components/responsive-grid-layout-change.gif)
 
-3. Riapri il modello JSON [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) e osserva `columnClassNames` come parte del JSON:
+3. Riapri il modello JSON [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) e osserva `columnClassNames` come parte del codice JSON:
 
    ![Nomi classi colonna](./assets/map-components/responsive-grid-classnames.png)
 
    Il nome di classe `aem-GridColumn--default--4` indica che il componente deve avere una larghezza di 4 colonne in base a una griglia a 12 colonne. Ulteriori dettagli sulla [griglia reattiva sono disponibili qui](https://adobe-marketing-cloud.github.io/aem-responsivegrid/).
 
-4. Tornare all&#39;IDE e nel modulo `ui.apps` è presente una libreria lato client definita in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-grid`. Aprire il file `less/grid.less`.
+4. Tornare all&#39;IDE e nel modulo `ui.apps` è presente una libreria lato client definita in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-grid`. Apri il file in `less/grid.less`.
 
    Questo file determina i punti di interruzione (`default`, `tablet` e `phone`) utilizzati dal **Contenitore di layout**. Questo file è stato progettato per essere personalizzato in base alle specifiche del progetto. Attualmente i punti di interruzione sono impostati su `1200px` e `768px`.
 
@@ -264,7 +264,7 @@ I passaggi successivi verranno eseguiti utilizzando l&#39;IDE del codice di Visu
 
 2. Espandi il modulo **ui.content** in Esplora progetti e passa a `/conf/wknd-spa-react/settings/wcm/templates`.
 
-3. **Fare clic con il pulsante destro del mouse** sulla cartella `templates` e selezionare **Importa da AEM Server**:
+3. **Fai clic con il pulsante destro del mouse** sulla cartella `templates` e seleziona **Importa da AEM Server**:
 
    ![Modello di importazione VSCode](./assets/map-components/import-aem-servervscode.png)
 
@@ -283,9 +283,9 @@ I passaggi successivi verranno eseguiti utilizzando l&#39;IDE del codice di Visu
     </workspaceFilter>
    ```
 
-   Il file `filter.xml` è responsabile dell&#39;identificazione dei percorsi dei nodi installati con il pacchetto. Osserva `mode="merge"` su ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, ma che verrà aggiunto solo il nuovo contenuto. Poiché gli autori di contenuto potrebbero aggiornare questi percorsi, è importante che una distribuzione del codice **non** sovrascriva il contenuto. Per ulteriori informazioni sull&#39;utilizzo degli elementi del filtro, vedere la [documentazione di FileVault](https://jackrabbit.apache.org/filevault/filter.html).
+   Il file `filter.xml` è responsabile dell&#39;identificazione dei percorsi dei nodi installati con il pacchetto. Osserva `mode="merge"` su ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, ma che verrà aggiunto solo il nuovo contenuto. Poiché gli autori di contenuto potrebbero aggiornare questi percorsi, è importante che una distribuzione del codice **non** sovrascriva il contenuto. Per ulteriori informazioni sull&#39;utilizzo degli elementi del filtro, consulta la [documentazione di FileVault](https://jackrabbit.apache.org/filevault/filter.html).
 
-   Confrontare `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.
+   Confronta `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.
 
 ## (Bonus) Creare un componente immagine personalizzato {#bonus-image}
 

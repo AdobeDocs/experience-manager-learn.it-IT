@@ -12,10 +12,10 @@ doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
 duration: 473
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 1%
+source-wordcount: '259'
+ht-degree: 13%
 
 ---
 
@@ -27,7 +27,7 @@ Panoramica video sull’authoring di contenuti per un’applicazione a pagina si
 
 L’editor per applicazioni a pagina singola di AEM consente agli autori di modificare il contenuto di un’applicazione a pagina singola o di un’applicazione a pagina singola. Gli sviluppatori che utilizzano il framework React creano un’applicazione a pagina singola (SPA) e quindi ne mappano le aree sui componenti AEM, consentendo agli autori di utilizzare i familiari strumenti di modifica di AEM Sites. Il video seguente illustra alcune delle funzioni di modifica nel contesto del sito di esempio WKND SPA. Il progetto SPA WKND include sia un’implementazione React.
 
->[!VIDEO](https://video.tv.adobe.com/v/326773?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -43,4 +43,4 @@ Scarica e installa il [pacchetto SPA WKND](https://github.com/adobe/aem-guides-w
 
 Per un tutorial dettagliato sullo sviluppo con l’editor SPA, consulta:
 
-* [Guida introduttiva all&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview)
+* [Guida introduttiva all’editor di SPA di AEM e React](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview)

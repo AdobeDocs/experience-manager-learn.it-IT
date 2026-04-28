@@ -1,6 +1,6 @@
 ---
-title: Il ruolo della narrazione in GenAI
-description: Scopri come i principi della narrazione nella musica country si relazionano alla progettazione di strumenti GenAI per le esperienze digitali.
+title: The Role of Storytelling in GenAI
+description: Discover how storytelling principles in country music relate to the design of GenAI tools for digital experiences.
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: f3902c6e-7f32-49ce-982a-76d264b87fd0
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
 
 ---
 
-# Il ruolo della narrazione in GenAI
+# The Role of Storytelling in GenAI
 
-Scopri come i principi della narrazione nella musica country si relazionano alla progettazione di strumenti GenAI per le esperienze digitali.
+Discover how storytelling principles in country music relate to the design of GenAI tools for digital experiences.
 
->[!VIDEO](https://video.tv.adobe.com/v/3462017/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459229/?learn=on&enablevpops)

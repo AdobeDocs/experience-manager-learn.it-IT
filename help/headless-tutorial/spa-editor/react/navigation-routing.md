@@ -1,5 +1,5 @@
 ---
-title: Aggiungi navigazione e indirizzamento | Guida introduttiva dell’Editor SPA di AEM e React
+title: Aggiungere navigazione e routing | Guida introduttiva all’Editor SPA di AEM e React
 description: Scopri come supportare più visualizzazioni nell’applicazione a pagina singola effettuando la mappatura sulle pagine AEM con l’editor per applicazioni a pagina singola SDK. La navigazione dinamica viene implementata utilizzando React Router e React Core Components.
 feature: SPA Editor
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 337
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 0%
+source-wordcount: '1721'
+ht-degree: 2%
 
 ---
 
@@ -28,54 +28,54 @@ Scopri come supportare più visualizzazioni nell’applicazione a pagina singola
 ## Obiettivo
 
 1. Comprendi le opzioni di indirizzamento del modello SPA disponibili quando utilizzi l’Editor SPA.
-1. Scopri come utilizzare [React Router](https://reacttraining.com/react-router) per spostarti tra le diverse visualizzazioni dell’applicazione a pagina singola.
-1. Utilizza i componenti core React di AEM per implementare una navigazione dinamica guidata dalla gerarchia delle pagine di AEM.
+1. Learn to use [React Router](https://reacttraining.com/react-router) to navigate between different views of the SPA.
+1. Use AEM React Core Components to implement a dynamic navigation that is driven by the AEM page hierarchy.
 
 ## Cosa verrà creato
 
-Questo capitolo aggiungerà la navigazione a un’applicazione a pagina singola in AEM. Il menu di navigazione è gestito dalla gerarchia di pagine di AEM e utilizzerà il modello JSON fornito dal [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=it).
+This chapter will add navigation to a SPA in AEM. The navigation menu is driven by the AEM page hierarchy and will make use of the JSON model provided by the [Navigation Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
-![Navigazione aggiunta](assets/navigation-routing/navigation-added.png)
+![Navigation added](assets/navigation-routing/navigation-added.png)
 
 ## Prerequisiti
 
-Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment). Questo capitolo è una continuazione del capitolo [Componenti mappa](map-components.md), tuttavia a seguire tutto ciò che serve è un progetto AEM abilitato per applicazioni a pagina singola distribuito in un&#39;istanza AEM locale.
+Rivedi gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment). This chapter is a continuation of the [Map Components](map-components.md) chapter, however to follow along all you need is a SPA-enabled AEM project deployed to a local AEM instance.
 
-## Aggiungi la navigazione al modello {#add-navigation-template}
+## Add the Navigation to the Template {#add-navigation-template}
 
-1. Apri un browser e accedi ad AEM, [http://localhost:4502/](http://localhost:4502/). La base di codice iniziale deve essere già distribuita.
-1. Passare al **Modello pagina SPA**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
-1. Seleziona il **contenitore di layout principale** più esterno e fai clic sulla relativa icona **Criteri**. Fai attenzione a **not** per selezionare il **Contenitore di layout** non bloccato per l&#39;authoring.
+1. Open a browser and login to AEM, [http://localhost:4502/](http://localhost:4502/). The starting code base should already be deployed.
+1. Navigate to the **SPA Page Template**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
+1. Select the outer-most **Root Layout Container** and click its **Policy** icon. Be careful **not** to select the **Layout Container** un-locked for authoring.
 
-   ![Seleziona l&#39;icona dei criteri del contenitore di layout principale](assets/navigation-routing/root-layout-container-policy.png)
+   ![Select the root layout container policy icon](assets/navigation-routing/root-layout-container-policy.png)
 
-1. Crea un nuovo criterio denominato **Struttura SPA**:
+1. Create a new policy named **SPA Structure**:
 
-   ![Criteri struttura SPA](assets/navigation-routing/spa-policy-update.png)
+   ![SPA Structure Policy](assets/navigation-routing/spa-policy-update.png)
 
-   In **Componenti consentiti** > **Generale** > seleziona il componente **Contenitore di layout**.
+   Under **Allowed Components** > **General** > select the **Layout Container** component.
 
-   In **Componenti consentiti** > **WKND SPA REACT - STRUCTURE** > seleziona il componente **Navigation**:
+   Under **Allowed Components** > **WKND SPA REACT - STRUCTURE** > select the **Navigation** component:
 
-   ![Seleziona componente di navigazione](assets/navigation-routing/select-navigation-component.png)
+   ![Select Navigation component](assets/navigation-routing/select-navigation-component.png)
 
-   In **Componenti consentiti** > **REACT SPA WKND - Contenuto** > seleziona i componenti **Immagine** e **Testo**. Dovresti aver selezionato 4 componenti totali.
+   Under **Allowed Components** > **WKND SPA REACT - Content** > select the **Image** and **Text** components. You should have 4 total components selected.
 
    Per salvare le modifiche, fai clic su **Completati**.
 
-1. Aggiorna la pagina e aggiungi il componente **Navigazione** sopra il **Contenitore di layout** non bloccato:
+1. Refresh the page, and add the **Navigation** component above the un-locked **Layout Container**:
 
-   ![aggiungi componente di navigazione al modello](assets/navigation-routing/add-navigation-component.png)
+   ![add Navigation component to template](assets/navigation-routing/add-navigation-component.png)
 
-1. Selezionare il componente **Navigazione** e fare clic sulla relativa icona **Criteri** per modificare i criteri.
-1. Crea un nuovo criterio con **Titolo criterio** di **Navigazione SPA**.
+1. Select the **Navigation** component and click its **Policy** icon to edit the policy.
+1. Create a new policy with a **Policy Title** of **SPA Navigation**.
 
-   In **Proprietà**:
+   Under the **Properties**:
 
    * Impostare **Directory principale di navigazione** su `/content/wknd-spa-react/us/en`.
    * Imposta **Escludi livelli principali** su **1**.
-   * Deseleziona **Raccogli tutte le pagine figlie**.
-   * Impostare **Annidamento struttura di spostamento** su **3**.
+   * Deseleziona **Raccogli tutte le pagine secondarie**.
+   * Imposta la **profondità della struttura di navigazione** su **3**.
 
    ![Configura criterio di spostamento](assets/navigation-routing/navigation-policy.png)
 
@@ -89,7 +89,7 @@ Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente d
 
 Quindi, crea ulteriori pagine in AEM che fungeranno da diverse visualizzazioni nell’applicazione a pagina singola. Esamineremo inoltre la struttura gerarchica del modello JSON fornito da AEM.
 
-1. Passare alla console **Sites**: [http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home). Seleziona la **home page di React SPA WKND** e fai clic su **Crea** > **Pagina**:
+1. Passa alla console **Sites**: [http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home). Seleziona la **home page di React SPA WKND** e fai clic su **Crea** > **Pagina**:
 
    ![Crea nuova pagina](assets/navigation-routing/create-new-page.png)
 

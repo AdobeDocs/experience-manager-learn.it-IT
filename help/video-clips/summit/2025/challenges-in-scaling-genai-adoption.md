@@ -1,6 +1,6 @@
 ---
-title: Sfide nel ridimensionamento dell’adozione di GenAI
-description: Esplora le principali sfide che le organizzazioni devono affrontare per adottare e scalare GenAI, tra cui contesto insufficiente, casi di utilizzo non chiari e problemi di governance.
+title: Challenges in Scaling GenAI Adoption
+description: Explore the key challenges organizations face in adopting and scaling GenAI, including insufficient context, unclear use cases, and governance concerns.
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 71a64094-efca-400a-a6fa-cc801cbec664
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
 
 ---
 
-# Sfide nel ridimensionamento dell’adozione di GenAI
+# Challenges in Scaling GenAI Adoption
 
-Esplora le principali sfide che le organizzazioni devono affrontare per adottare e scalare GenAI, tra cui contesto insufficiente, casi di utilizzo non chiari e problemi di governance.
+Explore the key challenges organizations face in adopting and scaling GenAI, including insufficient context, unclear use cases, and governance concerns.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459230/?learn=on&enablevpops)
