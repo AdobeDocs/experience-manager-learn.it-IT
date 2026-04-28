@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come Experience Catalyst sfrutta l’intelligenza artificiale per migrare facilmente un sito WordPress ad AEM Cloud Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459228/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461984/?captions=ita&learn=on&enablevpops)

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Esplora le nuove funzioni di Content Hub, tra cui il controllo degli accessi basato su attributi, pagine di destinazione con marchio e ricerca unificata tra piattaforme.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459223/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461818/?captions=ita&learn=on&enablevpops)

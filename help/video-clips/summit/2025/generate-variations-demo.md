@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Una dimostrazione live dello strumento Genera varianti, che mostra le sue funzionalità nella creazione rapida ed efficiente di varianti di contenuti sul marchio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459233/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462361/?captions=ita&learn=on&enablevpops)

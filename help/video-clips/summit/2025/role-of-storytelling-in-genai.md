@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Discover how storytelling principles in country music relate to the design of GenAI tools for digital experiences.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459229/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462017/?captions=ita&learn=on&enablevpops)

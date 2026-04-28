@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Emily Kellman shares how Adobe.com used Generate Variations to increase content velocity, reduce timelines, and boost conversions.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459232/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462726/?captions=ita&learn=on&enablevpops)
