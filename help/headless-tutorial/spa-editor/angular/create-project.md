@@ -90,7 +90,7 @@ There are several options to create a Maven Multi-module project for AEM. This t
 
    >[!NOTE]
    >
-   > Osserva la proprietà `frontendModule=angular`. Questo comunica all&#39;Archetipo progetto AEM di avviare il progetto con una [base di codice Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) iniziale da utilizzare con l&#39;Editor SPA di AEM.
+   > Osserva la proprietà `frontendModule=angular`. Questo comunica all&#39;Archetipo progetto AEM di avviare il progetto con una [base di codice Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=it) iniziale da utilizzare con l&#39;Editor SPA di AEM.
 
 ## Creare il progetto
 

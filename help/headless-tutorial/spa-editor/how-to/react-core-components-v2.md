@@ -27,7 +27,7 @@ AEM fornisce [AEM React Editable Components v2](https://www.npmjs.com/package/@a
 
 * [modulo npm](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Progetto Github](https://github.com/adobe/aem-react-editable-components)
-* [Documentazione di Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
+* [Documentazione di Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=it)
 
 
 Per ulteriori dettagli ed esempi di codice per AEM React Editable Components v2, consulta la documentazione tecnica:
@@ -38,7 +38,7 @@ Per ulteriori dettagli ed esempi di codice per AEM React Editable Components v2,
 
 ## Pagine AEM
 
-I componenti AEM React Editable funzionano sia con l’editor di applicazioni a pagina singola che con le app Remote SPA React. Il contenuto dei componenti React modificabili deve essere esposto tramite pagine AEM che estendono il [componente Pagina SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). I componenti AEM mappati su componenti React modificabili devono implementare il framework di esportazione di componenti [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html), ad esempio [Componenti WCM core di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+I componenti AEM React Editable funzionano sia con l’editor di applicazioni a pagina singola che con le app Remote SPA React. Il contenuto dei componenti React modificabili deve essere esposto tramite pagine AEM che estendono il [componente Pagina SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=it). I componenti AEM mappati su componenti React modificabili devono implementare il framework di esportazione di componenti [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=it), ad esempio [Componenti WCM core di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
 
 
 ## Dipendenze

@@ -33,7 +33,7 @@ Scopri come supportare più visualizzazioni nell’applicazione a pagina singola
 
 ## Cosa verrà creato
 
-This chapter will add navigation to a SPA in AEM. The navigation menu is driven by the AEM page hierarchy and will make use of the JSON model provided by the [Navigation Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
+This chapter will add navigation to a SPA in AEM. The navigation menu is driven by the AEM page hierarchy and will make use of the JSON model provided by the [Navigation Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=it).
 
 ![Navigation added](assets/navigation-routing/navigation-added.png)
 
