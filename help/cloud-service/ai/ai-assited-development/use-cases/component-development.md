@@ -107,7 +107,7 @@ Per i progetti AEM as a Cloud Service, l&#39;abilità di avvio di `ensure-agents
 
 ## Risorse aggiuntive
 
-- [Sviluppo locale con strumenti AI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Sviluppo locale con strumenti AI](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Abilità di Adobe per gli agenti di codifica AI](https://github.com/adobe/skills)
 
