@@ -8,10 +8,10 @@ doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
 exl-id: cc255744-bb86-49cb-88ca-1266d28985a5
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 22%
+source-wordcount: '199'
+ht-degree: 18%
 
 ---
 
@@ -37,7 +37,13 @@ CARDS
 * ./mcp/overview.md
     {title = AEM MCP Servers}
     {description = Learn how to extend AEM into your favorite AI-tools.}
-    {cta = Learn}    
+    {cta = Learn}
+
+* ./ai-assited-development/overview.md
+    {title = AI-assisted development}
+    {description = Use Agent Skills, AGENTS.md, and MCP with your IDE to build production-ready AEM code.}
+    {image = ./ai-assited-development/assets/component-development/review-generated-code.png}
+    {cta = Learn}
 
 * ../../sites/generative-ai/generate-variations.md
     {title = Generate Variations}
@@ -56,7 +62,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./ai-assistant/overview.md" title="Assistente IA di AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475366/?captions=ita&format=jpeg&nocache=1773082651757" alt="Assistente IA di AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1773082651757" alt="Assistente IA di AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -97,6 +103,29 @@ CARDS
             </div>
         </div>
     </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="AI-assisted development">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./ai-assited-development/overview.md" title="Sviluppo basato sull’intelligenza artificiale" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./ai-assited-development/assets/component-development/review-generated-code.png" alt="Sviluppo basato sull’intelligenza artificiale"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./ai-assited-development/overview.md" target="_blank" rel="referrer" title="Sviluppo basato sull’intelligenza artificiale">Sviluppo assistito da IA</a>
+                    </p>
+                    <p class="is-size-6">Utilizza Agent Skills, AGENTS.md e MCP con il tuo IDE per creare un codice AEM pronto per la produzione.</p>
+                </div>
+                <a href="./ai-assited-development/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri</span>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Generate Variations">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
@@ -115,7 +144,7 @@ CARDS
                     <p class="is-size-6">Genera varianti in Adobe Experience Manager ottimizza testo e immagini per qualsiasi esperienza.</p>
                 </div>
                 <a href="../../sites/generative-ai/generate-variations.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
                 </a>
             </div>
         </div>
@@ -138,7 +167,7 @@ CARDS
                     <p class="is-size-6">Scopri in che modo AEM Assets Ricerca IA migliora la ricerca presentando in modo intelligente le risorse pertinenti e consentendo esperienze di ricerca più intelligenti.</p>
                 </div>
                 <a href="../../assets/search-and-discovery/ai-search.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
                 </a>
             </div>
         </div>

@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 2eb26576a0308d8b74c2d1ce7db61c148936d076
+source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 93%
+source-wordcount: '1642'
+ht-degree: 92%
 
 ---
 
@@ -44,6 +44,12 @@ ht-degree: 93%
       + [Panoramica](./ai/mcp/overview.md)
       + [Accelerazione delle operazioni sui contenuti AEM con il server MCP](./ai/mcp/accelerate-content-operations-with-aem-mcp-server.md)
       + [Server Cloud Manager MCP](./ai/mcp/cloud-manager.md)
+   + Sviluppo basato sull’intelligenza artificiale {#ai-assisted-development}
+      + [Panoramica](./ai/ai-assited-development/overview.md)
+      + Configurazione{#setup}
+         + [Abilità agente](./ai/ai-assited-development/setup/agent-skills.md)
+      + Casi d’uso{#use-cases}
+         + [Sviluppo di componenti](./ai/ai-assited-development/use-cases/component-development.md)
 + Integrazioni di Experience Cloud{#integrations}
    + [Integrazioni](./integrations/experience-cloud.md)
    + [AEM Headless e Target](./integrations/target.md)
@@ -109,7 +115,7 @@ ht-degree: 93%
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo di progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuti mutabili e immutabili &#x200B;](./developing/basics/mutable-immutable.md)
+      + [Contenuti mutabili e immutabili](./developing/basics/mutable-immutable.md)
       + [Pacchetto di struttura dell’archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
@@ -142,7 +148,7 @@ ht-degree: 93%
          + [Panoramica](./developing/universal-editor/react-app/overview.md)
          + [Configurazione dello sviluppo locale](./developing/universal-editor/react-app/local-development-setup.md)
          + [Preparare l’app React](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + [JavaDocs delle API SDK di AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + [JavaDocs API di AEM SDK](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Debug di AEM{#debugging}
    + Debug di AEM SDK{#debugging-aem-sdk}
       + [Panoramica](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -339,14 +345,14 @@ ht-degree: 93%
    + Creare un profilo in AEP all’invio del modulo{#aep-integration}
       + [Introduzione](./forms/aep-integration/introduction.md)
       + [Creare una configurazione cloud](./forms/aep-integration/create-cloud-configuration.md)
-      + [Configurare il modulo per l’invio AEP](./forms/aep-integration/create-integration-with-aep.md)
-   + Tutorial sulla comunicazione interattiva{#interactive-communication-tutorial}
+      + [Configure form for AEP submission](./forms/aep-integration/create-integration-with-aep.md)
+   + Interactive Communication Tutorial{#interactive-communication-tutorial}
       + [&#x200B;1. Introduzione](./forms/interactive-communication-tutorial/introduction.md)
-      + [&#x200B;2. Creare FDM](./forms/interactive-communication-tutorial/create-form-data-model.md)
+      + [2. Create FDM](./forms/interactive-communication-tutorial/create-form-data-model.md)
       + [&#x200B;3. Creare un modello](./forms/interactive-communication-tutorial/create-template.md)
-      + [&#x200B;4. Creare frammenti](./forms/interactive-communication-tutorial/create-fragments.md)
-      + [&#x200B;5. Crea documento IC](./forms/interactive-communication-tutorial/create-ic-document.md)
-      + [&#x200B;6. Genera documento IC](./forms/interactive-communication-tutorial/test-document-generation.md)
+      + [4. Create Fragments](./forms/interactive-communication-tutorial/create-fragments.md)
+      + [5. Create IC Document](./forms/interactive-communication-tutorial/create-ic-document.md)
+      + [6. Generate IC Document](./forms/interactive-communication-tutorial/test-document-generation.md)
    + Generazione di documenti in AEM Forms CS{#doc-gen-formscs}
       + [Introduzione](./forms/doc-gen-forms-cs/introduction.md)
       + [Creare le credenziali del servizio](./forms/doc-gen-forms-cs/service-credentials.md)
@@ -457,10 +463,10 @@ ht-degree: 93%
    + [Risoluzione di problemi](./asset-compute/troubleshooting.md)
 
 + Tutorial in più passaggi{#multi-step-tutorials}
-   + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
+   + [AEM Sites development](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it){target=_blank}
-   + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/it/docs/experience-manager-learn/aem-target-tutorial/overview){target=_blank}
+   + [SPA Editor (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [AEM Sites and Adobe Target](https://experienceleague.adobe.com/it/docs/experience-manager-learn/aem-target-tutorial/overview){target=_blank}
    + [Autenticazione basata su token](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview){target=_blank}
 + Risorse da esperti {#expert-resources}
    + AEM Champions {#aem-champions}
