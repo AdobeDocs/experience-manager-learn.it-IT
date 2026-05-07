@@ -3,7 +3,7 @@ title: Sviluppo di componenti con AEM Agent Skills
 description: Scopri come sviluppare un componente AEM utilizzando le competenze dell’agente AEM come parte dello sviluppo assistito da intelligenza artificiale.
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
-role: Developer, Architect
+role: Developer
 level: Beginner
 doc-type: Article
 duration: 0
@@ -11,7 +11,7 @@ last-substantial-update: 2026-04-24T00:00:00Z
 jira: KT-20901
 thumbnail: KT-20901.png
 exl-id: bd9b74e8-81ab-4d42-bd0a-5443248b5770
-source-git-commit: f93359e731b6c3fa549e9499ef693042eba3aad7
+source-git-commit: 6f303c8fbec523227716fe0bc1bff8fceffad1f9
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
@@ -107,7 +107,7 @@ Per i progetti AEM as a Cloud Service, l&#39;abilità di avvio di `ensure-agents
 
 ## Risorse aggiuntive
 
-- [Sviluppo locale con strumenti AI](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Sviluppo locale con strumenti AI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Abilità di Adobe per gli agenti di codifica AI](https://github.com/adobe/skills)
 

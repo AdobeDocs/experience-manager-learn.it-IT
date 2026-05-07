@@ -1,40 +1,40 @@
 ---
-title: AI-assisted development
-description: Learn about AI-assisted development that uses an AI-powered IDE or coding agents along with AGENTS.md, Agent Skills, and MCP servers to help produce high-quality, production-ready code for projects on AEM as a Cloud Service.
+title: Sviluppo basato sull’intelligenza artificiale
+description: Scopri lo sviluppo basato sull’intelligenza artificiale che utilizza un IDE o agenti di codifica basati sull’intelligenza artificiale insieme a AGENTS.md, Agent Skills e server MCP per contribuire a produrre codice di alta qualità pronto per la produzione per i progetti su AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
-role: Developer, Architect
+role: Developer
 level: Beginner
 doc-type: Article
 duration: 0
 last-substantial-update: 2026-04-24T00:00:00Z
 jira: KT-20899
 thumbnail: KT-20899.pngKT-20899
-source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
+exl-id: 19b7ab0b-2f47-434a-a141-17701f432fac
+source-git-commit: 6f303c8fbec523227716fe0bc1bff8fceffad1f9
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 0%
 
 ---
 
+# Sviluppo basato sull’intelligenza artificiale
 
-# AI-assisted development
+Lo sviluppo basato sull’intelligenza artificiale utilizza un IDE o agenti di codifica basati sull’intelligenza artificiale insieme a `AGENTS.md`, Abilità dell’agente e server MCP per produrre codice di alta qualità pronto per la produzione per i progetti AEM as a Cloud Service.
 
-AI-assisted development uses an AI-powered IDE or coding agents along with `AGENTS.md`, Agent Skills, and MCP servers to help produce high-quality, production-ready code for AEM as a Cloud Service projects.
+Strumenti quali [Cursore](https://www.cursor.com/), [Copilota GitHub in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview), [Claude Code](https://code.claude.com/docs/en/overview) e IDE basati su IA e agenti di codifica simili consentono di eseguire le operazioni seguenti in alcuni modi:
 
-Tools such as [Cursor](https://www.cursor.com/), [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview), [Claude Code](https://code.claude.com/docs/en/overview), and similar AI-powered IDEs and coding agents help in a few key ways:
+- **Iterazione più rapida**: genera o riesegui il factoring del codice dai prompt del linguaggio naturale che descrivono la funzionalità o la modifica desiderata.
+- **Materiale di apprendimento**: spiega percorsi di codice, configurazione, concetti o best practice non familiari quando richiesto.
 
-- **Faster iteration**: generate or refactor code from natural language prompts that describe the desired feature or change.
-- **Learning aid**: explain unfamiliar code paths, configuration, concepts, or best practices when prompted.
+Tuttavia, questi vantaggi dipendono in larga misura dal contesto _disponibile per l&#39;agente di codifica_. I dati di formazione generici e un singolo snapshot dell&#39;archivio sono spesso _insufficienti_ per produrre in modo affidabile il codice AEM pronto per la produzione.
 
-However, these benefits depend heavily on the _context available to the coding agent_. Generic training data and a single repository snapshot are often _not sufficient_ to reliably produce production-ready AEM code.
+## Perché l’intelligenza artificiale da sola è insufficiente
 
-## Why AI alone is insufficient
+Senza il contesto giusto, i modelli di IA (tramite un IDE o un agente di codifica basato sull’intelligenza artificiale) possono:
 
-Without the right context, AI models (via an AI-powered IDE or coding agent) can:
-
-- **Hallucinate APIs or lifecycles**: suggest code or configurations that do not align with AEM as a Cloud Service best practices or latest features.
-- **Miss procedural steps**: omit required steps not visible in code repository or training data.
+- **API o cicli di vita allucinati**: suggerisci codici o configurazioni non in linea con le best practice o le funzionalità più recenti di AEM as a Cloud Service.
+- **Passaggi non validi**: ometti i passaggi richiesti non visibili nell&#39;archivio del codice o nei dati di formazione.
 - **Deriva dagli standard del progetto**: ignora i modelli stabiliti per i componenti, i servizi OSGi, i flussi di lavoro o la configurazione di Dispatcher.
 
 Questo gap è il luogo in cui _contesto strutturato_ (Agent Skills and AGENTS.md) e _visibilità runtime_ (server MCP) diventano essenziali per rendere lo sviluppo basato sull&#39;intelligenza artificiale _produttivo_ e _affidabile_.
@@ -69,10 +69,10 @@ I server MCP espongono strumenti e dati all&#39;agente di codifica tramite il [M
 
 Per **sviluppo locale** rispetto a AEM SDK e Dispatcher, installare questi **server MCP locali** dal portale [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3):
 
-- **AEM Quickstart Local MCP server**: Exposes live runtime data from a local AEM SDK instance to support troubleshooting and development. For more information, see [AEM Quickstart MCP Server](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
-- **Dispatcher Local MCP server**: Enables runtime validation and inspection of a local Dispatcher instance. For more information, see [Dispatcher MCP Server](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).
+- **Server MCP locale Quickstart di AEM**: espone i dati live runtime da un&#39;istanza AEM SDK locale per supportare la risoluzione dei problemi e lo sviluppo. Per ulteriori informazioni, vedere [AEM Quickstart MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
+- **Server MCP locale di Dispatcher**: consente la convalida e l&#39;ispezione in fase di esecuzione di un&#39;istanza Dispatcher locale. Per ulteriori informazioni, vedere [Dispatcher MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).
 
-For Adobe-hosted AEM MCP servers (for example, content, read-only content, and Cloud Manager), see [MCP Servers in AEM](../mcp/overview.md).
+Per i server AEM MCP ospitati da Adobe (ad esempio, contenuto, contenuto di sola lettura e Cloud Manager), vedere [Server MCP in AEM](../mcp/overview.md).
 
 ## Configurazione
 
@@ -102,12 +102,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./setup/agent-skills.md" target="_self" rel="referrer" title="Configurare le abilità dell’agente AEM">Set up AEM Agent Skills</a>
+                        <a href="./setup/agent-skills.md" target="_self" rel="referrer" title="Configurare le abilità dell’agente AEM">Configura le abilità dell'agente AEM</a>
                     </p>
                     <p class="is-size-6">Scopri come configurare le competenze dell’agente AEM per lo sviluppo basato sull’intelligenza artificiale.</p>
                 </div>
                 <a href="./setup/agent-skills.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Install AEM Agent Skills</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Installa le abilità dell'agente AEM</span>
                 </a>
             </div>
         </div>
@@ -157,7 +157,7 @@ CARDS
 
 ## Risorse aggiuntive
 
-- [Local development with AI Tools](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Sviluppo locale con strumenti IA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Abilità di Adobe per gli agenti di codifica AI](https://github.com/adobe/skills)
 
